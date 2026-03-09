@@ -31,3 +31,11 @@ Returns geocoding data for the given address.
 ```
 GET /api/geo/geocode?address=New+York
 ```
+
+### `GET /api/geo/reverse?lat=&lng=`
+Returns address data for the given coordinates.
+
+**Example:**
+```
+GET /api/geo/reverse?lat=40.7128&lng=-74.0060
+```
