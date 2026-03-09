@@ -9,3 +9,8 @@ env/
 *.egg-info/
 dist/
 .DS_Store
+my-geo-pj/
+package.json
+package-lock.json
+index.js
+routes/
