@@ -42,8 +42,11 @@ async def analyze_url(url: str) -> dict:
     summary   = _check_summary_box(page_data)
     stats     = _check_stats_density(page_data)
     headings  = _check_heading_structure(page_data)
+    reviews   = _check_reviews_ssr(page_data)
     pdp       = _detect_pdp(url)
-    score     = _calculate_score(robots, llms, jsonld, seo_tags, faq, summary, stats, headings)
+    score     = _calculate_score(
+        robots, llms, jsonld, seo_tags, faq, summary, stats, headings, reviews
+    )
 
     return {
         "url":               url,
@@ -57,6 +60,7 @@ async def analyze_url(url: str) -> dict:
         "summary_box":       summary,
         "stats_density":     stats,
         "heading_structure": headings,
+        "reviews_ssr":       reviews,
         "score":             score,
     }
 
@@ -290,32 +294,58 @@ def _extract_json_ld(page_data: dict) -> dict:
     if page_data["status"] != "ok" or not page_data["soup"]:
         return {"status": "error", "schemas": [], "count": 0, "all_types": []}
 
-    soup    = page_data["soup"]
-    scripts = soup.find_all("script", type="application/ld+json")
-    schemas = []
+    soup      = page_data["soup"]
+    scripts   = soup.find_all("script", type="application/ld+json")
+    schemas   = []
+    raw_datas = []
+
     for script in scripts:
         try:
             data = json.loads(script.string or "")
             schemas.append(_parse_schema(data))
+            raw_datas.append(data)
         except Exception:
             pass
 
-    all_types = list(_get_all_schema_types(schemas))
+    # 1차: 파싱된 스키마에서 타입 수집
+    all_types = _get_all_schema_types(schemas)
+
+    # 2차: 원본 JSON을 재귀적으로 스캔하여 중첩된 @type까지 수집
+    #      (e.g. LG의 AggregateRating > itemReviewed > @type: "IndividualProduct")
+    for raw in raw_datas:
+        _collect_raw_types(raw, all_types)
+
     return {
         "status":    "found" if schemas else "not_found",
         "count":     len(schemas),
         "schemas":   schemas,
-        "all_types": all_types,
+        "all_types": list(all_types),
     }
 
 
-def _parse_schema(data) -> dict:
-    """JSON-LD 데이터를 재귀적으로 파싱.
+def _collect_raw_types(data, types: set):
+    """원본 JSON-LD에서 모든 @type 값을 재귀적으로 추출."""
+    if isinstance(data, dict):
+        t = data.get("@type")
+        if t:
+            if isinstance(t, list):
+                types.update(str(v) for v in t)
+            else:
+                types.add(str(t))
+        for val in data.values():
+            _collect_raw_types(val, types)
+    elif isinstance(data, list):
+        for item in data:
+            _collect_raw_types(item, types)
 
-    처리하는 구조:
-    - List: 최상위 배열 → @graph 취급
-    - Dict with @graph key: { "@context": "...", "@graph": [...] } 패턴 (★ 핵심 버그 수정)
-    - Dict with @type: 일반 스키마 오브젝트
+
+def _parse_schema(data) -> dict:
+    """JSON-LD 데이터를 파싱.
+
+    처리 구조:
+    - List                     → @graph 취급
+    - Dict with @graph key     → { "@context": "...", "@graph": [...] } 패턴
+    - Dict with @type          → 일반 스키마 오브젝트
     """
     if isinstance(data, list):
         return {"type": "@graph", "items": [_parse_schema(item) for item in data]}
@@ -323,7 +353,6 @@ def _parse_schema(data) -> dict:
     if not isinstance(data, dict):
         return {"type": "unknown"}
 
-    # { "@context": "...", "@graph": [...] } 패턴: @type 없이 @graph 키만 있는 경우
     if "@graph" in data and "@type" not in data:
         graph = data["@graph"]
         items = [_parse_schema(item) for item in graph] if isinstance(graph, list) else []
@@ -371,7 +400,6 @@ def _collect_types(schema: dict, types: set):
 # ── FAQ Section (15점) ────────────────────────────────────────────────────────
 
 def _check_faq(page_data: dict, jsonld: dict) -> dict:
-    # FAQPage JSON-LD 스키마 검사
     has_faq_schema = any(
         _schema_has_type(s, "FAQPage")
         for s in jsonld.get("schemas", [])
@@ -383,7 +411,6 @@ def _check_faq(page_data: dict, jsonld: dict) -> dict:
         faq_kw = ["faq", "자주 묻는", "자주묻는", "frequently asked", "q&a", "qna",
                   "questions", "질문", "answer", "accordion"]
 
-        # 1) 모든 요소의 class/id 속성 검사 (태그 종류 제한 없음)
         for tag in soup.find_all(True):
             cls = " ".join(tag.get("class", [])).lower()
             iid = tag.get("id", "").lower()
@@ -391,14 +418,12 @@ def _check_faq(page_data: dict, jsonld: dict) -> dict:
                 has_faq_html = True
                 break
 
-        # 2) 헤딩 텍스트 검사
         if not has_faq_html:
             for tag in soup.find_all(["h1", "h2", "h3", "h4", "h5"]):
                 if any(kw in tag.get_text(strip=True).lower() for kw in faq_kw):
                     has_faq_html = True
                     break
 
-        # 3) 3개 이상의 <details> 요소 = 아코디언 FAQ 패턴
         if not has_faq_html:
             if len(soup.find_all("details")) >= 3:
                 has_faq_html = True
@@ -480,7 +505,6 @@ def _check_heading_structure(page_data: dict) -> dict:
     h3s  = soup.find_all("h3")
     h4s  = soup.find_all("h4")
 
-    # 논리적 순서: H2/H3/H4가 H1보다 먼저 등장하면 안 됨
     logical_order = True
     seen_h1       = False
     for tag in soup.find_all(["h1", "h2", "h3", "h4"]):
@@ -490,7 +514,6 @@ def _check_heading_structure(page_data: dict) -> dict:
             logical_order = False
             break
 
-    # 계층 점프: H3가 있는데 H2가 없으면 비정상
     no_level_gap = not (h3s and not h2s)
 
     return {
@@ -505,6 +528,29 @@ def _check_heading_structure(page_data: dict) -> dict:
         "no_level_gap":    no_level_gap,
         "h1_texts":        [h.get_text(strip=True)[:100] for h in h1s[:3]],
         "h2_texts":        [h.get_text(strip=True)[:80]  for h in h2s[:6]],
+    }
+
+
+# ── Reviews SSR (10점) ────────────────────────────────────────────────────────
+
+def _check_reviews_ssr(page_data: dict) -> dict:
+    """#reviews_container 요소가 서버사이드 렌더링으로 존재하는지 확인."""
+    if page_data["status"] != "ok" or not page_data["soup"]:
+        return {"status": "error", "found": False, "has_content": False}
+
+    soup = page_data["soup"]
+    el   = soup.find(id="reviews_container")
+
+    if el is None:
+        return {"status": "ok", "found": False, "has_content": False}
+
+    content     = el.get_text(strip=True)
+    has_content = len(content) > 10
+
+    return {
+        "status":      "ok",
+        "found":       True,
+        "has_content": has_content,
     }
 
 
@@ -523,11 +569,11 @@ def _detect_pdp(url: str) -> dict:
     }
 
 
-# ── Score (총합 100점) ────────────────────────────────────────────────────────
+# ── Score (총합 110점) ────────────────────────────────────────────────────────
 
 def _calculate_score(robots: dict, llms: dict, jsonld: dict,
                      seo_tags: dict, faq: dict, summary: dict,
-                     stats: dict, headings: dict) -> dict:
+                     stats: dict, headings: dict, reviews: dict) -> dict:
     score     = 0
     breakdown = {}
 
@@ -549,7 +595,9 @@ def _calculate_score(robots: dict, llms: dict, jsonld: dict,
 
     # 3. JSON-LD (15점): 필수(8점) + 보조(7점)
     all_types      = set(jsonld.get("all_types", []))
-    has_product    = "Product"        in all_types
+
+    # Product 판별: "Product" 또는 "IndividualProduct" (LG 등 AggregateRating 패턴 포함)
+    has_product    = "Product" in all_types or "IndividualProduct" in all_types
     has_faqpage    = "FAQPage"        in all_types
     has_breadcrumb = "BreadcrumbList" in all_types
     has_org        = "Organization"   in all_types
@@ -620,11 +668,21 @@ def _calculate_score(robots: dict, llms: dict, jsonld: dict,
     score     += stat_score
     breakdown["stats_density"] = {"points": stat_score, "max": 5}
 
+    # 9. 리뷰 데이터 SSR (10점): #reviews_container 서버사이드 렌더링 여부
+    rev_score = 10 if reviews.get("found") else 0
+    score    += rev_score
+    breakdown["reviews_ssr"] = {
+        "points":      rev_score,
+        "max":         10,
+        "found":       reviews.get("found",       False),
+        "has_content": reviews.get("has_content", False),
+    }
+
     grade = (
-        "A" if score >= 80 else
-        "B" if score >= 60 else
-        "C" if score >= 40 else
+        "A" if score >= 88 else   # 110점 기준 80%
+        "B" if score >= 66 else   # 110점 기준 60%
+        "C" if score >= 44 else   # 110점 기준 40%
         "D"
     )
 
-    return {"total": score, "max": 100, "grade": grade, "breakdown": breakdown}
+    return {"total": score, "max": 110, "grade": grade, "breakdown": breakdown}

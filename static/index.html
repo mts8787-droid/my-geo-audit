@@ -69,7 +69,7 @@
       <span class="gradient-text">AI에게 잘 읽히고 있나요?</span>
     </h1>
     <p class="text-slate-500 text-lg max-w-xl mx-auto">
-      URL을 입력하면 GPT, Gemini, Claude 등 AI 엔진 최적화 수준을 7개 항목, 100점 만점으로 즉시 분석합니다.
+      URL을 입력하면 GPT, Gemini, Claude 등 AI 엔진 최적화 수준을 9개 항목, 110점 만점으로 즉시 분석합니다.
     </p>
   </div>
 
@@ -120,7 +120,7 @@
         <div>
           <div class="flex items-baseline gap-1.5">
             <span id="scoreValue" class="text-5xl font-black text-slate-800">0</span>
-            <span class="text-xl text-slate-400 font-medium">/ 100</span>
+            <span class="text-xl text-slate-400 font-medium">/ 110</span>
           </div>
           <p id="gradeLabel" class="text-slate-500 text-sm mt-0.5"></p>
         </div>
@@ -322,6 +322,27 @@
       </div>
     </div>
 
+    <!-- ⑪ Reviews SSR -->
+    <div id="reviewsCard" class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6 fade-up fade-up-9 opacity-0">
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-xl bg-cyan-50 flex items-center justify-center shrink-0 mt-0.5">
+          <svg class="w-5 h-5 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+          </svg>
+        </div>
+        <div class="flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <h2 class="font-bold text-slate-800 text-lg">리뷰 SSR</h2>
+            <span id="reviewsBadge" class="text-xs px-2 py-0.5 rounded-full font-medium"></span>
+            <span class="text-xs text-slate-400 ml-auto">최대 10점</span>
+          </div>
+          <p class="text-slate-500 text-sm mb-3">#reviews_container 요소가 서버사이드 렌더링으로 존재하는지 확인합니다.</p>
+          <div id="reviewsDetail"></div>
+        </div>
+      </div>
+    </div>
+
   </div><!-- /results -->
 </main>
 
@@ -336,6 +357,7 @@
     summary_box:       { label: '서머리 박스',    color: '#f43f5e' },
     heading_structure: { label: 'Heading 구조',   color: '#8b5cf6' },
     stats_density:     { label: '통계 데이터',    color: '#f97316' },
+    reviews_ssr:       { label: '리뷰 SSR',       color: '#06b6d4' },
   };
 
   // ── Init ───────────────────────────────────────────────────────────────────
@@ -393,6 +415,7 @@
     renderSummaryBox(data.summary_box);
     renderHeadings(data.heading_structure, data.score.breakdown.heading_structure);
     renderStats(data.stats_density);
+    renderReviews(data.reviews_ssr, data.score.breakdown.reviews_ssr);
     document.getElementById('results').classList.remove('hidden');
   }
 
@@ -420,7 +443,7 @@
 
     // Total bar
     setTimeout(() => {
-      document.getElementById('totalBar').style.width = total + '%';
+      document.getElementById('totalBar').style.width = Math.round(total / 110 * 100) + '%';
     }, 120);
 
     // Breakdown bars
@@ -877,6 +900,40 @@
       : `<div class="bg-amber-50 border border-amber-100 rounded-xl p-4 text-sm text-amber-800">
            <strong>본문에 숫자·통계 데이터가 없습니다.</strong><br/>
            <span class="text-xs mt-1 block">퍼센트(%), 수치, 연구 결과 등을 포함하면 AI 신뢰도가 높아집니다.</span>
+         </div>`;
+  }
+
+  // ── ⑪ Reviews SSR ──────────────────────────────────────────────────────────
+  function renderReviews(reviews, bd) {
+    if (!reviews || reviews.status === 'error') {
+      setBadge('reviewsBadge', '분석 불가', 'bg-slate-100 text-slate-500');
+      document.getElementById('reviewsDetail').innerHTML =
+        '<p class="text-slate-400 text-sm">페이지를 불러오지 못했습니다.</p>';
+      return;
+    }
+    const found      = reviews.found       || false;
+    const hasContent = reviews.has_content || false;
+    const pts        = bd ? bd.points : 0;
+
+    setBadge('reviewsBadge',
+      found ? `SSR 확인 (+${pts}점)` : '없음 (0점)',
+      found ? 'bg-emerald-100 text-emerald-700' : 'bg-red-100 text-red-700'
+    );
+
+    document.getElementById('reviewsDetail').innerHTML = found
+      ? `<div class="flex items-center gap-3 bg-emerald-50 border border-emerald-100 rounded-xl p-4">
+           <span class="text-2xl">✅</span>
+           <div>
+             <p class="text-sm font-semibold text-emerald-800">#reviews_container SSR 렌더링 확인 (+${pts}점)</p>
+             <p class="text-xs text-emerald-600 mt-0.5">
+               ${hasContent ? '리뷰 컨테이너에 콘텐츠가 존재합니다. AI가 리뷰 데이터를 직접 읽을 수 있습니다.'
+                            : '리뷰 컨테이너가 존재하지만 내용이 비어있습니다.'}
+             </p>
+           </div>
+         </div>`
+      : `<div class="bg-amber-50 border border-amber-100 rounded-xl p-4 text-sm text-amber-800">
+           <strong>#reviews_container 요소가 감지되지 않았습니다.</strong><br/>
+           <span class="text-xs mt-1 block">서버사이드 렌더링으로 <code class="bg-amber-100 px-1 rounded">id="reviews_container"</code> 요소를 포함하면 AI가 리뷰 데이터를 직접 읽을 수 있습니다.</span>
          </div>`;
   }
 
