@@ -594,13 +594,14 @@ def _calculate_score(robots: dict, llms: dict, jsonld: dict,
     breakdown["robots_txt"] = {"points": bot_score, "max": 10}
 
     # 3. JSON-LD (15점): 필수(8점) + 보조(7점)
-    all_types      = set(jsonld.get("all_types", []))
+    all_types        = set(jsonld.get("all_types", []))
+    all_types_lower  = {t.lower() for t in all_types}
 
-    # Product 판별: "Product" 또는 "IndividualProduct" (LG 등 AggregateRating 패턴 포함)
-    has_product    = "Product" in all_types or "IndividualProduct" in all_types
-    has_faqpage    = "FAQPage"        in all_types
-    has_breadcrumb = "BreadcrumbList" in all_types
-    has_org        = "Organization"   in all_types
+    # 대소문자 무시 ("product" / "Product" / "IndividualProduct" 모두 허용)
+    has_product    = "product"       in all_types_lower or "individualproduct" in all_types_lower
+    has_faqpage    = "faqpage"       in all_types_lower
+    has_breadcrumb = "breadcrumblist" in all_types_lower
+    has_org        = "organization"   in all_types_lower
 
     if has_product and has_faqpage:
         req_score = 8

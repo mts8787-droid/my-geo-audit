@@ -133,8 +133,7 @@
       <!-- Total progress bar -->
       <div class="mb-6">
         <div class="h-5 bg-slate-100 rounded-full overflow-hidden">
-          <div id="totalBar" class="progress-bar h-full rounded-full"
-            style="background: linear-gradient(90deg,#1d4ed8,#60a5fa)"></div>
+          <div id="totalBar" class="progress-bar h-full rounded-full"></div>
         </div>
       </div>
 
@@ -349,15 +348,15 @@
 <script>
   // ── Category metadata ──────────────────────────────────────────────────────
   const CATEGORY_META = {
-    seo_tags:          { label: '기본 SEO 태그',  color: '#1d4ed8' },
-    robots_txt:        { label: 'robots.txt',     color: '#2563eb' },
-    json_ld:           { label: 'JSON-LD',        color: '#3b82f6' },
-    llms_txt:          { label: '/llms.txt',      color: '#60a5fa' },
-    faq:               { label: 'FAQ 섹션',       color: '#1e40af' },
-    summary_box:       { label: '서머리 박스',    color: '#2563eb' },
-    heading_structure: { label: 'Heading 구조',   color: '#3b82f6' },
-    stats_density:     { label: '통계 데이터',    color: '#60a5fa' },
-    reviews_ssr:       { label: '리뷰 SSR',       color: '#93c5fd' },
+    seo_tags:          { label: '기본 SEO 태그',  color: '#15803d' },
+    robots_txt:        { label: 'robots.txt',     color: '#16a34a' },
+    json_ld:           { label: 'JSON-LD',        color: '#22c55e' },
+    llms_txt:          { label: '/llms.txt',      color: '#4ade80' },
+    faq:               { label: 'FAQ 섹션',       color: '#15803d' },
+    summary_box:       { label: '서머리 박스',    color: '#16a34a' },
+    heading_structure: { label: 'Heading 구조',   color: '#22c55e' },
+    stats_density:     { label: '통계 데이터',    color: '#4ade80' },
+    reviews_ssr:       { label: '리뷰 SSR',       color: '#86efac' },
   };
 
   // ── Init ───────────────────────────────────────────────────────────────────
@@ -439,9 +438,16 @@
       `text-2xl font-black px-5 py-1.5 rounded-xl shrink-0 ${colorMap[grade] || colorMap['Poor']}`;
     document.getElementById('gradeLabel').textContent = labelMap[grade] || '';
 
-    // Total bar
+    // Total bar — 등급별 색상
+    const barGradient = {
+      'Good':             'linear-gradient(90deg,#15803d,#4ade80)',
+      'Need Improvement': 'linear-gradient(90deg,#b45309,#fbbf24)',
+      'Poor':             'linear-gradient(90deg,#b91c1c,#f87171)',
+    };
     setTimeout(() => {
-      document.getElementById('totalBar').style.width = Math.min(total, 100) + '%';
+      const bar = document.getElementById('totalBar');
+      bar.style.background = barGradient[grade] || barGradient['Poor'];
+      bar.style.width = Math.min(total, 100) + '%';
     }, 120);
 
     // Breakdown bars
@@ -585,9 +591,8 @@
     }
 
     // 기타 발견된 스키마
-    const allTypes = bd.all_types || [];
-    const known = new Set(['Product','FAQPage','BreadcrumbList','Organization']);
-    const others = allTypes.filter(t => !known.has(t));
+    const allTypes  = bd.all_types || [];
+    const knownLower = new Set(['product','faqpage','breadcrumblist','organization']);
 
     const foundEl = document.getElementById('jsonldFoundSchemas');
     if (allTypes.length > 0) {
@@ -596,7 +601,7 @@
           <p class="section-label mb-2">발견된 전체 스키마</p>
           <div class="flex flex-wrap gap-1.5">
             ${allTypes.map(t => {
-              const isCore = known.has(t);
+              const isCore = knownLower.has(t.toLowerCase());
               return `<span class="text-xs px-2.5 py-1 rounded-lg font-semibold border ${
                 isCore ? 'bg-indigo-50 border-indigo-200 text-indigo-700'
                        : 'bg-slate-50 border-slate-200 text-slate-600'
