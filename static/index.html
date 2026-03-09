@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GEO Audit — Generative Engine Optimization 분석기</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-text {
+      background: linear-gradient(135deg, #6366f1, #8b5cf6, #a855f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .card { transition: box-shadow 0.2s ease; }
+    .card:hover { box-shadow: 0 8px 32px rgba(99,102,241,0.10); }
+    .progress-bar { width: 0%; transition: width 0.85s cubic-bezier(.4,0,.2,1); }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up   { animation: fadeUp 0.4s ease forwards; }
+    .fade-up-1 { animation-delay: 0.04s; }
+    .fade-up-2 { animation-delay: 0.12s; }
+    .fade-up-3 { animation-delay: 0.20s; }
+    .fade-up-4 { animation-delay: 0.28s; }
+    .fade-up-5 { animation-delay: 0.36s; }
+    .fade-up-6 { animation-delay: 0.44s; }
+    .fade-up-7 { animation-delay: 0.52s; }
+    .fade-up-8 { animation-delay: 0.60s; }
+    .fade-up-9 { animation-delay: 0.68s; }
+    .spinner {
+      border: 3px solid #e0e7ff; border-top-color: #6366f1;
+      border-radius: 50%; width: 28px; height: 28px;
+      animation: spin 0.7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .section-label {
+      font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: #94a3b8;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-purple-50">
+
+<!-- Header -->
+<header class="border-b border-white/60 bg-white/70 backdrop-blur-sm sticky top-0 z-10">
+  <div class="max-w-4xl mx-auto px-6 py-4 flex items-center gap-3">
+    <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
+      <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+      </svg>
+    </div>
+    <span class="font-bold text-slate-800 text-lg">GEO Audit</span>
+    <span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded-full font-medium ml-1">
+      Generative Engine Optimization
+    </span>
+  </div>
+</header>
+
+<main class="max-w-4xl mx-auto px-6 pt-16 pb-24">
+
+  <!-- Hero -->
+  <div class="text-center mb-12">
+    <h1 class="text-4xl font-extrabold text-slate-800 mb-4">
+      당신의 사이트는<br/>
+      <span class="gradient-text">AI에게 잘 읽히고 있나요?</span>
+    </h1>
+    <p class="text-slate-500 text-lg max-w-xl mx-auto">
+      URL을 입력하면 GPT, Gemini, Claude 등 AI 엔진 최적화 수준을 7개 항목, 100점 만점으로 즉시 분석합니다.
+    </p>
+  </div>
+
+  <!-- Input -->
+  <div class="bg-white rounded-2xl shadow-lg border border-slate-100 p-6 mb-10">
+    <div class="flex gap-3">
+      <div class="flex-1 relative">
+        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+          </svg>
+        </span>
+        <input id="urlInput" type="url" placeholder="https://example.com"
+          class="w-full pl-12 pr-4 py-3.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent text-slate-700 placeholder-slate-300 text-base"/>
+      </div>
+      <button id="analyzeBtn" onclick="startAnalysis()"
+        class="px-6 py-3.5 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-xl hover:opacity-90 transition-opacity flex items-center gap-2 whitespace-nowrap">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        분석하기
+      </button>
+    </div>
+    <p class="text-xs text-slate-400 mt-3 ml-1">예시: lg.com, anthropic.com, openai.com, github.com</p>
+  </div>
+
+  <!-- Loading -->
+  <div id="loading" class="hidden text-center py-16">
+    <div class="spinner mx-auto mb-4"></div>
+    <p class="text-slate-500 font-medium">AI 최적화 상태를 분석 중입니다…</p>
+    <p class="text-slate-400 text-sm mt-1">SEO 태그 · robots.txt · JSON-LD · llms.txt · FAQ · 요약 영역 확인 중</p>
+  </div>
+
+  <!-- Error -->
+  <div id="errorBox" class="hidden bg-red-50 border border-red-200 rounded-2xl p-5 text-red-700 mb-6">
+    <strong class="font-semibold">오류:</strong> <span id="errorMsg"></span>
+  </div>
+
+  <!-- Results -->
+  <div id="results" class="hidden space-y-5">
+
+    <!-- ① Score Card -->
+    <div id="scoreCard" class="card bg-white rounded-2xl shadow-md border border-slate-100 p-8 fade-up fade-up-1 opacity-0">
+      <!-- Top row: grade + score -->
+      <div class="flex items-center gap-5 mb-5">
+        <span id="gradeTag" class="text-3xl font-black px-5 py-1.5 rounded-xl shrink-0"></span>
+        <div>
+          <div class="flex items-baseline gap-1.5">
+            <span id="scoreValue" class="text-5xl font-black text-slate-800">0</span>
+            <span class="text-xl text-slate-400 font-medium">/ 100</span>
+          </div>
+          <p id="gradeLabel" class="text-slate-500 text-sm mt-0.5"></p>
+        </div>
+        <div class="ml-auto text-right hidden sm:block">
+          <p class="section-label">GEO 종합 점수</p>
+          <p class="text-xs text-slate-400 mt-0.5">AI 엔진 최적화 수준</p>
+        </div>
+      </div>
+
+      <!-- Total progress bar -->
+      <div class="mb-6">
+        <div class="h-5 bg-slate-100 rounded-full overflow-hidden">
+          <div id="totalBar" class="progress-bar h-full rounded-full"
+            style="background: linear-gradient(90deg,#6366f1,#a855f7)"></div>
+        </div>
+      </div>
+
+      <!-- Per-category breakdown -->
+      <p class="section-label mb-3">항목별 점수</p>
+      <div id="scoreBreakdown" class="space-y-3"></div>
+    </div>
+
+    <!-- ② PDP Banner (conditional) -->
+    <div id="pdpBanner" class="hidden fade-up fade-up-2 opacity-0"></div>
+
+    <!-- ③ Basic SEO Tags -->
+    <div id="seoTagsCard" class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6 fade-up fade-up-2 opacity-0">
+      <div class="flex items-center gap-3 mb-1">
+        <div class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center shrink-0">
+          <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A2 2 0 013 12V7a4 4 0 014-4z"/>
+          </svg>
+        </div>
+        <div class="flex-1">
+          <div class="flex items-center gap-2">
+            <h2 class="font-bold text-slate-800 text-lg">기본 SEO 태그</h2>
+            <span id="seoTagsBadge" class="text-xs px-2 py-0.5 rounded-full font-medium"></span>
+          </div>
+          <p class="text-slate-500 text-sm">10개 항목 × 2점 = 최대 20점. AI 및 검색 엔진 가시성 기반 요소입니다.</p>
+        </div>
+      </div>
+      <div id="seoTagsList" class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-4"></div>
+    </div>
+
+    <!-- ④ JSON-LD -->
+    <div id="jsonldCard" class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6 fade-up fade-up-3 opacity-0">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center shrink-0">
+          <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+          </svg>
+        </div>
+        <div class="flex-1">
+          <div class="flex items-center gap-2">
+            <h2 class="font-bold text-slate-800 text-lg">JSON-LD 구조화 데이터</h2>
+            <span id="jsonldBadge" class="text-xs px-2 py-0.5 rounded-full font-medium"></span>
+          </div>
+          <p class="text-slate-500 text-sm">필수 스키마(8점) + 보조 스키마(7점) = 최대 15점</p>
+        </div>
+      </div>
+
+      <!-- 필수 요건 -->
+      <div class="mb-4">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="section-label">핵심 필수 요건</span>
+          <span class="text-xs text-slate-400">— 8점 만점 (Product + FAQPage 모두 필요)</span>
+        </div>
+        <div id="jsonldRequired" class="grid grid-cols-1 sm:grid-cols-2 gap-2"></div>
+      </div>
+
+      <!-- 보조 요건 -->
+      <div class="mb-4">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="section-label">보조 신뢰도 요건</span>
+          <span class="text-xs text-slate-400">— 7점 만점 (하나라도 있으면 획득)</span>
+        </div>
+        <div id="jsonldSupporting" class="grid grid-cols-1 sm:grid-cols-2 gap-2"></div>
+      </div>
+
+      <!-- 발견된 스키마 -->
+      <div id="jsonldFoundSchemas"></div>
+    </div>
+
+    <!-- ⑤ llms.txt -->
+    <div id="llmsCard" class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6 fade-up fade-up-4 opacity-0">
+      <div class="flex items-start gap-4">
+        <div id="llmsIcon" class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 mt-0.5"></div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center gap-2 mb-1">
+            <h2 class="font-bold text-slate-800 text-lg">/llms.txt</h2>
+            <span id="llmsBadge" class="text-xs px-2 py-0.5 rounded-full font-medium"></span>
+            <span class="text-xs text-slate-400 ml-auto">최대 15점</span>
+          </div>
+          <p class="text-slate-500 text-sm mb-3">AI 모델이 사이트 구조를 이해하도록 돕는 지침 파일입니다.</p>
+          <div id="llmsDetail" class="text-sm"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑥ robots.txt -->
+    <div id="robotsCard" class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6 fade-up fade-up-5 opacity-0">
+      <div class="flex items-start gap-4">
+        <div id="robotsIcon" class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 mt-0.5"></div>
+        <div class="flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <h2 class="font-bold text-slate-800 text-lg">robots.txt — AI 봇 접근</h2>
+            <span id="robotsBadge" class="text-xs px-2 py-0.5 rounded-full font-medium"></span>
+            <span class="text-xs text-slate-400 ml-auto">최대 20점</span>
+          </div>
+          <p class="text-slate-500 text-sm mb-4">주요 AI 크롤러 10종의 허용/차단 여부를 확인합니다.</p>
+          <div id="botsGrid" class="grid grid-cols-2 sm:grid-cols-3 gap-2"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑦ FAQ -->
+    <div id="faqCard" class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6 fade-up fade-up-6 opacity-0">
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center shrink-0 mt-0.5">
+          <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <div class="flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <h2 class="font-bold text-slate-800 text-lg">FAQ 섹션</h2>
+            <span id="faqBadge" class="text-xs px-2 py-0.5 rounded-full font-medium"></span>
+            <span class="text-xs text-slate-400 ml-auto">최대 15점</span>
+          </div>
+          <p class="text-slate-500 text-sm mb-4">FAQPage JSON-LD 스키마(8점) + HTML FAQ 섹션(7점)</p>
+          <div id="faqDetail" class="space-y-2"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑧ Summary Box -->
+    <div id="summaryCard" class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6 fade-up fade-up-7 opacity-0">
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-xl bg-rose-50 flex items-center justify-center shrink-0 mt-0.5">
+          <svg class="w-5 h-5 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+        </div>
+        <div class="flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <h2 class="font-bold text-slate-800 text-lg">서머리 박스</h2>
+            <span id="summaryBadge" class="text-xs px-2 py-0.5 rounded-full font-medium"></span>
+            <span class="text-xs text-slate-400 ml-auto">최대 10점</span>
+          </div>
+          <p class="text-slate-500 text-sm mb-3">요약·핵심·TL;DR 영역 존재 여부. AI는 요약 콘텐츠를 인용에 활용합니다.</p>
+          <div id="summaryDetail"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑨ Heading Structure -->
+    <div id="headingsCard" class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6 fade-up fade-up-8 opacity-0">
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-xl bg-violet-50 flex items-center justify-center shrink-0 mt-0.5">
+          <svg class="w-5 h-5 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 10h12M4 14h8M4 18h6"/>
+          </svg>
+        </div>
+        <div class="flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <h2 class="font-bold text-slate-800 text-lg">Heading 구조</h2>
+            <span id="headingsBadge" class="text-xs px-2 py-0.5 rounded-full font-medium"></span>
+            <span class="text-xs text-slate-400 ml-auto">최대 5점</span>
+          </div>
+          <p class="text-slate-500 text-sm mb-4">H1 고유성(2점) · H2 복수(2점) · 논리적 순서(1점). 명확한 헤딩 계층은 AI의 콘텐츠 구조 파악을 돕습니다.</p>
+          <div id="headingsDetail"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑩ Stats Density -->
+    <div id="statsCard" class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6 fade-up fade-up-9 opacity-0">
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-xl bg-orange-50 flex items-center justify-center shrink-0 mt-0.5">
+          <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+          </svg>
+        </div>
+        <div class="flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <h2 class="font-bold text-slate-800 text-lg">통계 데이터</h2>
+            <span id="statsBadge" class="text-xs px-2 py-0.5 rounded-full font-medium"></span>
+            <span class="text-xs text-slate-400 ml-auto">최대 5점</span>
+          </div>
+          <p class="text-slate-500 text-sm mb-3">본문에 숫자·단위를 포함한 단어가 1% 이상이면 5점. AI는 수치 근거가 있는 콘텐츠를 선호합니다.</p>
+          <div id="statsDetail"></div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /results -->
+</main>
+
+<script>
+  // ── Category metadata ──────────────────────────────────────────────────────
+  const CATEGORY_META = {
+    seo_tags:          { label: '기본 SEO 태그',  color: '#3b82f6' },
+    robots_txt:        { label: 'robots.txt',     color: '#10b981' },
+    json_ld:           { label: 'JSON-LD',        color: '#6366f1' },
+    llms_txt:          { label: '/llms.txt',      color: '#a855f7' },
+    faq:               { label: 'FAQ 섹션',       color: '#f59e0b' },
+    summary_box:       { label: '서머리 박스',    color: '#f43f5e' },
+    heading_structure: { label: 'Heading 구조',   color: '#8b5cf6' },
+    stats_density:     { label: '통계 데이터',    color: '#f97316' },
+  };
+
+  // ── Init ───────────────────────────────────────────────────────────────────
+  document.getElementById('urlInput').addEventListener('keydown', e => {
+    if (e.key === 'Enter') startAnalysis();
+  });
+
+  async function startAnalysis() {
+    const url = document.getElementById('urlInput').value.trim();
+    if (!url) { document.getElementById('urlInput').focus(); return; }
+    setLoading(true);
+    clearResults();
+    try {
+      const res  = await fetch('/analyze', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.detail || '분석 실패');
+      renderResults(data);
+    } catch (err) {
+      showError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  function setLoading(on) {
+    document.getElementById('loading').classList.toggle('hidden', !on);
+    const btn = document.getElementById('analyzeBtn');
+    btn.disabled = on;
+    btn.style.opacity = on ? '0.6' : '';
+  }
+
+  function clearResults() {
+    document.getElementById('results').classList.add('hidden');
+    document.getElementById('errorBox').classList.add('hidden');
+  }
+
+  function showError(msg) {
+    document.getElementById('errorMsg').textContent = msg;
+    document.getElementById('errorBox').classList.remove('hidden');
+  }
+
+  // ── Main render ────────────────────────────────────────────────────────────
+  function renderResults(data) {
+    renderScore(data.score);
+    renderPdp(data.pdp, data.score.breakdown.json_ld);
+    renderSeoTags(data.seo_tags);
+    renderJsonLd(data.json_ld, data.score.breakdown.json_ld);
+    renderLlms(data.llms_txt);
+    renderRobots(data.robots_txt);
+    renderFaq(data.faq, data.score.breakdown.faq);
+    renderSummaryBox(data.summary_box);
+    renderHeadings(data.heading_structure, data.score.breakdown.heading_structure);
+    renderStats(data.stats_density);
+    document.getElementById('results').classList.remove('hidden');
+  }
+
+  // ── ① Score ────────────────────────────────────────────────────────────────
+  function renderScore(score) {
+    const { total, grade, breakdown } = score;
+    document.getElementById('scoreValue').textContent = total;
+
+    const colorMap = {
+      A: 'bg-emerald-100 text-emerald-700',
+      B: 'bg-blue-100 text-blue-700',
+      C: 'bg-amber-100 text-amber-700',
+      D: 'bg-red-100 text-red-700',
+    };
+    const labelMap = {
+      A: '훌륭한 AI 최적화',
+      B: '양호한 AI 최적화',
+      C: '개선이 필요합니다',
+      D: 'AI 최적화 미흡',
+    };
+    document.getElementById('gradeTag').textContent = `등급 ${grade}`;
+    document.getElementById('gradeTag').className =
+      `text-3xl font-black px-5 py-1.5 rounded-xl shrink-0 ${colorMap[grade] || colorMap.D}`;
+    document.getElementById('gradeLabel').textContent = labelMap[grade] || '';
+
+    // Total bar
+    setTimeout(() => {
+      document.getElementById('totalBar').style.width = total + '%';
+    }, 120);
+
+    // Breakdown bars
+    const el = document.getElementById('scoreBreakdown');
+    el.innerHTML = '';
+    let delay = 250;
+    for (const [key, val] of Object.entries(breakdown)) {
+      const meta  = CATEGORY_META[key] || { label: key, color: '#6366f1' };
+      const pct   = Math.round((val.points / val.max) * 100);
+      const barId = `brkbar-${key}`;
+      const passInfo = val.passed != null
+        ? `<span class="text-xs text-slate-400">(${val.passed}/${val.total} 통과)</span>`
+        : '';
+
+      el.innerHTML += `
+        <div class="flex items-center gap-3">
+          <span class="text-sm font-medium text-slate-700 w-28 shrink-0">${meta.label}</span>
+          <div class="flex-1 h-2.5 bg-slate-100 rounded-full overflow-hidden">
+            <div id="${barId}" class="progress-bar h-full rounded-full" style="background:${meta.color}"></div>
+          </div>
+          <div class="flex items-center gap-1.5 shrink-0">
+            ${passInfo}
+            <span class="text-sm font-bold text-slate-700 w-14 text-right">${val.points}/${val.max}점</span>
+          </div>
+        </div>`;
+
+      setTimeout(((id, p) => () => {
+        const b = document.getElementById(id);
+        if (b) b.style.width = p + '%';
+      })(barId, pct), delay);
+      delay += 70;
+    }
+  }
+
+  // ── ② PDP Banner ───────────────────────────────────────────────────────────
+  function renderPdp(pdp, jsonBreakdown) {
+    const el = document.getElementById('pdpBanner');
+    if (!pdp || !pdp.is_pdp) {
+      el.classList.add('hidden');
+      return;
+    }
+    el.classList.remove('hidden');
+
+    const hasProduct = jsonBreakdown?.has_product;
+    const hasFaqPage = jsonBreakdown?.has_faqpage;
+
+    let warnings = '';
+    if (!hasProduct)
+      warnings += `<p class="flex items-center gap-1.5 text-red-600 text-sm font-semibold">
+        <span class="text-base">⚠️</span> Product 스키마 누락 — PDP 필수 항목입니다</p>`;
+    if (!hasFaqPage)
+      warnings += `<p class="flex items-center gap-1.5 text-red-600 text-sm font-semibold">
+        <span class="text-base">⚠️</span> FAQPage 스키마 누락 — PDP 필수 항목입니다</p>`;
+
+    el.innerHTML = `
+      <div class="bg-blue-50 border-2 border-blue-200 rounded-2xl p-5">
+        <div class="flex flex-wrap items-center gap-2 mb-2">
+          <span class="bg-blue-600 text-white text-xs font-bold px-2.5 py-0.5 rounded-full tracking-wide">PDP 감지</span>
+          <span class="text-blue-800 font-semibold text-sm">Product Detail Page (URL Pattern)</span>
+          <code class="text-xs bg-blue-100 border border-blue-200 text-blue-700 px-2 py-0.5 rounded ml-auto font-mono">
+            /${escHtml(pdp.pattern)}
+          </code>
+        </div>
+        ${warnings
+          ? `<div class="space-y-1 mt-2">${warnings}</div>`
+          : `<p class="text-emerald-700 text-sm font-medium flex items-center gap-1.5"><span>✅</span> Product · FAQPage 스키마 모두 확인됨</p>`
+        }
+      </div>`;
+  }
+
+  // ── ③ SEO Tags ─────────────────────────────────────────────────────────────
+  function renderSeoTags(seoTags) {
+    const passed = seoTags.passed ?? 0;
+    const total  = seoTags.total  ?? 10;
+    const pct    = Math.round(passed / total * 100);
+
+    setBadge('seoTagsBadge',
+      `${passed}/${total} 통과 (${passed * 2}/20점)`,
+      passed >= 8 ? 'bg-emerald-100 text-emerald-700'
+      : passed >= 5 ? 'bg-amber-100 text-amber-700'
+      : 'bg-red-100 text-red-700'
+    );
+
+    const el = document.getElementById('seoTagsList');
+    el.innerHTML = '';
+    for (const [, item] of Object.entries(seoTags.items || {})) {
+      el.innerHTML += `
+        <div class="flex items-start gap-2.5 p-3 rounded-xl border ${item.pass
+          ? 'bg-emerald-50 border-emerald-100'
+          : 'bg-red-50 border-red-100'}">
+          <span class="text-lg shrink-0 mt-0.5">${item.pass ? '✅' : '❌'}</span>
+          <div class="flex-1 min-w-0">
+            <p class="text-sm font-semibold ${item.pass ? 'text-emerald-800' : 'text-red-800'}">${item.label}</p>
+            ${item.value
+              ? `<p class="text-xs text-slate-500 mt-0.5 truncate" title="${escHtml(item.value)}">${escHtml(item.value)}</p>`
+              : ''}
+            ${item.hint
+              ? `<p class="text-xs text-red-500 mt-0.5">${escHtml(item.hint)}</p>`
+              : ''}
+          </div>
+          <span class="text-xs font-bold shrink-0 mt-0.5 ${item.pass ? 'text-emerald-600' : 'text-slate-300'}">
+            ${item.pass ? '2pt' : '0pt'}
+          </span>
+        </div>`;
+    }
+  }
+
+  // ── ④ JSON-LD (두 그룹) ────────────────────────────────────────────────────
+  function renderJsonLd(jsonld, bd) {
+    if (!bd) bd = {};
+    const total = (bd.required_score || 0) + (bd.supporting_score || 0);
+    setBadge('jsonldBadge',
+      `${total}/15점`,
+      total >= 13 ? 'bg-emerald-100 text-emerald-700'
+      : total >= 7  ? 'bg-amber-100 text-amber-700'
+      : 'bg-red-100 text-red-700'
+    );
+
+    // 핵심 필수 요건 (Product + FAQPage)
+    const reqEl = document.getElementById('jsonldRequired');
+    reqEl.innerHTML = '';
+    const required = [
+      { key: 'has_product', label: 'Product',  desc: 'PDP 필수 스키마' },
+      { key: 'has_faqpage', label: 'FAQPage',  desc: 'FAQ 스키마' },
+    ];
+    for (const item of required) {
+      const pass = bd[item.key] || false;
+      reqEl.innerHTML += schemaCheckItem(pass, item.label, item.desc, pass ? '획득' : '누락');
+    }
+
+    // 보조 신뢰도 요건 (BreadcrumbList or Organization)
+    const supEl = document.getElementById('jsonldSupporting');
+    supEl.innerHTML = '';
+    const supporting = [
+      { key: 'has_breadcrumb', label: 'BreadcrumbList', desc: '탐색 경로 스키마' },
+      { key: 'has_org',        label: 'Organization',   desc: '기관/브랜드 스키마' },
+    ];
+    for (const item of supporting) {
+      const pass = bd[item.key] || false;
+      supEl.innerHTML += schemaCheckItem(pass, item.label, item.desc, pass ? '획득' : '없음');
+    }
+
+    // 기타 발견된 스키마
+    const allTypes = bd.all_types || [];
+    const known = new Set(['Product','FAQPage','BreadcrumbList','Organization']);
+    const others = allTypes.filter(t => !known.has(t));
+
+    const foundEl = document.getElementById('jsonldFoundSchemas');
+    if (allTypes.length > 0) {
+      foundEl.innerHTML = `
+        <div class="mt-3 pt-3 border-t border-slate-100">
+          <p class="section-label mb-2">발견된 전체 스키마</p>
+          <div class="flex flex-wrap gap-1.5">
+            ${allTypes.map(t => {
+              const isCore = known.has(t);
+              return `<span class="text-xs px-2.5 py-1 rounded-lg font-semibold border ${
+                isCore ? 'bg-indigo-50 border-indigo-200 text-indigo-700'
+                       : 'bg-slate-50 border-slate-200 text-slate-600'
+              }">${escHtml(t)}</span>`;
+            }).join('')}
+          </div>
+        </div>`;
+    } else {
+      foundEl.innerHTML = `
+        <div class="mt-3 bg-amber-50 border border-amber-100 rounded-xl p-4 text-sm text-amber-800">
+          <strong>JSON-LD 스키마가 없습니다.</strong><br/>
+          Article, Organization, Product 등의 스키마를 추가하면 AI 이해도가 높아집니다.
+        </div>`;
+    }
+  }
+
+  function schemaCheckItem(pass, label, desc, status) {
+    return `
+      <div class="flex items-center gap-2.5 p-3 rounded-xl border ${
+        pass ? 'bg-emerald-50 border-emerald-100' : 'bg-red-50 border-red-100'}">
+        <span class="text-lg shrink-0">${pass ? '✅' : '❌'}</span>
+        <div class="min-w-0">
+          <p class="text-sm font-semibold ${pass ? 'text-emerald-800' : 'text-red-800'}">${label}</p>
+          <p class="text-xs text-slate-400">${desc}</p>
+        </div>
+        <span class="ml-auto text-xs font-bold ${pass ? 'text-emerald-600' : 'text-red-400'} shrink-0">${status}</span>
+      </div>`;
+  }
+
+  // ── ⑤ llms.txt ─────────────────────────────────────────────────────────────
+  function renderLlms(llms) {
+    const found = llms.status === 'found';
+    setCardIcon('llmsIcon',
+      found
+        ? '<svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>'
+        : '<svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>',
+      found ? 'bg-emerald-50' : 'bg-red-50'
+    );
+    setBadge('llmsBadge',
+      found ? `파일 있음 (+15점)` : '파일 없음 (0점)',
+      found ? 'bg-emerald-100 text-emerald-700' : 'bg-red-100 text-red-700'
+    );
+    const detail = document.getElementById('llmsDetail');
+    if (found) {
+      detail.innerHTML = `
+        <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-slate-500 text-xs">파일 크기:</span>
+            <span class="font-medium text-slate-700 text-xs">${llms.size_bytes} bytes</span>
+          </div>
+          <pre class="text-xs text-slate-600 whitespace-pre-wrap font-mono overflow-auto max-h-40">${escHtml(llms.content_preview)}</pre>
+        </div>`;
+    } else if (llms.status === 'error') {
+      detail.innerHTML = `<p class="text-red-500 text-sm">오류: ${escHtml(llms.error || '불명')}</p>`;
+    } else {
+      detail.innerHTML = `
+        <div class="bg-amber-50 border border-amber-100 rounded-xl p-4 text-sm text-amber-800">
+          <strong>/llms.txt 파일이 없습니다.</strong><br/>
+          이 파일을 추가하면 AI 모델이 사이트를 더 잘 이해할 수 있습니다.
+          <a href="https://llmstxt.org" target="_blank" class="underline ml-1">llmstxt.org 참고 →</a>
+        </div>`;
+    }
+  }
+
+  // ── ⑥ robots.txt ───────────────────────────────────────────────────────────
+  function renderRobots(robots) {
+    const found        = robots.status === 'found';
+    const bots         = robots.bots || {};
+    const blockedCount = Object.values(bots).filter(b => b.blocked).length;
+    const totalBots    = Object.keys(bots).length;
+    const allAllowed   = blockedCount === 0;
+
+    setCardIcon('robotsIcon',
+      allAllowed
+        ? '<svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>'
+        : '<svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 9v2m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>',
+      allAllowed ? 'bg-emerald-50' : 'bg-amber-50'
+    );
+
+    if (!found) {
+      setBadge('robotsBadge', 'robots.txt 없음 (전체 허용)', 'bg-slate-100 text-slate-500');
+    } else {
+      setBadge('robotsBadge',
+        `${blockedCount}개 차단 / ${totalBots}개 검사`,
+        allAllowed ? 'bg-emerald-100 text-emerald-700' : 'bg-amber-100 text-amber-700'
+      );
+    }
+
+    const grid = document.getElementById('botsGrid');
+    if (!found || totalBots === 0) {
+      grid.innerHTML = `<p class="text-slate-400 text-sm col-span-3">${found ? 'AI 봇 규칙 없음' : 'robots.txt 없음 — 모든 봇이 허용됩니다.'}</p>`;
+      return;
+    }
+    grid.innerHTML = '';
+    for (const [key, bot] of Object.entries(bots)) {
+      const isBlocked = bot.blocked;
+      grid.innerHTML += `
+        <div class="flex items-center gap-2 p-2.5 rounded-lg border ${isBlocked
+          ? 'bg-red-50 border-red-100' : 'bg-emerald-50 border-emerald-100'}"
+          title="${isBlocked ? (bot.rule || '차단됨') : '허용됨'}">
+          <span class="text-base">${isBlocked ? '🚫' : '✅'}</span>
+          <div class="min-w-0">
+            <p class="text-xs font-semibold ${isBlocked ? 'text-red-700' : 'text-emerald-700'} truncate">${escHtml(key)}</p>
+            <p class="text-xs text-slate-400 truncate">${escHtml(bot.name)}</p>
+          </div>
+        </div>`;
+    }
+  }
+
+  // ── ⑦ FAQ ─────────────────────────────────────────────────────────────────
+  function renderFaq(faq, bd) {
+    if (!bd) bd = {};
+    const total = bd.points || 0;
+    setBadge('faqBadge',
+      `${total}/15점`,
+      total >= 13 ? 'bg-emerald-100 text-emerald-700'
+      : total >= 7  ? 'bg-amber-100 text-amber-700'
+      : 'bg-red-100 text-red-700'
+    );
+
+    const el = document.getElementById('faqDetail');
+    const schema_pass = faq.has_faq_schema || false;
+    const html_pass   = faq.has_faq_html   || false;
+
+    el.innerHTML = `
+      <div class="flex items-center gap-2.5 p-3 rounded-xl border ${schema_pass
+        ? 'bg-emerald-50 border-emerald-100' : 'bg-red-50 border-red-100'}">
+        <span class="text-lg">${schema_pass ? '✅' : '❌'}</span>
+        <div class="flex-1">
+          <p class="text-sm font-semibold ${schema_pass ? 'text-emerald-800' : 'text-red-800'}">
+            FAQPage JSON-LD 스키마
+          </p>
+          <p class="text-xs text-slate-400">${schema_pass ? '스키마 감지됨' : '스키마 없음 — 8점 손실'}</p>
+        </div>
+        <span class="text-sm font-bold ${schema_pass ? 'text-emerald-600' : 'text-slate-300'}">${schema_pass ? '+8점' : '+0점'}</span>
+      </div>
+      <div class="flex items-center gap-2.5 p-3 rounded-xl border ${html_pass
+        ? 'bg-emerald-50 border-emerald-100' : 'bg-red-50 border-red-100'}">
+        <span class="text-lg">${html_pass ? '✅' : '❌'}</span>
+        <div class="flex-1">
+          <p class="text-sm font-semibold ${html_pass ? 'text-emerald-800' : 'text-red-800'}">
+            HTML FAQ 섹션
+          </p>
+          <p class="text-xs text-slate-400">${html_pass ? 'FAQ 섹션 감지됨' : 'FAQ 섹션 없음 — 7점 손실'}</p>
+        </div>
+        <span class="text-sm font-bold ${html_pass ? 'text-emerald-600' : 'text-slate-300'}">${html_pass ? '+7점' : '+0점'}</span>
+      </div>
+      ${!schema_pass || !html_pass ? `
+        <div class="bg-amber-50 border border-amber-100 rounded-xl p-3 text-xs text-amber-800">
+          💡 FAQPage 스키마와 HTML FAQ 섹션을 함께 추가하면 AI 답변 인용 가능성이 높아집니다.
+        </div>` : ''}`;
+  }
+
+  // ── ⑧ Summary Box ──────────────────────────────────────────────────────────
+  function renderSummaryBox(summary) {
+    const found  = summary.found  || false;
+    const method = summary.method || null;
+
+    setBadge('summaryBadge',
+      found ? '감지됨 (+10점)' : '없음 (0점)',
+      found ? 'bg-emerald-100 text-emerald-700' : 'bg-red-100 text-red-700'
+    );
+
+    const methodLabel = {
+      'class/id':      'class 또는 id 속성으로 감지',
+      'heading':       '요약 관련 제목(heading)으로 감지',
+      'html5-summary': '<details>/<summary> HTML5 태그로 감지',
+    };
+
+    document.getElementById('summaryDetail').innerHTML = found
+      ? `<div class="flex items-center gap-3 bg-emerald-50 border border-emerald-100 rounded-xl p-4">
+           <span class="text-2xl">✅</span>
+           <div>
+             <p class="text-sm font-semibold text-emerald-800">서머리 박스 감지됨 (+10점)</p>
+             <p class="text-xs text-emerald-600 mt-0.5">${methodLabel[method] || '감지됨'}</p>
+           </div>
+         </div>`
+      : `<div class="bg-amber-50 border border-amber-100 rounded-xl p-4 text-sm text-amber-800">
+           <strong>서머리 박스가 감지되지 않았습니다.</strong><br/>
+           <span class="text-xs mt-1 block">요약·핵심·TL;DR·highlight 등의 class/id/heading을 가진 섹션을 추가하세요. AI는 요약 영역을 답변에 직접 인용합니다.</span>
+         </div>`;
+  }
+
+  // ── ⑨ Heading Structure ────────────────────────────────────────────────────
+  function renderHeadings(h, bd) {
+    if (!h || h.status === 'error') {
+      setBadge('headingsBadge', '분석 불가', 'bg-slate-100 text-slate-500');
+      document.getElementById('headingsDetail').innerHTML =
+        '<p class="text-slate-400 text-sm">페이지를 불러오지 못했습니다.</p>';
+      return;
+    }
+    const pts = bd ? bd.points : 0;
+    setBadge('headingsBadge',
+      `${pts}/5점`,
+      pts >= 4 ? 'bg-emerald-100 text-emerald-700'
+      : pts >= 2 ? 'bg-amber-100 text-amber-700'
+      : 'bg-red-100 text-red-700'
+    );
+
+    const checks = [
+      {
+        pass:   h.has_single_h1,
+        pts:    2,
+        label:  'H1 고유성 — 정확히 1개',
+        detail: h.h1_count === 0 ? 'H1 태그가 없습니다'
+               : h.h1_count > 1  ? `H1이 ${h.h1_count}개 (중복)`
+               :                   `H1 1개 확인`,
+      },
+      {
+        pass:   h.has_multiple_h2,
+        pts:    2,
+        label:  'H2 복수 존재 — 2개 이상',
+        detail: h.h2_count === 0 ? 'H2 태그가 없습니다'
+               : h.h2_count === 1 ? 'H2가 1개 (2개 이상 권장)'
+               :                    `H2 ${h.h2_count}개 확인`,
+      },
+      {
+        pass:   h.logical_order,
+        pts:    1,
+        label:  '논리적 순서 — H1 → H2 → H3',
+        detail: h.logical_order ? '헤딩 계층 순서가 올바릅니다'
+                                : 'H1보다 하위 헤딩이 먼저 등장합니다',
+      },
+    ];
+
+    // 헤딩 카운트 요약
+    const countRow = [
+      ['H1', h.h1_count, 'text-violet-600'],
+      ['H2', h.h2_count, 'text-indigo-500'],
+      ['H3', h.h3_count, 'text-blue-400'],
+      ['H4', h.h4_count, 'text-slate-400'],
+    ].map(([tag, n, color]) => `
+      <div class="text-center px-3">
+        <p class="text-2xl font-extrabold ${color}">${n}</p>
+        <p class="text-xs text-slate-400 mt-0.5">${tag}</p>
+      </div>`).join('');
+
+    // H2 목록
+    const h2List = h.h2_texts && h.h2_texts.length
+      ? `<div class="mt-3">
+           <p class="section-label mb-1.5">H2 목록</p>
+           <div class="space-y-1">
+             ${h.h2_texts.map(t => `
+               <div class="flex items-center gap-2 text-xs text-slate-600 bg-violet-50 rounded-lg px-3 py-1.5 border border-violet-100">
+                 <span class="font-bold text-violet-400 shrink-0">H2</span>
+                 <span class="truncate">${escHtml(t)}</span>
+               </div>`).join('')}
+           </div>
+         </div>`
+      : '';
+
+    document.getElementById('headingsDetail').innerHTML = `
+      <div class="space-y-3">
+        <div class="flex border border-slate-100 rounded-xl divide-x divide-slate-100 bg-slate-50 py-3">
+          ${countRow}
+        </div>
+        <div class="space-y-2">
+          ${checks.map(c => `
+            <div class="flex items-center gap-3 p-3 rounded-xl border ${c.pass
+              ? 'bg-emerald-50 border-emerald-100'
+              : 'bg-red-50 border-red-100'}">
+              <span class="text-lg shrink-0">${c.pass ? '✅' : '❌'}</span>
+              <div class="flex-1">
+                <p class="text-sm font-semibold ${c.pass ? 'text-emerald-800' : 'text-red-800'}">${c.label}</p>
+                <p class="text-xs text-slate-400">${escHtml(c.detail)}</p>
+              </div>
+              <span class="text-sm font-bold shrink-0 ${c.pass ? 'text-emerald-600' : 'text-slate-300'}">+${c.pts}pt</span>
+            </div>`).join('')}
+        </div>
+        ${h2List}
+      </div>`;
+  }
+
+  // ── ⑩ Stats Density ────────────────────────────────────────────────────────
+  function renderStats(stats) {
+    if (stats.status === 'error') {
+      setBadge('statsBadge', '분석 불가', 'bg-slate-100 text-slate-500');
+      document.getElementById('statsDetail').innerHTML =
+        '<p class="text-slate-400 text-sm">페이지를 불러오지 못했습니다.</p>';
+      return;
+    }
+    const has   = stats.has_stats || false;
+    const ratio = stats.ratio     || 0;
+    setBadge('statsBadge',
+      has ? `있음 (+5점, ${ratio}%)` : '없음 (0점)',
+      has ? 'bg-emerald-100 text-emerald-700' : 'bg-red-100 text-red-700'
+    );
+    document.getElementById('statsDetail').innerHTML = has
+      ? `<div class="flex items-center gap-5 bg-emerald-50 border border-emerald-100 rounded-xl p-4">
+           <span class="text-2xl">✅</span>
+           <div>
+             <p class="text-sm font-semibold text-emerald-800">통계 데이터 존재 (+5점)</p>
+             <p class="text-xs text-emerald-600 mt-0.5">
+               전체 ${(stats.total_words||0).toLocaleString()}단어 중
+               ${(stats.stat_words||0).toLocaleString()}개(${ratio}%)가 숫자·단위를 포함합니다.
+             </p>
+           </div>
+         </div>`
+      : `<div class="bg-amber-50 border border-amber-100 rounded-xl p-4 text-sm text-amber-800">
+           <strong>본문에 숫자·통계 데이터가 없습니다.</strong><br/>
+           <span class="text-xs mt-1 block">퍼센트(%), 수치, 연구 결과 등을 포함하면 AI 신뢰도가 높아집니다.</span>
+         </div>`;
+  }
+
+  // ── Helpers ────────────────────────────────────────────────────────────────
+  function setCardIcon(id, svgHtml, bgClass) {
+    const el = document.getElementById(id);
+    el.innerHTML = svgHtml;
+    el.className = `w-10 h-10 rounded-xl flex items-center justify-center shrink-0 mt-0.5 ${bgClass}`;
+  }
+
+  function setBadge(id, text, colorClass) {
+    const el = document.getElementById(id);
+    el.textContent = text;
+    el.className   = `text-xs px-2 py-0.5 rounded-full font-medium ${colorClass}`;
+  }
+
+  function escHtml(str) {
+    return String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+</script>
+</body>
+</html>
