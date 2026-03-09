@@ -69,7 +69,7 @@
       <span class="gradient-text">AI에게 잘 읽히고 있나요?</span>
     </h1>
     <p class="text-slate-500 text-lg max-w-xl mx-auto">
-      URL을 입력하면 GPT, Gemini, Claude 등 AI 엔진 최적화 수준을 9개 항목, 110점 만점으로 즉시 분석합니다.
+      URL을 입력하면 GPT, Gemini, Claude 등 AI 엔진 최적화 수준을 9개 항목, 100점 만점으로 즉시 분석합니다.
     </p>
   </div>
 
@@ -120,7 +120,7 @@
         <div>
           <div class="flex items-baseline gap-1.5">
             <span id="scoreValue" class="text-5xl font-black text-slate-800">0</span>
-            <span class="text-xl text-slate-400 font-medium">/ 110</span>
+            <span class="text-xl text-slate-400 font-medium">/ 100</span>
           </div>
           <p id="gradeLabel" class="text-slate-500 text-sm mt-0.5"></p>
         </div>
@@ -134,7 +134,7 @@
       <div class="mb-6">
         <div class="h-5 bg-slate-100 rounded-full overflow-hidden">
           <div id="totalBar" class="progress-bar h-full rounded-full"
-            style="background: linear-gradient(90deg,#6366f1,#a855f7)"></div>
+            style="background: linear-gradient(90deg,#1d4ed8,#60a5fa)"></div>
         </div>
       </div>
 
@@ -230,9 +230,9 @@
           <div class="flex items-center gap-2 mb-1">
             <h2 class="font-bold text-slate-800 text-lg">robots.txt — AI 봇 접근</h2>
             <span id="robotsBadge" class="text-xs px-2 py-0.5 rounded-full font-medium"></span>
-            <span class="text-xs text-slate-400 ml-auto">최대 20점</span>
+            <span class="text-xs text-slate-400 ml-auto">최대 10점</span>
           </div>
-          <p class="text-slate-500 text-sm mb-4">주요 AI 크롤러 10종의 허용/차단 여부를 확인합니다.</p>
+          <p class="text-slate-500 text-sm mb-4">주요 AI 크롤러 10종의 허용/차단 여부를 확인합니다. 최대 10점</p>
           <div id="botsGrid" class="grid grid-cols-2 sm:grid-cols-3 gap-2"></div>
         </div>
       </div>
@@ -349,15 +349,15 @@
 <script>
   // ── Category metadata ──────────────────────────────────────────────────────
   const CATEGORY_META = {
-    seo_tags:          { label: '기본 SEO 태그',  color: '#3b82f6' },
-    robots_txt:        { label: 'robots.txt',     color: '#10b981' },
-    json_ld:           { label: 'JSON-LD',        color: '#6366f1' },
-    llms_txt:          { label: '/llms.txt',      color: '#a855f7' },
-    faq:               { label: 'FAQ 섹션',       color: '#f59e0b' },
-    summary_box:       { label: '서머리 박스',    color: '#f43f5e' },
-    heading_structure: { label: 'Heading 구조',   color: '#8b5cf6' },
-    stats_density:     { label: '통계 데이터',    color: '#f97316' },
-    reviews_ssr:       { label: '리뷰 SSR',       color: '#06b6d4' },
+    seo_tags:          { label: '기본 SEO 태그',  color: '#1d4ed8' },
+    robots_txt:        { label: 'robots.txt',     color: '#2563eb' },
+    json_ld:           { label: 'JSON-LD',        color: '#3b82f6' },
+    llms_txt:          { label: '/llms.txt',      color: '#60a5fa' },
+    faq:               { label: 'FAQ 섹션',       color: '#1e40af' },
+    summary_box:       { label: '서머리 박스',    color: '#2563eb' },
+    heading_structure: { label: 'Heading 구조',   color: '#3b82f6' },
+    stats_density:     { label: '통계 데이터',    color: '#60a5fa' },
+    reviews_ssr:       { label: '리뷰 SSR',       color: '#93c5fd' },
   };
 
   // ── Init ───────────────────────────────────────────────────────────────────
@@ -425,25 +425,23 @@
     document.getElementById('scoreValue').textContent = total;
 
     const colorMap = {
-      A: 'bg-emerald-100 text-emerald-700',
-      B: 'bg-blue-100 text-blue-700',
-      C: 'bg-amber-100 text-amber-700',
-      D: 'bg-red-100 text-red-700',
+      'Good':             'bg-emerald-100 text-emerald-700',
+      'Need Improvement': 'bg-amber-100 text-amber-700',
+      'Poor':             'bg-red-100 text-red-700',
     };
     const labelMap = {
-      A: '훌륭한 AI 최적화',
-      B: '양호한 AI 최적화',
-      C: '개선이 필요합니다',
-      D: 'AI 최적화 미흡',
+      'Good':             '훌륭한 AI 최적화',
+      'Need Improvement': '개선이 필요합니다',
+      'Poor':             'AI 최적화 미흡',
     };
-    document.getElementById('gradeTag').textContent = `등급 ${grade}`;
+    document.getElementById('gradeTag').textContent = grade;
     document.getElementById('gradeTag').className =
-      `text-3xl font-black px-5 py-1.5 rounded-xl shrink-0 ${colorMap[grade] || colorMap.D}`;
+      `text-2xl font-black px-5 py-1.5 rounded-xl shrink-0 ${colorMap[grade] || colorMap['Poor']}`;
     document.getElementById('gradeLabel').textContent = labelMap[grade] || '';
 
     // Total bar
     setTimeout(() => {
-      document.getElementById('totalBar').style.width = Math.round(total / 110 * 100) + '%';
+      document.getElementById('totalBar').style.width = Math.min(total, 100) + '%';
     }, 120);
 
     // Breakdown bars

@@ -583,15 +583,15 @@ def _calculate_score(robots: dict, llms: dict, jsonld: dict,
     score    += seo_score
     breakdown["seo_tags"] = {"points": seo_score, "max": 20, "passed": passed, "total": 10}
 
-    # 2. robots.txt AI 봇 허용 (20점)
+    # 2. robots.txt AI 봇 허용 (10점)
     bots = robots.get("bots", {})
     if bots:
         allowed   = sum(1 for b in bots.values() if not b["blocked"])
-        bot_score = round((allowed / len(bots)) * 20)
+        bot_score = round((allowed / len(bots)) * 10)
     else:
-        bot_score = 20
+        bot_score = 10
     score    += bot_score
-    breakdown["robots_txt"] = {"points": bot_score, "max": 20}
+    breakdown["robots_txt"] = {"points": bot_score, "max": 10}
 
     # 3. JSON-LD (15점): 필수(8점) + 보조(7점)
     all_types      = set(jsonld.get("all_types", []))
@@ -679,10 +679,9 @@ def _calculate_score(robots: dict, llms: dict, jsonld: dict,
     }
 
     grade = (
-        "A" if score >= 88 else   # 110점 기준 80%
-        "B" if score >= 66 else   # 110점 기준 60%
-        "C" if score >= 44 else   # 110점 기준 40%
-        "D"
+        "Good"             if score >= 90 else
+        "Need Improvement" if score >= 80 else
+        "Poor"
     )
 
-    return {"total": score, "max": 110, "grade": grade, "breakdown": breakdown}
+    return {"total": score, "max": 100, "grade": grade, "breakdown": breakdown}
