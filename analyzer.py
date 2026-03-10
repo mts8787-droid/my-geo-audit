@@ -49,10 +49,12 @@ async def analyze_url(url: str) -> dict:
     reviews   = _check_reviews_ssr(page_data)
     pdp       = _detect_pdp(url)
 
-    # SSR 글자수 계산 (공백 제외)
+    # SSR 글자수 계산 (script/style 제외, 공백 제외)
     ssr_chars = 0
     if page_data["status"] == "ok" and page_data["soup"]:
-        ssr_chars = len(re.sub(r'\s+', '', page_data["soup"].get_text()))
+        import copy
+        ssr_soup_copy = copy.copy(page_data["soup"])
+        ssr_chars = _visible_text(ssr_soup_copy)
 
     csr_ratio = _calc_csr_ratio(ssr_chars, csr_raw)
 
@@ -616,6 +618,13 @@ async def _ensure_chromium() -> bool:
     return False
 
 
+def _visible_text(soup: BeautifulSoup) -> int:
+    """script/style/noscript 제거 후 보이는 텍스트 글자수(공백 제외) 반환."""
+    for tag in soup(["script", "style", "noscript", "svg", "path"]):
+        tag.decompose()
+    return len(re.sub(r'\s+', '', soup.get_text()))
+
+
 async def _check_csr_chars(url: str) -> dict:
     """Playwright로 JS 실행 후 텍스트 글자수를 반환."""
     try:
@@ -639,21 +648,35 @@ async def _check_csr_chars(url: str) -> dict:
                     else:
                         raise
 
-                page = await browser.new_page(viewport={"width": 1280, "height": 720})
+                context = await browser.new_context(
+                    viewport={"width": 1280, "height": 720},
+                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                )
+                page = await context.new_page()
                 await page.goto(url, wait_until="networkidle", timeout=30000)
                 # JS 프레임워크 렌더링 완료 대기
-                await page.wait_for_load_state("domcontentloaded")
                 await page.wait_for_timeout(3000)
-                # body에 실제 콘텐츠가 렌더링될 때까지 대기
-                try:
-                    await page.wait_for_selector("body *:not(script):not(style):not(link)", timeout=5000)
-                except Exception:
-                    pass
-                content = await page.content()
+
+                # 메인 프레임 콘텐츠
+                main_html = await page.content()
+
+                # iframe 내부 콘텐츠도 수집
+                frame_texts = []
+                for frame in page.frames:
+                    if frame == page.main_frame:
+                        continue
+                    try:
+                        fc = await frame.content()
+                        fs = BeautifulSoup(fc, "html.parser")
+                        frame_texts.append(_visible_text(fs))
+                    except Exception:
+                        continue
+
+                await context.close()
                 await browser.close()
 
-            csr_soup  = BeautifulSoup(content, "html.parser")
-            csr_chars = len(re.sub(r'\s+', '', csr_soup.get_text()))
+            csr_soup  = BeautifulSoup(main_html, "html.parser")
+            csr_chars = _visible_text(csr_soup) + sum(frame_texts)
             return {"status": "ok", "csr_chars": csr_chars}
         except Exception as e:
             return {"status": "error", "error": str(e), "csr_chars": 0}
