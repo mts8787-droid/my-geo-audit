@@ -635,8 +635,16 @@ async def _check_csr_chars(url: str) -> dict:
     async with _playwright_sem:
         try:
             async with async_playwright() as p:
+                launch_args = [
+                    "--disable-blink-features=AutomationControlled",
+                    "--no-sandbox",
+                    "--disable-dev-shm-usage",
+                ]
                 try:
-                    browser = await p.chromium.launch(headless=True)
+                    browser = await p.chromium.launch(
+                        headless=True,
+                        args=launch_args,
+                    )
                 except Exception as launch_err:
                     if "Executable doesn't exist" in str(launch_err):
                         ok = await _ensure_chromium()
@@ -644,14 +652,33 @@ async def _check_csr_chars(url: str) -> dict:
                             return {"status": "error",
                                     "error": "Chromium 설치 실패 — Render 대시보드에서 Build Command를 확인하세요.",
                                     "csr_chars": 0}
-                        browser = await p.chromium.launch(headless=True)
+                        browser = await p.chromium.launch(
+                            headless=True,
+                            args=launch_args,
+                        )
                     else:
                         raise
 
                 context = await browser.new_context(
                     viewport={"width": 1280, "height": 720},
-                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+                    locale="en-US",
+                    timezone_id="Europe/London",
+                    extra_http_headers={
+                        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+                        "Accept-Language": "en-US,en;q=0.9",
+                        "Accept-Encoding": "gzip, deflate, br",
+                        "Sec-Fetch-Dest": "document",
+                        "Sec-Fetch-Mode": "navigate",
+                        "Sec-Fetch-Site": "none",
+                        "Sec-Fetch-User": "?1",
+                        "Upgrade-Insecure-Requests": "1",
+                    },
                 )
+                # navigator.webdriver 플래그 제거
+                await context.add_init_script("""
+                    Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+                """)
                 page = await context.new_page()
 
                 resp = await page.goto(url, wait_until="networkidle", timeout=30000)
