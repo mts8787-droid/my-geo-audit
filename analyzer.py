@@ -596,16 +596,24 @@ def _check_reviews_ssr(page_data: dict) -> dict:
 
 async def _ensure_chromium() -> bool:
     """Chromium 바이너리가 없으면 자동 설치. 성공 시 True."""
-    try:
-        proc = await asyncio.create_subprocess_exec(
-            "playwright", "install", "chromium", "--with-deps",
-            stdout=asyncio.subprocess.PIPE,
-            stderr=asyncio.subprocess.PIPE,
-        )
-        await asyncio.wait_for(proc.communicate(), timeout=120)
-        return proc.returncode == 0
-    except Exception:
-        return False
+    import sys
+    python = sys.executable or "python"
+    for cmd in [
+        [python, "-m", "playwright", "install", "chromium", "--with-deps"],
+        [python, "-m", "playwright", "install", "chromium"],
+    ]:
+        try:
+            proc = await asyncio.create_subprocess_exec(
+                *cmd,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE,
+            )
+            await asyncio.wait_for(proc.communicate(), timeout=180)
+            if proc.returncode == 0:
+                return True
+        except Exception:
+            continue
+    return False
 
 
 async def _check_csr_chars(url: str) -> dict:
