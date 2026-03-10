@@ -594,6 +594,20 @@ def _check_reviews_ssr(page_data: dict) -> dict:
 
 # ── CSR Ratio ─────────────────────────────────────────────────────────────────
 
+async def _ensure_chromium() -> bool:
+    """Chromium 바이너리가 없으면 자동 설치. 성공 시 True."""
+    try:
+        proc = await asyncio.create_subprocess_exec(
+            "playwright", "install", "chromium", "--with-deps",
+            stdout=asyncio.subprocess.PIPE,
+            stderr=asyncio.subprocess.PIPE,
+        )
+        await asyncio.wait_for(proc.communicate(), timeout=120)
+        return proc.returncode == 0
+    except Exception:
+        return False
+
+
 async def _check_csr_chars(url: str) -> dict:
     """Playwright로 JS 실행 후 텍스트 글자수를 반환."""
     try:
@@ -604,8 +618,20 @@ async def _check_csr_chars(url: str) -> dict:
     async with _playwright_sem:
         try:
             async with async_playwright() as p:
-                browser = await p.chromium.launch(headless=True)
-                page    = await browser.new_page()
+                try:
+                    browser = await p.chromium.launch(headless=True)
+                except Exception as launch_err:
+                    if "Executable doesn't exist" in str(launch_err):
+                        ok = await _ensure_chromium()
+                        if not ok:
+                            return {"status": "error",
+                                    "error": "Chromium 설치 실패 — Render 대시보드에서 Build Command를 확인하세요.",
+                                    "csr_chars": 0}
+                        browser = await p.chromium.launch(headless=True)
+                    else:
+                        raise
+
+                page = await browser.new_page()
                 await page.goto(url, wait_until="networkidle", timeout=20000)
                 content = await page.content()
                 await browser.close()
