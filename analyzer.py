@@ -5,6 +5,9 @@ from bs4 import BeautifulSoup
 import json
 from urllib.parse import urlparse
 
+# Playwright 동시 실행 제한 (메모리 보호)
+_playwright_sem = asyncio.Semaphore(5)
+
 AI_BOTS = {
     "GPTBot":          "OpenAI GPT",
     "ChatGPT-User":    "ChatGPT",
@@ -30,10 +33,11 @@ def _normalize_url(url: str) -> tuple[str, str]:
 async def analyze_url(url: str) -> dict:
     url, base_url = _normalize_url(url)
 
-    robots, llms, page_data = await asyncio.gather(
+    robots, llms, page_data, csr_raw = await asyncio.gather(
         _check_robots_txt(base_url),
         _check_llms_txt(base_url),
         _fetch_page(url),
+        _check_csr_chars(url),
     )
 
     seo_tags  = _check_seo_tags(page_data)
@@ -44,8 +48,16 @@ async def analyze_url(url: str) -> dict:
     headings  = _check_heading_structure(page_data)
     reviews   = _check_reviews_ssr(page_data)
     pdp       = _detect_pdp(url)
-    score     = _calculate_score(
-        robots, llms, jsonld, seo_tags, faq, summary, stats, headings, reviews
+
+    # SSR 글자수 계산 (공백 제외)
+    ssr_chars = 0
+    if page_data["status"] == "ok" and page_data["soup"]:
+        ssr_chars = len(re.sub(r'\s+', '', page_data["soup"].get_text()))
+
+    csr_ratio = _calc_csr_ratio(ssr_chars, csr_raw)
+
+    score = _calculate_score(
+        robots, llms, jsonld, seo_tags, faq, summary, stats, headings, reviews, csr_ratio
     )
 
     return {
@@ -61,6 +73,7 @@ async def analyze_url(url: str) -> dict:
         "stats_density":     stats,
         "heading_structure": headings,
         "reviews_ssr":       reviews,
+        "csr_ratio":         csr_ratio,
         "score":             score,
     }
 
@@ -562,6 +575,57 @@ def _check_reviews_ssr(page_data: dict) -> dict:
     }
 
 
+# ── CSR Ratio ─────────────────────────────────────────────────────────────────
+
+async def _check_csr_chars(url: str) -> dict:
+    """Playwright로 JS 실행 후 텍스트 글자수를 반환."""
+    try:
+        from playwright.async_api import async_playwright
+    except ImportError:
+        return {"status": "unavailable", "csr_chars": 0}
+
+    async with _playwright_sem:
+        try:
+            async with async_playwright() as p:
+                browser = await p.chromium.launch(headless=True)
+                page    = await browser.new_page()
+                await page.goto(url, wait_until="networkidle", timeout=20000)
+                content = await page.content()
+                await browser.close()
+
+            csr_soup  = BeautifulSoup(content, "html.parser")
+            csr_chars = len(re.sub(r'\s+', '', csr_soup.get_text()))
+            return {"status": "ok", "csr_chars": csr_chars}
+        except Exception as e:
+            return {"status": "error", "error": str(e), "csr_chars": 0}
+
+
+def _calc_csr_ratio(ssr_chars: int, csr_raw: dict) -> dict:
+    """SSR 글자수와 CSR 글자수를 비교하여 비율과 상태를 반환."""
+    status    = csr_raw.get("status", "unavailable")
+    csr_chars = csr_raw.get("csr_chars", 0)
+    error     = csr_raw.get("error")
+
+    if status != "ok" or csr_chars == 0:
+        return {
+            "status":    status,
+            "ssr_chars": ssr_chars,
+            "csr_chars": csr_chars,
+            "ratio":     None,
+            "error":     error,
+        }
+
+    ratio = round(ssr_chars / csr_chars, 3) if csr_chars > 0 else 1.0
+    ratio = min(ratio, 1.0)  # CSR는 항상 SSR 이상
+    return {
+        "status":    "ok",
+        "ssr_chars": ssr_chars,
+        "csr_chars": csr_chars,
+        "ratio":     ratio,
+        "error":     None,
+    }
+
+
 # ── PDP Detection ─────────────────────────────────────────────────────────────
 
 def _detect_pdp(url: str) -> dict:
@@ -581,7 +645,8 @@ def _detect_pdp(url: str) -> dict:
 
 def _calculate_score(robots: dict, llms: dict, jsonld: dict,
                      seo_tags: dict, faq: dict, summary: dict,
-                     stats: dict, headings: dict, reviews: dict) -> dict:
+                     stats: dict, headings: dict, reviews: dict,
+                     csr_ratio: dict) -> dict:
     score     = 0
     breakdown = {}
 
@@ -687,10 +752,38 @@ def _calculate_score(robots: dict, llms: dict, jsonld: dict,
         "has_content": reviews.get("has_content", False),
     }
 
+    # 10. CSR 비중 (10점): SSR 글자수 / CSR 글자수 비율
+    ratio = csr_ratio.get("ratio")
+    if ratio is None:
+        csr_score = 0
+        csr_tier  = "unavailable"
+    elif ratio >= 0.8:
+        csr_score = 10
+        csr_tier  = "excellent"
+    elif ratio >= 0.5:
+        csr_score = 7
+        csr_tier  = "good"
+    elif ratio >= 0.3:
+        csr_score = 4
+        csr_tier  = "partial"
+    else:
+        csr_score = 0
+        csr_tier  = "poor"
+    score += csr_score
+    breakdown["csr_ratio"] = {
+        "points":    csr_score,
+        "max":       10,
+        "ratio":     ratio,
+        "tier":      csr_tier,
+        "ssr_chars": csr_ratio.get("ssr_chars", 0),
+        "csr_chars": csr_ratio.get("csr_chars", 0),
+        "status":    csr_ratio.get("status", "unavailable"),
+    }
+
     grade = (
-        "Good"             if score >= 90 else
-        "Need Improvement" if score >= 80 else
+        "Good"             if score >= 99 else
+        "Need Improvement" if score >= 77 else
         "Poor"
     )
 
-    return {"total": score, "max": 100, "grade": grade, "breakdown": breakdown}
+    return {"total": score, "max": 110, "grade": grade, "breakdown": breakdown}

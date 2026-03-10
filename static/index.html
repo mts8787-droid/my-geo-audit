@@ -166,7 +166,7 @@
           <p class="section-label mb-1">전체 평균 GEO 점수</p>
           <div class="flex items-baseline gap-2">
             <span id="bulkAvgScore" class="text-5xl font-black text-slate-800">0</span>
-            <span class="text-xl text-slate-400 font-medium">/ 100</span>
+            <span class="text-xl text-slate-400 font-medium">/ 110</span>
             <span id="bulkAvgGrade" class="text-sm font-bold px-3 py-1 rounded-lg ml-2"></span>
           </div>
         </div>
@@ -204,6 +204,7 @@
               <th class="px-4 py-3 font-semibold text-slate-600 text-center w-20">JSON-LD</th>
               <th class="px-4 py-3 font-semibold text-slate-600 text-center w-20">llms.txt</th>
               <th class="px-4 py-3 font-semibold text-slate-600 text-center w-20">FAQ</th>
+              <th class="px-4 py-3 font-semibold text-slate-600 text-center w-20">SSR/CSR</th>
               <th class="px-4 py-3 font-semibold text-slate-600 w-24">상세</th>
             </tr>
           </thead>
@@ -224,7 +225,7 @@
         <div>
           <div class="flex items-baseline gap-1.5">
             <span id="scoreValue" class="text-5xl font-black text-slate-800">0</span>
-            <span class="text-xl text-slate-400 font-medium">/ 100</span>
+            <span class="text-xl text-slate-400 font-medium">/ 110</span>
           </div>
           <p id="gradeLabel" class="text-slate-500 text-sm mt-0.5"></p>
         </div>
@@ -446,6 +447,27 @@
       </div>
     </div>
 
+    <!-- ⑫ CSR Ratio -->
+    <div id="csrCard" class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6 fade-up fade-up-9 opacity-0">
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center shrink-0 mt-0.5">
+          <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+        </div>
+        <div class="flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <h2 class="font-bold text-slate-800 text-lg">SSR / CSR 렌더링 비중</h2>
+            <span id="csrBadge" class="text-xs px-2 py-0.5 rounded-full font-medium"></span>
+            <span class="text-xs text-slate-400 ml-auto">최대 10점</span>
+          </div>
+          <p class="text-slate-500 text-sm mb-3">서버 렌더링 글자수 ÷ JS 실행 후 글자수. 비율이 높을수록 AI가 JS 없이도 콘텐츠를 읽을 수 있습니다.</p>
+          <div id="csrDetail"></div>
+        </div>
+      </div>
+    </div>
+
   </div><!-- /results -->
 </main>
 
@@ -461,6 +483,7 @@
     heading_structure: { label: 'Heading 구조',   color: '#22c55e' },
     stats_density:     { label: '통계 데이터',    color: '#4ade80' },
     reviews_ssr:       { label: '리뷰 SSR',       color: '#86efac' },
+    csr_ratio:         { label: 'SSR/CSR 비중',   color: '#6366f1' },
   };
 
   // ── Init ───────────────────────────────────────────────────────────────────
@@ -662,6 +685,7 @@
           ${cell(bd.json_ld?.points ?? 0, bd.json_ld?.max ?? 15)}
           ${cell(bd.llms_txt?.points ?? 0, bd.llms_txt?.max ?? 15)}
           ${cell(bd.faq?.points ?? 0, bd.faq?.max ?? 15)}
+          ${cell(bd.csr_ratio?.points ?? 0, bd.csr_ratio?.max ?? 10)}
           <td class="px-4 py-3">
             <button onclick="showSingleFromBulk(${idx})"
               class="text-xs text-indigo-600 hover:text-indigo-800 font-semibold">상세 보기</button>
@@ -683,16 +707,17 @@
 
   function exportBulkCSV() {
     if (!bulkData.length) return;
-    const header = ['#', 'URL', '점수', '등급', 'SEO', 'robots.txt', 'JSON-LD', 'llms.txt', 'FAQ', '오류'];
+    const header = ['#', 'URL', '점수', '등급', 'SEO', 'robots.txt', 'JSON-LD', 'llms.txt', 'FAQ', 'SSR/CSR', 'SSR비중(%)', '오류'];
     const rows = bulkData.map((item, i) => {
-      if (item.error) return [i + 1, item.url, '', '', '', '', '', '', '', item.error];
+      if (item.error) return [i + 1, item.url, '', '', '', '', '', '', '', '', '', item.error];
       const bd = item.result.score.breakdown;
+      const ratio = bd.csr_ratio?.ratio != null ? Math.round(bd.csr_ratio.ratio * 100) : '';
       return [
         i + 1, item.url,
         item.result.score.total, item.result.score.grade,
         bd.seo_tags?.points ?? '', bd.robots_txt?.points ?? '',
         bd.json_ld?.points ?? '', bd.llms_txt?.points ?? '',
-        bd.faq?.points ?? '', ''
+        bd.faq?.points ?? '', bd.csr_ratio?.points ?? '', ratio, ''
       ];
     });
     const csv = [header, ...rows].map(r => r.map(v => `"${String(v).replace(/"/g, '""')}"`).join(',')).join('\n');
@@ -721,6 +746,7 @@
     renderHeadings(data.heading_structure, data.score.breakdown.heading_structure);
     renderStats(data.stats_density);
     renderReviews(data.reviews_ssr, data.score.breakdown.reviews_ssr);
+    renderCsrRatio(data.csr_ratio, data.score.breakdown.csr_ratio);
     document.getElementById('results').classList.remove('hidden');
   }
 
@@ -1282,6 +1308,103 @@
            <strong>#reviews_container 요소가 감지되지 않았습니다.</strong><br/>
            <span class="text-xs mt-1 block">서버사이드 렌더링으로 <code class="bg-amber-100 px-1 rounded">id="reviews_container"</code> 요소를 포함하면 AI가 리뷰 데이터를 직접 읽을 수 있습니다.</span>
          </div>`;
+  }
+
+  // ── ⑫ CSR Ratio ────────────────────────────────────────────────────────────
+  function renderCsrRatio(csr, bd) {
+    if (!bd) bd = {};
+    const status = csr?.status || 'unavailable';
+    const ratio  = csr?.ratio  ?? null;
+    const pts    = bd.points   ?? 0;
+
+    const tierLabel = {
+      excellent:   { text: '우수 — 대부분 SSR',     cls: 'bg-emerald-100 text-emerald-700' },
+      good:        { text: '양호 — 절반 이상 SSR',   cls: 'bg-teal-100 text-teal-700' },
+      partial:     { text: '부분 — JS 의존 다수',    cls: 'bg-amber-100 text-amber-700' },
+      poor:        { text: '미흡 — JS 의존 심각',    cls: 'bg-red-100 text-red-700' },
+      unavailable: { text: 'Playwright 미설치',      cls: 'bg-slate-100 text-slate-500' },
+      error:       { text: '분석 오류',              cls: 'bg-red-100 text-red-500' },
+    };
+    const tier = bd.tier || (ratio === null ? 'unavailable' : 'poor');
+    const tl   = tierLabel[tier] || tierLabel.unavailable;
+
+    setBadge('csrBadge', `${pts}/10점  ${tl.text}`, tl.cls);
+
+    const el = document.getElementById('csrDetail');
+
+    if (status === 'unavailable') {
+      el.innerHTML = `
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 text-sm text-slate-600">
+          <strong>Playwright가 설치되어 있지 않습니다.</strong><br/>
+          <span class="text-xs mt-1 block">서버에 <code class="bg-slate-100 px-1 rounded">playwright install chromium</code>을 실행하면 CSR 비중 분석이 활성화됩니다.</span>
+        </div>`;
+      return;
+    }
+
+    if (status === 'error') {
+      el.innerHTML = `
+        <div class="bg-red-50 border border-red-100 rounded-xl p-4 text-sm text-red-700">
+          <strong>CSR 분석 오류:</strong> ${escHtml(csr?.error || '알 수 없는 오류')}
+        </div>`;
+      return;
+    }
+
+    const ssrChars = (csr?.ssr_chars || 0).toLocaleString();
+    const csrChars = (csr?.csr_chars || 0).toLocaleString();
+    const pct      = ratio !== null ? Math.round(ratio * 100) : 0;
+    const barColor = tier === 'excellent' ? '#15803d'
+                   : tier === 'good'      ? '#0d9488'
+                   : tier === 'partial'   ? '#b45309'
+                   :                        '#b91c1c';
+    const barId = 'csrRatioBar';
+
+    el.innerHTML = `
+      <div class="space-y-4">
+        <!-- 글자수 비교 -->
+        <div class="grid grid-cols-2 gap-3">
+          <div class="bg-blue-50 border border-blue-100 rounded-xl p-4 text-center">
+            <p class="section-label mb-1">SSR 글자수</p>
+            <p class="text-2xl font-extrabold text-blue-700">${ssrChars}</p>
+            <p class="text-xs text-blue-500 mt-0.5">서버 렌더링 텍스트</p>
+          </div>
+          <div class="bg-indigo-50 border border-indigo-100 rounded-xl p-4 text-center">
+            <p class="section-label mb-1">CSR 글자수</p>
+            <p class="text-2xl font-extrabold text-indigo-700">${csrChars}</p>
+            <p class="text-xs text-indigo-500 mt-0.5">JS 실행 후 텍스트</p>
+          </div>
+        </div>
+        <!-- 비율 바 -->
+        <div>
+          <div class="flex items-center justify-between mb-1.5">
+            <span class="text-sm font-semibold text-slate-700">SSR 비중</span>
+            <span class="text-lg font-extrabold" style="color:${barColor}">${pct}%</span>
+          </div>
+          <div class="h-4 bg-slate-100 rounded-full overflow-hidden">
+            <div id="${barId}" class="progress-bar h-full rounded-full" style="background:${barColor}"></div>
+          </div>
+          <div class="flex justify-between text-xs text-slate-400 mt-1">
+            <span>0% (완전 CSR)</span><span>100% (완전 SSR)</span>
+          </div>
+        </div>
+        <!-- 등급 안내 -->
+        <div class="grid grid-cols-4 gap-2 text-center text-xs">
+          ${[['≥80%','10점','우수','bg-emerald-50 border-emerald-200 text-emerald-700'],
+             ['≥50%','7점','양호','bg-teal-50 border-teal-200 text-teal-700'],
+             ['≥30%','4점','부분','bg-amber-50 border-amber-200 text-amber-700'],
+             ['<30%','0점','미흡','bg-red-50 border-red-200 text-red-700']]
+            .map(([range,score,label,cls]) => `
+              <div class="border rounded-lg py-2 px-1 ${cls}">
+                <p class="font-bold">${range}</p>
+                <p class="font-extrabold text-sm">${score}</p>
+                <p>${label}</p>
+              </div>`).join('')}
+        </div>
+      </div>`;
+
+    setTimeout(() => {
+      const b = document.getElementById(barId);
+      if (b) b.style.width = pct + '%';
+    }, 150);
   }
 
   // ── Helpers ────────────────────────────────────────────────────────────────
