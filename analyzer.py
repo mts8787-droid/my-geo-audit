@@ -685,6 +685,28 @@ async def _check_csr_chars(url: str) -> dict:
                 final_url = page.url
                 http_status = resp.status if resp else None
 
+                # 봇 차단 감지 (403/406 + Access Denied 패턴)
+                if http_status and http_status in (403, 406):
+                    quick_text = await page.inner_text("body")
+                    await context.close()
+                    await browser.close()
+                    is_bot_block = any(kw in quick_text.lower() for kw in
+                                       ["access denied", "robot", "captcha", "blocked",
+                                        "not allowed", "permission"])
+                    return {
+                        "status": "blocked",
+                        "csr_chars": 0,
+                        "error": f"사이트가 헤드리스 브라우저를 차단합니다 (HTTP {http_status})"
+                                 if is_bot_block else
+                                 f"HTTP {http_status} 응답",
+                        "debug": {
+                            "final_url": final_url,
+                            "http_status": http_status,
+                            "page_title": await page.title() if False else quick_text[:100],
+                            "text_preview": quick_text[:300],
+                        },
+                    }
+
                 # JS 프레임워크 렌더링 완료 대기
                 await page.wait_for_timeout(3000)
 
@@ -713,10 +735,6 @@ async def _check_csr_chars(url: str) -> dict:
             iframe_chars = sum(frame_texts)
             csr_chars = main_chars + iframe_chars
 
-            # 디버그: HTML 앞부분 미리보기
-            raw_text = re.sub(r'\s+', ' ', BeautifulSoup(main_html, "html.parser").get_text()).strip()
-            preview = raw_text[:300] if raw_text else "(empty)"
-
             return {
                 "status": "ok",
                 "csr_chars": csr_chars,
@@ -728,7 +746,6 @@ async def _check_csr_chars(url: str) -> dict:
                     "iframe_count": frame_count,
                     "iframe_chars": iframe_chars,
                     "html_length": len(main_html),
-                    "text_preview": preview,
                 },
             }
         except Exception as e:
@@ -891,8 +908,13 @@ def _calculate_score(robots: dict, llms: dict, jsonld: dict,
     }
 
     # 10. CSR 비중 (10점): SSR 글자수 / CSR 글자수 비율
+    csr_status = csr_ratio.get("status", "unavailable")
     ratio = csr_ratio.get("ratio")
-    if ratio is None:
+    if csr_status == "blocked":
+        # 봇 차단 시 페널티 없이 측정불가 처리
+        csr_score = 0
+        csr_tier  = "blocked"
+    elif ratio is None:
         csr_score = 0
         csr_tier  = "unavailable"
     elif ratio >= 0.8:
