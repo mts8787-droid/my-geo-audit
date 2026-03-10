@@ -73,8 +73,20 @@
     </p>
   </div>
 
-  <!-- Input -->
-  <div class="bg-white rounded-2xl shadow-lg border border-slate-100 p-6 mb-10">
+  <!-- Mode Tabs -->
+  <div class="flex gap-1 bg-slate-100 p-1 rounded-xl mb-4 max-w-xs mx-auto">
+    <button id="tabSingle" onclick="switchTab('single')"
+      class="flex-1 py-2 text-sm font-semibold rounded-lg transition-all bg-white text-indigo-700 shadow-sm">
+      단일 URL
+    </button>
+    <button id="tabBulk" onclick="switchTab('bulk')"
+      class="flex-1 py-2 text-sm font-semibold rounded-lg transition-all text-slate-500 hover:text-slate-700">
+      다중 URL
+    </button>
+  </div>
+
+  <!-- Input: Single -->
+  <div id="inputSingle" class="bg-white rounded-2xl shadow-lg border border-slate-100 p-6 mb-10">
     <div class="flex gap-3">
       <div class="flex-1 relative">
         <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
@@ -97,16 +109,89 @@
     <p class="text-xs text-slate-400 mt-3 ml-1">예시: lg.com, anthropic.com, openai.com, github.com</p>
   </div>
 
+  <!-- Input: Bulk -->
+  <div id="inputBulk" class="hidden bg-white rounded-2xl shadow-lg border border-slate-100 p-6 mb-10">
+    <label class="block text-sm font-semibold text-slate-700 mb-2">URL 목록 <span class="text-slate-400 font-normal">(한 줄에 하나씩, 최대 50개)</span></label>
+    <textarea id="urlsInput" rows="8" placeholder="https://example.com/product/123&#10;https://example.com/product/456&#10;https://other-site.com/page"
+      class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent text-slate-700 placeholder-slate-300 text-sm font-mono resize-y"></textarea>
+    <div class="flex items-center justify-between mt-3">
+      <p class="text-xs text-slate-400">URL이 없으면 https:// 를 자동으로 추가합니다.</p>
+      <button id="analyzeBulkBtn" onclick="startBulkAnalysis()"
+        class="px-6 py-2.5 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-xl hover:opacity-90 transition-opacity flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
+        </svg>
+        일괄 분석
+      </button>
+    </div>
+  </div>
+
   <!-- Loading -->
   <div id="loading" class="hidden text-center py-16">
     <div class="spinner mx-auto mb-4"></div>
-    <p class="text-slate-500 font-medium">AI 최적화 상태를 분석 중입니다…</p>
+    <p id="loadingMsg" class="text-slate-500 font-medium">AI 최적화 상태를 분석 중입니다…</p>
     <p class="text-slate-400 text-sm mt-1">SEO 태그 · robots.txt · JSON-LD · llms.txt · FAQ · 요약 영역 확인 중</p>
   </div>
 
   <!-- Error -->
   <div id="errorBox" class="hidden bg-red-50 border border-red-200 rounded-2xl p-5 text-red-700 mb-6">
     <strong class="font-semibold">오류:</strong> <span id="errorMsg"></span>
+  </div>
+
+  <!-- Bulk Results -->
+  <div id="bulkResults" class="hidden space-y-5">
+    <!-- Average Card -->
+    <div class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6 fade-up fade-up-1 opacity-0">
+      <div class="flex items-center justify-between mb-4">
+        <div>
+          <p class="section-label mb-1">전체 평균 GEO 점수</p>
+          <div class="flex items-baseline gap-2">
+            <span id="bulkAvgScore" class="text-5xl font-black text-slate-800">0</span>
+            <span class="text-xl text-slate-400 font-medium">/ 100</span>
+            <span id="bulkAvgGrade" class="text-sm font-bold px-3 py-1 rounded-lg ml-2"></span>
+          </div>
+        </div>
+        <div class="text-right">
+          <p class="section-label mb-1">분석 결과</p>
+          <p id="bulkSummaryText" class="text-sm text-slate-500"></p>
+        </div>
+      </div>
+      <div class="h-4 bg-slate-100 rounded-full overflow-hidden">
+        <div id="bulkAvgBar" class="progress-bar h-full rounded-full"></div>
+      </div>
+    </div>
+
+    <!-- URL Table -->
+    <div class="card bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden">
+      <div class="px-6 py-4 border-b border-slate-100 flex items-center justify-between">
+        <h2 class="font-bold text-slate-800">페이지별 분석 결과</h2>
+        <button onclick="exportBulkCSV()" class="text-xs text-indigo-600 hover:text-indigo-800 font-semibold flex items-center gap-1">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+          CSV 내보내기
+        </button>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-slate-50 text-left">
+              <th class="px-4 py-3 font-semibold text-slate-600 w-8">#</th>
+              <th class="px-4 py-3 font-semibold text-slate-600">URL</th>
+              <th class="px-4 py-3 font-semibold text-slate-600 text-center w-20">점수</th>
+              <th class="px-4 py-3 font-semibold text-slate-600 text-center w-24">등급</th>
+              <th class="px-4 py-3 font-semibold text-slate-600 text-center w-20">SEO</th>
+              <th class="px-4 py-3 font-semibold text-slate-600 text-center w-20">robots</th>
+              <th class="px-4 py-3 font-semibold text-slate-600 text-center w-20">JSON-LD</th>
+              <th class="px-4 py-3 font-semibold text-slate-600 text-center w-20">llms.txt</th>
+              <th class="px-4 py-3 font-semibold text-slate-600 text-center w-20">FAQ</th>
+              <th class="px-4 py-3 font-semibold text-slate-600 w-24">상세</th>
+            </tr>
+          </thead>
+          <tbody id="bulkTableBody" class="divide-y divide-slate-100"></tbody>
+        </table>
+      </div>
+    </div>
   </div>
 
   <!-- Results -->
@@ -360,14 +445,27 @@
   };
 
   // ── Init ───────────────────────────────────────────────────────────────────
+  let currentTab = 'single';
+  let bulkData = [];
+
   document.getElementById('urlInput').addEventListener('keydown', e => {
     if (e.key === 'Enter') startAnalysis();
   });
 
+  function switchTab(tab) {
+    currentTab = tab;
+    const isSingle = tab === 'single';
+    document.getElementById('inputSingle').classList.toggle('hidden', !isSingle);
+    document.getElementById('inputBulk').classList.toggle('hidden', isSingle);
+    document.getElementById('tabSingle').className = `flex-1 py-2 text-sm font-semibold rounded-lg transition-all ${isSingle ? 'bg-white text-indigo-700 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`;
+    document.getElementById('tabBulk').className = `flex-1 py-2 text-sm font-semibold rounded-lg transition-all ${!isSingle ? 'bg-white text-indigo-700 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`;
+    clearResults();
+  }
+
   async function startAnalysis() {
     const url = document.getElementById('urlInput').value.trim();
     if (!url) { document.getElementById('urlInput').focus(); return; }
-    setLoading(true);
+    setLoading(true, '분석 중입니다…');
     clearResults();
     try {
       const res  = await fetch('/analyze', {
@@ -385,16 +483,158 @@
     }
   }
 
-  function setLoading(on) {
+  async function startBulkAnalysis() {
+    const raw = document.getElementById('urlsInput').value.trim();
+    if (!raw) { document.getElementById('urlsInput').focus(); return; }
+    const urls = raw.split('\n')
+      .map(u => u.trim())
+      .filter(Boolean)
+      .map(u => /^https?:\/\//i.test(u) ? u : 'https://' + u);
+
+    if (urls.length === 0) { showError('URL을 하나 이상 입력해주세요.'); return; }
+    if (urls.length > 50) { showError('최대 50개 URL까지 분석할 수 있습니다.'); return; }
+
+    setBulkLoading(true, `${urls.length}개 URL 분석 중…`);
+    clearResults();
+    try {
+      const res = await fetch('/analyze-bulk', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ urls }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.detail || '분석 실패');
+      bulkData = data.items;
+      renderBulkResults(data);
+    } catch (err) {
+      showError(err.message);
+    } finally {
+      setBulkLoading(false);
+    }
+  }
+
+  function setLoading(on, msg) {
     document.getElementById('loading').classList.toggle('hidden', !on);
+    if (msg) document.getElementById('loadingMsg').textContent = msg;
     const btn = document.getElementById('analyzeBtn');
+    btn.disabled = on;
+    btn.style.opacity = on ? '0.6' : '';
+  }
+
+  function setBulkLoading(on, msg) {
+    document.getElementById('loading').classList.toggle('hidden', !on);
+    if (msg) document.getElementById('loadingMsg').textContent = msg;
+    const btn = document.getElementById('analyzeBulkBtn');
     btn.disabled = on;
     btn.style.opacity = on ? '0.6' : '';
   }
 
   function clearResults() {
     document.getElementById('results').classList.add('hidden');
+    document.getElementById('bulkResults').classList.add('hidden');
     document.getElementById('errorBox').classList.add('hidden');
+  }
+
+  // ── Bulk Render ─────────────────────────────────────────────────────────────
+  function renderBulkResults(data) {
+    const { items, average, total, success } = data;
+
+    // Average card
+    const avg = parseFloat(average);
+    const grade = avg >= 70 ? 'Good' : avg >= 40 ? 'Need Improvement' : 'Poor';
+    const gradeColor = { Good: 'bg-emerald-100 text-emerald-700', 'Need Improvement': 'bg-amber-100 text-amber-700', Poor: 'bg-red-100 text-red-700' };
+    const barGrad = { Good: 'linear-gradient(90deg,#15803d,#4ade80)', 'Need Improvement': 'linear-gradient(90deg,#b45309,#fbbf24)', Poor: 'linear-gradient(90deg,#b91c1c,#f87171)' };
+
+    document.getElementById('bulkAvgScore').textContent = avg;
+    const gradeEl = document.getElementById('bulkAvgGrade');
+    gradeEl.textContent = grade;
+    gradeEl.className = `text-sm font-bold px-3 py-1 rounded-lg ml-2 ${gradeColor[grade]}`;
+    document.getElementById('bulkSummaryText').textContent = `총 ${total}개 중 ${success}개 성공`;
+    setTimeout(() => {
+      const bar = document.getElementById('bulkAvgBar');
+      bar.style.background = barGrad[grade];
+      bar.style.width = Math.min(avg, 100) + '%';
+    }, 120);
+
+    // Table rows
+    const tbody = document.getElementById('bulkTableBody');
+    tbody.innerHTML = '';
+    items.forEach((item, idx) => {
+      if (item.error) {
+        tbody.innerHTML += `
+          <tr class="hover:bg-slate-50">
+            <td class="px-4 py-3 text-slate-400">${idx + 1}</td>
+            <td class="px-4 py-3 text-slate-600 font-mono text-xs max-w-xs truncate" title="${escHtml(item.url)}">${escHtml(item.url)}</td>
+            <td class="px-4 py-3 text-center" colspan="8">
+              <span class="text-xs text-red-500 bg-red-50 px-2 py-1 rounded">${escHtml(item.error)}</span>
+            </td>
+          </tr>`;
+        return;
+      }
+      const r = item.result;
+      const sc = r.score.total;
+      const g = r.score.grade;
+      const gc = { Good: 'bg-emerald-100 text-emerald-700', 'Need Improvement': 'bg-amber-100 text-amber-700', Poor: 'bg-red-100 text-red-700' };
+      const bd = r.score.breakdown;
+
+      const cell = (pts, max) => {
+        const pct = Math.round(pts / max * 100);
+        const col = pct >= 70 ? 'text-emerald-600' : pct >= 40 ? 'text-amber-600' : 'text-red-500';
+        return `<td class="px-4 py-3 text-center"><span class="font-semibold ${col}">${pts}</span><span class="text-slate-300">/${max}</span></td>`;
+      };
+
+      tbody.innerHTML += `
+        <tr class="hover:bg-slate-50">
+          <td class="px-4 py-3 text-slate-400">${idx + 1}</td>
+          <td class="px-4 py-3 font-mono text-xs max-w-xs truncate" title="${escHtml(item.url)}">
+            <a href="${escHtml(item.url)}" target="_blank" class="text-indigo-600 hover:underline">${escHtml(item.url)}</a>
+          </td>
+          <td class="px-4 py-3 text-center font-black text-lg text-slate-800">${sc}</td>
+          <td class="px-4 py-3 text-center"><span class="text-xs font-bold px-2 py-0.5 rounded-full ${gc[g] || gc['Poor']}">${g}</span></td>
+          ${cell(bd.seo_tags?.points ?? 0, bd.seo_tags?.max ?? 20)}
+          ${cell(bd.robots_txt?.points ?? 0, bd.robots_txt?.max ?? 10)}
+          ${cell(bd.json_ld?.points ?? 0, bd.json_ld?.max ?? 15)}
+          ${cell(bd.llms_txt?.points ?? 0, bd.llms_txt?.max ?? 15)}
+          ${cell(bd.faq?.points ?? 0, bd.faq?.max ?? 15)}
+          <td class="px-4 py-3">
+            <button onclick="showSingleFromBulk(${idx})"
+              class="text-xs text-indigo-600 hover:text-indigo-800 font-semibold">상세 보기</button>
+          </td>
+        </tr>`;
+    });
+
+    document.getElementById('bulkResults').classList.remove('hidden');
+  }
+
+  function showSingleFromBulk(idx) {
+    const item = bulkData[idx];
+    if (!item || item.error) return;
+    switchTab('single');
+    document.getElementById('urlInput').value = item.url;
+    renderResults(item.result);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function exportBulkCSV() {
+    if (!bulkData.length) return;
+    const header = ['#', 'URL', '점수', '등급', 'SEO', 'robots.txt', 'JSON-LD', 'llms.txt', 'FAQ', '오류'];
+    const rows = bulkData.map((item, i) => {
+      if (item.error) return [i + 1, item.url, '', '', '', '', '', '', '', item.error];
+      const bd = item.result.score.breakdown;
+      return [
+        i + 1, item.url,
+        item.result.score.total, item.result.score.grade,
+        bd.seo_tags?.points ?? '', bd.robots_txt?.points ?? '',
+        bd.json_ld?.points ?? '', bd.llms_txt?.points ?? '',
+        bd.faq?.points ?? '', ''
+      ];
+    });
+    const csv = [header, ...rows].map(r => r.map(v => `"${String(v).replace(/"/g, '""')}"`).join(',')).join('\n');
+    const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `geo-audit-bulk-${new Date().toISOString().slice(0,10)}.csv`;
+    a.click();
   }
 
   function showError(msg) {
