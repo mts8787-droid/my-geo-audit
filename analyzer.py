@@ -658,7 +658,7 @@ def _detect_pdp(url: str) -> dict:
     }
 
 
-# ── Score (총합 110점) ────────────────────────────────────────────────────────
+# ── Score (총합 100점) ────────────────────────────────────────────────────────
 
 def _calculate_score(robots: dict, llms: dict, jsonld: dict,
                      seo_tags: dict, faq: dict, summary: dict,
@@ -715,10 +715,10 @@ def _calculate_score(robots: dict, llms: dict, jsonld: dict,
         "all_types":        list(all_types),
     }
 
-    # 4. llms.txt (15점)
-    llms_score = 15 if llms["status"] == "found" else 0
+    # 4. llms.txt (5점)
+    llms_score = 5 if llms["status"] == "found" else 0
     score     += llms_score
-    breakdown["llms_txt"] = {"points": llms_score, "max": 15}
+    breakdown["llms_txt"] = {"points": llms_score, "max": 5}
 
     # 5. FAQ 섹션 (15점): FAQPage 스키마(8점) + HTML 섹션(7점)
     faq_score = (8 if faq.get("has_faq_schema") else 0) + (7 if faq.get("has_faq_html") else 0)
@@ -798,9 +798,9 @@ def _calculate_score(robots: dict, llms: dict, jsonld: dict,
     }
 
     grade = (
-        "Good"             if score >= 99 else
-        "Need Improvement" if score >= 77 else
+        "Good"             if score >= 90 else
+        "Need Improvement" if score >= 70 else
         "Poor"
     )
 
-    return {"total": score, "max": 110, "grade": grade, "breakdown": breakdown}
+    return {"total": score, "max": 100, "grade": grade, "breakdown": breakdown}

@@ -166,7 +166,7 @@
           <p class="section-label mb-1">전체 평균 GEO 점수</p>
           <div class="flex items-baseline gap-2">
             <span id="bulkAvgScore" class="text-5xl font-black text-slate-800">0</span>
-            <span class="text-xl text-slate-400 font-medium">/ 110</span>
+            <span class="text-xl text-slate-400 font-medium">/ 100</span>
             <span id="bulkAvgGrade" class="text-sm font-bold px-3 py-1 rounded-lg ml-2"></span>
           </div>
         </div>
@@ -225,7 +225,7 @@
         <div>
           <div class="flex items-baseline gap-1.5">
             <span id="scoreValue" class="text-5xl font-black text-slate-800">0</span>
-            <span class="text-xl text-slate-400 font-medium">/ 110</span>
+            <span class="text-xl text-slate-400 font-medium">/ 100</span>
           </div>
           <p id="gradeLabel" class="text-slate-500 text-sm mt-0.5"></p>
         </div>
@@ -318,7 +318,7 @@
           <div class="flex items-center gap-2 mb-1">
             <h2 class="font-bold text-slate-800 text-lg">/llms.txt</h2>
             <span id="llmsBadge" class="text-xs px-2 py-0.5 rounded-full font-medium"></span>
-            <span class="text-xs text-slate-400 ml-auto">최대 15점</span>
+            <span class="text-xs text-slate-400 ml-auto">최대 5점</span>
           </div>
           <p class="text-slate-500 text-sm mb-3">AI 모델이 사이트 구조를 이해하도록 돕는 지침 파일입니다.</p>
           <div id="llmsDetail" class="text-sm"></div>
@@ -470,6 +470,17 @@
 
   </div><!-- /results -->
 </main>
+
+<!-- Footer -->
+<footer class="border-t border-slate-100 bg-white/60 backdrop-blur-sm mt-4">
+  <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between text-xs text-slate-400">
+    <span>GEO Audit — Generative Engine Optimization 분석기</span>
+    <span class="flex items-center gap-2">
+      <span class="bg-indigo-50 text-indigo-400 font-semibold px-2 py-0.5 rounded-full border border-indigo-100">v2.0</span>
+      <span>Build 2.0</span>
+    </span>
+  </div>
+</footer>
 
 <script>
   // ── Category metadata ──────────────────────────────────────────────────────
@@ -993,7 +1004,7 @@
       found ? 'bg-emerald-50' : 'bg-red-50'
     );
     setBadge('llmsBadge',
-      found ? `파일 있음 (+15점)` : '파일 없음 (0점)',
+      found ? `파일 있음 (+5점)` : '파일 없음 (0점)',
       found ? 'bg-emerald-100 text-emerald-700' : 'bg-red-100 text-red-700'
     );
     const detail = document.getElementById('llmsDetail');
