@@ -292,18 +292,20 @@ def _check_seo_tags(page_data: dict) -> dict:
 
 def _extract_json_ld(page_data: dict) -> dict:
     if page_data["status"] != "ok" or not page_data["soup"]:
-        return {"status": "error", "schemas": [], "count": 0, "all_types": []}
+        return {"status": "error", "schemas": [], "count": 0, "all_types": [], "raw_sources": []}
 
-    soup      = page_data["soup"]
-    scripts   = soup.find_all("script", type="application/ld+json")
-    schemas   = []
-    raw_datas = []
+    soup        = page_data["soup"]
+    scripts     = soup.find_all("script", type="application/ld+json")
+    schemas     = []
+    raw_datas   = []
+    raw_sources = []
 
     for script in scripts:
         try:
             data = json.loads(script.string or "")
             schemas.append(_parse_schema(data))
             raw_datas.append(data)
+            raw_sources.append(json.dumps(data, ensure_ascii=False, indent=2)[:5000])
         except Exception:
             pass
 
@@ -316,10 +318,11 @@ def _extract_json_ld(page_data: dict) -> dict:
         _collect_raw_types(raw, all_types)
 
     return {
-        "status":    "found" if schemas else "not_found",
-        "count":     len(schemas),
-        "schemas":   schemas,
-        "all_types": list(all_types),
+        "status":      "found" if schemas else "not_found",
+        "count":       len(schemas),
+        "schemas":     schemas,
+        "all_types":   list(all_types),
+        "raw_sources": raw_sources,
     }
 
 
@@ -435,7 +438,7 @@ def _check_faq(page_data: dict, jsonld: dict) -> dict:
 
 def _check_summary_box(page_data: dict) -> dict:
     if page_data["status"] != "ok" or not page_data["soup"]:
-        return {"status": "error", "found": False, "method": None}
+        return {"status": "error", "found": False, "method": None, "source_html": None}
 
     soup = page_data["soup"]
     kw   = ["summary", "요약", "tldr", "tl;dr", "abstract", "핵심", "정리",
@@ -445,16 +448,21 @@ def _check_summary_box(page_data: dict) -> dict:
         cls = " ".join(tag.get("class", [])).lower()
         iid = tag.get("id", "").lower()
         if any(k in cls or k in iid for k in kw):
-            return {"status": "ok", "found": True, "method": "class/id"}
+            return {"status": "ok", "found": True, "method": "class/id",
+                    "source_html": str(tag)[:3000]}
 
     for tag in soup.find_all(["h1", "h2", "h3", "h4"]):
         if any(k in tag.get_text(strip=True).lower() for k in kw):
-            return {"status": "ok", "found": True, "method": "heading"}
+            return {"status": "ok", "found": True, "method": "heading",
+                    "source_html": str(tag)[:500]}
 
-    if soup.find("summary"):
-        return {"status": "ok", "found": True, "method": "html5-summary"}
+    summary_tag = soup.find("summary")
+    if summary_tag:
+        parent = summary_tag.parent
+        return {"status": "ok", "found": True, "method": "html5-summary",
+                "source_html": str(parent)[:3000] if parent else str(summary_tag)[:500]}
 
-    return {"status": "ok", "found": False, "method": None}
+    return {"status": "ok", "found": False, "method": None, "source_html": None}
 
 
 # ── Stats Density (5점, 존재 유무) ────────────────────────────────────────────

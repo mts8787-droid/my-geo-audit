@@ -53,18 +53,21 @@ async def analyze_bulk(request: AnalyzeBulkRequest):
     urls = [u.strip() for u in request.urls if u.strip()]
     if not urls:
         raise HTTPException(status_code=400, detail="URL을 하나 이상 입력해주세요.")
-    if len(urls) > 50:
-        raise HTTPException(status_code=400, detail="한 번에 최대 50개 URL까지 분석할 수 있습니다.")
+    if len(urls) > 1000:
+        raise HTTPException(status_code=400, detail="한 번에 최대 1000개 URL까지 분석할 수 있습니다.")
 
     invalid = [u for u in urls if not URL_PATTERN.match(u)]
     if invalid:
         raise HTTPException(status_code=400, detail=f"유효하지 않은 URL: {invalid[0]}")
 
+    sem = asyncio.Semaphore(20)
+
     async def safe_analyze(url: str):
-        try:
-            return {"url": url, "result": await analyze_url(url), "error": None}
-        except Exception as e:
-            return {"url": url, "result": None, "error": str(e)}
+        async with sem:
+            try:
+                return {"url": url, "result": await analyze_url(url), "error": None}
+            except Exception as e:
+                return {"url": url, "result": None, "error": str(e)}
 
     items = await asyncio.gather(*[safe_analyze(u) for u in urls])
 
