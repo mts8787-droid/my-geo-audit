@@ -455,7 +455,16 @@ def _check_summary_box(page_data: dict) -> dict:
 
     soup = page_data["soup"]
     kw   = ["summary", "요약", "tldr", "tl;dr", "abstract", "핵심", "정리",
-            "key-point", "keypoint", "highlight", "takeaway"]
+            "key-point", "keypoint", "highlight", "takeaway",
+            # 제품 특징/기능 (PDP 서머리 박스)
+            "key feature", "key-feature", "keyfeature",
+            "key spec", "key-spec", "keyspec",
+            "feature highlight", "product feature", "product highlight",
+            "주요 기능", "주요기능", "주요 특징", "주요특징", "핵심 기능", "핵심기능",
+            "제품 특징", "제품특징", "특장점",
+            # 혜택/장점 요약
+            "benefit", "why choose", "at a glance", "quick summary",
+            "overview", "product overview", "spec summary"]
 
     for tag in soup.find_all(["div", "section", "aside", "article", "blockquote", "p"]):
         cls = " ".join(tag.get("class", [])).lower()
@@ -466,8 +475,16 @@ def _check_summary_box(page_data: dict) -> dict:
 
     for tag in soup.find_all(["h1", "h2", "h3", "h4"]):
         if any(k in tag.get_text(strip=True).lower() for k in kw):
+            # 제목 + 바로 아래 형제 블록까지 소스 캡처
+            siblings = []
+            for sib in tag.next_siblings:
+                if hasattr(sib, 'name') and sib.name in ("ul", "ol", "div", "p", "section"):
+                    siblings.append(str(sib)[:1000])
+                    if len(siblings) >= 3:
+                        break
+            source = str(tag) + "".join(siblings)
             return {"status": "ok", "found": True, "method": "heading",
-                    "source_html": str(tag)[:500]}
+                    "source_html": source[:3000]}
 
     summary_tag = soup.find("summary")
     if summary_tag:
