@@ -639,8 +639,16 @@ async def _check_csr_chars(url: str) -> dict:
                     else:
                         raise
 
-                page = await browser.new_page()
-                await page.goto(url, wait_until="networkidle", timeout=20000)
+                page = await browser.new_page(viewport={"width": 1280, "height": 720})
+                await page.goto(url, wait_until="networkidle", timeout=30000)
+                # JS 프레임워크 렌더링 완료 대기
+                await page.wait_for_load_state("domcontentloaded")
+                await page.wait_for_timeout(3000)
+                # body에 실제 콘텐츠가 렌더링될 때까지 대기
+                try:
+                    await page.wait_for_selector("body *:not(script):not(style):not(link)", timeout=5000)
+                except Exception:
+                    pass
                 content = await page.content()
                 await browser.close()
 
