@@ -9,7 +9,7 @@ import re
 import asyncio
 from typing import List
 
-app = FastAPI(title="GEO Audit Tool", version="2.2.0")
+app = FastAPI(title="GEO Audit Tool", version="2.3.0")
 
 app.add_middleware(
     CORSMiddleware,
