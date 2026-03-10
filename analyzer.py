@@ -653,14 +653,20 @@ async def _check_csr_chars(url: str) -> dict:
                     user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
                 )
                 page = await context.new_page()
-                await page.goto(url, wait_until="networkidle", timeout=30000)
+
+                resp = await page.goto(url, wait_until="networkidle", timeout=30000)
+                final_url = page.url
+                http_status = resp.status if resp else None
+
                 # JS 프레임워크 렌더링 완료 대기
                 await page.wait_for_timeout(3000)
 
                 # 메인 프레임 콘텐츠
                 main_html = await page.content()
+                title = await page.title()
 
                 # iframe 내부 콘텐츠도 수집
+                frame_count = len(page.frames) - 1
                 frame_texts = []
                 for frame in page.frames:
                     if frame == page.main_frame:
@@ -676,8 +682,28 @@ async def _check_csr_chars(url: str) -> dict:
                 await browser.close()
 
             csr_soup  = BeautifulSoup(main_html, "html.parser")
-            csr_chars = _visible_text(csr_soup) + sum(frame_texts)
-            return {"status": "ok", "csr_chars": csr_chars}
+            main_chars = _visible_text(csr_soup)
+            iframe_chars = sum(frame_texts)
+            csr_chars = main_chars + iframe_chars
+
+            # 디버그: HTML 앞부분 미리보기
+            raw_text = re.sub(r'\s+', ' ', BeautifulSoup(main_html, "html.parser").get_text()).strip()
+            preview = raw_text[:300] if raw_text else "(empty)"
+
+            return {
+                "status": "ok",
+                "csr_chars": csr_chars,
+                "debug": {
+                    "final_url": final_url,
+                    "http_status": http_status,
+                    "page_title": title,
+                    "main_chars": main_chars,
+                    "iframe_count": frame_count,
+                    "iframe_chars": iframe_chars,
+                    "html_length": len(main_html),
+                    "text_preview": preview,
+                },
+            }
         except Exception as e:
             return {"status": "error", "error": str(e), "csr_chars": 0}
 
@@ -687,6 +713,7 @@ def _calc_csr_ratio(ssr_chars: int, csr_raw: dict) -> dict:
     status    = csr_raw.get("status", "unavailable")
     csr_chars = csr_raw.get("csr_chars", 0)
     error     = csr_raw.get("error")
+    debug     = csr_raw.get("debug")
 
     if status != "ok" or csr_chars == 0:
         return {
@@ -695,6 +722,7 @@ def _calc_csr_ratio(ssr_chars: int, csr_raw: dict) -> dict:
             "csr_chars": csr_chars,
             "ratio":     None,
             "error":     error,
+            "debug":     debug,
         }
 
     ratio = round(ssr_chars / csr_chars, 3) if csr_chars > 0 else 1.0
@@ -705,6 +733,7 @@ def _calc_csr_ratio(ssr_chars: int, csr_raw: dict) -> dict:
         "csr_chars": csr_chars,
         "ratio":     ratio,
         "error":     None,
+        "debug":     debug,
     }
 
 

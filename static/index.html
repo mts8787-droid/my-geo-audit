@@ -1384,6 +1384,23 @@
             <p class="text-xs text-indigo-500 mt-0.5">JS 실행 후 텍스트</p>
           </div>
         </div>
+        ${csr?.debug ? `
+        <!-- CSR 디버그 정보 -->
+        <details class="bg-slate-50 border border-slate-200 rounded-xl p-3">
+          <summary class="text-xs font-semibold text-slate-500 cursor-pointer">CSR 디버그 정보</summary>
+          <div class="mt-2 text-xs text-slate-600 space-y-1 font-mono">
+            <p><strong>Final URL:</strong> ${escHtml(csr.debug.final_url || '')}</p>
+            <p><strong>HTTP Status:</strong> ${csr.debug.http_status || ''}</p>
+            <p><strong>Page Title:</strong> ${escHtml(csr.debug.page_title || '')}</p>
+            <p><strong>Main Chars:</strong> ${(csr.debug.main_chars || 0).toLocaleString()}</p>
+            <p><strong>Iframe Count:</strong> ${csr.debug.iframe_count || 0}</p>
+            <p><strong>Iframe Chars:</strong> ${(csr.debug.iframe_chars || 0).toLocaleString()}</p>
+            <p><strong>HTML Length:</strong> ${(csr.debug.html_length || 0).toLocaleString()}</p>
+            <p><strong>Text Preview:</strong></p>
+            <p class="bg-white p-2 rounded border border-slate-200 break-all whitespace-pre-wrap">${escHtml(csr.debug.text_preview || '')}</p>
+          </div>
+        </details>
+        ` : ''}
         <!-- 비율 바 -->
         <div>
           <div class="flex items-center justify-between mb-1.5">
