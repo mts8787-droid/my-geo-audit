@@ -5,12 +5,16 @@
   - 운영(Production):  Claude Sonnet (claude-sonnet-4-6) — 코드 리뷰, 모니터링, 경량 작업
 """
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from analyzer import analyze_url
+from slowapi import Limiter
+from slowapi.util import get_remote_address
+from slowapi.errors import RateLimitExceeded
+from slowapi.middleware import SlowAPIMiddleware
 import os
 import re
 import asyncio
@@ -19,14 +23,20 @@ import socket
 from typing import List
 from urllib.parse import urlparse
 
-app = FastAPI(title="GEO Audit Tool", version="2.20.0")
+app = FastAPI(title="GEO Audit Tool", version="2.21.0")
 
-# 프로덕션 배포 시 실제 도메인으로 교체하세요
-ALLOWED_ORIGINS = os.environ.get("ALLOWED_ORIGINS", "*").split(",")
+# Rate Limiter
+limiter = Limiter(key_func=get_remote_address)
+app.state.limiter = limiter
+app.add_middleware(SlowAPIMiddleware)
+
+# CORS — 기본값은 자기 자신만 허용
+ALLOWED_ORIGINS = os.environ.get("ALLOWED_ORIGINS", "").split(",")
+ALLOWED_ORIGINS = [o.strip() for o in ALLOWED_ORIGINS if o.strip()]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS,
+    allow_origins=ALLOWED_ORIGINS or ["*"],
     allow_methods=["GET", "POST"],
     allow_headers=["Content-Type"],
 )
@@ -78,7 +88,8 @@ async def root():
 
 
 @app.post("/analyze")
-async def analyze(request: AnalyzeRequest):
+@limiter.limit("30/minute")
+async def analyze(request: AnalyzeRequest, req: Request):
     url = request.url.strip()
     if not url:
         raise HTTPException(status_code=400, detail="URL을 입력해주세요.")
@@ -94,7 +105,8 @@ async def analyze(request: AnalyzeRequest):
 
 
 @app.post("/analyze-bulk")
-async def analyze_bulk(request: AnalyzeBulkRequest):
+@limiter.limit("5/minute")
+async def analyze_bulk(request: AnalyzeBulkRequest, req: Request):
     urls = [u.strip() for u in request.urls if u.strip()]
     if not urls:
         raise HTTPException(status_code=400, detail="URL을 하나 이상 입력해주세요.")
@@ -114,8 +126,8 @@ async def analyze_bulk(request: AnalyzeBulkRequest):
     async def safe_analyze(url: str):
         try:
             return {"url": url, "result": await analyze_url(url, lightweight=True), "error": None}
-        except Exception as e:
-            return {"url": url, "result": None, "error": str(e)}
+        except Exception:
+            return {"url": url, "result": None, "error": "분석 중 오류가 발생했습니다."}
 
     # 배치 단위로 순차 처리 — 메모리 누적 방지
     items = []

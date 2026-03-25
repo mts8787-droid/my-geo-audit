@@ -8,3 +8,5 @@ services:
     envVars:
       - key: PORT
         value: 10000
+      - key: ALLOWED_ORIGINS
+        value: https://geo-audit.onrender.com,https://geoaudit.dev
