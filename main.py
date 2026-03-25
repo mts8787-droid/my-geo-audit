@@ -72,7 +72,7 @@ class AnalyzeBulkRequest(BaseModel):
     urls: List[str]
 
 
-@app.get("/")
+@app.api_route("/", methods=["GET", "HEAD"])
 async def root():
     return FileResponse("static/index.html")
 
