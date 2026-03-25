@@ -592,6 +592,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url }),
       });
+      const ct = res.headers.get('content-type') || '';
+      if (!ct.includes('application/json')) {
+        throw new Error('서버가 JSON 응답을 반환하지 않았습니다. 서버 상태를 확인해주세요.');
+      }
       const data = await res.json();
       if (!res.ok) throw new Error(data.detail || '분석 실패');
       renderResults(data);
@@ -621,6 +625,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ urls }),
       });
+      const ct = res.headers.get('content-type') || '';
+      if (!ct.includes('application/json')) {
+        throw new Error('서버가 JSON 응답을 반환하지 않았습니다. 서버 상태를 확인해주세요.');
+      }
       const data = await res.json();
       if (!res.ok) throw new Error(data.detail || '분석 실패');
       bulkData = data.items;
