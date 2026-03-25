@@ -109,16 +109,20 @@ async def analyze_bulk(request: AnalyzeBulkRequest):
     if private:
         raise HTTPException(status_code=400, detail=f"내부 네트워크 주소는 분석할 수 없습니다: {private[0]}")
 
-    sem = asyncio.Semaphore(20)
+    BATCH_SIZE = 10  # 한 번에 10개씩 처리 (메모리 300MB 이하 유지)
 
     async def safe_analyze(url: str):
-        async with sem:
-            try:
-                return {"url": url, "result": await analyze_url(url), "error": None}
-            except Exception as e:
-                return {"url": url, "result": None, "error": str(e)}
+        try:
+            return {"url": url, "result": await analyze_url(url, lightweight=True), "error": None}
+        except Exception as e:
+            return {"url": url, "result": None, "error": str(e)}
 
-    items = await asyncio.gather(*[safe_analyze(u) for u in urls])
+    # 배치 단위로 순차 처리 — 메모리 누적 방지
+    items = []
+    for i in range(0, len(urls), BATCH_SIZE):
+        batch = urls[i:i + BATCH_SIZE]
+        batch_results = await asyncio.gather(*[safe_analyze(u) for u in batch])
+        items.extend(batch_results)
 
     scores = [i["result"]["score"]["total"] for i in items if i["result"]]
     average = round(sum(scores) / len(scores), 1) if scores else 0

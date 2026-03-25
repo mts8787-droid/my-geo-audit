@@ -6,7 +6,10 @@ import json
 from urllib.parse import urlparse
 
 # Playwright 동시 실행 제한 (메모리 보호)
-_playwright_sem = asyncio.Semaphore(5)
+_playwright_sem = asyncio.Semaphore(2)
+
+# 벌크 분석 시 동시 요청 제한
+_bulk_sem = asyncio.Semaphore(5)
 
 AI_BOTS = {
     "GPTBot":          "OpenAI GPT",
@@ -30,15 +33,39 @@ def _normalize_url(url: str) -> tuple[str, str]:
     return url, base_url
 
 
-async def analyze_url(url: str) -> dict:
+def _safe_visible_text(soup: BeautifulSoup) -> int:
+    """soup를 변조하지 않고 보이는 텍스트 글자수를 계산합니다."""
+    text_parts = []
+    for element in soup.find_all(string=True):
+        if element.parent and element.parent.name in ("script", "style", "noscript", "svg", "path"):
+            continue
+        text_parts.append(element)
+    return len(re.sub(r'\s+', '', ''.join(text_parts)))
+
+
+async def analyze_url(url: str, lightweight: bool = False) -> dict:
+    """URL 분석.
+
+    lightweight=True: 벌크 분석용 경량 모드 (Playwright CSR 분석 생략, 메모리 절약)
+    """
     url, base_url = _normalize_url(url)
 
-    robots, llms, page_data, csr_raw = await asyncio.gather(
-        _check_robots_txt(base_url),
-        _check_llms_txt(base_url),
-        _fetch_page(url),
-        _check_csr_chars(url),
-    )
+    if lightweight:
+        # 벌크: Playwright(CSR) 생략 — httpx만 사용
+        async with _bulk_sem:
+            robots, llms, page_data = await asyncio.gather(
+                _check_robots_txt(base_url),
+                _check_llms_txt(base_url),
+                _fetch_page(url),
+            )
+        csr_raw = {"status": "skipped", "csr_chars": 0}
+    else:
+        robots, llms, page_data, csr_raw = await asyncio.gather(
+            _check_robots_txt(base_url),
+            _check_llms_txt(base_url),
+            _fetch_page(url),
+            _check_csr_chars(url),
+        )
 
     seo_tags  = _check_seo_tags(page_data)
     jsonld    = _extract_json_ld(page_data)
@@ -49,12 +76,13 @@ async def analyze_url(url: str) -> dict:
     reviews   = _check_reviews_ssr(page_data)
     pdp       = _detect_pdp(url)
 
-    # SSR 글자수 계산 (script/style 제외, 공백 제외)
+    # SSR 글자수 계산 (soup 변조 없이)
     ssr_chars = 0
     if page_data["status"] == "ok" and page_data["soup"]:
-        import copy
-        ssr_soup_copy = copy.deepcopy(page_data["soup"])
-        ssr_chars = _visible_text(ssr_soup_copy)
+        ssr_chars = _safe_visible_text(page_data["soup"])
+
+    # soup 참조 해제 — 메모리 즉시 회수
+    page_data["soup"] = None
 
     csr_ratio = _calc_csr_ratio(ssr_chars, csr_raw)
 
@@ -912,7 +940,11 @@ def _calculate_score(robots: dict, llms: dict, jsonld: dict,
     # 10. CSR 비중 (10점): SSR 글자수 / CSR 글자수 비율
     csr_status = csr_ratio.get("status", "unavailable")
     ratio = csr_ratio.get("ratio")
-    if csr_status == "blocked":
+    if csr_status == "skipped":
+        # 벌크 분석 시 CSR 생략 — 페널티 없이 제외
+        csr_score = 0
+        csr_tier  = "skipped"
+    elif csr_status == "blocked":
         # 봇 차단 시 페널티 없이 측정불가 처리
         csr_score = 0
         csr_tier  = "blocked"
