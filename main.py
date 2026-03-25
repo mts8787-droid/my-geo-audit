@@ -19,7 +19,7 @@ import socket
 from typing import List
 from urllib.parse import urlparse
 
-app = FastAPI(title="GEO Audit Tool", version="2.17.0")
+app = FastAPI(title="GEO Audit Tool", version="2.18.0")
 
 # 프로덕션 배포 시 실제 도메인으로 교체하세요
 ALLOWED_ORIGINS = os.environ.get("ALLOWED_ORIGINS", "*").split(",")
