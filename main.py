@@ -1,3 +1,10 @@
+"""GEO Audit Tool — AI Readability Analytics
+
+모델 사용 가이드:
+  - 개발(Development): Claude Opus (claude-opus-4-6) — 코드 작성, 리팩토링, 디버깅
+  - 운영(Production):  Claude Sonnet (claude-sonnet-4-6) — 코드 리뷰, 모니터링, 경량 작업
+"""
+
 from fastapi import FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
@@ -7,18 +14,54 @@ from analyzer import analyze_url
 import os
 import re
 import asyncio
+import ipaddress
+import socket
 from typing import List
+from urllib.parse import urlparse
 
-app = FastAPI(title="GEO Audit Tool", version="2.15.0")
+app = FastAPI(title="GEO Audit Tool", version="2.16.0")
+
+# 프로덕션 배포 시 실제 도메인으로 교체하세요
+ALLOWED_ORIGINS = os.environ.get("ALLOWED_ORIGINS", "*").split(",")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=ALLOWED_ORIGINS,
+    allow_methods=["GET", "POST"],
+    allow_headers=["Content-Type"],
 )
 
 URL_PATTERN = re.compile(r"^(https?://)?[\w\-.]+(\.[\w\-]+)+([\w\-._~:/?#\[\]@!$&'()*+,;=%]*)?$")
+
+
+def _is_private_url(url: str) -> bool:
+    """SSRF 방지: 내부/프라이빗 IP 주소 접근을 차단합니다."""
+    try:
+        parsed = urlparse(url if url.startswith(("http://", "https://")) else f"https://{url}")
+        hostname = parsed.hostname
+        if not hostname:
+            return True
+        # localhost 차단
+        if hostname in ("localhost", "127.0.0.1", "::1", "0.0.0.0"):
+            return True
+        # IP 주소인 경우 private 범위 체크
+        try:
+            addr = ipaddress.ip_address(hostname)
+            return addr.is_private or addr.is_loopback or addr.is_link_local or addr.is_reserved
+        except ValueError:
+            pass
+        # 도메인인 경우 DNS resolve 후 체크
+        try:
+            resolved = socket.getaddrinfo(hostname, None, socket.AF_UNSPEC, socket.SOCK_STREAM)
+            for _, _, _, _, sockaddr in resolved:
+                addr = ipaddress.ip_address(sockaddr[0])
+                if addr.is_private or addr.is_loopback or addr.is_link_local or addr.is_reserved:
+                    return True
+        except socket.gaierror:
+            pass
+        return False
+    except Exception:
+        return True
 
 
 class AnalyzeRequest(BaseModel):
@@ -41,11 +84,13 @@ async def analyze(request: AnalyzeRequest):
         raise HTTPException(status_code=400, detail="URL을 입력해주세요.")
     if not URL_PATTERN.match(url):
         raise HTTPException(status_code=400, detail="유효하지 않은 URL입니다.")
+    if _is_private_url(url):
+        raise HTTPException(status_code=400, detail="내부 네트워크 주소는 분석할 수 없습니다.")
     try:
         result = await analyze_url(url)
         return result
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+    except Exception:
+        raise HTTPException(status_code=500, detail="분석 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.")
 
 
 @app.post("/analyze-bulk")
@@ -59,6 +104,10 @@ async def analyze_bulk(request: AnalyzeBulkRequest):
     invalid = [u for u in urls if not URL_PATTERN.match(u)]
     if invalid:
         raise HTTPException(status_code=400, detail=f"유효하지 않은 URL: {invalid[0]}")
+
+    private = [u for u in urls if _is_private_url(u)]
+    if private:
+        raise HTTPException(status_code=400, detail=f"내부 네트워크 주소는 분석할 수 없습니다: {private[0]}")
 
     sem = asyncio.Semaphore(20)
 
