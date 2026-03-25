@@ -53,7 +53,7 @@ async def analyze_url(url: str) -> dict:
     ssr_chars = 0
     if page_data["status"] == "ok" and page_data["soup"]:
         import copy
-        ssr_soup_copy = copy.copy(page_data["soup"])
+        ssr_soup_copy = copy.deepcopy(page_data["soup"])
         ssr_chars = _visible_text(ssr_soup_copy)
 
     csr_ratio = _calc_csr_ratio(ssr_chars, csr_raw)
@@ -127,7 +127,9 @@ def _parse_robots_for_ai_bots(content: str) -> dict:
 
     for raw_line in content.splitlines():
         line = raw_line.strip()
-        if not line or line.startswith("#"):
+        if line.startswith("#"):
+            continue
+        if not line:
             current_agents = []
             continue
         lower = line.lower()
@@ -702,7 +704,7 @@ async def _check_csr_chars(url: str) -> dict:
                         "debug": {
                             "final_url": final_url,
                             "http_status": http_status,
-                            "page_title": await page.title() if False else quick_text[:100],
+                            "page_title": quick_text[:100],
                             "text_preview": quick_text[:300],
                         },
                     }
