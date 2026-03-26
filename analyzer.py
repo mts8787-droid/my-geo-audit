@@ -726,12 +726,12 @@ async def _check_csr_chars(url: str) -> dict:
 
                 context = await browser.new_context(
                     viewport={"width": 1280, "height": 720},
-                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
-                    locale="en-US",
-                    timezone_id="Europe/London",
+                    user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+                    locale="ko-KR",
+                    timezone_id="Asia/Seoul",
                     extra_http_headers={
                         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-                        "Accept-Language": "en-US,en;q=0.9",
+                        "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
                         "Accept-Encoding": "gzip, deflate, br",
                         "Sec-Fetch-Dest": "document",
                         "Sec-Fetch-Mode": "navigate",
@@ -740,9 +740,16 @@ async def _check_csr_chars(url: str) -> dict:
                         "Upgrade-Insecure-Requests": "1",
                     },
                 )
-                # navigator.webdriver 플래그 제거
                 await context.add_init_script("""
                     Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+                    Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3, 4, 5] });
+                    Object.defineProperty(navigator, 'languages', { get: () => ['ko-KR', 'ko', 'en-US', 'en'] });
+                    window.chrome = { runtime: {} };
+                    const origQuery = window.navigator.permissions.query;
+                    window.navigator.permissions.query = (params) =>
+                      params.name === 'notifications'
+                        ? Promise.resolve({ state: Notification.permission })
+                        : origQuery(params);
                 """)
                 page = await context.new_page()
 
@@ -750,27 +757,31 @@ async def _check_csr_chars(url: str) -> dict:
                 final_url = page.url
                 http_status = resp.status if resp else None
 
-                # 봇 차단 감지 (403/406 + Access Denied 패턴)
+                # 봇 차단 감지 (403/406) — 본문이 충분하면 정상 파싱 시도
                 if http_status and http_status in (403, 406):
+                    await page.wait_for_timeout(2000)
                     quick_text = await page.inner_text("body")
-                    await context.close()
-                    await browser.close()
-                    is_bot_block = any(kw in quick_text.lower() for kw in
-                                       ["access denied", "robot", "captcha", "blocked",
-                                        "not allowed", "permission"])
-                    return {
-                        "status": "blocked",
-                        "csr_chars": 0,
-                        "error": f"사이트가 헤드리스 브라우저를 차단합니다 (HTTP {http_status})"
-                                 if is_bot_block else
-                                 f"HTTP {http_status} 응답",
-                        "debug": {
-                            "final_url": final_url,
-                            "http_status": http_status,
-                            "page_title": quick_text[:100],
-                            "text_preview": quick_text[:300],
-                        },
-                    }
+                    body_chars = len(re.sub(r'\s+', '', quick_text))
+                    if body_chars < 200:
+                        await context.close()
+                        await browser.close()
+                        is_bot_block = any(kw in quick_text.lower() for kw in
+                                           ["access denied", "robot", "captcha", "blocked",
+                                            "not allowed", "permission"])
+                        return {
+                            "status": "blocked",
+                            "csr_chars": 0,
+                            "error": f"사이트가 헤드리스 브라우저를 차단합니다 (HTTP {http_status})"
+                                     if is_bot_block else
+                                     f"HTTP {http_status} 응답",
+                            "debug": {
+                                "final_url": final_url,
+                                "http_status": http_status,
+                                "page_title": quick_text[:100],
+                                "text_preview": quick_text[:300],
+                            },
+                        }
+                    # 본문이 200자 이상이면 계속 진행 (403이지만 콘텐츠 정상인 경우)
 
                 # JS 프레임워크 렌더링 완료 대기
                 await page.wait_for_timeout(3000)
