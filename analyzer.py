@@ -43,12 +43,33 @@ def _safe_visible_text(soup: BeautifulSoup) -> int:
     return len(re.sub(r'\s+', '', ''.join(text_parts)))
 
 
-async def analyze_url(url: str, lightweight: bool = False) -> dict:
+async def analyze_url(url: str, lightweight: bool = False, scope: str = "all") -> dict:
     """URL 분석.
 
     lightweight=True: 벌크 분석용 경량 모드 (Playwright CSR 분석 생략, 메모리 절약)
+    scope: 'all' | 'schema' | 'seo' | 'faq' — 특정 항목만 분석
     """
     url, base_url = _normalize_url(url)
+
+    # scope별 필요한 분석만 수행
+    if scope != "all":
+        page_data = await _fetch_page(url)
+
+        if scope == "schema":
+            jsonld = _extract_json_ld(page_data)
+            page_data["soup"] = None
+            return {"url": url, "base_url": base_url, "scope": scope, "json_ld": jsonld}
+
+        if scope == "seo":
+            seo_tags = _check_seo_tags(page_data)
+            page_data["soup"] = None
+            return {"url": url, "base_url": base_url, "scope": scope, "seo_tags": seo_tags}
+
+        if scope == "faq":
+            jsonld = _extract_json_ld(page_data)
+            faq = _check_faq(page_data, jsonld)
+            page_data["soup"] = None
+            return {"url": url, "base_url": base_url, "scope": scope, "faq": faq}
 
     if lightweight:
         # 벌크: Playwright(CSR) 생략 — httpx만 사용
@@ -93,6 +114,7 @@ async def analyze_url(url: str, lightweight: bool = False) -> dict:
     return {
         "url":               url,
         "base_url":          base_url,
+        "scope":             "all",
         "pdp":               pdp,
         "robots_txt":        robots,
         "llms_txt":          llms,

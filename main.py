@@ -90,12 +90,17 @@ def _is_private_url(url: str) -> bool:
         return True
 
 
+VALID_SCOPES = {"all", "schema", "seo", "faq"}
+
+
 class AnalyzeRequest(BaseModel):
     url: str
+    scope: str = "all"
 
 
 class AnalyzeBulkRequest(BaseModel):
     urls: List[str]
+    scope: str = "all"
 
 
 @app.api_route("/", methods=["GET", "HEAD"])
@@ -113,8 +118,9 @@ async def analyze(request: Request, body: AnalyzeRequest):
         raise HTTPException(status_code=400, detail="유효하지 않은 URL입니다.")
     if _is_private_url(url):
         raise HTTPException(status_code=400, detail="내부 네트워크 주소는 분석할 수 없습니다.")
+    scope = body.scope if body.scope in VALID_SCOPES else "all"
     try:
-        result = await analyze_url(url)
+        result = await analyze_url(url, scope=scope)
         return result
     except Exception:
         raise HTTPException(status_code=500, detail="분석 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.")
@@ -139,9 +145,11 @@ async def analyze_bulk(request: Request, body: AnalyzeBulkRequest):
 
     BATCH_SIZE = 10  # 한 번에 10개씩 처리 (메모리 300MB 이하 유지)
 
+    scope = body.scope if body.scope in VALID_SCOPES else "all"
+
     async def safe_analyze(url: str):
         try:
-            return {"url": url, "result": await analyze_url(url, lightweight=True), "error": None}
+            return {"url": url, "result": await analyze_url(url, lightweight=True, scope=scope), "error": None}
         except Exception:
             return {"url": url, "result": None, "error": "분석 중 오류가 발생했습니다."}
 
@@ -152,10 +160,15 @@ async def analyze_bulk(request: Request, body: AnalyzeBulkRequest):
         batch_results = await asyncio.gather(*[safe_analyze(u) for u in batch])
         items.extend(batch_results)
 
-    scores = [i["result"]["score"]["total"] for i in items if i["result"]]
-    average = round(sum(scores) / len(scores), 1) if scores else 0
+    success_count = sum(1 for i in items if i["result"])
 
-    return {"items": items, "average": average, "total": len(items), "success": len(scores)}
+    if scope == "all":
+        scores = [i["result"]["score"]["total"] for i in items if i["result"]]
+        average = round(sum(scores) / len(scores), 1) if scores else 0
+    else:
+        average = None
+
+    return {"items": items, "average": average, "total": len(items), "success": success_count, "scope": scope}
 
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
