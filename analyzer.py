@@ -120,6 +120,19 @@ async def _fetch_page(url: str) -> dict:
             r = await client.get(url, headers=headers)
 
         redirect_count = len(r.history)
+        content_type = r.headers.get("content-type", "")
+
+        # HTML 본문이 있으면 상태코드와 관계없이 파싱 (일부 사이트는 404/403이지만 콘텐츠 정상)
+        if "text/html" in content_type and len(r.text) > 500:
+            soup = BeautifulSoup(r.text, "html.parser")
+            return {
+                "status":         "ok",
+                "soup":           soup,
+                "http_status":    r.status_code,
+                "final_url":      str(r.url),
+                "redirect_count": redirect_count,
+            }
+
         if r.status_code != 200:
             return {"status": "error", "http_status": r.status_code,
                     "soup": None, "redirect_count": redirect_count}
