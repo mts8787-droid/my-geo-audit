@@ -105,8 +105,8 @@ async def root():
 
 @app.post("/analyze")
 @limiter.limit("30/minute")
-async def analyze(request: AnalyzeRequest, req: Request):
-    url = request.url.strip()
+async def analyze(request: Request, body: AnalyzeRequest):
+    url = body.url.strip()
     if not url:
         raise HTTPException(status_code=400, detail="URL을 입력해주세요.")
     if not URL_PATTERN.match(url):
@@ -122,8 +122,8 @@ async def analyze(request: AnalyzeRequest, req: Request):
 
 @app.post("/analyze-bulk")
 @limiter.limit("5/minute")
-async def analyze_bulk(request: AnalyzeBulkRequest, req: Request):
-    urls = [u.strip() for u in request.urls if u.strip()]
+async def analyze_bulk(request: Request, body: AnalyzeBulkRequest):
+    urls = [u.strip() for u in body.urls if u.strip()]
     if not urls:
         raise HTTPException(status_code=400, detail="URL을 하나 이상 입력해주세요.")
     if len(urls) > 1000:
