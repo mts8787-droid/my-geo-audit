@@ -1563,21 +1563,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     const el = document.getElementById('csrDetail');
 
-    const siteOrigin = location.origin;
-    const bookmarkletJs = 'javascript:void(function(){var c=document.body.innerText.replace(/\\s+/g,"").length;window.open("' + siteOrigin + '/?csr_chars="+c+"&csr_url="+encodeURIComponent(location.href))}())';
     const bookmarkletBlock = `
       <div class="bg-indigo-50 border border-indigo-200 rounded-xl p-4 mt-3">
         <p class="text-sm font-semibold text-indigo-800 mb-2">북마클릿으로 직접 측정하기</p>
-        <p class="text-xs text-indigo-600 mb-3">
-          아래 버튼을 <strong>북마크바에 드래그</strong>하세요 (1회). 이후 분석할 사이트에서 클릭하면 CSR 글자수가 자동 측정됩니다.
-        </p>
-        <div class="flex items-center gap-3">
-          <a href="${bookmarkletJs}"
-            class="inline-block px-4 py-2 bg-indigo-600 text-white text-xs font-bold rounded-lg shadow hover:bg-indigo-700 cursor-grab active:cursor-grabbing no-underline"
-            onclick="event.preventDefault(); alert('이 버튼을 클릭하지 말고 북마크바에 드래그하세요!');"
-            title="북마크바에 드래그하세요">CSR 측정</a>
-          <span class="text-xs text-slate-500">← 북마크바에 드래그</span>
-        </div>
+        <p class="text-xs text-indigo-600 mb-2">아래 버튼을 <strong>북마크바에 드래그</strong>하세요 (1회만). 이후 분석할 사이트에서 클릭하면 자동 측정됩니다.</p>
+        <div class="flex items-center gap-3" id="bookmarkletSlot"></div>
+        <p class="text-xs text-slate-400 mt-2">* 팝업 차단 시 주소창에서 수동 허용해주세요.</p>
       </div>`;
 
     if (status === 'unavailable') {
@@ -1683,6 +1674,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const b = document.getElementById(barId);
       if (b) b.style.width = pct + '%';
     }, 150);
+
+    // 북마클릿 링크 동적 생성 (따옴표 충돌 방지)
+    mountBookmarklet();
+  }
+
+  function mountBookmarklet() {
+    const slot = document.getElementById('bookmarkletSlot');
+    if (!slot) return;
+    const origin = location.origin;
+    const code = "javascript:void(function(){var c=document.body.innerText.replace(/\\s+/g,'').length;window.open('" + origin + "/?csr_chars='+c+'&csr_url='+encodeURIComponent(location.href))}())";
+    const a = document.createElement('a');
+    a.href = code;
+    a.textContent = 'CSR 측정';
+    a.className = 'inline-block px-4 py-2 bg-indigo-600 text-white text-xs font-bold rounded-lg shadow hover:bg-indigo-700 cursor-grab active:cursor-grabbing no-underline';
+    a.title = '북마크바에 드래그하세요';
+    a.addEventListener('click', function(e) { e.preventDefault(); alert('이 버튼을 클릭하지 말고 북마크바에 드래그하세요!'); });
+    const hint = document.createElement('span');
+    hint.className = 'text-xs text-slate-500';
+    hint.textContent = '← 북마크바에 드래그';
+    slot.innerHTML = '';
+    slot.appendChild(a);
+    slot.appendChild(hint);
   }
 
   // ── Helpers ────────────────────────────────────────────────────────────────
