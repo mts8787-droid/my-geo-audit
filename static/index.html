@@ -1566,7 +1566,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="bg-indigo-50 border border-indigo-200 rounded-xl p-4 mt-3">
         <p class="text-sm font-semibold text-indigo-800 mb-2">로컬에서 분석하기</p>
         <p class="text-xs text-indigo-600 mb-2">
-          아래 명령어로 로컬 PC에서 SSR/CSR을 분석한 뒤, 결과 JSON을 붙여넣으세요.
+          아래 명령어로 로컬 PC에서 SSR/CSR을 분석한 뒤, 결과 JSON을 붙여넣으세요.<br/>
+          <span class="text-indigo-400">브라우저 창이 열리며 봇 차단을 우회합니다. 창 없이: --headless 옵션 추가</span>
         </p>
         <code class="block bg-white border border-indigo-200 rounded-lg px-3 py-2 text-xs text-slate-700 mb-3 select-all">python csr_local.py ${escHtml(csr?._analyzed_url || '')}</code>
         <textarea id="csrLocalInput" rows="3"

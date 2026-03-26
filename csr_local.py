@@ -5,6 +5,10 @@
   python csr_local.py https://example.com
   python csr_local.py urls.txt                  # 파일에 URL 한 줄씩
   python csr_local.py https://a.com https://b.com
+  python csr_local.py --headless https://example.com   # 창 없이 실행
+
+기본적으로 브라우저 창이 열립니다(headed 모드). 403 차단을 우회하기 위함입니다.
+--headless 옵션을 사용하면 창 없이 실행됩니다.
 
 결과는 JSON으로 출력됩니다. 웹 UI에 붙여넣기하여 사용할 수 있습니다.
 
@@ -52,35 +56,54 @@ async def fetch_ssr_chars(url: str) -> int:
     return _safe_visible_text(soup)
 
 
-async def fetch_csr_chars(url: str) -> dict:
+_STEALTH_JS = """
+Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3, 4, 5] });
+Object.defineProperty(navigator, 'languages', { get: () => ['ko-KR', 'ko', 'en-US', 'en'] });
+window.chrome = { runtime: {} };
+const origQuery = window.navigator.permissions.query;
+window.navigator.permissions.query = (params) =>
+  params.name === 'notifications'
+    ? Promise.resolve({ state: Notification.permission })
+    : origQuery(params);
+"""
+
+
+async def fetch_csr_chars(url: str, headless: bool = False) -> dict:
     from playwright.async_api import async_playwright
 
     async with async_playwright() as p:
+        launch_args = ["--no-sandbox", "--disable-dev-shm-usage", "--disable-blink-features=AutomationControlled"]
         browser = await p.chromium.launch(
-            headless=True,
-            args=["--no-sandbox", "--disable-dev-shm-usage"],
+            headless=headless,
+            args=launch_args,
         )
         context = await browser.new_context(
             viewport={"width": 1280, "height": 720},
+            locale="ko-KR",
+            timezone_id="Asia/Seoul",
             user_agent=(
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                 "AppleWebKit/537.36 (KHTML, like Gecko) "
                 "Chrome/131.0.0.0 Safari/537.36"
             ),
         )
-        await context.add_init_script(
-            "Object.defineProperty(navigator, 'webdriver', { get: () => undefined });"
-        )
+        await context.add_init_script(_STEALTH_JS)
         page = await context.new_page()
 
         resp = await page.goto(url, wait_until="networkidle", timeout=30000)
         http_status = resp.status if resp else None
 
+        # 403이어도 본문이 충분하면 정상 파싱 시도
         if http_status and http_status in (403, 406):
-            text = await page.inner_text("body")
-            await context.close()
-            await browser.close()
-            return {"status": "blocked", "csr_chars": 0, "http_status": http_status}
+            await page.wait_for_timeout(2000)
+            body_text = await page.inner_text("body")
+            body_chars = len(re.sub(r"\s+", "", body_text))
+            if body_chars < 200:
+                await context.close()
+                await browser.close()
+                return {"status": "blocked", "csr_chars": 0, "http_status": http_status}
+            # 본문이 충분하면 계속 진행 (일부 사이트는 403이지만 콘텐츠 정상)
 
         await page.wait_for_timeout(3000)
 
@@ -115,7 +138,7 @@ async def fetch_csr_chars(url: str) -> dict:
     }
 
 
-async def analyze_one(url: str) -> dict:
+async def analyze_one(url: str, headless: bool = False) -> dict:
     if not url.startswith(("http://", "https://")):
         url = "https://" + url
 
@@ -123,7 +146,7 @@ async def analyze_one(url: str) -> dict:
 
     ssr_chars, csr_raw = await asyncio.gather(
         fetch_ssr_chars(url),
-        fetch_csr_chars(url),
+        fetch_csr_chars(url, headless=headless),
     )
 
     csr_chars = csr_raw.get("csr_chars", 0)
@@ -160,11 +183,17 @@ async def analyze_one(url: str) -> dict:
 
 async def main():
     if len(sys.argv) < 2:
-        print("사용법: python csr_local.py <URL 또는 파일> [URL ...]", file=sys.stderr)
+        print("사용법: python csr_local.py [--headless] <URL 또는 파일> [URL ...]", file=sys.stderr)
         sys.exit(1)
 
+    args = sys.argv[1:]
+    headless = False
+    if "--headless" in args:
+        headless = True
+        args.remove("--headless")
+
     urls = []
-    for arg in sys.argv[1:]:
+    for arg in args:
         path = Path(arg)
         if path.is_file():
             urls.extend(line.strip() for line in path.read_text().splitlines() if line.strip())
@@ -182,7 +211,7 @@ async def main():
     results = []
     for url in urls:
         try:
-            result = await analyze_one(url)
+            result = await analyze_one(url, headless=headless)
             results.append(result)
 
             r = result["ratio"]
