@@ -250,12 +250,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <th class="px-4 py-3 font-semibold text-slate-600">URL</th>
               <th class="px-4 py-3 font-semibold text-slate-600 text-center w-20">점수</th>
               <th class="px-4 py-3 font-semibold text-slate-600 text-center w-24">등급</th>
-              <th class="px-4 py-3 font-semibold text-slate-600 text-center w-20">SEO</th>
-              <th class="px-4 py-3 font-semibold text-slate-600 text-center w-20">robots</th>
-              <th class="px-4 py-3 font-semibold text-slate-600 text-center w-20">JSON-LD</th>
-              <th class="px-4 py-3 font-semibold text-slate-600 text-center w-20">llms.txt</th>
-              <th class="px-4 py-3 font-semibold text-slate-600 text-center w-20">FAQ</th>
-              <th class="px-4 py-3 font-semibold text-slate-600 text-center w-20">SSR/CSR</th>
+              <th data-col="seo" class="px-4 py-3 font-semibold text-slate-600 text-center w-20">SEO</th>
+              <th data-col="robots" class="px-4 py-3 font-semibold text-slate-600 text-center w-20">robots</th>
+              <th data-col="schema" class="px-4 py-3 font-semibold text-slate-600 text-center w-20">JSON-LD</th>
+              <th data-col="llms" class="px-4 py-3 font-semibold text-slate-600 text-center w-20">llms.txt</th>
+              <th data-col="faq" class="px-4 py-3 font-semibold text-slate-600 text-center w-20">FAQ</th>
+              <th data-col="csr" class="px-4 py-3 font-semibold text-slate-600 text-center w-20">SSR/CSR</th>
               <th class="px-4 py-3 font-semibold text-slate-600 w-24">상세</th>
             </tr>
           </thead>
@@ -524,12 +524,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Footer -->
 <footer class="border-t border-slate-100 bg-white/60 backdrop-blur-sm mt-4">
-  <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between text-xs text-slate-400">
+  <div class="max-w-4xl mx-auto px-6 py-4 text-center text-xs text-slate-400">
     <span>GEO Audit - AI Readability Analytics</span>
-    <span class="flex items-center gap-2">
-      <span class="bg-indigo-50 text-indigo-400 font-semibold px-2 py-0.5 rounded-full border border-indigo-100">v2.21</span>
-      <span>Build 2.21</span>
-    </span>
   </div>
 </footer>
 
@@ -581,12 +577,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
   }
 
+  const SCOPE_COL_MAP = {
+    all:    null,
+    schema: new Set(['schema']),
+    seo:    new Set(['seo']),
+    faq:    new Set(['faq']),
+  };
+
   function filterResultCards() {
+    // Single result cards
     const visible = new Set(SCOPE_CARD_MAP[currentScope] || SCOPE_CARD_MAP.all);
     for (const id of SCOPE_CARD_MAP.all) {
       const el = document.getElementById(id);
       if (el) el.style.display = visible.has(id) ? '' : 'none';
     }
+    // Bulk table columns
+    filterBulkColumns();
+  }
+
+  function filterBulkColumns() {
+    const allowedCols = SCOPE_COL_MAP[currentScope];
+    document.querySelectorAll('[data-col]').forEach(el => {
+      el.style.display = (!allowedCols || allowedCols.has(el.dataset.col)) ? '' : 'none';
+    });
   }
 
   document.getElementById('urlInput').addEventListener('keydown', e => {
@@ -645,8 +658,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     const isSingle = tab === 'single';
     document.getElementById('inputSingle').classList.toggle('hidden', !isSingle);
     document.getElementById('inputBulk').classList.toggle('hidden', isSingle);
-    document.getElementById('scopeSelector').classList.toggle('hidden', !isSingle);
-    if (!isSingle) document.getElementById('schemaSub').classList.add('hidden');
+    if (currentScope === 'schema') document.getElementById('schemaSub').classList.remove('hidden');
     document.getElementById('tabSingle').className = `flex-1 py-2 text-sm font-semibold rounded-lg transition-all ${isSingle ? 'bg-white text-indigo-700 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`;
     document.getElementById('tabBulk').className = `flex-1 py-2 text-sm font-semibold rounded-lg transition-all ${!isSingle ? 'bg-white text-indigo-700 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`;
     clearResults();
@@ -775,10 +787,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const gc = { Good: 'bg-emerald-100 text-emerald-700', 'Need Improvement': 'bg-amber-100 text-amber-700', Poor: 'bg-red-100 text-red-700' };
       const bd = r.score.breakdown;
 
-      const cell = (pts, max) => {
+      const cell = (col, pts, max) => {
         const pct = Math.round(pts / max * 100);
-        const col = pct >= 70 ? 'text-emerald-600' : pct >= 40 ? 'text-amber-600' : 'text-red-500';
-        return `<td class="px-4 py-3 text-center"><span class="font-semibold ${col}">${pts}</span><span class="text-slate-300">/${max}</span></td>`;
+        const color = pct >= 70 ? 'text-emerald-600' : pct >= 40 ? 'text-amber-600' : 'text-red-500';
+        return `<td data-col="${col}" class="px-4 py-3 text-center"><span class="font-semibold ${color}">${pts}</span><span class="text-slate-300">/${max}</span></td>`;
       };
 
       tbody.innerHTML += `
@@ -789,12 +801,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </td>
           <td class="px-4 py-3 text-center font-black text-lg text-slate-800">${sc}</td>
           <td class="px-4 py-3 text-center"><span class="text-xs font-bold px-2 py-0.5 rounded-full ${gc[g] || gc['Poor']}">${g}</span></td>
-          ${cell(bd.seo_tags?.points ?? 0, bd.seo_tags?.max ?? 20)}
-          ${cell(bd.robots_txt?.points ?? 0, bd.robots_txt?.max ?? 10)}
-          ${cell(bd.json_ld?.points ?? 0, bd.json_ld?.max ?? 15)}
-          ${cell(bd.llms_txt?.points ?? 0, bd.llms_txt?.max ?? 15)}
-          ${cell(bd.faq?.points ?? 0, bd.faq?.max ?? 15)}
-          ${cell(bd.csr_ratio?.points ?? 0, bd.csr_ratio?.max ?? 10)}
+          ${cell('seo', bd.seo_tags?.points ?? 0, bd.seo_tags?.max ?? 20)}
+          ${cell('robots', bd.robots_txt?.points ?? 0, bd.robots_txt?.max ?? 10)}
+          ${cell('schema', bd.json_ld?.points ?? 0, bd.json_ld?.max ?? 15)}
+          ${cell('llms', bd.llms_txt?.points ?? 0, bd.llms_txt?.max ?? 15)}
+          ${cell('faq', bd.faq?.points ?? 0, bd.faq?.max ?? 15)}
+          ${cell('csr', bd.csr_ratio?.points ?? 0, bd.csr_ratio?.max ?? 10)}
           <td class="px-4 py-3">
             <button onclick="showSingleFromBulk(${idx})"
               class="text-xs text-indigo-600 hover:text-indigo-800 font-semibold">상세 보기</button>
@@ -803,6 +815,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
 
     document.getElementById('bulkResults').classList.remove('hidden');
+    filterBulkColumns();
   }
 
   function showSingleFromBulk(idx) {
