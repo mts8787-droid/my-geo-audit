@@ -4,4 +4,5 @@ httpx>=0.28.0
 beautifulsoup4>=4.13.0
 pydantic>=2.10.0
 playwright>=1.40.0
+playwright-stealth>=1.0.6
 slowapi>=0.1.9

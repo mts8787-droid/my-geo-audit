@@ -694,6 +694,7 @@ async def _check_csr_chars(url: str) -> dict:
     """Playwright로 JS 실행 후 텍스트 글자수를 반환."""
     try:
         from playwright.async_api import async_playwright
+        from playwright_stealth import stealth_async
     except ImportError:
         return {"status": "unavailable", "csr_chars": 0}
 
@@ -740,18 +741,8 @@ async def _check_csr_chars(url: str) -> dict:
                         "Upgrade-Insecure-Requests": "1",
                     },
                 )
-                await context.add_init_script("""
-                    Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
-                    Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3, 4, 5] });
-                    Object.defineProperty(navigator, 'languages', { get: () => ['ko-KR', 'ko', 'en-US', 'en'] });
-                    window.chrome = { runtime: {} };
-                    const origQuery = window.navigator.permissions.query;
-                    window.navigator.permissions.query = (params) =>
-                      params.name === 'notifications'
-                        ? Promise.resolve({ state: Notification.permission })
-                        : origQuery(params);
-                """)
                 page = await context.new_page()
+                await stealth_async(page)
 
                 resp = await page.goto(url, wait_until="networkidle", timeout=30000)
                 final_url = page.url
