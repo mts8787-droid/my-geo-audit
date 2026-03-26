@@ -57,6 +57,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em;
       text-transform: uppercase; color: #94a3b8;
     }
+    .scope-pill {
+      padding: 0.375rem 0.875rem; font-size: 0.8125rem; font-weight: 600;
+      border-radius: 0.5rem; border: 1px solid #e2e8f0;
+      background: white; color: #64748b; cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .scope-pill:hover { border-color: #a5b4fc; color: #6366f1; }
+    .scope-pill.active { background: linear-gradient(135deg, #6366f1, #8b5cf6); color: white; border-color: transparent; }
+    .schema-chip {
+      padding: 0.25rem 0.625rem; font-size: 0.75rem; font-weight: 500;
+      border-radius: 0.375rem; border: 1px solid #c7d2fe;
+      background: #eef2ff; color: #4338ca; cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .schema-chip:hover { background: #c7d2fe; }
+    .schema-chip.active { background: #4338ca; color: white; border-color: #4338ca; }
   </style>
 </head>
 <body class="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-purple-50"><!-- Google Tag Manager (noscript) -->
@@ -162,6 +178,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         일괄 분석
       </button>
     </div>
+  </div>
+
+  <!-- Audit Scope Selector -->
+  <div id="scopeSelector" class="flex flex-wrap items-center justify-center gap-2 mb-8">
+    <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mr-1">검사 항목</span>
+    <button onclick="setScope('all')" data-scope="all" class="scope-pill active">전체</button>
+    <button onclick="setScope('schema')" data-scope="schema" class="scope-pill">스키마</button>
+    <button onclick="setScope('seo')" data-scope="seo" class="scope-pill">SEO Basic</button>
+    <button onclick="setScope('faq')" data-scope="faq" class="scope-pill">FAQ</button>
+  </div>
+  <div id="schemaSub" class="hidden flex flex-wrap items-center justify-center gap-2 mb-8 -mt-4">
+    <span class="text-xs text-slate-400 mr-1">스키마 종류:</span>
+    <button onclick="toggleSchemaType(this)" data-type="Product" class="schema-chip active">Product</button>
+    <button onclick="toggleSchemaType(this)" data-type="FAQPage" class="schema-chip active">FAQPage</button>
+    <button onclick="toggleSchemaType(this)" data-type="BreadcrumbList" class="schema-chip active">BreadcrumbList</button>
+    <button onclick="toggleSchemaType(this)" data-type="Organization" class="schema-chip active">Organization</button>
   </div>
 
   <!-- Loading -->
@@ -519,6 +551,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   // ── Init ───────────────────────────────────────────────────────────────────
   let currentTab = 'single';
   let bulkData = [];
+  let currentScope = 'all';
+  let selectedSchemaTypes = new Set(['Product', 'FAQPage', 'BreadcrumbList', 'Organization']);
+
+  const SCOPE_CARD_MAP = {
+    all:    ['scoreCard','pdpBanner','seoTagsCard','jsonldCard','llmsCard','robotsCard','faqCard','summaryCard','headingsCard','statsCard','reviewsCard','csrCard'],
+    schema: ['scoreCard','jsonldCard'],
+    seo:    ['scoreCard','seoTagsCard'],
+    faq:    ['scoreCard','faqCard'],
+  };
+
+  function setScope(scope) {
+    currentScope = scope;
+    document.querySelectorAll('.scope-pill').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.scope === scope);
+    });
+    document.getElementById('schemaSub').classList.toggle('hidden', scope !== 'schema');
+    filterResultCards();
+  }
+
+  function toggleSchemaType(btn) {
+    const type = btn.dataset.type;
+    if (selectedSchemaTypes.has(type)) {
+      selectedSchemaTypes.delete(type);
+      btn.classList.remove('active');
+    } else {
+      selectedSchemaTypes.add(type);
+      btn.classList.add('active');
+    }
+  }
+
+  function filterResultCards() {
+    const visible = new Set(SCOPE_CARD_MAP[currentScope] || SCOPE_CARD_MAP.all);
+    for (const id of SCOPE_CARD_MAP.all) {
+      const el = document.getElementById(id);
+      if (el) el.style.display = visible.has(id) ? '' : 'none';
+    }
+  }
 
   document.getElementById('urlInput').addEventListener('keydown', e => {
     if (e.key === 'Enter') startAnalysis();
@@ -576,6 +645,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     const isSingle = tab === 'single';
     document.getElementById('inputSingle').classList.toggle('hidden', !isSingle);
     document.getElementById('inputBulk').classList.toggle('hidden', isSingle);
+    document.getElementById('scopeSelector').classList.toggle('hidden', !isSingle);
+    if (!isSingle) document.getElementById('schemaSub').classList.add('hidden');
     document.getElementById('tabSingle').className = `flex-1 py-2 text-sm font-semibold rounded-lg transition-all ${isSingle ? 'bg-white text-indigo-700 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`;
     document.getElementById('tabBulk').className = `flex-1 py-2 text-sm font-semibold rounded-lg transition-all ${!isSingle ? 'bg-white text-indigo-700 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`;
     clearResults();
@@ -786,6 +857,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     renderReviews(data.reviews_ssr, data.score.breakdown.reviews_ssr);
     renderCsrRatio(data.csr_ratio, data.score.breakdown.csr_ratio);
     document.getElementById('results').classList.remove('hidden');
+    filterResultCards();
   }
 
   // ── ① Score ────────────────────────────────────────────────────────────────
