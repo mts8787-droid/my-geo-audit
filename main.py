@@ -23,7 +23,37 @@ import socket
 from typing import List
 from urllib.parse import urlparse
 
-app = FastAPI(title="GEO Audit Tool", version="2.21.0")
+app = FastAPI(title="GEO Audit Tool", version="2.22.0")
+
+
+@app.on_event("startup")
+async def install_chromium_on_startup():
+    """서버 시작 시 Playwright Chromium 자동 설치."""
+    import subprocess, sys
+    python = sys.executable or "python"
+    try:
+        # 이미 설치되어 있는지 확인
+        from playwright.sync_api import sync_playwright
+        with sync_playwright() as p:
+            path = p.chromium.executable_path
+            if os.path.exists(path):
+                print(f"[startup] Chromium already installed: {path}")
+                return
+    except Exception:
+        pass
+    print("[startup] Installing Chromium...")
+    for cmd in [
+        [python, "-m", "playwright", "install", "chromium", "--with-deps"],
+        [python, "-m", "playwright", "install", "chromium"],
+    ]:
+        try:
+            result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
+            if result.returncode == 0:
+                print(f"[startup] Chromium installed successfully")
+                return
+        except Exception as e:
+            print(f"[startup] Install attempt failed: {e}")
+    print("[startup] WARNING: Chromium installation failed — CSR analysis will be unavailable")
 
 # Rate Limiter
 limiter = Limiter(key_func=get_remote_address)
