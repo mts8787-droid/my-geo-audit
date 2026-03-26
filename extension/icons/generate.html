@@ -1,0 +1,39 @@
+<!-- 이 파일을 브라우저에서 열어 아이콘을 다운로드하세요 -->
+<!DOCTYPE html>
+<html>
+<body>
+<canvas id="c16" width="16" height="16"></canvas>
+<canvas id="c48" width="48" height="48"></canvas>
+<canvas id="c128" width="128" height="128"></canvas>
+<script>
+function drawIcon(canvas) {
+  const ctx = canvas.getContext('2d');
+  const s = canvas.width;
+  // 배경
+  const grad = ctx.createLinearGradient(0, 0, s, s);
+  grad.addColorStop(0, '#6366f1');
+  grad.addColorStop(1, '#8b5cf6');
+  ctx.fillStyle = grad;
+  ctx.beginPath();
+  ctx.roundRect(0, 0, s, s, s * 0.2);
+  ctx.fill();
+  // 텍스트
+  ctx.fillStyle = 'white';
+  ctx.font = `bold ${s * 0.4}px sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('GEO', s / 2, s / 2);
+}
+[16, 48, 128].forEach(size => {
+  const c = document.getElementById('c' + size);
+  drawIcon(c);
+  const link = document.createElement('a');
+  link.download = 'icon' + size + '.png';
+  link.href = c.toDataURL();
+  link.textContent = 'Download icon' + size + '.png';
+  link.style.display = 'block';
+  document.body.appendChild(link);
+});
+</script>
+</body>
+</html>
