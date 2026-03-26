@@ -762,7 +762,7 @@ async def _check_csr_chars(url: str) -> dict:
                     await page.wait_for_timeout(2000)
                     quick_text = await page.inner_text("body")
                     body_chars = len(re.sub(r'\s+', '', quick_text))
-                    if body_chars < 200:
+                    if body_chars < 10000:
                         await context.close()
                         await browser.close()
                         is_bot_block = any(kw in quick_text.lower() for kw in

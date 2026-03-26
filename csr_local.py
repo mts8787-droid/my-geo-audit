@@ -99,7 +99,7 @@ async def fetch_csr_chars(url: str, headless: bool = False) -> dict:
             await page.wait_for_timeout(2000)
             body_text = await page.inner_text("body")
             body_chars = len(re.sub(r"\s+", "", body_text))
-            if body_chars < 200:
+            if body_chars < 10000:
                 await context.close()
                 await browser.close()
                 return {"status": "blocked", "csr_chars": 0, "http_status": http_status}
