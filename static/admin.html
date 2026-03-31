@@ -16,15 +16,24 @@
     .fade-in { animation: fadeIn .3s ease; }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
     .total-bar { transition: width 0.5s cubic-bezier(.4,0,.2,1); }
+    .proportion-seg { transition: width 0.4s ease; min-width: 2px; }
+    .toggle-track { transition: background-color 0.2s; }
+    .toggle-thumb { transition: transform 0.2s; }
+    input[type=range] { -webkit-appearance: none; height: 6px; border-radius: 3px; background: #e2e8f0; outline: none; }
+    input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: #6366f1; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,.2); }
+    .criteria-row:hover { background-color: #f8fafc; }
+    .threshold-input { width: 70px; }
   </style>
 </head>
 <body class="bg-slate-50 min-h-screen">
 
   <!-- Header -->
   <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-100">
-    <div class="max-w-4xl mx-auto px-6 py-3 flex items-center gap-3">
+    <div class="max-w-5xl mx-auto px-6 py-3 flex items-center gap-3">
       <a href="/" class="text-xl font-extrabold gradient-text">GEO Audit</a>
       <span class="text-xs font-medium bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded-full">Admin</span>
+      <div class="flex-1"></div>
+      <button id="btn-logout" class="text-xs text-slate-400 hover:text-slate-600 hidden" onclick="logout()">Logout</button>
     </div>
   </header>
 
@@ -45,19 +54,23 @@
     </div>
   </div>
 
-  <!-- Dashboard (hidden until login) -->
-  <div id="dashboard" class="max-w-4xl mx-auto px-6 py-8 hidden">
+  <!-- Dashboard -->
+  <div id="dashboard" class="max-w-5xl mx-auto px-6 py-8 hidden">
 
-    <!-- Total Score Preview -->
+    <!-- Total Score Overview -->
     <div class="card p-6 mb-6 fade-in">
-      <div class="flex items-center justify-between mb-3">
-        <h2 class="text-lg font-bold text-slate-800">총 배점 미리보기</h2>
-        <span id="total-badge" class="text-2xl font-extrabold gradient-text">100점</span>
+      <div class="flex items-center justify-between mb-2">
+        <h2 class="text-lg font-bold text-slate-800">배점 분포</h2>
+        <div class="flex items-center gap-3">
+          <span id="total-badge" class="text-2xl font-extrabold gradient-text">100점</span>
+          <button onclick="autoBalance()" class="text-xs px-3 py-1.5 bg-indigo-50 text-indigo-600 rounded-lg hover:bg-indigo-100 transition font-medium"
+            title="모든 카테고리의 max를 criteria 합계에 맞춤">자동 맞춤</button>
+        </div>
       </div>
-      <div class="w-full bg-slate-100 rounded-full h-3 overflow-hidden">
-        <div id="total-bar" class="total-bar h-full rounded-full bg-gradient-to-r from-indigo-500 to-purple-500" style="width:100%"></div>
-      </div>
-      <p id="total-warning" class="text-amber-600 text-xs mt-2 hidden">총점이 100점이 아닙니다. 확인해주세요.</p>
+      <!-- Proportion Bar -->
+      <div id="proportion-bar" class="flex rounded-lg overflow-hidden h-8 mb-3"></div>
+      <div id="proportion-legend" class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500"></div>
+      <p id="total-warning" class="text-amber-600 text-xs mt-2 hidden"></p>
     </div>
 
     <!-- Category Cards -->
@@ -101,68 +114,10 @@ let token = '';
 let config = {};
 let dirty = false;
 
-// ── Category metadata ──
-const CATEGORIES = [
-  {
-    key: 'seo_tags', fields: [
-      { name: 'max', label: '최대 점수', type: 'number' },
-      { name: 'per_item', label: '항목당 점수', type: 'number' },
-      { name: 'items', label: '항목 수', type: 'number' },
-    ]
-  },
-  {
-    key: 'robots_txt', fields: [
-      { name: 'max', label: '최대 점수', type: 'number' },
-    ]
-  },
-  {
-    key: 'json_ld', fields: [
-      { name: 'max', label: '최대 점수', type: 'number' },
-      { name: 'required', label: '필수 스키마(Product) 점수', type: 'number' },
-      { name: 'supporting', label: '보조 스키마 점수', type: 'number' },
-    ]
-  },
-  {
-    key: 'llms_txt', fields: [
-      { name: 'max', label: '최대 점수', type: 'number' },
-    ]
-  },
-  {
-    key: 'faq', fields: [
-      { name: 'max', label: '최대 점수', type: 'number' },
-      { name: 'schema', label: 'FAQPage 스키마 점수', type: 'number' },
-      { name: 'html', label: 'HTML 섹션 점수', type: 'number' },
-    ]
-  },
-  {
-    key: 'summary_box', fields: [
-      { name: 'max', label: '최대 점수', type: 'number' },
-    ]
-  },
-  {
-    key: 'heading_structure', fields: [
-      { name: 'max', label: '최대 점수', type: 'number' },
-      { name: 'single_h1', label: 'H1 단일 점수', type: 'number' },
-      { name: 'multiple_h2', label: 'H2 복수 점수', type: 'number' },
-      { name: 'logical_order', label: '논리적 순서 점수', type: 'number' },
-    ]
-  },
-  {
-    key: 'stats_density', fields: [
-      { name: 'max', label: '최대 점수', type: 'number' },
-    ]
-  },
-  {
-    key: 'reviews_ssr', fields: [
-      { name: 'max', label: '최대 점수', type: 'number' },
-    ]
-  },
-  {
-    key: 'csr_ratio', fields: [
-      { name: 'max', label: '최대 점수', type: 'number' },
-    ],
-    tiers: true
-  },
+const CAT_KEYS = ['seo_tags','robots_txt','json_ld','llms_txt','faq','summary_box','heading_structure','stats_density','reviews_ssr','csr_ratio'];
+const CAT_COLORS = [
+  'bg-indigo-500','bg-purple-500','bg-blue-500','bg-cyan-500','bg-teal-500',
+  'bg-emerald-500','bg-amber-500','bg-orange-500','bg-rose-500','bg-pink-500'
 ];
 
 function escHtml(s) {
@@ -191,11 +146,21 @@ async function doLogin() {
     token = pw;
     document.getElementById('login-screen').classList.add('hidden');
     document.getElementById('dashboard').classList.remove('hidden');
+    document.getElementById('btn-logout').classList.remove('hidden');
     await loadConfig();
   } catch {
     errEl.textContent = '서버 연결 실패';
     errEl.classList.remove('hidden');
   }
+}
+
+function logout() {
+  token = '';
+  config = {};
+  document.getElementById('dashboard').classList.add('hidden');
+  document.getElementById('login-screen').classList.remove('hidden');
+  document.getElementById('btn-logout').classList.add('hidden');
+  document.getElementById('pw-input').value = '';
 }
 
 // ── Load Config ──
@@ -204,125 +169,247 @@ async function loadConfig() {
     headers: { 'Authorization': `Bearer ${token}` },
   });
   config = await res.json();
-  renderCards();
-  updateTotal();
+  renderAll();
   dirty = false;
   document.getElementById('btn-save').disabled = true;
 }
 
-// ── Render Category Cards ──
-function renderCards() {
-  const container = document.getElementById('config-cards');
-  container.innerHTML = '';
-
-  for (const cat of CATEGORIES) {
-    const c = config[cat.key] || {};
-    const label = c.label || cat.key;
-    const desc = c.description || '';
-
-    let fieldsHtml = '';
-    for (const f of cat.fields) {
-      const val = c[f.name] ?? 0;
-      fieldsHtml += `
-        <div>
-          <label class="text-xs text-slate-500 mb-1 block">${escHtml(f.label)}</label>
-          <input type="number" min="0" max="100" step="1" value="${val}"
-            data-cat="${cat.key}" data-field="${f.name}"
-            class="cfg-input w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
-            oninput="onFieldChange(this)">
-        </div>`;
-    }
-
-    // CSR tiers
-    let tiersHtml = '';
-    if (cat.tiers && c.tiers) {
-      tiersHtml = `<div class="mt-4 pt-4 border-t border-slate-100">
-        <p class="text-xs font-semibold text-slate-500 mb-3">티어별 설정</p>
-        <div class="space-y-3">`;
-      for (const tierName of ['excellent', 'good', 'partial']) {
-        const t = c.tiers[tierName] || {};
-        tiersHtml += `
-          <div class="grid grid-cols-2 gap-3">
-            <div>
-              <label class="text-xs text-slate-400">${escHtml(tierName)} — 최소 비율</label>
-              <input type="number" min="0" max="1" step="0.05" value="${t.min_ratio ?? 0}"
-                data-cat="${cat.key}" data-tier="${tierName}" data-tier-field="min_ratio"
-                class="tier-input w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
-                oninput="onTierChange(this)">
-            </div>
-            <div>
-              <label class="text-xs text-slate-400">${escHtml(tierName)} — 점수</label>
-              <input type="number" min="0" max="100" step="1" value="${t.points ?? 0}"
-                data-cat="${cat.key}" data-tier="${tierName}" data-tier-field="points"
-                class="tier-input w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
-                oninput="onTierChange(this)">
-            </div>
-          </div>`;
-      }
-      tiersHtml += `</div></div>`;
-    }
-
-    container.innerHTML += `
-      <div class="card p-6 fade-in">
-        <div class="flex items-center gap-2 mb-1">
-          <h3 class="text-sm font-bold text-slate-700">${escHtml(label)}</h3>
-          <span class="text-xs text-white bg-indigo-500 px-2 py-0.5 rounded-full cat-max" data-cat="${cat.key}">${c.max ?? 0}점</span>
-        </div>
-        <p class="text-xs text-slate-400 mb-4">${escHtml(desc)}</p>
-        <div class="grid grid-cols-3 gap-3">${fieldsHtml}</div>
-        ${tiersHtml}
-      </div>`;
-  }
-
-  // grade
+function renderAll() {
+  renderCards();
+  updateTotal();
+  renderProportionBar();
   document.getElementById('grade-good').value = config.grade?.good ?? 90;
   document.getElementById('grade-need').value = config.grade?.need_improvement ?? 70;
 }
 
-// ── Field Change Handlers ──
-function onFieldChange(el) {
-  const cat = el.dataset.cat;
-  const field = el.dataset.field;
-  if (!config[cat]) config[cat] = {};
-  config[cat][field] = parseFloat(el.value) || 0;
+// ── Proportion Bar ──
+function renderProportionBar() {
+  const bar = document.getElementById('proportion-bar');
+  const legend = document.getElementById('proportion-legend');
+  const total = CAT_KEYS.reduce((s, k) => s + (config[k]?.max || 0), 0) || 1;
 
-  // Update badge
-  if (field === 'max') {
-    const badge = document.querySelector(`.cat-max[data-cat="${cat}"]`);
-    if (badge) badge.textContent = `${config[cat].max}점`;
+  bar.innerHTML = '';
+  legend.innerHTML = '';
+  CAT_KEYS.forEach((k, i) => {
+    const c = config[k] || {};
+    const pct = ((c.max || 0) / total * 100).toFixed(1);
+    bar.innerHTML += `<div class="proportion-seg ${CAT_COLORS[i]} opacity-80 hover:opacity-100 cursor-default" style="width:${pct}%" title="${escHtml(c.label || k)}: ${c.max || 0}점 (${pct}%)"></div>`;
+    legend.innerHTML += `<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-sm ${CAT_COLORS[i]} inline-block"></span>${escHtml(c.label || k)} ${c.max||0}</span>`;
+  });
+}
+
+// ── Render Cards ──
+function renderCards() {
+  const container = document.getElementById('config-cards');
+  container.innerHTML = '';
+
+  CAT_KEYS.forEach((catKey, catIdx) => {
+    const c = config[catKey] || {};
+    const label = c.label || catKey;
+    const desc = c.description || '';
+    const criteria = c.criteria || [];
+    const crSum = criteria.filter(cr => cr.enabled !== false).reduce((s, cr) => s + (cr.points || 0), 0);
+
+    // Max score slider
+    const maxVal = c.max || 0;
+
+    // Criteria table
+    let criteriaHtml = '';
+    criteria.forEach((cr, idx) => {
+      const enabled = cr.enabled !== false;
+      const thresholdHtml = renderThresholdInputs(catKey, idx, cr.threshold || {});
+
+      criteriaHtml += `
+        <div class="criteria-row flex items-center gap-3 py-2.5 px-3 rounded-lg transition ${!enabled ? 'opacity-40' : ''}">
+          <!-- Toggle -->
+          <button onclick="toggleCriteria('${catKey}', ${idx})" class="flex-shrink-0"
+            title="${enabled ? '비활성화' : '활성화'}">
+            <div class="toggle-track w-9 h-5 rounded-full ${enabled ? 'bg-indigo-500' : 'bg-slate-200'} relative">
+              <div class="toggle-thumb w-4 h-4 bg-white rounded-full absolute top-0.5 shadow ${enabled ? 'transform translate-x-4' : 'translate-x-0.5'}"></div>
+            </div>
+          </button>
+          <!-- Name & Condition -->
+          <div class="flex-1 min-w-0">
+            <p class="text-sm font-medium text-slate-700 truncate">${escHtml(cr.name)}</p>
+            <p class="text-xs text-slate-400 truncate">${escHtml(cr.condition)}</p>
+          </div>
+          <!-- Threshold -->
+          ${thresholdHtml}
+          <!-- Points -->
+          <div class="flex items-center gap-1.5 flex-shrink-0">
+            <input type="number" min="0" max="100" step="1" value="${cr.points || 0}"
+              class="w-14 px-2 py-1.5 rounded-lg border border-slate-200 text-sm text-center font-semibold focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+              onchange="setCriteriaPoints('${catKey}', ${idx}, this.value)">
+            <span class="text-xs text-slate-400">점</span>
+          </div>
+          <!-- Delete -->
+          <button onclick="deleteCriteria('${catKey}', ${idx})" class="text-slate-300 hover:text-red-400 transition flex-shrink-0" title="삭제">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>`;
+    });
+
+    container.innerHTML += `
+      <div class="card p-6 fade-in" id="card-${catKey}">
+        <!-- Header -->
+        <div class="flex items-center justify-between mb-1">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-sm ${CAT_COLORS[catIdx]}"></span>
+            <h3 class="text-sm font-bold text-slate-700">${escHtml(label)}</h3>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs text-slate-400">기준 합계: <b class="text-slate-600">${crSum}점</b></span>
+            <span class="text-xs font-bold text-white ${CAT_COLORS[catIdx]} px-2 py-0.5 rounded-full">${maxVal}점</span>
+          </div>
+        </div>
+        <p class="text-xs text-slate-400 mb-3">${escHtml(desc)}</p>
+
+        <!-- Max slider -->
+        <div class="flex items-center gap-3 mb-4 px-1">
+          <span class="text-xs text-slate-500 w-16">최대 점수</span>
+          <input type="range" min="0" max="50" step="1" value="${maxVal}" class="flex-1"
+            oninput="setMax('${catKey}', this.value)">
+          <input type="number" min="0" max="100" step="1" value="${maxVal}"
+            class="w-14 px-2 py-1 rounded-lg border border-slate-200 text-sm text-center font-semibold focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+            onchange="setMax('${catKey}', this.value)">
+        </div>
+
+        <!-- Criteria list -->
+        <div class="space-y-0.5 mb-3">
+          ${criteriaHtml || '<p class="text-xs text-slate-300 text-center py-3">기준 없음</p>'}
+        </div>
+
+        <!-- Add criteria button -->
+        <button onclick="addCriteria('${catKey}')"
+          class="w-full py-2 border-2 border-dashed border-slate-200 rounded-lg text-xs text-slate-400 hover:border-indigo-300 hover:text-indigo-500 transition">
+          + 기준 추가
+        </button>
+      </div>`;
+  });
+}
+
+function renderThresholdInputs(catKey, idx, threshold) {
+  if (!threshold || Object.keys(threshold).length === 0) return '';
+
+  const LABELS = {
+    min_length: '최소 길이',
+    max_count: '최대 횟수',
+    min_ratio: '최소 비율',
+    min_count: '최소 개수',
+  };
+
+  let html = '<div class="flex gap-2 flex-shrink-0">';
+  for (const [key, val] of Object.entries(threshold)) {
+    const label = LABELS[key] || key;
+    const step = key === 'min_ratio' ? '0.05' : '1';
+    html += `
+      <div class="text-center">
+        <label class="text-[10px] text-slate-400 block">${escHtml(label)}</label>
+        <input type="number" step="${step}" value="${val}"
+          class="threshold-input px-2 py-1 rounded border border-slate-200 text-xs text-center focus:ring-1 focus:ring-indigo-400 focus:outline-none"
+          onchange="setThreshold('${catKey}', ${idx}, '${key}', this.value)">
+      </div>`;
+  }
+  html += '</div>';
+  return html;
+}
+
+// ── Actions ──
+function setMax(catKey, val) {
+  val = parseInt(val) || 0;
+  if (!config[catKey]) config[catKey] = {};
+  config[catKey].max = val;
+  // sync slider + number input
+  const card = document.getElementById(`card-${catKey}`);
+  if (card) {
+    card.querySelector('input[type=range]').value = val;
+    card.querySelector('input[type=number]').value = val;
+    card.querySelector(`.${CAT_COLORS[CAT_KEYS.indexOf(catKey)]}`).textContent = `${val}점`;
   }
   markDirty();
   updateTotal();
+  renderProportionBar();
 }
 
-function onTierChange(el) {
-  const cat = el.dataset.cat;
-  const tier = el.dataset.tier;
-  const field = el.dataset.tierField;
-  if (!config[cat]) config[cat] = {};
-  if (!config[cat].tiers) config[cat].tiers = {};
-  if (!config[cat].tiers[tier]) config[cat].tiers[tier] = {};
-  config[cat].tiers[tier][field] = parseFloat(el.value) || 0;
+function toggleCriteria(catKey, idx) {
+  const cr = config[catKey]?.criteria?.[idx];
+  if (!cr) return;
+  cr.enabled = cr.enabled === false ? true : false;
+  markDirty();
+  renderAll();
+}
+
+function setCriteriaPoints(catKey, idx, val) {
+  const cr = config[catKey]?.criteria?.[idx];
+  if (!cr) return;
+  cr.points = parseInt(val) || 0;
+  markDirty();
+  renderAll();
+}
+
+function setThreshold(catKey, idx, key, val) {
+  const cr = config[catKey]?.criteria?.[idx];
+  if (!cr) return;
+  if (!cr.threshold) cr.threshold = {};
+  cr.threshold[key] = parseFloat(val) || 0;
   markDirty();
 }
 
+function deleteCriteria(catKey, idx) {
+  if (!confirm('이 기준을 삭제하시겠습니까?')) return;
+  config[catKey].criteria.splice(idx, 1);
+  markDirty();
+  renderAll();
+}
+
+function addCriteria(catKey) {
+  if (!config[catKey]) config[catKey] = {};
+  if (!config[catKey].criteria) config[catKey].criteria = [];
+
+  const name = prompt('기준 이름:');
+  if (!name) return;
+  const condition = prompt('조건 설명:') || '';
+  const points = parseInt(prompt('점수:', '2')) || 0;
+
+  const id = name.toLowerCase().replace(/[^a-z0-9가-힣]/g, '_').replace(/_+/g, '_');
+  config[catKey].criteria.push({
+    id,
+    name,
+    condition,
+    points,
+    threshold: {},
+    enabled: true,
+  });
+  markDirty();
+  renderAll();
+}
+
+function autoBalance() {
+  for (const k of CAT_KEYS) {
+    const c = config[k];
+    if (!c?.criteria) continue;
+    const sum = c.criteria.filter(cr => cr.enabled !== false).reduce((s, cr) => s + (cr.points || 0), 0);
+    c.max = sum;
+  }
+  markDirty();
+  renderAll();
+  showToast('각 카테고리 max를 기준 합계에 맞췄습니다.');
+}
+
 function markDirty() {
-  // sync grade from inputs
   if (!config.grade) config.grade = {};
   config.grade.good = parseInt(document.getElementById('grade-good').value) || 90;
   config.grade.need_improvement = parseInt(document.getElementById('grade-need').value) || 70;
-
   dirty = true;
   document.getElementById('btn-save').disabled = false;
 }
 
-// ── Total Score Preview ──
+// ── Total ──
 function updateTotal() {
-  const keys = ['seo_tags','robots_txt','json_ld','llms_txt','faq','summary_box','heading_structure','stats_density','reviews_ssr','csr_ratio'];
   let total = 0;
-  for (const k of keys) total += (config[k]?.max || 0);
+  for (const k of CAT_KEYS) total += (config[k]?.max || 0);
   document.getElementById('total-badge').textContent = `${total}점`;
-  document.getElementById('total-bar').style.width = `${Math.min(total, 100)}%`;
+  document.getElementById('total-bar')?.style && (document.getElementById('total-bar').style.width = `${Math.min(total, 100)}%`);
 
   const warn = document.getElementById('total-warning');
   if (total !== 100) {
@@ -338,21 +425,17 @@ async function saveConfig() {
   try {
     const res = await fetch('/admin/config', {
       method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`,
-      },
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
       body: JSON.stringify(config),
     });
     if (!res.ok) { alert('저장 실패'); return; }
     const data = await res.json();
     config = data.config;
+    renderAll();
     dirty = false;
     document.getElementById('btn-save').disabled = true;
     showToast('설정이 저장되었습니다.');
-  } catch {
-    alert('서버 연결 실패');
-  }
+  } catch { alert('서버 연결 실패'); }
 }
 
 async function resetConfig() {
@@ -365,17 +448,13 @@ async function resetConfig() {
     if (!res.ok) { alert('리셋 실패'); return; }
     const data = await res.json();
     config = data.config;
-    renderCards();
-    updateTotal();
+    renderAll();
     dirty = false;
     document.getElementById('btn-save').disabled = true;
     showToast('기본값으로 복원되었습니다.');
-  } catch {
-    alert('서버 연결 실패');
-  }
+  } catch { alert('서버 연결 실패'); }
 }
 
-// ── Toast ──
 function showToast(msg) {
   const el = document.createElement('div');
   el.className = 'fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-sm px-5 py-3 rounded-xl shadow-lg fade-in z-50';
@@ -384,7 +463,6 @@ function showToast(msg) {
   setTimeout(() => el.remove(), 2500);
 }
 
-// Warn before leaving with unsaved changes
 window.addEventListener('beforeunload', (e) => {
   if (dirty) { e.preventDefault(); e.returnValue = ''; }
 });

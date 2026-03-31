@@ -19,21 +19,52 @@ _bulk_sem = asyncio.Semaphore(5)
 _CONFIG_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "scoring_config.json")
 
 _DEFAULT_CONFIG = {
-    "seo_tags":          {"max": 20, "per_item": 2, "items": 10},
-    "robots_txt":        {"max": 10},
-    "json_ld":           {"max": 15, "required": 8, "supporting": 7},
-    "llms_txt":          {"max": 5},
-    "faq":               {"max": 15, "schema": 8, "html": 7},
-    "summary_box":       {"max": 5},
-    "heading_structure":  {"max": 5, "single_h1": 2, "multiple_h2": 2, "logical_order": 1},
-    "stats_density":     {"max": 5},
-    "reviews_ssr":       {"max": 10},
-    "csr_ratio":         {"max": 10, "tiers": {
-        "excellent": {"min_ratio": 0.8, "points": 10},
-        "good":      {"min_ratio": 0.5, "points": 7},
-        "partial":   {"min_ratio": 0.3, "points": 4},
-    }},
-    "grade":             {"good": 90, "need_improvement": 70},
+    "seo_tags": {"max": 20, "label": "SEO Tags", "criteria": [
+        {"id": "title", "name": "Title 태그", "condition": "title 존재 AND 길이 >= min_length", "points": 2, "threshold": {"min_length": 10}, "enabled": True},
+        {"id": "desc", "name": "Meta Description", "condition": "description 존재 AND 길이 >= min_length", "points": 2, "threshold": {"min_length": 50}, "enabled": True},
+        {"id": "canonical", "name": "Canonical 태그", "condition": "canonical href 존재", "points": 2, "threshold": {}, "enabled": True},
+        {"id": "h1", "name": "H1 고유성", "condition": "H1 태그가 정확히 1개", "points": 2, "threshold": {}, "enabled": True},
+        {"id": "img_alt", "name": "이미지 Alt", "condition": "모든 이미지에 alt 속성 존재", "points": 2, "threshold": {}, "enabled": True},
+        {"id": "redirect", "name": "리다이렉트 체인", "condition": "리다이렉트 횟수 <= max_count", "points": 2, "threshold": {"max_count": 3}, "enabled": True},
+        {"id": "og_title", "name": "og:title", "condition": "og:title 메타태그 존재", "points": 2, "threshold": {}, "enabled": True},
+        {"id": "og_desc", "name": "og:description", "condition": "og:description 메타태그 존재", "points": 2, "threshold": {}, "enabled": True},
+        {"id": "og_image", "name": "og:image", "condition": "og:image 메타태그 존재", "points": 2, "threshold": {}, "enabled": True},
+        {"id": "robots", "name": "Meta Robots", "condition": "noindex가 아님", "points": 2, "threshold": {}, "enabled": True},
+    ]},
+    "robots_txt": {"max": 10, "label": "robots.txt AI 봇 허용", "criteria": [
+        {"id": "bot_ratio", "name": "봇 허용 비율", "condition": "(허용 봇 수 / 전체 봇 수) × max 점수", "points": 10, "threshold": {}, "enabled": True},
+    ]},
+    "json_ld": {"max": 15, "label": "JSON-LD 구조화 데이터", "criteria": [
+        {"id": "product", "name": "필수: Product 스키마", "condition": "Product 또는 IndividualProduct @type 존재", "points": 8, "threshold": {}, "enabled": True},
+        {"id": "breadcrumb", "name": "보조: BreadcrumbList/Organization", "condition": "BreadcrumbList 또는 Organization @type 존재", "points": 7, "threshold": {}, "enabled": True},
+    ]},
+    "llms_txt": {"max": 5, "label": "llms.txt", "criteria": [
+        {"id": "exists", "name": "llms.txt 파일", "condition": "/llms.txt HTTP 200 응답", "points": 5, "threshold": {}, "enabled": True},
+    ]},
+    "faq": {"max": 15, "label": "FAQ 섹션", "criteria": [
+        {"id": "schema", "name": "FAQPage 스키마", "condition": "JSON-LD에 FAQPage @type 존재", "points": 8, "threshold": {}, "enabled": True},
+        {"id": "html", "name": "HTML FAQ 섹션", "condition": "FAQ 관련 class/id/heading 또는 details 3개 이상", "points": 7, "threshold": {}, "enabled": True},
+    ]},
+    "summary_box": {"max": 5, "label": "서머리 박스", "criteria": [
+        {"id": "found", "name": "요약 박스 감지", "condition": "summary/요약/tldr 등 class/id/heading 또는 <summary> 태그", "points": 5, "threshold": {}, "enabled": True},
+    ]},
+    "heading_structure": {"max": 5, "label": "Heading 구조", "criteria": [
+        {"id": "single_h1", "name": "H1 단일", "condition": "H1 태그가 정확히 1개", "points": 2, "threshold": {}, "enabled": True},
+        {"id": "multiple_h2", "name": "H2 복수", "condition": "H2 태그 >= min_count개", "points": 2, "threshold": {"min_count": 2}, "enabled": True},
+        {"id": "logical_order", "name": "논리적 순서", "condition": "H2/H3/H4가 H1 뒤에 위치", "points": 1, "threshold": {}, "enabled": True},
+    ]},
+    "stats_density": {"max": 5, "label": "통계 데이터", "criteria": [
+        {"id": "has_stats", "name": "통계 데이터 존재", "condition": "숫자를 포함한 단어가 1개 이상", "points": 5, "threshold": {}, "enabled": True},
+    ]},
+    "reviews_ssr": {"max": 10, "label": "리뷰 SSR", "criteria": [
+        {"id": "found", "name": "리뷰 컨테이너 SSR", "condition": "#reviews_container 요소 존재", "points": 10, "threshold": {}, "enabled": True},
+    ]},
+    "csr_ratio": {"max": 10, "label": "CSR 비중", "criteria": [
+        {"id": "excellent", "name": "Excellent", "condition": "SSR/CSR 비율 >= min_ratio", "points": 10, "threshold": {"min_ratio": 0.8}, "enabled": True},
+        {"id": "good", "name": "Good", "condition": "SSR/CSR 비율 >= min_ratio", "points": 7, "threshold": {"min_ratio": 0.5}, "enabled": True},
+        {"id": "partial", "name": "Partial", "condition": "SSR/CSR 비율 >= min_ratio", "points": 4, "threshold": {"min_ratio": 0.3}, "enabled": True},
+    ]},
+    "grade": {"good": 90, "need_improvement": 70},
 }
 
 _scoring_config: Optional[dict] = None
@@ -319,125 +350,146 @@ def _check_seo_tags(page_data: dict) -> dict:
     if page_data["status"] != "ok" or not page_data["soup"]:
         return {"status": "error", "passed": 0, "total": 10, "items": {}}
 
+    cfg = get_scoring_config()
+    seo_cfg = cfg.get("seo_tags", {})
+    criteria = {c["id"]: c for c in seo_cfg.get("criteria", []) if c.get("enabled", True)}
+
     soup  = page_data["soup"]
     items = {}
 
     # 1. Title
-    title_tag  = soup.find("title")
-    title_text = title_tag.get_text(strip=True) if title_tag else ""
-    t_pass = bool(title_text and len(title_text) >= 10)
-    items["title"] = {
-        "label": "Title 태그",
-        "pass":  t_pass,
-        "value": title_text[:80] or None,
-        "hint":  "Title이 없거나 10자 미만입니다." if not t_pass else None,
-    }
+    if "title" in criteria:
+        cr = criteria["title"]
+        min_len = cr.get("threshold", {}).get("min_length", 10)
+        title_tag  = soup.find("title")
+        title_text = title_tag.get_text(strip=True) if title_tag else ""
+        t_pass = bool(title_text and len(title_text) >= min_len)
+        items["title"] = {
+            "label": "Title 태그",
+            "pass":  t_pass,
+            "value": title_text[:80] or None,
+            "hint":  f"Title이 없거나 {min_len}자 미만입니다." if not t_pass else None,
+        }
 
     # 2. Meta Description
-    meta_desc    = soup.find("meta", attrs={"name": re.compile(r"^description$", re.I)})
-    desc_content = (meta_desc.get("content") or "").strip() if meta_desc else ""
-    d_pass = bool(desc_content and len(desc_content) >= 50)
-    items["meta_description"] = {
-        "label": "Meta Description",
-        "pass":  d_pass,
-        "value": desc_content[:120] or None,
-        "hint":  "Meta Description이 없거나 50자 미만입니다." if not d_pass else None,
-    }
+    if "desc" in criteria:
+        cr = criteria["desc"]
+        min_len = cr.get("threshold", {}).get("min_length", 50)
+        meta_desc    = soup.find("meta", attrs={"name": re.compile(r"^description$", re.I)})
+        desc_content = (meta_desc.get("content") or "").strip() if meta_desc else ""
+        d_pass = bool(desc_content and len(desc_content) >= min_len)
+        items["meta_description"] = {
+            "label": "Meta Description",
+            "pass":  d_pass,
+            "value": desc_content[:120] or None,
+            "hint":  f"Meta Description이 없거나 {min_len}자 미만입니다." if not d_pass else None,
+        }
 
     # 3. Canonical
-    canonical = soup.find("link", rel=lambda v: v and "canonical" in v)
-    can_href  = (canonical.get("href") or "").strip() if canonical else ""
-    c_pass = bool(can_href)
-    items["canonical"] = {
-        "label": "Canonical 태그",
-        "pass":  c_pass,
-        "value": can_href or None,
-        "hint":  "Canonical 태그가 없습니다." if not c_pass else None,
-    }
+    if "canonical" in criteria:
+        canonical = soup.find("link", rel=lambda v: v and "canonical" in v)
+        can_href  = (canonical.get("href") or "").strip() if canonical else ""
+        c_pass = bool(can_href)
+        items["canonical"] = {
+            "label": "Canonical 태그",
+            "pass":  c_pass,
+            "value": can_href or None,
+            "hint":  "Canonical 태그가 없습니다." if not c_pass else None,
+        }
 
     # 4. H1 고유성 (정확히 1개)
-    h1s     = soup.find_all("h1")
-    h1_pass = len(h1s) == 1
-    items["h1_unique"] = {
-        "label": "H1 고유성 (정확히 1개)",
-        "pass":  h1_pass,
-        "value": h1s[0].get_text(strip=True)[:80] if h1s else None,
-        "hint":  ("H1 태그가 없습니다." if not h1s else f"H1이 {len(h1s)}개 — 1개여야 합니다.") if not h1_pass else None,
-    }
+    if "h1" in criteria:
+        h1s     = soup.find_all("h1")
+        h1_pass = len(h1s) == 1
+        items["h1_unique"] = {
+            "label": "H1 고유성 (정확히 1개)",
+            "pass":  h1_pass,
+            "value": h1s[0].get_text(strip=True)[:80] if h1s else None,
+            "hint":  ("H1 태그가 없습니다." if not h1s else f"H1이 {len(h1s)}개 — 1개여야 합니다.") if not h1_pass else None,
+        }
 
     # 5. 이미지 Alt
-    images           = soup.find_all("img")
-    imgs_missing_alt = [img for img in images if img.get("alt") is None]
-    if not images:
-        img_pass, img_value, img_hint = True, "이미지 없음", None
-    else:
-        img_pass  = len(imgs_missing_alt) == 0
-        img_value = f"{len(images)}개 중 {len(images) - len(imgs_missing_alt)}개 alt 보유"
-        img_hint  = f"{len(imgs_missing_alt)}개 이미지에 alt 속성이 없습니다." if not img_pass else None
-    items["image_alt"] = {
-        "label": "이미지 Alt 속성",
-        "pass":  img_pass,
-        "value": img_value,
-        "hint":  img_hint,
-    }
+    if "img_alt" in criteria:
+        images           = soup.find_all("img")
+        imgs_missing_alt = [img for img in images if img.get("alt") is None]
+        if not images:
+            img_pass, img_value, img_hint = True, "이미지 없음", None
+        else:
+            img_pass  = len(imgs_missing_alt) == 0
+            img_value = f"{len(images)}개 중 {len(images) - len(imgs_missing_alt)}개 alt 보유"
+            img_hint  = f"{len(imgs_missing_alt)}개 이미지에 alt 속성이 없습니다." if not img_pass else None
+        items["image_alt"] = {
+            "label": "이미지 Alt 속성",
+            "pass":  img_pass,
+            "value": img_value,
+            "hint":  img_hint,
+        }
 
-    # 6. 리다이렉트 체인 (3회 이하)
-    redirect_count = page_data.get("redirect_count", 0)
-    r_pass = redirect_count <= 3
-    items["redirect_chain"] = {
-        "label": "리다이렉트 체인 (3회 이하)",
-        "pass":  r_pass,
-        "value": f"{redirect_count}회 리다이렉트",
-        "hint":  f"리다이렉트 {redirect_count}회 — 3회 이하 권장" if not r_pass else None,
-    }
+    # 6. 리다이렉트 체인
+    if "redirect" in criteria:
+        cr = criteria["redirect"]
+        max_count = cr.get("threshold", {}).get("max_count", 3)
+        redirect_count = page_data.get("redirect_count", 0)
+        r_pass = redirect_count <= max_count
+        items["redirect_chain"] = {
+            "label": f"리다이렉트 체인 ({max_count}회 이하)",
+            "pass":  r_pass,
+            "value": f"{redirect_count}회 리다이렉트",
+            "hint":  f"리다이렉트 {redirect_count}회 — {max_count}회 이하 권장" if not r_pass else None,
+        }
 
     # 7. og:title
-    og_title = soup.find("meta", property="og:title")
-    og_t     = (og_title.get("content") or "").strip() if og_title else ""
-    ot_pass  = bool(og_t)
-    items["og_title"] = {
-        "label": "og:title",
-        "pass":  ot_pass,
-        "value": og_t[:80] or None,
-        "hint":  "og:title 태그가 없습니다." if not ot_pass else None,
-    }
+    if "og_title" in criteria:
+        og_title = soup.find("meta", property="og:title")
+        og_t     = (og_title.get("content") or "").strip() if og_title else ""
+        ot_pass  = bool(og_t)
+        items["og_title"] = {
+            "label": "og:title",
+            "pass":  ot_pass,
+            "value": og_t[:80] or None,
+            "hint":  "og:title 태그가 없습니다." if not ot_pass else None,
+        }
 
     # 8. og:description
-    og_desc = soup.find("meta", property="og:description")
-    og_d    = (og_desc.get("content") or "").strip() if og_desc else ""
-    od_pass = bool(og_d)
-    items["og_description"] = {
-        "label": "og:description",
-        "pass":  od_pass,
-        "value": og_d[:120] or None,
-        "hint":  "og:description 태그가 없습니다." if not od_pass else None,
-    }
+    if "og_desc" in criteria:
+        og_desc = soup.find("meta", property="og:description")
+        og_d    = (og_desc.get("content") or "").strip() if og_desc else ""
+        od_pass = bool(og_d)
+        items["og_description"] = {
+            "label": "og:description",
+            "pass":  od_pass,
+            "value": og_d[:120] or None,
+            "hint":  "og:description 태그가 없습니다." if not od_pass else None,
+        }
 
     # 9. og:image
-    og_img  = soup.find("meta", property="og:image")
-    og_i    = (og_img.get("content") or "").strip() if og_img else ""
-    oi_pass = bool(og_i)
-    items["og_image"] = {
-        "label": "og:image",
-        "pass":  oi_pass,
-        "value": og_i[:100] or None,
-        "hint":  "og:image 태그가 없습니다." if not oi_pass else None,
-    }
+    if "og_image" in criteria:
+        og_img  = soup.find("meta", property="og:image")
+        og_i    = (og_img.get("content") or "").strip() if og_img else ""
+        oi_pass = bool(og_i)
+        items["og_image"] = {
+            "label": "og:image",
+            "pass":  oi_pass,
+            "value": og_i[:100] or None,
+            "hint":  "og:image 태그가 없습니다." if not oi_pass else None,
+        }
 
     # 10. Meta Robots (noindex 체크)
-    meta_robots    = soup.find("meta", attrs={"name": re.compile(r"^robots$", re.I)})
-    robots_content = (meta_robots.get("content") or "").strip() if meta_robots else ""
-    is_noindex     = bool(meta_robots and "noindex" in robots_content.lower())
-    mr_pass        = not is_noindex
-    items["meta_robots"] = {
-        "label": "Meta Robots (noindex 아님)",
-        "pass":  mr_pass,
-        "value": robots_content if robots_content else "태그 없음 (기본: index/follow)",
-        "hint":  "noindex가 설정되어 검색 엔진에서 제외됩니다." if is_noindex else None,
-    }
+    if "robots" in criteria:
+        meta_robots    = soup.find("meta", attrs={"name": re.compile(r"^robots$", re.I)})
+        robots_content = (meta_robots.get("content") or "").strip() if meta_robots else ""
+        is_noindex     = bool(meta_robots and "noindex" in robots_content.lower())
+        mr_pass        = not is_noindex
+        items["meta_robots"] = {
+            "label": "Meta Robots (noindex 아님)",
+            "pass":  mr_pass,
+            "value": robots_content if robots_content else "태그 없음 (기본: index/follow)",
+            "hint":  "noindex가 설정되어 검색 엔진에서 제외됩니다." if is_noindex else None,
+        }
 
     passed = sum(1 for v in items.values() if v["pass"])
-    return {"status": "ok", "passed": passed, "total": 10, "items": items}
+    total  = len(criteria)
+    return {"status": "ok", "passed": passed, "total": total, "items": items}
 
 
 # ── JSON-LD ───────────────────────────────────────────────────────────────────
@@ -940,14 +992,28 @@ def _calculate_score(robots: dict, llms: dict, jsonld: dict,
     score     = 0
     breakdown = {}
 
-    # 1. 기본 SEO 태그
+    # 1. 기본 SEO 태그 — criteria 기반 개별 점수
     c = cfg.get("seo_tags", {})
-    passed    = seo_tags.get("passed", 0)
-    per_item  = c.get("per_item", 2)
     seo_max   = c.get("max", 20)
-    seo_score = min(passed * per_item, seo_max)
-    score    += seo_score
-    breakdown["seo_tags"] = {"points": seo_score, "max": seo_max, "passed": passed, "total": c.get("items", 10)}
+    seo_criteria = {cr["id"]: cr for cr in c.get("criteria", []) if cr.get("enabled", True)}
+    # SEO items의 pass 여부에 따라 해당 criterion의 points를 합산
+    seo_id_map = {
+        "title": "title", "meta_description": "desc", "canonical": "canonical",
+        "h1_unique": "h1", "image_alt": "img_alt", "redirect_chain": "redirect",
+        "og_title": "og_title", "og_description": "og_desc", "og_image": "og_image",
+        "meta_robots": "robots",
+    }
+    seo_score = 0
+    seo_items = seo_tags.get("items", {})
+    for item_key, cr_id in seo_id_map.items():
+        item = seo_items.get(item_key)
+        cr = seo_criteria.get(cr_id)
+        if item and cr and item.get("pass"):
+            seo_score += cr.get("points", 2)
+    seo_score = min(seo_score, seo_max)
+    passed = sum(1 for v in seo_items.values() if v.get("pass"))
+    score += seo_score
+    breakdown["seo_tags"] = {"points": seo_score, "max": seo_max, "passed": passed, "total": len(seo_criteria)}
 
     # 2. robots.txt AI 봇 허용
     c = cfg.get("robots_txt", {})
@@ -961,9 +1027,10 @@ def _calculate_score(robots: dict, llms: dict, jsonld: dict,
     score    += bot_score
     breakdown["robots_txt"] = {"points": bot_score, "max": rob_max}
 
-    # 3. JSON-LD 구조화 데이터
+    # 3. JSON-LD 구조화 데이터 — criteria 기반
     c = cfg.get("json_ld", {})
     jld_max = c.get("max", 15)
+    jld_criteria = {cr["id"]: cr for cr in c.get("criteria", []) if cr.get("enabled", True)}
     all_types        = set(jsonld.get("all_types", []))
     all_types_lower  = {t.lower() for t in all_types}
 
@@ -971,8 +1038,8 @@ def _calculate_score(robots: dict, llms: dict, jsonld: dict,
     has_breadcrumb = "breadcrumblist" in all_types_lower
     has_org        = "organization" in all_types_lower
 
-    req_score    = c.get("required", 8) if has_product else 0
-    sup_score    = c.get("supporting", 7) if (has_breadcrumb or has_org) else 0
+    req_score    = jld_criteria.get("product", {}).get("points", 8) if has_product else 0
+    sup_score    = jld_criteria.get("breadcrumb", {}).get("points", 7) if (has_breadcrumb or has_org) else 0
     jsonld_score = min(req_score + sup_score, jld_max)
     score       += jsonld_score
     breakdown["json_ld"] = {
@@ -982,19 +1049,22 @@ def _calculate_score(robots: dict, llms: dict, jsonld: dict,
         "has_org": has_org, "all_types": list(all_types),
     }
 
-    # 4. llms.txt
+    # 4. llms.txt — criteria 기반
     c = cfg.get("llms_txt", {})
-    llms_max   = c.get("max", 5)
-    llms_score = llms_max if llms["status"] == "found" else 0
+    llms_max = c.get("max", 5)
+    llms_cr = {cr["id"]: cr for cr in c.get("criteria", []) if cr.get("enabled", True)}
+    llms_score = llms_cr.get("exists", {}).get("points", llms_max) if llms["status"] == "found" else 0
+    llms_score = min(llms_score, llms_max)
     score     += llms_score
     breakdown["llms_txt"] = {"points": llms_score, "max": llms_max}
 
-    # 5. FAQ 섹션
+    # 5. FAQ 섹션 — criteria 기반
     c = cfg.get("faq", {})
-    faq_max   = c.get("max", 15)
+    faq_max = c.get("max", 15)
+    faq_cr = {cr["id"]: cr for cr in c.get("criteria", []) if cr.get("enabled", True)}
     faq_score = min(
-        (c.get("schema", 8) if faq.get("has_faq_schema") else 0) +
-        (c.get("html", 7) if faq.get("has_faq_html") else 0),
+        (faq_cr.get("schema", {}).get("points", 8) if faq.get("has_faq_schema") else 0) +
+        (faq_cr.get("html", {}).get("points", 7) if faq.get("has_faq_html") else 0),
         faq_max
     )
     score    += faq_score
@@ -1004,10 +1074,12 @@ def _calculate_score(robots: dict, llms: dict, jsonld: dict,
         "has_html": faq.get("has_faq_html", False),
     }
 
-    # 6. 서머리 박스
+    # 6. 서머리 박스 — criteria 기반
     c = cfg.get("summary_box", {})
-    sum_max   = c.get("max", 5)
-    sum_score = sum_max if summary.get("found") else 0
+    sum_max = c.get("max", 5)
+    sum_cr = {cr["id"]: cr for cr in c.get("criteria", []) if cr.get("enabled", True)}
+    sum_score = sum_cr.get("found", {}).get("points", sum_max) if summary.get("found") else 0
+    sum_score = min(sum_score, sum_max)
     score    += sum_score
     breakdown["summary_box"] = {
         "points": sum_score, "max": sum_max,
@@ -1015,13 +1087,17 @@ def _calculate_score(robots: dict, llms: dict, jsonld: dict,
         "method": summary.get("method"),
     }
 
-    # 7. Heading 구조
+    # 7. Heading 구조 — criteria 기반
     c = cfg.get("heading_structure", {})
-    h_max   = c.get("max", 5)
+    h_max = c.get("max", 5)
+    h_cr = {cr["id"]: cr for cr in c.get("criteria", []) if cr.get("enabled", True)}
     h_score = 0
-    if headings.get("has_single_h1"):   h_score += c.get("single_h1", 2)
-    if headings.get("has_multiple_h2"): h_score += c.get("multiple_h2", 2)
-    if headings.get("logical_order"):   h_score += c.get("logical_order", 1)
+    if headings.get("has_single_h1") and "single_h1" in h_cr:
+        h_score += h_cr["single_h1"].get("points", 2)
+    if headings.get("has_multiple_h2") and "multiple_h2" in h_cr:
+        h_score += h_cr["multiple_h2"].get("points", 2)
+    if headings.get("logical_order") and "logical_order" in h_cr:
+        h_score += h_cr["logical_order"].get("points", 1)
     h_score = min(h_score, h_max)
     score  += h_score
     breakdown["heading_structure"] = {
@@ -1031,17 +1107,21 @@ def _calculate_score(robots: dict, llms: dict, jsonld: dict,
         "logical_order": headings.get("logical_order", False),
     }
 
-    # 8. 통계 데이터
+    # 8. 통계 데이터 — criteria 기반
     c = cfg.get("stats_density", {})
-    stat_max   = c.get("max", 5)
-    stat_score = stat_max if stats.get("has_stats") else 0
+    stat_max = c.get("max", 5)
+    stat_cr = {cr["id"]: cr for cr in c.get("criteria", []) if cr.get("enabled", True)}
+    stat_score = stat_cr.get("has_stats", {}).get("points", stat_max) if stats.get("has_stats") else 0
+    stat_score = min(stat_score, stat_max)
     score     += stat_score
     breakdown["stats_density"] = {"points": stat_score, "max": stat_max}
 
-    # 9. 리뷰 데이터 SSR
+    # 9. 리뷰 데이터 SSR — criteria 기반
     c = cfg.get("reviews_ssr", {})
-    rev_max   = c.get("max", 10)
-    rev_score = rev_max if reviews.get("found") else 0
+    rev_max = c.get("max", 10)
+    rev_cr = {cr["id"]: cr for cr in c.get("criteria", []) if cr.get("enabled", True)}
+    rev_score = rev_cr.get("found", {}).get("points", rev_max) if reviews.get("found") else 0
+    rev_score = min(rev_score, rev_max)
     score    += rev_score
     breakdown["reviews_ssr"] = {
         "points": rev_score, "max": rev_max,
@@ -1049,10 +1129,10 @@ def _calculate_score(robots: dict, llms: dict, jsonld: dict,
         "has_content": reviews.get("has_content", False),
     }
 
-    # 10. CSR 비중
+    # 10. CSR 비중 — criteria 기반
     c = cfg.get("csr_ratio", {})
-    csr_max    = c.get("max", 10)
-    tiers      = c.get("tiers", {})
+    csr_max = c.get("max", 10)
+    csr_cr = {cr["id"]: cr for cr in c.get("criteria", []) if cr.get("enabled", True)}
     csr_status = csr_ratio.get("status", "unavailable")
     ratio      = csr_ratio.get("ratio")
 
@@ -1065,8 +1145,8 @@ def _calculate_score(robots: dict, llms: dict, jsonld: dict,
     else:
         csr_score = 0; csr_tier = "poor"
         for tier_name in ("excellent", "good", "partial"):
-            t = tiers.get(tier_name, {})
-            if ratio >= t.get("min_ratio", 1.0):
+            t = csr_cr.get(tier_name, {})
+            if t and ratio >= t.get("threshold", {}).get("min_ratio", 1.0):
                 csr_score = min(t.get("points", 0), csr_max)
                 csr_tier  = tier_name
                 break
