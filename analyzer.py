@@ -166,6 +166,12 @@ async def _fetch_page(url: str) -> dict:
             "final_url":      str(r.url),
             "redirect_count": redirect_count,
         }
+    except httpx.TimeoutException:
+        return {"status": "error", "error": "요청 시간 초과 (15초)", "soup": None, "redirect_count": 0}
+    except httpx.ConnectError:
+        return {"status": "error", "error": "서버에 연결할 수 없습니다", "soup": None, "redirect_count": 0}
+    except httpx.TooManyRedirects:
+        return {"status": "error", "error": "리다이렉트가 너무 많습니다", "soup": None, "redirect_count": 0}
     except Exception as e:
         return {"status": "error", "error": str(e), "soup": None, "redirect_count": 0}
 
@@ -237,6 +243,10 @@ async def _check_llms_txt(base_url: str) -> dict:
                 "size_bytes":      len(content.encode()),
             }
         return {"status": "not_found", "http_status": r.status_code}
+    except httpx.TimeoutException:
+        return {"status": "error", "error": "요청 시간 초과"}
+    except httpx.HTTPError as e:
+        return {"status": "error", "error": f"네트워크 오류: {type(e).__name__}"}
     except Exception as e:
         return {"status": "error", "error": str(e)}
 
@@ -683,13 +693,6 @@ async def _ensure_chromium() -> bool:
     return False
 
 
-def _visible_text(soup: BeautifulSoup) -> int:
-    """script/style/noscript 제거 후 보이는 텍스트 글자수(공백 제외) 반환."""
-    for tag in soup(["script", "style", "noscript", "svg", "path"]):
-        tag.decompose()
-    return len(re.sub(r'\s+', '', soup.get_text()))
-
-
 async def _check_csr_chars(url: str) -> dict:
     """Playwright로 JS 실행 후 텍스트 글자수를 반환."""
     try:
@@ -790,7 +793,7 @@ async def _check_csr_chars(url: str) -> dict:
                     try:
                         fc = await frame.content()
                         fs = BeautifulSoup(fc, "html.parser")
-                        frame_texts.append(_visible_text(fs))
+                        frame_texts.append(_safe_visible_text(fs))
                     except Exception:
                         continue
 
@@ -798,7 +801,7 @@ async def _check_csr_chars(url: str) -> dict:
                 await browser.close()
 
             csr_soup  = BeautifulSoup(main_html, "html.parser")
-            main_chars = _visible_text(csr_soup)
+            main_chars = _safe_visible_text(csr_soup)
             iframe_chars = sum(frame_texts)
             csr_chars = main_chars + iframe_chars
 
@@ -815,6 +818,8 @@ async def _check_csr_chars(url: str) -> dict:
                     "html_length": len(main_html),
                 },
             }
+        except asyncio.TimeoutError:
+            return {"status": "error", "error": "브라우저 렌더링 시간 초과", "csr_chars": 0}
         except Exception as e:
             return {"status": "error", "error": str(e), "csr_chars": 0}
 

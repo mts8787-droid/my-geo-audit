@@ -18,4 +18,4 @@ fi
 # Playwright Chromium 설치
 python -m playwright install chromium --with-deps 2>/dev/null \
   || python -m playwright install chromium \
-  || echo "Warning: Playwright Chromium install failed"
+  || { echo "ERROR: Playwright Chromium 설치 실패"; exit 1; }

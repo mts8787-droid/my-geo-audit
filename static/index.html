@@ -1281,7 +1281,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       grid.innerHTML += `
         <div class="flex items-center gap-2 p-2.5 rounded-lg border ${isBlocked
           ? 'bg-red-50 border-red-100' : 'bg-emerald-50 border-emerald-100'}"
-          title="${isBlocked ? (bot.rule || '차단됨') : '허용됨'}">
+          title="${isBlocked ? escHtml(bot.rule || '차단됨') : '허용됨'}">
           <span class="text-base">${isBlocked ? '🚫' : '✅'}</span>
           <div class="min-w-0">
             <p class="text-xs font-semibold ${isBlocked ? 'text-red-700' : 'text-emerald-700'} truncate">${escHtml(key)}</p>

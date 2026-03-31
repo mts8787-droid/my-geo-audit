@@ -87,6 +87,26 @@ app.add_middleware(
     allow_headers=["Content-Type"],
 )
 
+
+@app.middleware("http")
+async def add_security_headers(request: Request, call_next):
+    response = await call_next(request)
+    response.headers["X-Content-Type-Options"] = "nosniff"
+    response.headers["X-Frame-Options"] = "DENY"
+    response.headers["Content-Security-Policy"] = (
+        "default-src 'self'; "
+        "script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com "
+        "https://www.googletagmanager.com; "
+        "style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com "
+        "https://fonts.googleapis.com; "
+        "font-src 'self' https://fonts.gstatic.com; "
+        "img-src 'self' data: https:; "
+        "connect-src 'self'; "
+        "frame-src https://www.googletagmanager.com"
+    )
+    return response
+
+
 URL_PATTERN = re.compile(r"^(https?://)?[\w\-.]+(\.[\w\-]+)+([\w\-._~:/?#\[\]@!$&'()*+,;=%]*)?$")
 
 
@@ -113,8 +133,8 @@ def _is_private_url(url: str) -> bool:
                 addr = ipaddress.ip_address(sockaddr[0])
                 if addr.is_private or addr.is_loopback or addr.is_link_local or addr.is_reserved:
                     return True
-        except socket.gaierror:
-            pass
+        except (socket.gaierror, ValueError, OSError):
+            return True  # DNS 실패 시 안전하게 차단
         return False
     except Exception:
         return True
