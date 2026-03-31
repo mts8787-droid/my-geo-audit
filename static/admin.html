@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEO Audit — Admin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    * { font-family: 'Inter', sans-serif; }
+    .gradient-text { background: linear-gradient(135deg, #6366f1, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .card { background: #fff; border-radius: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,.08); border: 1px solid #e2e8f0; }
+    input[type=number] { -moz-appearance: textfield; }
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; }
+    .fade-in { animation: fadeIn .3s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    .total-bar { transition: width 0.5s cubic-bezier(.4,0,.2,1); }
+  </style>
+</head>
+<body class="bg-slate-50 min-h-screen">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-100">
+    <div class="max-w-4xl mx-auto px-6 py-3 flex items-center gap-3">
+      <a href="/" class="text-xl font-extrabold gradient-text">GEO Audit</a>
+      <span class="text-xs font-medium bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded-full">Admin</span>
+    </div>
+  </header>
+
+  <!-- Login Screen -->
+  <div id="login-screen" class="max-w-sm mx-auto px-6 mt-32">
+    <div class="card p-8 text-center fade-in">
+      <div class="text-3xl mb-3">🔐</div>
+      <h2 class="text-lg font-bold text-slate-800 mb-1">관리자 인증</h2>
+      <p class="text-sm text-slate-400 mb-6">채점 설정을 관리하려면 비밀번호를 입력하세요.</p>
+      <input id="pw-input" type="password" placeholder="비밀번호"
+        class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-indigo-400 focus:outline-none text-sm mb-3"
+        onkeydown="if(event.key==='Enter') doLogin()">
+      <button onclick="doLogin()"
+        class="w-full py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-xl hover:opacity-90 transition text-sm">
+        로그인
+      </button>
+      <p id="login-error" class="text-red-500 text-xs mt-3 hidden"></p>
+    </div>
+  </div>
+
+  <!-- Dashboard (hidden until login) -->
+  <div id="dashboard" class="max-w-4xl mx-auto px-6 py-8 hidden">
+
+    <!-- Total Score Preview -->
+    <div class="card p-6 mb-6 fade-in">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="text-lg font-bold text-slate-800">총 배점 미리보기</h2>
+        <span id="total-badge" class="text-2xl font-extrabold gradient-text">100점</span>
+      </div>
+      <div class="w-full bg-slate-100 rounded-full h-3 overflow-hidden">
+        <div id="total-bar" class="total-bar h-full rounded-full bg-gradient-to-r from-indigo-500 to-purple-500" style="width:100%"></div>
+      </div>
+      <p id="total-warning" class="text-amber-600 text-xs mt-2 hidden">총점이 100점이 아닙니다. 확인해주세요.</p>
+    </div>
+
+    <!-- Category Cards -->
+    <div id="config-cards" class="space-y-4 mb-6"></div>
+
+    <!-- Grade Config -->
+    <div class="card p-6 mb-6 fade-in">
+      <h3 class="text-sm font-bold text-slate-700 mb-4">등급 기준</h3>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label class="text-xs text-slate-500 mb-1 block">Good (이상)</label>
+          <input id="grade-good" type="number" min="0" max="200"
+            class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+            oninput="markDirty()">
+        </div>
+        <div>
+          <label class="text-xs text-slate-500 mb-1 block">Need Improvement (이상)</label>
+          <input id="grade-need" type="number" min="0" max="200"
+            class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+            oninput="markDirty()">
+        </div>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="flex gap-3 mb-10">
+      <button id="btn-save" onclick="saveConfig()"
+        class="flex-1 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-xl hover:opacity-90 transition text-sm disabled:opacity-40"
+        disabled>
+        저장
+      </button>
+      <button onclick="resetConfig()"
+        class="px-6 py-3 bg-slate-100 text-slate-600 font-semibold rounded-xl hover:bg-slate-200 transition text-sm">
+        기본값으로 리셋
+      </button>
+    </div>
+  </div>
+
+<script>
+let token = '';
+let config = {};
+let dirty = false;
+
+// ── Category metadata ──
+const CATEGORIES = [
+  {
+    key: 'seo_tags', fields: [
+      { name: 'max', label: '최대 점수', type: 'number' },
+      { name: 'per_item', label: '항목당 점수', type: 'number' },
+      { name: 'items', label: '항목 수', type: 'number' },
+    ]
+  },
+  {
+    key: 'robots_txt', fields: [
+      { name: 'max', label: '최대 점수', type: 'number' },
+    ]
+  },
+  {
+    key: 'json_ld', fields: [
+      { name: 'max', label: '최대 점수', type: 'number' },
+      { name: 'required', label: '필수 스키마(Product) 점수', type: 'number' },
+      { name: 'supporting', label: '보조 스키마 점수', type: 'number' },
+    ]
+  },
+  {
+    key: 'llms_txt', fields: [
+      { name: 'max', label: '최대 점수', type: 'number' },
+    ]
+  },
+  {
+    key: 'faq', fields: [
+      { name: 'max', label: '최대 점수', type: 'number' },
+      { name: 'schema', label: 'FAQPage 스키마 점수', type: 'number' },
+      { name: 'html', label: 'HTML 섹션 점수', type: 'number' },
+    ]
+  },
+  {
+    key: 'summary_box', fields: [
+      { name: 'max', label: '최대 점수', type: 'number' },
+    ]
+  },
+  {
+    key: 'heading_structure', fields: [
+      { name: 'max', label: '최대 점수', type: 'number' },
+      { name: 'single_h1', label: 'H1 단일 점수', type: 'number' },
+      { name: 'multiple_h2', label: 'H2 복수 점수', type: 'number' },
+      { name: 'logical_order', label: '논리적 순서 점수', type: 'number' },
+    ]
+  },
+  {
+    key: 'stats_density', fields: [
+      { name: 'max', label: '최대 점수', type: 'number' },
+    ]
+  },
+  {
+    key: 'reviews_ssr', fields: [
+      { name: 'max', label: '최대 점수', type: 'number' },
+    ]
+  },
+  {
+    key: 'csr_ratio', fields: [
+      { name: 'max', label: '최대 점수', type: 'number' },
+    ],
+    tiers: true
+  },
+];
+
+function escHtml(s) {
+  const d = document.createElement('div');
+  d.textContent = s ?? '';
+  return d.innerHTML;
+}
+
+// ── Login ──
+async function doLogin() {
+  const pw = document.getElementById('pw-input').value;
+  const errEl = document.getElementById('login-error');
+  errEl.classList.add('hidden');
+  try {
+    const res = await fetch('/admin/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ password: pw }),
+    });
+    if (!res.ok) {
+      const data = await res.json();
+      errEl.textContent = data.detail || '로그인 실패';
+      errEl.classList.remove('hidden');
+      return;
+    }
+    token = pw;
+    document.getElementById('login-screen').classList.add('hidden');
+    document.getElementById('dashboard').classList.remove('hidden');
+    await loadConfig();
+  } catch {
+    errEl.textContent = '서버 연결 실패';
+    errEl.classList.remove('hidden');
+  }
+}
+
+// ── Load Config ──
+async function loadConfig() {
+  const res = await fetch('/admin/config', {
+    headers: { 'Authorization': `Bearer ${token}` },
+  });
+  config = await res.json();
+  renderCards();
+  updateTotal();
+  dirty = false;
+  document.getElementById('btn-save').disabled = true;
+}
+
+// ── Render Category Cards ──
+function renderCards() {
+  const container = document.getElementById('config-cards');
+  container.innerHTML = '';
+
+  for (const cat of CATEGORIES) {
+    const c = config[cat.key] || {};
+    const label = c.label || cat.key;
+    const desc = c.description || '';
+
+    let fieldsHtml = '';
+    for (const f of cat.fields) {
+      const val = c[f.name] ?? 0;
+      fieldsHtml += `
+        <div>
+          <label class="text-xs text-slate-500 mb-1 block">${escHtml(f.label)}</label>
+          <input type="number" min="0" max="100" step="1" value="${val}"
+            data-cat="${cat.key}" data-field="${f.name}"
+            class="cfg-input w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+            oninput="onFieldChange(this)">
+        </div>`;
+    }
+
+    // CSR tiers
+    let tiersHtml = '';
+    if (cat.tiers && c.tiers) {
+      tiersHtml = `<div class="mt-4 pt-4 border-t border-slate-100">
+        <p class="text-xs font-semibold text-slate-500 mb-3">티어별 설정</p>
+        <div class="space-y-3">`;
+      for (const tierName of ['excellent', 'good', 'partial']) {
+        const t = c.tiers[tierName] || {};
+        tiersHtml += `
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="text-xs text-slate-400">${escHtml(tierName)} — 최소 비율</label>
+              <input type="number" min="0" max="1" step="0.05" value="${t.min_ratio ?? 0}"
+                data-cat="${cat.key}" data-tier="${tierName}" data-tier-field="min_ratio"
+                class="tier-input w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+                oninput="onTierChange(this)">
+            </div>
+            <div>
+              <label class="text-xs text-slate-400">${escHtml(tierName)} — 점수</label>
+              <input type="number" min="0" max="100" step="1" value="${t.points ?? 0}"
+                data-cat="${cat.key}" data-tier="${tierName}" data-tier-field="points"
+                class="tier-input w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+                oninput="onTierChange(this)">
+            </div>
+          </div>`;
+      }
+      tiersHtml += `</div></div>`;
+    }
+
+    container.innerHTML += `
+      <div class="card p-6 fade-in">
+        <div class="flex items-center gap-2 mb-1">
+          <h3 class="text-sm font-bold text-slate-700">${escHtml(label)}</h3>
+          <span class="text-xs text-white bg-indigo-500 px-2 py-0.5 rounded-full cat-max" data-cat="${cat.key}">${c.max ?? 0}점</span>
+        </div>
+        <p class="text-xs text-slate-400 mb-4">${escHtml(desc)}</p>
+        <div class="grid grid-cols-3 gap-3">${fieldsHtml}</div>
+        ${tiersHtml}
+      </div>`;
+  }
+
+  // grade
+  document.getElementById('grade-good').value = config.grade?.good ?? 90;
+  document.getElementById('grade-need').value = config.grade?.need_improvement ?? 70;
+}
+
+// ── Field Change Handlers ──
+function onFieldChange(el) {
+  const cat = el.dataset.cat;
+  const field = el.dataset.field;
+  if (!config[cat]) config[cat] = {};
+  config[cat][field] = parseFloat(el.value) || 0;
+
+  // Update badge
+  if (field === 'max') {
+    const badge = document.querySelector(`.cat-max[data-cat="${cat}"]`);
+    if (badge) badge.textContent = `${config[cat].max}점`;
+  }
+  markDirty();
+  updateTotal();
+}
+
+function onTierChange(el) {
+  const cat = el.dataset.cat;
+  const tier = el.dataset.tier;
+  const field = el.dataset.tierField;
+  if (!config[cat]) config[cat] = {};
+  if (!config[cat].tiers) config[cat].tiers = {};
+  if (!config[cat].tiers[tier]) config[cat].tiers[tier] = {};
+  config[cat].tiers[tier][field] = parseFloat(el.value) || 0;
+  markDirty();
+}
+
+function markDirty() {
+  // sync grade from inputs
+  if (!config.grade) config.grade = {};
+  config.grade.good = parseInt(document.getElementById('grade-good').value) || 90;
+  config.grade.need_improvement = parseInt(document.getElementById('grade-need').value) || 70;
+
+  dirty = true;
+  document.getElementById('btn-save').disabled = false;
+}
+
+// ── Total Score Preview ──
+function updateTotal() {
+  const keys = ['seo_tags','robots_txt','json_ld','llms_txt','faq','summary_box','heading_structure','stats_density','reviews_ssr','csr_ratio'];
+  let total = 0;
+  for (const k of keys) total += (config[k]?.max || 0);
+  document.getElementById('total-badge').textContent = `${total}점`;
+  document.getElementById('total-bar').style.width = `${Math.min(total, 100)}%`;
+
+  const warn = document.getElementById('total-warning');
+  if (total !== 100) {
+    warn.textContent = `총점이 ${total}점입니다. 100점이 권장됩니다.`;
+    warn.classList.remove('hidden');
+  } else {
+    warn.classList.add('hidden');
+  }
+}
+
+// ── Save / Reset ──
+async function saveConfig() {
+  try {
+    const res = await fetch('/admin/config', {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`,
+      },
+      body: JSON.stringify(config),
+    });
+    if (!res.ok) { alert('저장 실패'); return; }
+    const data = await res.json();
+    config = data.config;
+    dirty = false;
+    document.getElementById('btn-save').disabled = true;
+    showToast('설정이 저장되었습니다.');
+  } catch {
+    alert('서버 연결 실패');
+  }
+}
+
+async function resetConfig() {
+  if (!confirm('모든 설정을 기본값으로 되돌리시겠습니까?')) return;
+  try {
+    const res = await fetch('/admin/config/reset', {
+      method: 'POST',
+      headers: { 'Authorization': `Bearer ${token}` },
+    });
+    if (!res.ok) { alert('리셋 실패'); return; }
+    const data = await res.json();
+    config = data.config;
+    renderCards();
+    updateTotal();
+    dirty = false;
+    document.getElementById('btn-save').disabled = true;
+    showToast('기본값으로 복원되었습니다.');
+  } catch {
+    alert('서버 연결 실패');
+  }
+}
+
+// ── Toast ──
+function showToast(msg) {
+  const el = document.createElement('div');
+  el.className = 'fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-sm px-5 py-3 rounded-xl shadow-lg fade-in z-50';
+  el.textContent = msg;
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), 2500);
+}
+
+// Warn before leaving with unsaved changes
+window.addEventListener('beforeunload', (e) => {
+  if (dirty) { e.preventDefault(); e.returnValue = ''; }
+});
+</script>
+</body>
+</html>

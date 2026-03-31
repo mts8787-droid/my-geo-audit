@@ -1,0 +1,72 @@
+{
+  "seo_tags": {
+    "max": 20,
+    "per_item": 2,
+    "items": 10,
+    "label": "SEO Tags",
+    "description": "10종 기본 SEO 태그 (title, description, canonical, h1, img alt, redirect, og:title, og:description, og:image, meta robots)"
+  },
+  "robots_txt": {
+    "max": 10,
+    "label": "robots.txt AI 봇 허용",
+    "description": "AI 크롤러 봇 허용 비율에 따른 점수"
+  },
+  "json_ld": {
+    "max": 15,
+    "required": 8,
+    "supporting": 7,
+    "label": "JSON-LD 구조화 데이터",
+    "description": "필수 스키마(Product) + 보조 스키마(BreadcrumbList/Organization)"
+  },
+  "llms_txt": {
+    "max": 5,
+    "label": "llms.txt",
+    "description": "llms.txt 파일 존재 여부"
+  },
+  "faq": {
+    "max": 15,
+    "schema": 8,
+    "html": 7,
+    "label": "FAQ 섹션",
+    "description": "FAQPage 스키마 + HTML FAQ 섹션"
+  },
+  "summary_box": {
+    "max": 5,
+    "label": "서머리 박스",
+    "description": "요약 박스 존재 여부"
+  },
+  "heading_structure": {
+    "max": 5,
+    "single_h1": 2,
+    "multiple_h2": 2,
+    "logical_order": 1,
+    "label": "Heading 구조",
+    "description": "H1 단일(2점) + H2 복수(2점) + 논리적 순서(1점)"
+  },
+  "stats_density": {
+    "max": 5,
+    "label": "통계 데이터",
+    "description": "통계/수치 데이터 존재 여부"
+  },
+  "reviews_ssr": {
+    "max": 10,
+    "label": "리뷰 SSR",
+    "description": "#reviews_container 서버사이드 렌더링 여부"
+  },
+  "csr_ratio": {
+    "max": 10,
+    "tiers": {
+      "excellent": { "min_ratio": 0.8, "points": 10 },
+      "good":      { "min_ratio": 0.5, "points": 7 },
+      "partial":   { "min_ratio": 0.3, "points": 4 }
+    },
+    "label": "CSR 비중",
+    "description": "SSR/CSR 글자수 비율 기반 티어 점수"
+  },
+  "grade": {
+    "good": 90,
+    "need_improvement": 70,
+    "label": "등급 기준",
+    "description": "Good >= 90, Need Improvement >= 70, Poor < 70"
+  }
+}

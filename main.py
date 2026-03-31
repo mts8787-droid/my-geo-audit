@@ -10,7 +10,8 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from analyzer import analyze_url
+from analyzer import analyze_url, get_scoring_config, save_scoring_config, get_default_config, load_scoring_config
+import hmac
 from slowapi import Limiter
 from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
@@ -219,6 +220,65 @@ async def analyze_bulk(request: Request, body: AnalyzeBulkRequest):
         average = None
 
     return {"items": items, "average": average, "total": len(items), "success": success_count, "scope": scope}
+
+
+# ── Admin API ────────────────────────────────────────────────────────────────
+
+ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "")
+
+
+def _verify_admin(request: Request) -> bool:
+    """Authorization 헤더에서 Bearer 토큰을 검증합니다."""
+    if not ADMIN_PASSWORD:
+        return False
+    auth = request.headers.get("authorization", "")
+    if not auth.startswith("Bearer "):
+        return False
+    token = auth[7:]
+    return hmac.compare_digest(token, ADMIN_PASSWORD)
+
+
+@app.api_route("/admin", methods=["GET", "HEAD"])
+async def admin_page():
+    if not ADMIN_PASSWORD:
+        raise HTTPException(status_code=404, detail="어드민이 비활성화되어 있습니다.")
+    return FileResponse("static/admin.html")
+
+
+@app.post("/admin/login")
+async def admin_login(request: Request):
+    if not ADMIN_PASSWORD:
+        raise HTTPException(status_code=404, detail="어드민이 비활성화되어 있습니다.")
+    body = await request.json()
+    password = body.get("password", "")
+    if hmac.compare_digest(password, ADMIN_PASSWORD):
+        return {"status": "ok"}
+    raise HTTPException(status_code=401, detail="비밀번호가 올바르지 않습니다.")
+
+
+@app.get("/admin/config")
+async def get_config(request: Request):
+    if not _verify_admin(request):
+        raise HTTPException(status_code=401, detail="인증이 필요합니다.")
+    return get_scoring_config()
+
+
+@app.put("/admin/config")
+async def update_config(request: Request):
+    if not _verify_admin(request):
+        raise HTTPException(status_code=401, detail="인증이 필요합니다.")
+    body = await request.json()
+    save_scoring_config(body)
+    return {"status": "ok", "config": get_scoring_config()}
+
+
+@app.post("/admin/config/reset")
+async def reset_config(request: Request):
+    if not _verify_admin(request):
+        raise HTTPException(status_code=401, detail="인증이 필요합니다.")
+    default = get_default_config()
+    save_scoring_config(default)
+    return {"status": "ok", "config": default}
 
 
 app.mount("/static", StaticFiles(directory="static"), name="static")

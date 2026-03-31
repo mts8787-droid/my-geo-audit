@@ -3,6 +3,9 @@ import asyncio
 import httpx
 from bs4 import BeautifulSoup
 import json
+import os
+import copy
+from typing import Optional
 from urllib.parse import urlparse
 
 # Playwright 동시 실행 제한 (메모리 보호)
@@ -10,6 +13,65 @@ _playwright_sem = asyncio.Semaphore(2)
 
 # 벌크 분석 시 동시 요청 제한
 _bulk_sem = asyncio.Semaphore(5)
+
+# ── 채점 설정 관리 ──────────────────────────────────────────────────────────────
+
+_CONFIG_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "scoring_config.json")
+
+_DEFAULT_CONFIG = {
+    "seo_tags":          {"max": 20, "per_item": 2, "items": 10},
+    "robots_txt":        {"max": 10},
+    "json_ld":           {"max": 15, "required": 8, "supporting": 7},
+    "llms_txt":          {"max": 5},
+    "faq":               {"max": 15, "schema": 8, "html": 7},
+    "summary_box":       {"max": 5},
+    "heading_structure":  {"max": 5, "single_h1": 2, "multiple_h2": 2, "logical_order": 1},
+    "stats_density":     {"max": 5},
+    "reviews_ssr":       {"max": 10},
+    "csr_ratio":         {"max": 10, "tiers": {
+        "excellent": {"min_ratio": 0.8, "points": 10},
+        "good":      {"min_ratio": 0.5, "points": 7},
+        "partial":   {"min_ratio": 0.3, "points": 4},
+    }},
+    "grade":             {"good": 90, "need_improvement": 70},
+}
+
+_scoring_config: Optional[dict] = None
+
+
+def load_scoring_config() -> dict:
+    """설정 파일에서 채점 설정을 로드합니다. 없으면 기본값 반환."""
+    global _scoring_config
+    try:
+        with open(_CONFIG_PATH, "r", encoding="utf-8") as f:
+            _scoring_config = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        _scoring_config = copy.deepcopy(_DEFAULT_CONFIG)
+    return _scoring_config
+
+
+def save_scoring_config(config: dict) -> None:
+    """채점 설정을 파일에 저장합니다."""
+    global _scoring_config
+    _scoring_config = config
+    with open(_CONFIG_PATH, "w", encoding="utf-8") as f:
+        json.dump(config, f, ensure_ascii=False, indent=2)
+
+
+def get_scoring_config() -> dict:
+    """현재 메모리에 로드된 설정을 반환합니다."""
+    if _scoring_config is None:
+        return load_scoring_config()
+    return _scoring_config
+
+
+def get_default_config() -> dict:
+    """기본 채점 설정을 반환합니다."""
+    return copy.deepcopy(_DEFAULT_CONFIG)
+
+
+# 서버 시작 시 설정 로드
+load_scoring_config()
 
 AI_BOTS = {
     "GPTBot":          "OpenAI GPT",
@@ -874,144 +936,161 @@ def _calculate_score(robots: dict, llms: dict, jsonld: dict,
                      seo_tags: dict, faq: dict, summary: dict,
                      stats: dict, headings: dict, reviews: dict,
                      csr_ratio: dict) -> dict:
+    cfg       = get_scoring_config()
     score     = 0
     breakdown = {}
 
-    # 1. 기본 SEO 태그 (20점): 10종 × 2점
+    # 1. 기본 SEO 태그
+    c = cfg.get("seo_tags", {})
     passed    = seo_tags.get("passed", 0)
-    seo_score = passed * 2
+    per_item  = c.get("per_item", 2)
+    seo_max   = c.get("max", 20)
+    seo_score = min(passed * per_item, seo_max)
     score    += seo_score
-    breakdown["seo_tags"] = {"points": seo_score, "max": 20, "passed": passed, "total": 10}
+    breakdown["seo_tags"] = {"points": seo_score, "max": seo_max, "passed": passed, "total": c.get("items", 10)}
 
-    # 2. robots.txt AI 봇 허용 (10점)
+    # 2. robots.txt AI 봇 허용
+    c = cfg.get("robots_txt", {})
+    rob_max = c.get("max", 10)
     bots = robots.get("bots", {})
     if bots:
         allowed   = sum(1 for b in bots.values() if not b["blocked"])
-        bot_score = round((allowed / len(bots)) * 10)
+        bot_score = round((allowed / len(bots)) * rob_max)
     else:
-        bot_score = 10
+        bot_score = rob_max
     score    += bot_score
-    breakdown["robots_txt"] = {"points": bot_score, "max": 10}
+    breakdown["robots_txt"] = {"points": bot_score, "max": rob_max}
 
-    # 3. JSON-LD (15점): 필수(8점) + 보조(7점)
-    #    ※ FAQPage는 FAQ 섹션(항목 5)에서만 채점 — 여기서는 Product만 평가
+    # 3. JSON-LD 구조화 데이터
+    c = cfg.get("json_ld", {})
+    jld_max = c.get("max", 15)
     all_types        = set(jsonld.get("all_types", []))
     all_types_lower  = {t.lower() for t in all_types}
 
-    has_product    = "product"       in all_types_lower or "individualproduct" in all_types_lower
+    has_product    = "product" in all_types_lower or "individualproduct" in all_types_lower
     has_breadcrumb = "breadcrumblist" in all_types_lower
-    has_org        = "organization"   in all_types_lower
+    has_org        = "organization" in all_types_lower
 
-    req_score    = 8 if has_product else 0
-    sup_score    = 7 if (has_breadcrumb or has_org) else 0
-    jsonld_score = req_score + sup_score
+    req_score    = c.get("required", 8) if has_product else 0
+    sup_score    = c.get("supporting", 7) if (has_breadcrumb or has_org) else 0
+    jsonld_score = min(req_score + sup_score, jld_max)
     score       += jsonld_score
     breakdown["json_ld"] = {
-        "points":           jsonld_score,
-        "max":              15,
-        "required_score":   req_score,
-        "supporting_score": sup_score,
-        "has_product":      has_product,
-        "has_breadcrumb":   has_breadcrumb,
-        "has_org":          has_org,
-        "all_types":        list(all_types),
+        "points": jsonld_score, "max": jld_max,
+        "required_score": req_score, "supporting_score": sup_score,
+        "has_product": has_product, "has_breadcrumb": has_breadcrumb,
+        "has_org": has_org, "all_types": list(all_types),
     }
 
-    # 4. llms.txt (5점)
-    llms_score = 5 if llms["status"] == "found" else 0
+    # 4. llms.txt
+    c = cfg.get("llms_txt", {})
+    llms_max   = c.get("max", 5)
+    llms_score = llms_max if llms["status"] == "found" else 0
     score     += llms_score
-    breakdown["llms_txt"] = {"points": llms_score, "max": 5}
+    breakdown["llms_txt"] = {"points": llms_score, "max": llms_max}
 
-    # 5. FAQ 섹션 (15점): FAQPage 스키마(8점) + HTML 섹션(7점)
-    faq_score = (8 if faq.get("has_faq_schema") else 0) + (7 if faq.get("has_faq_html") else 0)
+    # 5. FAQ 섹션
+    c = cfg.get("faq", {})
+    faq_max   = c.get("max", 15)
+    faq_score = min(
+        (c.get("schema", 8) if faq.get("has_faq_schema") else 0) +
+        (c.get("html", 7) if faq.get("has_faq_html") else 0),
+        faq_max
+    )
     score    += faq_score
     breakdown["faq"] = {
-        "points":     faq_score,
-        "max":        15,
+        "points": faq_score, "max": faq_max,
         "has_schema": faq.get("has_faq_schema", False),
-        "has_html":   faq.get("has_faq_html",   False),
+        "has_html": faq.get("has_faq_html", False),
     }
 
-    # 6. 서머리 박스 (5점)
-    sum_score = 5 if summary.get("found") else 0
+    # 6. 서머리 박스
+    c = cfg.get("summary_box", {})
+    sum_max   = c.get("max", 5)
+    sum_score = sum_max if summary.get("found") else 0
     score    += sum_score
     breakdown["summary_box"] = {
-        "points": sum_score,
-        "max":    5,
-        "found":  summary.get("found", False),
+        "points": sum_score, "max": sum_max,
+        "found": summary.get("found", False),
         "method": summary.get("method"),
     }
 
-    # 7. Heading 구조 (5점): H1 단일(2) + H2 복수(2) + 논리적 순서(1)
-    h_score  = 0
-    if headings.get("has_single_h1"):   h_score += 2
-    if headings.get("has_multiple_h2"): h_score += 2
-    if headings.get("logical_order"):   h_score += 1
-    score   += h_score
+    # 7. Heading 구조
+    c = cfg.get("heading_structure", {})
+    h_max   = c.get("max", 5)
+    h_score = 0
+    if headings.get("has_single_h1"):   h_score += c.get("single_h1", 2)
+    if headings.get("has_multiple_h2"): h_score += c.get("multiple_h2", 2)
+    if headings.get("logical_order"):   h_score += c.get("logical_order", 1)
+    h_score = min(h_score, h_max)
+    score  += h_score
     breakdown["heading_structure"] = {
-        "points":          h_score,
-        "max":             5,
-        "has_single_h1":   headings.get("has_single_h1",   False),
+        "points": h_score, "max": h_max,
+        "has_single_h1": headings.get("has_single_h1", False),
         "has_multiple_h2": headings.get("has_multiple_h2", False),
-        "logical_order":   headings.get("logical_order",   False),
+        "logical_order": headings.get("logical_order", False),
     }
 
-    # 8. 통계 데이터 (5점): 존재 유무
-    stat_score = 5 if stats.get("has_stats") else 0
+    # 8. 통계 데이터
+    c = cfg.get("stats_density", {})
+    stat_max   = c.get("max", 5)
+    stat_score = stat_max if stats.get("has_stats") else 0
     score     += stat_score
-    breakdown["stats_density"] = {"points": stat_score, "max": 5}
+    breakdown["stats_density"] = {"points": stat_score, "max": stat_max}
 
-    # 9. 리뷰 데이터 SSR (10점): #reviews_container 서버사이드 렌더링 여부
-    rev_score = 10 if reviews.get("found") else 0
+    # 9. 리뷰 데이터 SSR
+    c = cfg.get("reviews_ssr", {})
+    rev_max   = c.get("max", 10)
+    rev_score = rev_max if reviews.get("found") else 0
     score    += rev_score
     breakdown["reviews_ssr"] = {
-        "points":      rev_score,
-        "max":         10,
-        "found":       reviews.get("found",       False),
+        "points": rev_score, "max": rev_max,
+        "found": reviews.get("found", False),
         "has_content": reviews.get("has_content", False),
     }
 
-    # 10. CSR 비중 (10점): SSR 글자수 / CSR 글자수 비율
+    # 10. CSR 비중
+    c = cfg.get("csr_ratio", {})
+    csr_max    = c.get("max", 10)
+    tiers      = c.get("tiers", {})
     csr_status = csr_ratio.get("status", "unavailable")
-    ratio = csr_ratio.get("ratio")
+    ratio      = csr_ratio.get("ratio")
+
     if csr_status == "skipped":
-        # 벌크 분석 시 CSR 생략 — 페널티 없이 제외
-        csr_score = 0
-        csr_tier  = "skipped"
+        csr_score = 0; csr_tier = "skipped"
     elif csr_status == "blocked":
-        # 봇 차단 시 페널티 없이 측정불가 처리
-        csr_score = 0
-        csr_tier  = "blocked"
+        csr_score = 0; csr_tier = "blocked"
     elif ratio is None:
-        csr_score = 0
-        csr_tier  = "unavailable"
-    elif ratio >= 0.8:
-        csr_score = 10
-        csr_tier  = "excellent"
-    elif ratio >= 0.5:
-        csr_score = 7
-        csr_tier  = "good"
-    elif ratio >= 0.3:
-        csr_score = 4
-        csr_tier  = "partial"
+        csr_score = 0; csr_tier = "unavailable"
     else:
-        csr_score = 0
-        csr_tier  = "poor"
+        csr_score = 0; csr_tier = "poor"
+        for tier_name in ("excellent", "good", "partial"):
+            t = tiers.get(tier_name, {})
+            if ratio >= t.get("min_ratio", 1.0):
+                csr_score = min(t.get("points", 0), csr_max)
+                csr_tier  = tier_name
+                break
+
     score += csr_score
     breakdown["csr_ratio"] = {
-        "points":    csr_score,
-        "max":       10,
-        "ratio":     ratio,
-        "tier":      csr_tier,
+        "points": csr_score, "max": csr_max,
+        "ratio": ratio, "tier": csr_tier,
         "ssr_chars": csr_ratio.get("ssr_chars", 0),
         "csr_chars": csr_ratio.get("csr_chars", 0),
-        "status":    csr_ratio.get("status", "unavailable"),
+        "status": csr_ratio.get("status", "unavailable"),
     }
 
+    # 등급
+    g = cfg.get("grade", {})
+    total_max = sum(
+        cfg.get(k, {}).get("max", 0)
+        for k in ("seo_tags", "robots_txt", "json_ld", "llms_txt", "faq",
+                   "summary_box", "heading_structure", "stats_density", "reviews_ssr", "csr_ratio")
+    )
     grade = (
-        "Good"             if score >= 90 else
-        "Need Improvement" if score >= 70 else
+        "Good"             if score >= g.get("good", 90) else
+        "Need Improvement" if score >= g.get("need_improvement", 70) else
         "Poor"
     )
 
-    return {"total": score, "max": 100, "grade": grade, "breakdown": breakdown}
+    return {"total": score, "max": total_max, "grade": grade, "breakdown": breakdown}
