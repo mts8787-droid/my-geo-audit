@@ -22,19 +22,16 @@
     input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: #6366f1; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,.2); }
     .criteria-row:hover { background-color: #f8fafc; }
     .rule-badge { font-size: 10px; padding: 1px 6px; border-radius: 4px; }
+    .sidebar { width: 240px; min-width: 240px; }
+    .nav-item { transition: all 0.15s; }
+    .nav-item.active { background: linear-gradient(135deg, #eef2ff, #f5f3ff); color: #4f46e5; border-right: 3px solid #6366f1; }
+    .nav-item:not(.active):hover { background: #f8fafc; }
+    @media (max-width: 768px) { .sidebar { width: 56px; min-width: 56px; } .sidebar .nav-label { display: none; } .sidebar .nav-icon { margin: 0 auto; } }
   </style>
 </head>
 <body class="bg-slate-50 min-h-screen">
 
-  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-100">
-    <div class="max-w-5xl mx-auto px-6 py-3 flex items-center gap-3">
-      <a href="/" class="text-xl font-extrabold gradient-text">GEO Audit</a>
-      <span class="text-xs font-medium bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded-full">Admin</span>
-      <div class="flex-1"></div>
-      <button id="btn-logout" class="text-xs text-slate-400 hover:text-slate-600 hidden" onclick="logout()">Logout</button>
-    </div>
-  </header>
-
+  <!-- Login Screen -->
   <div id="login-screen" class="max-w-sm mx-auto px-6 mt-32">
     <div class="card p-8 text-center fade-in">
       <div class="text-3xl mb-3">🔐</div>
@@ -51,43 +48,175 @@
     </div>
   </div>
 
-  <div id="dashboard" class="max-w-5xl mx-auto px-6 py-8 hidden">
-    <div class="card p-6 mb-6 fade-in">
-      <div class="flex items-center justify-between mb-2">
-        <h2 class="text-lg font-bold text-slate-800">배점 분포</h2>
-        <div class="flex items-center gap-3">
-          <span id="total-badge" class="text-2xl font-extrabold gradient-text">100점</span>
-          <button onclick="autoBalance()" class="text-xs px-3 py-1.5 bg-indigo-50 text-indigo-600 rounded-lg hover:bg-indigo-100 transition font-medium">자동 맞춤</button>
-        </div>
+  <!-- Main Layout (sidebar + content) -->
+  <div id="main-layout" class="hidden h-screen flex flex-col">
+
+    <!-- Top Header -->
+    <header class="bg-white border-b border-slate-100 flex-shrink-0 z-40">
+      <div class="px-6 py-3 flex items-center gap-3">
+        <a href="/" class="text-xl font-extrabold gradient-text">GEO Audit</a>
+        <span class="text-xs font-medium bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded-full">Admin</span>
+        <div class="flex-1"></div>
+        <button class="text-xs text-slate-400 hover:text-slate-600" onclick="logout()">Logout</button>
       </div>
-      <div id="proportion-bar" class="flex rounded-lg overflow-hidden h-8 mb-3"></div>
-      <div id="proportion-legend" class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500"></div>
-      <p id="total-warning" class="text-amber-600 text-xs mt-2 hidden"></p>
-    </div>
+    </header>
 
-    <div id="config-cards" class="space-y-4 mb-6"></div>
+    <div class="flex flex-1 overflow-hidden">
 
-    <div class="card p-6 mb-6 fade-in">
-      <h3 class="text-sm font-bold text-slate-700 mb-4">등급 기준</h3>
-      <div class="grid grid-cols-2 gap-4">
-        <div>
-          <label class="text-xs text-slate-500 mb-1 block">Good (이상)</label>
-          <input id="grade-good" type="number" min="0" max="200"
-            class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none" oninput="markDirty()">
+      <!-- Sidebar -->
+      <nav class="sidebar bg-white border-r border-slate-100 flex-shrink-0 py-4 flex flex-col">
+        <div class="flex-1 space-y-1 px-3">
+          <button onclick="switchPage('criteria')" id="nav-criteria"
+            class="nav-item active w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-sm font-medium text-slate-600">
+            <svg class="nav-icon w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+            </svg>
+            <span class="nav-label">Audit 기준 설정</span>
+          </button>
+          <button onclick="switchPage('list')" id="nav-list"
+            class="nav-item w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-sm font-medium text-slate-600">
+            <svg class="nav-icon w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
+            </svg>
+            <span class="nav-label">Audit List 관리</span>
+          </button>
+          <button onclick="switchPage('schedule')" id="nav-schedule"
+            class="nav-item w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left text-sm font-medium text-slate-600">
+            <svg class="nav-icon w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span class="nav-label">정기 Audit 관리</span>
+          </button>
         </div>
-        <div>
-          <label class="text-xs text-slate-500 mb-1 block">Need Improvement (이상)</label>
-          <input id="grade-need" type="number" min="0" max="200"
-            class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none" oninput="markDirty()">
+        <div class="px-3 pt-3 border-t border-slate-100">
+          <a href="/" class="flex items-center gap-3 px-3 py-2 rounded-lg text-xs text-slate-400 hover:text-slate-600 hover:bg-slate-50 transition">
+            <svg class="nav-icon w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+            </svg>
+            <span class="nav-label">사이트로 돌아가기</span>
+          </a>
         </div>
-      </div>
-    </div>
+      </nav>
 
-    <div class="flex gap-3 mb-10">
-      <button id="btn-save" onclick="saveConfig()"
-        class="flex-1 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-xl hover:opacity-90 transition text-sm disabled:opacity-40" disabled>저장</button>
-      <button onclick="resetConfig()"
-        class="px-6 py-3 bg-slate-100 text-slate-600 font-semibold rounded-xl hover:bg-slate-200 transition text-sm">기본값으로 리셋</button>
+      <!-- Content Area -->
+      <main class="flex-1 overflow-y-auto">
+
+        <!-- Page 1: Audit 기준 설정 -->
+        <div id="page-criteria" class="max-w-5xl mx-auto px-6 py-8">
+          <h1 class="text-xl font-bold text-slate-800 mb-6">Audit 기준 설정</h1>
+
+          <div class="card p-6 mb-6 fade-in">
+            <div class="flex items-center justify-between mb-2">
+              <h2 class="text-base font-bold text-slate-800">배점 분포</h2>
+              <div class="flex items-center gap-3">
+                <span id="total-badge" class="text-2xl font-extrabold gradient-text">100점</span>
+                <button onclick="autoBalance()" class="text-xs px-3 py-1.5 bg-indigo-50 text-indigo-600 rounded-lg hover:bg-indigo-100 transition font-medium">자동 맞춤</button>
+              </div>
+            </div>
+            <div id="proportion-bar" class="flex rounded-lg overflow-hidden h-8 mb-3"></div>
+            <div id="proportion-legend" class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500"></div>
+            <p id="total-warning" class="text-amber-600 text-xs mt-2 hidden"></p>
+          </div>
+
+          <div id="config-cards" class="space-y-4 mb-6"></div>
+
+          <div class="card p-6 mb-6 fade-in">
+            <h3 class="text-sm font-bold text-slate-700 mb-4">등급 기준</h3>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label class="text-xs text-slate-500 mb-1 block">Good (이상)</label>
+                <input id="grade-good" type="number" min="0" max="200"
+                  class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none" oninput="markDirty()">
+              </div>
+              <div>
+                <label class="text-xs text-slate-500 mb-1 block">Need Improvement (이상)</label>
+                <input id="grade-need" type="number" min="0" max="200"
+                  class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none" oninput="markDirty()">
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-3 mb-10">
+            <button id="btn-save" onclick="saveConfig()"
+              class="flex-1 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-xl hover:opacity-90 transition text-sm disabled:opacity-40" disabled>저장</button>
+            <button onclick="resetConfig()"
+              class="px-6 py-3 bg-slate-100 text-slate-600 font-semibold rounded-xl hover:bg-slate-200 transition text-sm">기본값으로 리셋</button>
+          </div>
+        </div>
+
+        <!-- Page 2: Audit List 관리 -->
+        <div id="page-list" class="max-w-5xl mx-auto px-6 py-8 hidden">
+          <div class="flex items-center justify-between mb-6">
+            <h1 class="text-xl font-bold text-slate-800">Audit List 관리</h1>
+            <button onclick="openAddUrlModal()" class="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-sm font-semibold rounded-xl hover:opacity-90 transition">
+              + URL 추가
+            </button>
+          </div>
+
+          <!-- URL List Table -->
+          <div class="card overflow-hidden mb-6">
+            <table class="w-full text-sm">
+              <thead class="bg-slate-50 border-b border-slate-100">
+                <tr>
+                  <th class="px-4 py-3 text-left text-xs font-semibold text-slate-500 uppercase">URL</th>
+                  <th class="px-4 py-3 text-center text-xs font-semibold text-slate-500 uppercase w-24">최근 점수</th>
+                  <th class="px-4 py-3 text-center text-xs font-semibold text-slate-500 uppercase w-32">마지막 분석</th>
+                  <th class="px-4 py-3 text-center text-xs font-semibold text-slate-500 uppercase w-28">액션</th>
+                </tr>
+              </thead>
+              <tbody id="url-list-body">
+                <tr><td colspan="4" class="px-4 py-12 text-center text-slate-300 text-sm">등록된 URL이 없습니다. URL을 추가해주세요.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="card p-6 fade-in">
+            <h3 class="text-sm font-bold text-slate-700 mb-2">일괄 추가</h3>
+            <p class="text-xs text-slate-400 mb-3">한 줄에 하나씩 URL을 입력하세요.</p>
+            <textarea id="bulk-urls" rows="4" placeholder="https://example.com&#10;https://example.com/products&#10;https://example.com/about"
+              class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none resize-none mb-3"></textarea>
+            <button onclick="addBulkUrls()" class="px-4 py-2 bg-slate-800 text-white text-sm font-semibold rounded-xl hover:bg-slate-700 transition">일괄 추가</button>
+          </div>
+        </div>
+
+        <!-- Page 3: 정기 Audit 관리 -->
+        <div id="page-schedule" class="max-w-5xl mx-auto px-6 py-8 hidden">
+          <div class="flex items-center justify-between mb-6">
+            <h1 class="text-xl font-bold text-slate-800">정기 Audit 관리</h1>
+            <button onclick="openAddScheduleModal()" class="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-sm font-semibold rounded-xl hover:opacity-90 transition">
+              + 스케줄 추가
+            </button>
+          </div>
+
+          <!-- Schedules List -->
+          <div id="schedule-list" class="space-y-4 mb-6">
+            <div class="card p-6 text-center">
+              <div class="text-3xl mb-3 opacity-30">🕐</div>
+              <p class="text-sm text-slate-400 mb-1">등록된 정기 Audit이 없습니다.</p>
+              <p class="text-xs text-slate-300">스케줄을 추가하면 지정된 주기로 자동 분석이 실행됩니다.</p>
+            </div>
+          </div>
+
+          <div class="card p-6 fade-in">
+            <h3 class="text-sm font-bold text-slate-700 mb-3">스케줄 설정 안내</h3>
+            <div class="space-y-2 text-xs text-slate-500">
+              <div class="flex items-start gap-2">
+                <span class="w-5 h-5 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center flex-shrink-0 text-[10px] font-bold mt-0.5">1</span>
+                <p>Audit List에서 분석할 URL을 등록합니다.</p>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="w-5 h-5 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center flex-shrink-0 text-[10px] font-bold mt-0.5">2</span>
+                <p>스케줄을 추가하고 실행 주기(매일/매주/매월)와 대상 URL 그룹을 선택합니다.</p>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="w-5 h-5 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center flex-shrink-0 text-[10px] font-bold mt-0.5">3</span>
+                <p>지정된 시간에 자동으로 분석이 실행되고 결과가 기록됩니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
     </div>
   </div>
 
@@ -110,12 +239,57 @@
     </div>
   </div>
 
+  <!-- Add URL Modal -->
+  <div id="url-modal" class="fixed inset-0 bg-black/40 z-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-2xl shadow-xl w-full max-w-md mx-4 p-6 fade-in">
+      <h3 class="text-base font-bold text-slate-800 mb-4">URL 추가</h3>
+      <input id="url-modal-input" type="url" placeholder="https://example.com"
+        class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm mb-3 focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+        onkeydown="if(event.key==='Enter') confirmAddUrl()">
+      <input id="url-modal-label" type="text" placeholder="라벨 (선택사항)"
+        class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm mb-4 focus:ring-2 focus:ring-indigo-400 focus:outline-none">
+      <div class="flex gap-3">
+        <button onclick="confirmAddUrl()" class="flex-1 py-2.5 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-xl text-sm hover:opacity-90">추가</button>
+        <button onclick="document.getElementById('url-modal').classList.add('hidden')" class="px-6 py-2.5 bg-slate-100 text-slate-600 font-semibold rounded-xl text-sm hover:bg-slate-200">취소</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Schedule Modal -->
+  <div id="schedule-modal" class="fixed inset-0 bg-black/40 z-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-2xl shadow-xl w-full max-w-md mx-4 p-6 fade-in">
+      <h3 class="text-base font-bold text-slate-800 mb-4">정기 Audit 스케줄 추가</h3>
+      <input id="sched-name" type="text" placeholder="스케줄 이름"
+        class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm mb-3 focus:ring-2 focus:ring-indigo-400 focus:outline-none">
+      <label class="text-xs text-slate-500 mb-1 block">실행 주기</label>
+      <select id="sched-freq" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm mb-3">
+        <option value="daily">매일</option>
+        <option value="weekly">매주</option>
+        <option value="monthly">매월</option>
+      </select>
+      <label class="text-xs text-slate-500 mb-1 block">실행 시간</label>
+      <input id="sched-time" type="time" value="09:00"
+        class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm mb-3 focus:ring-2 focus:ring-indigo-400 focus:outline-none">
+      <label class="text-xs text-slate-500 mb-1 block">대상</label>
+      <select id="sched-target" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm mb-4">
+        <option value="all">전체 URL</option>
+      </select>
+      <div class="flex gap-3">
+        <button onclick="confirmAddSchedule()" class="flex-1 py-2.5 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-xl text-sm hover:opacity-90">추가</button>
+        <button onclick="document.getElementById('schedule-modal').classList.add('hidden')" class="px-6 py-2.5 bg-slate-100 text-slate-600 font-semibold rounded-xl text-sm hover:bg-slate-200">취소</button>
+      </div>
+    </div>
+  </div>
+
 <script>
 let token = '';
 let config = {};
 let ruleTypes = {};
 let dirty = false;
 let modalCatKey = '';
+let auditUrls = [];
+let schedules = [];
+let currentPage = 'criteria';
 
 const CAT_KEYS = ['seo_tags','robots_txt','json_ld','llms_txt','faq','summary_box','heading_structure','stats_density','reviews_ssr','csr_ratio'];
 const CAT_COLORS = [
@@ -129,6 +303,21 @@ function escHtml(s) {
   return d.innerHTML;
 }
 
+// ── Navigation ──
+function switchPage(page) {
+  currentPage = page;
+  document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+  document.getElementById(`nav-${page}`).classList.add('active');
+
+  document.getElementById('page-criteria').classList.toggle('hidden', page !== 'criteria');
+  document.getElementById('page-list').classList.toggle('hidden', page !== 'list');
+  document.getElementById('page-schedule').classList.toggle('hidden', page !== 'schedule');
+
+  if (page === 'list') renderUrlList();
+  if (page === 'schedule') renderSchedules();
+}
+
+// ── Login ──
 async function doLogin() {
   const pw = document.getElementById('pw-input').value;
   const errEl = document.getElementById('login-error');
@@ -141,23 +330,23 @@ async function doLogin() {
     if (!res.ok) { const d = await res.json(); errEl.textContent = d.detail||'실패'; errEl.classList.remove('hidden'); return; }
     token = pw;
     document.getElementById('login-screen').classList.add('hidden');
-    document.getElementById('dashboard').classList.remove('hidden');
-    document.getElementById('btn-logout').classList.remove('hidden');
+    document.getElementById('main-layout').classList.remove('hidden');
     await Promise.all([loadConfig(), loadRuleTypes()]);
+    loadAuditData();
   } catch { errEl.textContent = '서버 연결 실패'; errEl.classList.remove('hidden'); }
 }
 
 function logout() {
   token = ''; config = {};
-  document.getElementById('dashboard').classList.add('hidden');
+  document.getElementById('main-layout').classList.add('hidden');
   document.getElementById('login-screen').classList.remove('hidden');
-  document.getElementById('btn-logout').classList.add('hidden');
+  document.getElementById('pw-input').value = '';
 }
 
 async function loadConfig() {
   const res = await fetch('/admin/config', { headers: { 'Authorization': `Bearer ${token}` } });
   config = await res.json();
-  renderAll();
+  renderCriteriaPage();
   dirty = false;
   document.getElementById('btn-save').disabled = true;
 }
@@ -167,7 +356,23 @@ async function loadRuleTypes() {
   ruleTypes = await res.json();
 }
 
-function renderAll() {
+function loadAuditData() {
+  const saved = localStorage.getItem('geo_audit_urls');
+  auditUrls = saved ? JSON.parse(saved) : [];
+  const savedSched = localStorage.getItem('geo_audit_schedules');
+  schedules = savedSched ? JSON.parse(savedSched) : [];
+}
+
+function saveAuditData() {
+  localStorage.setItem('geo_audit_urls', JSON.stringify(auditUrls));
+  localStorage.setItem('geo_audit_schedules', JSON.stringify(schedules));
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// Page 1: Audit 기준 설정
+// ═══════════════════════════════════════════════════════════════════════
+
+function renderCriteriaPage() {
   renderCards();
   updateTotal();
   renderProportionBar();
@@ -179,8 +384,7 @@ function renderProportionBar() {
   const bar = document.getElementById('proportion-bar');
   const legend = document.getElementById('proportion-legend');
   const total = CAT_KEYS.reduce((s, k) => s + (config[k]?.max || 0), 0) || 1;
-  bar.innerHTML = '';
-  legend.innerHTML = '';
+  bar.innerHTML = ''; legend.innerHTML = '';
   CAT_KEYS.forEach((k, i) => {
     const c = config[k] || {};
     const pct = ((c.max || 0) / total * 100).toFixed(1);
@@ -192,7 +396,6 @@ function renderProportionBar() {
 function renderCards() {
   const container = document.getElementById('config-cards');
   container.innerHTML = '';
-
   CAT_KEYS.forEach((catKey, catIdx) => {
     const c = config[catKey] || {};
     const label = c.label || catKey;
@@ -210,8 +413,6 @@ function renderCards() {
       const rtMeta = ruleTypes[ruleType] || {};
       const rtLabel = rtMeta.label || ruleType;
       const params = rule.params || {};
-
-      // Render params inline
       let paramsHtml = renderRuleParams(catKey, idx, ruleType, params);
 
       criteriaHtml += `
@@ -235,7 +436,7 @@ function renderCards() {
                 onchange="setCriteriaPoints('${catKey}', ${idx}, this.value)">
               <span class="text-xs text-slate-400">점</span>
             </div>
-            <button onclick="deleteCriteria('${catKey}', ${idx})" class="text-slate-300 hover:text-red-400 transition flex-shrink-0" title="삭제">
+            <button onclick="deleteCriteria('${catKey}', ${idx})" class="text-slate-300 hover:text-red-400 transition flex-shrink-0">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
             </button>
           </div>
@@ -264,13 +465,9 @@ function renderCards() {
             class="w-14 px-2 py-1 rounded-lg border border-slate-200 text-sm text-center font-semibold focus:ring-2 focus:ring-indigo-400 focus:outline-none"
             onchange="setMax('${catKey}', this.value)">
         </div>
-        <div class="space-y-0.5 mb-3">
-          ${criteriaHtml || '<p class="text-xs text-slate-300 text-center py-3">기준 없음</p>'}
-        </div>
+        <div class="space-y-0.5 mb-3">${criteriaHtml || '<p class="text-xs text-slate-300 text-center py-3">기준 없음</p>'}</div>
         <button onclick="openAddModal('${catKey}')"
-          class="w-full py-2 border-2 border-dashed border-slate-200 rounded-lg text-xs text-slate-400 hover:border-indigo-300 hover:text-indigo-500 transition">
-          + 기준 추가
-        </button>
+          class="w-full py-2 border-2 border-dashed border-slate-200 rounded-lg text-xs text-slate-400 hover:border-indigo-300 hover:text-indigo-500 transition">+ 기준 추가</button>
       </div>`;
   });
 }
@@ -279,217 +476,251 @@ function renderRuleParams(catKey, idx, ruleType, params) {
   if (!params || Object.keys(params).length === 0) return '';
   const rtMeta = ruleTypes[ruleType] || {};
   const paramDefs = rtMeta.params || {};
-
   let html = '';
   for (const [key, val] of Object.entries(params)) {
     const pDef = paramDefs[key] || {};
     const label = pDef.label || key;
     const type = pDef.type || 'text';
-
     if (type === 'select') {
-      const options = (pDef.options || []).map(o =>
-        `<option value="${escHtml(o)}" ${o === String(val) ? 'selected' : ''}>${escHtml(o)}</option>`
-      ).join('');
-      html += `<div>
-        <label class="text-[10px] text-slate-400 block mb-0.5">${escHtml(label)}</label>
-        <select class="px-2 py-1 rounded border border-slate-200 text-xs focus:ring-1 focus:ring-indigo-400 focus:outline-none"
-          onchange="setRuleParam('${catKey}', ${idx}, '${key}', this.value)">${options}</select>
-      </div>`;
+      const options = (pDef.options || []).map(o => `<option value="${escHtml(o)}" ${o === String(val) ? 'selected' : ''}>${escHtml(o)}</option>`).join('');
+      html += `<div><label class="text-[10px] text-slate-400 block mb-0.5">${escHtml(label)}</label><select class="px-2 py-1 rounded border border-slate-200 text-xs" onchange="setRuleParam('${catKey}', ${idx}, '${key}', this.value)">${options}</select></div>`;
     } else if (type === 'number') {
       const step = key.includes('ratio') ? '0.05' : '1';
-      html += `<div>
-        <label class="text-[10px] text-slate-400 block mb-0.5">${escHtml(label)}</label>
-        <input type="number" step="${step}" value="${val}"
-          class="w-20 px-2 py-1 rounded border border-slate-200 text-xs text-center focus:ring-1 focus:ring-indigo-400 focus:outline-none"
-          onchange="setRuleParam('${catKey}', ${idx}, '${key}', this.value)">
-      </div>`;
+      html += `<div><label class="text-[10px] text-slate-400 block mb-0.5">${escHtml(label)}</label><input type="number" step="${step}" value="${val}" class="w-20 px-2 py-1 rounded border border-slate-200 text-xs text-center" onchange="setRuleParam('${catKey}', ${idx}, '${key}', this.value)"></div>`;
     } else {
-      html += `<div class="flex-1 min-w-[150px]">
-        <label class="text-[10px] text-slate-400 block mb-0.5">${escHtml(label)}</label>
-        <input type="text" value="${escHtml(String(val))}"
-          class="w-full px-2 py-1 rounded border border-slate-200 text-xs focus:ring-1 focus:ring-indigo-400 focus:outline-none"
-          onchange="setRuleParam('${catKey}', ${idx}, '${key}', this.value)">
-      </div>`;
+      html += `<div class="flex-1 min-w-[150px]"><label class="text-[10px] text-slate-400 block mb-0.5">${escHtml(label)}</label><input type="text" value="${escHtml(String(val))}" class="w-full px-2 py-1 rounded border border-slate-200 text-xs" onchange="setRuleParam('${catKey}', ${idx}, '${key}', this.value)"></div>`;
     }
   }
   return html;
 }
 
-// ── Actions ──
 function setMax(catKey, val) {
   val = parseInt(val) || 0;
   if (!config[catKey]) config[catKey] = {};
   config[catKey].max = val;
   const card = document.getElementById(`card-${catKey}`);
-  if (card) {
-    card.querySelector('input[type=range]').value = val;
-    card.querySelector('input[type=number]').value = val;
-  }
+  if (card) { card.querySelector('input[type=range]').value = val; card.querySelector('input[type=number]').value = val; }
   markDirty(); updateTotal(); renderProportionBar();
 }
+function toggleCriteria(k, i) { const cr = config[k]?.criteria?.[i]; if (!cr) return; cr.enabled = !cr.enabled; markDirty(); renderCriteriaPage(); }
+function setCriteriaPoints(k, i, v) { const cr = config[k]?.criteria?.[i]; if (!cr) return; cr.points = parseInt(v)||0; markDirty(); renderCriteriaPage(); }
+function setRuleParam(k, i, key, val) { const cr = config[k]?.criteria?.[i]; if (!cr?.rule?.params) return; const n = Number(val); cr.rule.params[key] = (val !== '' && !isNaN(n) && !val.includes(',')) ? n : val; markDirty(); }
+function deleteCriteria(k, i) { if (!confirm('이 기준을 삭제하시겠습니까?')) return; config[k].criteria.splice(i, 1); markDirty(); renderCriteriaPage(); }
 
-function toggleCriteria(catKey, idx) {
-  const cr = config[catKey]?.criteria?.[idx];
-  if (!cr) return;
-  cr.enabled = cr.enabled === false ? true : false;
-  markDirty(); renderAll();
-}
-
-function setCriteriaPoints(catKey, idx, val) {
-  const cr = config[catKey]?.criteria?.[idx];
-  if (!cr) return;
-  cr.points = parseInt(val) || 0;
-  markDirty(); renderAll();
-}
-
-function setRuleParam(catKey, idx, key, val) {
-  const cr = config[catKey]?.criteria?.[idx];
-  if (!cr?.rule?.params) return;
-  // auto-detect number
-  const numVal = Number(val);
-  cr.rule.params[key] = (val !== '' && !isNaN(numVal) && !val.includes(',')) ? numVal : val;
-  markDirty();
-}
-
-function deleteCriteria(catKey, idx) {
-  if (!confirm('이 기준을 삭제하시겠습니까?')) return;
-  config[catKey].criteria.splice(idx, 1);
-  markDirty(); renderAll();
-}
-
-// ── Add Criteria Modal ──
 function openAddModal(catKey) {
   modalCatKey = catKey;
   document.getElementById('modal-name').value = '';
   document.getElementById('modal-points').value = '2';
-
-  // Populate rule type dropdown
   const select = document.getElementById('modal-rule-type');
   select.innerHTML = '';
-  for (const [key, meta] of Object.entries(ruleTypes)) {
-    select.innerHTML += `<option value="${escHtml(key)}">${escHtml(meta.label)} (${escHtml(key)})</option>`;
-  }
+  for (const [key, meta] of Object.entries(ruleTypes)) select.innerHTML += `<option value="${escHtml(key)}">${escHtml(meta.label)} (${escHtml(key)})</option>`;
   onRuleTypeChange();
   document.getElementById('add-modal').classList.remove('hidden');
 }
-
-function closeModal() {
-  document.getElementById('add-modal').classList.add('hidden');
-}
-
+function closeModal() { document.getElementById('add-modal').classList.add('hidden'); }
 function onRuleTypeChange() {
   const type = document.getElementById('modal-rule-type').value;
   const meta = ruleTypes[type] || {};
   document.getElementById('modal-rule-desc').textContent = meta.description || '';
-
   const container = document.getElementById('modal-params');
   container.innerHTML = '';
   for (const [key, pDef] of Object.entries(meta.params || {})) {
-    const type = pDef.type || 'text';
-    let inputHtml;
-    if (type === 'select') {
-      const opts = (pDef.options||[]).map(o => `<option value="${escHtml(o)}">${escHtml(o)}</option>`).join('');
-      inputHtml = `<select id="mp-${key}" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm">${opts}</select>`;
-    } else if (type === 'number') {
-      inputHtml = `<input id="mp-${key}" type="number" placeholder="${escHtml(pDef.placeholder||'')}" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm">`;
-    } else {
-      inputHtml = `<input id="mp-${key}" type="text" placeholder="${escHtml(pDef.placeholder||'')}" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm">`;
-    }
-    container.innerHTML += `<div>
-      <label class="text-xs text-slate-500 mb-1 block">${escHtml(pDef.label || key)}</label>
-      ${inputHtml}
-    </div>`;
+    const t = pDef.type || 'text';
+    let inp;
+    if (t === 'select') { const opts = (pDef.options||[]).map(o => `<option value="${escHtml(o)}">${escHtml(o)}</option>`).join(''); inp = `<select id="mp-${key}" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm">${opts}</select>`; }
+    else if (t === 'number') { inp = `<input id="mp-${key}" type="number" placeholder="${escHtml(pDef.placeholder||'')}" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm">`; }
+    else { inp = `<input id="mp-${key}" type="text" placeholder="${escHtml(pDef.placeholder||'')}" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm">`; }
+    container.innerHTML += `<div><label class="text-xs text-slate-500 mb-1 block">${escHtml(pDef.label || key)}</label>${inp}</div>`;
   }
 }
-
 function confirmAddCriteria() {
   const name = document.getElementById('modal-name').value.trim();
   if (!name) { alert('기준 이름을 입력하세요.'); return; }
-
   const ruleType = document.getElementById('modal-rule-type').value;
   const meta = ruleTypes[ruleType] || {};
   const points = parseInt(document.getElementById('modal-points').value) || 0;
-
   const params = {};
-  for (const key of Object.keys(meta.params || {})) {
-    const el = document.getElementById(`mp-${key}`);
-    if (el) {
-      const v = el.value;
-      const num = Number(v);
-      params[key] = (v !== '' && !isNaN(num) && !v.includes(',')) ? num : v;
-    }
-  }
-
+  for (const key of Object.keys(meta.params || {})) { const el = document.getElementById(`mp-${key}`); if (el) { const v = el.value; const n = Number(v); params[key] = (v !== '' && !isNaN(n) && !v.includes(',')) ? n : v; } }
   const id = name.toLowerCase().replace(/[^a-z0-9가-힣]/g, '_').replace(/_+/g, '_');
-
   if (!config[modalCatKey]) config[modalCatKey] = {};
   if (!config[modalCatKey].criteria) config[modalCatKey].criteria = [];
-
-  config[modalCatKey].criteria.push({
-    id, name, points, enabled: true,
-    rule: { type: ruleType, params },
-  });
-
-  closeModal();
-  markDirty(); renderAll();
+  config[modalCatKey].criteria.push({ id, name, points, enabled: true, rule: { type: ruleType, params } });
+  closeModal(); markDirty(); renderCriteriaPage();
 }
-
-function autoBalance() {
-  for (const k of CAT_KEYS) {
-    const c = config[k];
-    if (!c?.criteria) continue;
-    const sum = c.criteria.filter(cr => cr.enabled !== false).reduce((s, cr) => s + (cr.points || 0), 0);
-    c.max = sum;
-  }
-  markDirty(); renderAll();
-  showToast('각 카테고리 max를 기준 합계에 맞췄습니다.');
-}
-
-function markDirty() {
-  if (!config.grade) config.grade = {};
-  config.grade.good = parseInt(document.getElementById('grade-good').value) || 90;
-  config.grade.need_improvement = parseInt(document.getElementById('grade-need').value) || 70;
-  dirty = true;
-  document.getElementById('btn-save').disabled = false;
-}
-
-function updateTotal() {
-  let total = 0;
-  for (const k of CAT_KEYS) total += (config[k]?.max || 0);
-  document.getElementById('total-badge').textContent = `${total}점`;
-  const warn = document.getElementById('total-warning');
-  if (total !== 100) { warn.textContent = `총점이 ${total}점입니다. 100점이 권장됩니다.`; warn.classList.remove('hidden'); }
-  else { warn.classList.add('hidden'); }
-}
+function autoBalance() { for (const k of CAT_KEYS) { const c = config[k]; if (!c?.criteria) continue; c.max = c.criteria.filter(cr => cr.enabled !== false).reduce((s, cr) => s + (cr.points || 0), 0); } markDirty(); renderCriteriaPage(); showToast('자동 맞춤 완료'); }
+function markDirty() { if (!config.grade) config.grade = {}; config.grade.good = parseInt(document.getElementById('grade-good').value)||90; config.grade.need_improvement = parseInt(document.getElementById('grade-need').value)||70; dirty = true; document.getElementById('btn-save').disabled = false; }
+function updateTotal() { let t = 0; for (const k of CAT_KEYS) t += (config[k]?.max || 0); document.getElementById('total-badge').textContent = `${t}점`; const w = document.getElementById('total-warning'); if (t !== 100) { w.textContent = `총점이 ${t}점입니다. 100점이 권장됩니다.`; w.classList.remove('hidden'); } else { w.classList.add('hidden'); } }
 
 async function saveConfig() {
   try {
-    const res = await fetch('/admin/config', {
-      method: 'PUT', headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
-      body: JSON.stringify(config),
-    });
+    const res = await fetch('/admin/config', { method: 'PUT', headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` }, body: JSON.stringify(config) });
     if (!res.ok) { alert('저장 실패'); return; }
-    const data = await res.json();
-    config = data.config;
-    renderAll(); dirty = false;
-    document.getElementById('btn-save').disabled = true;
-    showToast('설정이 저장되었습니다.');
+    const data = await res.json(); config = data.config;
+    renderCriteriaPage(); dirty = false; document.getElementById('btn-save').disabled = true; showToast('설정이 저장되었습니다.');
   } catch { alert('서버 연결 실패'); }
 }
-
 async function resetConfig() {
   if (!confirm('모든 설정을 기본값으로 되돌리시겠습니까?')) return;
   try {
     const res = await fetch('/admin/config/reset', { method: 'POST', headers: { 'Authorization': `Bearer ${token}` } });
     if (!res.ok) { alert('리셋 실패'); return; }
-    const data = await res.json();
-    config = data.config;
-    renderAll(); dirty = false;
-    document.getElementById('btn-save').disabled = true;
-    showToast('기본값으로 복원되었습니다.');
+    const data = await res.json(); config = data.config;
+    renderCriteriaPage(); dirty = false; document.getElementById('btn-save').disabled = true; showToast('기본값으로 복원');
   } catch { alert('서버 연결 실패'); }
 }
 
+// ═══════════════════════════════════════════════════════════════════════
+// Page 2: Audit List 관리
+// ═══════════════════════════════════════════════════════════════════════
+
+function renderUrlList() {
+  const tbody = document.getElementById('url-list-body');
+  if (!auditUrls.length) {
+    tbody.innerHTML = '<tr><td colspan="4" class="px-4 py-12 text-center text-slate-300 text-sm">등록된 URL이 없습니다. URL을 추가해주세요.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = auditUrls.map((u, i) => `
+    <tr class="border-b border-slate-50 hover:bg-slate-50/50">
+      <td class="px-4 py-3">
+        <p class="text-sm text-slate-700 truncate max-w-md">${escHtml(u.url)}</p>
+        ${u.label ? `<p class="text-xs text-slate-400">${escHtml(u.label)}</p>` : ''}
+      </td>
+      <td class="px-4 py-3 text-center">
+        ${u.lastScore != null ? `<span class="text-sm font-bold ${u.lastScore >= 90 ? 'text-emerald-600' : u.lastScore >= 70 ? 'text-amber-600' : 'text-red-500'}">${u.lastScore}</span>` : '<span class="text-xs text-slate-300">-</span>'}
+      </td>
+      <td class="px-4 py-3 text-center text-xs text-slate-400">${u.lastRun || '-'}</td>
+      <td class="px-4 py-3 text-center">
+        <div class="flex items-center justify-center gap-1">
+          <button onclick="runAudit(${i})" class="px-2 py-1 text-xs bg-indigo-50 text-indigo-600 rounded hover:bg-indigo-100 transition font-medium">분석</button>
+          <button onclick="removeUrl(${i})" class="px-2 py-1 text-xs text-red-400 hover:text-red-600 transition">삭제</button>
+        </div>
+      </td>
+    </tr>
+  `).join('');
+}
+
+function openAddUrlModal() {
+  document.getElementById('url-modal-input').value = '';
+  document.getElementById('url-modal-label').value = '';
+  document.getElementById('url-modal').classList.remove('hidden');
+}
+
+function confirmAddUrl() {
+  const url = document.getElementById('url-modal-input').value.trim();
+  if (!url) return;
+  const label = document.getElementById('url-modal-label').value.trim();
+  auditUrls.push({ url, label, lastScore: null, lastRun: null });
+  saveAuditData(); renderUrlList();
+  document.getElementById('url-modal').classList.add('hidden');
+  showToast('URL이 추가되었습니다.');
+}
+
+function addBulkUrls() {
+  const text = document.getElementById('bulk-urls').value.trim();
+  if (!text) return;
+  const urls = text.split('\n').map(u => u.trim()).filter(u => u);
+  for (const url of urls) auditUrls.push({ url, label: '', lastScore: null, lastRun: null });
+  saveAuditData(); renderUrlList();
+  document.getElementById('bulk-urls').value = '';
+  showToast(`${urls.length}개 URL이 추가되었습니다.`);
+}
+
+function removeUrl(idx) {
+  if (!confirm('이 URL을 삭제하시겠습니까?')) return;
+  auditUrls.splice(idx, 1);
+  saveAuditData(); renderUrlList();
+}
+
+async function runAudit(idx) {
+  const u = auditUrls[idx];
+  if (!u) return;
+  showToast(`${u.url} 분석 중...`);
+  try {
+    const res = await fetch('/analyze', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url: u.url }),
+    });
+    if (!res.ok) { showToast('분석 실패'); return; }
+    const data = await res.json();
+    u.lastScore = data.score?.total ?? null;
+    u.lastRun = new Date().toLocaleString('ko-KR', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' });
+    saveAuditData(); renderUrlList();
+    showToast(`${u.url}: ${u.lastScore}점`);
+  } catch { showToast('분석 중 오류 발생'); }
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// Page 3: 정기 Audit 관리
+// ═══════════════════════════════════════════════════════════════════════
+
+function renderSchedules() {
+  const container = document.getElementById('schedule-list');
+  if (!schedules.length) {
+    container.innerHTML = `<div class="card p-6 text-center">
+      <div class="text-3xl mb-3 opacity-30">🕐</div>
+      <p class="text-sm text-slate-400 mb-1">등록된 정기 Audit이 없습니다.</p>
+      <p class="text-xs text-slate-300">스케줄을 추가하면 지정된 주기로 자동 분석이 실행됩니다.</p>
+    </div>`;
+    return;
+  }
+  const freqLabel = { daily: '매일', weekly: '매주', monthly: '매월' };
+  container.innerHTML = schedules.map((s, i) => `
+    <div class="card p-5 flex items-center gap-4 fade-in">
+      <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center flex-shrink-0">
+        <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      </div>
+      <div class="flex-1 min-w-0">
+        <p class="text-sm font-semibold text-slate-700">${escHtml(s.name)}</p>
+        <p class="text-xs text-slate-400">${freqLabel[s.freq] || s.freq} ${s.time} · ${s.target === 'all' ? '전체 URL' : s.target}</p>
+      </div>
+      <div class="flex items-center gap-2">
+        <button onclick="toggleSchedule(${i})" class="flex-shrink-0">
+          <div class="toggle-track w-9 h-5 rounded-full ${s.enabled !== false ? 'bg-indigo-500' : 'bg-slate-200'} relative">
+            <div class="toggle-thumb w-4 h-4 bg-white rounded-full absolute top-0.5 shadow ${s.enabled !== false ? 'transform translate-x-4' : 'translate-x-0.5'}"></div>
+          </div>
+        </button>
+        <button onclick="removeSchedule(${i})" class="text-slate-300 hover:text-red-400 transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function openAddScheduleModal() {
+  document.getElementById('sched-name').value = '';
+  document.getElementById('sched-freq').value = 'weekly';
+  document.getElementById('sched-time').value = '09:00';
+  document.getElementById('schedule-modal').classList.remove('hidden');
+}
+
+function confirmAddSchedule() {
+  const name = document.getElementById('sched-name').value.trim();
+  if (!name) { alert('스케줄 이름을 입력하세요.'); return; }
+  schedules.push({
+    name,
+    freq: document.getElementById('sched-freq').value,
+    time: document.getElementById('sched-time').value,
+    target: document.getElementById('sched-target').value,
+    enabled: true,
+  });
+  saveAuditData(); renderSchedules();
+  document.getElementById('schedule-modal').classList.add('hidden');
+  showToast('스케줄이 추가되었습니다.');
+}
+
+function toggleSchedule(i) {
+  schedules[i].enabled = !schedules[i].enabled;
+  saveAuditData(); renderSchedules();
+}
+
+function removeSchedule(i) {
+  if (!confirm('이 스케줄을 삭제하시겠습니까?')) return;
+  schedules.splice(i, 1);
+  saveAuditData(); renderSchedules();
+}
+
+// ── Toast ──
 function showToast(msg) {
   const el = document.createElement('div');
   el.className = 'fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-sm px-5 py-3 rounded-xl shadow-lg fade-in z-50';
