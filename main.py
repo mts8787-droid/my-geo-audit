@@ -11,6 +11,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from analyzer import analyze_url, get_scoring_config, save_scoring_config, get_default_config, load_scoring_config
+from rule_engine import RULE_TYPES
 import hmac
 from slowapi import Limiter
 from slowapi.util import get_remote_address
@@ -279,6 +280,13 @@ async def reset_config(request: Request):
     default = get_default_config()
     save_scoring_config(default)
     return {"status": "ok", "config": default}
+
+
+@app.get("/admin/rule-types")
+async def get_rule_types(request: Request):
+    if not _verify_admin(request):
+        raise HTTPException(status_code=401, detail="인증이 필요합니다.")
+    return RULE_TYPES
 
 
 app.mount("/static", StaticFiles(directory="static"), name="static")

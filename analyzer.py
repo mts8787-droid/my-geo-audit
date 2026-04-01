@@ -7,6 +7,7 @@ import os
 import copy
 from typing import Optional
 from urllib.parse import urlparse
+from rule_engine import evaluate_rule, evaluate_rule_async, RULE_TYPES
 
 # Playwright 동시 실행 제한 (메모리 보호)
 _playwright_sem = asyncio.Semaphore(2)
@@ -18,54 +19,56 @@ _bulk_sem = asyncio.Semaphore(5)
 
 _CONFIG_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "scoring_config.json")
 
-_DEFAULT_CONFIG = {
-    "seo_tags": {"max": 20, "label": "SEO Tags", "criteria": [
-        {"id": "title", "name": "Title 태그", "condition": "title 존재 AND 길이 >= min_length", "points": 2, "threshold": {"min_length": 10}, "enabled": True},
-        {"id": "desc", "name": "Meta Description", "condition": "description 존재 AND 길이 >= min_length", "points": 2, "threshold": {"min_length": 50}, "enabled": True},
-        {"id": "canonical", "name": "Canonical 태그", "condition": "canonical href 존재", "points": 2, "threshold": {}, "enabled": True},
-        {"id": "h1", "name": "H1 고유성", "condition": "H1 태그가 정확히 1개", "points": 2, "threshold": {}, "enabled": True},
-        {"id": "img_alt", "name": "이미지 Alt", "condition": "모든 이미지에 alt 속성 존재", "points": 2, "threshold": {}, "enabled": True},
-        {"id": "redirect", "name": "리다이렉트 체인", "condition": "리다이렉트 횟수 <= max_count", "points": 2, "threshold": {"max_count": 3}, "enabled": True},
-        {"id": "og_title", "name": "og:title", "condition": "og:title 메타태그 존재", "points": 2, "threshold": {}, "enabled": True},
-        {"id": "og_desc", "name": "og:description", "condition": "og:description 메타태그 존재", "points": 2, "threshold": {}, "enabled": True},
-        {"id": "og_image", "name": "og:image", "condition": "og:image 메타태그 존재", "points": 2, "threshold": {}, "enabled": True},
-        {"id": "robots", "name": "Meta Robots", "condition": "noindex가 아님", "points": 2, "threshold": {}, "enabled": True},
-    ]},
-    "robots_txt": {"max": 10, "label": "robots.txt AI 봇 허용", "criteria": [
-        {"id": "bot_ratio", "name": "봇 허용 비율", "condition": "(허용 봇 수 / 전체 봇 수) × max 점수", "points": 10, "threshold": {}, "enabled": True},
-    ]},
-    "json_ld": {"max": 15, "label": "JSON-LD 구조화 데이터", "criteria": [
-        {"id": "product", "name": "필수: Product 스키마", "condition": "Product 또는 IndividualProduct @type 존재", "points": 8, "threshold": {}, "enabled": True},
-        {"id": "breadcrumb", "name": "보조: BreadcrumbList/Organization", "condition": "BreadcrumbList 또는 Organization @type 존재", "points": 7, "threshold": {}, "enabled": True},
-    ]},
-    "llms_txt": {"max": 5, "label": "llms.txt", "criteria": [
-        {"id": "exists", "name": "llms.txt 파일", "condition": "/llms.txt HTTP 200 응답", "points": 5, "threshold": {}, "enabled": True},
-    ]},
-    "faq": {"max": 15, "label": "FAQ 섹션", "criteria": [
-        {"id": "schema", "name": "FAQPage 스키마", "condition": "JSON-LD에 FAQPage @type 존재", "points": 8, "threshold": {}, "enabled": True},
-        {"id": "html", "name": "HTML FAQ 섹션", "condition": "FAQ 관련 class/id/heading 또는 details 3개 이상", "points": 7, "threshold": {}, "enabled": True},
-    ]},
-    "summary_box": {"max": 5, "label": "서머리 박스", "criteria": [
-        {"id": "found", "name": "요약 박스 감지", "condition": "summary/요약/tldr 등 class/id/heading 또는 <summary> 태그", "points": 5, "threshold": {}, "enabled": True},
-    ]},
-    "heading_structure": {"max": 5, "label": "Heading 구조", "criteria": [
-        {"id": "single_h1", "name": "H1 단일", "condition": "H1 태그가 정확히 1개", "points": 2, "threshold": {}, "enabled": True},
-        {"id": "multiple_h2", "name": "H2 복수", "condition": "H2 태그 >= min_count개", "points": 2, "threshold": {"min_count": 2}, "enabled": True},
-        {"id": "logical_order", "name": "논리적 순서", "condition": "H2/H3/H4가 H1 뒤에 위치", "points": 1, "threshold": {}, "enabled": True},
-    ]},
-    "stats_density": {"max": 5, "label": "통계 데이터", "criteria": [
-        {"id": "has_stats", "name": "통계 데이터 존재", "condition": "숫자를 포함한 단어가 1개 이상", "points": 5, "threshold": {}, "enabled": True},
-    ]},
-    "reviews_ssr": {"max": 10, "label": "리뷰 SSR", "criteria": [
-        {"id": "found", "name": "리뷰 컨테이너 SSR", "condition": "#reviews_container 요소 존재", "points": 10, "threshold": {}, "enabled": True},
-    ]},
-    "csr_ratio": {"max": 10, "label": "CSR 비중", "criteria": [
-        {"id": "excellent", "name": "Excellent", "condition": "SSR/CSR 비율 >= min_ratio", "points": 10, "threshold": {"min_ratio": 0.8}, "enabled": True},
-        {"id": "good", "name": "Good", "condition": "SSR/CSR 비율 >= min_ratio", "points": 7, "threshold": {"min_ratio": 0.5}, "enabled": True},
-        {"id": "partial", "name": "Partial", "condition": "SSR/CSR 비율 >= min_ratio", "points": 4, "threshold": {"min_ratio": 0.3}, "enabled": True},
-    ]},
-    "grade": {"good": 90, "need_improvement": 70},
-}
+_DEFAULT_CONFIG = None  # scoring_config.json에서 로드, 없으면 파일 기본값 사용
+
+def _load_default_config():
+    """소스 코드에 하드코딩하지 않고, scoring_config.json의 초기 상태를 기본값으로 사용."""
+    return {
+        "seo_tags": {"max": 20, "label": "SEO Tags", "description": "기본 SEO 태그 검사", "criteria": [
+            {"id": "title", "name": "Title 태그", "points": 2, "enabled": True, "rule": {"type": "css_text_min_length", "params": {"selector": "title", "min_length": 10}}},
+            {"id": "desc", "name": "Meta Description", "points": 2, "enabled": True, "rule": {"type": "css_attr_exists", "params": {"selector": "meta[name='description' i]", "attr": "content", "min_length": 50}}},
+            {"id": "canonical", "name": "Canonical 태그", "points": 2, "enabled": True, "rule": {"type": "css_attr_exists", "params": {"selector": "link[rel~='canonical']", "attr": "href"}}},
+            {"id": "h1", "name": "H1 고유성", "points": 2, "enabled": True, "rule": {"type": "css_count", "params": {"selector": "h1", "operator": "==", "value": 1}}},
+            {"id": "img_alt", "name": "이미지 Alt", "points": 2, "enabled": True, "rule": {"type": "css_all_have_attr", "params": {"selector": "img", "attr": "alt"}}},
+            {"id": "redirect", "name": "리다이렉트 체인", "points": 2, "enabled": True, "rule": {"type": "redirect_max", "params": {"max_count": 3}}},
+            {"id": "og_title", "name": "og:title", "points": 2, "enabled": True, "rule": {"type": "css_attr_exists", "params": {"selector": "meta[property='og:title']", "attr": "content"}}},
+            {"id": "og_desc", "name": "og:description", "points": 2, "enabled": True, "rule": {"type": "css_attr_exists", "params": {"selector": "meta[property='og:description']", "attr": "content"}}},
+            {"id": "og_image", "name": "og:image", "points": 2, "enabled": True, "rule": {"type": "css_attr_exists", "params": {"selector": "meta[property='og:image']", "attr": "content"}}},
+            {"id": "robots", "name": "Meta Robots (noindex 아님)", "points": 2, "enabled": True, "rule": {"type": "css_attr_not_contains", "params": {"selector": "meta[name='robots' i]", "attr": "content", "value": "noindex"}}},
+        ]},
+        "robots_txt": {"max": 10, "label": "robots.txt AI 봇 허용", "description": "AI 크롤러 봇 허용 비율 (특수 로직)", "criteria": [], "special": "robots_ratio"},
+        "json_ld": {"max": 15, "label": "JSON-LD 구조화 데이터", "description": "필수 스키마 + 보조 스키마", "criteria": [
+            {"id": "product", "name": "필수: Product 스키마", "points": 8, "enabled": True, "rule": {"type": "schema_type_exists", "params": {"type": "product,individualproduct"}}},
+            {"id": "breadcrumb", "name": "보조: BreadcrumbList/Organization", "points": 7, "enabled": True, "rule": {"type": "schema_type_exists", "params": {"type": "breadcrumblist,organization"}}},
+        ]},
+        "llms_txt": {"max": 5, "label": "llms.txt", "description": "llms.txt 파일 존재 여부", "criteria": [
+            {"id": "exists", "name": "llms.txt 파일", "points": 5, "enabled": True, "rule": {"type": "http_status", "params": {"path": "/llms.txt", "status": 200}}},
+        ]},
+        "faq": {"max": 15, "label": "FAQ 섹션", "description": "FAQPage 스키마 + HTML FAQ 섹션", "criteria": [
+            {"id": "schema", "name": "FAQPage 스키마", "points": 8, "enabled": True, "rule": {"type": "schema_type_exists", "params": {"type": "faqpage"}}},
+            {"id": "html", "name": "HTML FAQ 섹션", "points": 7, "enabled": True, "rule": {"type": "class_id_contains", "params": {"keywords": "faq,자주 묻는,자주묻는,frequently asked,q&a,qna,questions,질문,answer,accordion", "tags": "div,section,aside,article"}}},
+        ]},
+        "summary_box": {"max": 5, "label": "서머리 박스", "description": "요약 박스 존재 여부", "criteria": [
+            {"id": "found", "name": "요약 박스 감지", "points": 5, "enabled": True, "rule": {"type": "class_id_contains", "params": {"keywords": "summary,요약,tldr,tl;dr,abstract,핵심,정리,key-point,keypoint,highlight,takeaway,key feature,key-feature,주요 기능,주요기능,주요 특징,주요특징,핵심 기능,핵심기능,제품 특징,제품특징,특장점,benefit,overview,product overview", "tags": "div,section,aside,article,blockquote,p"}}},
+        ]},
+        "heading_structure": {"max": 5, "label": "Heading 구조", "description": "제목 태그 구조 분석", "criteria": [
+            {"id": "single_h1", "name": "H1 단일", "points": 2, "enabled": True, "rule": {"type": "css_count", "params": {"selector": "h1", "operator": "==", "value": 1}}},
+            {"id": "multiple_h2", "name": "H2 복수", "points": 2, "enabled": True, "rule": {"type": "css_count", "params": {"selector": "h2", "operator": ">=", "value": 2}}},
+            {"id": "logical_order", "name": "논리적 순서", "points": 1, "enabled": True, "rule": {"type": "heading_order", "params": {}}},
+        ]},
+        "stats_density": {"max": 5, "label": "통계 데이터", "description": "수치/통계 데이터 존재 여부", "criteria": [
+            {"id": "has_stats", "name": "통계 데이터 존재", "points": 5, "enabled": True, "rule": {"type": "text_has_pattern", "params": {"pattern": "\\d", "tags": "p,li,td,h1,h2,h3,h4,h5,h6"}}},
+        ]},
+        "reviews_ssr": {"max": 10, "label": "리뷰 SSR", "description": "리뷰 컨테이너 서버사이드 렌더링", "criteria": [
+            {"id": "found", "name": "리뷰 컨테이너 SSR", "points": 10, "enabled": True, "rule": {"type": "css_exists", "params": {"selector": "#reviews_container"}}},
+        ]},
+        "csr_ratio": {"max": 10, "label": "CSR 비중", "description": "SSR/CSR 비율 (특수 로직)", "criteria": [
+            {"id": "excellent", "name": "Excellent", "points": 10, "enabled": True, "rule": {"type": "csr_tier", "params": {"min_ratio": 0.8}}},
+            {"id": "good", "name": "Good", "points": 7, "enabled": True, "rule": {"type": "csr_tier", "params": {"min_ratio": 0.5}}},
+            {"id": "partial", "name": "Partial", "points": 4, "enabled": True, "rule": {"type": "csr_tier", "params": {"min_ratio": 0.3}}},
+        ], "special": "csr_tiers"},
+        "grade": {"good": 90, "need_improvement": 70},
+    }
 
 _scoring_config: Optional[dict] = None
 
@@ -77,7 +80,7 @@ def load_scoring_config() -> dict:
         with open(_CONFIG_PATH, "r", encoding="utf-8") as f:
             _scoring_config = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
-        _scoring_config = copy.deepcopy(_DEFAULT_CONFIG)
+        _scoring_config = _load_default_config()
     return _scoring_config
 
 
@@ -98,7 +101,7 @@ def get_scoring_config() -> dict:
 
 def get_default_config() -> dict:
     """기본 채점 설정을 반환합니다."""
-    return copy.deepcopy(_DEFAULT_CONFIG)
+    return _load_default_config()
 
 
 # 서버 시작 시 설정 로드
@@ -154,15 +157,17 @@ async def analyze_url(url: str, lightweight: bool = False, scope: str = "all") -
             return {"url": url, "base_url": base_url, "scope": scope, "json_ld": jsonld}
 
         if scope == "seo":
-            seo_tags = _check_seo_tags(page_data)
+            context = {"soup": page_data.get("soup"), "page_data": page_data, "jsonld_types": set(), "base_url": base_url}
+            score = await _calculate_score(context, {"bots": {}}, {"status": "skipped"})
             page_data["soup"] = None
-            return {"url": url, "base_url": base_url, "scope": scope, "seo_tags": seo_tags}
+            return {"url": url, "base_url": base_url, "scope": scope, "score": score}
 
         if scope == "faq":
             jsonld = _extract_json_ld(page_data)
-            faq = _check_faq(page_data, jsonld)
+            context = {"soup": page_data.get("soup"), "page_data": page_data, "jsonld_types": {t.lower() for t in jsonld.get("all_types", [])}, "base_url": base_url}
+            score = await _calculate_score(context, {"bots": {}}, {"status": "skipped"})
             page_data["soup"] = None
-            return {"url": url, "base_url": base_url, "scope": scope, "faq": faq}
+            return {"url": url, "base_url": base_url, "scope": scope, "score": score}
 
     if lightweight:
         # 벌크: Playwright(CSR) 생략 — httpx만 사용
@@ -181,13 +186,7 @@ async def analyze_url(url: str, lightweight: bool = False, scope: str = "all") -
             _check_csr_chars(url),
         )
 
-    seo_tags  = _check_seo_tags(page_data)
     jsonld    = _extract_json_ld(page_data)
-    faq       = _check_faq(page_data, jsonld)
-    summary   = _check_summary_box(page_data)
-    stats     = _check_stats_density(page_data)
-    headings  = _check_heading_structure(page_data)
-    reviews   = _check_reviews_ssr(page_data)
     pdp       = _detect_pdp(url)
 
     # SSR 글자수 계산 (soup 변조 없이)
@@ -195,14 +194,21 @@ async def analyze_url(url: str, lightweight: bool = False, scope: str = "all") -
     if page_data["status"] == "ok" and page_data["soup"]:
         ssr_chars = _safe_visible_text(page_data["soup"])
 
-    # soup 참조 해제 — 메모리 즉시 회수
-    page_data["soup"] = None
-
     csr_ratio = _calc_csr_ratio(ssr_chars, csr_raw)
 
-    score = _calculate_score(
-        robots, llms, jsonld, seo_tags, faq, summary, stats, headings, reviews, csr_ratio
-    )
+    # 룰 엔진 context 구성
+    all_types = set(jsonld.get("all_types", []))
+    context = {
+        "soup":         page_data.get("soup"),
+        "page_data":    page_data,
+        "jsonld_types": {t.lower() for t in all_types},
+        "base_url":     base_url,
+    }
+
+    score = await _calculate_score(context, robots, csr_ratio)
+
+    # soup 참조 해제 — 메모리 즉시 회수
+    page_data["soup"] = None
 
     return {
         "url":               url,
@@ -210,14 +216,7 @@ async def analyze_url(url: str, lightweight: bool = False, scope: str = "all") -
         "scope":             "all",
         "pdp":               pdp,
         "robots_txt":        robots,
-        "llms_txt":          llms,
         "json_ld":           jsonld,
-        "seo_tags":          seo_tags,
-        "faq":               faq,
-        "summary_box":       summary,
-        "stats_density":     stats,
-        "heading_structure": headings,
-        "reviews_ssr":       reviews,
         "csr_ratio":         csr_ratio,
         "score":             score,
     }
@@ -984,189 +983,95 @@ def _detect_pdp(url: str) -> dict:
 
 # ── Score (총합 100점) ────────────────────────────────────────────────────────
 
-def _calculate_score(robots: dict, llms: dict, jsonld: dict,
-                     seo_tags: dict, faq: dict, summary: dict,
-                     stats: dict, headings: dict, reviews: dict,
-                     csr_ratio: dict) -> dict:
+async def _calculate_score(context: dict, robots: dict, csr_ratio: dict) -> dict:
+    """룰 엔진 기반 채점. context에 soup, page_data, jsonld_types, base_url 포함."""
     cfg       = get_scoring_config()
     score     = 0
     breakdown = {}
 
-    # 1. 기본 SEO 태그 — criteria 기반 개별 점수
-    c = cfg.get("seo_tags", {})
-    seo_max   = c.get("max", 20)
-    seo_criteria = {cr["id"]: cr for cr in c.get("criteria", []) if cr.get("enabled", True)}
-    # SEO items의 pass 여부에 따라 해당 criterion의 points를 합산
-    seo_id_map = {
-        "title": "title", "meta_description": "desc", "canonical": "canonical",
-        "h1_unique": "h1", "image_alt": "img_alt", "redirect_chain": "redirect",
-        "og_title": "og_title", "og_description": "og_desc", "og_image": "og_image",
-        "meta_robots": "robots",
-    }
-    seo_score = 0
-    seo_items = seo_tags.get("items", {})
-    for item_key, cr_id in seo_id_map.items():
-        item = seo_items.get(item_key)
-        cr = seo_criteria.get(cr_id)
-        if item and cr and item.get("pass"):
-            seo_score += cr.get("points", 2)
-    seo_score = min(seo_score, seo_max)
-    passed = sum(1 for v in seo_items.values() if v.get("pass"))
-    score += seo_score
-    breakdown["seo_tags"] = {"points": seo_score, "max": seo_max, "passed": passed, "total": len(seo_criteria)}
+    cat_keys = ["seo_tags", "robots_txt", "json_ld", "llms_txt", "faq",
+                "summary_box", "heading_structure", "stats_density", "reviews_ssr", "csr_ratio"]
 
-    # 2. robots.txt AI 봇 허용
-    c = cfg.get("robots_txt", {})
-    rob_max = c.get("max", 10)
-    bots = robots.get("bots", {})
-    if bots:
-        allowed   = sum(1 for b in bots.values() if not b["blocked"])
-        bot_score = round((allowed / len(bots)) * rob_max)
-    else:
-        bot_score = rob_max
-    score    += bot_score
-    breakdown["robots_txt"] = {"points": bot_score, "max": rob_max}
+    for cat_key in cat_keys:
+        c = cfg.get(cat_key, {})
+        cat_max  = c.get("max", 0)
+        special  = c.get("special")
+        criteria = [cr for cr in c.get("criteria", []) if cr.get("enabled", True)]
 
-    # 3. JSON-LD 구조화 데이터 — criteria 기반
-    c = cfg.get("json_ld", {})
-    jld_max = c.get("max", 15)
-    jld_criteria = {cr["id"]: cr for cr in c.get("criteria", []) if cr.get("enabled", True)}
-    all_types        = set(jsonld.get("all_types", []))
-    all_types_lower  = {t.lower() for t in all_types}
+        # ── 특수 로직: robots_txt (비율 계산) ──
+        if special == "robots_ratio":
+            bots = robots.get("bots", {})
+            if bots:
+                allowed   = sum(1 for b in bots.values() if not b["blocked"])
+                cat_score = round((allowed / len(bots)) * cat_max)
+            else:
+                cat_score = cat_max
+            score += cat_score
+            breakdown[cat_key] = {"points": cat_score, "max": cat_max}
+            continue
 
-    has_product    = "product" in all_types_lower or "individualproduct" in all_types_lower
-    has_breadcrumb = "breadcrumblist" in all_types_lower
-    has_org        = "organization" in all_types_lower
+        # ── 특수 로직: CSR 티어 ──
+        if special == "csr_tiers":
+            csr_status = csr_ratio.get("status", "unavailable")
+            ratio = csr_ratio.get("ratio")
+            csr_score = 0
+            csr_tier  = "poor"
 
-    req_score    = jld_criteria.get("product", {}).get("points", 8) if has_product else 0
-    sup_score    = jld_criteria.get("breadcrumb", {}).get("points", 7) if (has_breadcrumb or has_org) else 0
-    jsonld_score = min(req_score + sup_score, jld_max)
-    score       += jsonld_score
-    breakdown["json_ld"] = {
-        "points": jsonld_score, "max": jld_max,
-        "required_score": req_score, "supporting_score": sup_score,
-        "has_product": has_product, "has_breadcrumb": has_breadcrumb,
-        "has_org": has_org, "all_types": list(all_types),
-    }
+            if csr_status in ("skipped", "blocked"):
+                csr_score = 0; csr_tier = csr_status
+            elif ratio is None:
+                csr_score = 0; csr_tier = "unavailable"
+            else:
+                for cr in criteria:
+                    min_r = cr.get("rule", {}).get("params", {}).get("min_ratio", 1.0)
+                    if ratio >= float(min_r):
+                        csr_score = min(cr.get("points", 0), cat_max)
+                        csr_tier  = cr.get("id", "unknown")
+                        break
 
-    # 4. llms.txt — criteria 기반
-    c = cfg.get("llms_txt", {})
-    llms_max = c.get("max", 5)
-    llms_cr = {cr["id"]: cr for cr in c.get("criteria", []) if cr.get("enabled", True)}
-    llms_score = llms_cr.get("exists", {}).get("points", llms_max) if llms["status"] == "found" else 0
-    llms_score = min(llms_score, llms_max)
-    score     += llms_score
-    breakdown["llms_txt"] = {"points": llms_score, "max": llms_max}
+            score += csr_score
+            breakdown[cat_key] = {
+                "points": csr_score, "max": cat_max,
+                "ratio": ratio, "tier": csr_tier,
+                "ssr_chars": csr_ratio.get("ssr_chars", 0),
+                "csr_chars": csr_ratio.get("csr_chars", 0),
+                "status": csr_ratio.get("status", "unavailable"),
+            }
+            continue
 
-    # 5. FAQ 섹션 — criteria 기반
-    c = cfg.get("faq", {})
-    faq_max = c.get("max", 15)
-    faq_cr = {cr["id"]: cr for cr in c.get("criteria", []) if cr.get("enabled", True)}
-    faq_score = min(
-        (faq_cr.get("schema", {}).get("points", 8) if faq.get("has_faq_schema") else 0) +
-        (faq_cr.get("html", {}).get("points", 7) if faq.get("has_faq_html") else 0),
-        faq_max
-    )
-    score    += faq_score
-    breakdown["faq"] = {
-        "points": faq_score, "max": faq_max,
-        "has_schema": faq.get("has_faq_schema", False),
-        "has_html": faq.get("has_faq_html", False),
-    }
+        # ── 범용 룰 엔진 평가 ──
+        cat_score = 0
+        items = {}
+        for cr in criteria:
+            rule = cr.get("rule")
+            if not rule:
+                continue
+            result = await evaluate_rule_async(rule, context)
+            passed = result.get("pass", False)
+            if passed:
+                cat_score += cr.get("points", 0)
+            items[cr["id"]] = {
+                "label": cr.get("name", cr["id"]),
+                "pass":  passed,
+                "value": result.get("value"),
+                "hint":  result.get("hint"),
+                "rule_type": rule.get("type"),
+            }
 
-    # 6. 서머리 박스 — criteria 기반
-    c = cfg.get("summary_box", {})
-    sum_max = c.get("max", 5)
-    sum_cr = {cr["id"]: cr for cr in c.get("criteria", []) if cr.get("enabled", True)}
-    sum_score = sum_cr.get("found", {}).get("points", sum_max) if summary.get("found") else 0
-    sum_score = min(sum_score, sum_max)
-    score    += sum_score
-    breakdown["summary_box"] = {
-        "points": sum_score, "max": sum_max,
-        "found": summary.get("found", False),
-        "method": summary.get("method"),
-    }
-
-    # 7. Heading 구조 — criteria 기반
-    c = cfg.get("heading_structure", {})
-    h_max = c.get("max", 5)
-    h_cr = {cr["id"]: cr for cr in c.get("criteria", []) if cr.get("enabled", True)}
-    h_score = 0
-    if headings.get("has_single_h1") and "single_h1" in h_cr:
-        h_score += h_cr["single_h1"].get("points", 2)
-    if headings.get("has_multiple_h2") and "multiple_h2" in h_cr:
-        h_score += h_cr["multiple_h2"].get("points", 2)
-    if headings.get("logical_order") and "logical_order" in h_cr:
-        h_score += h_cr["logical_order"].get("points", 1)
-    h_score = min(h_score, h_max)
-    score  += h_score
-    breakdown["heading_structure"] = {
-        "points": h_score, "max": h_max,
-        "has_single_h1": headings.get("has_single_h1", False),
-        "has_multiple_h2": headings.get("has_multiple_h2", False),
-        "logical_order": headings.get("logical_order", False),
-    }
-
-    # 8. 통계 데이터 — criteria 기반
-    c = cfg.get("stats_density", {})
-    stat_max = c.get("max", 5)
-    stat_cr = {cr["id"]: cr for cr in c.get("criteria", []) if cr.get("enabled", True)}
-    stat_score = stat_cr.get("has_stats", {}).get("points", stat_max) if stats.get("has_stats") else 0
-    stat_score = min(stat_score, stat_max)
-    score     += stat_score
-    breakdown["stats_density"] = {"points": stat_score, "max": stat_max}
-
-    # 9. 리뷰 데이터 SSR — criteria 기반
-    c = cfg.get("reviews_ssr", {})
-    rev_max = c.get("max", 10)
-    rev_cr = {cr["id"]: cr for cr in c.get("criteria", []) if cr.get("enabled", True)}
-    rev_score = rev_cr.get("found", {}).get("points", rev_max) if reviews.get("found") else 0
-    rev_score = min(rev_score, rev_max)
-    score    += rev_score
-    breakdown["reviews_ssr"] = {
-        "points": rev_score, "max": rev_max,
-        "found": reviews.get("found", False),
-        "has_content": reviews.get("has_content", False),
-    }
-
-    # 10. CSR 비중 — criteria 기반
-    c = cfg.get("csr_ratio", {})
-    csr_max = c.get("max", 10)
-    csr_cr = {cr["id"]: cr for cr in c.get("criteria", []) if cr.get("enabled", True)}
-    csr_status = csr_ratio.get("status", "unavailable")
-    ratio      = csr_ratio.get("ratio")
-
-    if csr_status == "skipped":
-        csr_score = 0; csr_tier = "skipped"
-    elif csr_status == "blocked":
-        csr_score = 0; csr_tier = "blocked"
-    elif ratio is None:
-        csr_score = 0; csr_tier = "unavailable"
-    else:
-        csr_score = 0; csr_tier = "poor"
-        for tier_name in ("excellent", "good", "partial"):
-            t = csr_cr.get(tier_name, {})
-            if t and ratio >= t.get("threshold", {}).get("min_ratio", 1.0):
-                csr_score = min(t.get("points", 0), csr_max)
-                csr_tier  = tier_name
-                break
-
-    score += csr_score
-    breakdown["csr_ratio"] = {
-        "points": csr_score, "max": csr_max,
-        "ratio": ratio, "tier": csr_tier,
-        "ssr_chars": csr_ratio.get("ssr_chars", 0),
-        "csr_chars": csr_ratio.get("csr_chars", 0),
-        "status": csr_ratio.get("status", "unavailable"),
-    }
+        cat_score = min(cat_score, cat_max)
+        score += cat_score
+        passed_count = sum(1 for v in items.values() if v["pass"])
+        breakdown[cat_key] = {
+            "points": cat_score,
+            "max": cat_max,
+            "passed": passed_count,
+            "total": len(criteria),
+            "items": items,
+        }
 
     # 등급
     g = cfg.get("grade", {})
-    total_max = sum(
-        cfg.get(k, {}).get("max", 0)
-        for k in ("seo_tags", "robots_txt", "json_ld", "llms_txt", "faq",
-                   "summary_box", "heading_structure", "stats_density", "reviews_ssr", "csr_ratio")
-    )
+    total_max = sum(cfg.get(k, {}).get("max", 0) for k in cat_keys)
     grade = (
         "Good"             if score >= g.get("good", 90) else
         "Need Improvement" if score >= g.get("need_improvement", 70) else

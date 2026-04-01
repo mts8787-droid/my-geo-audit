@@ -15,19 +15,17 @@
     input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; }
     .fade-in { animation: fadeIn .3s ease; }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-    .total-bar { transition: width 0.5s cubic-bezier(.4,0,.2,1); }
     .proportion-seg { transition: width 0.4s ease; min-width: 2px; }
     .toggle-track { transition: background-color 0.2s; }
     .toggle-thumb { transition: transform 0.2s; }
     input[type=range] { -webkit-appearance: none; height: 6px; border-radius: 3px; background: #e2e8f0; outline: none; }
     input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: #6366f1; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,.2); }
     .criteria-row:hover { background-color: #f8fafc; }
-    .threshold-input { width: 70px; }
+    .rule-badge { font-size: 10px; padding: 1px 6px; border-radius: 4px; }
   </style>
 </head>
 <body class="bg-slate-50 min-h-screen">
 
-  <!-- Header -->
   <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-100">
     <div class="max-w-5xl mx-auto px-6 py-3 flex items-center gap-3">
       <a href="/" class="text-xl font-extrabold gradient-text">GEO Audit</a>
@@ -37,7 +35,6 @@
     </div>
   </header>
 
-  <!-- Login Screen -->
   <div id="login-screen" class="max-w-sm mx-auto px-6 mt-32">
     <div class="card p-8 text-center fade-in">
       <div class="text-3xl mb-3">🔐</div>
@@ -54,65 +51,71 @@
     </div>
   </div>
 
-  <!-- Dashboard -->
   <div id="dashboard" class="max-w-5xl mx-auto px-6 py-8 hidden">
-
-    <!-- Total Score Overview -->
     <div class="card p-6 mb-6 fade-in">
       <div class="flex items-center justify-between mb-2">
         <h2 class="text-lg font-bold text-slate-800">배점 분포</h2>
         <div class="flex items-center gap-3">
           <span id="total-badge" class="text-2xl font-extrabold gradient-text">100점</span>
-          <button onclick="autoBalance()" class="text-xs px-3 py-1.5 bg-indigo-50 text-indigo-600 rounded-lg hover:bg-indigo-100 transition font-medium"
-            title="모든 카테고리의 max를 criteria 합계에 맞춤">자동 맞춤</button>
+          <button onclick="autoBalance()" class="text-xs px-3 py-1.5 bg-indigo-50 text-indigo-600 rounded-lg hover:bg-indigo-100 transition font-medium">자동 맞춤</button>
         </div>
       </div>
-      <!-- Proportion Bar -->
       <div id="proportion-bar" class="flex rounded-lg overflow-hidden h-8 mb-3"></div>
       <div id="proportion-legend" class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500"></div>
       <p id="total-warning" class="text-amber-600 text-xs mt-2 hidden"></p>
     </div>
 
-    <!-- Category Cards -->
     <div id="config-cards" class="space-y-4 mb-6"></div>
 
-    <!-- Grade Config -->
     <div class="card p-6 mb-6 fade-in">
       <h3 class="text-sm font-bold text-slate-700 mb-4">등급 기준</h3>
       <div class="grid grid-cols-2 gap-4">
         <div>
           <label class="text-xs text-slate-500 mb-1 block">Good (이상)</label>
           <input id="grade-good" type="number" min="0" max="200"
-            class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
-            oninput="markDirty()">
+            class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none" oninput="markDirty()">
         </div>
         <div>
           <label class="text-xs text-slate-500 mb-1 block">Need Improvement (이상)</label>
           <input id="grade-need" type="number" min="0" max="200"
-            class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
-            oninput="markDirty()">
+            class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none" oninput="markDirty()">
         </div>
       </div>
     </div>
 
-    <!-- Action Buttons -->
     <div class="flex gap-3 mb-10">
       <button id="btn-save" onclick="saveConfig()"
-        class="flex-1 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-xl hover:opacity-90 transition text-sm disabled:opacity-40"
-        disabled>
-        저장
-      </button>
+        class="flex-1 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-xl hover:opacity-90 transition text-sm disabled:opacity-40" disabled>저장</button>
       <button onclick="resetConfig()"
-        class="px-6 py-3 bg-slate-100 text-slate-600 font-semibold rounded-xl hover:bg-slate-200 transition text-sm">
-        기본값으로 리셋
-      </button>
+        class="px-6 py-3 bg-slate-100 text-slate-600 font-semibold rounded-xl hover:bg-slate-200 transition text-sm">기본값으로 리셋</button>
+    </div>
+  </div>
+
+  <!-- Add Criteria Modal -->
+  <div id="add-modal" class="fixed inset-0 bg-black/40 z-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-2xl shadow-xl w-full max-w-lg mx-4 p-6 fade-in max-h-[80vh] overflow-y-auto">
+      <h3 class="text-base font-bold text-slate-800 mb-4">기준 추가</h3>
+      <input id="modal-name" type="text" placeholder="기준 이름" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm mb-3 focus:ring-2 focus:ring-indigo-400 focus:outline-none">
+      <label class="text-xs text-slate-500 mb-1 block">점검 규칙 타입</label>
+      <select id="modal-rule-type" onchange="onRuleTypeChange()"
+        class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm mb-1 focus:ring-2 focus:ring-indigo-400 focus:outline-none"></select>
+      <p id="modal-rule-desc" class="text-xs text-slate-400 mb-3"></p>
+      <div id="modal-params" class="space-y-2 mb-4"></div>
+      <label class="text-xs text-slate-500 mb-1 block">점수</label>
+      <input id="modal-points" type="number" min="0" max="100" value="2" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm mb-4 focus:ring-2 focus:ring-indigo-400 focus:outline-none">
+      <div class="flex gap-3">
+        <button onclick="confirmAddCriteria()" class="flex-1 py-2.5 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-xl text-sm hover:opacity-90">추가</button>
+        <button onclick="closeModal()" class="px-6 py-2.5 bg-slate-100 text-slate-600 font-semibold rounded-xl text-sm hover:bg-slate-200">취소</button>
+      </div>
     </div>
   </div>
 
 <script>
 let token = '';
 let config = {};
+let ruleTypes = {};
 let dirty = false;
+let modalCatKey = '';
 
 const CAT_KEYS = ['seo_tags','robots_txt','json_ld','llms_txt','faq','summary_box','heading_structure','stats_density','reviews_ssr','csr_ratio'];
 const CAT_COLORS = [
@@ -126,52 +129,42 @@ function escHtml(s) {
   return d.innerHTML;
 }
 
-// ── Login ──
 async function doLogin() {
   const pw = document.getElementById('pw-input').value;
   const errEl = document.getElementById('login-error');
   errEl.classList.add('hidden');
   try {
     const res = await fetch('/admin/login', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ password: pw }),
     });
-    if (!res.ok) {
-      const data = await res.json();
-      errEl.textContent = data.detail || '로그인 실패';
-      errEl.classList.remove('hidden');
-      return;
-    }
+    if (!res.ok) { const d = await res.json(); errEl.textContent = d.detail||'실패'; errEl.classList.remove('hidden'); return; }
     token = pw;
     document.getElementById('login-screen').classList.add('hidden');
     document.getElementById('dashboard').classList.remove('hidden');
     document.getElementById('btn-logout').classList.remove('hidden');
-    await loadConfig();
-  } catch {
-    errEl.textContent = '서버 연결 실패';
-    errEl.classList.remove('hidden');
-  }
+    await Promise.all([loadConfig(), loadRuleTypes()]);
+  } catch { errEl.textContent = '서버 연결 실패'; errEl.classList.remove('hidden'); }
 }
 
 function logout() {
-  token = '';
-  config = {};
+  token = ''; config = {};
   document.getElementById('dashboard').classList.add('hidden');
   document.getElementById('login-screen').classList.remove('hidden');
   document.getElementById('btn-logout').classList.add('hidden');
-  document.getElementById('pw-input').value = '';
 }
 
-// ── Load Config ──
 async function loadConfig() {
-  const res = await fetch('/admin/config', {
-    headers: { 'Authorization': `Bearer ${token}` },
-  });
+  const res = await fetch('/admin/config', { headers: { 'Authorization': `Bearer ${token}` } });
   config = await res.json();
   renderAll();
   dirty = false;
   document.getElementById('btn-save').disabled = true;
+}
+
+async function loadRuleTypes() {
+  const res = await fetch('/admin/rule-types', { headers: { 'Authorization': `Bearer ${token}` } });
+  ruleTypes = await res.json();
 }
 
 function renderAll() {
@@ -182,23 +175,20 @@ function renderAll() {
   document.getElementById('grade-need').value = config.grade?.need_improvement ?? 70;
 }
 
-// ── Proportion Bar ──
 function renderProportionBar() {
   const bar = document.getElementById('proportion-bar');
   const legend = document.getElementById('proportion-legend');
   const total = CAT_KEYS.reduce((s, k) => s + (config[k]?.max || 0), 0) || 1;
-
   bar.innerHTML = '';
   legend.innerHTML = '';
   CAT_KEYS.forEach((k, i) => {
     const c = config[k] || {};
     const pct = ((c.max || 0) / total * 100).toFixed(1);
-    bar.innerHTML += `<div class="proportion-seg ${CAT_COLORS[i]} opacity-80 hover:opacity-100 cursor-default" style="width:${pct}%" title="${escHtml(c.label || k)}: ${c.max || 0}점 (${pct}%)"></div>`;
-    legend.innerHTML += `<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-sm ${CAT_COLORS[i]} inline-block"></span>${escHtml(c.label || k)} ${c.max||0}</span>`;
+    bar.innerHTML += `<div class="proportion-seg ${CAT_COLORS[i]} opacity-80 hover:opacity-100 cursor-default" style="width:${pct}%" title="${escHtml(c.label||k)}: ${c.max||0}점 (${pct}%)"></div>`;
+    legend.innerHTML += `<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-sm ${CAT_COLORS[i]} inline-block"></span>${escHtml(c.label||k)} ${c.max||0}</span>`;
   });
 }
 
-// ── Render Cards ──
 function renderCards() {
   const container = document.getElementById('config-cards');
   container.innerHTML = '';
@@ -209,53 +199,57 @@ function renderCards() {
     const desc = c.description || '';
     const criteria = c.criteria || [];
     const crSum = criteria.filter(cr => cr.enabled !== false).reduce((s, cr) => s + (cr.points || 0), 0);
-
-    // Max score slider
     const maxVal = c.max || 0;
+    const isSpecial = !!c.special;
 
-    // Criteria table
     let criteriaHtml = '';
     criteria.forEach((cr, idx) => {
       const enabled = cr.enabled !== false;
-      const thresholdHtml = renderThresholdInputs(catKey, idx, cr.threshold || {});
+      const rule = cr.rule || {};
+      const ruleType = rule.type || '';
+      const rtMeta = ruleTypes[ruleType] || {};
+      const rtLabel = rtMeta.label || ruleType;
+      const params = rule.params || {};
+
+      // Render params inline
+      let paramsHtml = renderRuleParams(catKey, idx, ruleType, params);
 
       criteriaHtml += `
-        <div class="criteria-row flex items-center gap-3 py-2.5 px-3 rounded-lg transition ${!enabled ? 'opacity-40' : ''}">
-          <!-- Toggle -->
-          <button onclick="toggleCriteria('${catKey}', ${idx})" class="flex-shrink-0"
-            title="${enabled ? '비활성화' : '활성화'}">
-            <div class="toggle-track w-9 h-5 rounded-full ${enabled ? 'bg-indigo-500' : 'bg-slate-200'} relative">
-              <div class="toggle-thumb w-4 h-4 bg-white rounded-full absolute top-0.5 shadow ${enabled ? 'transform translate-x-4' : 'translate-x-0.5'}"></div>
+        <div class="criteria-row py-3 px-3 rounded-lg transition ${!enabled ? 'opacity-40' : ''}">
+          <div class="flex items-center gap-3">
+            <button onclick="toggleCriteria('${catKey}', ${idx})" class="flex-shrink-0">
+              <div class="toggle-track w-9 h-5 rounded-full ${enabled ? 'bg-indigo-500' : 'bg-slate-200'} relative">
+                <div class="toggle-thumb w-4 h-4 bg-white rounded-full absolute top-0.5 shadow ${enabled ? 'transform translate-x-4' : 'translate-x-0.5'}"></div>
+              </div>
+            </button>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 mb-0.5">
+                <p class="text-sm font-medium text-slate-700">${escHtml(cr.name)}</p>
+                <span class="rule-badge bg-slate-100 text-slate-500">${escHtml(rtLabel)}</span>
+              </div>
+              <p class="text-xs text-slate-400">${escHtml(rtMeta.description || ruleType)}</p>
             </div>
-          </button>
-          <!-- Name & Condition -->
-          <div class="flex-1 min-w-0">
-            <p class="text-sm font-medium text-slate-700 truncate">${escHtml(cr.name)}</p>
-            <p class="text-xs text-slate-400 truncate">${escHtml(cr.condition)}</p>
+            <div class="flex items-center gap-1.5 flex-shrink-0">
+              <input type="number" min="0" max="100" step="1" value="${cr.points || 0}"
+                class="w-14 px-2 py-1.5 rounded-lg border border-slate-200 text-sm text-center font-semibold focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+                onchange="setCriteriaPoints('${catKey}', ${idx}, this.value)">
+              <span class="text-xs text-slate-400">점</span>
+            </div>
+            <button onclick="deleteCriteria('${catKey}', ${idx})" class="text-slate-300 hover:text-red-400 transition flex-shrink-0" title="삭제">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
           </div>
-          <!-- Threshold -->
-          ${thresholdHtml}
-          <!-- Points -->
-          <div class="flex items-center gap-1.5 flex-shrink-0">
-            <input type="number" min="0" max="100" step="1" value="${cr.points || 0}"
-              class="w-14 px-2 py-1.5 rounded-lg border border-slate-200 text-sm text-center font-semibold focus:ring-2 focus:ring-indigo-400 focus:outline-none"
-              onchange="setCriteriaPoints('${catKey}', ${idx}, this.value)">
-            <span class="text-xs text-slate-400">점</span>
-          </div>
-          <!-- Delete -->
-          <button onclick="deleteCriteria('${catKey}', ${idx})" class="text-slate-300 hover:text-red-400 transition flex-shrink-0" title="삭제">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-          </button>
+          ${paramsHtml ? `<div class="ml-12 mt-2 flex flex-wrap gap-2">${paramsHtml}</div>` : ''}
         </div>`;
     });
 
     container.innerHTML += `
       <div class="card p-6 fade-in" id="card-${catKey}">
-        <!-- Header -->
         <div class="flex items-center justify-between mb-1">
           <div class="flex items-center gap-2">
             <span class="w-3 h-3 rounded-sm ${CAT_COLORS[catIdx]}"></span>
             <h3 class="text-sm font-bold text-slate-700">${escHtml(label)}</h3>
+            ${isSpecial ? '<span class="rule-badge bg-amber-50 text-amber-600">특수 로직</span>' : ''}
           </div>
           <div class="flex items-center gap-2">
             <span class="text-xs text-slate-400">기준 합계: <b class="text-slate-600">${crSum}점</b></span>
@@ -263,24 +257,17 @@ function renderCards() {
           </div>
         </div>
         <p class="text-xs text-slate-400 mb-3">${escHtml(desc)}</p>
-
-        <!-- Max slider -->
         <div class="flex items-center gap-3 mb-4 px-1">
           <span class="text-xs text-slate-500 w-16">최대 점수</span>
-          <input type="range" min="0" max="50" step="1" value="${maxVal}" class="flex-1"
-            oninput="setMax('${catKey}', this.value)">
+          <input type="range" min="0" max="50" step="1" value="${maxVal}" class="flex-1" oninput="setMax('${catKey}', this.value)">
           <input type="number" min="0" max="100" step="1" value="${maxVal}"
             class="w-14 px-2 py-1 rounded-lg border border-slate-200 text-sm text-center font-semibold focus:ring-2 focus:ring-indigo-400 focus:outline-none"
             onchange="setMax('${catKey}', this.value)">
         </div>
-
-        <!-- Criteria list -->
         <div class="space-y-0.5 mb-3">
           ${criteriaHtml || '<p class="text-xs text-slate-300 text-center py-3">기준 없음</p>'}
         </div>
-
-        <!-- Add criteria button -->
-        <button onclick="addCriteria('${catKey}')"
+        <button onclick="openAddModal('${catKey}')"
           class="w-full py-2 border-2 border-dashed border-slate-200 rounded-lg text-xs text-slate-400 hover:border-indigo-300 hover:text-indigo-500 transition">
           + 기준 추가
         </button>
@@ -288,29 +275,43 @@ function renderCards() {
   });
 }
 
-function renderThresholdInputs(catKey, idx, threshold) {
-  if (!threshold || Object.keys(threshold).length === 0) return '';
+function renderRuleParams(catKey, idx, ruleType, params) {
+  if (!params || Object.keys(params).length === 0) return '';
+  const rtMeta = ruleTypes[ruleType] || {};
+  const paramDefs = rtMeta.params || {};
 
-  const LABELS = {
-    min_length: '최소 길이',
-    max_count: '최대 횟수',
-    min_ratio: '최소 비율',
-    min_count: '최소 개수',
-  };
+  let html = '';
+  for (const [key, val] of Object.entries(params)) {
+    const pDef = paramDefs[key] || {};
+    const label = pDef.label || key;
+    const type = pDef.type || 'text';
 
-  let html = '<div class="flex gap-2 flex-shrink-0">';
-  for (const [key, val] of Object.entries(threshold)) {
-    const label = LABELS[key] || key;
-    const step = key === 'min_ratio' ? '0.05' : '1';
-    html += `
-      <div class="text-center">
-        <label class="text-[10px] text-slate-400 block">${escHtml(label)}</label>
-        <input type="number" step="${step}" value="${val}"
-          class="threshold-input px-2 py-1 rounded border border-slate-200 text-xs text-center focus:ring-1 focus:ring-indigo-400 focus:outline-none"
-          onchange="setThreshold('${catKey}', ${idx}, '${key}', this.value)">
+    if (type === 'select') {
+      const options = (pDef.options || []).map(o =>
+        `<option value="${escHtml(o)}" ${o === String(val) ? 'selected' : ''}>${escHtml(o)}</option>`
+      ).join('');
+      html += `<div>
+        <label class="text-[10px] text-slate-400 block mb-0.5">${escHtml(label)}</label>
+        <select class="px-2 py-1 rounded border border-slate-200 text-xs focus:ring-1 focus:ring-indigo-400 focus:outline-none"
+          onchange="setRuleParam('${catKey}', ${idx}, '${key}', this.value)">${options}</select>
       </div>`;
+    } else if (type === 'number') {
+      const step = key.includes('ratio') ? '0.05' : '1';
+      html += `<div>
+        <label class="text-[10px] text-slate-400 block mb-0.5">${escHtml(label)}</label>
+        <input type="number" step="${step}" value="${val}"
+          class="w-20 px-2 py-1 rounded border border-slate-200 text-xs text-center focus:ring-1 focus:ring-indigo-400 focus:outline-none"
+          onchange="setRuleParam('${catKey}', ${idx}, '${key}', this.value)">
+      </div>`;
+    } else {
+      html += `<div class="flex-1 min-w-[150px]">
+        <label class="text-[10px] text-slate-400 block mb-0.5">${escHtml(label)}</label>
+        <input type="text" value="${escHtml(String(val))}"
+          class="w-full px-2 py-1 rounded border border-slate-200 text-xs focus:ring-1 focus:ring-indigo-400 focus:outline-none"
+          onchange="setRuleParam('${catKey}', ${idx}, '${key}', this.value)">
+      </div>`;
+    }
   }
-  html += '</div>';
   return html;
 }
 
@@ -319,69 +320,118 @@ function setMax(catKey, val) {
   val = parseInt(val) || 0;
   if (!config[catKey]) config[catKey] = {};
   config[catKey].max = val;
-  // sync slider + number input
   const card = document.getElementById(`card-${catKey}`);
   if (card) {
     card.querySelector('input[type=range]').value = val;
     card.querySelector('input[type=number]').value = val;
-    card.querySelector(`.${CAT_COLORS[CAT_KEYS.indexOf(catKey)]}`).textContent = `${val}점`;
   }
-  markDirty();
-  updateTotal();
-  renderProportionBar();
+  markDirty(); updateTotal(); renderProportionBar();
 }
 
 function toggleCriteria(catKey, idx) {
   const cr = config[catKey]?.criteria?.[idx];
   if (!cr) return;
   cr.enabled = cr.enabled === false ? true : false;
-  markDirty();
-  renderAll();
+  markDirty(); renderAll();
 }
 
 function setCriteriaPoints(catKey, idx, val) {
   const cr = config[catKey]?.criteria?.[idx];
   if (!cr) return;
   cr.points = parseInt(val) || 0;
-  markDirty();
-  renderAll();
+  markDirty(); renderAll();
 }
 
-function setThreshold(catKey, idx, key, val) {
+function setRuleParam(catKey, idx, key, val) {
   const cr = config[catKey]?.criteria?.[idx];
-  if (!cr) return;
-  if (!cr.threshold) cr.threshold = {};
-  cr.threshold[key] = parseFloat(val) || 0;
+  if (!cr?.rule?.params) return;
+  // auto-detect number
+  const numVal = Number(val);
+  cr.rule.params[key] = (val !== '' && !isNaN(numVal) && !val.includes(',')) ? numVal : val;
   markDirty();
 }
 
 function deleteCriteria(catKey, idx) {
   if (!confirm('이 기준을 삭제하시겠습니까?')) return;
   config[catKey].criteria.splice(idx, 1);
-  markDirty();
-  renderAll();
+  markDirty(); renderAll();
 }
 
-function addCriteria(catKey) {
-  if (!config[catKey]) config[catKey] = {};
-  if (!config[catKey].criteria) config[catKey].criteria = [];
+// ── Add Criteria Modal ──
+function openAddModal(catKey) {
+  modalCatKey = catKey;
+  document.getElementById('modal-name').value = '';
+  document.getElementById('modal-points').value = '2';
 
-  const name = prompt('기준 이름:');
-  if (!name) return;
-  const condition = prompt('조건 설명:') || '';
-  const points = parseInt(prompt('점수:', '2')) || 0;
+  // Populate rule type dropdown
+  const select = document.getElementById('modal-rule-type');
+  select.innerHTML = '';
+  for (const [key, meta] of Object.entries(ruleTypes)) {
+    select.innerHTML += `<option value="${escHtml(key)}">${escHtml(meta.label)} (${escHtml(key)})</option>`;
+  }
+  onRuleTypeChange();
+  document.getElementById('add-modal').classList.remove('hidden');
+}
+
+function closeModal() {
+  document.getElementById('add-modal').classList.add('hidden');
+}
+
+function onRuleTypeChange() {
+  const type = document.getElementById('modal-rule-type').value;
+  const meta = ruleTypes[type] || {};
+  document.getElementById('modal-rule-desc').textContent = meta.description || '';
+
+  const container = document.getElementById('modal-params');
+  container.innerHTML = '';
+  for (const [key, pDef] of Object.entries(meta.params || {})) {
+    const type = pDef.type || 'text';
+    let inputHtml;
+    if (type === 'select') {
+      const opts = (pDef.options||[]).map(o => `<option value="${escHtml(o)}">${escHtml(o)}</option>`).join('');
+      inputHtml = `<select id="mp-${key}" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm">${opts}</select>`;
+    } else if (type === 'number') {
+      inputHtml = `<input id="mp-${key}" type="number" placeholder="${escHtml(pDef.placeholder||'')}" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm">`;
+    } else {
+      inputHtml = `<input id="mp-${key}" type="text" placeholder="${escHtml(pDef.placeholder||'')}" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm">`;
+    }
+    container.innerHTML += `<div>
+      <label class="text-xs text-slate-500 mb-1 block">${escHtml(pDef.label || key)}</label>
+      ${inputHtml}
+    </div>`;
+  }
+}
+
+function confirmAddCriteria() {
+  const name = document.getElementById('modal-name').value.trim();
+  if (!name) { alert('기준 이름을 입력하세요.'); return; }
+
+  const ruleType = document.getElementById('modal-rule-type').value;
+  const meta = ruleTypes[ruleType] || {};
+  const points = parseInt(document.getElementById('modal-points').value) || 0;
+
+  const params = {};
+  for (const key of Object.keys(meta.params || {})) {
+    const el = document.getElementById(`mp-${key}`);
+    if (el) {
+      const v = el.value;
+      const num = Number(v);
+      params[key] = (v !== '' && !isNaN(num) && !v.includes(',')) ? num : v;
+    }
+  }
 
   const id = name.toLowerCase().replace(/[^a-z0-9가-힣]/g, '_').replace(/_+/g, '_');
-  config[catKey].criteria.push({
-    id,
-    name,
-    condition,
-    points,
-    threshold: {},
-    enabled: true,
+
+  if (!config[modalCatKey]) config[modalCatKey] = {};
+  if (!config[modalCatKey].criteria) config[modalCatKey].criteria = [];
+
+  config[modalCatKey].criteria.push({
+    id, name, points, enabled: true,
+    rule: { type: ruleType, params },
   });
-  markDirty();
-  renderAll();
+
+  closeModal();
+  markDirty(); renderAll();
 }
 
 function autoBalance() {
@@ -391,8 +441,7 @@ function autoBalance() {
     const sum = c.criteria.filter(cr => cr.enabled !== false).reduce((s, cr) => s + (cr.points || 0), 0);
     c.max = sum;
   }
-  markDirty();
-  renderAll();
+  markDirty(); renderAll();
   showToast('각 카테고리 max를 기준 합계에 맞췄습니다.');
 }
 
@@ -404,35 +453,25 @@ function markDirty() {
   document.getElementById('btn-save').disabled = false;
 }
 
-// ── Total ──
 function updateTotal() {
   let total = 0;
   for (const k of CAT_KEYS) total += (config[k]?.max || 0);
   document.getElementById('total-badge').textContent = `${total}점`;
-  document.getElementById('total-bar')?.style && (document.getElementById('total-bar').style.width = `${Math.min(total, 100)}%`);
-
   const warn = document.getElementById('total-warning');
-  if (total !== 100) {
-    warn.textContent = `총점이 ${total}점입니다. 100점이 권장됩니다.`;
-    warn.classList.remove('hidden');
-  } else {
-    warn.classList.add('hidden');
-  }
+  if (total !== 100) { warn.textContent = `총점이 ${total}점입니다. 100점이 권장됩니다.`; warn.classList.remove('hidden'); }
+  else { warn.classList.add('hidden'); }
 }
 
-// ── Save / Reset ──
 async function saveConfig() {
   try {
     const res = await fetch('/admin/config', {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
+      method: 'PUT', headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
       body: JSON.stringify(config),
     });
     if (!res.ok) { alert('저장 실패'); return; }
     const data = await res.json();
     config = data.config;
-    renderAll();
-    dirty = false;
+    renderAll(); dirty = false;
     document.getElementById('btn-save').disabled = true;
     showToast('설정이 저장되었습니다.');
   } catch { alert('서버 연결 실패'); }
@@ -441,15 +480,11 @@ async function saveConfig() {
 async function resetConfig() {
   if (!confirm('모든 설정을 기본값으로 되돌리시겠습니까?')) return;
   try {
-    const res = await fetch('/admin/config/reset', {
-      method: 'POST',
-      headers: { 'Authorization': `Bearer ${token}` },
-    });
+    const res = await fetch('/admin/config/reset', { method: 'POST', headers: { 'Authorization': `Bearer ${token}` } });
     if (!res.ok) { alert('리셋 실패'); return; }
     const data = await res.json();
     config = data.config;
-    renderAll();
-    dirty = false;
+    renderAll(); dirty = false;
     document.getElementById('btn-save').disabled = true;
     showToast('기본값으로 복원되었습니다.');
   } catch { alert('서버 연결 실패'); }
@@ -463,9 +498,7 @@ function showToast(msg) {
   setTimeout(() => el.remove(), 2500);
 }
 
-window.addEventListener('beforeunload', (e) => {
-  if (dirty) { e.preventDefault(); e.returnValue = ''; }
-});
+window.addEventListener('beforeunload', (e) => { if (dirty) { e.preventDefault(); e.returnValue = ''; } });
 </script>
 </body>
 </html>
