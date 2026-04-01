@@ -144,39 +144,15 @@
           </div>
         </div>
 
-        <!-- Page 2: Audit List 관리 -->
+        <!-- Page 2: Audit List 관리 (그룹 기반) -->
         <div id="page-list" class="max-w-5xl mx-auto px-6 py-8 hidden">
           <div class="flex items-center justify-between mb-6">
             <h1 class="text-xl font-bold text-slate-800">Audit List 관리</h1>
-            <button onclick="openAddUrlModal()" class="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-sm font-semibold rounded-xl hover:opacity-90 transition">
-              + URL 추가
+            <button onclick="openAddGroupModal()" class="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-sm font-semibold rounded-xl hover:opacity-90 transition">
+              + 그룹 추가
             </button>
           </div>
-
-          <!-- URL List Table -->
-          <div class="card overflow-hidden mb-6">
-            <table class="w-full text-sm">
-              <thead class="bg-slate-50 border-b border-slate-100">
-                <tr>
-                  <th class="px-4 py-3 text-left text-xs font-semibold text-slate-500 uppercase">URL</th>
-                  <th class="px-4 py-3 text-center text-xs font-semibold text-slate-500 uppercase w-24">최근 점수</th>
-                  <th class="px-4 py-3 text-center text-xs font-semibold text-slate-500 uppercase w-32">마지막 분석</th>
-                  <th class="px-4 py-3 text-center text-xs font-semibold text-slate-500 uppercase w-28">액션</th>
-                </tr>
-              </thead>
-              <tbody id="url-list-body">
-                <tr><td colspan="4" class="px-4 py-12 text-center text-slate-300 text-sm">등록된 URL이 없습니다. URL을 추가해주세요.</td></tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="card p-6 fade-in">
-            <h3 class="text-sm font-bold text-slate-700 mb-2">일괄 추가</h3>
-            <p class="text-xs text-slate-400 mb-3">한 줄에 하나씩 URL을 입력하세요.</p>
-            <textarea id="bulk-urls" rows="4" placeholder="https://example.com&#10;https://example.com/products&#10;https://example.com/about"
-              class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none resize-none mb-3"></textarea>
-            <button onclick="addBulkUrls()" class="px-4 py-2 bg-slate-800 text-white text-sm font-semibold rounded-xl hover:bg-slate-700 transition">일괄 추가</button>
-          </div>
+          <div id="groups-container" class="space-y-4"></div>
         </div>
 
         <!-- Page 3: 정기 Audit 관리 -->
@@ -187,31 +163,13 @@
               + 스케줄 추가
             </button>
           </div>
-
-          <!-- Schedules List -->
-          <div id="schedule-list" class="space-y-4 mb-6">
-            <div class="card p-6 text-center">
-              <div class="text-3xl mb-3 opacity-30">🕐</div>
-              <p class="text-sm text-slate-400 mb-1">등록된 정기 Audit이 없습니다.</p>
-              <p class="text-xs text-slate-300">스케줄을 추가하면 지정된 주기로 자동 분석이 실행됩니다.</p>
-            </div>
-          </div>
-
+          <div id="schedule-list" class="space-y-4 mb-6"></div>
           <div class="card p-6 fade-in">
             <h3 class="text-sm font-bold text-slate-700 mb-3">스케줄 설정 안내</h3>
             <div class="space-y-2 text-xs text-slate-500">
-              <div class="flex items-start gap-2">
-                <span class="w-5 h-5 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center flex-shrink-0 text-[10px] font-bold mt-0.5">1</span>
-                <p>Audit List에서 분석할 URL을 등록합니다.</p>
-              </div>
-              <div class="flex items-start gap-2">
-                <span class="w-5 h-5 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center flex-shrink-0 text-[10px] font-bold mt-0.5">2</span>
-                <p>스케줄을 추가하고 실행 주기(매일/매주/매월)와 대상 URL 그룹을 선택합니다.</p>
-              </div>
-              <div class="flex items-start gap-2">
-                <span class="w-5 h-5 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center flex-shrink-0 text-[10px] font-bold mt-0.5">3</span>
-                <p>지정된 시간에 자동으로 분석이 실행되고 결과가 기록됩니다.</p>
-              </div>
+              <div class="flex items-start gap-2"><span class="w-5 h-5 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center flex-shrink-0 text-[10px] font-bold mt-0.5">1</span><p>Audit List에서 URL 그룹을 만들고 URL을 등록합니다.</p></div>
+              <div class="flex items-start gap-2"><span class="w-5 h-5 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center flex-shrink-0 text-[10px] font-bold mt-0.5">2</span><p>스케줄을 추가하고 실행 주기와 대상 그룹을 선택합니다.</p></div>
+              <div class="flex items-start gap-2"><span class="w-5 h-5 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center flex-shrink-0 text-[10px] font-bold mt-0.5">3</span><p>지정된 시간에 해당 그룹의 URL이 자동 분석됩니다.</p></div>
             </div>
           </div>
         </div>
@@ -239,15 +197,30 @@
     </div>
   </div>
 
-  <!-- Add URL Modal -->
+  <!-- Add Group Modal -->
+  <div id="group-modal" class="fixed inset-0 bg-black/40 z-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-2xl shadow-xl w-full max-w-md mx-4 p-6 fade-in">
+      <h3 class="text-base font-bold text-slate-800 mb-4">URL 그룹 추가</h3>
+      <input id="grp-name" type="text" placeholder="그룹 이름 (예: 메인 페이지, 상품 페이지)"
+        class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm mb-3 focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+        onkeydown="if(event.key==='Enter') confirmAddGroup()">
+      <label class="text-xs text-slate-500 mb-1 block">URL 목록 (한 줄에 하나씩)</label>
+      <textarea id="grp-urls" rows="5" placeholder="https://example.com&#10;https://example.com/products"
+        class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm mb-4 focus:ring-2 focus:ring-indigo-400 focus:outline-none resize-none"></textarea>
+      <div class="flex gap-3">
+        <button onclick="confirmAddGroup()" class="flex-1 py-2.5 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-xl text-sm hover:opacity-90">추가</button>
+        <button onclick="document.getElementById('group-modal').classList.add('hidden')" class="px-6 py-2.5 bg-slate-100 text-slate-600 font-semibold rounded-xl text-sm hover:bg-slate-200">취소</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add URL to Group Modal -->
   <div id="url-modal" class="fixed inset-0 bg-black/40 z-50 flex items-center justify-center hidden">
     <div class="bg-white rounded-2xl shadow-xl w-full max-w-md mx-4 p-6 fade-in">
       <h3 class="text-base font-bold text-slate-800 mb-4">URL 추가</h3>
       <input id="url-modal-input" type="url" placeholder="https://example.com"
-        class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm mb-3 focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+        class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm mb-4 focus:ring-2 focus:ring-indigo-400 focus:outline-none"
         onkeydown="if(event.key==='Enter') confirmAddUrl()">
-      <input id="url-modal-label" type="text" placeholder="라벨 (선택사항)"
-        class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm mb-4 focus:ring-2 focus:ring-indigo-400 focus:outline-none">
       <div class="flex gap-3">
         <button onclick="confirmAddUrl()" class="flex-1 py-2.5 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-xl text-sm hover:opacity-90">추가</button>
         <button onclick="document.getElementById('url-modal').classList.add('hidden')" class="px-6 py-2.5 bg-slate-100 text-slate-600 font-semibold rounded-xl text-sm hover:bg-slate-200">취소</button>
@@ -261,6 +234,8 @@
       <h3 class="text-base font-bold text-slate-800 mb-4">정기 Audit 스케줄 추가</h3>
       <input id="sched-name" type="text" placeholder="스케줄 이름"
         class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm mb-3 focus:ring-2 focus:ring-indigo-400 focus:outline-none">
+      <label class="text-xs text-slate-500 mb-1 block">대상 그룹</label>
+      <select id="sched-group" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm mb-3"></select>
       <label class="text-xs text-slate-500 mb-1 block">실행 주기</label>
       <select id="sched-freq" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm mb-3">
         <option value="daily">매일</option>
@@ -269,11 +244,7 @@
       </select>
       <label class="text-xs text-slate-500 mb-1 block">실행 시간</label>
       <input id="sched-time" type="time" value="09:00"
-        class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm mb-3 focus:ring-2 focus:ring-indigo-400 focus:outline-none">
-      <label class="text-xs text-slate-500 mb-1 block">대상</label>
-      <select id="sched-target" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm mb-4">
-        <option value="all">전체 URL</option>
-      </select>
+        class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm mb-4 focus:ring-2 focus:ring-indigo-400 focus:outline-none">
       <div class="flex gap-3">
         <button onclick="confirmAddSchedule()" class="flex-1 py-2.5 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-xl text-sm hover:opacity-90">추가</button>
         <button onclick="document.getElementById('schedule-modal').classList.add('hidden')" class="px-6 py-2.5 bg-slate-100 text-slate-600 font-semibold rounded-xl text-sm hover:bg-slate-200">취소</button>
@@ -287,9 +258,9 @@ let config = {};
 let ruleTypes = {};
 let dirty = false;
 let modalCatKey = '';
-let auditUrls = [];
-let schedules = [];
+let auditData = { groups: [], schedules: [] };
 let currentPage = 'criteria';
+let urlModalGroupIdx = -1;
 
 const CAT_KEYS = ['seo_tags','robots_txt','json_ld','llms_txt','faq','summary_box','heading_structure','stats_density','reviews_ssr','csr_ratio'];
 const CAT_COLORS = [
@@ -313,7 +284,7 @@ function switchPage(page) {
   document.getElementById('page-list').classList.toggle('hidden', page !== 'list');
   document.getElementById('page-schedule').classList.toggle('hidden', page !== 'schedule');
 
-  if (page === 'list') renderUrlList();
+  if (page === 'list') renderGroups();
   if (page === 'schedule') renderSchedules();
 }
 
@@ -331,8 +302,7 @@ async function doLogin() {
     token = pw;
     document.getElementById('login-screen').classList.add('hidden');
     document.getElementById('main-layout').style.display = 'flex';
-    await Promise.all([loadConfig(), loadRuleTypes()]);
-    loadAuditData();
+    await Promise.all([loadConfig(), loadRuleTypes(), loadAuditData()]);
   } catch { errEl.textContent = '서버 연결 실패'; errEl.classList.remove('hidden'); }
 }
 
@@ -356,16 +326,18 @@ async function loadRuleTypes() {
   ruleTypes = await res.json();
 }
 
-function loadAuditData() {
-  const saved = localStorage.getItem('geo_audit_urls');
-  auditUrls = saved ? JSON.parse(saved) : [];
-  const savedSched = localStorage.getItem('geo_audit_schedules');
-  schedules = savedSched ? JSON.parse(savedSched) : [];
+async function loadAuditData() {
+  const res = await fetch('/admin/audit-data', { headers: { 'Authorization': `Bearer ${token}` } });
+  auditData = await res.json();
+  if (!auditData.groups) auditData.groups = [];
+  if (!auditData.schedules) auditData.schedules = [];
 }
 
-function saveAuditData() {
-  localStorage.setItem('geo_audit_urls', JSON.stringify(auditUrls));
-  localStorage.setItem('geo_audit_schedules', JSON.stringify(schedules));
+async function saveAuditData() {
+  await fetch('/admin/audit-data', {
+    method: 'PUT', headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
+    body: JSON.stringify(auditData),
+  });
 }
 
 // ═══════════════════════════════════════════════════════════════════════
@@ -570,83 +542,143 @@ async function resetConfig() {
 }
 
 // ═══════════════════════════════════════════════════════════════════════
-// Page 2: Audit List 관리
+// Page 2: Audit List 관리 (그룹 기반)
 // ═══════════════════════════════════════════════════════════════════════
 
-function renderUrlList() {
-  const tbody = document.getElementById('url-list-body');
-  if (!auditUrls.length) {
-    tbody.innerHTML = '<tr><td colspan="4" class="px-4 py-12 text-center text-slate-300 text-sm">등록된 URL이 없습니다. URL을 추가해주세요.</td></tr>';
+function renderGroups() {
+  const container = document.getElementById('groups-container');
+  const groups = auditData.groups || [];
+  if (!groups.length) {
+    container.innerHTML = `<div class="card p-8 text-center fade-in">
+      <div class="text-3xl mb-3 opacity-30">📋</div>
+      <p class="text-sm text-slate-400 mb-1">등록된 그룹이 없습니다.</p>
+      <p class="text-xs text-slate-300">그룹을 만들고 URL을 등록해주세요.</p>
+    </div>`;
     return;
   }
-  tbody.innerHTML = auditUrls.map((u, i) => `
-    <tr class="border-b border-slate-50 hover:bg-slate-50/50">
-      <td class="px-4 py-3">
-        <p class="text-sm text-slate-700 truncate max-w-md">${escHtml(u.url)}</p>
-        ${u.label ? `<p class="text-xs text-slate-400">${escHtml(u.label)}</p>` : ''}
-      </td>
-      <td class="px-4 py-3 text-center">
-        ${u.lastScore != null ? `<span class="text-sm font-bold ${u.lastScore >= 90 ? 'text-emerald-600' : u.lastScore >= 70 ? 'text-amber-600' : 'text-red-500'}">${u.lastScore}</span>` : '<span class="text-xs text-slate-300">-</span>'}
-      </td>
-      <td class="px-4 py-3 text-center text-xs text-slate-400">${u.lastRun || '-'}</td>
-      <td class="px-4 py-3 text-center">
-        <div class="flex items-center justify-center gap-1">
-          <button onclick="runAudit(${i})" class="px-2 py-1 text-xs bg-indigo-50 text-indigo-600 rounded hover:bg-indigo-100 transition font-medium">분석</button>
-          <button onclick="removeUrl(${i})" class="px-2 py-1 text-xs text-red-400 hover:text-red-600 transition">삭제</button>
+
+  container.innerHTML = groups.map((g, gi) => {
+    const urls = g.urls || [];
+    const urlRows = urls.length ? urls.map((u, ui) => `
+      <tr class="border-b border-slate-50 hover:bg-slate-50/50">
+        <td class="px-4 py-2.5 text-sm text-slate-700 truncate max-w-md">${escHtml(u.url)}</td>
+        <td class="px-4 py-2.5 text-center">
+          ${u.lastScore != null ? `<span class="text-sm font-bold ${u.lastScore >= 90 ? 'text-emerald-600' : u.lastScore >= 70 ? 'text-amber-600' : 'text-red-500'}">${u.lastScore}</span>` : '<span class="text-xs text-slate-300">-</span>'}
+        </td>
+        <td class="px-4 py-2.5 text-center text-xs text-slate-400">${u.lastRun || '-'}</td>
+        <td class="px-4 py-2.5 text-center">
+          <div class="flex items-center justify-center gap-1">
+            <button onclick="runAudit(${gi},${ui})" class="px-2 py-1 text-xs bg-indigo-50 text-indigo-600 rounded hover:bg-indigo-100 transition font-medium">분석</button>
+            <button onclick="removeUrl(${gi},${ui})" class="px-2 py-1 text-xs text-red-400 hover:text-red-600 transition">삭제</button>
+          </div>
+        </td>
+      </tr>
+    `).join('') : `<tr><td colspan="4" class="px-4 py-6 text-center text-slate-300 text-xs">URL을 추가해주세요.</td></tr>`;
+
+    return `
+      <div class="card fade-in overflow-hidden">
+        <div class="px-6 py-4 flex items-center justify-between border-b border-slate-100">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-indigo-50 flex items-center justify-center">
+              <svg class="w-4 h-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-slate-700">${escHtml(g.name)}</h3>
+              <p class="text-xs text-slate-400">${urls.length}개 URL</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="runGroupAudit(${gi})" class="px-3 py-1.5 text-xs bg-indigo-50 text-indigo-600 rounded-lg hover:bg-indigo-100 transition font-medium">전체 분석</button>
+            <button onclick="openAddUrlToGroup(${gi})" class="px-3 py-1.5 text-xs bg-slate-100 text-slate-600 rounded-lg hover:bg-slate-200 transition font-medium">+ URL</button>
+            <button onclick="removeGroup(${gi})" class="text-slate-300 hover:text-red-400 transition" title="그룹 삭제">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+            </button>
+          </div>
         </div>
-      </td>
-    </tr>
-  `).join('');
+        <table class="w-full text-sm">
+          <thead class="bg-slate-50/50">
+            <tr>
+              <th class="px-4 py-2 text-left text-xs font-semibold text-slate-400 uppercase">URL</th>
+              <th class="px-4 py-2 text-center text-xs font-semibold text-slate-400 uppercase w-20">점수</th>
+              <th class="px-4 py-2 text-center text-xs font-semibold text-slate-400 uppercase w-28">분석일</th>
+              <th class="px-4 py-2 text-center text-xs font-semibold text-slate-400 uppercase w-24">액션</th>
+            </tr>
+          </thead>
+          <tbody>${urlRows}</tbody>
+        </table>
+      </div>`;
+  }).join('');
 }
 
-function openAddUrlModal() {
+function openAddGroupModal() {
+  document.getElementById('grp-name').value = '';
+  document.getElementById('grp-urls').value = '';
+  document.getElementById('group-modal').classList.remove('hidden');
+}
+
+async function confirmAddGroup() {
+  const name = document.getElementById('grp-name').value.trim();
+  if (!name) { alert('그룹 이름을 입력하세요.'); return; }
+  const urlsText = document.getElementById('grp-urls').value.trim();
+  const urls = urlsText ? urlsText.split('\n').map(u => u.trim()).filter(u => u).map(url => ({ url, lastScore: null, lastRun: null })) : [];
+  auditData.groups.push({ name, urls });
+  await saveAuditData(); renderGroups();
+  document.getElementById('group-modal').classList.add('hidden');
+  showToast(`"${name}" 그룹이 추가되었습니다.`);
+}
+
+function openAddUrlToGroup(gi) {
+  urlModalGroupIdx = gi;
   document.getElementById('url-modal-input').value = '';
-  document.getElementById('url-modal-label').value = '';
   document.getElementById('url-modal').classList.remove('hidden');
 }
 
-function confirmAddUrl() {
+async function confirmAddUrl() {
   const url = document.getElementById('url-modal-input').value.trim();
-  if (!url) return;
-  const label = document.getElementById('url-modal-label').value.trim();
-  auditUrls.push({ url, label, lastScore: null, lastRun: null });
-  saveAuditData(); renderUrlList();
+  if (!url || urlModalGroupIdx < 0) return;
+  auditData.groups[urlModalGroupIdx].urls.push({ url, lastScore: null, lastRun: null });
+  await saveAuditData(); renderGroups();
   document.getElementById('url-modal').classList.add('hidden');
   showToast('URL이 추가되었습니다.');
 }
 
-function addBulkUrls() {
-  const text = document.getElementById('bulk-urls').value.trim();
-  if (!text) return;
-  const urls = text.split('\n').map(u => u.trim()).filter(u => u);
-  for (const url of urls) auditUrls.push({ url, label: '', lastScore: null, lastRun: null });
-  saveAuditData(); renderUrlList();
-  document.getElementById('bulk-urls').value = '';
-  showToast(`${urls.length}개 URL이 추가되었습니다.`);
-}
-
-function removeUrl(idx) {
+async function removeUrl(gi, ui) {
   if (!confirm('이 URL을 삭제하시겠습니까?')) return;
-  auditUrls.splice(idx, 1);
-  saveAuditData(); renderUrlList();
+  auditData.groups[gi].urls.splice(ui, 1);
+  await saveAuditData(); renderGroups();
 }
 
-async function runAudit(idx) {
-  const u = auditUrls[idx];
+async function removeGroup(gi) {
+  const g = auditData.groups[gi];
+  if (!confirm(`"${g.name}" 그룹을 삭제하시겠습니까?`)) return;
+  auditData.groups.splice(gi, 1);
+  await saveAuditData(); renderGroups();
+  showToast('그룹이 삭제되었습니다.');
+}
+
+async function runAudit(gi, ui) {
+  const u = auditData.groups[gi]?.urls[ui];
   if (!u) return;
-  showToast(`${u.url} 분석 중...`);
+  showToast(`분석 중: ${u.url}`);
   try {
-    const res = await fetch('/analyze', {
-      method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ url: u.url }),
-    });
+    const res = await fetch('/analyze', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ url: u.url }) });
     if (!res.ok) { showToast('분석 실패'); return; }
     const data = await res.json();
     u.lastScore = data.score?.total ?? null;
     u.lastRun = new Date().toLocaleString('ko-KR', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' });
-    saveAuditData(); renderUrlList();
+    await saveAuditData(); renderGroups();
     showToast(`${u.url}: ${u.lastScore}점`);
   } catch { showToast('분석 중 오류 발생'); }
+}
+
+async function runGroupAudit(gi) {
+  const g = auditData.groups[gi];
+  if (!g?.urls.length) { showToast('URL이 없습니다.'); return; }
+  showToast(`"${g.name}" 전체 분석 시작 (${g.urls.length}개)...`);
+  for (let ui = 0; ui < g.urls.length; ui++) {
+    await runAudit(gi, ui);
+  }
+  showToast(`"${g.name}" 전체 분석 완료`);
 }
 
 // ═══════════════════════════════════════════════════════════════════════
@@ -655,6 +687,7 @@ async function runAudit(idx) {
 
 function renderSchedules() {
   const container = document.getElementById('schedule-list');
+  const schedules = auditData.schedules || [];
   if (!schedules.length) {
     container.innerHTML = `<div class="card p-6 text-center">
       <div class="text-3xl mb-3 opacity-30">🕐</div>
@@ -664,6 +697,11 @@ function renderSchedules() {
     return;
   }
   const freqLabel = { daily: '매일', weekly: '매주', monthly: '매월' };
+  const groupName = (id) => {
+    const g = (auditData.groups || []).find((_, i) => String(i) === String(id));
+    return g ? g.name : '(삭제된 그룹)';
+  };
+
   container.innerHTML = schedules.map((s, i) => `
     <div class="card p-5 flex items-center gap-4 fade-in">
       <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center flex-shrink-0">
@@ -671,7 +709,7 @@ function renderSchedules() {
       </div>
       <div class="flex-1 min-w-0">
         <p class="text-sm font-semibold text-slate-700">${escHtml(s.name)}</p>
-        <p class="text-xs text-slate-400">${freqLabel[s.freq] || s.freq} ${s.time} · ${s.target === 'all' ? '전체 URL' : s.target}</p>
+        <p class="text-xs text-slate-400">${freqLabel[s.freq] || s.freq} ${s.time} · <span class="font-medium text-indigo-500">${escHtml(groupName(s.groupIdx))}</span></p>
       </div>
       <div class="flex items-center gap-2">
         <button onclick="toggleSchedule(${i})" class="flex-shrink-0">
@@ -691,33 +729,45 @@ function openAddScheduleModal() {
   document.getElementById('sched-name').value = '';
   document.getElementById('sched-freq').value = 'weekly';
   document.getElementById('sched-time').value = '09:00';
+
+  // 그룹 목록으로 드롭다운 채우기
+  const select = document.getElementById('sched-group');
+  select.innerHTML = '';
+  (auditData.groups || []).forEach((g, i) => {
+    select.innerHTML += `<option value="${i}">${escHtml(g.name)} (${g.urls?.length || 0}개 URL)</option>`;
+  });
+  if (!auditData.groups?.length) {
+    select.innerHTML = '<option value="" disabled>그룹을 먼저 추가해주세요</option>';
+  }
   document.getElementById('schedule-modal').classList.remove('hidden');
 }
 
-function confirmAddSchedule() {
+async function confirmAddSchedule() {
   const name = document.getElementById('sched-name').value.trim();
   if (!name) { alert('스케줄 이름을 입력하세요.'); return; }
-  schedules.push({
+  const groupIdx = document.getElementById('sched-group').value;
+  if (groupIdx === '' || groupIdx == null) { alert('대상 그룹을 선택하세요.'); return; }
+  auditData.schedules.push({
     name,
+    groupIdx: parseInt(groupIdx),
     freq: document.getElementById('sched-freq').value,
     time: document.getElementById('sched-time').value,
-    target: document.getElementById('sched-target').value,
     enabled: true,
   });
-  saveAuditData(); renderSchedules();
+  await saveAuditData(); renderSchedules();
   document.getElementById('schedule-modal').classList.add('hidden');
   showToast('스케줄이 추가되었습니다.');
 }
 
-function toggleSchedule(i) {
-  schedules[i].enabled = !schedules[i].enabled;
-  saveAuditData(); renderSchedules();
+async function toggleSchedule(i) {
+  auditData.schedules[i].enabled = !auditData.schedules[i].enabled;
+  await saveAuditData(); renderSchedules();
 }
 
-function removeSchedule(i) {
+async function removeSchedule(i) {
   if (!confirm('이 스케줄을 삭제하시겠습니까?')) return;
-  schedules.splice(i, 1);
-  saveAuditData(); renderSchedules();
+  auditData.schedules.splice(i, 1);
+  await saveAuditData(); renderSchedules();
 }
 
 // ── Toast ──

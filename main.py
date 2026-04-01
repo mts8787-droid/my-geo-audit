@@ -289,6 +289,41 @@ async def get_rule_types(request: Request):
     return RULE_TYPES
 
 
+# ── Audit Groups & Schedules ─────────────────────────────────────────────────
+
+import json as _json
+_AUDIT_DATA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "audit_data.json")
+
+
+def _load_audit_data() -> dict:
+    try:
+        with open(_AUDIT_DATA_PATH, "r", encoding="utf-8") as f:
+            return _json.load(f)
+    except (FileNotFoundError, _json.JSONDecodeError):
+        return {"groups": [], "schedules": []}
+
+
+def _save_audit_data(data: dict):
+    with open(_AUDIT_DATA_PATH, "w", encoding="utf-8") as f:
+        _json.dump(data, f, ensure_ascii=False, indent=2)
+
+
+@app.get("/admin/audit-data")
+async def get_audit_data(request: Request):
+    if not _verify_admin(request):
+        raise HTTPException(status_code=401, detail="인증이 필요합니다.")
+    return _load_audit_data()
+
+
+@app.put("/admin/audit-data")
+async def update_audit_data(request: Request):
+    if not _verify_admin(request):
+        raise HTTPException(status_code=401, detail="인증이 필요합니다.")
+    body = await request.json()
+    _save_audit_data(body)
+    return {"status": "ok", "data": body}
+
+
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
