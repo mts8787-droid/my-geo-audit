@@ -49,7 +49,7 @@
   </div>
 
   <!-- Main Layout (sidebar + content) -->
-  <div id="main-layout" class="hidden h-screen flex flex-col">
+  <div id="main-layout" class="h-screen flex-col" style="display:none">
 
     <!-- Top Header -->
     <header class="bg-white border-b border-slate-100 flex-shrink-0 z-40">
@@ -330,7 +330,7 @@ async function doLogin() {
     if (!res.ok) { const d = await res.json(); errEl.textContent = d.detail||'실패'; errEl.classList.remove('hidden'); return; }
     token = pw;
     document.getElementById('login-screen').classList.add('hidden');
-    document.getElementById('main-layout').classList.remove('hidden');
+    document.getElementById('main-layout').style.display = 'flex';
     await Promise.all([loadConfig(), loadRuleTypes()]);
     loadAuditData();
   } catch { errEl.textContent = '서버 연결 실패'; errEl.classList.remove('hidden'); }
@@ -338,7 +338,7 @@ async function doLogin() {
 
 function logout() {
   token = ''; config = {};
-  document.getElementById('main-layout').classList.add('hidden');
+  document.getElementById('main-layout').style.display = 'none';
   document.getElementById('login-screen').classList.remove('hidden');
   document.getElementById('pw-input').value = '';
 }
