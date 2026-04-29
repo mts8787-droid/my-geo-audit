@@ -26,11 +26,12 @@ URL을 입력하면 해당 사이트가 GPT, Gemini, Claude 등 AI 엔진에 얼
 - **HTTP 클라이언트**: httpx (비동기)
 - **HTML 파싱**: BeautifulSoup4
 - **브라우저 엔진**: Playwright (CSR 분석용)
+- **채점 시스템**: 룰 엔진 기반 (어드민에서 동적 관리)
 
 ## AI 모델 사용 가이드
 
 | 용도 | 모델 | 모델 ID |
-|------|------|---------|
+|------|------|---------| 
 | 개발 (코드 작성/리팩토링/디버깅) | Claude Opus | `claude-opus-4-6` |
 | 운영 (코드 리뷰/모니터링/경량 작업) | Claude Sonnet | `claude-sonnet-4-6` |
 
@@ -58,11 +59,35 @@ python main.py
 ## 프로젝트 구조
 
 ```
-my-geo-project/
-├── main.py           # FastAPI 앱 진입점
-├── analyzer.py       # GEO 분석 핵심 로직
-├── requirements.txt  # Python 의존성
+my-geo-audit/
+├── main.py                # FastAPI 앱 진입점 (API 라우팅, 보안, Rate Limit)
+├── analyzer.py            # GEO 분석 핵심 로직 (페이지 fetch, JSON-LD, CSR 분석)
+├── rule_engine.py         # 룰 엔진 — 어드민 정의 규칙 평가 (12종 룰 타입)
+├── csr_local.py           # 로컬 SSR/CSR 분석 CLI
+├── scoring_config.json    # 채점 설정 파일 (어드민에서 수정 가능)
+├── requirements.txt       # Python 의존성
+├── build.sh               # Render 배포용 빌드 스크립트
+├── render.yaml            # Render 서비스 설정
 ├── static/
-│   └── index.html    # Tailwind CSS 프론트엔드
-└── README.md
+│   ├── index.html         # 프론트엔드 (분석 UI)
+│   └── admin.html         # 어드민 (채점 기준/그룹/스케줄 관리)
+└── extension/
+    ├── manifest.json      # Chrome 확장 매니페스트 (MV3)
+    ├── popup.html         # 확장 프로그램 UI
+    ├── popup.js           # 확장 프로그램 로직
+    └── icons/             # 확장 프로그램 아이콘
 ```
+
+## 배포
+
+Render에서 자동 배포됩니다:
+
+```bash
+# 빌드: bash build.sh
+# 시작: python -m uvicorn main:app --host 0.0.0.0 --port $PORT
+```
+
+환경 변수:
+- `PORT` — 서버 포트 (기본: 8000)
+- `ALLOWED_ORIGINS` — CORS 허용 도메인 (쉼표 구분)
+- `ADMIN_PASSWORD` — 어드민 비밀번호 (미설정 시 어드민 비활성화)

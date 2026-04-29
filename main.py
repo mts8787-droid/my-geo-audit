@@ -5,31 +5,33 @@
   - 운영(Production):  Claude Sonnet (claude-sonnet-4-6) — 코드 리뷰, 모니터링, 경량 작업
 """
 
+import asyncio
+import hmac
+import ipaddress
+import json as _json
+import os
+import re
+import socket
+from contextlib import asynccontextmanager
+from typing import List
+from urllib.parse import urlparse
+
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from analyzer import analyze_url, get_scoring_config, save_scoring_config, get_default_config, load_scoring_config
-from rule_engine import RULE_TYPES
-import hmac
 from slowapi import Limiter
 from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 from slowapi.middleware import SlowAPIMiddleware
-import os
-import re
-import asyncio
-import ipaddress
-import socket
-from typing import List
-from urllib.parse import urlparse
 
-app = FastAPI(title="GEO Audit Tool", version="2.22.0")
+from analyzer import analyze_url, get_scoring_config, save_scoring_config, get_default_config, load_scoring_config
+from rule_engine import RULE_TYPES
 
 
-@app.on_event("startup")
-async def install_chromium_on_startup():
+
+async def _install_chromium_on_startup():
     """서버 시작 시 Playwright Chromium 자동 설치."""
     import subprocess, sys
     python = sys.executable or "python"
@@ -56,6 +58,16 @@ async def install_chromium_on_startup():
         except Exception as e:
             print(f"[startup] Install attempt failed: {e}")
     print("[startup] WARNING: Chromium installation failed — CSR analysis will be unavailable")
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """FastAPI lifespan 이벤트 핸들러."""
+    await _install_chromium_on_startup()
+    yield
+
+
+app = FastAPI(title="GEO Audit Tool", version="2.23.0", lifespan=lifespan)
 
 # Rate Limiter
 limiter = Limiter(key_func=get_remote_address)
@@ -252,6 +264,8 @@ async def admin_login(request: Request):
         raise HTTPException(status_code=404, detail="어드민이 비활성화되어 있습니다.")
     body = await request.json()
     password = body.get("password", "")
+    if not password:
+        raise HTTPException(status_code=401, detail="비밀번호를 입력해주세요.")
     if hmac.compare_digest(password, ADMIN_PASSWORD):
         return {"status": "ok"}
     raise HTTPException(status_code=401, detail="비밀번호가 올바르지 않습니다.")
@@ -291,8 +305,8 @@ async def get_rule_types(request: Request):
 
 # ── Audit Groups & Schedules ─────────────────────────────────────────────────
 
-import json as _json
 _AUDIT_DATA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "audit_data.json")
+_audit_data_lock = asyncio.Lock()
 
 
 def _load_audit_data() -> dict:
@@ -303,9 +317,10 @@ def _load_audit_data() -> dict:
         return {"groups": [], "schedules": []}
 
 
-def _save_audit_data(data: dict):
-    with open(_AUDIT_DATA_PATH, "w", encoding="utf-8") as f:
-        _json.dump(data, f, ensure_ascii=False, indent=2)
+async def _save_audit_data(data: dict):
+    async with _audit_data_lock:
+        with open(_AUDIT_DATA_PATH, "w", encoding="utf-8") as f:
+            _json.dump(data, f, ensure_ascii=False, indent=2)
 
 
 @app.get("/admin/audit-data")
@@ -320,7 +335,7 @@ async def update_audit_data(request: Request):
     if not _verify_admin(request):
         raise HTTPException(status_code=401, detail="인증이 필요합니다.")
     body = await request.json()
-    _save_audit_data(body)
+    await _save_audit_data(body)
     return {"status": "ok", "data": body}
 
 
