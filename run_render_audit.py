@@ -215,7 +215,7 @@ def _load_page_dates():
         return {}
 
 
-def _sample_by_page_type(urls, base_per_type):
+def _sample_by_page_type(urls, base_per_type, must=()):
     """감사 전 URL만으로 page_type 사전 분류 후 타입별 per_type개로 축소.
 
     detect_page_type(soup=None, url) 는 url_pattern 1패스만 타므로 fetch 불필요.
@@ -223,10 +223,16 @@ def _sample_by_page_type(urls, base_per_type):
 
     RECENCY_TYPES 는 발행일 내림차순으로 정렬해 최신 문서부터 뽑는다.
     날짜를 모르는 URL 은 뒤로 보낸다(감사 자체는 하되 최신분에 밀린다).
+
+    must(필수 감사 URL)는 타입별 정원 안에서 **먼저** 자리를 차지하고, 남은 자리만
+    기존 규칙으로 채운다. 정원 밖에 덧붙이지 않는 이유는 그렇게 하면 필수 목록이
+    큰 국가일수록 표본이 커져 국가 간 비교가 어긋나기 때문이다(UK 179건 = PDP 정원의 36%).
+    필수가 정원을 넘으면 필수를 다 넣는다 — 지정 페이지 누락이 정원 초과보다 나쁘다.
     """
     from collections import defaultdict
     from page_type import detect_page_type
     dates = _load_page_dates()
+    must_set = set(must)
     buckets = defaultdict(list)
     for u in urls:
         pt = detect_page_type(None, u).get("id")
@@ -236,18 +242,24 @@ def _sample_by_page_type(urls, base_per_type):
     for pt in sorted(buckets):
         group = buckets[pt]
         per_type = PER_TYPE_OVERRIDE.get(pt, base_per_type)
-        if pt in RECENCY_TYPES and dates and any(u in dates for u in group):
-            group = sorted(group, key=lambda u: dates.get(u, ""), reverse=True)
-            sel = group[:per_type]
-            notes.append(f"{pt}={len(sel)}(최신순,날짜 {sum(1 for u in sel if u in dates)})")
+        forced = [u for u in group if u in must_set]
+        rest = [u for u in group if u not in must_set]
+        room = max(per_type - len(forced), 0)
+        detail = []
+        if pt in RECENCY_TYPES and dates and any(u in dates for u in rest):
+            rest = sorted(rest, key=lambda u: dates.get(u, ""), reverse=True)
+            sel = rest[:room]
+            detail.append(f"최신순,날짜 {sum(1 for u in sel if u in dates)}")
         elif pt in BALANCED_TYPES:
-            sel = _balanced_pick(group, per_type)
-            cats = len({_category_seg(u) for u in sel})
-            notes.append(f"{pt}={len(sel)}(카테고리 {cats}종)")
+            sel = _balanced_pick(rest, room)
+            detail.append(f"카테고리 {len({_category_seg(u) for u in forced + sel})}종")
         else:
-            sel = group[:per_type]
-            notes.append(f"{pt}={len(sel)}")
-        out.extend(sel)
+            sel = rest[:room]
+        if forced:
+            detail.append(f"필수 {len(forced)}")
+        picked = forced + sel
+        notes.append(f"{pt}={len(picked)}" + (f"({','.join(detail)})" if detail else ""))
+        out.extend(picked)
     print(f"[render-audit] page_type 샘플(기본 ≤{base_per_type}, PDP ≤{PER_TYPE_OVERRIDE.get('pdp')}): " + " ".join(notes))
     return out
 
@@ -360,7 +372,8 @@ def main():
         print(f"[render-audit] invalid URL {len(bad)}건 제외 (공백/형식 오류). 예: {bad[0]}")
         urls = [u for u in urls if u not in set(bad)]
     if not args.full:
-        urls = _apply_must_audit(_sample_by_page_type(urls, args.per_type), urls, code)
+        must = _load_must_audit(code)
+        urls = _apply_must_audit(_sample_by_page_type(urls, args.per_type, must), urls, code)
     if args.limit:
         urls = urls[: args.limit]
 
