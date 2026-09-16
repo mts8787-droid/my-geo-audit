@@ -94,6 +94,12 @@
           "/[a-z]{2}(?:[_-][a-z]{2})?/(support|soporte|suporte|tro-giup)/(?:.*?/)?help-library(/|$)",
           "/[a-z]{2}(?:[_-][a-z]{2})?/(support|soporte|suporte|tro-giup)/(?:.*?/)?[a-z-]*troubleshoot(?:ing)?[a-z-]*(/|$)",
           "/[a-z]{2}(?:[_-][a-z]{2})?/(support|soporte|suporte|tro-giup)/(?:.*?/)?solucionar-problemas(/|$)"
+        ],
+        "exclude_url_pattern": [
+          "/minho-page(/|$)",
+          "/ia-troubleshooting/(\\d+/?)?$",
+          "/(troubleshoot|fehlerbehebung|resolucion-problemas|solucion-de-problemas|solucionar-problemas|khac-phuc-su-co)/?$",
+          "/(help-library|help-liberary)/?$"
         ]
       },
       "expected_schemas": [

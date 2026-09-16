@@ -96,6 +96,8 @@ SITE_PATHS = {"ca": "ca_en"}
 DROP_PATH_PATTERNS = [
     re.compile(r"/lg-story(/|$)"),
     re.compile(r"/lifesgood(/|$)"),
+    # 담당자 이름이 경로에 박힌 스테이징 페이지. 운영 콘텐츠가 아니다 (UK 3건, 2026-09-16).
+    re.compile(r"/minho-page(/|$)"),
 ]
 
 

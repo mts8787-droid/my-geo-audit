@@ -96,6 +96,14 @@ def is_b2b_url(url: str) -> bool:
     return False
 
 
+def _safe_search(pat, url):
+    """잘못된 정규식 하나가 분류 전체를 깨뜨리지 않도록 감싼다."""
+    try:
+        return bool(re.search(pat, url, re.IGNORECASE))
+    except re.error:
+        return False
+
+
 def detect_page_type(soup, url: str = "") -> dict:
     """soup을 보고 가장 잘 맞는 페이지 타입을 반환.
 
@@ -144,7 +152,13 @@ def detect_page_type(soup, url: str = "") -> dict:
         for pt in page_types:
             if pt.get("id") == "unknown":
                 continue
-            url_targets = (pt.get("detection") or {}).get("url_pattern") or []
+            detection = pt.get("detection") or {}
+            # 명시 제외 — url_pattern 에 걸려도 이 타입으로 보지 않는다.
+            # (허브/목록/페이지네이션처럼 패턴은 같지만 콘텐츠가 아닌 URL 용)
+            excl = detection.get("exclude_url_pattern") or []
+            if any(_safe_search(pat, url) for pat in excl):
+                continue
+            url_targets = detection.get("url_pattern") or []
             for pat in url_targets:
                 try:
                     if re.search(pat, url, re.IGNORECASE):
