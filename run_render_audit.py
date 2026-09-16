@@ -70,10 +70,9 @@ RECENCY_TYPES = {"newsroom", "press_media", "support_troubleshoot"}
 
 # page_type 별 표본 상한 오버라이드. PDP 는 카테고리가 수십 종이라 100개로는
 # 제품군당 몇 건씩밖에 안 잡혀 대표성이 떨어진다.
-# None = 상한 없음(전수). PLP·마이크로사이트는 사업부 지정으로 전수 감사한다
-# (2026-09-16). 10국 합쳐 6,346건으로 전수가 가능한 규모이고, 표본을 뽑으면
-# 제품군 진입 경로가 통째로 빠져 개선 대상 파악이 안 된다.
-PER_TYPE_OVERRIDE = {"pdp": 500, "plp": None, "microsite": None}
+# None = 상한 없음(전수). 현재 쓰는 타입은 없다 — PLP·마이크로사이트는 표본을
+# 유지하고, 꼭 봐야 하는 페이지는 must_audit 으로 지정한다 (2026-09-16).
+PER_TYPE_OVERRIDE = {"pdp": 500}
 
 # 감사 자체를 하지 않는 page_type. 'unknown' 은 분류 실패라 예전부터 제외였고,
 # 'about' 은 회사 소개 페이지라 GEO 검수 대상이 아니라고 결정됐다(2026-08-28).
