@@ -5,8 +5,10 @@
 #          완료 시 reports/audit_report.txt 자동 갱신(run_render_audit 내부).
 # 한 국가가 실패해도 나머지는 계속 진행.
 #
-# 8국은 Render bulk(lightweight httpx), AU/IN은 Render 데이터센터 IP가 Akamai
-# 403 차단을 받아 과소 산정되므로 --local(Mac Mini 주거용 IP httpx)로 우회한다.
+# 전 국가 Render bulk(lightweight httpx). AU/IN 은 Render 데이터센터 IP 가 Akamai
+# 403 을 받아 --local 로 우회했었으나, 전용 UA 화이트리스트가 승인되면서 IP 와
+# 무관하게 통과한다(2026-09-17 실측: AU/IN 각 25건 전부 200, 파싱실패 0%).
+# 되돌려야 하면 LOCAL_COUNTRIES 에 코드를 넣으면 된다 — run_country 가 --local 을 붙인다.
 #
 # 실패 시 재감사: 감사 후 결과 품질을 확인해 실패면 최대 MAX_ATTEMPTS 회까지 재감사한다.
 #   - 결과 0건(네트워크 단절 등)  → run_render_audit 의 resume 으로 이어서 재감사
@@ -15,8 +17,8 @@ set -u
 cd /Users/dubaba/my-geo-project/my-geo-audit || exit 1
 
 PY=/usr/bin/python3   # httpx 포함 env (--local 은 analyzer import 필요)
-RENDER_COUNTRIES="us uk de es ca br mx vn global"   # global = lg.com/global/newsroom (Global-Site)
-LOCAL_COUNTRIES="au in"
+RENDER_COUNTRIES="us uk de es ca au br mx in vn global"   # global = lg.com/global/newsroom (Global-Site)
+LOCAL_COUNTRIES=""
 MAX_ATTEMPTS=3
 RETRY_GAP=1800        # 초 — 네트워크 복구 대기 (3회 × 30분 ≈ 1시간 커버)
 STAMP=$(date +%Y%m%d_%H%M%S)
