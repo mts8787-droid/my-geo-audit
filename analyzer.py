@@ -360,11 +360,14 @@ async def analyze_url(url: str, lightweight: bool = False, scope: str = "all") -
 
 # ── Page Fetch ────────────────────────────────────────────────────────────────
 
-# 전용 UA (Akamai 화이트리스트 대상). LG D2C 디지털마케팅팀 운영 식별자.
+# 전용 UA. LG D2C 디지털마케팅팀 운영 식별자로 Akamai 화이트리스트 **승인 완료**.
+# 화이트리스트는 봇 탐지를 면제할 뿐 rate limit 은 그대로 적용된다 — 2026-09-17
+# 실측: 13,286건을 동시성 16 으로 80분 연속 훑자 UK/DE 가 403, 같은 UA 로 US 는 200.
+# 봇 판정이면 전 국가가 같이 막힌다. 국가별로 갈렸다는 건 속도 위반이라는 뜻이다.
 _DEDICATED_UA = "MyGEOAudit/1.0 (Audit agent operated by D2C Digital Marketing Team, LG Electronics)"
 
-# 화이트리스트 승인 전 로컬 개발/테스트용 Chrome UA fallback.
-# 운영 환경에서는 위 _DEDICATED_UA를 사용해야 함.
+# Chrome UA fallback. 전용 UA 가 승인됐으므로 평상시엔 쓸 일이 없다 —
+# 화이트리스트가 걷히거나 신규 환경에서 검증할 때만 AUDIT_USER_AGENT 로 지정.
 _FALLBACK_CHROME_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 
 
@@ -373,10 +376,10 @@ def build_request_headers() -> dict:
 
     UA 우선순위:
       1. AUDIT_USER_AGENT 환경변수 (명시적 override)
-      2. _DEDICATED_UA (기본값 — Akamai 화이트리스트 등록 대상)
+      2. _DEDICATED_UA (기본값 — Akamai 화이트리스트 승인 완료)
 
-    운영팀 화이트리스트 승인 전 로컬에서 봇 차단을 회피하려면
-    AUDIT_USER_AGENT 환경변수에 _FALLBACK_CHROME_UA 값을 설정.
+    기본값을 그대로 쓴다. AUDIT_USER_AGENT 는 화이트리스트가 걷혔을 때의
+    비상 우회용이다.
     """
     ua = os.getenv("AUDIT_USER_AGENT") or _DEDICATED_UA
     is_chrome_ua = "Chrome/" in ua and "Mozilla/" in ua
