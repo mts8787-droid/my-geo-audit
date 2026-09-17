@@ -26,6 +26,7 @@ gen_audit_report.py 와 동일한 '국가별 최신 run 1개' 선정 로직을 �
 같은 PSI 캐시의 agentic-browsing 관측치는 채점과 분리해 "agentic" 블록으로 보고한다
 (9월 감사부터 채점 예정 — 현재는 수집·관측만).
 """
+import hashlib
 import json
 import os
 import re
@@ -44,6 +45,10 @@ COUNTRY_LABELS = {"global": "Global-Site"}
 
 # 집계 제외 page_type
 EXCLUDED_PAGE_TYPES = {"business", "promotion", "unknown", "home", "about"}
+
+# 페이지타입별 집계 상한 (None = 상한 없음). PDP 는 제품군 대표성 때문에 면제.
+TYPE_CAP = 100
+TYPE_CAP_EXEMPT = {"pdp"}
 
 _CITABLE_N = re.compile(r"^\s*(\d+)\s*/")
 _MAXAGE = re.compile(r"max-age\s*=\s*(\d+)")
@@ -205,6 +210,30 @@ def aggregate_country(doc, cr, psi):
             continue
         seen_dest[dest] = r["url"]
         results.append(r)
+
+    # 페이지타입별 집계 상한. 국가마다 타입 비중이 제각각이면(US 트러블슈팅 34% vs
+    # DE 13%) 국가 점수가 콘텐츠 품질이 아니라 표본 구성을 반영하게 된다.
+    # 100 으로 맞춰 같은 구성으로 비교한다. PDP 는 제품군이 수십 종이라 100 으로
+    # 자르면 카테고리 대표성이 깨지므로 제외한다(감사 단계에서 이미 500 상한).
+    #
+    # 선별은 URL 해시 순 — 무작위지만 실행마다 같은 결과가 나온다(멱등).
+    # '상위 점수 100' 도 검토했으나 채택하지 않았다: 나쁜 페이지가 통째로 집계에서
+    # 빠져 개선해도 점수가 안 움직이고, 방치해도 안 떨어진다. 2026-09-16 실측으로도
+    # 효과의 대부분은 '상위 선별'이 아니라 '비중 균형'에서 나왔다
+    # (무작위 100 = 현재와 동일한 76.55, 상위 100 만 +0.23).
+    if TYPE_CAP:
+        capped, over = [], defaultdict(list)
+        for r in results:
+            pt = current_page_type(r)
+            (capped if pt in TYPE_CAP_EXEMPT else over[pt]).append(r)
+        for pt, group in over.items():
+            if len(group) <= TYPE_CAP:
+                capped += group
+                continue
+            group.sort(key=lambda x: hashlib.sha1(x["url"].encode()).hexdigest())
+            capped += group[:TYPE_CAP]
+            excluded["type_cap"] += len(group) - TYPE_CAP
+        results = capped
 
     n = len(results)
     if not n:
