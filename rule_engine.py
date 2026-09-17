@@ -245,7 +245,8 @@ RULE_TYPES = {
     "canonical_self": {
         "label": "Canonical Self-Referencing",
         "description": "link[rel=canonical] href가 현재 URL과 동일한지 확인 (정규화 비교)",
-        "params": {},
+        "params": {
+            "match": {"label": "일치 기준", "type": "select", "options": ["host", "path"]},},
     },
     "mixed_content_zero": {
         "label": "Mixed Content 부재",
@@ -707,7 +708,7 @@ def _eval_heading_order(params: dict, ctx: dict) -> dict:
 
     seen_h1 = False
     logical = True
-    for tag in soup.find_all(["h1", "h2", "h3", "h4"]):
+    for tag in _content_headings(soup):
         if tag.name == "h1":
             seen_h1 = True
         elif not seen_h1:
@@ -993,14 +994,37 @@ def _eval_landmark_count_min(params: dict, ctx: dict) -> dict:
     }
 
 
+def _content_headings(soup):
+    """GNB·헤더·푸터·쿠키·브레드크럼을 뺀 본문 영역의 헤딩만 돌려준다 (#11).
+
+    문서 전체를 훑으면 GNB 의 <h2> 나 푸터의 <h3> 가 섞인다. LG.com 은 헤더가
+    본문보다 먼저 나오므로 첫 헤딩이 GNB 것이 되고, 뒤에 오는 본문 <h1> 이
+    '역순'으로 잡혀 실제 구조와 무관하게 FAIL 이 난다.
+    판정 대상은 사람이 읽는 본문이어야 한다 — _visible_text 와 같은 기준으로 자른다.
+    """
+    skip = set()
+    for el in soup.find_all(_BOILERPLATE_TAGS):
+        for d in el.find_all(["h1", "h2", "h3", "h4", "h5", "h6"]):
+            skip.add(id(d))
+    for el in soup.find_all(attrs={"class": True}):
+        blob = " ".join(el.get("class", [])).lower() + " " + (el.get("id") or "").lower()
+        if any(h in blob for h in _BOILERPLATE_HINTS):
+            for d in el.find_all(["h1", "h2", "h3", "h4", "h5", "h6"]):
+                skip.add(id(d))
+            if el.name in ("h1", "h2", "h3", "h4", "h5", "h6"):
+                skip.add(id(el))
+    return [h for h in soup.find_all(["h1", "h2", "h3", "h4", "h5", "h6"])
+            if id(h) not in skip]
+
+
 def _eval_heading_no_jump(params: dict, ctx: dict) -> dict:
     soup = ctx.get("soup")
     if not soup:
         return {"pass": False, "value": None, "hint": "HTML 파싱 실패"}
-    headings = soup.find_all(["h1", "h2", "h3", "h4", "h5", "h6"])
+    headings = _content_headings(soup)
     levels = [int(h.name[1]) for h in headings]
     if not levels:
-        return {"pass": False, "value": "헤딩 없음", "hint": "헤딩 태그가 없습니다."}
+        return {"pass": False, "value": "본문 헤딩 없음", "hint": "본문 영역에 헤딩 태그가 없습니다."}
     # #11 완화: 레벨 건너뛰기(h1→h3 처럼 깊이로 점프)는 허용 — 실제 역순(reversed)만 실패.
     # 역순 = 첫 헤딩보다 얕은(상위) 레벨이 뒤에 등장 (예: h2…→h1 — 본문 제목이 하위 섹션 뒤).
     first = levels[0]
@@ -1074,12 +1098,26 @@ def _eval_canonical_self(params: dict, ctx: dict) -> dict:
     href = el["href"]
     if href.startswith("/"):
         href = urljoin(current, href)
-    passed = _normalize_url_for_canonical(href) == _normalize_url_for_canonical(current)
-    return {
-        "pass": passed,
-        "value": href,
-        "hint": None if passed else f"canonical='{href}' ≠ 현재 URL",
-    }
+
+    # match 기준 (사용자 결정 2026-09-17: 'host' 로 완화)
+    #   host — canonical 이 있고 같은 사이트를 가리키면 통과. 경로 차이는 묻지 않는다.
+    #   path — 경로까지 정확히 일치해야 통과 (구 기준).
+    # 어느 쪽이든 쿼리스트링·프래그먼트·트레일링 슬래시는 무시한다(_normalize 참조).
+    #
+    # 'host' 완화로 통과하게 되는 것: 9/16 실측 434건. 대부분 같은 제품군의 여러
+    # 페이지가 대표 1개를 정본으로 선언한 형태다
+    # (예: /in/.../commercial-dryer/cdt → canonical /in/.../commercial-dryer/rv1).
+    # 사이트 운영상 의도된 정규화일 수 있어 감점하지 않기로 했다.
+    # 여전히 FAIL 인 것: canonical 태그 자체가 없는 336건, 외부 도메인을 가리키는 경우.
+    mode = str(params.get("match", "host")).lower()
+    a, b = _normalize_url_for_canonical(href), _normalize_url_for_canonical(current)
+    if mode == "path":
+        passed = a == b
+        hint = None if passed else f"canonical='{href}' ≠ 현재 URL"
+    else:
+        passed = urlparse(a).netloc == urlparse(b).netloc
+        hint = None if passed else f"canonical='{href}' — 다른 도메인을 가리킵니다"
+    return {"pass": passed, "value": href, "hint": hint}
 
 
 def _eval_mixed_content_zero(params: dict, ctx: dict) -> dict:
