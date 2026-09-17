@@ -7,7 +7,7 @@
       "id": "grp_lg_pl",
       "url_count": 42894,
       "sitemap_url": "https://www.lg.com/pl/sitemap.xml",
-      "last_synced_at": "2026-05-23T00:57:53.390859"
+      "last_synced_at": "2026-09-16T12:00:45.190270"
     },
     {
       "csv_file": "reports/lg_urls_uk.csv",
@@ -10340,7 +10340,7 @@
       "id": "grp_lg_uk",
       "url_count": 10323,
       "sitemap_url": "https://www.lg.com/uk/sitemap.xml",
-      "last_synced_at": "2026-06-03T12:36:07.655468"
+      "last_synced_at": "2026-09-05T12:00:40.906437"
     },
     {
       "csv_file": "reports/lg_urls_de.csv",
@@ -18184,7 +18184,7 @@
       "id": "grp_lg_de",
       "url_count": 7834,
       "sitemap_url": "https://www.lg.com/de/sitemap.xml",
-      "last_synced_at": "2026-06-10T18:39:18.305233"
+      "last_synced_at": "2026-09-06T12:01:09.401243"
     },
     {
       "csv_file": "reports/lg_urls_ru.csv",
@@ -18193,7 +18193,7 @@
       "id": "grp_lg_ru",
       "url_count": 29902,
       "sitemap_url": "https://www.lg.com/ru/sitemap.xml",
-      "last_synced_at": "2026-05-23T00:58:23.599100"
+      "last_synced_at": "2026-09-04T12:00:32.881463"
     },
     {
       "csv_file": "reports/lg_urls_es.csv",
@@ -28283,7 +28283,7 @@
       "id": "grp_lg_es",
       "url_count": 10080,
       "sitemap_url": "https://www.lg.com/es/sitemap.xml",
-      "last_synced_at": "2026-06-03T11:56:03.208290"
+      "last_synced_at": "2026-09-04T12:00:43.008011"
     },
     {
       "csv_file": "reports/lg_urls_in.csv",
@@ -31524,7 +31524,7 @@
       "id": "grp_lg_in",
       "url_count": 3231,
       "sitemap_url": "https://www.lg.com/in/sitemap.xml",
-      "last_synced_at": "2026-06-03T11:56:03.721459"
+      "last_synced_at": "2026-09-05T12:00:00.604983"
     },
     {
       "csv_file": "reports/lg_urls_id.csv",
@@ -36117,7 +36117,7 @@
       "id": "grp_lg_id",
       "url_count": 4583,
       "sitemap_url": "https://www.lg.com/id/sitemap.xml",
-      "last_synced_at": "2026-06-03T11:56:04.563152"
+      "last_synced_at": "2026-09-05T12:00:10.678806"
     },
     {
       "csv_file": "reports/lg_urls_fr.csv",
@@ -44932,7 +44932,7 @@
       "id": "grp_lg_fr",
       "url_count": 8805,
       "sitemap_url": "https://www.lg.com/fr/sitemap.xml",
-      "last_synced_at": "2026-06-03T11:56:04.864978"
+      "last_synced_at": "2026-09-05T12:00:20.746246"
     },
     {
       "csv_file": "reports/lg_urls_it.csv",
@@ -50527,7 +50527,7 @@
       "id": "grp_lg_it",
       "url_count": 5585,
       "sitemap_url": "https://www.lg.com/it/sitemap.xml",
-      "last_synced_at": "2026-06-03T11:56:05.165124"
+      "last_synced_at": "2026-09-05T12:00:30.822934"
     },
     {
       "csv_file": "reports/lg_urls_at.csv",
@@ -50536,7 +50536,7 @@
       "id": "grp_lg_at",
       "url_count": 22561,
       "sitemap_url": "https://www.lg.com/at/sitemap.xml",
-      "last_synced_at": "2026-08-26T12:00:00.458694"
+      "last_synced_at": "2026-09-07T12:00:20.888105"
     },
     {
       "csv_file": "reports/lg_urls_br.csv",
@@ -59685,7 +59685,7 @@
       "id": "grp_lg_br",
       "url_count": 9139,
       "sitemap_url": "https://www.lg.com/br/sitemap.xml",
-      "last_synced_at": "2026-06-10T18:41:05.232763"
+      "last_synced_at": "2026-09-06T12:01:19.554452"
     },
     {
       "csv_file": "reports/lg_urls_pa.csv",
@@ -59694,7 +59694,7 @@
       "id": "grp_lg_pa",
       "url_count": 21264,
       "sitemap_url": "https://www.lg.com/pa/sitemap.xml",
-      "last_synced_at": "2026-08-26T12:00:10.573777"
+      "last_synced_at": "2026-09-07T12:00:31.068737"
     },
     {
       "csv_file": "reports/lg_urls_kz.csv",
@@ -59703,7 +59703,7 @@
       "id": "grp_lg_kz",
       "url_count": 20216,
       "sitemap_url": "https://www.lg.com/kz/sitemap.xml",
-      "last_synced_at": "2026-08-26T12:00:20.737407"
+      "last_synced_at": "2026-09-07T12:00:41.344022"
     },
     {
       "csv_file": "reports/lg_urls_hu.csv",
@@ -59712,7 +59712,7 @@
       "id": "grp_lg_hu",
       "url_count": 20075,
       "sitemap_url": "https://www.lg.com/hu/sitemap.xml",
-      "last_synced_at": "2026-08-26T12:00:30.872163"
+      "last_synced_at": "2026-09-08T12:00:00.689878"
     },
     {
       "csv_file": "reports/lg_urls_cz.csv",
@@ -59721,7 +59721,7 @@
       "id": "grp_lg_cz",
       "url_count": 19988,
       "sitemap_url": "https://www.lg.com/cz/sitemap.xml",
-      "last_synced_at": "2026-08-26T12:00:41.018549"
+      "last_synced_at": "2026-09-08T12:00:10.835083"
     },
     {
       "csv_file": "reports/lg_urls_ec.csv",
@@ -59730,7 +59730,7 @@
       "id": "grp_lg_ec",
       "url_count": 18494,
       "sitemap_url": "https://www.lg.com/ec/sitemap.xml",
-      "last_synced_at": "2026-08-27T12:00:00.532360"
+      "last_synced_at": "2026-09-08T12:00:20.916320"
     },
     {
       "csv_file": "reports/lg_urls_au.csv",
@@ -65153,7 +65153,7 @@
       "id": "grp_lg_au",
       "url_count": 5413,
       "sitemap_url": "https://www.lg.com/au/sitemap.xml",
-      "last_synced_at": "2026-06-10T18:44:37.091365"
+      "last_synced_at": "2026-09-07T12:00:00.630516"
     },
     {
       "csv_file": "reports/lg_urls_se.csv",
@@ -65162,7 +65162,7 @@
       "id": "grp_lg_se",
       "url_count": 17526,
       "sitemap_url": "https://www.lg.com/se/sitemap.xml",
-      "last_synced_at": "2026-08-27T12:00:10.669557"
+      "last_synced_at": "2026-09-08T12:00:31.062337"
     },
     {
       "csv_file": "reports/lg_urls_mx.csv",
@@ -70071,7 +70071,7 @@
       "id": "grp_lg_mx",
       "url_count": 4899,
       "sitemap_url": "https://www.lg.com/mx/sitemap.xml",
-      "last_synced_at": "2026-06-10T18:42:50.939601"
+      "last_synced_at": "2026-09-06T12:01:29.669137"
     },
     {
       "csv_file": "reports/lg_urls_cac.csv",
@@ -70080,7 +70080,7 @@
       "id": "grp_lg_cac",
       "url_count": 17153,
       "sitemap_url": "https://www.lg.com/cac/sitemap.xml",
-      "last_synced_at": "2026-08-27T12:00:20.744858"
+      "last_synced_at": "2026-09-08T12:00:41.144140"
     },
     {
       "csv_file": "reports/lg_urls_pt.csv",
@@ -70089,7 +70089,7 @@
       "id": "grp_lg_pt",
       "url_count": 16393,
       "sitemap_url": "https://www.lg.com/pt/sitemap.xml",
-      "last_synced_at": "2026-08-27T12:00:30.898576"
+      "last_synced_at": "2026-09-09T12:00:02.795311"
     },
     {
       "csv_file": "reports/lg_urls_dk.csv",
@@ -70098,7 +70098,7 @@
       "id": "grp_lg_dk",
       "url_count": 16362,
       "sitemap_url": "https://www.lg.com/dk/sitemap.xml",
-      "last_synced_at": "2026-08-27T12:00:41.058461"
+      "last_synced_at": "2026-09-09T12:00:13.001303"
     },
     {
       "csv_file": "reports/lg_urls_gr.csv",
@@ -70107,7 +70107,7 @@
       "id": "grp_lg_gr",
       "url_count": 15154,
       "sitemap_url": "https://www.lg.com/gr/sitemap.xml",
-      "last_synced_at": "2026-08-28T12:00:00.375348"
+      "last_synced_at": "2026-09-09T12:00:23.074591"
     },
     {
       "csv_file": "reports/lg_urls_th.csv",
@@ -70116,7 +70116,7 @@
       "id": "grp_lg_th",
       "url_count": 14797,
       "sitemap_url": "https://www.lg.com/th/sitemap.xml",
-      "last_synced_at": "2026-08-28T12:00:10.585309"
+      "last_synced_at": "2026-09-09T12:00:33.191830"
     },
     {
       "csv_file": "reports/lg_urls_sg.csv",
@@ -74401,7 +74401,7 @@
       "id": "grp_lg_sg",
       "url_count": 4275,
       "sitemap_url": "https://www.lg.com/sg/sitemap.xml",
-      "last_synced_at": "2026-08-28T12:00:20.903692"
+      "last_synced_at": "2026-09-09T12:00:43.335406"
     },
     {
       "csv_file": "reports/lg_urls_tr.csv",
@@ -74410,7 +74410,7 @@
       "id": "grp_lg_tr",
       "url_count": 14189,
       "sitemap_url": "https://www.lg.com/tr/sitemap.xml",
-      "last_synced_at": "2026-08-28T12:00:31.836067"
+      "last_synced_at": "2026-09-10T12:00:00.710674"
     },
     {
       "csv_file": "reports/lg_urls_ua.csv",
@@ -74419,7 +74419,7 @@
       "id": "grp_lg_ua",
       "url_count": 13813,
       "sitemap_url": "https://www.lg.com/ua/sitemap.xml",
-      "last_synced_at": "2026-08-28T12:00:43.919952"
+      "last_synced_at": "2026-09-10T12:00:10.775761"
     },
     {
       "csv_file": "reports/lg_urls_ae.csv",
@@ -74428,7 +74428,7 @@
       "id": "grp_lg_ae",
       "url_count": 13509,
       "sitemap_url": "https://www.lg.com/ae/sitemap.xml",
-      "last_synced_at": "2026-08-29T12:00:00.652264"
+      "last_synced_at": "2026-09-10T12:00:20.849289"
     },
     {
       "csv_file": "reports/lg_urls_hr.csv",
@@ -74437,7 +74437,7 @@
       "id": "grp_lg_hr",
       "url_count": 13365,
       "sitemap_url": "https://www.lg.com/hr/sitemap.xml",
-      "last_synced_at": "2026-08-29T12:00:10.711795"
+      "last_synced_at": "2026-09-10T12:00:30.929417"
     },
     {
       "csv_file": "reports/lg_urls_vn.csv",
@@ -78830,7 +78830,7 @@
       "id": "grp_lg_vn",
       "url_count": 4383,
       "sitemap_url": "https://www.lg.com/vn/sitemap.xml",
-      "last_synced_at": "2026-06-10T18:46:23.506029"
+      "last_synced_at": "2026-09-07T12:00:10.719816"
     },
     {
       "csv_file": "reports/lg_urls_bg.csv",
@@ -78839,7 +78839,7 @@
       "id": "grp_lg_bg",
       "url_count": 13172,
       "sitemap_url": "https://www.lg.com/bg/sitemap.xml",
-      "last_synced_at": "2026-08-29T12:00:20.790348"
+      "last_synced_at": "2026-09-10T12:00:40.992941"
     },
     {
       "csv_file": "reports/lg_urls_rs.csv",
@@ -78848,7 +78848,7 @@
       "id": "grp_lg_rs",
       "url_count": 13066,
       "sitemap_url": "https://www.lg.com/rs/sitemap.xml",
-      "last_synced_at": "2026-08-29T12:00:30.872036"
+      "last_synced_at": "2026-09-11T12:00:00.637306"
     },
     {
       "csv_file": "reports/lg_urls_il.csv",
@@ -78857,7 +78857,7 @@
       "id": "grp_lg_il",
       "url_count": 12649,
       "sitemap_url": "https://www.lg.com/il/sitemap.xml",
-      "last_synced_at": "2026-08-29T12:00:40.949736"
+      "last_synced_at": "2026-09-11T12:00:10.715806"
     },
     {
       "csv_file": "reports/lg_urls_ee.csv",
@@ -78866,7 +78866,7 @@
       "id": "grp_lg_ee",
       "url_count": 12546,
       "sitemap_url": "https://www.lg.com/ee/sitemap.xml",
-      "last_synced_at": "2026-08-30T12:00:00.729849"
+      "last_synced_at": "2026-09-11T12:00:20.782052"
     },
     {
       "csv_file": "reports/lg_urls_co.csv",
@@ -78875,7 +78875,7 @@
       "id": "grp_lg_co",
       "url_count": 12508,
       "sitemap_url": "https://www.lg.com/co/sitemap.xml",
-      "last_synced_at": "2026-08-30T12:00:10.834985"
+      "last_synced_at": "2026-09-11T12:00:30.878533"
     },
     {
       "csv_file": "reports/lg_urls_lv.csv",
@@ -78884,7 +78884,7 @@
       "id": "grp_lg_lv",
       "url_count": 12354,
       "sitemap_url": "https://www.lg.com/lv/sitemap.xml",
-      "last_synced_at": "2026-08-30T12:00:20.897138"
+      "last_synced_at": "2026-09-11T12:00:40.961765"
     },
     {
       "csv_file": "reports/lg_urls_sk.csv",
@@ -78893,7 +78893,7 @@
       "id": "grp_lg_sk",
       "url_count": 12312,
       "sitemap_url": "https://www.lg.com/sk/sitemap.xml",
-      "last_synced_at": "2026-08-30T12:00:31.009499"
+      "last_synced_at": "2026-09-12T12:00:00.677933"
     },
     {
       "csv_file": "reports/lg_urls_fi.csv",
@@ -78902,7 +78902,7 @@
       "id": "grp_lg_fi",
       "url_count": 12301,
       "sitemap_url": "https://www.lg.com/fi/sitemap.xml",
-      "last_synced_at": "2026-08-30T12:00:41.086110"
+      "last_synced_at": "2026-09-12T12:00:10.741673"
     },
     {
       "csv_file": "reports/lg_urls_pe.csv",
@@ -78911,7 +78911,7 @@
       "id": "grp_lg_pe",
       "url_count": 12293,
       "sitemap_url": "https://www.lg.com/pe/sitemap.xml",
-      "last_synced_at": "2026-08-31T12:00:00.581036"
+      "last_synced_at": "2026-09-12T12:00:20.872475"
     },
     {
       "csv_file": "reports/lg_urls_cl.csv",
@@ -78920,7 +78920,7 @@
       "id": "grp_lg_cl",
       "url_count": 12252,
       "sitemap_url": "https://www.lg.com/cl/sitemap.xml",
-      "last_synced_at": "2026-08-31T12:00:10.685946"
+      "last_synced_at": "2026-09-12T12:00:30.946827"
     },
     {
       "csv_file": "reports/lg_urls_no.csv",
@@ -78929,7 +78929,7 @@
       "id": "grp_lg_no",
       "url_count": 12134,
       "sitemap_url": "https://www.lg.com/no/sitemap.xml",
-      "last_synced_at": "2026-08-31T12:00:20.813125"
+      "last_synced_at": "2026-09-12T12:00:41.054377"
     },
     {
       "csv_file": "reports/lg_urls_tw.csv",
@@ -78938,7 +78938,7 @@
       "id": "grp_lg_tw",
       "url_count": 11368,
       "sitemap_url": "https://www.lg.com/tw/sitemap.xml",
-      "last_synced_at": "2026-08-31T12:00:30.896418"
+      "last_synced_at": "2026-09-13T12:00:00.674317"
     },
     {
       "csv_file": "reports/lg_urls_lt.csv",
@@ -78947,7 +78947,7 @@
       "id": "grp_lg_lt",
       "url_count": 11359,
       "sitemap_url": "https://www.lg.com/lt/sitemap.xml",
-      "last_synced_at": "2026-08-31T12:00:40.971170"
+      "last_synced_at": "2026-09-13T12:00:10.787924"
     },
     {
       "csv_file": "reports/lg_urls_sa.csv",
@@ -78955,7 +78955,8 @@
       "name": "LG Sitemap - sa",
       "id": "grp_lg_sa",
       "url_count": 10929,
-      "sitemap_url": "https://www.lg.com/sa/sitemap.xml"
+      "sitemap_url": "https://www.lg.com/sa/sitemap.xml",
+      "last_synced_at": "2026-09-13T12:00:20.868680"
     },
     {
       "csv_file": "reports/lg_urls_nz.csv",
@@ -78963,7 +78964,8 @@
       "name": "LG Sitemap - nz",
       "id": "grp_lg_nz",
       "url_count": 10925,
-      "sitemap_url": "https://www.lg.com/nz/sitemap.xml"
+      "sitemap_url": "https://www.lg.com/nz/sitemap.xml",
+      "last_synced_at": "2026-09-13T12:00:31.113476"
     },
     {
       "csv_file": "reports/lg_urls_ro.csv",
@@ -78971,7 +78973,8 @@
       "name": "LG Sitemap - ro",
       "id": "grp_lg_ro",
       "url_count": 10855,
-      "sitemap_url": "https://www.lg.com/ro/sitemap.xml"
+      "sitemap_url": "https://www.lg.com/ro/sitemap.xml",
+      "last_synced_at": "2026-09-13T12:00:41.261949"
     },
     {
       "csv_file": "reports/lg_urls_my.csv",
@@ -78979,7 +78982,8 @@
       "name": "LG Sitemap - my",
       "id": "grp_lg_my",
       "url_count": 10130,
-      "sitemap_url": "https://www.lg.com/my/sitemap.xml"
+      "sitemap_url": "https://www.lg.com/my/sitemap.xml",
+      "last_synced_at": "2026-09-14T12:00:00.306411"
     },
     {
       "csv_file": "reports/lg_urls_ph.csv",
@@ -78987,7 +78991,8 @@
       "name": "LG Sitemap - ph",
       "id": "grp_lg_ph",
       "url_count": 9736,
-      "sitemap_url": "https://www.lg.com/ph/sitemap.xml"
+      "sitemap_url": "https://www.lg.com/ph/sitemap.xml",
+      "last_synced_at": "2026-09-14T12:00:10.506250"
     },
     {
       "csv_file": "reports/lg_urls_cn.csv",
@@ -78995,7 +79000,8 @@
       "name": "LG Sitemap - cn",
       "id": "grp_lg_cn",
       "url_count": 9645,
-      "sitemap_url": "https://www.lg.com/cn/sitemap.xml"
+      "sitemap_url": "https://www.lg.com/cn/sitemap.xml",
+      "last_synced_at": "2026-09-14T12:00:20.580083"
     },
     {
       "csv_file": "reports/lg_urls_hk.csv",
@@ -79003,7 +79009,8 @@
       "name": "LG Sitemap - hk",
       "id": "grp_lg_hk",
       "url_count": 9415,
-      "sitemap_url": "https://www.lg.com/hk/sitemap.xml"
+      "sitemap_url": "https://www.lg.com/hk/sitemap.xml",
+      "last_synced_at": "2026-09-14T12:00:30.799447"
     },
     {
       "csv_file": "reports/lg_urls_uz.csv",
@@ -79011,7 +79018,8 @@
       "name": "LG Sitemap - uz",
       "id": "grp_lg_uz",
       "url_count": 9318,
-      "sitemap_url": "https://www.lg.com/uz/sitemap.xml"
+      "sitemap_url": "https://www.lg.com/uz/sitemap.xml",
+      "last_synced_at": "2026-09-14T12:00:40.879960"
     },
     {
       "csv_file": "reports/lg_urls_jp.csv",
@@ -79019,7 +79027,8 @@
       "name": "LG Sitemap - jp",
       "id": "grp_lg_jp",
       "url_count": 8732,
-      "sitemap_url": "https://www.lg.com/jp/sitemap.xml"
+      "sitemap_url": "https://www.lg.com/jp/sitemap.xml",
+      "last_synced_at": "2026-09-15T12:00:02.686198"
     },
     {
       "csv_file": "reports/lg_urls_bd.csv",
@@ -79027,7 +79036,8 @@
       "name": "LG Sitemap - bd",
       "id": "grp_lg_bd",
       "url_count": 7907,
-      "sitemap_url": "https://www.lg.com/bd/sitemap.xml"
+      "sitemap_url": "https://www.lg.com/bd/sitemap.xml",
+      "last_synced_at": "2026-09-15T12:00:12.777416"
     },
     {
       "csv_file": "reports/lg_urls_ir.csv",
@@ -79035,7 +79045,8 @@
       "name": "LG Sitemap - ir",
       "id": "grp_lg_ir",
       "url_count": 7365,
-      "sitemap_url": "https://www.lg.com/ir/sitemap.xml"
+      "sitemap_url": "https://www.lg.com/ir/sitemap.xml",
+      "last_synced_at": "2026-09-15T12:00:22.846523"
     },
     {
       "csv_file": "reports/lg_urls_ma.csv",
@@ -79043,7 +79054,8 @@
       "name": "LG Sitemap - ma",
       "id": "grp_lg_ma",
       "url_count": 6695,
-      "sitemap_url": "https://www.lg.com/ma/sitemap.xml"
+      "sitemap_url": "https://www.lg.com/ma/sitemap.xml",
+      "last_synced_at": "2026-09-15T12:00:33.369648"
     },
     {
       "csv_file": "reports/lg_urls_tn.csv",
@@ -79051,7 +79063,8 @@
       "name": "LG Sitemap - tn",
       "id": "grp_lg_tn",
       "url_count": 6593,
-      "sitemap_url": "https://www.lg.com/tn/sitemap.xml"
+      "sitemap_url": "https://www.lg.com/tn/sitemap.xml",
+      "last_synced_at": "2026-09-15T12:00:43.818360"
     },
     {
       "csv_file": "reports/lg_urls_ar.csv",
@@ -79059,7 +79072,8 @@
       "name": "LG Sitemap - ar",
       "id": "grp_lg_ar",
       "url_count": 6472,
-      "sitemap_url": "https://www.lg.com/ar/sitemap.xml"
+      "sitemap_url": "https://www.lg.com/ar/sitemap.xml",
+      "last_synced_at": "2026-09-16T12:00:04.530416"
     },
     {
       "csv_file": "reports/lg_urls_lk.csv",
@@ -79067,7 +79081,8 @@
       "name": "LG Sitemap - lk",
       "id": "grp_lg_lk",
       "url_count": 5996,
-      "sitemap_url": "https://www.lg.com/lk/sitemap.xml"
+      "sitemap_url": "https://www.lg.com/lk/sitemap.xml",
+      "last_synced_at": "2026-09-16T12:00:14.670742"
     },
     {
       "csv_file": "reports/lg_urls_np.csv",
@@ -79075,7 +79090,8 @@
       "name": "LG Sitemap - np",
       "id": "grp_lg_np",
       "url_count": 5910,
-      "sitemap_url": "https://www.lg.com/np/sitemap.xml"
+      "sitemap_url": "https://www.lg.com/np/sitemap.xml",
+      "last_synced_at": "2026-09-16T12:00:24.743758"
     },
     {
       "csv_file": "reports/lg_urls_dz.csv",
@@ -79083,7 +79099,8 @@
       "name": "LG Sitemap - dz",
       "id": "grp_lg_dz",
       "url_count": 2706,
-      "sitemap_url": "https://www.lg.com/dz/sitemap.xml"
+      "sitemap_url": "https://www.lg.com/dz/sitemap.xml",
+      "last_synced_at": "2026-09-16T12:00:34.823286"
     },
     {
       "id": "grp_lg_us",
@@ -79092,8 +79109,9 @@
         "https://www.lg.com/us",
         "https://www.lg.com/us/4-door-refrigerator-buying-guide",
         "https://www.lg.com/us/4k-monitors",
+        "https://www.lg.com/us/4k-monitors/lg-32u990a-s-32up83ak-w-reference-and-studio-collection",
+        "https://www.lg.com/us/4k-monitors/lg-32up83ak-w-27us550-w-coding-and-productivity-collection",
         "https://www.lg.com/us/8k-tvs",
-        "https://www.lg.com/us/ai-tv-with-advanced-ai-experience",
         "https://www.lg.com/us/air-care-accessories",
         "https://www.lg.com/us/air-care-solutions/lg-AS401VGA1",
         "https://www.lg.com/us/air-care-solutions/lg-UD701KOG1",
@@ -79327,6 +79345,7 @@
         "https://www.lg.com/us/air-purifiers/lg-as351gw30-air-purifier",
         "https://www.lg.com/us/air-purifiers/lg-as560dwr0-air-purifier",
         "https://www.lg.com/us/air-purifiers/lg-as601hbb0-air-purifier",
+        "https://www.lg.com/us/air-purifiers/lg-as601hhb0-air-purifier",
         "https://www.lg.com/us/air-purifiers/lg-as601hwa0-air-purifier",
         "https://www.lg.com/us/air-purifiers/lg-u10cs1c-air-purifier",
         "https://www.lg.com/us/air-purifiers/lg-u10cs1h-air-purifier",
@@ -79337,6 +79356,7 @@
         "https://www.lg.com/us/appliance-accessories",
         "https://www.lg.com/us/appliance-accessories/lg-5006ea3009b-pulsator-plate-cap",
         "https://www.lg.com/us/appliance-accessories/lg-5006en3015a-drain-hose-cap",
+        "https://www.lg.com/us/appliance-accessories/lg-6913w1n002c-range-oven-lamp",
         "https://www.lg.com/us/appliance-accessories/lg-D4AN081ECC0BUAAWAA-retrofit-downlight",
         "https://www.lg.com/us/appliance-accessories/lg-D4AN082ECC0BUAAWAA-retrofit-downlight",
         "https://www.lg.com/us/appliance-accessories/lg-D5AN111ECC0BUAAWAA-led-retrofit-downlight",
@@ -79353,19 +79373,49 @@
         "https://www.lg.com/us/appliance-accessories/lg-LH70835BHA1BUAAWAA-high-bay",
         "https://www.lg.com/us/appliance-accessories/lg-LP12D730F0AB00GSU0-par",
         "https://www.lg.com/us/appliance-accessories/lg-LP12D830F0WB80WSU0-par",
+        "https://www.lg.com/us/appliance-accessories/lg-aap73252202-refrigerator-door-bin",
+        "https://www.lg.com/us/appliance-accessories/lg-aap74271311-refrigerator-door-bin",
+        "https://www.lg.com/us/appliance-accessories/lg-aap74271317-refrigerator-door-bin",
+        "https://www.lg.com/us/appliance-accessories/lg-aap74271331-refrigerator-door-bin",
+        "https://www.lg.com/us/appliance-accessories/lg-acq30341202-refrigerator-drawer-cover",
+        "https://www.lg.com/us/appliance-accessories/lg-acq30341206-refrigerator-drawer-cover",
+        "https://www.lg.com/us/appliance-accessories/lg-acq86486001-refrigerator-drawer-cover",
+        "https://www.lg.com/us/appliance-accessories/lg-acq86594202-refrigerator-drawer-cover",
+        "https://www.lg.com/us/appliance-accessories/lg-aeb74484705-range-grate",
+        "https://www.lg.com/us/appliance-accessories/lg-aeb75304604-range-grate",
         "https://www.lg.com/us/appliance-accessories/lg-aee73189701-styler-pants-hanger",
+        "https://www.lg.com/us/appliance-accessories/lg-aez74073401-range-knob",
+        "https://www.lg.com/us/appliance-accessories/lg-aez74533301-range-knob",
+        "https://www.lg.com/us/appliance-accessories/lg-aez74533306-range-knob",
+        "https://www.lg.com/us/appliance-accessories/lg-aez74533311-range-control-knob",
+        "https://www.lg.com/us/appliance-accessories/lg-aez75853755-range-knob",
+        "https://www.lg.com/us/appliance-accessories/lg-aez75853756-range-knob",
         "https://www.lg.com/us/appliance-accessories/lg-agf79600805-styler-kids-hanger",
         "https://www.lg.com/us/appliance-accessories/lg-agf79600809-styler-round-hanger",
         "https://www.lg.com/us/appliance-accessories/lg-agf79600816-styler-blanket-hanger",
         "https://www.lg.com/us/appliance-accessories/lg-agl75172632-dishwasher-control-panel",
         "https://www.lg.com/us/appliance-accessories/lg-ajl74011902-styler-water-tank",
         "https://www.lg.com/us/appliance-accessories/lg-ajl74012002-styler-water-tank",
+        "https://www.lg.com/us/appliance-accessories/lg-ajp72909821-refrigerator-drawer-tray",
+        "https://www.lg.com/us/appliance-accessories/lg-ajp72909828-refrigerator-drawer-tray",
+        "https://www.lg.com/us/appliance-accessories/lg-ajp73334611-refrigerator-drawer-tray",
+        "https://www.lg.com/us/appliance-accessories/lg-ajp73334635-refrigerator-drawer-tray",
+        "https://www.lg.com/us/appliance-accessories/lg-ajp75235113-refrigerator-drawer-tray",
+        "https://www.lg.com/us/appliance-accessories/lg-ajp76427705-refrigerator-drawer-tray",
+        "https://www.lg.com/us/appliance-accessories/lg-akc73249305-refrigerator-ice-bucket",
+        "https://www.lg.com/us/appliance-accessories/lg-akc73369912-refrigerator-ice-bucket",
+        "https://www.lg.com/us/appliance-accessories/lg-man62750201-refrigerator-door-bin",
+        "https://www.lg.com/us/appliance-accessories/lg-man63948504-refrigerator-door-bin",
+        "https://www.lg.com/us/appliance-accessories/lg-mhl63411409-range-oven-rack",
+        "https://www.lg.com/us/appliance-accessories/lg-mhl64891809-range-oven-shelf",
+        "https://www.lg.com/us/appliances-accessories/lg-3390w1g006b-microwave-glass-tray",
         "https://www.lg.com/us/appliances-accessories/lg-3391jj2018d-refrigerator-deli-drawer",
         "https://www.lg.com/us/appliances-accessories/lg-3550el2004b-lint-filter-guide",
         "https://www.lg.com/us/appliances-accessories/lg-3750el0001c-top-load-dryer-rack",
         "https://www.lg.com/us/appliances-accessories/lg-3750el1001a-front-load-dryer-rack",
         "https://www.lg.com/us/appliances-accessories/lg-3750el1001f-front-load-dryer-rack",
-        "https://www.lg.com/us/appliances-accessories/lg-383eel3002d-gas-dryer-nozzle",
+        "https://www.lg.com/us/appliances-accessories/lg-383eel3002q-dryer-lint-filter",
+        "https://www.lg.com/us/appliances-accessories/lg-383eel3002r-gas-dryer-nozzle",
         "https://www.lg.com/us/appliances-accessories/lg-383eel9001l-dryer-side-vent-kit",
         "https://www.lg.com/us/appliances-accessories/lg-383eer2001a-washer-filter-pump",
         "https://www.lg.com/us/appliances-accessories/lg-3911ez9131x-dryer-side-vent",
@@ -79377,6 +79427,7 @@
         "https://www.lg.com/us/appliances-accessories/lg-5230w1a003a-microwave-filter",
         "https://www.lg.com/us/appliances-accessories/lg-5230w1a011e-microwave-filter",
         "https://www.lg.com/us/appliances-accessories/lg-5230w1a012b-microwave-grease-filter",
+        "https://www.lg.com/us/appliances-accessories/lg-5230w1a012e-microwave-grease-filter",
         "https://www.lg.com/us/appliances-accessories/lg-5230w1a012g-microwave-filter",
         "https://www.lg.com/us/appliances-accessories/lg-5231el1001c-dryer-lint-filter",
         "https://www.lg.com/us/appliances-accessories/lg-5231el1003b-dryer-lint-filter",
@@ -79408,8 +79459,10 @@
         "https://www.lg.com/us/appliances-accessories/lg-abn73019101-filter-bypass-plug",
         "https://www.lg.com/us/appliances-accessories/lg-abq73503004-washer-case-assembly",
         "https://www.lg.com/us/appliances-accessories/lg-acq30341209-drawer-cover",
+        "https://www.lg.com/us/appliances-accessories/lg-acq30506001-refrigerator-cover",
         "https://www.lg.com/us/appliances-accessories/lg-acw74118101-refrigerator-shelf",
         "https://www.lg.com/us/appliances-accessories/lg-acz72910401-washer-bleach-replacement-dispenser",
+        "https://www.lg.com/us/appliances-accessories/lg-adq55998601-dryer-lint-filter",
         "https://www.lg.com/us/appliances-accessories/lg-adq56656401-dryer-lint-filter",
         "https://www.lg.com/us/appliances-accessories/lg-adq73373201-dryer-lint-filter",
         "https://www.lg.com/us/appliances-accessories/lg-adq74773921-replacement-vacuum-filter",
@@ -79417,6 +79470,8 @@
         "https://www.lg.com/us/appliances-accessories/lg-adq74773923-replacement-vacuum-filter",
         "https://www.lg.com/us/appliances-accessories/lg-adq74774002-vacuum-pre-filter",
         "https://www.lg.com/us/appliances-accessories/lg-adq75393701-vacuum-pre-filter",
+        "https://www.lg.com/us/appliances-accessories/lg-adq75806406-dryer-lint-filter",
+        "https://www.lg.com/us/appliances-accessories/lg-adq75806417-dryer-lint-filter",
         "https://www.lg.com/us/appliances-accessories/lg-aeb72914208-range-griddle",
         "https://www.lg.com/us/appliances-accessories/lg-aeb72914210-range-griddle",
         "https://www.lg.com/us/appliances-accessories/lg-aeb73545801-left-grille",
@@ -79427,6 +79482,7 @@
         "https://www.lg.com/us/appliances-accessories/lg-aed37082916-refrigerator-door-handle",
         "https://www.lg.com/us/appliances-accessories/lg-aed37082970-refrigerator-door-handle",
         "https://www.lg.com/us/appliances-accessories/lg-aed37133117-refrigerator-freezer-door-handle",
+        "https://www.lg.com/us/appliances-accessories/lg-aed75493802-refrigerator-door-handle",
         "https://www.lg.com/us/appliances-accessories/lg-aee73009506-hanger",
         "https://www.lg.com/us/appliances-accessories/lg-aem69493803-dishwasher-drain-hose-assembly",
         "https://www.lg.com/us/appliances-accessories/lg-aem73732901-washer-drain-hose",
@@ -79444,6 +79500,9 @@
         "https://www.lg.com/us/appliances-accessories/lg-aez74073405-gas-range-knob",
         "https://www.lg.com/us/appliances-accessories/lg-aez74293304-range-knob",
         "https://www.lg.com/us/appliances-accessories/lg-aez74533305-gas-range-knob",
+        "https://www.lg.com/us/appliances-accessories/lg-aez74533343-range-control-knob",
+        "https://www.lg.com/us/appliances-accessories/lg-aez75853757-range-control-knob",
+        "https://www.lg.com/us/appliances-accessories/lg-aez75853758-range-control-knob",
         "https://www.lg.com/us/appliances-accessories/lg-aez75994628-gas-range-knob",
         "https://www.lg.com/us/appliances-accessories/lg-aez75994629-range-knob",
         "https://www.lg.com/us/appliances-accessories/lg-aez75994630-gas-range-knob",
@@ -79475,6 +79534,7 @@
         "https://www.lg.com/us/appliances-accessories/lg-agm73269501-inlet-valve-screen",
         "https://www.lg.com/us/appliances-accessories/lg-agm73812501-microwave-outer-panel",
         "https://www.lg.com/us/appliances-accessories/lg-agm75471427-washer-filter-pump",
+        "https://www.lg.com/us/appliances-accessories/lg-agm75510732-dryer-filter-set",
         "https://www.lg.com/us/appliances-accessories/lg-ahb32983761-dishwasher-upper-rack",
         "https://www.lg.com/us/appliances-accessories/lg-ahb34434803-dishwasher-third-level-rack",
         "https://www.lg.com/us/appliances-accessories/lg-ahb72909101-dishwasher-rack",
@@ -79504,16 +79564,20 @@
         "https://www.lg.com/us/appliances-accessories/lg-ahb73249231-dishwasher-upper-rack",
         "https://www.lg.com/us/appliances-accessories/lg-ahb73249233-dishwasher-upper-rack",
         "https://www.lg.com/us/appliances-accessories/lg-ahb73249237-dishwasher-upper-rack",
+        "https://www.lg.com/us/appliances-accessories/lg-aht54382601-gliding-oven-rack",
         "https://www.lg.com/us/appliances-accessories/lg-aht72996107-refrigerator-shelf",
         "https://www.lg.com/us/appliances-accessories/lg-aht73514301-refrigerator-shelf",
         "https://www.lg.com/us/appliances-accessories/lg-aht74173802-gliding-oven-rack",
         "https://www.lg.com/us/appliances-accessories/lg-aht74173805-range-gliding-rack",
         "https://www.lg.com/us/appliances-accessories/lg-aiot-bag",
+        "https://www.lg.com/us/appliances-accessories/lg-ajl75131905-washer-detergent-tank",
         "https://www.lg.com/us/appliances-accessories/lg-ajp73334413-refrigerator-vegetable-tray",
         "https://www.lg.com/us/appliances-accessories/lg-ajp73334415-refrigerator-drawer-tray",
+        "https://www.lg.com/us/appliances-accessories/lg-ajp73816204-refrigerator-room-tray",
         "https://www.lg.com/us/appliances-accessories/lg-ajp73874601-glide-n-slide-tray",
         "https://www.lg.com/us/appliances-accessories/lg-ajp75234921-refrigerator-drawer-tray",
         "https://www.lg.com/us/appliances-accessories/lg-ajp75234925-refrigerator-vegetable-tray",
+        "https://www.lg.com/us/appliances-accessories/lg-akc72949312-refrigerator-ice-bucket",
         "https://www.lg.com/us/appliances-accessories/lg-akn73029001-filter-head",
         "https://www.lg.com/us/appliances-accessories/lg-cov31735401-air-conditioner-duct",
         "https://www.lg.com/us/appliances-accessories/lg-eac63382204-stick-vacuum-battery",
@@ -79570,7 +79634,11 @@
         "https://www.lg.com/us/appliances-accessories/lg-man64890501-refrigerator-door-bin",
         "https://www.lg.com/us/appliances-accessories/lg-man64890701-refrigerator-door-bin",
         "https://www.lg.com/us/appliances-accessories/lg-maz61859001-range-anti-tip-kit",
+        "https://www.lg.com/us/appliances-accessories/lg-mbe62002902-surface-burner",
+        "https://www.lg.com/us/appliances-accessories/lg-mbe62162902-surface-burner",
+        "https://www.lg.com/us/appliances-accessories/lg-mbe62284302-surface-burner-cap",
         "https://www.lg.com/us/appliances-accessories/lg-mbe62423801-surface-burner",
+        "https://www.lg.com/us/appliances-accessories/lg-mbe62424001-surface-burner",
         "https://www.lg.com/us/appliances-accessories/lg-mbe62424101-range-burner-head",
         "https://www.lg.com/us/appliances-accessories/lg-mck49049101-dryer-lint-screen-cover",
         "https://www.lg.com/us/appliances-accessories/lg-mck68474102-rear-cover",
@@ -79602,6 +79670,8 @@
         "https://www.lg.com/us/appliances-accessories/lg-petk1w-dryer-lint-filter",
         "https://www.lg.com/us/appliances-accessories/lg-pfpaaa01-pre-filter",
         "https://www.lg.com/us/appliances-accessories/lg-pfpaca01-pre-filter",
+        "https://www.lg.com/us/appliances-accessories/lg-pfscta01-replacement-filter",
+        "https://www.lg.com/us/appliances-accessories/lg-pfshtc01-replacement-filter",
         "https://www.lg.com/us/appliances-accessories/lg-pfshwc01-replacement-filter",
         "https://www.lg.com/us/appliances-accessories/lg-pfsptc01-air-purifier-replacement-filter",
         "https://www.lg.com/us/appliances-accessories/lg-pfspwc01-replacement-filter",
@@ -79626,6 +79696,7 @@
         "https://www.lg.com/us/appliances-accessories/lg-wdp6v-pedestal-storage-drawer",
         "https://www.lg.com/us/appliances-accessories/lg-wdp6w-pedestal-storage-drawer",
         "https://www.lg.com/us/appliances-accessories/lg-wdp8b-pedestal-storage-drawer",
+        "https://www.lg.com/us/appliances-accessories/lg-wdp8p-pedestal-storage-drawer",
         "https://www.lg.com/us/appliances-accessories/lg-wdps1b-laundry-pedestal-riser",
         "https://www.lg.com/us/appliances-accessories/lg-wdps1w-laundry-pedestal-riser",
         "https://www.lg.com/us/appliances-accessories/lg-wdps2b-laundry-pedestal-riser",
@@ -79783,6 +79854,7 @@
         "https://www.lg.com/us/business/press-release/annual-lg-tech-tober-fest-returns-to-newly-remodeled-chicago-business-innovation-center-business",
         "https://www.lg.com/us/business/press-release/apple-airplay-launches-on-lg-hotel-tvs-at-select-ihg-hotels-and-resorts",
         "https://www.lg.com/us/business/press-release/bacher-joins-lg-business-solutions-as-head-of-marketing",
+        "https://www.lg.com/us/business/press-release/connected-edtech-solutions-from-lg-electronics-usa-define-the-future-of-learning-at-iste-live-2026",
         "https://www.lg.com/us/business/press-release/discoveryplus-now-available-on-lg-smart-tvs-in-us",
         "https://www.lg.com/us/business/press-release/double-black-imaging-and-lg-collaborate-on-cutting-edge-display-systems-for-us-medical-imaging-market",
         "https://www.lg.com/us/business/press-release/hotel-tvs-lg-channels",
@@ -79820,6 +79892,7 @@
         "https://www.lg.com/us/business/press-release/lg-commercial-display-technologies-amplify-engagement-at-anytime-fitness",
         "https://www.lg.com/us/business/press-release/lg-commercial-displays-earn-top-rating-b2b-sustainability-assessment-program",
         "https://www.lg.com/us/business/press-release/lg-commercial-displays-earn-top-rating-in-b2b-sustainability-assessment-program",
+        "https://www.lg.com/us/business/press-release/lg-commercial-laundry-makes-hitec-debut-with-guest-centric-laundry-and-garment-care-solutions",
         "https://www.lg.com/us/business/press-release/lg-creates-realworld-environments-to-highlight-new-technologies-at-infocomm-2022",
         "https://www.lg.com/us/business/press-release/lg-debuts-31-5-inch-4k-mini-led-surgical-monitor-with-intelligent-workflow-features-and-superior-imaging",
         "https://www.lg.com/us/business/press-release/lg-debuts-ai-powered-door-type-service-robot-for-hospitality-and-healthcare",
@@ -79836,15 +79909,22 @@
         "https://www.lg.com/us/business/press-release/lg-electronics-earns-top-rating-in-mindclick-sustainability-assessment-program-for-marriott",
         "https://www.lg.com/us/business/press-release/lg-electronics-launches-ultra-low-power-lg-e-paper-display-for-commercial-spaces",
         "https://www.lg.com/us/business/press-release/lg-electronics-to-enter-us-ev-charging-market-with-line-of-owner-operated-ac-and-dc-chargers",
+        "https://www.lg.com/us/business/press-release/lg-electronics-unveils-40-inch-ultrawide-diagnostic-monitor-with-fda-clearance",
         "https://www.lg.com/us/business/press-release/lg-electronics-usa-debuts-next-gen-oled-pro-monitor-for-broadcast-virtual-production-and-av-workflows",
+        "https://www.lg.com/us/business/press-release/lg-electronics-usa-introduces-new-lg-gram-business-laptop-lineup",
+        "https://www.lg.com/us/business/press-release/lg-electronics-usa-launches-b2b-financing-service-for-commercial-display-solutions",
         "https://www.lg.com/us/business/press-release/lg-electronics-usa-launches-dvled-installation-service",
+        "https://www.lg.com/us/business/press-release/lg-electronics-usa-named-proud-partner-of-defending-world-champion-los-angeles-dodgers",
+        "https://www.lg.com/us/business/press-release/lg-electronics-usa-showcases-solutions-beyond-displays-at-hitec-2026",
         "https://www.lg.com/us/business/press-release/lg-electronics-usa-supports-new-us-cyber-trust-mark-program",
+        "https://www.lg.com/us/business/press-release/lg-electronics-usa-unveils-pro-centric-cloud-to-enhance-hotel-operations-and-guest-experience",
         "https://www.lg.com/us/business/press-release/lg-expands-chicago-business-innovation-center-to-increase-engagement-with-resellers-and-end-customers",
         "https://www.lg.com/us/business/press-release/lg-expands-commercial-probeam-projector-line-with-new-4k-uhd-short-throw-projector",
         "https://www.lg.com/us/business/press-release/lg-expands-diagnostic-medical-monitor-line-with-new-12-megapixel-multimodality-display",
         "https://www.lg.com/us/business/press-release/lg-expands-ed-tech-ambassador-initiatives-marks-first-anniversary-of-lg-educators-program",
         "https://www.lg.com/us/business/press-release/lg-expands-integrated-casting-capability-to-hundreds-of-thousands-of-existing-hotel-tv-devices-cd",
         "https://www.lg.com/us/business/press-release/lg-expands-its-education-ecosystem-with-new-createboard-at-fetc-2026",
+        "https://www.lg.com/us/business/press-release/lg-expands-lg-pro-with-integrated-solutions-new-sales-organization-and-enhanced-partner-experience",
         "https://www.lg.com/us/business/press-release/lg-expands-market-for-affordable-4k-uhd-digital-signage-displays-with-two-new-series",
         "https://www.lg.com/us/business/press-release/lg-expands-suite-of-health-protocol-solutions-turnkey-packages-for-reopening-businesses",
         "https://www.lg.com/us/business/press-release/lg-fetc-2025",
@@ -79860,6 +79940,7 @@
         "https://www.lg.com/us/business/press-release/lg-hospitality-tv-technology-poised-to-transform-vacation-rental-market",
         "https://www.lg.com/us/business/press-release/lg-hotel-tvs-google-cast-airplay-cloi-robots-dvled-displays-ev-chargers-featured-at-hitec-2024",
         "https://www.lg.com/us/business/press-release/lg-improves-pixel-pitch-for-transparent-color-led-film-displays",
+        "https://www.lg.com/us/business/press-release/lg-infocomm-dvled",
         "https://www.lg.com/us/business/press-release/lg-innovations-previewed-at-rsna-2022",
         "https://www.lg.com/us/business/press-release/lg-interactive-displays-designed-for-maximum-versatility-in-post-pandemic-classrooms",
         "https://www.lg.com/us/business/press-release/lg-introduces-dozens-of-led-signage-models",
@@ -79914,6 +79995,7 @@
         "https://www.lg.com/us/business/press-release/lg-showcases-high-end-technology-designed-for-the-high-seas-at-seatrade-cruise-global-2024",
         "https://www.lg.com/us/business/press-release/lg-shows-future-of-cruiseready-digital-displays-at-seatrade-cruise-global-2022",
         "https://www.lg.com/us/business/press-release/lg-smart-tvs-now-feature-auto-switching-filmmaker-mode-prime-video-content",
+        "https://www.lg.com/us/business/press-release/lg-solutions-beyond-displays-infocomm-2026",
         "https://www.lg.com/us/business/press-release/lg-studio-series-dvled-displays-make-virtual-production-accessible-to-corporate-marketers",
         "https://www.lg.com/us/business/press-release/lg-supercharges-classroom-flexibility-with-new-free-lg-createboard-prep-software",
         "https://www.lg.com/us/business/press-release/lg-supplies-massive-commercial-display-solutions-to-boston-red-sox-ballpark",
@@ -79930,6 +80012,7 @@
         "https://www.lg.com/us/business/press-release/lg-topgolf-entertainment-groups-digital-display-transformation-changes-face-of-large-venue-entertainment",
         "https://www.lg.com/us/business/press-release/lg-transparent-oled-touch-display-elevates-engagement",
         "https://www.lg.com/us/business/press-release/lg-transportation-summit-unlocks-insights-that-help-enhance-the-passenger-experience",
+        "https://www.lg.com/us/business/press-release/lg-ultra-stretch-all-in-one-dvled-display",
         "https://www.lg.com/us/business/press-release/lg-unveils-advanced-new-automated-warehouse-robots",
         "https://www.lg.com/us/business/press-release/lg-unveils-expanded-2017-digital-signage-portfolio-introduces-new-lg-oled-led-digital-signage",
         "https://www.lg.com/us/business/press-release/lg-unveils-google-compatible-classroom-solutions-at-istelive-24",
@@ -79965,6 +80048,7 @@
         "https://www.lg.com/us/business/press-release/new-lg-ir-based-uhd-interactive-digital-boards-broaden-adoption-in-corporate-and-higher-ed-markets",
         "https://www.lg.com/us/business/press-release/new-lightweight-lg-gram-laptops-maximize-performance-for-small-and-medium-sized-businesses",
         "https://www.lg.com/us/business/press-release/pro-centric-stay-vrma",
+        "https://www.lg.com/us/business/press-release/public-safety-technology-alliance-spotlights-future-of-integrated-mission-critical-operations",
         "https://www.lg.com/us/business/press-release/uslg-level-3-dc-charger",
         "https://www.lg.com/us/cell-phones/discontinued",
         "https://www.lg.com/us/cell-phones/lg-M257-harmony",
@@ -79972,9 +80056,6 @@
         "https://www.lg.com/us/cell-phones/lg-lmg900um1aag3ayy-att-velvet-5g",
         "https://www.lg.com/us/cell-phones/lg-lmv600vmlavrzcb-verizon-v60-thinq-5g",
         "https://www.lg.com/us/ces",
-        "https://www.lg.com/us/ces-2025-lg-signature",
-        "https://www.lg.com/us/ces2025",
-        "https://www.lg.com/us/checkout/cart",
         "https://www.lg.com/us/collections/14-inch-laptops",
         "https://www.lg.com/us/collections/15-inch-laptops",
         "https://www.lg.com/us/collections/16-inch-laptops",
@@ -79996,7 +80077,6 @@
         "https://www.lg.com/us/collections/ips-monitors",
         "https://www.lg.com/us/collections/kitchen-appliance-deals",
         "https://www.lg.com/us/collections/lg-studio-appliances",
-        "https://www.lg.com/us/collections/members-only-pricing",
         "https://www.lg.com/us/collections/new-lg-laptops-2026",
         "https://www.lg.com/us/collections/partner-computer-gaming-accessories",
         "https://www.lg.com/us/collections/sound-bars-with-subwoofer",
@@ -80415,8 +80495,10 @@
         "https://www.lg.com/us/cooking-appliances/lg-signature-hceu3039x-wall-mount-chimney-hood",
         "https://www.lg.com/us/cooking-appliances/lg-signature-hceu3639x-wall-mount-chimney-hood",
         "https://www.lg.com/us/cooking-appliances/lg-signature-lpgu6319y-slide-in-gas-range",
+        "https://www.lg.com/us/cooking-appliances/lg-signature-lsgu6338n-gas-slide-in-range",
         "https://www.lg.com/us/cooking-appliances/lg-signature-lsgu6339x-gas-range-with-ai-camera",
         "https://www.lg.com/us/cooking-appliances/lg-signature-lsiu6339xe-slide-in-induction-range",
+        "https://www.lg.com/us/cooking-appliances/lg-signature-mheu1738n-over-the-range-microwave",
         "https://www.lg.com/us/cooking-appliances/lg-signature-mheu1738x-over-the-range-microwave",
         "https://www.lg.com/us/cooking-appliances/lg-wcep6423d-combo-wall-oven",
         "https://www.lg.com/us/cooking-appliances/lg-wcep6423f-combo-wall-oven",
@@ -80440,20 +80522,21 @@
         "https://www.lg.com/us/craft-ice-refrigerators",
         "https://www.lg.com/us/custom-installation",
         "https://www.lg.com/us/dehumidifiers",
+        "https://www.lg.com/us/dehumidifiers/lg-dt251bkr0-25-pint-dehumidifier",
+        "https://www.lg.com/us/dehumidifiers/lg-dt351bkr0-35-pint-dehumidifier",
         "https://www.lg.com/us/dehumidifiers/lg-dt501bkr0-50-pint-dehumidifier",
+        "https://www.lg.com/us/dehumidifiers/lg-dt501bwr0-50-pint-dehumidifier",
         "https://www.lg.com/us/dehumidifiers/lg-ld301el-30-pint-dehumidifier",
         "https://www.lg.com/us/dehumidifiers/lg-ud501kog5-50-pint-dehumidifier",
         "https://www.lg.com/us/dehumidifiers/lg-ud501koj5-50-pint-dehumidifier",
         "https://www.lg.com/us/discount-programs",
-        "https://www.lg.com/us/discover-cinebeam-q-projector",
+        "https://www.lg.com/us/discover-accessories-and-parts",
         "https://www.lg.com/us/discover-cooking-appliances",
         "https://www.lg.com/us/discover-dishwashers",
         "https://www.lg.com/us/discover-laundry",
         "https://www.lg.com/us/discover-mycolor-refrigerator",
-        "https://www.lg.com/us/discover-oled-tvs",
         "https://www.lg.com/us/discover-puricare-air-care",
         "https://www.lg.com/us/discover-smart-monitors",
-        "https://www.lg.com/us/discover-tvs",
         "https://www.lg.com/us/discover-ultragear-evo-monitors",
         "https://www.lg.com/us/discover-vacuums",
         "https://www.lg.com/us/discover-washers",
@@ -80518,14 +80601,17 @@
         "https://www.lg.com/us/dishwashers/lg-ldfn4542s-front-control-dishwasher",
         "https://www.lg.com/us/dishwashers/lg-ldfn4542w-front-control-dishwasher",
         "https://www.lg.com/us/dishwashers/lg-ldfn454ht-front-control-dishwasher",
+        "https://www.lg.com/us/dishwashers/lg-ldnpc44cs-top-control-dishwasher",
         "https://www.lg.com/us/dishwashers/lg-ldnph654s-top-control-dishwasher",
         "https://www.lg.com/us/dishwashers/lg-ldnph753d-top-control-dishwasher",
         "https://www.lg.com/us/dishwashers/lg-ldnph753s-top-control-dishwasher",
+        "https://www.lg.com/us/dishwashers/lg-ldnph85cs-top-control-dishwasher",
         "https://www.lg.com/us/dishwashers/lg-ldnpm545d-top-control-dishwasher",
         "https://www.lg.com/us/dishwashers/lg-ldnpm545s-top-control-dishwasher",
         "https://www.lg.com/us/dishwashers/lg-ldnpm654s-top-control-dishwasher",
         "https://www.lg.com/us/dishwashers/lg-ldnpq445s-top-control-dishwasher",
         "https://www.lg.com/us/dishwashers/lg-ldnpq44hs-top-control-dishwasher",
+        "https://www.lg.com/us/dishwashers/lg-ldnpq555s-top-control-dishwasher",
         "https://www.lg.com/us/dishwashers/lg-ldnth753d-top-control-dishwasher",
         "https://www.lg.com/us/dishwashers/lg-ldnth753s-top-control-dishwasher",
         "https://www.lg.com/us/dishwashers/lg-ldnth862s-top-control-dishwasher",
@@ -80682,6 +80768,9 @@
         "https://www.lg.com/us/front-load-washers",
         "https://www.lg.com/us/gaming-accessories",
         "https://www.lg.com/us/gaming-monitors",
+        "https://www.lg.com/us/gaming-monitors/lg-27gx700a-b-27g640a-b-ultragear-esports-performance-collection",
+        "https://www.lg.com/us/gaming-monitors/lg-39gx950b-b-27gm950b-b-ultragear-ultimate-gaming-resolution-collection",
+        "https://www.lg.com/us/gaming-monitors/lg-39gx950b-b-32g620b-b-ultragear-gaming-and-streaming-collection",
         "https://www.lg.com/us/gas-cooktops",
         "https://www.lg.com/us/gas-dryers",
         "https://www.lg.com/us/gas-ranges",
@@ -80987,8 +81076,14 @@
         "https://www.lg.com/us/kitchen-accessories/lg-mhl39256108-range-oven-rack",
         "https://www.lg.com/us/kitchen-accessories/lg-mhl64712101-range-oven-rack",
         "https://www.lg.com/us/kitchen-accessories/lg-mjs47373302",
+        "https://www.lg.com/us/kitchen-appliance-packages/lg-lf24z6530s-lsel6335xe-adfd5448at",
         "https://www.lg.com/us/kitchen-appliance-packages/lg-lf24z6530s-lsel6335xe-mvel2125x-ldnpm654s",
+        "https://www.lg.com/us/kitchen-appliance-packages/lg-lf24z6530s-lsel6335xe-mvem1825f-adfd5448at",
+        "https://www.lg.com/us/kitchen-appliance-packages/lg-lf24z6530s-lsgl5833x-adfd5448at",
+        "https://www.lg.com/us/kitchen-appliance-packages/lg-lf24z6530s-lsgl5833x-mvem1825f-adfd5448at",
         "https://www.lg.com/us/kitchen-appliance-packages/lg-lf24z6530s-lsgl6335x-mvel2125x-ldnpm654s",
+        "https://www.lg.com/us/kitchen-appliance-packages/lg-lf24z6530s-lsil6332fe-adfd5448at",
+        "https://www.lg.com/us/kitchen-appliance-packages/lg-lf24z6530s-lsil6332fe-mvem1825f-adfd5448at",
         "https://www.lg.com/us/kitchen-appliance-packages/lg-lf29h8330s-lsel6335xe-ldnpm654s",
         "https://www.lg.com/us/kitchen-appliance-packages/lg-lf29h8330s-lsel6335xe-mvel2125x-ldnpm654s",
         "https://www.lg.com/us/kitchen-appliance-packages/lg-lf29h8330s-lsgl6335x-ldnpm654s",
@@ -81005,6 +81100,12 @@
         "https://www.lg.com/us/kitchen-appliance-packages/lg-lfds22520s-lrel6321s-mvem1621y-ldfn3432t",
         "https://www.lg.com/us/kitchen-appliance-packages/lg-lfds22520s-lrgl5821s-ldfn3432t",
         "https://www.lg.com/us/kitchen-appliance-packages/lg-lfds22520s-lrgl5821s-mvem1621y-ldfn3432t",
+        "https://www.lg.com/us/kitchen-appliance-packages/lg-lmws29626s-lren6323ye-ldfc2423v",
+        "https://www.lg.com/us/kitchen-appliance-packages/lg-lmws29626s-lren6323ye-mvem1621y-ldfc2423v",
+        "https://www.lg.com/us/kitchen-appliance-packages/lg-lmws29626s-lrgn6323y-ldfc2423v",
+        "https://www.lg.com/us/kitchen-appliance-packages/lg-lmws29626s-lrgn6323y-mvem1621y-ldfc2423v",
+        "https://www.lg.com/us/kitchen-appliance-packages/lg-lmws29626s-lrin6323ye-ldfc2423v",
+        "https://www.lg.com/us/kitchen-appliance-packages/lg-lmws29626s-lrin6323ye-mvem1621y-ldfc2423v",
         "https://www.lg.com/us/kitchen-appliance-packages/lg-lrflc2706s-lrel6321s-ldfn3432t",
         "https://www.lg.com/us/kitchen-appliance-packages/lg-lrflc2706s-lrel6321s-mvem1621y-ldfn3432t",
         "https://www.lg.com/us/kitchen-appliance-packages/lg-lrflc2706s-lrgl5821s-ldfn3432t",
@@ -81027,6 +81128,12 @@
         "https://www.lg.com/us/kitchen-appliance-packages/lg-lrmvc2306d-lsel6335ze-mvem1825z-ldntm545d",
         "https://www.lg.com/us/kitchen-appliance-packages/lg-lrmvc2306d-lsgl6335z-ldntm545d",
         "https://www.lg.com/us/kitchen-appliance-packages/lg-lrmvc2306d-lsgl6335z-mvem1825z-ldntm545d",
+        "https://www.lg.com/us/kitchen-appliance-packages/lg-lrmxs3006s-lsel6335xe-ldnth753s",
+        "https://www.lg.com/us/kitchen-appliance-packages/lg-lrmxs3006s-lsel6335xe-mvel2137f-ldnth753s",
+        "https://www.lg.com/us/kitchen-appliance-packages/lg-lrmxs3006s-lsgl6335x-ldnth753s",
+        "https://www.lg.com/us/kitchen-appliance-packages/lg-lrmxs3006s-lsgl6335x-mvel2137f-ldnth753s",
+        "https://www.lg.com/us/kitchen-appliance-packages/lg-lrmxs3006s-lsil6334xe-ldnth753s",
+        "https://www.lg.com/us/kitchen-appliance-packages/lg-lrmxs3006s-lsil6334xe-mvel2137f-ldnth753s",
         "https://www.lg.com/us/kitchen-appliance-packages/lg-lrykc2606s-lren6325xe-ldfn4542s",
         "https://www.lg.com/us/kitchen-appliance-packages/lg-lrykc2606s-lren6325xe-mvel2033f-ldfn4542s",
         "https://www.lg.com/us/kitchen-appliance-packages/lg-lrykc2606s-lrgn6325x-ldfn4542s",
@@ -81043,6 +81150,8 @@
         "https://www.lg.com/us/kitchen-appliance-packages/lg-lryxc2606s-lsel6337xe-mvel2125x-ldnth753s",
         "https://www.lg.com/us/kitchen-appliance-packages/lg-lryxc2606s-lsgl6337x-ldnth753s",
         "https://www.lg.com/us/kitchen-appliance-packages/lg-lryxc2606s-lsgl6337x-mvel2125x-ldnth753s",
+        "https://www.lg.com/us/kitchen-appliance-packages/lg-um22wzh98s-lsgu6339x-mheu1738x-sdnth981s",
+        "https://www.lg.com/us/kitchen-appliance-packages/lg-um22wzh98s-lsiu6339xe-mheu1738x-sdnth981s",
         "https://www.lg.com/us/kitchen-packages/lg-lf29h8330s-ldth5554s-lsel6335fe-mhec1737f",
         "https://www.lg.com/us/kitchen-packages/lg-lf29h8330s-ldth5554s-lsel6335fe-mvel2137f",
         "https://www.lg.com/us/kitchen-packages/lg-lf29h8330s-ldth5554s-lsgl6335f-mhec1737f",
@@ -81077,7 +81186,6 @@
         "https://www.lg.com/us/laptops/lg-14Z970-AAAS7U1-ultra-slim-laptop",
         "https://www.lg.com/us/laptops/lg-14Z980-AAAS7U1-ultra-slim-laptop",
         "https://www.lg.com/us/laptops/lg-14Z980-UAAW5U1-ultra-slim-laptop",
-        "https://www.lg.com/us/laptops/lg-14Z990-UAAW5U1-ultra-slim-laptop",
         "https://www.lg.com/us/laptops/lg-14t90n-r.aas8u1-ultra-slim-laptop",
         "https://www.lg.com/us/laptops/lg-14t90n-r.aas9u1-ultra-slim-laptop",
         "https://www.lg.com/us/laptops/lg-14t90p-k.aab8u1-ultra-slim-laptop",
@@ -81128,7 +81236,8 @@
         "https://www.lg.com/us/laptops/lg-14z95u-g.as67u1-gram-laptop",
         "https://www.lg.com/us/laptops/lg-14z95u-g.au76u1-gram-laptop",
         "https://www.lg.com/us/laptops/lg-14z95u-g.au86u1-gram-laptop",
-        "https://www.lg.com/us/laptops/lg-14z990-raas7u1-ultra-slim-laptop",
+        "https://www.lg.com/us/laptops/lg-14z990-r.aas7u1-ultra-slim-laptop",
+        "https://www.lg.com/us/laptops/lg-14z990-u.aaw5u1-ultra-slim-laptop",
         "https://www.lg.com/us/laptops/lg-14z995-u.ars6u1-ultra-slim-laptop",
         "https://www.lg.com/us/laptops/lg-14zb90q-g.aac6u1-gram-laptop",
         "https://www.lg.com/us/laptops/lg-15Z970-AAAS7U1-ultra-slim-laptop",
@@ -81144,6 +81253,7 @@
         "https://www.lg.com/us/laptops/lg-15u50t-g.aas3u1-gram-laptop",
         "https://www.lg.com/us/laptops/lg-15u50t-g.ars1u1-gram-laptop",
         "https://www.lg.com/us/laptops/lg-15u50t-g.ars2u1-gram-laptop",
+        "https://www.lg.com/us/laptops/lg-15u50u-h.aa55u1-gram-laptop",
         "https://www.lg.com/us/laptops/lg-15u50u-h.aa56u1-gram-laptop",
         "https://www.lg.com/us/laptops/lg-15u50u-h.aa57u1-gram-laptop",
         "https://www.lg.com/us/laptops/lg-15u50u-h.ar55u1-gram-laptop",
@@ -81276,7 +81386,6 @@
         "https://www.lg.com/us/laptops/lg-16z90tl-g.aub5u1-gram-laptop",
         "https://www.lg.com/us/laptops/lg-16z90tl-g.aub9u1-gram-laptop",
         "https://www.lg.com/us/laptops/lg-16z90tl-h.aub4u1-gram-laptop",
-        "https://www.lg.com/us/laptops/lg-16z90tl-h.aub7u1-gram-laptop",
         "https://www.lg.com/us/laptops/lg-16z90tl-h.aub9u1-gram-laptop",
         "https://www.lg.com/us/laptops/lg-16z90tp-k.aaw4u1-gram-laptop",
         "https://www.lg.com/us/laptops/lg-16z90tp-k.adl6u1-gram-laptop",
@@ -81508,38 +81617,10 @@
         "https://www.lg.com/us/lg-raises-a-glass-to-industry’s-first-ever-craft-ice-refrigerators-with-nyc-pop-up-bar",
         "https://www.lg.com/us/lg-range-statement",
         "https://www.lg.com/us/lg-signature",
-        "https://www.lg.com/us/lg-signature-air-purifiers",
-        "https://www.lg.com/us/lg-signature-appliances",
         "https://www.lg.com/us/lg-signature-cooking-appliances",
         "https://www.lg.com/us/lg-signature-dishwashers",
         "https://www.lg.com/us/lg-signature-refrigerators",
-        "https://www.lg.com/us/lg-signature-tvs",
         "https://www.lg.com/us/lg-signature-washers-dryers",
-        "https://www.lg.com/us/lg-signature/about-us",
-        "https://www.lg.com/us/lg-signature/inspiration",
-        "https://www.lg.com/us/lg-signature/inspiration/master-stories/antoine-preziuso",
-        "https://www.lg.com/us/lg-signature/inspiration/master-stories/artistic-performance-and-unrivaled-technique-through-golf",
-        "https://www.lg.com/us/lg-signature/inspiration/master-stories/matt-clark",
-        "https://www.lg.com/us/lg-signature/lounge",
-        "https://www.lg.com/us/lg-signature/lounge/lve-exclusive-event",
-        "https://www.lg.com/us/lg-signature/lounge/the-amundi-evian-championship-strongertogether",
-        "https://www.lg.com/us/lg-signature/magazine/art-culture/corkscrew-wearing-alessandro-mendini-last-original-sketch",
-        "https://www.lg.com/us/lg-signature/magazine/art-culture/ginormous-3d-artwork",
-        "https://www.lg.com/us/lg-signature/magazine/art-culture/vangogh-simulation",
-        "https://www.lg.com/us/lg-signature/magazine/lifestyle/city-trip-explore-seoul-interior-style",
-        "https://www.lg.com/us/lg-signature/magazine/lifestyle/food",
-        "https://www.lg.com/us/lg-signature/magazine/lifestyle/the-art-of-modern-living-molteni-c",
-        "https://www.lg.com/us/lg-signature/magazine/lifestyle/the-wood-aesthetic",
-        "https://www.lg.com/us/lg-signature/magazine/lifestyle/timeless-places",
-        "https://www.lg.com/us/lg-signature/magazine/people/john-legend-ambassador",
-        "https://www.lg.com/us/lg-signature/magazine/people/peter-tarka",
-        "https://www.lg.com/us/lg-signature/magazine/people/style-icon-olivia-palermo",
-        "https://www.lg.com/us/lg-signature/magazine/performance/excellent-refrigeration-for-flawless-wine-lg-signature-wine-cellar",
-        "https://www.lg.com/us/lg-signature/magazine/performance/fashion-and-beyond-through-sustainable-style",
-        "https://www.lg.com/us/lg-signature/products",
-        "https://www.lg.com/us/lg-signature/showroom",
-        "https://www.lg.com/us/lg-signature/showroom/interactive-tour",
-        "https://www.lg.com/us/lg-signature/showroom/virtual-showroom/space/lounge",
         "https://www.lg.com/us/lg-studio",
         "https://www.lg.com/us/lg-studio/cooktops",
         "https://www.lg.com/us/lg-studio/dishwashers",
@@ -81557,14 +81638,18 @@
         "https://www.lg.com/us/lifesgood/product-story-washtower",
         "https://www.lg.com/us/lifestyle-monitors",
         "https://www.lg.com/us/lifestyle-products",
+        "https://www.lg.com/us/lifestyle-products/discover-lg-stanbyme-portable-smart-screen",
         "https://www.lg.com/us/lifestyle-products/lg-27art10akpl-lifestyle-screen",
         "https://www.lg.com/us/lifestyle-products/lg-27lx6tyga-lifestyle-screen",
         "https://www.lg.com/us/lifestyle-products/lg-27lx6tyga-ws25xa-stanbyme-2-carry-strap-package",
         "https://www.lg.com/us/lifestyle-products/lg-27lx6tyga-ws25xa-xt7s-stanbyme-2-carry-strap-speaker-package",
         "https://www.lg.com/us/lifestyle-products/lg-27lx6tyga-xt7s-stanbyme-2-bluetooth-speaker-package",
+        "https://www.lg.com/us/lifestyle-products/lg-32lx6bwga-lifestyle-screen",
+        "https://www.lg.com/us/lifestyle-products/lg-32lx6bwga-xt7s-stanbyme-2-max-bluetooth-speaker-package",
         "https://www.lg.com/us/llms-full.txt",
         "https://www.lg.com/us/llms.txt",
         "https://www.lg.com/us/magic-remote",
+        "https://www.lg.com/us/microrgb",
         "https://www.lg.com/us/microwave-ovens",
         "https://www.lg.com/us/mobile-accessories/discontinued",
         "https://www.lg.com/us/mobile-accessories/lg-BC-4900",
@@ -81756,7 +81841,9 @@
         "https://www.lg.com/us/monitors/lg-24bl450y-b",
         "https://www.lg.com/us/monitors/lg-24bl650c-b",
         "https://www.lg.com/us/monitors/lg-24g411a-b-gaming-monitor",
+        "https://www.lg.com/us/monitors/lg-24g411b-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-24g414b-b-gaming-monitor",
+        "https://www.lg.com/us/monitors/lg-24g41wb-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-24gl600f-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-24gl650-b-led-monitor",
         "https://www.lg.com/us/monitors/lg-24gn50w-b-gaming-monitor",
@@ -81801,6 +81888,8 @@
         "https://www.lg.com/us/monitors/lg-25UM56-P-ultrawide-monitor",
         "https://www.lg.com/us/monitors/lg-25UM64-S-ultrawide-monitor",
         "https://www.lg.com/us/monitors/lg-25UM65-P-ultrawide-monitor",
+        "https://www.lg.com/us/monitors/lg-25g523b-b-gaming-monitor",
+        "https://www.lg.com/us/monitors/lg-25g590b-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-25ms550-b-fhd-monitor",
         "https://www.lg.com/us/monitors/lg-25sr50f-w-smart-monitor",
         "https://www.lg.com/us/monitors/lg-26wq500-b-ultrawide-monitor",
@@ -81841,9 +81930,13 @@
         "https://www.lg.com/us/monitors/lg-27ep950-oled-monitor",
         "https://www.lg.com/us/monitors/lg-27eq850-b-oled-monitor",
         "https://www.lg.com/us/monitors/lg-27g411a-b-gaming-monitor",
+        "https://www.lg.com/us/monitors/lg-27g411b-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-27g414b-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-27g440a-b-gaming-monitor",
+        "https://www.lg.com/us/monitors/lg-27g520b-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-27g521b-b-gaming-monitor",
+        "https://www.lg.com/us/monitors/lg-27g523b-b-gaming-monitor",
+        "https://www.lg.com/us/monitors/lg-27g550b-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-27g610a-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-27g61zb-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-27g640a-b-gaming-monitor",
@@ -81881,6 +81974,7 @@
         "https://www.lg.com/us/monitors/lg-27gs50f-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-27gs50fx-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-27gs60qc-b-gaming-monitor",
+        "https://www.lg.com/us/monitors/lg-27gs60qn-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-27gs75q-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-27gs93qe-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-27gs95qe-b-gaming-monitor",
@@ -81928,7 +82022,9 @@
         "https://www.lg.com/us/monitors/lg-27u511sa-w-smart-monitor",
         "https://www.lg.com/us/monitors/lg-27u511sb-w-smart-monitor",
         "https://www.lg.com/us/monitors/lg-27u55wsa-w-smart-monitor",
+        "https://www.lg.com/us/monitors/lg-27u630b-b-qhd-monitor",
         "https://www.lg.com/us/monitors/lg-27u631a-b-qhd-monitor",
+        "https://www.lg.com/us/monitors/lg-27u730b-b-4k-uhd-monitor",
         "https://www.lg.com/us/monitors/lg-27u730sa-w-4k-uhd-monitor",
         "https://www.lg.com/us/monitors/lg-27u731sa-w-smart-monitor",
         "https://www.lg.com/us/monitors/lg-27ud58-b-4k-uhd-led-monitor",
@@ -82021,6 +82117,7 @@
         "https://www.lg.com/us/monitors/lg-32gs95uv-w-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-32gx850a-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-32gx870a-b-gaming-monitor",
+        "https://www.lg.com/us/monitors/lg-32gx870b-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-32ml600m-b-led-monitor",
         "https://www.lg.com/us/monitors/lg-32mn500m-b-led-monitor",
         "https://www.lg.com/us/monitors/lg-32mn50w-b-led-monitor",
@@ -82028,6 +82125,7 @@
         "https://www.lg.com/us/monitors/lg-32mn600p-b-led-monitor",
         "https://www.lg.com/us/monitors/lg-32mn60t-b-led-monitor",
         "https://www.lg.com/us/monitors/lg-32mp60g-b-gaming-monitor",
+        "https://www.lg.com/us/monitors/lg-32mr50c-b-34u650a-b-office-essentials-dual-setup-collection",
         "https://www.lg.com/us/monitors/lg-32mr50cs-b-fhd-monitor",
         "https://www.lg.com/us/monitors/lg-32qk500-c-led-monitor",
         "https://www.lg.com/us/monitors/lg-32qn55t-b-qhd-monitor",
@@ -82044,7 +82142,10 @@
         "https://www.lg.com/us/monitors/lg-32sr70u-w-smart-monitor",
         "https://www.lg.com/us/monitors/lg-32sr73u-w-smart-monitor",
         "https://www.lg.com/us/monitors/lg-32sr75u-w-smart-monitor",
+        "https://www.lg.com/us/monitors/lg-32u401b-b-fhd-monitor",
         "https://www.lg.com/us/monitors/lg-32u631a-b-qhd-monitor",
+        "https://www.lg.com/us/monitors/lg-32u700b-b-4k-uhd-monitor",
+        "https://www.lg.com/us/monitors/lg-32u701b-b-4k-uhd-monitor",
         "https://www.lg.com/us/monitors/lg-32u701sb-b-smart-monitor",
         "https://www.lg.com/us/monitors/lg-32u721sa-w-smart-monitor",
         "https://www.lg.com/us/monitors/lg-32u850sa-w-4k-uhd-monitor",
@@ -82104,6 +82205,7 @@
         "https://www.lg.com/us/monitors/lg-34gs95qe-w-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-34gx900a-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-34gx90sa-w-gaming-monitor",
+        "https://www.lg.com/us/monitors/lg-34gx90sb-w-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-34sr60qc-b-ultrawide-monitor",
         "https://www.lg.com/us/monitors/lg-34sr60qc-w-smart-monitor",
         "https://www.lg.com/us/monitors/lg-34sr63qa-w-smart-monitor",
@@ -82112,6 +82214,7 @@
         "https://www.lg.com/us/monitors/lg-34u530a-w-ultrawide-monitor",
         "https://www.lg.com/us/monitors/lg-34u601b-b-ultrawide-monitor",
         "https://www.lg.com/us/monitors/lg-34u60zb-b-ultrawide-monitor",
+        "https://www.lg.com/us/monitors/lg-34u620b-b-ultrawide-monitor",
         "https://www.lg.com/us/monitors/lg-34u62tb-b-ultrawide-monitor",
         "https://www.lg.com/us/monitors/lg-34u640b-b-ultrawide-monitor",
         "https://www.lg.com/us/monitors/lg-34u650a-b-ultrawide-monitor",
@@ -82198,6 +82301,7 @@
         "https://www.lg.com/us/monitors/lg-D2343P-PN-led-monitor",
         "https://www.lg.com/us/monitors/lg-IPS237L-BN-led-monitor",
         "https://www.lg.com/us/monitors/lg-IPS277L-BN-led-monitor",
+        "https://www.lg.com/us/monitors/monitor-setup-guide",
         "https://www.lg.com/us/monitors/ultragear-buying-guide",
         "https://www.lg.com/us/monitors/ultragear-buying-guide/refresh-rate",
         "https://www.lg.com/us/monitors/ultragear-buying-guide/resolution",
@@ -82257,6 +82361,7 @@
         "https://www.lg.com/us/press-release/century-communities-selects-lg-electronics-national-appliance-partner",
         "https://www.lg.com/us/press-release/ces-2025-innovation-awards",
         "https://www.lg.com/us/press-release/ces-spectators-mesmerized-yet-again-with-lgs-spectacular-oled-wave-and-fountain-exhibitions",
+        "https://www.lg.com/us/press-release/connected-edtech-solutions-from-lg-electronics-usa-define-the-future-of-learning-at-iste-live-2026",
         "https://www.lg.com/us/press-release/critically-acclaimed-lg-oled-tvs-kick-off-2020-at-lowest-price-ever",
         "https://www.lg.com/us/press-release/cure-the-end-of-summer-blues-with-mega-labor-day-lg-energy-star-appliance-deals",
         "https://www.lg.com/us/press-release/directv-expands-access-to-include-lg-smart-tvs",
@@ -82419,6 +82524,7 @@
         "https://www.lg.com/us/press-release/lg-channels-offers-new-free-streaming-options-for-everyone-to-enjoy-during-thanksgiving-season",
         "https://www.lg.com/us/press-release/lg-channels-offers-wide-array-of-free-streaming-spooky-viewing-options-for-the-halloween-season",
         "https://www.lg.com/us/press-release/lg-channels-sets-the-mood-for-valentines-day-with-new-streaming-options",
+        "https://www.lg.com/us/press-release/lg-channels-surpasses-5000-channels-globally-as-poland-launch-brings-service-to-37-countries",
         "https://www.lg.com/us/press-release/lg-channels-the-rivalries-to-feature-iconic-ivy-league-match-up",
         "https://www.lg.com/us/press-release/lg-cinebeam-s-ust",
         "https://www.lg.com/us/press-release/lg-circularity-initiatives",
@@ -82431,6 +82537,7 @@
         "https://www.lg.com/us/press-release/lg-commercial-display-technologies-amplify-engagement-at-anytime-fitness",
         "https://www.lg.com/us/press-release/lg-commercial-displays-earn-top-rating-b2b-sustainability-assessment-program",
         "https://www.lg.com/us/press-release/lg-commercial-displays-earn-top-rating-in-b2b-sustainability-assessment-program",
+        "https://www.lg.com/us/press-release/lg-commercial-laundry-makes-hitec-debut-with-guest-centric-laundry-and-garment-care-solutions",
         "https://www.lg.com/us/press-release/lg-commits-150000-to-new-orleans-based-st-augustine-high-school",
         "https://www.lg.com/us/press-release/lg-commits-to-most-aggressive-target-for-reducing-ghg-emissions",
         "https://www.lg.com/us/press-release/lg-component-solutions-unveils-compressor-and-motor-innovations",
@@ -82470,21 +82577,27 @@
         "https://www.lg.com/us/press-release/lg-earth-day-savings-energy-star-home-appliances-help-consumers-make-energy-choices-that-count",
         "https://www.lg.com/us/press-release/lg-educator-program-education-advisory-board-promote-tech-enhanced-learning",
         "https://www.lg.com/us/press-release/lg-electronic-amwell-partner-on-digital-health-innovations",
+        "https://www.lg.com/us/press-release/lg-electronics-accelerates-robotics-collaboration-with-nvidia",
         "https://www.lg.com/us/press-release/lg-electronics-advances-commitment-to-socially-impactful-startup-and-entrepreneur-community",
         "https://www.lg.com/us/press-release/lg-electronics-ai-and-iot-innovations-transforming-accessibility-opportunities",
         "https://www.lg.com/us/press-release/lg-electronics-americas-most-reliable-line-of-home-appliances-partners-with-the-drew-barrymore-show",
         "https://www.lg.com/us/press-release/lg-electronics-and-amazon-team-up-to-launch-luna-on-lg-smart-tvs",
         "https://www.lg.com/us/press-release/lg-electronics-and-dallas-cowboys-announce-multi-year-partnership",
         "https://www.lg.com/us/press-release/lg-electronics-announces-designed-for-lg-gaming-portal-certification-program-for-controllers",
+        "https://www.lg.com/us/press-release/lg-electronics-announces-us-pricing-and-availability-for-worlds-first-native-1000hz-full-hd-gaming-monitor",
         "https://www.lg.com/us/press-release/lg-electronics-announces-winners-inaugural-wonderbox-showcase-digital-art-competition",
         "https://www.lg.com/us/press-release/lg-electronics-bang-and-olufsen-launch-exquisite-micro-led-home-cinema-system",
+        "https://www.lg.com/us/press-release/lg-electronics-brings-bob-ross-creativity-to-life-through-multiple-mediums-including-lg-gallery",
+        "https://www.lg.com/us/press-release/lg-electronics-brings-masterpieces-from-the-met-into-your-living-room-with-art-inspired-gallery-tv-and-lg-gallery-service",
         "https://www.lg.com/us/press-release/lg-electronics-captures-2020-ahr-innovation-award",
         "https://www.lg.com/us/press-release/lg-electronics-celbrates-a-history-of-breakthrough-technologies-with-its-first-ever-lg-innovation-days",
         "https://www.lg.com/us/press-release/lg-electronics-continues-technological-dominance-with-wide-range-of-awards-and-accolades-at-ces-2026",
         "https://www.lg.com/us/press-release/lg-electronics-debuts-oled-digital-signage-ushers-in-new-era-of-commercial-display-techno",
         "https://www.lg.com/us/press-release/lg-electronics-earns-leader-rating-in-marriott-sustainability-assessment-program",
+        "https://www.lg.com/us/press-release/lg-electronics-earns-nvidia-ai-factory-validation-for-600kw-coolant-distribution-unit",
         "https://www.lg.com/us/press-release/lg-electronics-earns-top-rating-in-mindclick-sustainability-assessment-program-for-marriott",
         "https://www.lg.com/us/press-release/lg-electronics-embarks-new-chapter-ess-team-led-by-renewable-energy-industry-veteran-canfield",
+        "https://www.lg.com/us/press-release/lg-electronics-expands-fit-and-max-solution-across-key-home-appliance-categories-at-ifa-2026",
         "https://www.lg.com/us/press-release/lg-electronics-expands-its-lifestyle-tv-lineup-with-the-new-art-inspired-gallery-tv",
         "https://www.lg.com/us/press-release/lg-electronics-expands-unique-allergen-reducing-home-appliance-portfolio",
         "https://www.lg.com/us/press-release/lg-electronics-expands-xboom-by-will-i-am-lineup-for-every-lifestyle-with-ai-powered-personalization",
@@ -82494,10 +82607,12 @@
         "https://www.lg.com/us/press-release/lg-electronics-honored-by-us-epa-as-2019-energy-star-partner-of-the-year",
         "https://www.lg.com/us/press-release/lg-electronics-honored-by-us-epa-as-2020-energy-star-partner-of-the-year",
         "https://www.lg.com/us/press-release/lg-electronics-introduces-2026-lg-gram-lineup-elevated-by-aerominum",
+        "https://www.lg.com/us/press-release/lg-electronics-introduces-an-award-winning-ai-tv-experience-at-ifa-2026",
         "https://www.lg.com/us/press-release/lg-electronics-introduces-worlds-first-native-1000hz-full-hd-gaming-monitor",
         "https://www.lg.com/us/press-release/lg-electronics-kbis-2026",
         "https://www.lg.com/us/press-release/lg-electronics-kicks-off-march-madness-with-bracket-busting-deals-on-tvs-and-appliances-ha",
         "https://www.lg.com/us/press-release/lg-electronics-kicks-off-march-madness-with-bracket-busting-deals-on-tvs-and-appliances-he",
+        "https://www.lg.com/us/press-release/lg-electronics-launches-2026-lifes-good-campaign-to-free-up-peoples-minds-for-what-truly-matters",
         "https://www.lg.com/us/press-release/lg-electronics-launches-art-tv-lineup-where-design-shapes-how-art-lives-in-the-space",
         "https://www.lg.com/us/press-release/lg-electronics-launches-innovation-center-to-accelerate-new-business-creation",
         "https://www.lg.com/us/press-release/lg-electronics-launches-transparent-conversations-series-on-lg-channels-for-student-athlete-mental-health-week",
@@ -82507,26 +82622,36 @@
         "https://www.lg.com/us/press-release/lg-electronics-named-official-tv-partner-of-emmy-award-season-and-the-television-academy",
         "https://www.lg.com/us/press-release/lg-electronics-outfits-2020-new-american-home-and-new-american-remodel-with-tech-innovations",
         "https://www.lg.com/us/press-release/lg-electronics-partners-with-rutgers-athletics-on-a-different-kind-of-black-friday",
+        "https://www.lg.com/us/press-release/lg-electronics-prism-ai-wins-best-ai-toolproduct-at-the-2026-in2-sabre-awards-asia-pacific",
         "https://www.lg.com/us/press-release/lg-electronics-receives-more-than-140-ces-awards-and-honors-across-home-entertainment-home-appliance-and-mobile-categories",
         "https://www.lg.com/us/press-release/lg-electronics-redefines-premium-home-innovation-at-kbis-2026",
+        "https://www.lg.com/us/press-release/lg-electronics-reports-2025-scope-1-and-2-emissions-below",
         "https://www.lg.com/us/press-release/lg-electronics-showcases-affectionate-intelligence-in-action-at-ces-2026",
         "https://www.lg.com/us/press-release/lg-electronics-showcases-award-winning-portfolio-of-hvac-solutions-at-ahr-expo-2020",
         "https://www.lg.com/us/press-release/lg-electronics-showcases-complete-portfolio-of-hospitality-solutions-at-hitec-2016",
         "https://www.lg.com/us/press-release/lg-electronics-showcases-high-performance-design-forward-home-appliance-solutions",
+        "https://www.lg.com/us/press-release/lg-electronics-teams-up-with-prime-video-to-power-an-epic-home-premiere-of-masters-of-the-universe",
         "https://www.lg.com/us/press-release/lg-electronics-to-be-featured-throughout-2024-2025-season-of-wheel-of-fortune",
         "https://www.lg.com/us/press-release/lg-electronics-to-build-us-factory-for-home-appliances-in-tennessee",
         "https://www.lg.com/us/press-release/lg-electronics-to-enter-us-ev-charging-market-with-line-of-owner-operated-ac-and-dc-chargers",
+        "https://www.lg.com/us/press-release/lg-electronics-unveils-40-inch-ultrawide-diagnostic-monitor-with-fda-clearance",
         "https://www.lg.com/us/press-release/lg-electronics-unveils-its-approach-to-ai-in-action",
         "https://www.lg.com/us/press-release/lg-electronics-unveils-reimagined-lg-signature-collections-at-kbis-2026",
         "https://www.lg.com/us/press-release/lg-electronics-unveils-retailverse-tranforming-e-commerce-with-immersive-ai-enabled-3d-product-experiences",
         "https://www.lg.com/us/press-release/lg-electronics-unveils-revamped-residential-hvac-portfolio-at-ibs-2023",
+        "https://www.lg.com/us/press-release/lg-electronics-unveils-stanbyme-2-max-an-immersive-personal-screen-with-a-larger-32-inch-4k-display",
         "https://www.lg.com/us/press-release/lg-electronics-usa-announces-multi-year-partnership-with-the-new-york-yankees",
         "https://www.lg.com/us/press-release/lg-electronics-usa-debuts-its-new-cinebeam-smart-portable-projector",
         "https://www.lg.com/us/press-release/lg-electronics-usa-debuts-next-gen-oled-pro-monitor-for-broadcast-virtual-production-and-av-workflows",
+        "https://www.lg.com/us/press-release/lg-electronics-usa-introduces-new-lg-gram-business-laptop-lineup",
+        "https://www.lg.com/us/press-release/lg-electronics-usa-launches-b2b-financing-service-for-commercial-display-solutions",
         "https://www.lg.com/us/press-release/lg-electronics-usa-launches-dvled-installation-service",
+        "https://www.lg.com/us/press-release/lg-electronics-usa-named-proud-partner-of-defending-world-champion-los-angeles-dodgers",
         "https://www.lg.com/us/press-release/lg-electronics-usa-partners-with-new-york-yankees-to-support-nyc-field-renovation",
         "https://www.lg.com/us/press-release/lg-electronics-usa-returns-to-re-with-mobile-showroom-of-home-electrification",
+        "https://www.lg.com/us/press-release/lg-electronics-usa-showcases-solutions-beyond-displays-at-hitec-2026",
         "https://www.lg.com/us/press-release/lg-electronics-usa-supports-new-us-cyber-trust-mark-program",
+        "https://www.lg.com/us/press-release/lg-electronics-usa-unveils-pro-centric-cloud-to-enhance-hotel-operations-and-guest-experience",
         "https://www.lg.com/us/press-release/lg-elevates-digital-transformation-with-opening-of-new-cloud-call-center",
         "https://www.lg.com/us/press-release/lg-elevates-webos-gaming-experience-with-lg-magic-remote-optimzed-games",
         "https://www.lg.com/us/press-release/lg-enables-dolby-atmos-flexconnect-on-select-2025-lg-oled-tvs-through-software-update",
@@ -82550,6 +82675,7 @@
         "https://www.lg.com/us/press-release/lg-expands-its-education-ecosystem-with-new-createboard-at-fetc-2026",
         "https://www.lg.com/us/press-release/lg-expands-its-tone-free-earbud-lineup-with-addition-of-the-t80",
         "https://www.lg.com/us/press-release/lg-expands-its-ultragear-gaming-monitor-lineup-with-debut-of-three-new-models",
+        "https://www.lg.com/us/press-release/lg-expands-lg-pro-with-integrated-solutions-new-sales-organization-and-enhanced-partner-experience",
         "https://www.lg.com/us/press-release/lg-expands-market-for-affordable-4k-uhd-digital-signage-displays-with-two-new-series",
         "https://www.lg.com/us/press-release/lg-expands-room-air-conditioner-portfolio-with-portable-unit-offering-40-more-energy-efficiency",
         "https://www.lg.com/us/press-release/lg-expands-roster-of-smart-kitchen-partnerships-with-unique-tovala-integration",
@@ -82605,8 +82731,10 @@
         "https://www.lg.com/us/press-release/lg-improves-pixel-pitch-for-transparent-color-led-film-displays",
         "https://www.lg.com/us/press-release/lg-indoor-gardening-appliance",
         "https://www.lg.com/us/press-release/lg-induction-cooktops-ranges-first-in-industry-certified-to-new-energy-star-specs",
+        "https://www.lg.com/us/press-release/lg-infocomm-dvled",
         "https://www.lg.com/us/press-release/lg-innovations-previewed-at-rsna-2022",
         "https://www.lg.com/us/press-release/lg-innovative-hvac-solutions-take-2019-ahr-expo-by-storm",
+        "https://www.lg.com/us/press-release/lg-instaview-refrigerator-surpasses-53-million-in-global-sales",
         "https://www.lg.com/us/press-release/lg-introduces-2024-qned-tvs-with-enhanced-picture-quality-and-extensive-screen-choices",
         "https://www.lg.com/us/press-release/lg-introduces-2025-oled-evo-lineup-with-vibrant-brightness-and-ai-powered-personalization",
         "https://www.lg.com/us/press-release/lg-introduces-86-inch-ultra-stretch-seven-foot-long-ultra-hd-signage-display",
@@ -82661,6 +82789,7 @@
         "https://www.lg.com/us/press-release/lg-launches-gaming-week-promos-on-ultragear-gaming-monitors-and-more",
         "https://www.lg.com/us/press-release/lg-launches-its-2024-flagship-soundbar",
         "https://www.lg.com/us/press-release/lg-launches-latest-ultragear-gaming-monitor",
+        "https://www.lg.com/us/press-release/lg-launches-lg-xboom-blast-a-powerful-party-speaker-designed-for-outdoor-freedom",
         "https://www.lg.com/us/press-release/lg-launches-limited-time-promotion-featuring-free-lg-xboom-go-speaker-with-lg-tv-purchase",
         "https://www.lg.com/us/press-release/lg-launches-limited-time-promotion-featuring-lg-tone-free-true-wireless-earbuds-with-lg-oled-tv-purchase",
         "https://www.lg.com/us/press-release/lg-launches-new chromeos-flex-certified-device-createboard-interactive-display-amid-full-line-showcase-istelive-23",
@@ -82679,11 +82808,14 @@
         "https://www.lg.com/us/press-release/lg-launches-ultragear-gaming-monitors-in-us-worlds-1st-240hz-oled-panel",
         "https://www.lg.com/us/press-release/lg-launches-vulnerable-and-endangered-species-awareness-campaign-in-times-square",
         "https://www.lg.com/us/press-release/lg-launches-xboom-go-pl-speaker-lineup",
+        "https://www.lg.com/us/press-release/lg-launches-xboom-power-series-a-powerful-party-speaker-lineup-built-to-turn-gatherings-into-parties",
         "https://www.lg.com/us/press-release/lg-leads-the-way-with-partners-at-infocomm-2025",
         "https://www.lg.com/us/press-release/lg-led-signage-display-system-delivers-stunning-images-offers-easier-installation",
         "https://www.lg.com/us/press-release/lg-led-signage-displays-receive-2020-international-design-excellence-award",
         "https://www.lg.com/us/press-release/lg-levels-up-laundry-experience-with-latest-washing-drying-solutions",
         "https://www.lg.com/us/press-release/lg-licenses-advanced-refrigerator-technologies-to-ge-appliances",
+        "https://www.lg.com/us/press-release/lg-lights-up-fourth-of-july-savings-across-home-entertainment-and-appliances",
+        "https://www.lg.com/us/press-release/lg-lights-up-fourth-of-july-savings-across-home-entertainment-appliances",
         "https://www.lg.com/us/press-release/lg-lincata-healthcare-tv-deployments",
         "https://www.lg.com/us/press-release/lg-local-channel",
         "https://www.lg.com/us/press-release/lg-magnit-4k-136inch-micro-led-display-delivers-ultimate-home-theater-experience",
@@ -82802,6 +82934,7 @@
         "https://www.lg.com/us/press-release/lg-smart-tvs-for-cruise-staterooms-crew-cabins-bring-custom-controls",
         "https://www.lg.com/us/press-release/lg-smart-tvs-to-get-stadia-cloud-gaming-in-late-2021",
         "https://www.lg.com/us/press-release/lg-smart-tvs-unlock-limitless-entertainment-and-personal-growth-with-new-apps",
+        "https://www.lg.com/us/press-release/lg-solutions-beyond-displays-infocomm-2026",
         "https://www.lg.com/us/press-release/lg-sound-suite-the-worlds-first-soundbar-audio-system-powered-by-dolby-atmos-flex-connect",
         "https://www.lg.com/us/press-release/lg-spotlights-appliance-eportfolio-service-commitment-largest-west-coast-homebuilding-trade-show",
         "https://www.lg.com/us/press-release/lg-spotlights-robust-appliance-portfolio-service-commitment-at-2023-pcbc",
@@ -82859,6 +82992,7 @@
         "https://www.lg.com/us/press-release/lg-tone-free-collaboration-with-pro-basketball-players-supports-after-school-all-stars-songwriting-academy",
         "https://www.lg.com/us/press-release/lg-tone-free-wireless-earbuds",
         "https://www.lg.com/us/press-release/lg-top-load-washers-deliver-top-performance-reliability-underscoring-shopper-confidence",
+        "https://www.lg.com/us/press-release/lg-tops-consumer-reports-reliability-rankings-for-kitchen-and-laundry-appliance-brands",
         "https://www.lg.com/us/press-release/lg-transforms-commerical-buildings-with-award-winning-hvac-systems",
         "https://www.lg.com/us/press-release/lg-transparent-oled-touch-display-elevates-engagement",
         "https://www.lg.com/us/press-release/lg-transportation-summit-unlocks-insights-that-help-enhance-the-passenger-experience",
@@ -82868,6 +83002,7 @@
         "https://www.lg.com/us/press-release/lg-tvs-pioneer-immersive-audio-experience-with-apple-music-in-spatial-audio-with-dolby-atmos",
         "https://www.lg.com/us/press-release/lg-tvs-turn-living-room-into-digital-art-gallery-with-new-nft-platform",
         "https://www.lg.com/us/press-release/lg-tvs-up-the-ante-providing-expanded-selection-of-gamer-centric-services-all-in-one-place",
+        "https://www.lg.com/us/press-release/lg-ultra-stretch-all-in-one-dvled-display",
         "https://www.lg.com/us/press-release/lg-ultragear-27g790b-preorder",
         "https://www.lg.com/us/press-release/lg-ultragear-evil-geniuses-launch-collegiate-showcase-series",
         "https://www.lg.com/us/press-release/lg-ultragear-gx9-preorder",
@@ -82996,6 +83131,7 @@
         "https://www.lg.com/us/press-release/now-available-xboom-by-william-with-fyiraidio-the-speaker-that-talks-back",
         "https://www.lg.com/us/press-release/pa-recognizes-lg-for-green-power-leadership",
         "https://www.lg.com/us/press-release/pro-centric-stay-vrma",
+        "https://www.lg.com/us/press-release/public-safety-technology-alliance-spotlights-future-of-integrated-mission-critical-operations",
         "https://www.lg.com/us/press-release/revive-your-flatlining-fantasy-football-team-with-matthew-berry-and-lg-channels",
         "https://www.lg.com/us/press-release/ring-in-the-holiday-season-with-12-days-of-energy-star-lg-appliance-deals",
         "https://www.lg.com/us/press-release/ring-in-the-holiday-season-with-lgs-black-friday-appliance-deals",
@@ -83064,34 +83200,20 @@
         "https://www.lg.com/us/projectors/lg-pu615u-4k-laser-projector",
         "https://www.lg.com/us/projectors/lg-pu700r-smart-portable-projector",
         "https://www.lg.com/us/promotions",
-        "https://www.lg.com/us/promotions/ac-air-purifier-bundle-savings",
         "https://www.lg.com/us/promotions/air-conditioner-sale",
-        "https://www.lg.com/us/promotions/appliance-trade-in-offer",
+        "https://www.lg.com/us/promotions/back-to-school-deals",
         "https://www.lg.com/us/promotions/best-selling-tvs-sound-bars-audio-video",
         "https://www.lg.com/us/promotions/black-friday-deals",
-        "https://www.lg.com/us/promotions/cyber-monday-deals",
-        "https://www.lg.com/us/promotions/dolby-atmos-sound-bars",
         "https://www.lg.com/us/promotions/front-load-laundry-bundle-deal",
         "https://www.lg.com/us/promotions/home-appliance-rebates",
         "https://www.lg.com/us/promotions/home-appliance-savings",
         "https://www.lg.com/us/promotions/home-kitchen-appliance-premium-care-savings",
-        "https://www.lg.com/us/promotions/large-screen-tv-deal",
-        "https://www.lg.com/us/promotions/lifes-good-monitor-deals",
-        "https://www.lg.com/us/promotions/member-exclusive-rewards",
-        "https://www.lg.com/us/promotions/monitor-flash-sale",
-        "https://www.lg.com/us/promotions/mylg-ownership-program-deals",
         "https://www.lg.com/us/promotions/presidents-day-sale",
         "https://www.lg.com/us/promotions/refrigerator-bundle-deal",
         "https://www.lg.com/us/promotions/rinse-laundry-service-offer",
-        "https://www.lg.com/us/promotions/room-air-conditioner-bundle-savings",
-        "https://www.lg.com/us/promotions/sound-bars-with-subwoofer",
         "https://www.lg.com/us/promotions/soundbar-bundle-savings",
         "https://www.lg.com/us/promotions/store-pickup",
-        "https://www.lg.com/us/promotions/studio-bundle-savings",
-        "https://www.lg.com/us/promotions/studio-thinq-warranty-extension",
-        "https://www.lg.com/us/promotions/top-freezer-icemaker-promo",
         "https://www.lg.com/us/promotions/top-load-laundry-pair-offer",
-        "https://www.lg.com/us/promotions/tv-deals-installation-offer",
         "https://www.lg.com/us/promotions/tv-sale-deals",
         "https://www.lg.com/us/promotions/ultra-large-tv-deal",
         "https://www.lg.com/us/promotions/wall-mounting-lg-tvs-deal",
@@ -83130,7 +83252,6 @@
         "https://www.lg.com/us/public-notices/tv-audio-video/rear-projection-tv-settlement",
         "https://www.lg.com/us/qhd-monitors",
         "https://www.lg.com/us/qned-evo-ai-tv",
-        "https://www.lg.com/us/qned-evo-ai-tv-experience",
         "https://www.lg.com/us/qned-tvs",
         "https://www.lg.com/us/range-hoods",
         "https://www.lg.com/us/ranges",
@@ -83328,6 +83449,7 @@
         "https://www.lg.com/us/refrigerators/lg-lf26c6230v-french-3-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lf26c8210s-french-4-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lf26wch5hs-french-3-door-refrigerator",
+        "https://www.lg.com/us/refrigerators/lg-lf29h9730s-french-4-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lf29n8330s-french-4-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lf29s8230s-french-4-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lf29s8230v-french-4-door-refrigerator",
@@ -83363,6 +83485,7 @@
         "https://www.lg.com/us/refrigerators/lg-ll31h6530s-french-3-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-llfgc2706s-french-3-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-llmxs3006s-french-4-door-refrigerator",
+        "https://www.lg.com/us/refrigerators/lg-lm29vsp7cs-french-4-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lmwc23626s-french-4-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lmws27626s-french-4-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lmws29626s-french-4-door-refrigerator",
@@ -83385,9 +83508,10 @@
         "https://www.lg.com/us/refrigerators/lg-lrfds3016s-french-3-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lrfgc2706s-french-3-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lrflc2706d-french-3-door-refrigerator",
-        "https://www.lg.com/us/refrigerators/lg-lrflc2706s-french-3-door-refrigerator",
+        "https://www.lg.com/us/refrigerators/lg-lrflc2706s-french-3-door-refrigerator-b",
         "https://www.lg.com/us/refrigerators/lg-lrflc2716d-french-3-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lrflc2716s-french-3-door-refrigerator",
+        "https://www.lg.com/us/refrigerators/lg-lrflc2716v-french-3-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lrflc2726s-french-3-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lrfls3216s-french-3-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lrfoc2606s-french-3-door-refrigerator",
@@ -83503,20 +83627,15 @@
         "https://www.lg.com/us/residential-hvac/solutions-applications/case-studies",
         "https://www.lg.com/us/residential-hvac/solutions-applications/videos",
         "https://www.lg.com/us/residential-hvac/why-lg/sustainability",
-        "https://www.lg.com/us/rewards/referral",
         "https://www.lg.com/us/robot-vacuums",
         "https://www.lg.com/us/shop-lg/shop-faq",
-        "https://www.lg.com/us/shop-reliable-home-appliances",
         "https://www.lg.com/us/shop-with-an-agent",
         "https://www.lg.com/us/shop/sales/guest/form",
         "https://www.lg.com/us/side-by-side-refrigerators",
-        "https://www.lg.com/us/simroom",
-        "https://www.lg.com/us/simroom/accessibility",
-        "https://www.lg.com/us/simroom/tvs/showroom/oled-2023/b3-series",
-        "https://www.lg.com/us/simroom/tvs/user-guide/2024",
         "https://www.lg.com/us/single-wall-ovens",
-        "https://www.lg.com/us/sitemap",
         "https://www.lg.com/us/smart-monitors",
+        "https://www.lg.com/us/smart-monitors/lg-27u731sa-w-32u889sa-w-versatile-smart-entertainment-collection",
+        "https://www.lg.com/us/smart-monitors/lg-34sr60qc-w-32u889sa-w-large-screen-versatile-entertainment-collection",
         "https://www.lg.com/us/smart-watches/lg-W100-White-lg-watch",
         "https://www.lg.com/us/smart-watches/lg-W100-lg-watch",
         "https://www.lg.com/us/smart-watches/lg-W110-lg-watch-r",
@@ -83640,21 +83759,26 @@
         "https://www.lg.com/us/soundbars/lg-h7-w7-cinema-suite",
         "https://www.lg.com/us/soundbars/lg-m5-p2-h7-immersive-suite-5",
         "https://www.lg.com/us/soundbars/lg-m5-p2-h7-w7-immersive-suite-5-pro",
+        "https://www.lg.com/us/soundbars/lg-m5-p2-w7-stereo-suite-5-pro",
         "https://www.lg.com/us/soundbars/lg-m5-p4-h7-immersive-quad-suite-5",
         "https://www.lg.com/us/soundbars/lg-m5-p4-h7-w7-immersive-quad-suite-5-pro",
         "https://www.lg.com/us/soundbars/lg-m7-p2-h7-immersive-suite-7",
         "https://www.lg.com/us/soundbars/lg-m7-p2-h7-w7-immersive-suite-7-pro",
+        "https://www.lg.com/us/soundbars/lg-m7-p2-w7-stereo-suite-7-pro",
         "https://www.lg.com/us/soundbars/lg-m7-p4-h7-immersive-quad-suite-7",
         "https://www.lg.com/us/soundbars/lg-m7-p4-h7-w7-immersive-quad-suite-7-pro",
+        "https://www.lg.com/us/soundbars/lg-s30a-soundbar",
         "https://www.lg.com/us/soundbars/lg-s35a-soundbar",
         "https://www.lg.com/us/soundbars/lg-s40t-soundbar",
         "https://www.lg.com/us/soundbars/lg-s40tr-home-theater-soundbar",
         "https://www.lg.com/us/soundbars/lg-s55tr-home-theater-soundbar",
         "https://www.lg.com/us/soundbars/lg-s60t-soundbar",
         "https://www.lg.com/us/soundbars/lg-s60tr-home-theater-soundbar",
+        "https://www.lg.com/us/soundbars/lg-s6ftr-home-theater-soundbar",
         "https://www.lg.com/us/soundbars/lg-s70tr-home-theater-soundbar",
         "https://www.lg.com/us/soundbars/lg-s70ty-soundbar",
         "https://www.lg.com/us/soundbars/lg-s77s-soundbar",
+        "https://www.lg.com/us/soundbars/lg-s7ftrs-home-theater-soundbar",
         "https://www.lg.com/us/soundbars/lg-s80qr-soundbar",
         "https://www.lg.com/us/soundbars/lg-s80tr-home-theater-soundbar",
         "https://www.lg.com/us/soundbars/lg-s80ty-soundbar",
@@ -83721,6 +83845,7 @@
         "https://www.lg.com/us/speakers/lg-sound-suite-m7-p2-premium-wireless-speaker",
         "https://www.lg.com/us/speakers/lg-sound-suite-m7-p4-premium-wireless-speaker",
         "https://www.lg.com/us/speakers/lg-sound-suite-m7-premium-wireless-speaker",
+        "https://www.lg.com/us/speakers/lg-xboom-blast-party-speaker",
         "https://www.lg.com/us/speakers/lg-xboom-bounce-core-portable-speaker",
         "https://www.lg.com/us/speakers/lg-xboom-bounce-portable-speaker",
         "https://www.lg.com/us/speakers/lg-xboom-grab-grey-portable-speaker",
@@ -83749,7 +83874,6 @@
         "https://www.lg.com/us/speakers/lg-xo3qbk-portable-bluetooth-speaker",
         "https://www.lg.com/us/speakers/lg-xt7s-2nd-portable-bluetooth-speaker",
         "https://www.lg.com/us/specialty-food-refrigerators",
-        "https://www.lg.com/us/stanbyme-2",
         "https://www.lg.com/us/stick-vacuums",
         "https://www.lg.com/us/store-credit-program",
         "https://www.lg.com/us/styler-steam-closet",
@@ -83762,7 +83886,6 @@
         "https://www.lg.com/us/support/business/enhanced-service-plan",
         "https://www.lg.com/us/support/business/five-star-service",
         "https://www.lg.com/us/support/business/repair-warranty",
-        "https://www.lg.com/us/support/business/track-commercial-display-status",
         "https://www.lg.com/us/support/connect-bluetooth-devices-guide",
         "https://www.lg.com/us/support/connect-device-to-tv-guide",
         "https://www.lg.com/us/support/find-service-center",
@@ -83866,17 +83989,12 @@
         "https://www.lg.com/us/tv-audio-video-accessories/lg-sr-g3wu55-gallery-stand",
         "https://www.lg.com/us/tv-audio-video-accessories/lg-sr-g3wu65-gallery-stand",
         "https://www.lg.com/us/tv-audio-video-accessories/lg-sr-g3wu8377-gallery-stand",
-        "https://www.lg.com/us/tv-buying-guide",
-        "https://www.lg.com/us/tv-buying-guide/best-tv-for-your-lifestyle",
-        "https://www.lg.com/us/tv-buying-guide/how-ai-enhances-smart-tvs",
-        "https://www.lg.com/us/tv-buying-guide/which-lg-tv-is-best",
-        "https://www.lg.com/us/tv-buying-guide/which-lg-tv-panel-type-is-best",
-        "https://www.lg.com/us/tv-buying-guide/which-lg-tv-resolution-is-best",
         "https://www.lg.com/us/tv-home-theater-accessories/lg-agf76631064-tv-remote-control",
         "https://www.lg.com/us/tv-home-theater-accessories/lg-akb73616401-projector-remote-control",
         "https://www.lg.com/us/tv-home-theater-accessories/lg-akb75056102-tv-remote-control",
         "https://www.lg.com/us/tv-home-theater-accessories/lg-akb75056302-tv-remote-control",
         "https://www.lg.com/us/tv-home-theater-accessories/lg-akb75056402-tv-remote-control",
+        "https://www.lg.com/us/tv-home-theater-accessories/lg-akb76040302-tv-remote-control",
         "https://www.lg.com/us/tv-home-theater-accessories/lg-an-gxdv55-oled-tv-stand-mount",
         "https://www.lg.com/us/tv-home-theater-accessories/lg-an-gxdv65-oled-tv-stand-mount",
         "https://www.lg.com/us/tv-home-theater-accessories/lg-an-gxdv77-oled-tv-stand-mount",
@@ -83897,6 +84015,7 @@
         "https://www.lg.com/us/tv-home-theater-accessories/lg-lsw640b-wall-mount",
         "https://www.lg.com/us/tv-home-theater-accessories/lg-mr22gn-magic-remote",
         "https://www.lg.com/us/tv-home-theater-accessories/lg-mr25ga-magic-remote",
+        "https://www.lg.com/us/tv-home-theater-accessories/lg-mr26ga-magic-remote",
         "https://www.lg.com/us/tv-home-theater-accessories/lg-olw480b-wall-mount",
         "https://www.lg.com/us/tv-home-theater-accessories/lg-otw420b-wall-mount",
         "https://www.lg.com/us/tv-home-theater-accessories/lg-otw630b-wall-mount",
@@ -83942,9 +84061,11 @@
         "https://www.lg.com/us/tvs/lg-24LH4830-PU-led-tv",
         "https://www.lg.com/us/tvs/lg-24LJ4840-WU-led-tv",
         "https://www.lg.com/us/tvs/lg-24LN4510-led-tv",
+        "https://www.lg.com/us/tvs/lg-24lb7000pua-hd-tv",
         "https://www.lg.com/us/tvs/lg-24lj4540-led-tv",
         "https://www.lg.com/us/tvs/lg-24lj4540-wu-led-tv",
         "https://www.lg.com/us/tvs/lg-26LN4500-led-tv",
+        "https://www.lg.com/us/tvs/lg-27lb7000pua-hd-tv",
         "https://www.lg.com/us/tvs/lg-27lx5qkna",
         "https://www.lg.com/us/tvs/lg-28LF4520-led-tv",
         "https://www.lg.com/us/tvs/lg-28LH4530-P-led-tv",
@@ -83981,6 +84102,7 @@
         "https://www.lg.com/us/tvs/lg-32LN540B-led-tv",
         "https://www.lg.com/us/tvs/lg-32LN5700-led-tv",
         "https://www.lg.com/us/tvs/lg-32LS3450-led-tv",
+        "https://www.lg.com/us/tvs/lg-32lb650bpua-hd-tv",
         "https://www.lg.com/us/tvs/lg-32lq630baua-hd-tv",
         "https://www.lg.com/us/tvs/lg-32lq630bpua-led-tv",
         "https://www.lg.com/us/tvs/lg-32lr600bzuc-hd-tv",
@@ -84275,6 +84397,7 @@
         "https://www.lg.com/us/tvs/lg-55nano80aqa-4k-uhd-tv",
         "https://www.lg.com/us/tvs/lg-55nano90upa-4k-uhd-tv",
         "https://www.lg.com/us/tvs/lg-55nu700bpua-4k-uhd-tv",
+        "https://www.lg.com/us/tvs/lg-55nu710baua-4k-uhd-tv",
         "https://www.lg.com/us/tvs/lg-55nu850baua-4k-uhd-tv",
         "https://www.lg.com/us/tvs/lg-55nu850bpua-4k-uhd-tv",
         "https://www.lg.com/us/tvs/lg-55qned70aua-qned-4k-tv",
@@ -84282,6 +84405,7 @@
         "https://www.lg.com/us/tvs/lg-55qned75baa-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-55qned75bua-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-55qned75ura-qned-4k-tv",
+        "https://www.lg.com/us/tvs/lg-55qned7sbaa-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-55qned7sbua-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-55qned80aqa-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-55qned80ara-qned-4k-tv",
@@ -84318,6 +84442,7 @@
         "https://www.lg.com/us/tvs/lg-55ut8000aua-4k-uhd-tv",
         "https://www.lg.com/us/tvs/lg-58UF8300-4k-uhd-led-tv",
         "https://www.lg.com/us/tvs/lg-58UH6300-4k-uhd-tv",
+        "https://www.lg.com/us/tvs/lg-58nu700bpud-4k-uhd-tv",
         "https://www.lg.com/us/tvs/lg-60GA6400-led-tv",
         "https://www.lg.com/us/tvs/lg-60LA6200-led-tv",
         "https://www.lg.com/us/tvs/lg-60LA7400-led-tv",
@@ -84432,6 +84557,7 @@
         "https://www.lg.com/us/tvs/lg-65qned75baa-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-65qned75bua-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-65qned75ura-qned-4k-tv",
+        "https://www.lg.com/us/tvs/lg-65qned7sbaa-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-65qned7sbua-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-65qned80aqa-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-65qned80ara-qned-4k-tv",
@@ -84517,12 +84643,14 @@
         "https://www.lg.com/us/tvs/lg-75nano80upa-4k-uhd-tv",
         "https://www.lg.com/us/tvs/lg-75nano85una-4k-uhd-tv",
         "https://www.lg.com/us/tvs/lg-75nu700bpua-4k-uhd-tv",
+        "https://www.lg.com/us/tvs/lg-75nu710baua-4k-uhd-tv",
         "https://www.lg.com/us/tvs/lg-75nu850bpua-4k-uhd-tv",
         "https://www.lg.com/us/tvs/lg-75qned70auc-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-75qned75ara-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-75qned75baa-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-75qned75bua-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-75qned75ura-qned-4k-tv",
+        "https://www.lg.com/us/tvs/lg-75qned7sbaa-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-75qned7sbua-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-75qned80aqa-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-75qned80ara-qned-4k-tv",
@@ -84579,9 +84707,10 @@
         "https://www.lg.com/us/tvs/lg-85nu710baua-4k-uhd-tv",
         "https://www.lg.com/us/tvs/lg-85nu850bpua-4k-uhd-tv",
         "https://www.lg.com/us/tvs/lg-85nu870baua-4k-uhd-tv",
+        "https://www.lg.com/us/tvs/lg-85qned74baa-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-85qned74bua-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-85qned75baa-qned-4k-tv",
-        "https://www.lg.com/us/tvs/lg-85qned75bua-qned-4k-tv-b",
+        "https://www.lg.com/us/tvs/lg-85qned75bua-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-85qned84baa-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-85qned84bua-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-85qned92aua-qned-4k-tv",
@@ -84686,7 +84815,7 @@
         "https://www.lg.com/us/tvs/lg-oled48a1pua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled48b4pua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled48b5pua-oled-4k-tv",
-        "https://www.lg.com/us/tvs/lg-oled48b6gua-oled-4k-tv-b",
+        "https://www.lg.com/us/tvs/lg-oled48b6gua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled48c1aub-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled48c1pub-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled48c2aua-oled-4k-tv",
@@ -84700,6 +84829,7 @@
         "https://www.lg.com/us/tvs/lg-oled48c6aua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled48c6pua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled48cxpub-oled-4k-tv",
+        "https://www.lg.com/us/tvs/lg-oled48g5sua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled55a1pua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled55a2aua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled55a2pua-oled-4k-tv",
@@ -84711,6 +84841,7 @@
         "https://www.lg.com/us/tvs/lg-oled55b4pua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled55b5aua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled55b5pua-oled-4k-tv",
+        "https://www.lg.com/us/tvs/lg-oled55b6eua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled55bxaua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled55c2aua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled55c3aua-oled-4k-tv",
@@ -84737,6 +84868,7 @@
         "https://www.lg.com/us/tvs/lg-oled65b5aua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled65b5pua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled65b6aua-oled-4k-tv",
+        "https://www.lg.com/us/tvs/lg-oled65b6eua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled65b6gua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled65c1pub-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled65c2aua-oled-4k-tv",
@@ -84768,6 +84900,7 @@
         "https://www.lg.com/us/tvs/lg-oled77b4pua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled77b5pua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled77b6aua-oled-4k-tv",
+        "https://www.lg.com/us/tvs/lg-oled77b6eua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled77b6gua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled77c1pub-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled77c2aua-oled-4k-tv",
@@ -84811,7 +84944,7 @@
         "https://www.lg.com/us/tvs/lg-oled83c4pua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled83c5aua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled83c5pua-oled-4k-tv",
-        "https://www.lg.com/us/tvs/lg-oled83c6hua-oled-4k-tv",
+        "https://www.lg.com/us/tvs/lg-oled83c6hua-oled-4k-tv-b",
         "https://www.lg.com/us/tvs/lg-oled83c6hup-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled83g2pua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled83g3pua-oled-4k-tv",
@@ -84828,9 +84961,21 @@
         "https://www.lg.com/us/tvs/lg-oled97g5wua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled97g6wua-oled-4k-tv",
         "https://www.lg.com/us/tvs/lg-oled97m3pua-oled-4k-tv",
+        "https://www.lg.com/us/tvs/tv-buying-guide",
+        "https://www.lg.com/us/tvs/tv-buying-guide/ai-tv-for-smarter-viewing",
+        "https://www.lg.com/us/tvs/tv-buying-guide/art-tv-for-your-space",
+        "https://www.lg.com/us/tvs/tv-buying-guide/picture-quality-tv-guide",
+        "https://www.lg.com/us/tvs/tv-buying-guide/right-tv-size-for-my-room",
+        "https://www.lg.com/us/tvs/tv-buying-guide/tv-for-gaming",
+        "https://www.lg.com/us/tvs/tv-buying-guide/tv-for-sports-fans",
+        "https://www.lg.com/us/tvs/tv-buying-guide/tv-for-watching-movies",
+        "https://www.lg.com/us/tvs/tv-buying-guide/what-makes-a-4k-tv-a-good-choice",
         "https://www.lg.com/us/uhd-4k-tvs",
         "https://www.lg.com/us/ultragear-oled-gaming-monitors",
         "https://www.lg.com/us/ultrawide-monitors",
+        "https://www.lg.com/us/ultrawide-monitors/lg-32u990a-s-27us550-w-creative-performance-collection",
+        "https://www.lg.com/us/ultrawide-monitors/lg-34u650a-b-27u411a-b-office-essentials-workflow-collection",
+        "https://www.lg.com/us/ultrawide-monitors/lg-40u990a-w-27up850k-w-creative-connected-workspace-collection",
         "https://www.lg.com/us/vacuum-accessories",
         "https://www.lg.com/us/vacuum-cleaners",
         "https://www.lg.com/us/vacuum-cleaners/discontinued",
@@ -84870,7 +85015,6 @@
         "https://www.lg.com/us/vacuum-cleaners/lg-a941ktmp-stick-vacuum",
         "https://www.lg.com/us/vacuum-cleaners/lg-c5323b0-stick-vacuum",
         "https://www.lg.com/us/vacuum-cleaners/lg-c5323gw-stick-vacuum",
-        "https://www.lg.com/us/vacuum-cleaners/lg-c7325lc-stick-vacuum",
         "https://www.lg.com/us/vacuum-cleaners/lg-r975gm1-robot-vacuum",
         "https://www.lg.com/us/wall-air-conditioners",
         "https://www.lg.com/us/wall-ovens",
@@ -84935,6 +85079,7 @@
         "https://www.lg.com/us/washers-dryers/lg-dlex8900b-front-load-electric-dryer",
         "https://www.lg.com/us/washers-dryers/lg-dlex8980v-front-load-electric-dryer",
         "https://www.lg.com/us/washers-dryers/lg-dlex9000v-electric-dryer",
+        "https://www.lg.com/us/washers-dryers/lg-dlex9700p-electric-dryer",
         "https://www.lg.com/us/washers-dryers/lg-dlg3401v-front-load-gas-dryer",
         "https://www.lg.com/us/washers-dryers/lg-dlg3401w-gas-dryer",
         "https://www.lg.com/us/washers-dryers/lg-dlg3421w-front-load-gas-dryer",
@@ -84980,6 +85125,7 @@
         "https://www.lg.com/us/washers-dryers/lg-dlgx8901b-front-load-gas-dryer",
         "https://www.lg.com/us/washers-dryers/lg-dlgx8981v-front-load-gas-dryer",
         "https://www.lg.com/us/washers-dryers/lg-dlgx9001v-gas-dryer",
+        "https://www.lg.com/us/washers-dryers/lg-dlgx9701p-front-load-gas-dryer",
         "https://www.lg.com/us/washers-dryers/lg-dlhc1455v-front-load-electric-dryer",
         "https://www.lg.com/us/washers-dryers/lg-dlhc1455w-front-load-electric-dryer",
         "https://www.lg.com/us/washers-dryers/lg-dlhc4002b-electric-dryer",
@@ -84997,6 +85143,7 @@
         "https://www.lg.com/us/washers-dryers/lg-s5msb-styler-steam-closet",
         "https://www.lg.com/us/washers-dryers/lg-s5wbc-styler-steam-closet",
         "https://www.lg.com/us/washers-dryers/lg-sc5gmr80h-styler-steam-closet",
+        "https://www.lg.com/us/washers-dryers/lg-sc5gqr8ga-styler-steam-closet",
         "https://www.lg.com/us/washers-dryers/lg-sc5mar4g-styler-steam-closet",
         "https://www.lg.com/us/washers-dryers/lg-sidekick-wd100cb-pedestal-washer",
         "https://www.lg.com/us/washers-dryers/lg-sidekick-wd100cv-pedestal-washer",
@@ -85022,6 +85169,7 @@
         "https://www.lg.com/us/washers-dryers/lg-wd300cb-pedestal-washer",
         "https://www.lg.com/us/washers-dryers/lg-wd300cw-pedestal-washer",
         "https://www.lg.com/us/washers-dryers/lg-wd405cb-pedestal-washer",
+        "https://www.lg.com/us/washers-dryers/lg-wd405cp-pedestal-washer",
         "https://www.lg.com/us/washers-dryers/lg-wke100hva-washtower",
         "https://www.lg.com/us/washers-dryers/lg-wke100hwa-washtower",
         "https://www.lg.com/us/washers-dryers/lg-wkex200hba-washtower",
@@ -85075,6 +85223,7 @@
         "https://www.lg.com/us/washers-dryers/lg-wm8900hba-front-load-washer",
         "https://www.lg.com/us/washers-dryers/lg-wm8980hva-front-load-washer",
         "https://www.lg.com/us/washers-dryers/lg-wm9000hva-front-load-washer",
+        "https://www.lg.com/us/washers-dryers/lg-wm9700hpa-front-load-washer",
         "https://www.lg.com/us/washers-dryers/lg-wm9998hba-washcombo",
         "https://www.lg.com/us/washers-dryers/lg-wsex200hna-washtower",
         "https://www.lg.com/us/washers-dryers/lg-wsgx201hna-washtower",
@@ -85183,7 +85332,6 @@
         "https://www.lg.com/us/webos/discover",
         "https://www.lg.com/us/webos/gaming-lifestyle",
         "https://www.lg.com/us/webos/home-screen-apps",
-        "https://www.lg.com/us/webos/lg-channels",
         "https://www.lg.com/us/webos/lg-streaming-week",
         "https://www.lg.com/us/window-air-conditioners",
         "https://www.lg.com/us/wine-cellar-refrigerators",
@@ -85237,12 +85385,11 @@
         "https://www.lg.com/us/wonderbox",
         "https://www.lg.com/us/worlds-number-one-oled-tv",
         "https://www.lg.com/us/xboom",
-        "https://www.lg.com/us/yankees",
         "https://www.lg.com/us/zero-clearance-refrigerator"
       ],
-      "url_count": 6150,
+      "url_count": 6280,
       "sitemap_url": "https://www.lg.com/us/sitemap.xml",
-      "last_synced_at": "2026-06-10T18:35:45.897009"
+      "last_synced_at": "2026-09-06T12:00:03.195051"
     },
     {
       "id": "grp_lg_ca",
@@ -90716,7 +90863,7 @@
       ],
       "url_count": 5465,
       "sitemap_url": "https://www.lg.com/ca_en/sitemap.xml",
-      "last_synced_at": "2026-06-10T18:37:32.050027"
+      "last_synced_at": "2026-09-06T12:00:59.317940"
     }
   ],
   "schedules": [
@@ -90753,7 +90900,7 @@
       "time": "01:20",
       "chunk_size": 2000,
       "id": "sch_lg_uk",
-      "chunk_index": 0,
+      "chunk_index": 1,
       "name": "LG Sitemap - uk",
       "enabled": true,
       "group_id": "grp_lg_uk"
