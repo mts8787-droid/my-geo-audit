@@ -208,12 +208,24 @@
 | # | 항목 | 매칭 대상 | check id |
 | :-: | :-- | :-- | :-- |
 | #32 | FAQ Block | class/id 에 `faq` · `q&a` · `qna` · `accordion` · `frequently asked` · `자주 묻는` · `질문` · `answer` | `ai_faq_block` |
-| #35 | Summary Box | class/id 에 `summary` · `tldr` · `abstract` · `highlight` · `key takeaway` · `요약` · `핵심` · `주요 특징`<br>또는 요약 블록 selector `p.info-desc, p.description` (아래 참조) | `ai_summary_box` |
+| #35 | Summary Box | 셋 중 하나 — ① 헤딩 텍스트에 `At a Glance` · `요약` · `한눈에` 등 ② class/id 에 `summary` · `tldr` · `key takeaway` 등 ③ 요약 블록 selector `p.info-desc, p.description` (아래 참조) | `ai_summary_box` |
 | #39 | PDP Thumbnails | `img[src*=PDPGalleryThumbnail]` · `[class*=Product-ImageGrid] img` · 구 AEM `.c-*` fallback | `ai_pdp_thumbnails` |
 | #40 | Core Element | 제품명·가격·이미지 등 선택자 그룹 중 3개 이상 존재 | `ai_core_element` |
 | #44 | Image Filename | `img` 파일명에 `lg` · `oled` · `gram` · `thinq` 포함 | `ai_image_filename` |
 
-> **#35 요약 블록 selector** — LG 서포트 문서는 요약을 `<h2>At a Glance</h2>` 아래
+> **#35 는 세 경로 중 하나만 걸리면 통과한다.**
+>
+> | 경로 | 예 |
+> | :-- | :-- |
+> | 헤딩 텍스트 | `<h2 class="tit">At a Glance</h2>` — 클래스명과 무관하게 h1~h6·b·strong·dt 텍스트를 본다 |
+> | class/id 키워드 | `class="summary-box"` · `class="key-takeaway"` |
+> | 요약 블록 selector | `<p class="info-desc">` 2줄 이상 |
+>
+> `At a Glance` 는 2026-09-17 에 다국어(`한눈에`·`de un vistazo`·`auf einen Blick`·
+> `em resumo`·`tổng quan`)와 함께 추가했다. 헤딩만 있고 요약 단락 형식이 다른 문서를
+> 잡기 위한 것으로, US 트러블슈팅 실측 50% → 66.7% 로 올랐다.
+>
+> **요약 블록 selector** — LG 서포트 문서는 요약을 `<h2>At a Glance</h2>` 아래
 > `<p class="info-desc">` 또는 `<p class="description">` 에 넣는다(두 클래스가 한 요소에
 > 같이 붙기도 한다). 클래스명이 `summary` 계열이 아니라 키워드로는 안 잡혀 2026-09-17 에
 > selector 판정을 추가했다. 같은 클래스가 요약이 아닌 곳에도 쓰이므로 세 가지로 거른다:
