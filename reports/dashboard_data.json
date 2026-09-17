@@ -12,11 +12,11 @@
         "type_cap": 316
       },
       "excluded_count": 481,
-      "total_avg": 77.76,
+      "total_avg": 78.06,
       "max": 100,
       "grade_dist": {
-        "Good": 188,
-        "Need Improvement": 729
+        "Good": 193,
+        "Need Improvement": 724
       },
       "breakdown": {
         "performance": {
@@ -49,9 +49,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 47.37,
+          "points_avg": 49.52,
           "max": 100,
-          "pass_rate": 0.4742,
+          "pass_rate": 0.4949,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -210,7 +210,7 @@
         "ai_summary_box": {
           "label": "#35 Summary Box (콘텐츠)",
           "category": "citable_content",
-          "pass_rate": 0.6979,
+          "pass_rate": 0.7841,
           "applicable_n": 917
         },
         "ai_citable": {
@@ -3481,7 +3481,7 @@
       "redirect_dup": 24,
       "type_cap": 1566
     },
-    "total_avg_weighted": 79.37,
+    "total_avg_weighted": 79.4,
     "missing": []
   }
 }

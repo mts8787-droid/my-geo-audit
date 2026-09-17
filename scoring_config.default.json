@@ -757,7 +757,7 @@
             "block_selector": "p.info-desc, p.description",
             "block_exclude_class": "idt",
             "block_min_chars": 80,
-            "block_min_lines": 2
+            "block_min_lines": 1
           }
         }
       },
