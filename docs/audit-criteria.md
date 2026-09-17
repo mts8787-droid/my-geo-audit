@@ -113,10 +113,10 @@
 | # | 항목 | PASS | 측정방법 | check id |
 | :-: | :-- | :-- | :-- | :-- |
 | #32 | FAQ Block | 1개 이상 | FAQPage Schema, details/summary, Q&A 패턴 | `ai_faq_block` |
-| #33 | Definition Paragraph | 1개 이상 | "X는 Y이다", dfn, abbr | `ai_definition` |
+| #33 | Definition Paragraph | 1개 이상 | 정의문 패턴 15종(6개 언어), `dfn`, `abbr` — [패턴 목록](#매칭-패턴-기준) | `ai_definition` |
 | #34 | Author/Source | 저자 또는 (출처+날짜) | **JSON-LD** `author` 또는 (`datePublished` + `publisher`/`sourceOrganization`/`source`) | `ai_author_source` |
 | #35 | Summary Box | 1개 이상 | TL;DR, Key Takeaways, Highlights, Abstract | `ai_summary_box` |
-| #36 | Citable Sentences | 밀도 ≥ 10% | 숫자, 연도, 통계, 연구 키워드 포함 문장 | `ai_citable` |
+| #36 | Citable Sentences | **5개 이상** | 인용 가능 패턴 18종에 걸리는 문장 수 — [패턴 목록](#매칭-패턴-기준) | `ai_citable` |
 
 > **#34 주의**: HTML `meta author`·본문 byline은 판정에 **사용하지 않는다**. AI가 파싱 가능한
 > 구조화 데이터를 요구하는 기준이다. 따라서 통과율 0%는 "저자 표기가 없다"가 아니라
@@ -140,6 +140,82 @@
 | #42 | Status Code (Soft 404) | 200 반환 + HTML Text Count 기준 이상 | Status Code 및 본문 길이 검증 | `ai_soft_404` |
 | #43 | llms.txt | 존재 | 각 국가별 llms.txt 검증 | `ai_llms_txt` |
 | #40* | Summary Content SSR | — (체크리스트 문서에 대응 행 없음) | | `ai_summary_ssr` |
+
+
+---
+
+## 매칭 패턴 기준
+
+일부 항목은 스키마나 HTML 구조가 아니라 **본문 텍스트·클래스명 패턴**으로 판정한다.
+패턴 매칭은 문맥을 보지 못하므로 아래 한계를 전제로 읽어야 한다.
+
+- 판정 대상 텍스트에서 **GNB·헤더·푸터·쿠키 배너·브레드크럼은 제외**한다.
+  모든 페이지에 동일하게 들어가 분모를 부풀리기 때문이다.
+- 검수 대상이 다국어라 **영어·스페인어·독일어·포르투갈어·베트남어·한국어**를 함께 처리한다.
+  (2026-08 확인: 한국어 전용 패턴만 있던 시기에 #33 통과율이 US 외 전 국가 0% 였다)
+
+### #36 Citable Sentences — 인용 가능 문장 (18패턴)
+
+문장 단위로 아래 중 **하나라도** 걸리면 인용 가능으로 센다. 5개 이상이면 통과.
+
+| 분류 | 잡는 것 | 예 |
+| :-- | :-- | :-- |
+| 퍼센트 | 백분율 | `42.7%` |
+| 통화 | 금액 | `$3,399.99` · `₩1,200,000` |
+| 연도 | 4자리 연도 / 한국어 연도 | `2025` · `2013-2024` · `2025년` |
+| 큰 수 | 1,000 이상 | `24,999` |
+| 배수 | 배수 표현 | `2x` · `3배` · `2 times` · `veces` · `fach` · `lần` |
+| 대규모 수 | 백만·억 단위 | `1 million` · `500만` · `milhões` · `triệu` |
+| 물리 단위 | 치수·전기·디스플레이 | `65 inch` · `165Hz` · `kWh` · `°C` · `dB` · `nits` |
+| 출처 표현 | 근거 인용문 | `according to` · `~에 따르면` · `según` · `laut` · `theo nghiên cứu` |
+| 순위·최초 | 1위/최초 주장 | `world's first` · `No.1` · `top 3` · `đầu tiên` |
+| 해상도·화면비 | 픽셀·비율 | `3840 × 2160` · `16:9` |
+| 평점 | 별점·점수 | `4.5/5` · `4.5 stars` · `★4.5` |
+| 용량·규격 | 저장·전송·성능 | `cu. ft.` · `mAh` · `Mbps` · `fps` · `lbs` · `인치` |
+| 기간·주기 | 보증·기간 | `10-year warranty` · `24 months` · `5년 보증` |
+| 인증·표준 | 규격 식별자 | `ISO 9001` · `ENERGY STAR` · `IP68` · `HDR10+` · `Wi-Fi 6` |
+| 비교·증감 | 수치 동반 비교 | `up to 30%` · `hasta` · `bis zu` · `40% 더 빠른` |
+| 수상·선정 | 어워드 | `CES Innovation Award` · `iF Design Award` · `Red Dot` |
+
+> **과대 집계 주의.** 문맥을 보지 않으므로 `Copyright © 2012–2025` 같은 저작권 표기,
+> 제품명에 포함된 `65 inch`, 가격표 나열도 인용 가능으로 잡힌다. 특히 PDP 는 제품명·
+> 스펙·가격이 본문에 반복돼 유리하다. 이 항목은 "구체적 수치가 본문에 5개 이상 있는가"
+> 수준의 느슨한 신호로 읽어야 하며, 인용 가치를 직접 보증하지 않는다.
+>
+> 2026-09-17 에 비율(≥10%) 기준에서 개수(≥5개) 기준으로 바꿨다. 비율은 본문이 길수록
+> 불리해 긴 서포트 문서가 짧은 PLP 보다 낮게 나왔기 때문이다.
+
+### #33 Definition Paragraph — 정의문 (15패턴)
+
+문서 전체에서 아래 중 **하나라도** 걸리면 통과. `dfn`·`abbr` 태그가 있으면 그것으로도 통과.
+
+| 언어 | 문형 |
+| :-- | :-- |
+| 한국어 | `X는 ~이다` · `X란 ~를 말한다` · `~를 의미한다` · `~를 가리킨다` · `~의 약자이다` |
+| 영어 | `X is/are a…` · `refers to` · `means` · `stands for` · `is defined as` · `can be defined as` · `consists of` · `is a type of` · `also known as` |
+| 영어(동격) | `X, also called Y` · `X (also known as Y)` · `a.k.a.` |
+| 스페인어 | `es/son un…` · `se refiere a` · `se define como` · `se conoce como` · `consiste en` |
+| 독일어 | `ist/sind ein…` · `bezeichnet` · `steht für` · `besteht aus` · `handelt es sich um` |
+| 포르투갈어 | `é/são um…` · `refere-se a` · `é um tipo de` · `consiste em` · `trata-se de` |
+| 베트남어 | `là một/các…` · `được gọi là` · `được định nghĩa là` · `viết tắt của` |
+| 공통 | 약어 정의 `HDR (High Dynamic Range)` · 질문형 `What is X?` · `Was ist` · `¿Qué es` |
+
+### 클래스·선택자 매칭 항목
+
+본문이 아니라 **HTML class/id 또는 CSS 선택자**로 판정하는 항목이다.
+마크업이 바뀌면 통과율이 함께 흔들리므로, 급변 시 사이트 개편을 먼저 의심할 것.
+
+| # | 항목 | 매칭 대상 | check id |
+| :-: | :-- | :-- | :-- |
+| #32 | FAQ Block | class/id 에 `faq` · `q&a` · `qna` · `accordion` · `frequently asked` · `자주 묻는` · `질문` · `answer` | `ai_faq_block` |
+| #35 | Summary Box | class/id 에 `summary` · `tldr` · `abstract` · `highlight` · `key takeaway` · `요약` · `핵심` · `주요 특징` | `ai_summary_box` |
+| #39 | PDP Thumbnails | `img[src*=PDPGalleryThumbnail]` · `[class*=Product-ImageGrid] img` · 구 AEM `.c-*` fallback | `ai_pdp_thumbnails` |
+| #40 | Core Element | 제품명·가격·이미지 등 선택자 그룹 중 3개 이상 존재 | `ai_core_element` |
+| #44 | Image Filename | `img` 파일명에 `lg` · `oled` · `gram` · `thinq` 포함 | `ai_image_filename` |
+
+> #32·#35 는 클래스명에 더해 **heading·강조 태그의 텍스트**(h1~h6, b, strong, dt, summary,
+> caption, legend · 60자 이하)도 본다. 클래스명 없이 제목 문구만으로 구성된 블록을
+> 놓치던 문제를 2026-08 에 보완했다.
 
 ---
 

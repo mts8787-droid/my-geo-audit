@@ -1337,6 +1337,30 @@ _CITABLE_PATTERNS = [
     # 순위/최초 표현 + 숫자 — world's first, No.1, top 3
     re.compile(r"\b(?:world'?s first|first[- ]ever|no\.?\s?1|n[.º°]\s?1|top\s?\d+|"
                r"primer[oa]?|erste[rns]?|primeiro|đầu tiên)\b", re.I),
+    # ── 2026-09-17 추가 ────────────────────────────────────────────────────
+    # 해상도·화면비 — 1920x1080, 16:9, 3840 × 2160
+    re.compile(r"\b\d{3,5}\s*[x×*]\s*\d{3,5}\b|\b\d{1,2}\s*:\s*\d{1,2}\b"),
+    # 평점 — 4.5/5, 4.5 stars, ★4.5, 4,5 estrellas
+    re.compile(r"\b\d(?:[.,]\d)?\s*(?:/\s*[510]|stars?|별점|estrellas?|Sterne|estrelas|sao)\b|★\s*\d", re.I),
+    # 용량·규격 단위 (기존 단위 목록 보완) — cu. ft., sq ft, mAh, Wh, Mbps, ms, fps, K
+    re.compile(r"\d+(?:[.,]\d+)?\s*(?:cu\.?\s?ft|sq\.?\s?ft|ft|mAh|Wh|Mbps|Gbps|ms|fps|K\b|"
+               r"lbs?|oz|pt|qt|gal|㎡|평|인치|리터)\b", re.I),
+    # 기간·주기 — 10-year warranty, 24 months, 5년 보증, 2 semanas
+    re.compile(r"\b\d+(?:[-\s])?(?:year|month|week|day|hour|hr|min|second)s?\b|"
+               r"\d+\s*(?:년|개월|주|일|시간|분|초)\b|"
+               r"\b\d+\s*(?:años?|meses|semanas?|Jahre?|Monate|anos|meses|năm|tháng)\b", re.I),
+    # 인증·표준 — ISO 9001, ENERGY STAR, IP68, HDR10, Dolby Atmos 등 규격 식별자
+    re.compile(r"\b(?:ISO|IEC|EN|ANSI|ASTM|IP)\s?\d{2,5}\b|"
+               r"\b(?:ENERGY\s?STAR|EPEAT|TÜV|UL|CE|RoHS|Wi-?Fi\s?\d|Bluetooth\s?\d(?:\.\d)?|"
+               r"HDMI\s?\d(?:\.\d)?|USB\s?\d(?:\.\d)?|HDR\s?\d+\+?)\b", re.I),
+    # 비교·증감 표현 + 숫자 — up to 30%, reduces by 2x, ~보다 40% 빠른
+    re.compile(r"\b(?:up to|as much as|over|more than|less than|reduces?|increases?|saves?|"
+               r"hasta|m[aá]s de|bis zu|mehr als|at[eé]|mais de|l[eê]n t[ớo]i|h[ơo]n)\s+"
+               r"[^.!?]{0,20}\d", re.I),
+    re.compile(r"\d+(?:[.,]\d+)?\s*%?\s*(?:더|이상|미만|절감|향상|증가|감소|빠른|넓은|가벼운)"),
+    # 수상·선정 — CES Innovation Award 2025, iF Design Award
+    re.compile(r"\b(?:CES|iF|Red\s?Dot|IDEA|Good\s?Design|EISA|IFA)\b[^.!?]{0,40}"
+               r"\b(?:award|winner|honou?ree|수상|선정|Preis|premio|pr[eê]mio)\b", re.I),
 ]
 
 # 정의문 패턴 — "X는 Y이다" 한국어 문법만 보던 것을 다국어로 확장.
@@ -1358,6 +1382,38 @@ _DEF_PATTERNS_MULTI = [
     # 베트남어: X là một|các ...
     re.compile(r"\b[A-ZĐÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĨŨƠƯ][\w\-]{1,30}(?:\s+[\w\-]{1,20}){0,4}\s+"
                r"(?:là|nghĩa là)\s+(?:một|các|kiểu|loại)\b", re.I),
+    # ── 2026-09-17 보강 ────────────────────────────────────────────────────
+    # 한국어 추가 서술형 — ~를 의미한다 / 가리킨다 / 뜻한다 / 의 약자 / 로 정의된다
+    re.compile(r"[가-힣A-Za-z0-9_]+(?:는|은|란|이란|이라는|라고 하는)\s+[가-힣A-Za-z0-9_,\s]{2,60}"
+               r"(?:를 의미한다|을 의미한다|를 가리킨다|을 가리킨다|를 뜻한다|을 뜻한다|"
+               r"라고 한다|로 정의된다|으로 정의된다|의 약자이다|의 줄임말이다)"),
+    # 영어 — can be defined as / describes / denotes / consists of / is short for / also known as
+    re.compile(r"\b[A-Z][\w+\-]{1,30}(?:\s+[\w+\-]{1,20}){0,4}\s+"
+               r"(?:can be defined as|is also known as|are also known as|is short for|"
+               r"describes?|denotes?|consists? of|comprises?|is a type of|are a type of|"
+               r"is the term for|is what)\b"),
+    # 영어 동격 — X, also called Y, ... / X (also known as Y)
+    re.compile(r"\b[A-Z][\w+\-]{1,30}\s*[,(]\s*(?:also (?:called|known as|referred to as)|"
+               r"or simply|a\.k\.a\.?)\s+", re.I),
+    # 스페인어 — se define como / se conoce como / consiste en / es un tipo de
+    re.compile(r"\b[A-ZÁÉÍÓÚÑ][\wáéíóúñ+\-]{1,30}(?:\s+[\wáéíóúñ\-]{1,20}){0,4}\s+"
+               r"(?:se define como|se conoce como|consiste en|es un tipo de|"
+               r"hace referencia a|se trata de)\b", re.I),
+    # 독일어 — wird als ... bezeichnet / steht für / besteht aus / handelt es sich um
+    re.compile(r"\b[A-ZÄÖÜ][\wäöüß+\-]{1,30}(?:\s+[\wäöüß\-]{1,20}){0,4}\s+"
+               r"(?:wird als|werden als|steht für|stehen für|besteht aus|bestehen aus|"
+               r"handelt es sich um|versteht man)\b", re.I),
+    # 포르투갈어 — é um tipo de / consiste em / é conhecido como / trata-se de
+    re.compile(r"\b[A-ZÁÂÃÉÊÍÓÔÕÚÇ][\wáâãéêíóôõúç+\-]{1,30}(?:\s+[\wáâãéêíóôõúç\-]{1,20}){0,4}\s+"
+               r"(?:é um tipo de|consiste em|é conhecid[oa] como|trata-se de|"
+               r"designa|corresponde a)\b", re.I),
+    # 베트남어 — được gọi là / được định nghĩa là / viết tắt của / bao gồm
+    re.compile(r"\b[A-ZĐÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĨŨƠƯ][\w\-]{1,30}(?:\s+[\w\-]{1,20}){0,4}\s+"
+               r"(?:được gọi là|được định nghĩa là|viết tắt của|bao gồm|tức là)\b", re.I),
+    # 약어 정의 — HDR (High Dynamic Range) / OLED stands for ...
+    re.compile(r"\b[A-Z]{2,6}\s*\(\s*[A-Z][\w\-]+(?:\s+[\w\-]+){1,5}\s*\)"),
+    # dfn/용어 정의 문형 — "What is X?" 바로 뒤 문장은 정의로 본다
+    re.compile(r"\b(?:What (?:is|are)|Was ist|¿?Qué es|O que é|X là gì)\b[^?]{2,60}\?", re.I),
 ]
 
 
