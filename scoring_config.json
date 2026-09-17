@@ -759,14 +759,14 @@
       },
       {
         "id": "ai_citable",
-        "name": "#36 Citable Sentence ≥ 10%",
+        "name": "#36 Citable Sentence ≥ 5개",
         "spec_id": "#36",
         "points": 1,
         "enabled": true,
         "rule": {
           "type": "citable_density_min",
           "params": {
-            "min_ratio": 0.1
+            "min_count": 5
           }
         }
       }

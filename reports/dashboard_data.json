@@ -11,11 +11,11 @@
         "redirect_dup": 3
       },
       "excluded_count": 165,
-      "total_avg": 77.33,
+      "total_avg": 77.82,
       "max": 100,
       "grade_dist": {
-        "Need Improvement": 818,
-        "Good": 415
+        "Need Improvement": 786,
+        "Good": 447
       },
       "breakdown": {
         "performance": {
@@ -48,9 +48,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 49.26,
+          "points_avg": 46.61,
           "max": 100,
-          "pass_rate": 0.4924,
+          "pass_rate": 0.4631,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -188,12 +188,6 @@
           "pass_rate": 0.6261,
           "applicable_n": 1233
         },
-        "ai_definition": {
-          "label": "#33 Definition Paragraph",
-          "category": "citable_content",
-          "pass_rate": 0.2506,
-          "applicable_n": 1233
-        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -207,9 +201,9 @@
           "applicable_n": 1233
         },
         "ai_citable": {
-          "label": "#36 Citable Sentence ≥ 10%",
+          "label": "#36 Citable Sentence ≥ 5개",
           "category": "citable_content",
-          "pass_rate": 0.6285,
+          "pass_rate": 0.2952,
           "applicable_n": 1233
         },
         "ai_ssr_ratio": {
@@ -328,11 +322,11 @@
         "redirect_dup": 6
       },
       "excluded_count": 274,
-      "total_avg": 81.84,
+      "total_avg": 81.49,
       "max": 100,
       "grade_dist": {
-        "Good": 1161,
-        "Need Improvement": 280,
+        "Good": 1169,
+        "Need Improvement": 272,
         "Poor": 1
       },
       "breakdown": {
@@ -366,9 +360,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 64.19,
+          "points_avg": 56.26,
           "max": 100,
-          "pass_rate": 0.6372,
+          "pass_rate": 0.5566,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -506,12 +500,6 @@
           "pass_rate": 0.3974,
           "applicable_n": 1442
         },
-        "ai_definition": {
-          "label": "#33 Definition Paragraph",
-          "category": "citable_content",
-          "pass_rate": 0.939,
-          "applicable_n": 1442
-        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -525,9 +513,9 @@
           "applicable_n": 1442
         },
         "ai_citable": {
-          "label": "#36 Citable Sentence ≥ 10%",
+          "label": "#36 Citable Sentence ≥ 5개",
           "category": "citable_content",
-          "pass_rate": 0.9424,
+          "pass_rate": 0.9889,
           "applicable_n": 1442
         },
         "ai_ssr_ratio": {
@@ -646,12 +634,12 @@
         "redirect_dup": 11
       },
       "excluded_count": 338,
-      "total_avg": 81.35,
+      "total_avg": 82.45,
       "max": 100,
       "grade_dist": {
-        "Need Improvement": 276,
-        "Good": 692,
-        "Poor": 3
+        "Need Improvement": 185,
+        "Good": 785,
+        "Poor": 1
       },
       "breakdown": {
         "performance": {
@@ -684,9 +672,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 56.85,
+          "points_avg": 60.71,
           "max": 100,
-          "pass_rate": 0.5655,
+          "pass_rate": 0.6004,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -824,12 +812,6 @@
           "pass_rate": 0.4233,
           "applicable_n": 971
         },
-        "ai_definition": {
-          "label": "#33 Definition Paragraph",
-          "category": "citable_content",
-          "pass_rate": 0.4686,
-          "applicable_n": 971
-        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -843,9 +825,9 @@
           "applicable_n": 971
         },
         "ai_citable": {
-          "label": "#36 Citable Sentence ≥ 10%",
+          "label": "#36 Citable Sentence ≥ 5개",
           "category": "citable_content",
-          "pass_rate": 0.9876,
+          "pass_rate": 1.0,
           "applicable_n": 971
         },
         "ai_ssr_ratio": {
@@ -963,11 +945,11 @@
         "promotion": 94
       },
       "excluded_count": 279,
-      "total_avg": 78.33,
+      "total_avg": 80.52,
       "max": 100,
       "grade_dist": {
-        "Need Improvement": 528,
-        "Good": 366,
+        "Need Improvement": 367,
+        "Good": 527,
         "Poor": 1
       },
       "breakdown": {
@@ -1001,9 +983,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 42.94,
+          "points_avg": 53.34,
           "max": 100,
-          "pass_rate": 0.4273,
+          "pass_rate": 0.5303,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -1141,12 +1123,6 @@
           "pass_rate": 0.5084,
           "applicable_n": 895
         },
-        "ai_definition": {
-          "label": "#33 Definition Paragraph",
-          "category": "citable_content",
-          "pass_rate": 0.0849,
-          "applicable_n": 895
-        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -1160,9 +1136,9 @@
           "applicable_n": 895
         },
         "ai_citable": {
-          "label": "#36 Citable Sentence ≥ 10%",
+          "label": "#36 Citable Sentence ≥ 5개",
           "category": "citable_content",
-          "pass_rate": 0.6402,
+          "pass_rate": 0.6112,
           "applicable_n": 895
         },
         "ai_ssr_ratio": {
@@ -1280,12 +1256,12 @@
         "promotion": 2
       },
       "excluded_count": 181,
-      "total_avg": 77.02,
+      "total_avg": 78.8,
       "max": 100,
       "grade_dist": {
-        "Good": 150,
-        "Need Improvement": 814,
-        "Poor": 3
+        "Good": 291,
+        "Need Improvement": 674,
+        "Poor": 2
       },
       "breakdown": {
         "performance": {
@@ -1318,9 +1294,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 39.56,
+          "points_avg": 45.56,
           "max": 100,
-          "pass_rate": 0.3954,
+          "pass_rate": 0.4538,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -1464,12 +1440,6 @@
           "pass_rate": 0.5419,
           "applicable_n": 967
         },
-        "ai_definition": {
-          "label": "#33 Definition Paragraph",
-          "category": "citable_content",
-          "pass_rate": 0.1624,
-          "applicable_n": 967
-        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -1483,9 +1453,9 @@
           "applicable_n": 967
         },
         "ai_citable": {
-          "label": "#36 Citable Sentence ≥ 10%",
+          "label": "#36 Citable Sentence ≥ 5개",
           "category": "citable_content",
-          "pass_rate": 0.3868,
+          "pass_rate": 0.333,
           "applicable_n": 967
         },
         "ai_ssr_ratio": {
@@ -1597,11 +1567,11 @@
         "promotion": 100
       },
       "excluded_count": 262,
-      "total_avg": 79.86,
+      "total_avg": 81.59,
       "max": 100,
       "grade_dist": {
-        "Need Improvement": 697,
-        "Good": 420
+        "Need Improvement": 320,
+        "Good": 797
       },
       "breakdown": {
         "performance": {
@@ -1634,9 +1604,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 57.59,
+          "points_avg": 68.42,
           "max": 100,
-          "pass_rate": 0.5721,
+          "pass_rate": 0.6699,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -1774,12 +1744,6 @@
           "pass_rate": 0.5488,
           "applicable_n": 1117
         },
-        "ai_definition": {
-          "label": "#33 Definition Paragraph",
-          "category": "citable_content",
-          "pass_rate": 0.2748,
-          "applicable_n": 1117
-        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -1793,9 +1757,9 @@
           "applicable_n": 1117
         },
         "ai_citable": {
-          "label": "#36 Citable Sentence ≥ 10%",
+          "label": "#36 Citable Sentence ≥ 5개",
           "category": "citable_content",
-          "pass_rate": 0.9839,
+          "pass_rate": 0.9982,
           "applicable_n": 1117
         },
         "ai_ssr_ratio": {
@@ -1913,12 +1877,12 @@
         "promotion": 100
       },
       "excluded_count": 358,
-      "total_avg": 77.35,
+      "total_avg": 78.74,
       "max": 100,
       "grade_dist": {
-        "Good": 226,
-        "Need Improvement": 779,
-        "Poor": 7
+        "Good": 304,
+        "Need Improvement": 707,
+        "Poor": 1
       },
       "breakdown": {
         "performance": {
@@ -1951,9 +1915,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 39.17,
+          "points_avg": 41.52,
           "max": 100,
-          "pass_rate": 0.3897,
+          "pass_rate": 0.4056,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -2097,12 +2061,6 @@
           "pass_rate": 0.4644,
           "applicable_n": 1012
         },
-        "ai_definition": {
-          "label": "#33 Definition Paragraph",
-          "category": "citable_content",
-          "pass_rate": 0.2401,
-          "applicable_n": 1012
-        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -2116,9 +2074,9 @@
           "applicable_n": 1012
         },
         "ai_citable": {
-          "label": "#36 Citable Sentence ≥ 10%",
+          "label": "#36 Citable Sentence ≥ 5개",
           "category": "citable_content",
-          "pass_rate": 0.3953,
+          "pass_rate": 0.2964,
           "applicable_n": 1012
         },
         "ai_ssr_ratio": {
@@ -2231,12 +2189,11 @@
         "redirect_dup": 4
       },
       "excluded_count": 263,
-      "total_avg": 78.85,
+      "total_avg": 80.41,
       "max": 100,
       "grade_dist": {
-        "Good": 416,
-        "Need Improvement": 632,
-        "Poor": 4
+        "Good": 629,
+        "Need Improvement": 423
       },
       "breakdown": {
         "performance": {
@@ -2269,9 +2226,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 39.49,
+          "points_avg": 42.27,
           "max": 100,
-          "pass_rate": 0.3949,
+          "pass_rate": 0.4197,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -2415,12 +2372,6 @@
           "pass_rate": 0.4696,
           "applicable_n": 1052
         },
-        "ai_definition": {
-          "label": "#33 Definition Paragraph",
-          "category": "citable_content",
-          "pass_rate": 0.2937,
-          "applicable_n": 1052
-        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -2434,9 +2385,9 @@
           "applicable_n": 1052
         },
         "ai_citable": {
-          "label": "#36 Citable Sentence ≥ 10%",
+          "label": "#36 Citable Sentence ≥ 5개",
           "category": "citable_content",
-          "pass_rate": 0.4116,
+          "pass_rate": 0.3869,
           "applicable_n": 1052
         },
         "ai_ssr_ratio": {
@@ -2548,12 +2499,12 @@
         "promotion": 56
       },
       "excluded_count": 243,
-      "total_avg": 77.95,
+      "total_avg": 79.61,
       "max": 100,
       "grade_dist": {
-        "Poor": 5,
-        "Need Improvement": 748,
-        "Good": 312
+        "Need Improvement": 624,
+        "Good": 436,
+        "Poor": 5
       },
       "breakdown": {
         "performance": {
@@ -2586,9 +2537,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 43.07,
+          "points_avg": 47.41,
           "max": 100,
-          "pass_rate": 0.4329,
+          "pass_rate": 0.4719,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -2726,12 +2677,6 @@
           "pass_rate": 0.4601,
           "applicable_n": 1065
         },
-        "ai_definition": {
-          "label": "#33 Definition Paragraph",
-          "category": "citable_content",
-          "pass_rate": 0.3972,
-          "applicable_n": 1065
-        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -2745,9 +2690,9 @@
           "applicable_n": 1065
         },
         "ai_citable": {
-          "label": "#36 Citable Sentence ≥ 10%",
+          "label": "#36 Citable Sentence ≥ 5개",
           "category": "citable_content",
-          "pass_rate": 0.4272,
+          "pass_rate": 0.5127,
           "applicable_n": 1065
         },
         "ai_ssr_ratio": {
@@ -2865,11 +2810,11 @@
         "promotion": 53
       },
       "excluded_count": 202,
-      "total_avg": 82.46,
+      "total_avg": 81.84,
       "max": 100,
       "grade_dist": {
-        "Need Improvement": 191,
-        "Good": 685
+        "Need Improvement": 210,
+        "Good": 666
       },
       "breakdown": {
         "performance": {
@@ -2902,9 +2847,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 72.67,
+          "points_avg": 62.41,
           "max": 100,
-          "pass_rate": 0.7209,
+          "pass_rate": 0.6173,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -3042,12 +2987,6 @@
           "pass_rate": 0.5548,
           "applicable_n": 876
         },
-        "ai_definition": {
-          "label": "#33 Definition Paragraph",
-          "category": "citable_content",
-          "pass_rate": 0.9954,
-          "applicable_n": 876
-        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -3061,9 +3000,9 @@
           "applicable_n": 876
         },
         "ai_citable": {
-          "label": "#36 Citable Sentence ≥ 10%",
+          "label": "#36 Citable Sentence ≥ 5개",
           "category": "citable_content",
-          "pass_rate": 0.8653,
+          "pass_rate": 0.8219,
           "applicable_n": 876
         },
         "ai_ssr_ratio": {
@@ -3176,11 +3115,11 @@
       "sample_size": 100,
       "excluded": {},
       "excluded_count": 0,
-      "total_avg": 86.15,
+      "total_avg": 87.64,
       "max": 100,
       "grade_dist": {
-        "Good": 90,
-        "Need Improvement": 10
+        "Good": 92,
+        "Need Improvement": 8
       },
       "breakdown": {
         "performance": {
@@ -3213,9 +3152,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 62.6,
+          "points_avg": 68.0,
           "max": 100,
-          "pass_rate": 0.626,
+          "pass_rate": 0.68,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -3341,12 +3280,6 @@
           "pass_rate": 0.0,
           "applicable_n": 100
         },
-        "ai_definition": {
-          "label": "#33 Definition Paragraph",
-          "category": "citable_content",
-          "pass_rate": 0.39,
-          "applicable_n": 100
-        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -3360,9 +3293,9 @@
           "applicable_n": 100
         },
         "ai_citable": {
-          "label": "#36 Citable Sentence ≥ 10%",
+          "label": "#36 Citable Sentence ≥ 5개",
           "category": "citable_content",
-          "pass_rate": 0.92,
+          "pass_rate": 0.9,
           "applicable_n": 100
         },
         "ai_ssr_ratio": {
@@ -3471,7 +3404,7 @@
       "unknown": 7,
       "redirect_dup": 24
     },
-    "total_avg_weighted": 79.33,
+    "total_avg_weighted": 80.38,
     "missing": []
   }
 }

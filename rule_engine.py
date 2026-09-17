@@ -296,10 +296,12 @@ RULE_TYPES = {
         },
     },
     "citable_density_min": {
-        "label": "인용 가능 문장 밀도",
-        "description": "통계/숫자/연도/출처 패턴을 포함한 문장 비율이 임계 이상인지 확인",
+        "label": "인용 가능 문장 수",
+        "description": "통계/숫자/연도/출처 패턴을 포함한 문장이 임계 이상인지 확인. "
+                       "min_count 를 주면 절대 개수로, 비우면 min_ratio 비율로 판정한다.",
         "params": {
-            "min_ratio": {"label": "최소 비율 (0.0~1.0)", "type": "number", "placeholder": "0.1"},
+            "min_count": {"label": "최소 개수", "type": "number", "placeholder": "10"},
+            "min_ratio": {"label": "최소 비율 (0.0~1.0, min_count 미지정 시)", "type": "number", "placeholder": "0.1"},
         },
     },
     "image_filename_keyword": {
@@ -1360,10 +1362,16 @@ _DEF_PATTERNS_MULTI = [
 
 
 def _eval_citable_density_min(params: dict, ctx: dict) -> dict:
+    """인용 가능 문장을 센다.
+
+    min_count 가 있으면 절대 개수로, 없으면 기존대로 비율(min_ratio)로 판정한다.
+    개수 기준으로 옮긴 이유(사용자 결정 2026-09-17): 비율은 본문이 길수록 불리하다.
+    문서가 길다고 인용 가치가 떨어지는 게 아닌데, 긴 서포트 문서가 짧은 PLP 보다
+    낮게 나왔다. AI 가 인용할 문장이 몇 개 있느냐가 실제로 보려던 것이다.
+    """
     soup = ctx.get("soup")
     if not soup:
         return {"pass": False, "value": None, "hint": "HTML 파싱 실패"}
-    min_ratio = float(params.get("min_ratio", 0.1))
 
     # GNB/푸터가 분모를 부풀려 밀도를 낮추므로 보일러플레이트를 제외한다
     text = _visible_text(soup, strip_boilerplate=True)
@@ -1372,12 +1380,19 @@ def _eval_citable_density_min(params: dict, ctx: dict) -> dict:
         return {"pass": False, "value": "문장 없음", "hint": "분석할 문장이 없습니다."}
     citable = sum(1 for s in sentences if any(p.search(s) for p in _CITABLE_PATTERNS))
     ratio = citable / len(sentences)
+    value = f"{citable}/{len(sentences)} ({ratio*100:.1f}%)"
+
+    min_count = params.get("min_count")
+    if min_count not in (None, "", 0):
+        min_count = int(min_count)
+        passed = citable >= min_count
+        return {"pass": passed, "value": value,
+                "hint": None if passed else f"인용 가능 문장 {citable}개 — {min_count}개 이상 필요"}
+
+    min_ratio = float(params.get("min_ratio", 0.1))
     passed = ratio >= min_ratio
-    return {
-        "pass": passed,
-        "value": f"{citable}/{len(sentences)} ({ratio*100:.1f}%)",
-        "hint": None if passed else f"인용 가능 밀도 {ratio*100:.1f}% — {min_ratio*100:.0f}% 이상 필요",
-    }
+    return {"pass": passed, "value": value,
+            "hint": None if passed else f"인용 가능 밀도 {ratio*100:.1f}% — {min_ratio*100:.0f}% 이상 필요"}
 
 
 def _eval_image_filename_keyword(params: dict, ctx: dict) -> dict:

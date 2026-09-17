@@ -45,6 +45,7 @@ COUNTRY_LABELS = {"global": "Global-Site"}
 # 집계 제외 page_type
 EXCLUDED_PAGE_TYPES = {"business", "promotion", "unknown", "home", "about"}
 
+_CITABLE_N = re.compile(r"^\s*(\d+)\s*/")
 _MAXAGE = re.compile(r"max-age\s*=\s*(\d+)")
 
 
@@ -58,6 +59,7 @@ class Criteria:
         self.label = {}       # item_id → 표시명
         self.category = {}    # item_id → 카테고리 키
         self.applies = {}     # item_id → 평가 대상 page_type 집합
+        self.min_count = {}   # item_id → 개수 임계 (#36 citable)
         self.psi_rules = {}   # item_id → (metric, max_value)
         self.maxage = {}      # item_id → min_seconds
         self.cat_label = {c: cfg[c].get("label", c) for c in self.cats}
@@ -71,6 +73,9 @@ class Criteria:
                 self.category[iid] = cat
                 if cr.get("applies_to_page_types"):
                     self.applies[iid] = set(cr["applies_to_page_types"])
+                mc = ((cr.get("rule") or {}).get("params") or {}).get("min_count")
+                if mc not in (None, "", 0):
+                    self.min_count[iid] = int(mc)
                 rule = cr.get("rule") or {}
                 params = rule.get("params", {})
                 if rule.get("type") == "psi_metric":
@@ -131,6 +136,15 @@ def item_pass(iid, it, url, page_type, cr, psi, psi_med=None):
         # max-age 디렉티브가 있으면(0 포함) 통과. no-cache/no-store 동반은 무관.
         m = _MAXAGE.search(str(it.get("value") or ""))
         return bool(m) and int(m.group(1)) >= cr.maxage[iid]
+
+    if iid in cr.min_count:
+        # #36 은 2026-09-17 에 비율 → 개수 기준으로 바뀌었다. 저장된 value
+        # ("6/42 (14.3%)")의 앞 숫자가 실측 개수라 재감사 없이 다시 판정한다.
+        # 판정이 아니라 원측정값에서 계산하므로 몇 번 돌려도 결과가 같다.
+        m = _CITABLE_N.match(str(it.get("value") or ""))
+        if m:
+            return int(m.group(1)) >= cr.min_count[iid]
+        return None
 
     return it.get("pass")
 
