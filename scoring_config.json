@@ -709,7 +709,9 @@
           "type": "class_id_contains",
           "params": {
             "keywords": "faq,자주 묻는,자주묻는,frequently asked,q&a,qna,questions,질문,answer,accordion",
-            "tags": "div,section,aside,article,details"
+            "tags": "div,section,aside,article,details",
+            "question_min": 1,
+            "question_keywords": "frequently asked,faq,q&a,qna,common questions,questions and answers,your questions,answer,answers,ask us,need help,help center,learn more about,자주 묻는,자주묻는,질문,답변,문의,궁금,preguntas frecuentes,preguntas,respuesta,respuestas,dudas,häufig gestellte fragen,haufig gestellte fragen,fragen,antwort,antworten,perguntas frequentes,perguntas,resposta,respostas,dúvidas,duvidas,câu hỏi thường gặp,câu hỏi,giải đáp,thắc mắc,trả lời"
           }
         }
       },
@@ -900,7 +902,7 @@
           "type": "image_filename_keyword",
           "params": {
             "keywords": "lg,oled,gram,thinq",
-            "min_ratio": 0
+            "min_ratio": 0.3
           }
         }
       },
@@ -940,7 +942,8 @@
           "type": "http_status",
           "params": {
             "path": "/llms.txt",
-            "status": 200
+            "status": 200,
+            "must_contain": "# ,## ,http"
           }
         }
       },

@@ -80,6 +80,9 @@ RULE_TYPES = {
             "block_exclude_class": {"label": "블록 제외 class", "type": "text", "placeholder": "idt"},
             "block_min_chars": {"label": "블록 최소 글자수", "type": "number", "placeholder": "80"},
             "block_min_lines": {"label": "블록 최소 줄수", "type": "number", "placeholder": "2"},
+            "question_min": {"label": "질문 문장 최소 개수 (#32)", "type": "number", "placeholder": "1"},
+            "question_keywords": {"label": "문답 키워드 (본문 검색, #32)", "type": "text", "placeholder": "faq,자주 묻는,preguntas frecuentes"},
+            "question_qword": {"label": "의문사 필수 (#32)", "type": "select", "options": ["yes", "no"]},
         },
     },
     "text_has_pattern": {
@@ -507,6 +510,26 @@ def _eval_css_attr_not_contains(params: dict, ctx: dict) -> dict:
     }
 
 
+# 의문사 — 질문 문장 판별용 (#32). 물음표만으로는 'Need Help?' 나 영국 소비자매체
+# 이름 'Which?' 같은 UI·브랜드 문구가 질문으로 잡힌다(2026-09-17 UK PLP 실측:
+# 물음표 문장 5개가 전부 오탐). 의문사로 시작하거나 앞쪽에 있어야 질문으로 본다.
+_QWORD = re.compile(
+    # 포르투갈어 'O que é X?' · 스페인어 'El qué...' 처럼 관사가 앞에 붙는 형태 허용
+    r"^\W{0,3}(?:(?:o|a|os|as|el|la|los|las|the|der|die|das)\s+)?(?:"
+    r"what|which|how|why|when|where|who|whose|"
+    r"can i|do i|does|should i|is it|are there|"
+    r"qu[ée]|cu[áa]l|c[óo]mo|por qu[ée]|cu[áa]ndo|d[óo]nde|qui[ée]n|"
+    r"was|welche[rsn]?|wie|warum|wann|wo|wer|"
+    r"qual|como|por que|quando|onde|quem|"
+    r"왜|어떻게|무엇|무슨|어떤|언제|어디|누가"
+    r")\b", re.I)
+# 한국어·베트남어는 의문사가 문장 중간이나 끝에 온다 — 앵커 없이 찾는다.
+# ("이 기능은 어떻게 켜나요?" 는 _QWORD 의 문두 앵커에 안 걸린다)
+_QWORD_TAIL = re.compile(
+    r"(?:왜|어떻게|무엇|무슨|어떤|언제|어디|누가)|"
+    r"(?:나요|까요|가요|습니까|입니까)\s*$|"
+    r"\b(?:nào|gì|thế nào|ra sao|khi nào|ở đâu)\b", re.I)
+
 def _eval_class_id_contains(params: dict, ctx: dict) -> dict:
     soup = ctx.get("soup")
     if not soup:
@@ -528,6 +551,34 @@ def _eval_class_id_contains(params: dict, ctx: dict) -> dict:
         return {"pass": False, "value": None, "hint": "키워드가 지정되지 않았습니다."}
 
     search_tags = tags if tags else True  # True = all tags
+
+    # 0패스: 질문 문장 + 문답 키워드 (#32). '?' 로 끝나면 질문 문장으로 본다.
+    # 두 조건을 AND 로 건다 (사용자 결정 2026-09-17, 'C안').
+    #   질문 문장만으로 통과시키면 'Need Help?' 같은 UI 문구 하나에 걸려 뉴스룸을
+    #   뺀 전 타입이 100% 가 된다(실측 29.2% → 89.6%). 변별력이 사라진다.
+    #   반대로 class/id 키워드만 보면 FAQPage 스키마도 accordion 클래스도 없이
+    #   그냥 문답 문단으로 쓴 문서를 통째로 놓친다.
+    # question_keywords 는 class/id 가 아니라 **본문 텍스트**에서 찾는다.
+    q_min = params.get("question_min")
+    if q_min not in (None, "", 0):
+        q_min = int(q_min)
+        text = _visible_text(soup, strip_boilerplate=True)
+        # 스페인어 ¿…? 도 포함. 물음표 앞에 최소 10자는 있어야 문장으로 본다.
+        qs = [q.strip() for q in re.findall(r"[^.!?\n]{10,200}\?", text)]
+        # 의문사 조건 — 없으면 물음표만으로 통과해 변별력이 사라진다
+        # (실측: 물음표만 89.6%, 문답 키워드를 AND 로 걸어도 86.1%).
+        if str(params.get("question_qword", "yes")).lower() not in ("no", "false", "0"):
+            qs = [q for q in qs if _QWORD.search(q) or _QWORD_TAIL.search(q.rstrip("?").strip())]
+        if len(qs) >= q_min:
+            qk_raw = params.get("question_keywords", "")
+            qk = [k.strip().lower() for k in (qk_raw if isinstance(qk_raw, str)
+                                              else ",".join(qk_raw)).split(",") if k.strip()]
+            low = text.lower()
+            hit = next((k for k in qk if k in low), None)
+            if hit:
+                return {"pass": True,
+                        "value": f"질문 {len(qs)}개 + '{hit}': {qs[0].strip()[:38]}",
+                        "hint": None}
 
     # 0패스: 요약 블록 selector (#35). 클래스명이 'summary' 계열이 아니어서
     # 키워드로는 안 잡히는 템플릿 대응 — LG 서포트 문서는 <h2>At a Glance</h2>
@@ -670,6 +721,19 @@ async def _eval_http_status(params: dict, ctx: dict) -> dict:
             async with httpx.AsyncClient(timeout=10, follow_redirects=True) as client:
                 r = await client.get(f"{base_url}{path}", headers=build_request_headers())
             passed = r.status_code == expected
+            # soft 404 방어 — LG 는 없는 경로에도 200 + HTML 을 준다. 상태코드만
+            # 보면 llms.txt 가 없는데 전원 통과한다(2026-09-17 실측 100%).
+            # must_contain 이 있으면 본문에 그 문자열이 있어야 통과.
+            must = params.get("must_contain")
+            if passed and must:
+                body = (r.text or "")[:20000]
+                ctype = (r.headers.get("content-type") or "").lower()
+                toks = [t.strip().lower() for t in str(must).split(",") if t.strip()]
+                is_html = "text/html" in ctype or body.lstrip()[:200].lower().startswith(("<!doctype", "<html"))
+                if is_html or not any(t in body.lower() for t in toks):
+                    return {"pass": False,
+                            "value": f"HTTP {r.status_code} · {ctype.split(';')[0] or '?'}",
+                            "hint": f"{path} 가 200 이지만 내용이 llms.txt 형식이 아닙니다 (soft 404 의심)"}
             return {
                 "pass": passed,
                 "value": f"HTTP {r.status_code}",
@@ -947,6 +1011,21 @@ def _eval_status_code_eq(params: dict, ctx: dict) -> dict:
     }
 
 
+# Soft 404 문구 — '없는 페이지'를 200 으로 서빙하는지 판별한다 (#42).
+# 본문 길이로는 못 잡는다: LG 404 페이지는 추천 제품·검색창을 붙여 보일러플레이트를
+# 걷어내도 본문이 2,400~3,200자다(2026-09-17 실측). 길이 임계값을 아무리 올려도
+# 짧은 정상 페이지가 같이 걸린다. 문구를 직접 본다.
+_SOFT404_PHRASES = re.compile(
+    r"(?:"
+    r"page not found|page you(?:'re| are) looking for|page (?:does ?n[o']t|cannot be) (?:exist|found)|"
+    r"we can(?:'t|not) find|sorry,? (?:the|this) page|404 error|error 404|"
+    r"페이지를 찾을 수 없|찾으시는 페이지|존재하지 않는 페이지|"
+    r"p[áa]gina no (?:encontrada|existe)|no se (?:encontr[óo]|ha encontrado) la p[áa]gina|"
+    r"seite (?:nicht gefunden|wurde nicht gefunden)|nicht gefunden werden|"
+    r"p[áa]gina n[ãa]o (?:encontrada|existe|foi encontrada)|"
+    r"kh[ôo]ng t[ìi]m th[ấa]y trang|trang kh[ôo]ng t[ồo]n t[ạa]i"
+    r")", re.I)
+
 def _eval_soft_404_check(params: dict, ctx: dict) -> dict:
     min_len = int(params.get("min_text_length", 200))
     pd = ctx.get("page_data", {})
@@ -956,13 +1035,20 @@ def _eval_soft_404_check(params: dict, ctx: dict) -> dict:
         return {"pass": True, "value": f"HTTP {status} (Soft 404 검증 대상 아님)", "hint": None}
     if not soup:
         return {"pass": False, "value": None, "hint": "본문 파싱 실패"}
-    text_len = len(soup.get_text(strip=True))
-    passed = text_len >= min_len
-    return {
-        "pass": passed,
-        "value": f"{text_len}자",
-        "hint": None if passed else f"본문 {text_len}자 — Soft 404 의심 ({min_len}자 미만)",
-    }
+    # Soft 404 = 실제로는 없는 페이지인데 200 을 주는 것. 정직하게 404 를 주는
+    # 페이지는 위에서 이미 '검증 대상 아님'으로 빠지고, #41 Status 가 따로 잡는다.
+    # 판별은 문구로 한다 (사용자 결정 2026-09-17, 'B안').
+    body = _visible_text(soup, strip_boilerplate=True).strip()
+    m = _SOFT404_PHRASES.search(body)
+    if m:
+        return {"pass": False,
+                "value": f"HTTP 200 · '{m.group(0)[:36]}'",
+                "hint": f"200 응답인데 본문에 404 문구가 있습니다 — Soft 404"}
+    # 길이는 보조 신호로만 쓴다(본문이 거의 없는 껍데기).
+    if len(body) < min_len:
+        return {"pass": False, "value": f"본문 {len(body)}자",
+                "hint": f"본문 {len(body)}자 — 내용 없는 200 응답 ({min_len}자 미만)"}
+    return {"pass": True, "value": f"본문 {len(body)}자", "hint": None}
 
 
 # ── 신규 핸들러: Accessibility ──────────────────────────────────────────────
