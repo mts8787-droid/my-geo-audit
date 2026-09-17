@@ -753,7 +753,11 @@
           "type": "class_id_contains",
           "params": {
             "keywords": "summary,요약,tldr,tl;dr,abstract,highlight,key takeaway,핵심,주요 특징,주요특징,제품 특징,제품특징,overview",
-            "tags": "div,section,aside,article,blockquote,p"
+            "tags": "div,section,aside,article,blockquote,p",
+            "block_selector": "p.info-desc, p.description",
+            "block_exclude_class": "idt",
+            "block_min_chars": 80,
+            "block_min_lines": 2
           }
         }
       },

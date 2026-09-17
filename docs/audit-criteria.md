@@ -208,10 +208,27 @@
 | # | 항목 | 매칭 대상 | check id |
 | :-: | :-- | :-- | :-- |
 | #32 | FAQ Block | class/id 에 `faq` · `q&a` · `qna` · `accordion` · `frequently asked` · `자주 묻는` · `질문` · `answer` | `ai_faq_block` |
-| #35 | Summary Box | class/id 에 `summary` · `tldr` · `abstract` · `highlight` · `key takeaway` · `요약` · `핵심` · `주요 특징` | `ai_summary_box` |
+| #35 | Summary Box | class/id 에 `summary` · `tldr` · `abstract` · `highlight` · `key takeaway` · `요약` · `핵심` · `주요 특징`<br>또는 요약 블록 selector `p.info-desc, p.description` (아래 참조) | `ai_summary_box` |
 | #39 | PDP Thumbnails | `img[src*=PDPGalleryThumbnail]` · `[class*=Product-ImageGrid] img` · 구 AEM `.c-*` fallback | `ai_pdp_thumbnails` |
 | #40 | Core Element | 제품명·가격·이미지 등 선택자 그룹 중 3개 이상 존재 | `ai_core_element` |
 | #44 | Image Filename | `img` 파일명에 `lg` · `oled` · `gram` · `thinq` 포함 | `ai_image_filename` |
+
+> **#35 요약 블록 selector** — LG 서포트 문서는 요약을 `<h2>At a Glance</h2>` 아래
+> `<p class="info-desc">` 또는 `<p class="description">` 에 넣는다(두 클래스가 한 요소에
+> 같이 붙기도 한다). 클래스명이 `summary` 계열이 아니라 키워드로는 안 잡혀 2026-09-17 에
+> selector 판정을 추가했다. 같은 클래스가 요약이 아닌 곳에도 쓰이므로 세 가지로 거른다:
+>
+> | 필터 | 거르는 것 |
+> | :-- | :-- |
+> | `idt` 클래스 제외 | `➔ Setting for [2022 WebOS22]` 같은 단계 라벨 |
+> | 80자 이상 | `Step 1. Preheating to warm up the indoor unit` (44자) |
+> | 2줄 이상 | `<br>` 개수 우선, 없으면 문장 수. 1줄 안내문 제외 |
+>
+> **이 블록은 US 트러블슈팅 템플릿에만 있다.** 2026-09-17 검증: httpx 로 셀렉터가 확인된
+> US 페이지 3건이 CSR 렌더링에서도 3/3 잡히는 대조 조건에서, UK·DE·BR·CA 16건은 JS
+> 렌더링 후에도 전부 0 이었다. 즉 CSR 때문에 못 읽는 게 아니라 템플릿에 요약이 없다.
+> 통과율 격차(US 50% vs 타 국가 0%)는 측정 오류가 아니라 실제 콘텐츠 격차이며,
+> 개선 액션은 타 국가 트러블슈팅 템플릿에 요약 블록을 추가하는 것이다.
 
 > #32·#35 는 클래스명에 더해 **heading·강조 태그의 텍스트**(h1~h6, b, strong, dt, summary,
 > caption, legend · 60자 이하)도 본다. 클래스명 없이 제목 문구만으로 구성된 블록을

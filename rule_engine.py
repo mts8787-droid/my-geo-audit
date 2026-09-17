@@ -76,6 +76,10 @@ RULE_TYPES = {
         "params": {
             "keywords": {"label": "키워드 (쉼표 구분)", "type": "text", "placeholder": "faq,자주 묻는,accordion"},
             "tags":     {"label": "검색 태그 (쉼표 구분)", "type": "text", "placeholder": "div,section,aside"},
+            "block_selector": {"label": "요약 블록 selector (선택)", "type": "text", "placeholder": "p.info-desc, p.description"},
+            "block_exclude_class": {"label": "블록 제외 class", "type": "text", "placeholder": "idt"},
+            "block_min_chars": {"label": "블록 최소 글자수", "type": "number", "placeholder": "80"},
+            "block_min_lines": {"label": "블록 최소 줄수", "type": "number", "placeholder": "2"},
         },
     },
     "text_has_pattern": {
@@ -523,6 +527,36 @@ def _eval_class_id_contains(params: dict, ctx: dict) -> dict:
         return {"pass": False, "value": None, "hint": "키워드가 지정되지 않았습니다."}
 
     search_tags = tags if tags else True  # True = all tags
+
+    # 0패스: 요약 블록 selector (#35). 클래스명이 'summary' 계열이 아니어서
+    # 키워드로는 안 잡히는 템플릿 대응 — LG 서포트 문서는 <h2>At a Glance</h2>
+    # 아래 <p class="info-desc"> 또는 <p class="description"> 에 요약을 넣는다.
+    # 같은 클래스가 요약이 아닌 데도 쓰이므로 세 가지로 거른다:
+    #   exclude_class  'info-desc idt' 는 "➔ Setting for [2022 WebOS22]" 같은 단계 라벨
+    #   min_chars      "Step 1. Preheating to warm up the indoor unit"(44자) 같은 오탐
+    #   min_lines      1줄짜리 안내문 제외. <br> 또는 문장 수로 센다
+    block_sel = params.get("block_selector")
+    if block_sel:
+        excl = {c.strip() for c in str(params.get("block_exclude_class", "idt")).split(",") if c.strip()}
+        min_chars = int(params.get("block_min_chars", 80) or 0)
+        min_lines = int(params.get("block_min_lines", 2) or 1)
+        try:
+            cands = soup.select(block_sel)
+        except Exception:
+            cands = []
+        for el in cands:
+            if excl & set(el.get("class") or []):
+                continue
+            txt = " ".join(el.get_text(" ", strip=True).split())
+            if len(txt) < min_chars:
+                continue
+            lines = len(el.find_all("br")) + 1
+            if lines < min_lines:
+                lines = len([x for x in re.split(r"(?<=[.!?。])\s+", txt) if len(x.strip()) > 5])
+            if lines >= min_lines:
+                return {"pass": True,
+                        "value": f"{block_sel} {lines}줄: {txt[:40]}",
+                        "hint": None}
 
     # 1패스: 헤딩/강조 텍스트에서 키워드 탐색.
     #   LG 뉴스룸은 요약을 <p><b>News Summary</b></p> 로 쓰고 클래스는
