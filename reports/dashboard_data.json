@@ -11,11 +11,11 @@
         "redirect_dup": 3
       },
       "excluded_count": 165,
-      "total_avg": 77.82,
+      "total_avg": 76.25,
       "max": 100,
       "grade_dist": {
-        "Need Improvement": 786,
-        "Good": 447
+        "Need Improvement": 1045,
+        "Good": 188
       },
       "breakdown": {
         "performance": {
@@ -48,9 +48,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 46.61,
+          "points_avg": 40.92,
           "max": 100,
-          "pass_rate": 0.4631,
+          "pass_rate": 0.4115,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -188,6 +188,12 @@
           "pass_rate": 0.6261,
           "applicable_n": 1233
         },
+        "ai_definition": {
+          "label": "#33 Definition Paragraph",
+          "category": "citable_content",
+          "pass_rate": 0.2506,
+          "applicable_n": 1233
+        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -322,7 +328,7 @@
         "redirect_dup": 6
       },
       "excluded_count": 274,
-      "total_avg": 81.49,
+      "total_avg": 82.0,
       "max": 100,
       "grade_dist": {
         "Good": 1169,
@@ -360,9 +366,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 56.26,
+          "points_avg": 65.28,
           "max": 100,
-          "pass_rate": 0.5566,
+          "pass_rate": 0.6483,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -500,6 +506,12 @@
           "pass_rate": 0.3974,
           "applicable_n": 1442
         },
+        "ai_definition": {
+          "label": "#33 Definition Paragraph",
+          "category": "citable_content",
+          "pass_rate": 0.939,
+          "applicable_n": 1442
+        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -634,12 +646,12 @@
         "redirect_dup": 11
       },
       "excluded_count": 338,
-      "total_avg": 82.45,
+      "total_avg": 81.39,
       "max": 100,
       "grade_dist": {
-        "Need Improvement": 185,
-        "Good": 785,
-        "Poor": 1
+        "Need Improvement": 271,
+        "Good": 697,
+        "Poor": 3
       },
       "breakdown": {
         "performance": {
@@ -672,9 +684,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 60.71,
+          "points_avg": 57.16,
           "max": 100,
-          "pass_rate": 0.6004,
+          "pass_rate": 0.5685,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -812,6 +824,12 @@
           "pass_rate": 0.4233,
           "applicable_n": 971
         },
+        "ai_definition": {
+          "label": "#33 Definition Paragraph",
+          "category": "citable_content",
+          "pass_rate": 0.4686,
+          "applicable_n": 971
+        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -945,11 +963,11 @@
         "promotion": 94
       },
       "excluded_count": 279,
-      "total_avg": 80.52,
+      "total_avg": 78.25,
       "max": 100,
       "grade_dist": {
-        "Need Improvement": 367,
-        "Good": 527,
+        "Need Improvement": 562,
+        "Good": 332,
         "Poor": 1
       },
       "breakdown": {
@@ -983,9 +1001,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 53.34,
+          "points_avg": 42.16,
           "max": 100,
-          "pass_rate": 0.5303,
+          "pass_rate": 0.4201,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -1123,6 +1141,12 @@
           "pass_rate": 0.5084,
           "applicable_n": 895
         },
+        "ai_definition": {
+          "label": "#33 Definition Paragraph",
+          "category": "citable_content",
+          "pass_rate": 0.0849,
+          "applicable_n": 895
+        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -1256,12 +1280,12 @@
         "promotion": 2
       },
       "excluded_count": 181,
-      "total_avg": 78.8,
+      "total_avg": 76.84,
       "max": 100,
       "grade_dist": {
-        "Good": 291,
-        "Need Improvement": 674,
-        "Poor": 2
+        "Good": 163,
+        "Need Improvement": 801,
+        "Poor": 3
       },
       "breakdown": {
         "performance": {
@@ -1294,9 +1318,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 45.56,
+          "points_avg": 38.16,
           "max": 100,
-          "pass_rate": 0.4538,
+          "pass_rate": 0.3822,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -1440,6 +1464,12 @@
           "pass_rate": 0.5419,
           "applicable_n": 967
         },
+        "ai_definition": {
+          "label": "#33 Definition Paragraph",
+          "category": "citable_content",
+          "pass_rate": 0.1624,
+          "applicable_n": 967
+        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -1567,11 +1597,11 @@
         "promotion": 100
       },
       "excluded_count": 262,
-      "total_avg": 81.59,
+      "total_avg": 79.91,
       "max": 100,
       "grade_dist": {
-        "Need Improvement": 320,
-        "Good": 797
+        "Need Improvement": 688,
+        "Good": 429
       },
       "breakdown": {
         "performance": {
@@ -1604,9 +1634,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 68.42,
+          "points_avg": 57.89,
           "max": 100,
-          "pass_rate": 0.6699,
+          "pass_rate": 0.5755,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -1744,6 +1774,12 @@
           "pass_rate": 0.5488,
           "applicable_n": 1117
         },
+        "ai_definition": {
+          "label": "#33 Definition Paragraph",
+          "category": "citable_content",
+          "pass_rate": 0.2748,
+          "applicable_n": 1117
+        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -1877,12 +1913,12 @@
         "promotion": 100
       },
       "excluded_count": 358,
-      "total_avg": 78.74,
+      "total_avg": 77.05,
       "max": 100,
       "grade_dist": {
-        "Good": 304,
-        "Need Improvement": 707,
-        "Poor": 1
+        "Good": 236,
+        "Need Improvement": 769,
+        "Poor": 7
       },
       "breakdown": {
         "performance": {
@@ -1915,9 +1951,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 41.52,
+          "points_avg": 36.65,
           "max": 100,
-          "pass_rate": 0.4056,
+          "pass_rate": 0.3661,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -2061,6 +2097,12 @@
           "pass_rate": 0.4644,
           "applicable_n": 1012
         },
+        "ai_definition": {
+          "label": "#33 Definition Paragraph",
+          "category": "citable_content",
+          "pass_rate": 0.2401,
+          "applicable_n": 1012
+        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -2189,11 +2231,12 @@
         "redirect_dup": 4
       },
       "excluded_count": 263,
-      "total_avg": 80.41,
+      "total_avg": 78.78,
       "max": 100,
       "grade_dist": {
-        "Good": 629,
-        "Need Improvement": 423
+        "Good": 399,
+        "Need Improvement": 649,
+        "Poor": 4
       },
       "breakdown": {
         "performance": {
@@ -2226,9 +2269,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 42.27,
+          "points_avg": 38.85,
           "max": 100,
-          "pass_rate": 0.4197,
+          "pass_rate": 0.3888,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -2372,6 +2415,12 @@
           "pass_rate": 0.4696,
           "applicable_n": 1052
         },
+        "ai_definition": {
+          "label": "#33 Definition Paragraph",
+          "category": "citable_content",
+          "pass_rate": 0.2937,
+          "applicable_n": 1052
+        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -2499,12 +2548,12 @@
         "promotion": 56
       },
       "excluded_count": 243,
-      "total_avg": 79.61,
+      "total_avg": 78.22,
       "max": 100,
       "grade_dist": {
-        "Need Improvement": 624,
-        "Good": 436,
-        "Poor": 5
+        "Poor": 5,
+        "Need Improvement": 730,
+        "Good": 330
       },
       "breakdown": {
         "performance": {
@@ -2537,9 +2586,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 47.41,
+          "points_avg": 45.23,
           "max": 100,
-          "pass_rate": 0.4719,
+          "pass_rate": 0.4537,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -2677,6 +2726,12 @@
           "pass_rate": 0.4601,
           "applicable_n": 1065
         },
+        "ai_definition": {
+          "label": "#33 Definition Paragraph",
+          "category": "citable_content",
+          "pass_rate": 0.3972,
+          "applicable_n": 1065
+        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -2810,11 +2865,11 @@
         "promotion": 53
       },
       "excluded_count": 202,
-      "total_avg": 81.84,
+      "total_avg": 82.3,
       "max": 100,
       "grade_dist": {
-        "Need Improvement": 210,
-        "Good": 666
+        "Need Improvement": 187,
+        "Good": 689
       },
       "breakdown": {
         "performance": {
@@ -2847,9 +2902,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 62.41,
+          "points_avg": 71.51,
           "max": 100,
-          "pass_rate": 0.6173,
+          "pass_rate": 0.7103,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -2987,6 +3042,12 @@
           "pass_rate": 0.5548,
           "applicable_n": 876
         },
+        "ai_definition": {
+          "label": "#33 Definition Paragraph",
+          "category": "citable_content",
+          "pass_rate": 0.9954,
+          "applicable_n": 876
+        },
         "ai_author_source": {
           "label": "#34 Author 또는 출처+날짜",
           "category": "citable_content",
@@ -3115,11 +3176,11 @@
       "sample_size": 100,
       "excluded": {},
       "excluded_count": 0,
-      "total_avg": 87.64,
+      "total_avg": 86.08,
       "max": 100,
       "grade_dist": {
-        "Good": 92,
-        "Need Improvement": 8
+        "Good": 90,
+        "Need Improvement": 10
       },
       "breakdown": {
         "performance": {
@@ -3152,9 +3213,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 68.0,
+          "points_avg": 62.2,
           "max": 100,
-          "pass_rate": 0.68,
+          "pass_rate": 0.622,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -3278,6 +3339,12 @@
           "label": "#32 FAQ Block (콘텐츠)",
           "category": "citable_content",
           "pass_rate": 0.0,
+          "applicable_n": 100
+        },
+        "ai_definition": {
+          "label": "#33 Definition Paragraph",
+          "category": "citable_content",
+          "pass_rate": 0.39,
           "applicable_n": 100
         },
         "ai_author_source": {
@@ -3404,7 +3471,7 @@
       "unknown": 7,
       "redirect_dup": 24
     },
-    "total_avg_weighted": 80.38,
+    "total_avg_weighted": 79.19,
     "missing": []
   }
 }

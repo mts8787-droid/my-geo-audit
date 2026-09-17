@@ -73,11 +73,14 @@ class Criteria:
                 self.category[iid] = cat
                 if cr.get("applies_to_page_types"):
                     self.applies[iid] = set(cr["applies_to_page_types"])
-                mc = ((cr.get("rule") or {}).get("params") or {}).get("min_count")
-                if mc not in (None, "", 0):
-                    self.min_count[iid] = int(mc)
                 rule = cr.get("rule") or {}
                 params = rule.get("params", {})
+                # citable 전용 — ai_definition 도 min_count 를 쓰므로 룰 타입으로 한정한다.
+                # 타입을 안 보고 min_count 만 보면 definition 까지 재판정해 통째로
+                # N/A 가 된다(항목 38 → 37 로 줄어 평균이 1.2 튀었다).
+                mc = (rule.get("params") or {}).get("min_count")
+                if rule.get("type") == "citable_density_min" and mc not in (None, "", 0):
+                    self.min_count[iid] = int(mc)
                 if rule.get("type") == "psi_metric":
                     self.psi_rules[iid] = (params.get("metric"), float(params.get("max_value", 0)))
                 elif rule.get("type") == "header_max_age_min":
