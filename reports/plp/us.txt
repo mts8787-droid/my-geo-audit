@@ -113,6 +113,8 @@ https://www.lg.com/us/air-conditioners/lg-lw8024rd-window-air-conditioner
 https://www.lg.com/us/air-conditioners/lg-lw8024rsm-window-air-conditioner
 https://www.lg.com/us/air-conditioners/lg-lw8024rsmx-window-air-conditioner
 https://www.lg.com/us/air-conditioners/lg-lw8024rsmy-window-air-conditioner
+https://www.lg.com/us/air-purifiers/lg-as301gg10-air-purifier
+https://www.lg.com/us/air-purifiers/lg-as301gw10-air-purifier
 https://www.lg.com/us/air-purifiers/lg-as330dwr0-air-purifier
 https://www.lg.com/us/air-purifiers/lg-as351gw30-air-purifier
 https://www.lg.com/us/air-purifiers/lg-as560dwr0-air-purifier
@@ -828,6 +830,7 @@ https://www.lg.com/us/dishwashers/lg-sdnths72s-top-control-dishwasher
 https://www.lg.com/us/dishwashers/lg-sdwb24s3-top-control-dishwasher
 https://www.lg.com/us/dishwashers/lg-sdwb24w3-top-control-dishwasher
 https://www.lg.com/us/dishwashers/lg-sdwd24p3-top-control-dishwasher
+https://www.lg.com/us/dishwashers/lg-signature-sdnth981e-top-control-dishwasher
 https://www.lg.com/us/dishwashers/lg-signature-sdnth981s-top-control-dishwasher
 https://www.lg.com/us/gaming-monitors/lg-27gx700a-b-27g640a-b-ultragear-esports-performance-collection
 https://www.lg.com/us/gaming-monitors/lg-39gx950b-b-27gm950b-b-ultragear-ultimate-gaming-resolution-collection
@@ -925,6 +928,8 @@ https://www.lg.com/us/laptops/lg-14t90s-g.aab4u1-gram-laptop
 https://www.lg.com/us/laptops/lg-14t90s-g.aab6u1-gram-laptop
 https://www.lg.com/us/laptops/lg-14t90s-g.adb8u1-gram-laptop
 https://www.lg.com/us/laptops/lg-14t90s-g.adb9u1-gram-laptop
+https://www.lg.com/us/laptops/lg-14u40v-g.ar51u3-gram-laptop
+https://www.lg.com/us/laptops/lg-14u40v-h.ar51u3-gram-laptop
 https://www.lg.com/us/laptops/lg-14z90q-k.arw3u1-gram-laptop
 https://www.lg.com/us/laptops/lg-14z90r-k.aab5u1-gram-laptop
 https://www.lg.com/us/laptops/lg-14z90r-k.adb9u1-gram-laptop
@@ -946,6 +951,7 @@ https://www.lg.com/us/laptops/lg-14zb90q-g.aac6u1-gram-laptop
 https://www.lg.com/us/laptops/lg-15u50t-g.aas3u1-gram-laptop
 https://www.lg.com/us/laptops/lg-15u50t-g.ars1u1-gram-laptop
 https://www.lg.com/us/laptops/lg-15u50t-g.ars2u1-gram-laptop
+https://www.lg.com/us/laptops/lg-15u50u-g.ar55u1-gram-laptop
 https://www.lg.com/us/laptops/lg-15u50u-h.aa55u1-gram-laptop
 https://www.lg.com/us/laptops/lg-15u50u-h.aa56u1-gram-laptop
 https://www.lg.com/us/laptops/lg-15u50u-h.aa57u1-gram-laptop
@@ -1188,6 +1194,8 @@ https://www.lg.com/us/lifestyle-products/lg-27lx6tyga-lifestyle-screen
 https://www.lg.com/us/lifestyle-products/lg-32lx6bwga-lifestyle-screen
 https://www.lg.com/us/monitors/lg-22mp410-b-fhd-monitor
 https://www.lg.com/us/monitors/lg-22mr410-b
+https://www.lg.com/us/monitors/lg-24ba650-i-fhd-monitor
+https://www.lg.com/us/monitors/lg-24ba850-i-fhd-monitor
 https://www.lg.com/us/monitors/lg-24g411a-b-gaming-monitor
 https://www.lg.com/us/monitors/lg-24g411b-b-gaming-monitor
 https://www.lg.com/us/monitors/lg-24g414b-b-gaming-monitor
@@ -1227,6 +1235,8 @@ https://www.lg.com/us/monitors/lg-25g523b-b-gaming-monitor
 https://www.lg.com/us/monitors/lg-25g590b-b-gaming-monitor
 https://www.lg.com/us/monitors/lg-25ms550-b-fhd-monitor
 https://www.lg.com/us/monitors/lg-25sr50f-w-smart-monitor
+https://www.lg.com/us/monitors/lg-27ba650-i-fhd-monitor
+https://www.lg.com/us/monitors/lg-27ba850-i-fhd-monitor
 https://www.lg.com/us/monitors/lg-27ep950-oled-monitor
 https://www.lg.com/us/monitors/lg-27g411a-b-gaming-monitor
 https://www.lg.com/us/monitors/lg-27g411b-b-gaming-monitor
@@ -1335,9 +1345,12 @@ https://www.lg.com/us/monitors/lg-29wp60g-b-ultrawide-monitor
 https://www.lg.com/us/monitors/lg-29wq500-b-ultrawide-monitor
 https://www.lg.com/us/monitors/lg-29wq600-w-ultrawide-monitor
 https://www.lg.com/us/monitors/lg-32g403b-b-gaming-monitor
+https://www.lg.com/us/monitors/lg-32g403b-w-gaming-monitor
 https://www.lg.com/us/monitors/lg-32g600a-b-gaming-monitor
 https://www.lg.com/us/monitors/lg-32g60wa-b-gaming-monitor
 https://www.lg.com/us/monitors/lg-32g620b-b-gaming-monitor
+https://www.lg.com/us/monitors/lg-32g621b-b-gaming-monitor
+https://www.lg.com/us/monitors/lg-32g650b-b-gaming-monitor
 https://www.lg.com/us/monitors/lg-32g810sa-w-gaming-monitor
 https://www.lg.com/us/monitors/lg-32gn50t-b-led-monitor
 https://www.lg.com/us/monitors/lg-32gn550-b-gaming-monitor
@@ -1582,7 +1595,7 @@ https://www.lg.com/us/refrigerators/lg-lrfdc2406s-french-3-door-refrigerator
 https://www.lg.com/us/refrigerators/lg-lrfds3016s-french-3-door-refrigerator
 https://www.lg.com/us/refrigerators/lg-lrfgc2706s-french-3-door-refrigerator
 https://www.lg.com/us/refrigerators/lg-lrflc2706d-french-3-door-refrigerator
-https://www.lg.com/us/refrigerators/lg-lrflc2706s-french-3-door-refrigerator-b
+https://www.lg.com/us/refrigerators/lg-lrflc2706s-french-3-door-refrigerator
 https://www.lg.com/us/refrigerators/lg-lrflc2716d-french-3-door-refrigerator
 https://www.lg.com/us/refrigerators/lg-lrflc2716s-french-3-door-refrigerator
 https://www.lg.com/us/refrigerators/lg-lrflc2716v-french-3-door-refrigerator
@@ -1689,8 +1702,6 @@ https://www.lg.com/us/small-business/computer-monitors/lg-34gn85b-b
 https://www.lg.com/us/small-business/desktop-monitors/lg-24gl65b-b-ultragear
 https://www.lg.com/us/small-business/desktop-monitors/lg-32gk65b-b
 https://www.lg.com/us/small-business/desktop-monitors/lg-43BN70U-B-uhd-Monitor
-https://www.lg.com/us/small-business/laptops/lg-15z90p-n.aps7u1
-https://www.lg.com/us/small-business/laptops/lg-16z90p-n.apb7u1
 https://www.lg.com/us/small-business/laptops/lg-16z90p-n.aps5u1
 https://www.lg.com/us/small-business/laptops/lg-17z90p-n.apb7u1
 https://www.lg.com/us/small-business/monitors/lg-22bk430h-b
@@ -1924,6 +1935,7 @@ https://www.lg.com/us/tvs/lg-65qned85aaa-qned-4k-tv
 https://www.lg.com/us/tvs/lg-65qned85aua-qned-4k-tv
 https://www.lg.com/us/tvs/lg-65qned85taa-qned-4k-tv
 https://www.lg.com/us/tvs/lg-65qned85tua-qned-4k-tv
+https://www.lg.com/us/tvs/lg-65qned8mbaa-qned-4k-tv
 https://www.lg.com/us/tvs/lg-65qned90taa-qned-4k-tv
 https://www.lg.com/us/tvs/lg-65qned90tua-qned-4k-tv
 https://www.lg.com/us/tvs/lg-65qned91aaa-qned-4k-tv
@@ -1962,6 +1974,7 @@ https://www.lg.com/us/tvs/lg-75qned85aaa-qned-4k-tv
 https://www.lg.com/us/tvs/lg-75qned85aua-qned-4k-tv
 https://www.lg.com/us/tvs/lg-75qned85taa-qned-4k-tv
 https://www.lg.com/us/tvs/lg-75qned85tua-qned-4k-tv
+https://www.lg.com/us/tvs/lg-75qned8mbaa-qned-4k-tv
 https://www.lg.com/us/tvs/lg-75qned90taa-qned-4k-tv
 https://www.lg.com/us/tvs/lg-75qned90tua-qned-4k-tv
 https://www.lg.com/us/tvs/lg-75qned91aaa-qned-4k-tv
@@ -2131,6 +2144,7 @@ https://www.lg.com/us/washers-dryers/lg-dle3600v-front-load-electric-dryer
 https://www.lg.com/us/washers-dryers/lg-dle3600w-front-load-electric-dryer
 https://www.lg.com/us/washers-dryers/lg-dle6100m-electric-dryer
 https://www.lg.com/us/washers-dryers/lg-dle6100w-electric-dryer
+https://www.lg.com/us/washers-dryers/lg-dle6480w-electric-dryer
 https://www.lg.com/us/washers-dryers/lg-dle7000w-electric-dryer
 https://www.lg.com/us/washers-dryers/lg-dle7010w-electric-dryer
 https://www.lg.com/us/washers-dryers/lg-dle7100w-electric-dryer
@@ -2185,6 +2199,7 @@ https://www.lg.com/us/washers-dryers/lg-dlg3601v-front-load-gas-dryer
 https://www.lg.com/us/washers-dryers/lg-dlg3601w-front-load-gas-dryer
 https://www.lg.com/us/washers-dryers/lg-dlg6101m-gas-dryer
 https://www.lg.com/us/washers-dryers/lg-dlg6101w-gas-dryer
+https://www.lg.com/us/washers-dryers/lg-dlg6481w-gas-dryer
 https://www.lg.com/us/washers-dryers/lg-dlg7001w-gas-dryer
 https://www.lg.com/us/washers-dryers/lg-dlg7151m-gas-dryer
 https://www.lg.com/us/washers-dryers/lg-dlg7151w-gas-dryer
@@ -2329,6 +2344,7 @@ https://www.lg.com/us/washers-dryers/lg-wsex200hna-washtower
 https://www.lg.com/us/washers-dryers/lg-wt6100cw-top-load-washer
 https://www.lg.com/us/washers-dryers/lg-wt6105cm-top-load-washer
 https://www.lg.com/us/washers-dryers/lg-wt6105cw-top-load-washer
+https://www.lg.com/us/washers-dryers/lg-wt6485cw-top-load-washer
 https://www.lg.com/us/washers-dryers/lg-wt7000cw-top-load-washer
 https://www.lg.com/us/washers-dryers/lg-wt7005cw-top-load-washer
 https://www.lg.com/us/washers-dryers/lg-wt7010cw-top-load-washer
