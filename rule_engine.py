@@ -1759,7 +1759,13 @@ async def _eval_sitemap_recent(params: dict, ctx: dict) -> dict:
     max_days = int(params.get("max_days", 30))
     auto_country = (params.get("auto_country", "yes") or "yes").lower() == "yes"
 
-    cache_key = f"sitemap_recent_{base_url}_{fallback_path}_{max_days}_{auto_country}"
+    # 국가 디렉토리를 캐시 키에 넣어야 한다. base_url 은 전 국가가
+    # https://www.lg.com 으로 같아서, 키에 국가가 없으면 먼저 돈 국가의 결과를
+    # 나머지 10개국이 그대로 물려받는다 — 2026-09-16 실측: 판정 근거값이
+    # 전 국가 «국가 디렉토리(/us/sitemap.xml)» 로 찍혀 있었다. 감사 순서에 따라
+    # 통과율이 78% → 26% 로 뒤집혀 사이트 변화로 오독하기 쉽다.
+    country = _detect_country_dir(ctx.get("current_url", "")) if auto_country else None
+    cache_key = f"sitemap_recent_{base_url}_{country}_{fallback_path}_{max_days}_{auto_country}"
     cached = _get_cache(cache_key)
     if cached:
         return await cached
@@ -1768,7 +1774,6 @@ async def _eval_sitemap_recent(params: dict, ctx: dict) -> dict:
 
     # 시도할 경로 목록 — 국가 디렉토리 우선 → 도메인 루트 fallback
     paths_to_try: List[str] = []
-    country = _detect_country_dir(ctx.get("current_url", "")) if auto_country else None
     if country:
         paths_to_try.append(f"/{country}{fallback_path}")
         paths_to_try.append(f"/{country}/sitemap_index.xml")
