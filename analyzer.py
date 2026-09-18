@@ -1082,8 +1082,25 @@ async def _calculate_score(context: dict, robots: dict, csr_ratio: dict) -> dict
                     "na": True,
                 }
                 continue
-            # applies_when: 특정 콘텐츠(CSS selector)가 있을 때만 평가. 없으면 N/A.
+            # applies_when: 특정 조건일 때만 평가. 아니면 N/A (분모에서 제외).
+            #   selector    — 그 CSS 요소가 있을 때만
+            #   rule        — 그 룰이 통과할 때만. 항목 간 의존을 표현한다.
+            #                 예) #23 FAQPage 스키마는 FAQ 콘텐츠가 있는 페이지에서만 본다.
+            #                 없는 페이지까지 분모에 넣으면 '스키마 미적용'이 아니라
+            #                 'FAQ 자체가 없음'을 감점하게 된다 (사용자 지시 2026-09-19).
             applies_when = cr.get("applies_when")
+            if applies_when and applies_when.get("rule"):
+                gate = await evaluate_rule_async(applies_when["rule"], context)
+                if not gate.get("pass"):
+                    items[cr["id"]] = {
+                        "label": cr.get("name", cr["id"]),
+                        "pass":  None,
+                        "value": None,
+                        "hint":  applies_when.get("na_hint", "선행 조건을 만족하지 않아 평가 대상이 아닙니다."),
+                        "rule_type": rule.get("type"),
+                        "na": True,
+                    }
+                    continue
             if applies_when:
                 sel = applies_when.get("selector")
                 soup = context.get("soup")

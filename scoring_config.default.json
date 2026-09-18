@@ -383,7 +383,17 @@
           "plp",
           "buying_guide",
           "microsite"
-        ]
+        ],
+        "applies_when": {
+          "rule": {
+            "type": "class_id_contains",
+            "params": {
+              "keywords": "faq,자주 묻는,자주묻는,frequently asked,q&a,qna,questions,질문,answer,accordion",
+              "tags": "div,section,aside,article,details"
+            }
+          },
+          "na_hint": "FAQ 섹션(클래스·헤딩)이 없는 페이지라 FAQPage 스키마 평가 대상이 아닙니다."
+        }
       },
       {
         "id": "ai_schema_collection",
@@ -901,8 +911,9 @@
         "rule": {
           "type": "image_filename_keyword",
           "params": {
-            "keywords": "lg,oled,gram,thinq",
-            "min_ratio": 0.3
+            "keywords": "lg,oled,qned,nanocell,uhd,4k,8k,tv,soundbar,speaker,xboom,monitor,ultragear,ultrawide,ultrafine,gram,thinq,refrigerator,fridge,washer,dryer,dishwasher,microwave,oven,cooktop,range,aircon,ac,purifier,styler,cordzero,vacuum,projector,cinebeam,tone,earbud,laptop,objet,standbyme,heatpump",
+            "min_ratio": 0.3,
+            "exclude_filename": "logo,icon,ico-,sprite,placeholder,blank,spacer,dummy"
           }
         }
       },

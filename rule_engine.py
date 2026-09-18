@@ -310,6 +310,7 @@ RULE_TYPES = {
         "params": {
             "min_count": {"label": "최소 개수", "type": "number", "placeholder": "10"},
             "min_ratio": {"label": "최소 비율 (0.0~1.0, min_count 미지정 시)", "type": "number", "placeholder": "0.1"},
+            "skip_noise": {"label": "약관·결제 문구 제외", "type": "select", "options": ["yes", "no"]},
         },
     },
     "image_filename_keyword": {
@@ -318,6 +319,7 @@ RULE_TYPES = {
         "params": {
             "keywords":  {"label": "키워드 (쉼표 구분)", "type": "text", "placeholder": "lg,oled,gram"},
             "min_ratio": {"label": "최소 비율 (0.0~1.0, 선택)", "type": "number", "placeholder": "0.5"},
+            "exclude_filename": {"label": "제외할 파일명 (로고·아이콘)", "type": "text", "placeholder": "logo,icon,sprite"},
         },
     },
     "author_or_source": {
@@ -1478,7 +1480,10 @@ _CITABLE_PATTERNS = [
     re.compile(r"[$€£¥₩]\s?[\d,.]+"),                             # 통화
     re.compile(r"\b(?:19|20)\d{2}\b"),                           # 연도 (숫자 표기)
     re.compile(r"\d{4}\s*년"),                                    # 연도 (한국어)
-    re.compile(r"\b\d[\d.,]{2,}\b"),                             # 1,000 이상 큰 수
+    # 1,000 이상 큰 수 — 자릿수 구분자가 있거나 4자리 이상인 것만.
+    # 기존 \b\d[\d.,]{2,}\b 는 '1.2' '3,5' 같은 소수·목록번호까지 잡아
+    # 18패턴 중 최다 적중(949건)인데 예시 문장에 숫자가 안 보이는 수준이었다.
+    re.compile(r"\b\d{1,3}(?:[.,]\d{3})+\b|\b\d{4,}\b"),
     # 배수 — x2 / 2x / 2 times / veces / mal / vezes / lần
     re.compile(r"\b\d+(?:[.,]\d+)?\s*(?:x|배|times|veces|mal|fach|vezes|vees|lần)\b", re.I),
     # 대규모 수 — million/billion/millón/millones/Millionen/milhões/triệu/tỷ
@@ -1575,6 +1580,21 @@ _DEF_PATTERNS_MULTI = [
 ]
 
 
+# 인용 가치가 없는데 숫자 패턴에 걸리는 문장 (#36). 독일 사이트의 PayPal 할부
+# 안내 블록이 통화·퍼센트·기간·큰수 패턴에 동시에 걸려 한 페이지에서 수십 건을
+# 만들어냈다(2026-09-17 실측: 퍼센트 253건 중 다수가 '0% Finanzierung').
+# 저작권 표기·약관·가격표도 같은 이유로 뺀다.
+_CITABLE_NOISE = re.compile(
+    r"(?:"
+    r"copyright|©|all rights reserved|"
+    r"paypal|klarna|finanzierung|kalkulationsbeispiel|laufzeit|bestellwert|"
+    r"financ(?:ing|iaci[óo]n|iamento)|parcelamento|installment|"
+    r"terms (?:and|&) conditions|allgemeine gesch[äa]ftsbedingungen|"
+    r"t[ée]rminos y condiciones|termos e condi[çc][õo]es|"
+    r"cookie|privacy policy|datenschutz|pol[íi]tica de privacidad|"
+    r"약관|개인정보|저작권"
+    r")", re.I)
+
 def _eval_citable_density_min(params: dict, ctx: dict) -> dict:
     """인용 가능 문장을 센다.
 
@@ -1592,6 +1612,10 @@ def _eval_citable_density_min(params: dict, ctx: dict) -> dict:
     sentences = [s for s in re.split(r"(?<=[.!?。\n])\s+", text) if len(s.strip()) > 5]
     if not sentences:
         return {"pass": False, "value": "문장 없음", "hint": "분석할 문장이 없습니다."}
+    if str(params.get("skip_noise", "yes")).lower() not in ("no", "false", "0"):
+        sentences = [x for x in sentences if not _CITABLE_NOISE.search(x)]
+        if not sentences:
+            return {"pass": False, "value": "본문 없음(노이즈만)", "hint": "인용 가능 문장이 없습니다."}
     citable = sum(1 for s in sentences if any(p.search(s) for p in _CITABLE_PATTERNS))
     ratio = citable / len(sentences)
     value = f"{citable}/{len(sentences)} ({ratio*100:.1f}%)"
@@ -1619,25 +1643,34 @@ def _eval_image_filename_keyword(params: dict, ctx: dict) -> dict:
         return {"pass": False, "value": None, "hint": "키워드 미지정"}
     min_ratio = float(params.get("min_ratio", 0.5)) if params.get("min_ratio") not in (None, "", 0) else 0.0
 
-    imgs = soup.find_all("img")
-    if not imgs:
-        return {"pass": False, "value": "이미지 없음", "hint": "img 태그가 없습니다."}
+    # UI 자산 제외 — 로고·아이콘·스프라이트는 콘텐츠 이미지가 아니다.
+    # logo-lg-100-44.svg 가 페이지마다 수십 번 반복 삽입되는데 'lg' 키워드에 걸려,
+    # 제품 이미지가 많은 PDP 일수록 비율이 떨어지는 역전이 났다
+    # (2026-09-18 실측: 트러블슈팅 85.6% vs PDP 7.9%). 지표가 거꾸로 서 있었다.
+    ex_raw = params.get("exclude_filename", "logo,icon,ico-,sprite,placeholder,blank,spacer,dummy")
+    excludes = [k.strip().lower() for k in (ex_raw if isinstance(ex_raw, str)
+                                            else ",".join(ex_raw)).split(",") if k.strip()]
 
-    matched = 0
-    for img in imgs:
+    names = []
+    for img in soup.find_all("img"):
         src = (img.get("src") or img.get("data-src") or "").lower()
+        if not src:
+            continue
         fname = src.split("?")[0].split("/")[-1]
-        if any(kw in fname for kw in keywords):
-            matched += 1
-    ratio = matched / len(imgs)
-    if min_ratio > 0:
-        passed = ratio >= min_ratio
-    else:
-        passed = matched >= 1
+        if not fname or any(x in fname for x in excludes):
+            continue
+        names.append(fname)
+    if not names:
+        return {"pass": False, "value": "콘텐츠 이미지 없음",
+                "hint": "로고·아이콘을 제외하면 판정할 img 가 없습니다."}
+
+    matched = sum(1 for f in names if any(kw in f for kw in keywords))
+    ratio = matched / len(names)
+    passed = ratio >= min_ratio if min_ratio > 0 else matched >= 1
     return {
         "pass": passed,
-        "value": f"{matched}/{len(imgs)} ({ratio*100:.1f}%)",
-        "hint": None if passed else f"브랜드 키워드 포함 이미지 {matched}/{len(imgs)} ({ratio*100:.1f}%)",
+        "value": f"{matched}/{len(names)} ({ratio*100:.1f}%)",
+        "hint": None if passed else f"서술적 파일명 {matched}/{len(names)} ({ratio*100:.1f}%) — {min_ratio*100:.0f}% 이상 필요",
     }
 
 
