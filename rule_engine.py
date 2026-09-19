@@ -83,6 +83,7 @@ RULE_TYPES = {
             "question_min": {"label": "질문 문장 최소 개수 (#32)", "type": "number", "placeholder": "1"},
             "question_keywords": {"label": "문답 키워드 (본문 검색, #32)", "type": "text", "placeholder": "faq,자주 묻는,preguntas frecuentes"},
             "question_qword": {"label": "의문사 필수 (#32)", "type": "select", "options": ["yes", "no"]},
+            "match_class": {"label": "class/id 매칭 사용", "type": "select", "options": ["yes", "no"]},
         },
     },
     "text_has_pattern": {
@@ -532,6 +533,19 @@ _QWORD_TAIL = re.compile(
     r"(?:나요|까요|가요|습니까|입니까)\s*$|"
     r"\b(?:nào|gì|thế nào|ra sao|khi nào|ở đâu)\b", re.I)
 
+# 페이지 하단 피드백 위젯 문구 — FAQ 가 아니다 (#32).
+_FEEDBACK_WIDGET = re.compile(
+    r"(?:"
+    r"was this (?:information|article|page|content) (?:helpful|useful)|"
+    r"did this (?:help|answer)|how (?:could|can) we improve|"
+    r"rate this|feedback|"
+    r"[¿]?c[óo]mo mejorar[íi]as|fue [úu]til|"
+    r"war dieser artikel hilfreich|wie k[öo]nnten wir|"
+    r"como voc[êe] melhoraria|(?:isso|este artigo) foi [úu]til|"
+    r"thông tin này có hữu ích|"
+    r"도움이 되었|유용했"
+    r")", re.I)
+
 def _eval_class_id_contains(params: dict, ctx: dict) -> dict:
     soup = ctx.get("soup")
     if not soup:
@@ -571,6 +585,9 @@ def _eval_class_id_contains(params: dict, ctx: dict) -> dict:
         # (실측: 물음표만 89.6%, 문답 키워드를 AND 로 걸어도 86.1%).
         if str(params.get("question_qword", "yes")).lower() not in ("no", "false", "0"):
             qs = [q for q in qs if _QWORD.search(q) or _QWORD_TAIL.search(q.rstrip("?").strip())]
+        # 피드백 위젯 제외 — 모든 트러블슈팅 문서 하단에 붙는 '이 정보가 도움이
+        # 되었나요?' 폼이 의문사 조건을 통과해 통과분의 77%(1,596/2,065)를 차지했다.
+        qs = [q for q in qs if not _FEEDBACK_WIDGET.search(q)]
         if len(qs) >= q_min:
             qk_raw = params.get("question_keywords", "")
             qk = [k.strip().lower() for k in (qk_raw if isinstance(qk_raw, str)
@@ -629,6 +646,14 @@ def _eval_class_id_contains(params: dict, ctx: dict) -> dict:
                         "value": f"<{el.name}> 텍스트: {txt[:40]}",
                         "hint": None,
                     }
+
+    # match_class=no 면 class/id 매칭을 건너뛴다 (#35).
+    # 'summary'·'overview' 클래스는 제품 스펙 테이블·가격 요약에도 붙어
+    # PDP 97.1% 가 통과했다. 같은 단어라도 <h2>Summary</h2> 처럼 헤딩 텍스트로
+    # 쓰이면 진짜 요약 섹션이다 — 텍스트 경로만 남긴다.
+    if str(params.get("match_class", "yes")).lower() in ("no", "false", "0"):
+        return {"pass": False, "value": None,
+                "hint": "요약 블록(헤딩 문구·selector)을 찾지 못했습니다."}
 
     for el in soup.find_all(search_tags):
         cls = " ".join(el.get("class", [])).lower()
@@ -1414,7 +1439,12 @@ def _eval_schema_for_page_type(params: dict, ctx: dict) -> dict:
 # 인용 밀도(#36)를 실제보다 낮게 만든다.
 _BOILERPLATE_TAGS = ("nav", "header", "footer")
 _BOILERPLATE_HINTS = ("gnb", "lnb", "global-nav", "site-header", "site-footer",
-                      "cookie", "skip-to", "skiptocontent", "breadcrumb")
+                      "cookie", "skip-to", "skiptocontent", "breadcrumb",
+                      # PDP 스티키 바·탭 네비 — 제품명을 <h2> 로 중복 표기해 본문 <h1>
+                      # 보다 먼저 나온다. 그 탓에 US 외 9개국 PDP 의 #11 이 0.5~4.8%
+                      # 로 떨어졌다(실패 근거가 전부 «첫 레벨 h2, 역순 1건»).
+                      # c-tabs 의 <h2>Specs</h2> 도 섹션 제목이 아니라 탭 버튼이다.
+                      "info-sticky", "sticky", "c-tabs", "tab-list", "anchor-inner")
 
 
 def _visible_text(soup, strip_boilerplate: bool = False) -> str:
@@ -1527,21 +1557,15 @@ _CITABLE_PATTERNS = [
 ]
 
 # 정의문 패턴 — "X는 Y이다" 한국어 문법만 보던 것을 다국어로 확장.
+# 독일어·스페인어·포르투갈어 '기본형'(계사 ist ein / es la / é a)은 2026-09-19 제거했다.
+# 계사는 어디에나 나와 'Im letzten Zimmer ist ein' · 'Cuál es la' 같은 일반 문장을
+# 정의문으로 잡았다. 확장형(steht für·se define como·trata-se de)과 질문형·약어정의는 유지.
 _DEF_PATTERNS_MULTI = [
     _DEF_PATTERN,
     # 영어: X is/are/refers to/means/stands for a|the ...
     re.compile(r"\b[A-Z][\w+\-]{1,30}(?:\s+[\w+\-]{1,20}){0,4}\s+"
                r"(?:is|are|refers? to|means?|stands for|is defined as|is known as)\s+"
                r"(?:a|an|the|one of|the process|a type)\b"),
-    # 스페인어: X es/son un|una|el|la ...
-    re.compile(r"\b[A-ZÁÉÍÓÚÑ][\w+\-áéíóúñ]{1,30}(?:\s+[\w\-áéíóúñ]{1,20}){0,4}\s+"
-               r"(?:es|son|se refiere a|significa)\s+(?:un|una|el|la|los|las)\b"),
-    # 독일어: X ist/sind ein|eine|der|die|das ...
-    re.compile(r"\b[A-ZÄÖÜ][\wäöüß\-]{1,30}(?:\s+[\wäöüß\-]{1,20}){0,4}\s+"
-               r"(?:ist|sind|bezeichnet|bedeutet)\s+(?:ein|eine|einer|der|die|das)\b"),
-    # 포르투갈어: X é/são um|uma|o|a ...
-    re.compile(r"\b[A-ZÁÂÃÉÊÍÓÔÕÚÇ][\wáâãéêíóôõúç\-]{1,30}(?:\s+[\wáâãéêíóôõúç\-]{1,20}){0,4}\s+"
-               r"(?:é|s[ãa]o|refere-se a|significa)\s+(?:um|uma|o|a|os|as)\b"),
     # 베트남어: X là một|các ...
     re.compile(r"\b[A-ZĐÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĨŨƠƯ][\w\-]{1,30}(?:\s+[\w\-]{1,20}){0,4}\s+"
                r"(?:là|nghĩa là)\s+(?:một|các|kiểu|loại)\b", re.I),

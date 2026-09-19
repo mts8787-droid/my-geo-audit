@@ -180,8 +180,8 @@
         "rule": {
           "type": "landmark_count_min",
           "params": {
-            "min_landmarks": 3,
-            "require_main": "no"
+            "min_landmarks": 5,
+            "require_main": "yes"
           }
         }
       },
@@ -482,8 +482,13 @@
           }
         },
         "applies_when": {
-          "selector": "video, source[type^='video'], iframe[src*='youtube'], iframe[src*='youtu.be'], iframe[src*='vimeo'], iframe[src*='player.'], [class*='video'] iframe, [class*='Video'] iframe, [data-video]",
-          "na_hint": "비디오가 삽입되지 않아 VideoObject 평가 대상이 아닙니다."
+          "rule": {
+            "type": "css_exists",
+            "params": {
+              "selector": "video, iframe[src*='youtube'], iframe[src*='youtu.be'], iframe[src*='vimeo']"
+            }
+          },
+          "na_hint": "영상이 없는 페이지라 VideoObject 스키마 평가 대상이 아닙니다."
         }
       },
       {
@@ -501,7 +506,18 @@
         },
         "applies_to_page_types": [
           "support_troubleshoot"
-        ]
+        ],
+        "applies_when": {
+          "rule": {
+            "type": "css_count",
+            "params": {
+              "selector": "ol > li, [class*='step'], [class*='con-view'], [class*='procedure']",
+              "operator": ">=",
+              "value": 3
+            }
+          },
+          "na_hint": "절차(순서 목록·단계 블록)가 없는 페이지라 HowTo 스키마 평가 대상이 아닙니다."
+        }
       },
       {
         "id": "ai_schema_article",
@@ -520,7 +536,16 @@
           "experience",
           "buying_guide",
           "microsite"
-        ]
+        ],
+        "applies_when": {
+          "rule": {
+            "type": "css_exists",
+            "params": {
+              "selector": "article, [class*='article'], [class*='post-body']"
+            }
+          },
+          "na_hint": "기사 본문 구조가 없는 페이지라 Article 스키마 평가 대상이 아닙니다."
+        }
       },
       {
         "id": "ai_schema_website",
@@ -750,9 +775,7 @@
         },
         "applies_to_page_types": [
           "newsroom",
-          "press_media",
-          "buying_guide",
-          "experience"
+          "press_media"
         ]
       },
       {
@@ -764,12 +787,13 @@
         "rule": {
           "type": "class_id_contains",
           "params": {
-            "keywords": "summary,요약,tldr,tl;dr,abstract,highlight,key takeaway,핵심,주요 특징,주요특징,제품 특징,제품특징,overview,at a glance,한눈에,de un vistazo,auf einen blick,num relance,em resumo,tổng quan,nhìn nhanh",
+            "keywords": "summary,overview,tldr,tl;dr,abstract,key takeaway,key takeaways,at a glance,highlights,요약,핵심,한눈에,주요 특징,개요,resumen,de un vistazo,zusammenfassung,auf einen blick,im überblick,resumo,em resumo,visão geral,tóm tắt,tổng quan,news summary",
             "tags": "div,section,aside,article,blockquote,p",
             "block_selector": "p.info-desc, p.description",
             "block_exclude_class": "idt",
             "block_min_chars": 80,
-            "block_min_lines": 1
+            "block_min_lines": 1,
+            "match_class": "no"
           }
         }
       },
