@@ -180,8 +180,8 @@
         "rule": {
           "type": "landmark_count_min",
           "params": {
-            "min_landmarks": 5,
-            "require_main": "yes"
+            "min_landmarks": 8,
+            "require_main": "no"
           }
         }
       },

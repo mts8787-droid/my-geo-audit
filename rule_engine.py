@@ -1092,17 +1092,21 @@ def _eval_landmark_count_min(params: dict, ctx: dict) -> dict:
     heading_count = len(soup.find_all(["h1", "h2", "h3", "h4", "h5", "h6"]))
     total = sum(counts.values()) + heading_count
 
-    main_ok = (counts["main"] >= 1) if require_main else True
+    # role="main" 도 랜드마크로 인정한다 — <div role="main"> 을 쓰는 템플릿이 있다.
+    role_main = len(soup.find_all(attrs={"role": "main"}))
+    main_ok = (counts["main"] + role_main >= 1) if require_main else True
     passed = main_ok and total >= min_landmarks
     if require_main and not main_ok:
-        hint = f"main {counts['main']}개 — main 태그 1+ 필요"
+        hint = f"main {counts['main']}개 · role=main {role_main}개 — main 랜드마크 필요"
     elif not passed:
         hint = f"헤딩 {heading_count} + 랜드마크 {sum(counts.values())} = {total} — 의미 구조 {min_landmarks}+ 필요"
     else:
         hint = None
+    # <main> 유무는 value 에 남겨 둔다 — 점수에서 빼더라도 접근성 리포트에는 쓴다.
     return {
         "pass": passed,
-        "value": f"헤딩={heading_count}, 랜드마크={sum(counts.values())}, 합계={total}",
+        "value": (f"헤딩={heading_count}, 랜드마크={sum(counts.values())}, 합계={total}"
+                  f", main={'O' if counts['main'] + role_main else 'X'}"),
         "hint": hint,
     }
 
