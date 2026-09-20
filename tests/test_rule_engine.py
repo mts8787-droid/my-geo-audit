@@ -378,6 +378,14 @@ class TestContentRules(unittest.TestCase):
                    "label_tags": "p"}, _ctx(html))
         self.assertTrue(r["pass"])
 
+    def test_citable_certification_names_pass(self):
+        # 숫자 없는 제3자 인증·표준 문장도 인용 가능으로 센다 (2026-09-20 확장)
+        html = ("<p>This TV supports Dolby Vision and Dolby Atmos. "
+                "Certified by Intertek for hygiene performance. "
+                "FreeSync Premium eliminates screen tearing.</p>")
+        r = _eval("citable_density_min", {"min_count": 3}, _ctx(html))
+        self.assertTrue(r["pass"])
+
     def test_summary_aem_floating_features_pass(self):
         # 구 AEM PDP(비US)의 Key features 블록 — 라벨이 현지어(Principais recursos·
         # Hauptmerkmale 등)라 키워드로는 못 잡고 selector 로 잡는다 (2026-09-20)

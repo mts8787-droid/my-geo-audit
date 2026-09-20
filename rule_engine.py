@@ -1558,7 +1558,14 @@ _CITABLE_PATTERNS = [
     # 인증·표준 — ISO 9001, ENERGY STAR, IP68, HDR10, Dolby Atmos 등 규격 식별자
     re.compile(r"\b(?:ISO|IEC|EN|ANSI|ASTM|IP)\s?\d{2,5}\b|"
                r"\b(?:ENERGY\s?STAR|EPEAT|TÜV|UL|CE|RoHS|Wi-?Fi\s?\d|Bluetooth\s?\d(?:\.\d)?|"
-               r"HDMI\s?\d(?:\.\d)?|USB\s?\d(?:\.\d)?|HDR\s?\d+\+?)\b", re.I),
+               r"HDMI\s?\d(?:\.\d)?|USB\s?\d(?:\.\d)?|HDR\s?\d+\+?|"
+               # 가전·AV 제3자 인증/업계 표준 확장 (2026-09-20). LG 자사 기술명(ThinQ 등)은
+               # 전 페이지에 있어 변별력을 없애므로 넣지 않는다. 실측: 인증 언급 페이지는
+               # 대부분 이미 통과 중이라 점수 영향은 없고 카운트 충실도 개선이 목적.
+               r"Dolby\s?(?:Vision|Atmos)|DTS(?::X)?|IMAX\s?Enhanced|THX|"
+               r"FreeSync(?:\s?Premium(?:\s?Pro)?)?|G-?SYNC|VESA|DisplayHDR|ClearMR|Eyesafe|"
+               r"NSF|CSA|ETL|Intertek|SGS|Quiet\s?Mark|Allergy\s?UK|"
+               r"PROCEL|Inmetro|ISEER|eARC|VRR|ALLM|Energy\s?Rating)\b", re.I),
     # 비교·증감 표현 + 숫자 — up to 30%, reduces by 2x, ~보다 40% 빠른
     re.compile(r"\b(?:up to|as much as|over|more than|less than|reduces?|increases?|saves?|"
                r"hasta|m[aá]s de|bis zu|mehr als|at[eé]|mais de|l[eê]n t[ớo]i|h[ơo]n)\s+"

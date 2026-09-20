@@ -194,7 +194,7 @@
 | 평점 | 별점·점수 | `4.5/5` · `4.5 stars` · `★4.5` |
 | 용량·규격 | 저장·전송·성능 | `cu. ft.` · `mAh` · `Mbps` · `fps` · `lbs` · `인치` |
 | 기간·주기 | 보증·기간 | `10-year warranty` · `24 months` · `5년 보증` |
-| 인증·표준 | 규격 식별자 | `ISO 9001` · `ENERGY STAR` · `IP68` · `HDR10+` · `Wi-Fi 6` |
+| 인증·표준 | 규격 식별자 + 제3자 인증·업계 표준 (2026-09-20 확장) | `ISO 9001` · `ENERGY STAR` · `IP68` · `HDR10+` · `Wi-Fi 6` · `Dolby Vision/Atmos` · `DTS:X` · `FreeSync` · `G-SYNC` · `VESA` · `ClearMR` · `Intertek` · `SGS` · `NSF` · `PROCEL` · `ISEER` · `eARC` · `VRR` — LG 자사 기술명(ThinQ 등)은 변별력 훼손이라 제외 |
 | 비교·증감 | 수치 동반 비교 | `up to 30%` · `hasta` · `bis zu` · `40% 더 빠른` |
 | 수상·선정 | 어워드 | `CES Innovation Award` · `iF Design Award` · `Red Dot` |
 
