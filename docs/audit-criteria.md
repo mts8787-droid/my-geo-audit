@@ -245,7 +245,7 @@
 > | 경로 | 예 |
 > | :-- | :-- |
 > | 헤딩·라벨 텍스트 | `<h2 class="tit">At a Glance</h2>` — 클래스명과 무관하게 h1~h6·b·strong·dt 텍스트를 본다. `label_tags: p` 로 `<p>Key features</p>` 같은 라벨 태그도 스캔 — **US PDP(MUI 템플릿) 전용 패턴**이라 키워드는 `key features`(영어)만 추가 (2026-09-20). 타 국가 PDP는 자체 템플릿의 진짜 헤딩(`<h3>resumo</h3>` 등)으로 잡힌다. 번역어(`características principales` 등)는 ES/BR 스펙 섹션 헤딩과 겹쳐 오탐 위험이 있어 넣지 않음 |
-> | 요약 블록 selector | `<p class="info-desc">` 80자 이상 |
+> | 요약 블록 selector | `<p class="info-desc">` 80자 이상 · `div.c-floating-features`(구 AEM PDP의 Key features 블록 — 라벨이 현지어 `Principais recursos`·`Hauptmerkmale`·`Tính năng chính` 등이라 키워드 대신 selector 로 잡는다, 2026-09-20) |
 >
 > `At a Glance` 는 2026-09-17 에 다국어(`한눈에`·`de un vistazo`·`auf einen Blick`·
 > `em resumo`·`tổng quan`)와 함께 추가했다. 헤딩만 있고 요약 단락 형식이 다른 문서를

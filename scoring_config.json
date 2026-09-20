@@ -789,7 +789,7 @@
           "params": {
             "keywords": "summary,overview,tldr,tl;dr,abstract,key takeaway,key takeaways,at a glance,highlights,요약,핵심,한눈에,주요 특징,개요,resumen,de un vistazo,zusammenfassung,auf einen blick,im überblick,resumo,em resumo,visão geral,tóm tắt,tổng quan,news summary,key features",
             "tags": "div,section,aside,article,blockquote,p",
-            "block_selector": "p.info-desc, p.description",
+            "block_selector": "p.info-desc, p.description, div.c-floating-features",
             "block_exclude_class": "idt",
             "block_min_chars": 80,
             "block_min_lines": 1,

@@ -378,6 +378,19 @@ class TestContentRules(unittest.TestCase):
                    "label_tags": "p"}, _ctx(html))
         self.assertTrue(r["pass"])
 
+    def test_summary_aem_floating_features_pass(self):
+        # 구 AEM PDP(비US)의 Key features 블록 — 라벨이 현지어(Principais recursos·
+        # Hauptmerkmale 등)라 키워드로는 못 잡고 selector 로 잡는다 (2026-09-20)
+        html = ('<div class="c-floating-features"><div><p class="tit">Hauptmerkmale</p>'
+                '<ul><li>Intellowave und Grillfunktion</li><li>28 Liter Kapazität</li>'
+                '<li>16 Automatikprogramme</li><li>Eco-On-Energiesparfunktion</li></ul>'
+                '</div></div>')
+        r = _eval("class_id_contains",
+                  {"keywords": "summary", "match_class": "no",
+                   "block_selector": "p.info-desc, p.description, div.c-floating-features",
+                   "block_min_chars": 80, "block_min_lines": 1}, _ctx(html))
+        self.assertTrue(r["pass"])
+
     def test_summary_label_tag_off_by_default(self):
         # label_tags 미지정이면 <p> 라벨은 스캔하지 않는다 (#32 오탐 방지)
         html = '<p>Key features</p>'
