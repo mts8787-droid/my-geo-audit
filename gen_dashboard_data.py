@@ -44,7 +44,9 @@ STRATEGIC = ["us", "uk", "de", "es", "ca", "au", "br", "mx", "in", "vn", "global
 COUNTRY_LABELS = {"global": "Global-Site"}
 
 # 집계 제외 page_type
-EXCLUDED_PAGE_TYPES = {"business", "promotion", "unknown", "home", "about"}
+# support(서포트-일반)는 아웃데이트된 URL이 많아 집계·감사 모두 제외 (사용자 결정 2026-09-20).
+# support_troubleshoot(트러블슈팅)은 별개 타입으로 계속 집계한다.
+EXCLUDED_PAGE_TYPES = {"business", "promotion", "unknown", "home", "about", "support"}
 
 # 페이지타입별 집계 상한 (None = 상한 없음). PDP 는 제품군 대표성 때문에 면제.
 TYPE_CAP = 100

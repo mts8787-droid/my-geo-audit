@@ -76,7 +76,9 @@ PER_TYPE_OVERRIDE = {"pdp": 500}
 
 # 감사 자체를 하지 않는 page_type. 'unknown' 은 분류 실패라 예전부터 제외였고,
 # 'about' 은 회사 소개 페이지라 GEO 검수 대상이 아니라고 결정됐다(2026-08-28).
-SKIP_TYPES = {"unknown", "about"}
+# 'support'(서포트-일반)는 아웃데이트된 URL이 많아 제외(2026-09-20).
+# support_troubleshoot(트러블슈팅)은 별개 타입으로 계속 감사한다.
+SKIP_TYPES = {"unknown", "about", "support"}
 
 
 
