@@ -315,8 +315,8 @@
         "estimated": 1,
         "rate": 0.9988
       },
-      "date": "2026-09-16",
-      "run_file": "us_2026-09-16_run_c63e5d7c48e8.json",
+      "date": "2026-09-20",
+      "run_file": "us_2026-09-20_run_c63e5d7c48e8.json",
       "label": "US"
     },
     "uk": {
@@ -633,8 +633,8 @@
         "estimated": 36,
         "rate": 0.9613
       },
-      "date": "2026-09-16",
-      "run_file": "uk_2026-09-16_run_febbf45dbf13.json",
+      "date": "2026-09-20",
+      "run_file": "uk_2026-09-20_run_febbf45dbf13.json",
       "label": "UK"
     },
     "de": {
@@ -930,30 +930,30 @@
         }
       },
       "agentic": {
-        "measured_n": 644,
-        "score_avg": 0.7469,
+        "measured_n": 647,
+        "score_avg": 0.7452,
         "audits": {
           "agent-accessibility-tree": {
-            "pass_rate": 0.7748,
-            "measured_n": 644
+            "pass_rate": 0.7713,
+            "measured_n": 647
           },
           "cumulative-layout-shift": {
-            "pass_rate": 0.0466,
-            "measured_n": 644
+            "pass_rate": 0.0464,
+            "measured_n": 647
           },
           "llms-txt": {
             "pass_rate": 1.0,
-            "measured_n": 644
+            "measured_n": 647
           }
         }
       },
       "psi_coverage": {
-        "measured": 644,
-        "estimated": 61,
-        "rate": 0.9135
+        "measured": 647,
+        "estimated": 58,
+        "rate": 0.9177
       },
-      "date": "2026-09-16",
-      "run_file": "de_2026-09-16_run_a2f968accafc.json",
+      "date": "2026-09-20",
+      "run_file": "de_2026-09-20_run_a2f968accafc.json",
       "label": "DE"
     },
     "es": {
@@ -1243,30 +1243,30 @@
         }
       },
       "agentic": {
-        "measured_n": 555,
-        "score_avg": 0.5623,
+        "measured_n": 560,
+        "score_avg": 0.5614,
         "audits": {
           "agent-accessibility-tree": {
-            "pass_rate": 0.3045,
-            "measured_n": 555
+            "pass_rate": 0.3018,
+            "measured_n": 560
           },
           "cumulative-layout-shift": {
-            "pass_rate": 0.0306,
-            "measured_n": 555
+            "pass_rate": 0.0304,
+            "measured_n": 560
           },
           "llms-txt": {
             "pass_rate": 0.9982,
-            "measured_n": 555
+            "measured_n": 560
           }
         }
       },
       "psi_coverage": {
-        "measured": 555,
-        "estimated": 60,
-        "rate": 0.9024
+        "measured": 560,
+        "estimated": 55,
+        "rate": 0.9106
       },
-      "date": "2026-09-16",
-      "run_file": "es_2026-09-16_run_a276c49f9aaa.json",
+      "date": "2026-09-20",
+      "run_file": "es_2026-09-20_run_a276c49f9aaa.json",
       "label": "ES"
     },
     "ca": {
@@ -1585,8 +1585,8 @@
         "estimated": 99,
         "rate": 0.8673
       },
-      "date": "2026-09-16",
-      "run_file": "ca_2026-09-16_run_a9706f05c4d1.json",
+      "date": "2026-09-20",
+      "run_file": "ca_2026-09-20_run_a9706f05c4d1.json",
       "label": "CA"
     },
     "au": {
@@ -1904,8 +1904,8 @@
         "estimated": 43,
         "rate": 0.955
       },
-      "date": "2026-09-16",
-      "run_file": "au_2026-09-16_run_bf2b3bb6dbbe.json",
+      "date": "2026-09-20",
+      "run_file": "au_2026-09-20_run_bf2b3bb6dbbe.json",
       "label": "AU"
     },
     "br": {
@@ -2223,8 +2223,8 @@
         "estimated": 116,
         "rate": 0.8602
       },
-      "date": "2026-09-16",
-      "run_file": "br_2026-09-16_run_8a4eb57fdc4b.json",
+      "date": "2026-09-20",
+      "run_file": "br_2026-09-20_run_8a4eb57fdc4b.json",
       "label": "BR"
     },
     "mx": {
@@ -2543,8 +2543,8 @@
         "estimated": 224,
         "rate": 0.7143
       },
-      "date": "2026-09-16",
-      "run_file": "mx_2026-09-16_run_d10e71b05bab.json",
+      "date": "2026-09-20",
+      "run_file": "mx_2026-09-20_run_d10e71b05bab.json",
       "label": "MX"
     },
     "in": {
@@ -2862,8 +2862,8 @@
         "estimated": 184,
         "rate": 0.7751
       },
-      "date": "2026-09-16",
-      "run_file": "in_2026-09-16_run_0ae44a6f9cd5.json",
+      "date": "2026-09-20",
+      "run_file": "in_2026-09-20_run_0ae44a6f9cd5.json",
       "label": "IN"
     },
     "vn": {
@@ -3174,8 +3174,8 @@
         "estimated": 201,
         "rate": 0.7185
       },
-      "date": "2026-09-16",
-      "run_file": "vn_2026-09-16_run_f2e3991fa691.json",
+      "date": "2026-09-20",
+      "run_file": "vn_2026-09-20_run_f2e3991fa691.json",
       "label": "VN"
     },
     "global": {
@@ -3431,8 +3431,8 @@
         "estimated": 0,
         "rate": 1.0
       },
-      "date": "2026-09-16",
-      "run_file": "global_2026-09-16_run_66e93813b073.json",
+      "date": "2026-09-20",
+      "run_file": "global_2026-09-20_run_66e93813b073.json",
       "label": "Global-Site"
     }
   },
