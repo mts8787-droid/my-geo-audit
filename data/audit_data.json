@@ -10340,7 +10340,7 @@
       "id": "grp_lg_uk",
       "url_count": 10323,
       "sitemap_url": "https://www.lg.com/uk/sitemap.xml",
-      "last_synced_at": "2026-09-05T12:00:40.906437"
+      "last_synced_at": "2026-09-18T12:00:11.347909"
     },
     {
       "csv_file": "reports/lg_urls_de.csv",
@@ -18184,7 +18184,7 @@
       "id": "grp_lg_de",
       "url_count": 7834,
       "sitemap_url": "https://www.lg.com/de/sitemap.xml",
-      "last_synced_at": "2026-09-06T12:01:09.401243"
+      "last_synced_at": "2026-09-18T12:01:48.937464"
     },
     {
       "csv_file": "reports/lg_urls_ru.csv",
@@ -18193,7 +18193,7 @@
       "id": "grp_lg_ru",
       "url_count": 29902,
       "sitemap_url": "https://www.lg.com/ru/sitemap.xml",
-      "last_synced_at": "2026-09-04T12:00:32.881463"
+      "last_synced_at": "2026-09-17T12:00:02.643835"
     },
     {
       "csv_file": "reports/lg_urls_es.csv",
@@ -28283,7 +28283,7 @@
       "id": "grp_lg_es",
       "url_count": 10080,
       "sitemap_url": "https://www.lg.com/es/sitemap.xml",
-      "last_synced_at": "2026-09-04T12:00:43.008011"
+      "last_synced_at": "2026-09-17T12:00:12.779939"
     },
     {
       "csv_file": "reports/lg_urls_in.csv",
@@ -31524,7 +31524,7 @@
       "id": "grp_lg_in",
       "url_count": 3231,
       "sitemap_url": "https://www.lg.com/in/sitemap.xml",
-      "last_synced_at": "2026-09-05T12:00:00.604983"
+      "last_synced_at": "2026-09-17T12:00:22.901140"
     },
     {
       "csv_file": "reports/lg_urls_id.csv",
@@ -36117,7 +36117,7 @@
       "id": "grp_lg_id",
       "url_count": 4583,
       "sitemap_url": "https://www.lg.com/id/sitemap.xml",
-      "last_synced_at": "2026-09-05T12:00:10.678806"
+      "last_synced_at": "2026-09-17T12:00:33.075566"
     },
     {
       "csv_file": "reports/lg_urls_fr.csv",
@@ -44932,7 +44932,7 @@
       "id": "grp_lg_fr",
       "url_count": 8805,
       "sitemap_url": "https://www.lg.com/fr/sitemap.xml",
-      "last_synced_at": "2026-09-05T12:00:20.746246"
+      "last_synced_at": "2026-09-17T12:00:43.305345"
     },
     {
       "csv_file": "reports/lg_urls_it.csv",
@@ -50527,7 +50527,7 @@
       "id": "grp_lg_it",
       "url_count": 5585,
       "sitemap_url": "https://www.lg.com/it/sitemap.xml",
-      "last_synced_at": "2026-09-05T12:00:30.822934"
+      "last_synced_at": "2026-09-18T12:00:00.361703"
     },
     {
       "csv_file": "reports/lg_urls_at.csv",
@@ -50536,7 +50536,7 @@
       "id": "grp_lg_at",
       "url_count": 22561,
       "sitemap_url": "https://www.lg.com/at/sitemap.xml",
-      "last_synced_at": "2026-09-07T12:00:20.888105"
+      "last_synced_at": "2026-09-19T12:00:42.405012"
     },
     {
       "csv_file": "reports/lg_urls_br.csv",
@@ -59685,7 +59685,7 @@
       "id": "grp_lg_br",
       "url_count": 9139,
       "sitemap_url": "https://www.lg.com/br/sitemap.xml",
-      "last_synced_at": "2026-09-06T12:01:19.554452"
+      "last_synced_at": "2026-09-19T12:00:00.565824"
     },
     {
       "csv_file": "reports/lg_urls_pa.csv",
@@ -65153,7 +65153,7 @@
       "id": "grp_lg_au",
       "url_count": 5413,
       "sitemap_url": "https://www.lg.com/au/sitemap.xml",
-      "last_synced_at": "2026-09-07T12:00:00.630516"
+      "last_synced_at": "2026-09-19T12:00:20.823753"
     },
     {
       "csv_file": "reports/lg_urls_se.csv",
@@ -70071,7 +70071,7 @@
       "id": "grp_lg_mx",
       "url_count": 4899,
       "sitemap_url": "https://www.lg.com/mx/sitemap.xml",
-      "last_synced_at": "2026-09-06T12:01:29.669137"
+      "last_synced_at": "2026-09-19T12:00:10.664694"
     },
     {
       "csv_file": "reports/lg_urls_cac.csv",
@@ -78830,7 +78830,7 @@
       "id": "grp_lg_vn",
       "url_count": 4383,
       "sitemap_url": "https://www.lg.com/vn/sitemap.xml",
-      "last_synced_at": "2026-09-07T12:00:10.719816"
+      "last_synced_at": "2026-09-19T12:00:31.600623"
     },
     {
       "csv_file": "reports/lg_urls_bg.csv",
@@ -80651,6 +80651,7 @@
         "https://www.lg.com/us/dishwashers/lg-sdwb24s3-top-control-dishwasher",
         "https://www.lg.com/us/dishwashers/lg-sdwb24w3-top-control-dishwasher",
         "https://www.lg.com/us/dishwashers/lg-sdwd24p3-top-control-dishwasher",
+        "https://www.lg.com/us/dishwashers/lg-signature-sdnth981e-top-control-dishwasher",
         "https://www.lg.com/us/dishwashers/lg-signature-sdnth981s-top-control-dishwasher",
         "https://www.lg.com/us/door-in-door-refrigerators",
         "https://www.lg.com/us/double-wall-ovens",
@@ -81201,6 +81202,8 @@
         "https://www.lg.com/us/laptops/lg-14t90s-g.aab6u1-gram-laptop",
         "https://www.lg.com/us/laptops/lg-14t90s-g.adb8u1-gram-laptop",
         "https://www.lg.com/us/laptops/lg-14t90s-g.adb9u1-gram-laptop",
+        "https://www.lg.com/us/laptops/lg-14u40v-g.ar51u3-gram-laptop",
+        "https://www.lg.com/us/laptops/lg-14u40v-h.ar51u3-gram-laptop",
         "https://www.lg.com/us/laptops/lg-14z90n-u.aas6u1-ultra-slim-laptop",
         "https://www.lg.com/us/laptops/lg-14z90n-u.aas7u1-ultra-slim-laptop",
         "https://www.lg.com/us/laptops/lg-14z90n-u.arw5u1-ultra-slim-laptop",
@@ -81253,6 +81256,7 @@
         "https://www.lg.com/us/laptops/lg-15u50t-g.aas3u1-gram-laptop",
         "https://www.lg.com/us/laptops/lg-15u50t-g.ars1u1-gram-laptop",
         "https://www.lg.com/us/laptops/lg-15u50t-g.ars2u1-gram-laptop",
+        "https://www.lg.com/us/laptops/lg-15u50u-g.ar55u1-gram-laptop",
         "https://www.lg.com/us/laptops/lg-15u50u-h.aa55u1-gram-laptop",
         "https://www.lg.com/us/laptops/lg-15u50u-h.aa56u1-gram-laptop",
         "https://www.lg.com/us/laptops/lg-15u50u-h.aa57u1-gram-laptop",
@@ -81837,6 +81841,8 @@
         "https://www.lg.com/us/monitors/lg-24MP58VQ-P-led-monitor",
         "https://www.lg.com/us/monitors/lg-24MP59HT-P-led-monitor",
         "https://www.lg.com/us/monitors/lg-24MP60VQ-P-led-monitor",
+        "https://www.lg.com/us/monitors/lg-24ba650-i-fhd-monitor",
+        "https://www.lg.com/us/monitors/lg-24ba850-i-fhd-monitor",
         "https://www.lg.com/us/monitors/lg-24bk550y-i",
         "https://www.lg.com/us/monitors/lg-24bl450y-b",
         "https://www.lg.com/us/monitors/lg-24bl650c-b",
@@ -81921,6 +81927,8 @@
         "https://www.lg.com/us/monitors/lg-27UD59-B-4k-uhd-led-monitor",
         "https://www.lg.com/us/monitors/lg-27UD68-W-4k-uhd-led-monitor",
         "https://www.lg.com/us/monitors/lg-27UD69P-W-4k-uhd-led-monitor",
+        "https://www.lg.com/us/monitors/lg-27ba650-i-fhd-monitor",
+        "https://www.lg.com/us/monitors/lg-27ba850-i-fhd-monitor",
         "https://www.lg.com/us/monitors/lg-27bk400h-b",
         "https://www.lg.com/us/monitors/lg-27bk550y-i",
         "https://www.lg.com/us/monitors/lg-27bl55u-b",
@@ -82097,6 +82105,8 @@
         "https://www.lg.com/us/monitors/lg-32g600a-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-32g60wa-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-32g620b-b-gaming-monitor",
+        "https://www.lg.com/us/monitors/lg-32g621b-b-gaming-monitor",
+        "https://www.lg.com/us/monitors/lg-32g650b-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-32g810sa-w-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-32gk650f-b-gaming-monitor",
         "https://www.lg.com/us/monitors/lg-32gn50r-b-gaming-monitor",
@@ -83508,7 +83518,7 @@
         "https://www.lg.com/us/refrigerators/lg-lrfds3016s-french-3-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lrfgc2706s-french-3-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lrflc2706d-french-3-door-refrigerator",
-        "https://www.lg.com/us/refrigerators/lg-lrflc2706s-french-3-door-refrigerator-b",
+        "https://www.lg.com/us/refrigerators/lg-lrflc2706s-french-3-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lrflc2716d-french-3-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lrflc2716s-french-3-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lrflc2716v-french-3-door-refrigerator",
@@ -83543,7 +83553,7 @@
         "https://www.lg.com/us/refrigerators/lg-lrmvs2806d-french-4-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lrmvs2806s-french-4-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lrmvs3006d-french-4-door-refrigerator",
-        "https://www.lg.com/us/refrigerators/lg-lrmvs3006s-french-4-door-refrigerator",
+        "https://www.lg.com/us/refrigerators/lg-lrmvs3006s-french-4-door-refrigerator-b",
         "https://www.lg.com/us/refrigerators/lg-lrmws2906d-french-4-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lrmws2906s-french-4-door-refrigerator",
         "https://www.lg.com/us/refrigerators/lg-lrmxc2206d-french-4-door-refrigerator",
@@ -84573,6 +84583,7 @@
         "https://www.lg.com/us/tvs/lg-65qned85aua-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-65qned85taa-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-65qned85uqa-qned-4k-tv",
+        "https://www.lg.com/us/tvs/lg-65qned8mbaa-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-65qned90taa-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-65qned90upa-mini-led-4k-tv",
         "https://www.lg.com/us/tvs/lg-65qned91aaa-qned-4k-tv",
@@ -84666,6 +84677,7 @@
         "https://www.lg.com/us/tvs/lg-75qned85aua-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-75qned85taa-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-75qned85uqa-qned-4k-tv",
+        "https://www.lg.com/us/tvs/lg-75qned8mbaa-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-75qned90taa-qned-4k-tv",
         "https://www.lg.com/us/tvs/lg-75qned90upa-mini-led-4k-tv",
         "https://www.lg.com/us/tvs/lg-75qned90uqa-mini-led-4k-tv",
@@ -85038,6 +85050,7 @@
         "https://www.lg.com/us/washers-dryers/lg-dle3600v-front-load-electric-dryer",
         "https://www.lg.com/us/washers-dryers/lg-dle3600w-front-load-electric-dryer",
         "https://www.lg.com/us/washers-dryers/lg-dle6100w-electric-dryer",
+        "https://www.lg.com/us/washers-dryers/lg-dle6480w-electric-dryer",
         "https://www.lg.com/us/washers-dryers/lg-dle7000w-electric-dryer",
         "https://www.lg.com/us/washers-dryers/lg-dle7010w-electric-dryer",
         "https://www.lg.com/us/washers-dryers/lg-dle7100w-electric-dryer",
@@ -85088,6 +85101,7 @@
         "https://www.lg.com/us/washers-dryers/lg-dlg3601v-front-load-gas-dryer",
         "https://www.lg.com/us/washers-dryers/lg-dlg3601w-front-load-gas-dryer",
         "https://www.lg.com/us/washers-dryers/lg-dlg6101w-gas-dryer",
+        "https://www.lg.com/us/washers-dryers/lg-dlg6481w-gas-dryer",
         "https://www.lg.com/us/washers-dryers/lg-dlg7001w-gas-dryer",
         "https://www.lg.com/us/washers-dryers/lg-dlg7101w-gas-dryer",
         "https://www.lg.com/us/washers-dryers/lg-dlg7151m-gas-dryer",
@@ -85228,6 +85242,7 @@
         "https://www.lg.com/us/washers-dryers/lg-wsex200hna-washtower",
         "https://www.lg.com/us/washers-dryers/lg-wsgx201hna-washtower",
         "https://www.lg.com/us/washers-dryers/lg-wt6105cw-top-load-washer",
+        "https://www.lg.com/us/washers-dryers/lg-wt6485cw-top-load-washer",
         "https://www.lg.com/us/washers-dryers/lg-wt7000cw-top-load-washer",
         "https://www.lg.com/us/washers-dryers/lg-wt7005cw-top-load-washer",
         "https://www.lg.com/us/washers-dryers/lg-wt7010cw-top-load-washer",
@@ -85387,9 +85402,9 @@
         "https://www.lg.com/us/xboom",
         "https://www.lg.com/us/zero-clearance-refrigerator"
       ],
-      "url_count": 6280,
+      "url_count": 6295,
       "sitemap_url": "https://www.lg.com/us/sitemap.xml",
-      "last_synced_at": "2026-09-06T12:00:03.195051"
+      "last_synced_at": "2026-09-18T12:00:23.577522"
     },
     {
       "id": "grp_lg_ca",
@@ -90863,7 +90878,7 @@
       ],
       "url_count": 5465,
       "sitemap_url": "https://www.lg.com/ca_en/sitemap.xml",
-      "last_synced_at": "2026-09-06T12:00:59.317940"
+      "last_synced_at": "2026-09-18T12:01:33.719610"
     }
   ],
   "schedules": [
