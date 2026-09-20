@@ -84,6 +84,7 @@ RULE_TYPES = {
             "question_keywords": {"label": "문답 키워드 (본문 검색, #32)", "type": "text", "placeholder": "faq,자주 묻는,preguntas frecuentes"},
             "question_qword": {"label": "의문사 필수 (#32)", "type": "select", "options": ["yes", "no"]},
             "match_class": {"label": "class/id 매칭 사용", "type": "select", "options": ["yes", "no"]},
+            "label_tags": {"label": "라벨 태그 추가 스캔 (쉼표 구분, #35)", "type": "text", "placeholder": "p"},
         },
     },
     "text_has_pattern": {
@@ -634,8 +635,14 @@ def _eval_class_id_contains(params: dict, ctx: dict) -> dict:
     #   c-detail-content__type03 같은 디자인 시스템 이름이라 class/id 매칭에
     #   전혀 걸리지 않았다(실제로 요약이 있는데 통과율 0%).
     if params.get("match_text", "yes") != "no":
+        # label_tags: 헤딩·강조 외에 라벨로 쓰이는 태그를 추가 스캔 (옵트인).
+        # US PDP(React/MUI)는 요약 라벨을 <p class="MuiTypography-...">Key features</p>
+        # 로 쓴다 — 헤딩이 아니라서 안 잡혔다 (2026-09-20). #35 에만 'p' 를 지정하고
+        # #32 는 지정하지 않는다('Have questions?' 같은 짧은 <p> UI 문구 오탐 방지).
+        label_tags = [t.strip() for t in str(params.get("label_tags", "")).split(",") if t.strip()]
         for el in soup.find_all(["h1", "h2", "h3", "h4", "h5", "h6",
-                                 "b", "strong", "dt", "summary", "caption", "legend"]):
+                                 "b", "strong", "dt", "summary", "caption", "legend"]
+                                + label_tags):
             txt = " ".join(el.get_text(" ", strip=True).split()).lower()
             if not txt or len(txt) > 60:
                 continue
@@ -1524,8 +1531,10 @@ _CITABLE_PATTERNS = [
     re.compile(r"\d+(?:[.,]\d+)?\s*(?:만|억|천만|million|billion|mill[oó]n(?:es)?|"
                r"Millionen|Milliarden|milh[oõ]es|bilh[oõ]es|tri[eệ]u|t[yỷ])\b", re.I),
     # 단위 — 물리량/전기/디스플레이
+    # 끝은 \b 가 아니라 (?!\w) — 인치 축약(34")처럼 비단어 문자로 끝나는 단위 뒤에는
+    # \b 가 성립하지 않아 '32" UHD' 가 안 잡혔다 (2026-09-20, US PDP 실측).
     re.compile(r"\d+(?:[.,]\d+)?\s*(?:kg|g|km|cm|mm|m²|°C|℃|°F|GB|TB|MB|kWh|W|V|Hz|"
-               r"nits|ppi|dB|inch(?:es)?|\"|L|ml|rpm|BTU)\b", re.I),
+               r"nits|ppi|dB|inch(?:es)?|\"|″|L|ml|rpm|BTU)(?!\w)", re.I),
     # 출처 표현 — according to / según / laut / segundo / theo
     re.compile(r"(?:에 따르면|보고서에 따르면|연구에 따르면|조사에 따르면|"
                r"according to|based on (?:a|the) (?:study|report|survey)|"

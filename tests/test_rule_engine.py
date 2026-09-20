@@ -362,6 +362,29 @@ class TestContentRules(unittest.TestCase):
         r = _eval("citable_density_min", {"min_ratio": 0.1}, _ctx(html))
         self.assertFalse(r["pass"])
 
+    def test_citable_inch_abbreviation_pass(self):
+        # 인치 축약(34")도 물리 단위로 인정 — \b 는 따옴표 뒤에서 성립하지 않아
+        # 죽은 조항이었다 (2026-09-20, US PDP 실측)
+        html = ('<p>Enjoy a 32" UHD display on a rolling stand. '
+                'See more on a large 34" curved ultrawide smart display.</p>')
+        r = _eval("citable_density_min", {"min_count": 2}, _ctx(html))
+        self.assertTrue(r["pass"])
+
+    def test_summary_label_tag_pass(self):
+        # US PDP(MUI)의 <p>Key features</p> 라벨 — label_tags: p 로 잡는다
+        html = '<p class="MuiTypography-body2">Key features</p><ul><li>32" UHD</li></ul>'
+        r = _eval("class_id_contains",
+                  {"keywords": "summary,key features", "match_class": "no",
+                   "label_tags": "p"}, _ctx(html))
+        self.assertTrue(r["pass"])
+
+    def test_summary_label_tag_off_by_default(self):
+        # label_tags 미지정이면 <p> 라벨은 스캔하지 않는다 (#32 오탐 방지)
+        html = '<p>Key features</p>'
+        r = _eval("class_id_contains",
+                  {"keywords": "summary,key features", "match_class": "no"}, _ctx(html))
+        self.assertFalse(r["pass"])
+
     def test_image_filename_keyword_pass(self):
         html = '<img src="/products/lg-oled-c4.jpg"><img src="/products/lg-gram-pro.png">'
         r = _eval("image_filename_keyword", {"keywords": "lg,oled,gram", "min_ratio": 0.5}, _ctx(html))

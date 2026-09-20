@@ -187,7 +187,7 @@
 | 큰 수 | 1,000 이상 | `24,999` |
 | 배수 | 배수 표현 | `2x` · `3배` · `2 times` · `veces` · `fach` · `lần` |
 | 대규모 수 | 백만·억 단위 | `1 million` · `500만` · `milhões` · `triệu` |
-| 물리 단위 | 치수·전기·디스플레이 | `65 inch` · `165Hz` · `kWh` · `°C` · `dB` · `nits` |
+| 물리 단위 | 치수·전기·디스플레이 | `65 inch` · `34"`(인치 축약) · `165Hz` · `kWh` · `°C` · `dB` · `nits` |
 | 출처 표현 | 근거 인용문 | `according to` · `~에 따르면` · `según` · `laut` · `theo nghiên cứu` |
 | 순위·최초 | 1위/최초 주장 | `world's first` · `No.1` · `top 3` · `đầu tiên` |
 | 해상도·화면비 | 픽셀·비율 | `3840 × 2160` · `16:9` |
@@ -244,7 +244,7 @@
 >
 > | 경로 | 예 |
 > | :-- | :-- |
-> | 헤딩 텍스트 | `<h2 class="tit">At a Glance</h2>` — 클래스명과 무관하게 h1~h6·b·strong·dt 텍스트를 본다 |
+> | 헤딩·라벨 텍스트 | `<h2 class="tit">At a Glance</h2>` — 클래스명과 무관하게 h1~h6·b·strong·dt 텍스트를 본다. `label_tags: p` 로 `<p>Key features</p>` 같은 라벨 태그도 스캔 — **US PDP(MUI 템플릿) 전용 패턴**이라 키워드는 `key features`(영어)만 추가 (2026-09-20). 타 국가 PDP는 자체 템플릿의 진짜 헤딩(`<h3>resumo</h3>` 등)으로 잡힌다. 번역어(`características principales` 등)는 ES/BR 스펙 섹션 헤딩과 겹쳐 오탐 위험이 있어 넣지 않음 |
 > | 요약 블록 selector | `<p class="info-desc">` 80자 이상 |
 >
 > `At a Glance` 는 2026-09-17 에 다국어(`한눈에`·`de un vistazo`·`auf einen Blick`·
