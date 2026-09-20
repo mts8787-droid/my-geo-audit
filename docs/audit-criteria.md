@@ -136,7 +136,7 @@
 | #33 | Definition Paragraph | 1개 이상 | 정의문 패턴 15종(6개 언어), `dfn`, `abbr` — [패턴 목록](#매칭-패턴-기준) | `ai_definition` |
 | #34 | Author/Source | 저자 또는 (출처+날짜) | **JSON-LD** `author` 또는 (`datePublished` + `publisher`/`sourceOrganization`/`source`) | `ai_author_source` |
 | #35 | Summary Box | 1개 이상 | TL;DR, Key Takeaways, Highlights, Abstract | `ai_summary_box` |
-| #36 | Citable Sentences | **5개 이상** | 인용 가능 패턴 18종에 걸리는 문장 수 — [패턴 목록](#매칭-패턴-기준) | `ai_citable` |
+| #36 | Citable Sentences | **5개 이상** | 인용 가능 패턴 22종에 걸리는 문장 수 — [패턴 목록](#매칭-패턴-기준) | `ai_citable` |
 
 > **#34 주의**: HTML `meta author`·본문 byline은 판정에 **사용하지 않는다**. AI가 파싱 가능한
 > 구조화 데이터를 요구하는 기준이다. 따라서 통과율 0%는 "저자 표기가 없다"가 아니라
@@ -175,7 +175,7 @@
 - 검수 대상이 다국어라 **영어·스페인어·독일어·포르투갈어·베트남어·한국어**를 함께 처리한다.
   (2026-08 확인: 한국어 전용 패턴만 있던 시기에 #33 통과율이 US 외 전 국가 0% 였다)
 
-### #36 Citable Sentences — 인용 가능 문장 (18패턴)
+### #36 Citable Sentences — 인용 가능 문장 (22패턴)
 
 문장 단위로 아래 중 **하나라도** 걸리면 인용 가능으로 센다. 5개 이상이면 통과.
 
@@ -197,6 +197,10 @@
 | 인증·표준 | 규격 식별자 + 제3자 인증·업계 표준 (2026-09-20 확장) | `ISO 9001` · `ENERGY STAR` · `IP68` · `HDR10+` · `Wi-Fi 6` · `Dolby Vision/Atmos` · `DTS:X` · `FreeSync` · `G-SYNC` · `VESA` · `ClearMR` · `Intertek` · `SGS` · `NSF` · `PROCEL` · `ISEER` · `eARC` · `VRR` — LG 자사 기술명(ThinQ 등)은 변별력 훼손이라 제외 |
 | 비교·증감 | 수치 동반 비교 | `up to 30%` · `hasta` · `bis zu` · `40% 더 빠른` |
 | 수상·선정 | 어워드 | `CES Innovation Award` · `iF Design Award` · `Red Dot` |
+| **EEAT·경험** | 실측·시험 수행 서술 | `we tested` · `tested by/under` · `independently tested` · `probado por` · `getestet von` · `được kiểm nghiệm` |
+| **EEAT·전문성** | 특허·공동 개발 | `patented` · `developed in collaboration with` · `patentado` · `특허` |
+| **EEAT·권위** | 전문가·기관·연구 | `recommended by dermatologists` · `trusted by` · `official partner` · `research shows` · `según un estudio` |
+| **EEAT·신뢰** | 임상·과학 입증 | `clinically proven` · `proven to reduce` · `dermatologist-tested` · `klinisch getestet` |
 
 > **과대 집계 주의.** 문맥을 보지 않으므로 `Copyright © 2012–2025` 같은 저작권 표기,
 > 제품명에 포함된 `65 inch`, 가격표 나열도 인용 가능으로 잡힌다. 특히 PDP 는 제품명·
@@ -205,6 +209,12 @@
 >
 > 2026-09-17 에 비율(≥10%) 기준에서 개수(≥5개) 기준으로 바꿨다. 비율은 본문이 길수록
 > 불리해 긴 서포트 문서가 짧은 PLP 보다 낮게 나왔기 때문이다.
+>
+> **EEAT 확장 4패턴(2026-09-20)** 은 숫자 없는 검증·권위 서술을 잡는다. 코퍼스
+> (양성 27/음성 23 — 재현율 100%·오탐 0)와 실측 게이트를 거쳐 등재했으며, 절차는
+> [citable-pattern-methodology.md](citable-pattern-methodology.md) 참조. 현재 LG SSR
+> 본문에 이런 서술이 드물어(세탁기류 Intertek 시험 각주가 대표 사례) 점수 영향은
+> 없고, EEAT 콘텐츠가 늘면 즉시 측정에 반영된다.
 
 ### #33 Definition Paragraph — 정의문 (15패턴)
 

@@ -457,6 +457,86 @@ class TestContentRules(unittest.TestCase):
 
 # ── Sitemap 국가 디렉토리 감지 ────────────────────────────────────────────────
 
+class TestCitableEEATCorpus(unittest.TestCase):
+    """#36 E-E-A-T 확장 패턴의 코퍼스 게이트 (2026-09-20).
+
+    패턴 추가·수정 시 이 코퍼스가 항상 지켜져야 한다:
+      양성(EEAT 관점 인용 가치 문장, 숫자 없음) → 반드시 매칭
+      음성(마케팅 플러프·UI·법률 문구)        → 절대 비매칭
+    방법론: docs/citable-pattern-methodology.md
+    """
+    POSITIVES = [
+        # 경험(E) — 실측·시험
+        "We tested the washer under heavy-load conditions and found no vibration issues.",
+        "In our lab, the compressor remained below audible noise thresholds.",
+        "The filter was independently tested by an external laboratory.",
+        "Real-world tested across humid climates for durability.",
+        "Der Motor wurde geprüft von unabhängigen Instituten.",
+        "Probado por laboratorios independientes para garantizar su rendimiento.",
+        "Testado por institutos independentes de qualidade.",
+        "Sản phẩm được kiểm nghiệm bởi viện nghiên cứu độc lập.",
+        "내구성 시험 결과 이상이 발견되지 않았습니다.",
+        # 전문성(X) — 특허·공동 개발
+        "The patented Direct Drive system reduces mechanical wear.",
+        "Developed in collaboration with professional sound engineers.",
+        "Tecnología patentada que protege el tambor.",
+        "Motor patenteado que reduz o ruído.",
+        "특허 받은 인버터 기술이 적용되었습니다.",
+        # 권위(A) — 전문가·기관·연구
+        "Recommended by dermatologists for sensitive skin.",
+        "Trusted by professional chefs worldwide.",
+        "Research shows steam cycles remove common allergens.",
+        "Official partner of the national football league.",
+        "Empfohlen von unabhängigen Prüfinstituten.",
+        "Recomendado por expertos en cuidado de la ropa.",
+        "Sản phẩm được các chuyên gia khuyên dùng.",
+        # 신뢰(T) — 임상·과학적 입증
+        "Clinically proven to reduce allergens in bedding.",
+        "The steam function is proven to kill common bacteria.",
+        "Dermatologist-tested for gentle fabric care.",
+        "Klinisch getestet für empfindliche Haut.",
+        "Clínicamente probado para pieles sensibles.",
+        "Clinicamente comprovado no cuidado com tecidos.",
+    ]
+    NEGATIVES = [
+        "Designed to elevate your everyday life.",
+        "Experience immersive entertainment like never before.",
+        "Discover a new world of possibilities.",
+        "Engineered for those who demand more.",
+        "Style that speaks for itself.",
+        "Sign in to your account to continue shopping.",
+        "Add to cart and check out today.",
+        "Find a store near you.",
+        "Compare products side by side.",
+        "Subscribe to our newsletter for exclusive offers.",
+        "Free delivery on eligible orders.",
+        "This model is currently out of stock.",
+        "Erleben Sie Unterhaltung auf einem neuen Niveau.",
+        "Descubre un nuevo mundo de entretenimiento.",
+        "Descubra um novo padrão de conforto.",
+        "Trải nghiệm giải trí đỉnh cao.",
+        "당신의 일상을 바꿔줄 프리미엄 디자인.",
+        "We are committed to your satisfaction.",
+        "Our design philosophy embraces simplicity.",
+        "Trusted quality since day one.",
+        "Recommended for large families.",
+        "Proven design language.",
+        "Tested styles for every home.",
+    ]
+
+    def test_positives_all_match(self):
+        from rule_engine import _CITABLE_PATTERNS
+        missed = [s for s in self.POSITIVES
+                  if not any(p.search(s) for p in _CITABLE_PATTERNS)]
+        self.assertEqual(missed, [], f"양성 미탐 {len(missed)}건")
+
+    def test_negatives_none_match(self):
+        from rule_engine import _CITABLE_PATTERNS
+        fp = [s for s in self.NEGATIVES
+              if any(p.search(s) for p in _CITABLE_PATTERNS)]
+        self.assertEqual(fp, [], f"음성 오탐 {len(fp)}건")
+
+
 class TestSitemapCountryDetection(unittest.TestCase):
     def test_country_kr(self):
         self.assertEqual(_detect_country_dir("https://www.lg.com/kr/products/oled"), "kr")

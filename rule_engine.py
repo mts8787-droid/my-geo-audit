@@ -1574,6 +1574,49 @@ _CITABLE_PATTERNS = [
     # 수상·선정 — CES Innovation Award 2025, iF Design Award
     re.compile(r"\b(?:CES|iF|Red\s?Dot|IDEA|Good\s?Design|EISA|IFA)\b[^.!?]{0,40}"
                r"\b(?:award|winner|honou?ree|수상|선정|Preis|premio|pr[eê]mio)\b", re.I),
+    # ── E-E-A-T 확장 4패턴 (2026-09-20) ─────────────────────────────────────
+    # 숫자 없는 검증·권위 서술도 인용 가치가 있다. 코퍼스(양성 27/음성 23) 게이트와
+    # 실측 게이트를 통과한 패턴만 등재 — 방법론: docs/citable-pattern-methodology.md
+    # 'designed to'·'engineered for' 류는 마케팅 플러프라 제외(음성 코퍼스로 검증).
+    # 경험(E) — 실측·시험 수행 서술: "Probado por Intertek"(ES 세탁기 각주 실측 확인)
+    re.compile(
+        r"(?:\b(?:we|our team)\s+(?:tested|measured|found|observed)\b|"
+        r"\bin (?:our|the) (?:tests?|testing|lab)\b|"
+        r"\b(?:lab|laboratory|field|real[- ]world)[- ]?tested\b|"
+        r"\btested (?:by|under|against|in accordance|according to|for \d)|"
+        r"\bindependently (?:tested|verified|certified)\b|"
+        r"\bthird[- ]party (?:tested|verified|certified)\b|"
+        r"\b(?:getestet|geprüft)\s+(?:von|nach|unter|durch)\b|\bunabhängig geprüft\b|"
+        r"\bprobado (?:por|en|bajo|conforme|según)\b|\bverificado por\b|"
+        r"\btestado (?:por|em|sob|conforme|de acordo)\b|\bcomprovado por\b|"
+        r"\bđược (?:kiểm nghiệm|thử nghiệm|kiểm chứng)\b|"
+        r"시험 결과|테스트 결과|실험 결과|검증(?:됐|되었|된))", re.I),
+    # 전문성(X) — 특허·공동 개발 (사실 확인 가능한 주장만)
+    re.compile(
+        r"(?:\bpatented\b|\bpatent[- ]pending\b|\bpatentiert\b|\bpatentad[oa]\b|"
+        r"\bpatentead[oa]\b|\bđược cấp bằng sáng chế\b|특허|"
+        r"\bdeveloped (?:with|in (?:collaboration|partnership) with)\b|"
+        r"\bco[- ]developed with\b|\bentwickelt mit\b|"
+        r"\bdesarrollad[oa] (?:con|en colaboración)\b|\bdesenvolvid[oa] (?:com|em parceria)\b)", re.I),
+    # 권위(A) — 전문가·기관 추천, 연구 인용
+    re.compile(
+        r"(?:\brecommended by\s+(?:\w+\s+){0,2}?(?:experts?|professionals?|dermatologists?|"
+        r"pediatricians?|chefs?|doctors?|specialists?|institutes?)\b|"
+        r"\btrusted by\b|\bofficial partner\b|\boffizieller Partner\b|"
+        r"\bsocio oficial\b|\bparceiro oficial\b|"
+        r"\bempfohlen von\b|\brecomendado por\b|\bkhuyên dùng\b|전문가 추천|"
+        r"\b(?:research|studies|a study)\s+(?:shows?|found|confirms?|demonstrates?)\b|"
+        r"\b(?:laut|según|segundo)\s+(?:einer\s+)?(?:Studie|estudio|estudo)\b|"
+        r"연구 결과|연구에 따르면)", re.I),
+    # 신뢰(T) — 임상·과학적 입증
+    re.compile(
+        r"(?:\bclinically (?:proven|tested)\b|\bscientifically (?:proven|tested)\b|"
+        r"\bproven to (?:reduce|remove|kill|eliminate|improve|prevent)\b|"
+        r"\bdermatologist[- ](?:tested|recommended|approved)\b|"
+        r"\bklinisch (?:getestet|geprüft|erwiesen)\b|"
+        r"\bcl[íi]nicamente (?:probado|comprobado|demostrado)\b|"
+        r"\bclinicamente (?:testado|comprovado)\b|"
+        r"\bđược chứng minh (?:lâm sàng|khoa học)\b|임상적으로 입증|과학적으로 입증)", re.I),
 ]
 
 # 정의문 패턴 — "X는 Y이다" 한국어 문법만 보던 것을 다국어로 확장.
