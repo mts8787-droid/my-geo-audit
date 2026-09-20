@@ -3,7 +3,7 @@
 > 6개 카테고리 41개 채점 항목 + 9월 감사 시행 예정 4항목.
 > 점수·통과율은 제외한 **기준 정의 문서**입니다. 실측치는 Readability 대시보드에서 확인하세요.
 > 원본: `data/readability/geo-agent-checklist.html` → `scripts/render-criteria.mjs` (별도 리포)
-> 이 사본 갱신: 2026-08-28
+> 이 사본 갱신: 2026-09-20 (9월 오탐 수정 12건 반영)
 
 ## 카테고리
 
@@ -66,8 +66,8 @@
 | # | 항목 | PASS | 측정방법 | check id |
 | :-: | :-- | :-- | :-- | :-- |
 | #9 | Image Alt | 누락 0개 | img[alt] 체크 | `a11y_image_alt` |
-| #10 | Semantic HTML | main + 랜드마크 3개 이상 | main, nav, header, footer, article, section, aside | `a11y_semantic` |
-| #11 | Heading Hierarchy | 위반 0개 | h1 → h3 점프 등 탐지 | `a11y_heading_hier` |
+| #10 | Semantic HTML | 헤딩+랜드마크 합계 8개 이상 | main(role=main 인정)·nav·header·footer·article·section·aside + h1~h6 합산. `<main>` 필수 아님 (2026-09-19 완화, 유무는 value에 보존) | `a11y_semantic` |
+| #11 | Heading Hierarchy | 본문 헤딩 역순 0건 | 첫 헤딩보다 상위 레벨이 뒤에 오는 역순만 실패. GNB·푸터·스티키 바 헤딩 제외, 레벨 점프(h1→h3)는 허용 (2026-09-17 완화) | `a11y_heading_hier` |
 | #12 | ARIA Labels | 누락 < 10% | button, input, a 접근성 텍스트 | `a11y_aria_labels` |
 
 ---
@@ -78,13 +78,17 @@
 | :-: | :-- | :-- | :-- |
 | #13 | Title | 존재 (30~60자) | `seo_title` |
 | #14 | Meta Description | 존재 (120~160자) | `seo_meta_desc` |
-| #15 | Canonical | self-referencing | `seo_canonical` |
+| #15 | Canonical | 존재 + 동일 host | `seo_canonical` |
 | #16 | H1 | 정확히 1개 | `seo_h1` |
 | #17 | Robots | Indexing 허용 | `seo_robots`, `seo_robots_hdr` |
 | #18 | Open Graph | og:title + og:image | `seo_open_graph` |
 | #19 | Sitemap | 1개월 내 최신화된 Sitemap XML 존재 | `seo_sitemap` |
 
 > #17은 meta robots(`seo_robots`)와 X-Robots-Tag 헤더(`seo_robots_hdr`) 2개로 채점.
+>
+> **#15는 2026-09-17에 경로 일치(self-referencing)에서 host 일치로 완화**했다 (사용자 결정).
+> 같은 제품군 여러 페이지가 대표 1개를 정본으로 선언하는 형태(9/16 실측 434건)는 의도된
+> 정규화일 수 있어 감점하지 않는다. canonical 태그가 없거나 외부 도메인이면 여전히 FAIL.
 
 ---
 
@@ -106,6 +110,22 @@
 
 > #25는 Product와 Offer 2개 항목으로 채점되어 스키마마크업 카테고리는 총 10개.
 
+### 게이트 (2026-09 적용) — 해당 콘텐츠가 없는 페이지는 N/A로 분모 제외
+
+콘텐츠가 없는 페이지까지 분모에 넣으면 통과율이 구조적으로 낮게 나와, 아래 항목은
+**해당 콘텐츠가 있는 페이지만** 평가한다 (`applies_when` / `applies_to_page_types`).
+
+| # | 게이트 조건 |
+| :-: | :-- |
+| #23 FAQPage | FAQ 섹션(클래스·헤딩) 존재 + `pdp`·`plp`·`buying_guide`·`microsite` 타입만 |
+| #26 ImageObject | 본문 콘텐츠 이미지(figure·article·gallery 등 selector) 존재 — 페이지타입 제한 없음 |
+| #27 VideoObject | video 태그 또는 youtube/vimeo iframe 존재 |
+| #28 HowTo | 절차(순서 목록·단계 블록 3개 이상) 존재 + `support_troubleshoot` 타입만 |
+| #29 Article | 기사 본문 구조(article 등) 존재 + `experience`·`buying_guide`·`microsite` 타입만 |
+
+> 게이트 적용 후에도 #26·#27·#28·#29는 통과율 0% — 측정 문제가 아니라 실제로 4종
+> 스키마를 전혀 쓰지 않는 것이며, LG 전달 리포트의 핵심 개선 항목이다.
+
 ---
 
 ## 고인용 콘텐츠
@@ -123,8 +143,9 @@
 > "JSON-LD에 author/발행정보가 없다"로 읽어야 하고, 개선 액션은 Article/NewsArticle 스키마에
 > `author`·`datePublished`·`publisher`를 추가하는 것이다.
 >
-> #34는 byline 개념이 성립하는 `newsroom`·`buying_guide`·`content` page_type에만 적용되며,
-> 그 외 페이지타입은 N/A로 분모에서 빠진다.
+> #34는 byline 개념이 성립하는 `newsroom`·`press_media` page_type에만 적용되며,
+> 그 외 페이지타입은 N/A로 분모에서 빠진다 (2026-09 오탐 수정 — 종전에는
+> `experience`·`buying_guide` 628건이 무조건 실패로 잡혀 55.6%였고, 게이트 적용 후 98.4%).
 
 ---
 
@@ -135,9 +156,9 @@
 | #37 | (JS) HTML Text Ratio | 밀도 ≥ 60% | JS 렌더링 후 텍스트 대비 HTML Text 비중 | `ai_ssr_ratio` |
 | #38 | (JS) HTML Resource | PDP 썸네일 1-3번째 이미지가 HTML에 존재 | PDP HTML 파싱 후 SSR 확인 | `ai_pdp_thumbnails` |
 | #39 | (JS) 핵심 element | PDP 핵심 element가 HTML로 존재 | PDP HTML 파싱 후 SSR 확인 | `ai_core_element` |
-| #40 | Image File Name | 브랜드명 포함 | 이미지 파일 이름 규칙 검증 | `ai_image_filename` |
+| #40 | Image File Name | 브랜드·제품 키워드 포함 이미지 ≥ 30% | 파일명 키워드 검증 — logo·icon·sprite 등 장식 파일 제외 | `ai_image_filename` |
 | #41 | Status Code (200) | 200 반환 | Status Code | `ai_status_200` |
-| #42 | Status Code (Soft 404) | 200 반환 + HTML Text Count 기준 이상 | Status Code 및 본문 길이 검증 | `ai_soft_404` |
+| #42 | Status Code (Soft 404) | 200 응답 본문에 404 안내 문구 없음 | 문구 판정 (2026-09-17 전환 — LG 404 본문이 2,400~3,200자라 길이로는 판별 불가). 본문 200자 미만은 보조 신호 | `ai_soft_404` |
 | #43 | llms.txt | 존재 | 각 국가별 llms.txt 검증 | `ai_llms_txt` |
 | #40* | Summary Content SSR | — (체크리스트 문서에 대응 행 없음) | | `ai_summary_ssr` |
 
@@ -194,11 +215,16 @@
 | 한국어 | `X는 ~이다` · `X란 ~를 말한다` · `~를 의미한다` · `~를 가리킨다` · `~의 약자이다` |
 | 영어 | `X is/are a…` · `refers to` · `means` · `stands for` · `is defined as` · `can be defined as` · `consists of` · `is a type of` · `also known as` |
 | 영어(동격) | `X, also called Y` · `X (also known as Y)` · `a.k.a.` |
-| 스페인어 | `es/son un…` · `se refiere a` · `se define como` · `se conoce como` · `consiste en` |
-| 독일어 | `ist/sind ein…` · `bezeichnet` · `steht für` · `besteht aus` · `handelt es sich um` |
-| 포르투갈어 | `é/são um…` · `refere-se a` · `é um tipo de` · `consiste em` · `trata-se de` |
+| 스페인어 | `se define como` · `se conoce como` · `consiste en` · `es un tipo de` · `hace referencia a` · `se trata de` |
+| 독일어 | `wird als … bezeichnet` · `steht für` · `besteht aus` · `handelt es sich um` · `versteht man` |
+| 포르투갈어 | `é um tipo de` · `consiste em` · `é conhecido como` · `trata-se de` · `designa` · `corresponde a` |
 | 베트남어 | `là một/các…` · `được gọi là` · `được định nghĩa là` · `viết tắt của` |
 | 공통 | 약어 정의 `HDR (High Dynamic Range)` · 질문형 `What is X?` · `Was ist` · `¿Qué es` |
+
+> 독일어·스페인어·포르투갈어의 계사 '기본형'(`ist ein` · `es la` · `é a`)은 2026-09-19에
+> **제거**했다. 계사는 일반 문장(`Im letzten Zimmer ist ein…` · `Cuál es la…`)에도 흔해
+> 정의문이 아닌 것을 대량으로 잡았다 (오탐 수정으로 58.3% → 47.5%). 확장형·질문형·약어
+> 정의는 유지.
 
 ### 클래스·선택자 매칭 항목
 
@@ -207,19 +233,19 @@
 
 | # | 항목 | 매칭 대상 | check id |
 | :-: | :-- | :-- | :-- |
-| #32 | FAQ Block | class/id 에 `faq` · `q&a` · `qna` · `accordion` · `frequently asked` · `자주 묻는` · `질문` · `answer` | `ai_faq_block` |
-| #35 | Summary Box | 셋 중 하나 — ① 헤딩 텍스트에 `At a Glance` · `요약` · `한눈에` 등 ② class/id 에 `summary` · `tldr` · `key takeaway` 등 ③ 요약 블록 selector `p.info-desc, p.description` (아래 참조) | `ai_summary_box` |
+| #32 | FAQ Block | class/id 에 `faq` · `q&a` · `qna` · `accordion` · `frequently asked` · `자주 묻는` · `질문` · `answer` — 단, 하단 피드백 위젯(`Was this information helpful?` 등 8개 언어 문구)은 FAQ로 치지 않는다 (2026-09 오탐 수정: 1,596건) | `ai_faq_block` |
+| #35 | Summary Box | 둘 중 하나 — ① 헤딩 텍스트에 `At a Glance` · `요약` · `한눈에` 등 ② 요약 블록 selector `p.info-desc, p.description` (아래 참조). ~~class/id 키워드~~ 경로는 2026-09 제거 — 스펙 테이블에도 `class="summary"`가 붙어 오탐 (48.5% → 15.7%) | `ai_summary_box` |
 | #39 | PDP Thumbnails | `img[src*=PDPGalleryThumbnail]` · `[class*=Product-ImageGrid] img` · 구 AEM `.c-*` fallback | `ai_pdp_thumbnails` |
 | #40 | Core Element | 제품명·가격·이미지 등 선택자 그룹 중 3개 이상 존재 | `ai_core_element` |
-| #44 | Image Filename | `img` 파일명에 `lg` · `oled` · `gram` · `thinq` 포함 | `ai_image_filename` |
+| #44 | Image Filename | `img` 파일명에 브랜드·제품 키워드(`lg` · `oled` · `gram` · `thinq` 등 40여 종) 포함 비율 ≥ 30% — `logo` · `icon` · `sprite` 등 장식 파일은 분자·분모 모두 제외 (2026-09: `logo-lg-100-44.svg` 반복 삽입 오탐 수정) | `ai_image_filename` |
 
-> **#35 는 세 경로 중 하나만 걸리면 통과한다.**
+> **#35 는 두 경로 중 하나만 걸리면 통과한다.** (class/id 키워드 경로는 2026-09 제거 —
+> 스펙 테이블·푸터 등 요약이 아닌 요소에도 `summary` 계열 클래스가 붙어 오탐이 많았다)
 >
 > | 경로 | 예 |
 > | :-- | :-- |
 > | 헤딩 텍스트 | `<h2 class="tit">At a Glance</h2>` — 클래스명과 무관하게 h1~h6·b·strong·dt 텍스트를 본다 |
-> | class/id 키워드 | `class="summary-box"` · `class="key-takeaway"` |
-> | 요약 블록 selector | `<p class="info-desc">` 2줄 이상 |
+> | 요약 블록 selector | `<p class="info-desc">` 80자 이상 |
 >
 > `At a Glance` 는 2026-09-17 에 다국어(`한눈에`·`de un vistazo`·`auf einen Blick`·
 > `em resumo`·`tổng quan`)와 함께 추가했다. 헤딩만 있고 요약 단락 형식이 다른 문서를
@@ -234,13 +260,16 @@
 > | :-- | :-- |
 > | `idt` 클래스 제외 | `➔ Setting for [2022 WebOS22]` 같은 단계 라벨 |
 > | 80자 이상 | `Step 1. Preheating to warm up the indoor unit` (44자) |
-> | 2줄 이상 | `<br>` 개수 우선, 없으면 문장 수. 1줄 안내문 제외 |
 >
-> **이 블록은 US 트러블슈팅 템플릿에만 있다.** 2026-09-17 검증: httpx 로 셀렉터가 확인된
-> US 페이지 3건이 CSR 렌더링에서도 3/3 잡히는 대조 조건에서, UK·DE·BR·CA 16건은 JS
-> 렌더링 후에도 전부 0 이었다. 즉 CSR 때문에 못 읽는 게 아니라 템플릿에 요약이 없다.
-> 통과율 격차(US 50% vs 타 국가 0%)는 측정 오류가 아니라 실제 콘텐츠 격차이며,
-> 개선 액션은 타 국가 트러블슈팅 템플릿에 요약 블록을 추가하는 것이다.
+> (줄 수 필터는 1줄로 완화 — 80자 이상 단문 요약도 인정. `block_min_lines: 1`)
+>
+> **이 블록이 SSR로 제공되는 곳은 US 트러블슈팅 템플릿뿐이다.** 초기(9/17)에는 "타 국가
+> 템플릿에 요약이 없다"고 판단했으나, 2026-09-18 재실측에서 정정됐다: **타 국가도 요약은
+> 서버 응답에 들어 있다.** 다만 JSON 이스케이프 형태(`<p class=\"info-desc\"`)라 JS 실행
+> 후에만 DOM에 들어간다. UA 5종(Googlebot·GPTBot·ClaudeBot 포함) × 캐시 우회 3방식
+> 모두 SSR `<p>` 0개. 2026-09-20 CA·BR 재확인(각 15건 + 봇 UA 3종 18회)에서도 동일.
+> 즉 "요약이 없다"가 아니라 **"SSR이 아니라 AI가 못 읽는다"** — 개선 액션은 요약 블록의
+> SSR 전환(US 파이프라인과 동일하게)이다.
 
 > #32·#35 는 클래스명에 더해 **heading·강조 태그의 텍스트**(h1~h6, b, strong, dt, summary,
 > caption, legend · 60자 이하)도 본다. 클래스명 없이 제목 문구만으로 구성된 블록을
@@ -269,8 +298,12 @@
   임계값 600ms (2026-08-28 실측 1,462건 기준 통과율 96.1%, 중앙값 223ms)
 - **#4 Cache-Control** — 원래 룰이 `no-cache`/`no-store`가 섞이면 `max-age` 값과 무관하게 즉시
   FAIL 처리했음. `max-age` 디렉티브가 설정돼 있으면(0 포함) 통과로 완화
-- **#34 Author 또는 출처+날짜** — `newsroom`·`buying_guide`·`content` page_type에만 적용,
+- **#34 Author 또는 출처+날짜** — `newsroom`·`press_media` page_type에만 적용,
   그 외는 N/A (분모 제외)
+- **2026-09 오탐 수정 12건** — #10(main 필수 해제)·#11(역순만 실패)·#15(host 완화)·
+  #19(국가별 sitemap 캐시 키)·#23/#26/#27/#28/#29(콘텐츠 게이트)·#32(피드백 위젯 제외)·
+  #33(계사 제거)·#34(page_type 게이트)·#35(class 매칭 제거)·#36(개수 기준)·
+  #40(장식 파일 제외)·#42(문구 판정). 각 항목 상세는 본문 해당 섹션 참조.
 
 ### 문서 번호와 채점 항목이 1:1이 아닌 곳
 - **#17 Robots** — `seo_robots`(meta) + `seo_robots_hdr`(X-Robots-Tag), 두 개로 채점

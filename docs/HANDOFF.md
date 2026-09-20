@@ -83,8 +83,9 @@ DE 77.0 · MX 76.8 · ES 76.2 · BR 74.4 · CA 72.4
   마케팅 헤드라인(`¿Por qué LG AI TV?`)이 걸러진다. 미적용.
 - **#10 변별력 낮음**: 94.7%로 다시 높다. Support 65.3% 외에는 대부분 100%.
   LG가 시맨틱 마크업을 잘 쓰고 있다는 뜻이라 방치해도 무방.
-- **#26 ImageObject 게이트 없음**: 다른 3종과 달리 게이트 미적용.
-  이미지가 있는 페이지만 보도록 추가 검토 가능.
+- **#26 ImageObject 게이트가 느슨함**: selector 게이트(`applies_when`: 본문 콘텐츠
+  이미지)는 있으나 다른 3종과 달리 page_type 제한이 없고, selector가 넓어 N/A가
+  US 표본 기준 5.9%(79/1,348)에 그친다. 조이려면 page_type 제한 추가 검토.
 - **테스트 5건 상시 실패** (`tests/test_rule_engine.py`):
   `test_author_byline_pass` · `test_author_date_plus_source_pass` ·
   `test_author_meta_pass` · `test_heading_no_jump_fail` · `test_recent_lastmod_pass`.

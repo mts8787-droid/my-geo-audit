@@ -135,7 +135,7 @@
           "applicable_n": 878
         },
         "seo_canonical": {
-          "label": "#15 Canonical self-ref",
+          "label": "#15 Canonical (동일 host)",
           "category": "seo",
           "pass_rate": 0.9989,
           "applicable_n": 878
@@ -447,7 +447,7 @@
           "applicable_n": 986
         },
         "seo_canonical": {
-          "label": "#15 Canonical self-ref",
+          "label": "#15 Canonical (동일 host)",
           "category": "seo",
           "pass_rate": 0.9604,
           "applicable_n": 986
@@ -766,7 +766,7 @@
           "applicable_n": 788
         },
         "seo_canonical": {
-          "label": "#15 Canonical self-ref",
+          "label": "#15 Canonical (동일 host)",
           "category": "seo",
           "pass_rate": 0.9708,
           "applicable_n": 788
@@ -1085,7 +1085,7 @@
           "applicable_n": 736
         },
         "seo_canonical": {
-          "label": "#15 Canonical self-ref",
+          "label": "#15 Canonical (동일 host)",
           "category": "seo",
           "pass_rate": 0.9334,
           "applicable_n": 736
@@ -1398,7 +1398,7 @@
           "applicable_n": 829
         },
         "seo_canonical": {
-          "label": "#15 Canonical self-ref",
+          "label": "#15 Canonical (동일 host)",
           "category": "seo",
           "pass_rate": 0.953,
           "applicable_n": 829
@@ -1717,7 +1717,7 @@
           "applicable_n": 986
         },
         "seo_canonical": {
-          "label": "#15 Canonical self-ref",
+          "label": "#15 Canonical (동일 host)",
           "category": "seo",
           "pass_rate": 0.9757,
           "applicable_n": 986
@@ -2036,7 +2036,7 @@
           "applicable_n": 912
         },
         "seo_canonical": {
-          "label": "#15 Canonical self-ref",
+          "label": "#15 Canonical (동일 host)",
           "category": "seo",
           "pass_rate": 0.9496,
           "applicable_n": 912
@@ -2355,7 +2355,7 @@
           "applicable_n": 877
         },
         "seo_canonical": {
-          "label": "#15 Canonical self-ref",
+          "label": "#15 Canonical (동일 host)",
           "category": "seo",
           "pass_rate": 0.9544,
           "applicable_n": 877
@@ -2674,7 +2674,7 @@
           "applicable_n": 862
         },
         "seo_canonical": {
-          "label": "#15 Canonical self-ref",
+          "label": "#15 Canonical (동일 host)",
           "category": "seo",
           "pass_rate": 0.9652,
           "applicable_n": 862
@@ -2992,7 +2992,7 @@
           "applicable_n": 743
         },
         "seo_canonical": {
-          "label": "#15 Canonical self-ref",
+          "label": "#15 Canonical (동일 host)",
           "category": "seo",
           "pass_rate": 0.9933,
           "applicable_n": 743
@@ -3297,7 +3297,7 @@
           "applicable_n": 100
         },
         "seo_canonical": {
-          "label": "#15 Canonical self-ref",
+          "label": "#15 Canonical (동일 host)",
           "category": "seo",
           "pass_rate": 1.0,
           "applicable_n": 100

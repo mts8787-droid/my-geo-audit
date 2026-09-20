@@ -247,7 +247,7 @@
       },
       {
         "id": "seo_canonical",
-        "name": "#15 Canonical self-ref",
+        "name": "#15 Canonical (동일 host)",
         "spec_id": "#15",
         "points": 1,
         "enabled": true,
