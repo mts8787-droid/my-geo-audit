@@ -48,6 +48,50 @@ COUNTRY_LABELS = {"global": "Global-Site"}
 # support_troubleshoot(트러블슈팅)은 별개 타입으로 계속 집계한다.
 EXCLUDED_PAGE_TYPES = {"business", "promotion", "unknown", "home", "about", "support"}
 
+# ── 단종/비활성 PDP 제외 (사용자 결정 2026-09-21) ─────────────────────────────
+# PLP 상품 API(Coveo) 활성 목록(reports/plp/<cc>.txt, plp_discover.py 수집) 밖의
+# PDP 는 단종·판매종료로 보고 집계에서 뺀다. 검증(2026-09-21):
+#   - US 후보 3/3 이 페이지에 DISCONTINUED 배지 보유, 활성 대조군 10건은 0
+#   - AEM(비US)은 단종을 페이지에 표기하지 않아(후보 12건 무표기) 목록 대조가 유일 신호
+# JSON-LD availability 는 66%가 미제공 + US 는 재고없음(OutOfStock)과 뒤섞여 못 쓴다.
+_PDP_SEG2CC = {"us": "us", "uk": "uk", "de": "de", "es": "es", "ca_en": "ca",
+               "au": "au", "br": "br", "mx": "mx", "in": "in", "vn": "vn"}
+_active_pdp_cache = None
+
+
+def _norm_pdp_url(u):
+    return u.split("?")[0].split("#")[0].rstrip("/").lower()
+
+
+def _active_pdp_sets():
+    global _active_pdp_cache
+    if _active_pdp_cache is None:
+        _active_pdp_cache = {}
+        for cc in set(_PDP_SEG2CC.values()):
+            path = os.path.join(HERE, "reports", "plp", f"{cc}.txt")
+            try:
+                with open(path, encoding="utf-8") as f:
+                    urls = {_norm_pdp_url(l.strip()) for l in f
+                            if l.strip().startswith("http")}
+                if urls:
+                    _active_pdp_cache[cc] = urls
+            except FileNotFoundError:
+                pass  # 목록 없는 국가는 판정 불가 → 제외하지 않음
+    return _active_pdp_cache
+
+
+def is_inactive_pdp_url(url):
+    """활성 목록이 있는 국가의 PDP URL 이 목록 밖이면 True (단종/비활성)."""
+    try:
+        seg = url.split("://", 1)[-1].split("/", 2)[1].lower()
+    except IndexError:
+        return False
+    cc = _PDP_SEG2CC.get(seg)
+    sets_ = _active_pdp_sets()
+    if not cc or cc not in sets_:
+        return False
+    return _norm_pdp_url(url) not in sets_[cc]
+
 # 페이지타입별 집계 상한 (None = 상한 없음). PDP 는 제품군 대표성 때문에 면제.
 TYPE_CAP = 100
 TYPE_CAP_EXEMPT = {"pdp"}
@@ -181,6 +225,8 @@ def is_excluded(r):
     pt = current_page_type(r)
     if pt in EXCLUDED_PAGE_TYPES:
         return pt
+    if pt == "pdp" and is_inactive_pdp_url(r.get("url") or ""):
+        return "pdp_inactive"
     if r.get("page_error"):
         return "non_200"
     # fetch 는 됐지만 상태코드가 200 이 아닌 경우 — 저장된 #41 항목으로 판별
