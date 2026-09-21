@@ -92,6 +92,40 @@ def is_inactive_pdp_url(url):
         return False
     return _norm_pdp_url(url) not in sets_[cc]
 
+
+# ── 악세사리 PDP 제외 (사용자 결정 2026-09-21) ───────────────────────────────
+# 필터·리모컨·설치키트 등 악세사리 PDP 는 콘텐츠가 빈약해 PDP 평균을 왜곡한다
+# (실측 -2.7, US -5.8). 판정은 두 신호의 합집합 — 서로 보완적이다:
+#   1) Coveo 카테고리(reports/plp/<cc>_cat.json)에 Accessories/Accesorios/
+#      Peças e Acessórios 세그먼트 (DE 등 URL 에 표가 없는 케이스를 잡음)
+#   2) URL 키워드 (ES 프리고리피코 악세사리처럼 카테고리가 'Accesorios' 단독이거나
+#      CA/US 처럼 Coveo 카테고리가 상위 계층뿐인 케이스를 잡음)
+_ACC_CAT = re.compile(r"(acces+or|pe[çc]as e acess[óo]rios|\bremotes\b|installation kit|"
+                      r"keyboard-mouse)", re.I)
+_ACC_URL = re.compile(r"(accessor|acessorio|accesorio|zubehoer|zubeh[öo]r|phu-kien|-kit\b|"
+                      r"installation-kit|remote|-grille|-filter|wall-mount|bracket)", re.I)
+_pdp_cat_cache = None
+
+
+def _pdp_categories():
+    global _pdp_cat_cache
+    if _pdp_cat_cache is None:
+        _pdp_cat_cache = {}
+        import glob as _glob
+        for path in _glob.glob(os.path.join(HERE, "reports", "plp", "*_cat.json")):
+            try:
+                for u, c in json.load(open(path, encoding="utf-8")).items():
+                    _pdp_cat_cache[_norm_pdp_url(u)] = c or ""
+            except Exception:
+                pass
+    return _pdp_cat_cache
+
+
+def is_accessory_pdp_url(url):
+    if _ACC_URL.search(url):
+        return True
+    return bool(_ACC_CAT.search(_pdp_categories().get(_norm_pdp_url(url), "")))
+
 # 페이지타입별 집계 상한 (None = 상한 없음). PDP 는 제품군 대표성 때문에 면제.
 TYPE_CAP = 100
 TYPE_CAP_EXEMPT = {"pdp"}
@@ -227,6 +261,8 @@ def is_excluded(r):
         return pt
     if pt == "pdp" and is_inactive_pdp_url(r.get("url") or ""):
         return "pdp_inactive"
+    if pt == "pdp" and is_accessory_pdp_url(r.get("url") or ""):
+        return "pdp_accessory"
     if r.get("page_error"):
         return "non_200"
     # fetch 는 됐지만 상태코드가 200 이 아닌 경우 — 저장된 #41 항목으로 판별

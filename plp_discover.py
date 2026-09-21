@@ -224,6 +224,10 @@ def process(code, merge=False, out=None, verbose=True):
     os.makedirs(os.path.join(HERE, "reports", "plp"), exist_ok=True)
     with open(os.path.join(HERE, "reports", "plp", f"{code}.txt"), "w", encoding="utf-8") as f:
         f.write("\n".join(sorted(urls)))
+    # url → 카테고리 매핑 보존 — 악세사리 PDP 판정에 쓴다 (2026-09-21).
+    # 종전에는 by_cat 통계에만 쓰고 버렸다.
+    with open(os.path.join(HERE, "reports", "plp", f"{code}_cat.json"), "w", encoding="utf-8") as f:
+        json.dump({u: c for u, c in sorted(urls.items())}, f, ensure_ascii=False, indent=0)
 
     csv_path = os.path.join(HERE, "reports", f"lg_urls_{code}.csv")
     if not os.path.exists(csv_path):

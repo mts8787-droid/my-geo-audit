@@ -345,6 +345,7 @@ https://www.lg.com/us/appliances-accessories/lg-lt1000p-refrigerator-water-filte
 https://www.lg.com/us/appliances-accessories/lg-lt1000p2-lt120f2-refrigerator-filter-bundle
 https://www.lg.com/us/appliances-accessories/lg-lt1000p2-refrigerator-water-filter
 https://www.lg.com/us/appliances-accessories/lg-lt1000p3-refrigerator-water-filter
+https://www.lg.com/us/appliances-accessories/lg-lt1000p4-lt120f
 https://www.lg.com/us/appliances-accessories/lg-lt1000p4-refrigerator-water-filter
 https://www.lg.com/us/appliances-accessories/lg-lt1000pb-refrigerator-water-filter
 https://www.lg.com/us/appliances-accessories/lg-lt120f-refrigerator-air-filter
@@ -515,7 +516,6 @@ https://www.lg.com/us/computer-accessories/lg-ep229571-controller
 https://www.lg.com/us/computer-accessories/lg-ep229919-controller
 https://www.lg.com/us/computer-accessories/lg-ep229929-controller
 https://www.lg.com/us/computer-accessories/lg-ep229935-controller
-https://www.lg.com/us/computer-accessories/lg-fst00001-controller
 https://www.lg.com/us/computer-accessories/lg-gram-msa2-wireless-mouse
 https://www.lg.com/us/computer-accessories/lg-logitech-c920e-hd-1080p-mic-enabled-webcam
 https://www.lg.com/us/computer-accessories/lg-logitech-design-collection-wireless-mouse-light-lilac
@@ -1702,6 +1702,7 @@ https://www.lg.com/us/small-business/computer-monitors/lg-34gn85b-b
 https://www.lg.com/us/small-business/desktop-monitors/lg-24gl65b-b-ultragear
 https://www.lg.com/us/small-business/desktop-monitors/lg-32gk65b-b
 https://www.lg.com/us/small-business/desktop-monitors/lg-43BN70U-B-uhd-Monitor
+https://www.lg.com/us/small-business/laptops/lg-16z90p-n.apb7u1
 https://www.lg.com/us/small-business/laptops/lg-16z90p-n.aps5u1
 https://www.lg.com/us/small-business/laptops/lg-17z90p-n.apb7u1
 https://www.lg.com/us/small-business/monitors/lg-22bk430h-b
@@ -2091,7 +2092,7 @@ https://www.lg.com/us/tvs/lg-oled77c5pua-oled-4k-tv
 https://www.lg.com/us/tvs/lg-oled77c6hua-oled-4k-tv
 https://www.lg.com/us/tvs/lg-oled77c6hup-oled-4k-tv
 https://www.lg.com/us/tvs/lg-oled77g3pua-oled-4k-tv
-https://www.lg.com/us/tvs/lg-oled77g4wua-oled-4k-tv-b
+https://www.lg.com/us/tvs/lg-oled77g4wua-oled-4k-tv
 https://www.lg.com/us/tvs/lg-oled77g5wua-oled-4k-tv
 https://www.lg.com/us/tvs/lg-oled77g6wua-oled-4k-tv
 https://www.lg.com/us/tvs/lg-oled77m3yua-oled-4k-tv

@@ -238,21 +238,26 @@ def _sample_by_page_type(urls, base_per_type, must=()):
     dates = _load_page_dates()
     must_set = set(must)
     buckets = defaultdict(list)
-    from gen_dashboard_data import is_inactive_pdp_url
-    dropped_inactive = 0
+    from gen_dashboard_data import is_inactive_pdp_url, is_accessory_pdp_url
+    dropped_inactive = dropped_accessory = 0
     for u in urls:
         pt = detect_page_type(None, u).get("id")
         if not pt or pt in SKIP_TYPES:
             continue
-        # 단종/비활성 PDP 제외 — PLP 상품 API(Coveo) 활성 목록 밖 (2026-09-21).
-        # 집계(gen_dashboard_data.is_excluded)와 같은 판정을 샘플링에서 미리 적용해
-        # 감사 자원을 활성 제품에 쓴다. must_audit 지정 URL 은 뒤에서 다시 편입된다.
-        if pt == "pdp" and u not in must_set and is_inactive_pdp_url(u):
-            dropped_inactive += 1
-            continue
+        # 단종/비활성·악세사리 PDP 제외 (2026-09-21). 집계(gen_dashboard_data.is_excluded)와
+        # 같은 판정을 샘플링에서 미리 적용해 감사 자원을 활성 본제품에 쓴다.
+        # must_audit 지정 URL 은 뒤에서 다시 편입된다.
+        if pt == "pdp" and u not in must_set:
+            if is_inactive_pdp_url(u):
+                dropped_inactive += 1
+                continue
+            if is_accessory_pdp_url(u):
+                dropped_accessory += 1
+                continue
         buckets[pt].append(u)
-    if dropped_inactive:
-        print(f"[render-audit] 단종/비활성 PDP 제외: {dropped_inactive}건 (Coveo 활성 목록 밖)")
+    if dropped_inactive or dropped_accessory:
+        print(f"[render-audit] PDP 제외: 단종/비활성 {dropped_inactive}건 · "
+              f"악세사리 {dropped_accessory}건")
     out, notes = [], []
     for pt in sorted(buckets):
         group = buckets[pt]
