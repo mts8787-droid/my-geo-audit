@@ -83,8 +83,6 @@ https://www.lg.com/ca_en/business/commercial-display/commercial-tv/hotel-tv/55uk
 https://www.lg.com/ca_en/business/commercial-display/commercial-tv/hotel-tv/65uk570h0ud/
 https://www.lg.com/ca_en/business/commercial-display/commercial-tv/hotel-tv/65uk777h0ud/
 https://www.lg.com/ca_en/business/commercial-display/digital-signage/lg-createboard-idb/86tr3dq-b/
-https://www.lg.com/ca_en/business/commercial-display/digital-signage/oled-signage/55ew5p-m/
-https://www.lg.com/ca_en/business/commercial-display/digital-signage/oled-signage/65ep5g-b/
 https://www.lg.com/ca_en/business/commercial-display/digital-signage/outdoor-window-facing/49xs4p-b/
 https://www.lg.com/ca_en/business/commercial-display/digital-signage/outdoor-window-facing/55xs4p-b/
 https://www.lg.com/ca_en/business/commercial-display/digital-signage/professional-tv/50pk640s0ub/
@@ -235,7 +233,6 @@ https://www.lg.com/ca_en/business/medical-devices/surgical-monitors/27hj713s-w/
 https://www.lg.com/ca_en/business/medical-devices/surgical-monitors/27hk510s-w/
 https://www.lg.com/ca_en/business/medical-devices/surgical-monitors/32hl710s-w/
 https://www.lg.com/ca_en/business/medical-devices/surgical-monitors/32hl714s-w/
-https://www.lg.com/ca_en/business/monitors-pcs/cloud-devices/all-in-one-thin-clients/24cn650w-ap/
 https://www.lg.com/ca_en/business/monitors-pcs/laptops/gram-pro/17z90u-g/
 https://www.lg.com/ca_en/business/monitors-pcs/laptops/gram/14z90u-v/
 https://www.lg.com/ca_en/business/monitors-pcs/laptops/gram/15u50u-v/
@@ -253,7 +250,6 @@ https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-monitor/24g414b-b/
 https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-monitor/24gl600f-b/
 https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-monitor/24gn60r-b/
 https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-monitor/24gn650-b/
-https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-monitor/24u411a-b/
 https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-monitor/25ms550-b/
 https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-monitor/27ba850-b/
 https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-monitor/27g411a-b/
@@ -275,16 +271,13 @@ https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-monitor/32gx850a-b/
 https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-monitor/34g600a-b/
 https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-monitor/34g630a-b/
 https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-monitor/37g800a-b/
-https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-smart-monitor/27u511sa-w/
 https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-smart-monitor/27u730sa-w/
-https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-ultrafine/27u730a-b/
 https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-ultrafine/32u700b-b/
 https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-ultrafine/32u701b-b/
 https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-ultrafine/32u720a-b/
 https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-ultragear/27g521b-b/
 https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-ultrawide/34ba75qe-b/
 https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-ultrawide/34u511a-b/
-https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-ultrawide/34u650a-b/
 https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-ultrawide/38wn95c-w/
 https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-ultrawide/38wp85c-w/
 https://www.lg.com/ca_en/business/monitors-pcs/monitors/lg-ultrawide/40wp95c-w/

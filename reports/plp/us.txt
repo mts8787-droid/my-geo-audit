@@ -920,7 +920,6 @@ https://www.lg.com/us/kitchen-appliance-packages/lg-lryxc2606s-lsel6337xe-ldnth7
 https://www.lg.com/us/kitchen-appliance-packages/lg-lryxc2606s-lsgl6337x-ldnth753s
 https://www.lg.com/us/kitchen-appliance-packages/lg-um22wzh98s-lsgu6339x-mheu1738x-sdnth981s
 https://www.lg.com/us/kitchen-appliance-packages/lg-um22wzh98s-lsiu6339xe-mheu1738x-sdnth981s
-https://www.lg.com/us/kitchen-packages/lg-lrfxc2416d-ldp6810bd-lmv2031bd-lsgl6335d-deluxe-kitchen-package
 https://www.lg.com/us/laptops/lg-14t90r-k.aab6u1-gram-laptop
 https://www.lg.com/us/laptops/lg-14t90r-k.aab8u1-gram-laptop
 https://www.lg.com/us/laptops/lg-14t90r-k.adb9u1-gram-laptop
@@ -1702,9 +1701,7 @@ https://www.lg.com/us/small-business/computer-monitors/lg-34gn85b-b
 https://www.lg.com/us/small-business/desktop-monitors/lg-24gl65b-b-ultragear
 https://www.lg.com/us/small-business/desktop-monitors/lg-32gk65b-b
 https://www.lg.com/us/small-business/desktop-monitors/lg-43BN70U-B-uhd-Monitor
-https://www.lg.com/us/small-business/laptops/lg-16z90p-n.apb7u1
 https://www.lg.com/us/small-business/laptops/lg-16z90p-n.aps5u1
-https://www.lg.com/us/small-business/laptops/lg-17z90p-n.apb7u1
 https://www.lg.com/us/small-business/monitors/lg-22bk430h-b
 https://www.lg.com/us/small-business/monitors/lg-24bk550y-i
 https://www.lg.com/us/small-business/monitors/lg-24bk750y-b
@@ -1934,6 +1931,7 @@ https://www.lg.com/us/tvs/lg-65qned84baa-qned-4k-tv
 https://www.lg.com/us/tvs/lg-65qned84bua-qned-4k-tv
 https://www.lg.com/us/tvs/lg-65qned85aaa-qned-4k-tv
 https://www.lg.com/us/tvs/lg-65qned85aua-qned-4k-tv
+https://www.lg.com/us/tvs/lg-65qned85bua-qned-4k-tv
 https://www.lg.com/us/tvs/lg-65qned85taa-qned-4k-tv
 https://www.lg.com/us/tvs/lg-65qned85tua-qned-4k-tv
 https://www.lg.com/us/tvs/lg-65qned8mbaa-qned-4k-tv
@@ -1973,6 +1971,7 @@ https://www.lg.com/us/tvs/lg-75qned84baa-qned-4k-tv
 https://www.lg.com/us/tvs/lg-75qned84bua-qned-4k-tv
 https://www.lg.com/us/tvs/lg-75qned85aaa-qned-4k-tv
 https://www.lg.com/us/tvs/lg-75qned85aua-qned-4k-tv
+https://www.lg.com/us/tvs/lg-75qned85bua-qned-4k-tv
 https://www.lg.com/us/tvs/lg-75qned85taa-qned-4k-tv
 https://www.lg.com/us/tvs/lg-75qned85tua-qned-4k-tv
 https://www.lg.com/us/tvs/lg-75qned8mbaa-qned-4k-tv
