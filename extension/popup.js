@@ -41,10 +41,13 @@ const STR = {
     tier_skipped:    '생략',
     tier_unavailable:'측정불가',
     tier_na:         'N/A',
-    cat_performance:    'Performance',
-    cat_accessibility:  'Accessibility',
-    cat_seo:            'SEO',
-    cat_ai_readiness:   'AI Readiness',
+    cat_performance:      '사이트 성능',
+    cat_accessibility:    '웹접근성',
+    cat_seo:              'Basic SEO',
+    cat_schema_markup:    '스키마마크업',
+    cat_citable_content:  '고인용 콘텐츠',
+    cat_ai_crawlability:  'AI Crawlability',
+    cat_ai_readiness:     'AI Readiness',
   },
   en: {
     brand_sub:       'AI Readability · SSR / Schema',
@@ -79,10 +82,13 @@ const STR = {
     tier_skipped:    'Skipped',
     tier_unavailable:'Unavailable',
     tier_na:         'N/A',
-    cat_performance:    'Performance',
-    cat_accessibility:  'Accessibility',
-    cat_seo:            'SEO',
-    cat_ai_readiness:   'AI Readiness',
+    cat_performance:      'Site Performance',
+    cat_accessibility:    'Accessibility',
+    cat_seo:              'Basic SEO',
+    cat_schema_markup:    'Schema Markup',
+    cat_citable_content:  'Citable Content',
+    cat_ai_crawlability:  'AI Crawlability',
+    cat_ai_readiness:     'AI Readiness',
   },
 };
 
@@ -110,11 +116,16 @@ function tierFromRatio(r) {
   return 'poor';
 }
 
+// 2026-08 카테고리 분할(ai_readiness → schema/citable/crawlability) 반영 (2026-09-28).
+// ai_readiness 는 구 백엔드 호환용으로 남긴다 — 응답에 없으면 renderCategoryCards 가 건너뛴다.
 const CAT_META = [
-  { key: 'performance',   icon: '⚡' },
-  { key: 'accessibility', icon: '♿' },
-  { key: 'seo',           icon: '🔍' },
-  { key: 'ai_readiness',  icon: '🤖' },
+  { key: 'performance',     icon: '⚡' },
+  { key: 'accessibility',   icon: '♿' },
+  { key: 'seo',             icon: '🔍' },
+  { key: 'schema_markup',   icon: '🏷️' },
+  { key: 'citable_content', icon: '📝' },
+  { key: 'ai_crawlability', icon: '🤖' },
+  { key: 'ai_readiness',    icon: '🤖' },
 ];
 
 // ── i18n apply ───────────────────────────────────────────────────────────

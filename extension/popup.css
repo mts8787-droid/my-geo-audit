@@ -226,6 +226,9 @@ body {
 .cat-icon-accessibility { background: rgba(16,185,129,.12);  color: var(--c-emerald); }
 .cat-icon-seo           { background: rgba(59,130,246,.12);  color: var(--c-blue); }
 .cat-icon-ai_readiness  { background: rgba(244,63,94,.12);   color: var(--c-rose); }
+.cat-icon-schema_markup   { background: rgba(168,85,247,.12);  color: #a855f7; }
+.cat-icon-citable_content { background: rgba(245,158,11,.12);  color: #f59e0b; }
+.cat-icon-ai_crawlability { background: rgba(244,63,94,.12);   color: var(--c-rose); }
 
 .cat-info { flex: 1; min-width: 0; }
 .cat-name { font-size: 12px; font-weight: 700; color: var(--c-text); }
