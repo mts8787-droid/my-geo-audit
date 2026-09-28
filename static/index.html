@@ -287,6 +287,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- Results -->
   <div id="results" class="hidden space-y-5">
 
+    <!-- Raw 다운로드 -->
+    <div class="flex justify-end">
+      <button onclick="downloadRawJson()" id="rawDownloadBtn"
+              class="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-600 hover:bg-slate-50 shadow-sm">
+        ⬇ Raw JSON 다운로드
+      </button>
+    </div>
+
     <!-- ① Score Card -->
     <div id="scoreCard" class="card bg-white rounded-2xl shadow-md border border-slate-100 p-8 fade-up fade-up-1 opacity-0">
       <!-- Page type badge (hidden if absent) -->
@@ -509,6 +517,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       }
       const data = await res.json();
       if (!res.ok) throw new Error(data.detail || '분석 실패');
+      lastAnalyzeData = data;  // raw 다운로드용
       if (data.scope && data.scope !== 'all') {
         renderScopedResults(data);
       } else {
@@ -815,6 +824,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     document.getElementById('errorBox').classList.remove('hidden');
   }
 
+  // ── Raw JSON 다운로드 (개별 URL 분석 응답 전체) ──────────────────────────
+  let lastAnalyzeData = null;
+  function downloadRawJson() {
+    if (!lastAnalyzeData) return;
+    const blob = new Blob([JSON.stringify(lastAnalyzeData, null, 2)],
+                          { type: 'application/json' });
+    let host = 'page';
+    try { host = new URL(lastAnalyzeData.url).pathname.replace(/\W+/g, '-').replace(/^-|-$/g, '').slice(0, 60) || 'page'; } catch {}
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `geo-audit-raw-${host}-${new Date().toISOString().slice(0,10)}.json`;
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }
+
   // ── Scoped render (특정 항목만) ──────────────────────────────────────────────
   function renderScopedResults(data) {
     // scope 응답에는 score만 포함 — score 카드 + 카테고리 카드 표시 후 필터
@@ -877,11 +901,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>`;
   }
 
-  // ── Category Cards (4 categories × N items) ──────────────────────────────
+  // ── Category Cards (6 categories × N items) ──────────────────────────────
   function renderCategoryCards(breakdown) {
     const container = document.getElementById('categoryCards');
     container.innerHTML = '';
-    const order = ['performance','accessibility','seo','ai_readiness'];
+    // 2026-08 분할 반영 (2026-09-28 수정 — 구 4키 배열이 남아 개별 URL 분석에서
+    // 스키마마크업·고인용·AI Crawlability 카드가 표시되지 않았다).
+    // ai_readiness 는 분할 전 구 응답 호환용 — 없으면 아래 if(!cat)에서 skip.
+    const order = ['performance','accessibility','seo',
+                   'schema_markup','citable_content','ai_crawlability',
+                   'ai_readiness'];
 
     for (const catKey of order) {
       const cat = breakdown[catKey];
