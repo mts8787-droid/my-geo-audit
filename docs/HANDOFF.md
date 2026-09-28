@@ -180,9 +180,17 @@ done
 # 집계
 python3 gen_dashboard_data.py
 
-# 다운스트림
-cd ../my-geo-newsletter && node scripts/aggregate-readability.mjs --date 2026-09-16
+# 다운스트림 (공개 반영)
+cd ../my-geo-newsletter && node scripts/aggregate-readability.mjs --date <날짜>
 npx vitest run
+
+# 테스트 어딧 → 스테이징 대시보드 (공개 미반영, 2026-09-28 신설)
+#  1) 상류: AUDIT_RUN_DATE=<테스트날짜> 로 감사 실행
+#  2) node scripts/aggregate-readability.mjs --date <테스트날짜> --staging
+#  3) /admin/readability 에서 전체 화면 검수 (STAGING 배너 표시)
+#  4) 승격: 배너의 [공개로 승격] 버튼 또는
+#     curl -X POST .../admin/readability/promote/<테스트날짜>
+#  공개 게시본(/p/GEO-Readability-Dashboard)·뉴스레터 요약은 published 채널만 읽는다.
 
 # 오탐 스캔 (판정 근거 마이닝) — /tmp/fpscan.py 참조
 # 항목 × 페이지타입으로 value 문자열 빈도를 보면 보일러플레이트 오탐이 드러난다

@@ -931,27 +931,27 @@
         }
       },
       "agentic": {
-        "measured_n": 410,
-        "score_avg": 0.7686,
+        "measured_n": 412,
+        "score_avg": 0.7671,
         "audits": {
           "agent-accessibility-tree": {
-            "pass_rate": 0.8049,
-            "measured_n": 410
+            "pass_rate": 0.801,
+            "measured_n": 412
           },
           "cumulative-layout-shift": {
-            "pass_rate": 0.0293,
-            "measured_n": 410
+            "pass_rate": 0.0291,
+            "measured_n": 412
           },
           "llms-txt": {
             "pass_rate": 1.0,
-            "measured_n": 410
+            "measured_n": 412
           }
         }
       },
       "psi_coverage": {
-        "measured": 410,
-        "estimated": 337,
-        "rate": 0.5489
+        "measured": 412,
+        "estimated": 335,
+        "rate": 0.5515
       },
       "date": "2026-09-24",
       "run_file": "de_2026-09-24_run_3c89984d66bd.json",
@@ -1282,7 +1282,7 @@
         "type_cap": 102
       },
       "excluded_count": 328,
-      "total_avg": 78.29,
+      "total_avg": 78.27,
       "max": 100,
       "grade_dist": {
         "Need Improvement": 349,
@@ -1292,9 +1292,9 @@
       "breakdown": {
         "performance": {
           "label": "사이트 성능",
-          "points_avg": 99.76,
+          "points_avg": 99.67,
           "max": 100,
-          "pass_rate": 0.9977,
+          "pass_rate": 0.9968,
           "items_n": 6
         },
         "accessibility": {
@@ -1337,7 +1337,7 @@
         "perf_ttfb": {
           "label": "#1 TTFB < 600ms (PSI Lab)",
           "category": "performance",
-          "pass_rate": 0.9861,
+          "pass_rate": 0.9806,
           "applicable_n": 721
         },
         "perf_compression": {
@@ -1564,27 +1564,27 @@
         }
       },
       "agentic": {
-        "measured_n": 308,
-        "score_avg": 0.678,
+        "measured_n": 610,
+        "score_avg": 0.6077,
         "audits": {
           "agent-accessibility-tree": {
-            "pass_rate": 0.5779,
-            "measured_n": 308
+            "pass_rate": 0.459,
+            "measured_n": 610
           },
           "cumulative-layout-shift": {
-            "pass_rate": 0.026,
-            "measured_n": 308
+            "pass_rate": 0.0131,
+            "measured_n": 610
           },
           "llms-txt": {
             "pass_rate": 1.0,
-            "measured_n": 308
+            "measured_n": 610
           }
         }
       },
       "psi_coverage": {
-        "measured": 308,
-        "estimated": 413,
-        "rate": 0.4272
+        "measured": 610,
+        "estimated": 111,
+        "rate": 0.846
       },
       "date": "2026-09-24",
       "run_file": "ca_2026-09-24_run_47180eceecfc.json",
@@ -1611,9 +1611,9 @@
       "breakdown": {
         "performance": {
           "label": "사이트 성능",
-          "points_avg": 99.69,
+          "points_avg": 99.68,
           "max": 100,
-          "pass_rate": 0.997,
+          "pass_rate": 0.9968,
           "items_n": 6
         },
         "accessibility": {
@@ -1656,7 +1656,7 @@
         "perf_ttfb": {
           "label": "#1 TTFB < 600ms (PSI Lab)",
           "category": "performance",
-          "pass_rate": 0.982,
+          "pass_rate": 0.981,
           "applicable_n": 945
         },
         "perf_compression": {
@@ -1883,27 +1883,27 @@
         }
       },
       "agentic": {
-        "measured_n": 876,
-        "score_avg": 0.6599,
+        "measured_n": 902,
+        "score_avg": 0.6556,
         "audits": {
           "agent-accessibility-tree": {
-            "pass_rate": 0.468,
-            "measured_n": 876
+            "pass_rate": 0.4601,
+            "measured_n": 902
           },
           "cumulative-layout-shift": {
-            "pass_rate": 0.0685,
-            "measured_n": 876
+            "pass_rate": 0.0665,
+            "measured_n": 902
           },
           "llms-txt": {
             "pass_rate": 1.0,
-            "measured_n": 876
+            "measured_n": 902
           }
         }
       },
       "psi_coverage": {
-        "measured": 876,
-        "estimated": 69,
-        "rate": 0.927
+        "measured": 902,
+        "estimated": 43,
+        "rate": 0.9545
       },
       "date": "2026-09-24",
       "run_file": "au_2026-09-24_run_d67f6168f4b5.json",
@@ -1920,7 +1920,7 @@
         "type_cap": 64
       },
       "excluded_count": 462,
-      "total_avg": 79.41,
+      "total_avg": 79.4,
       "max": 100,
       "grade_dist": {
         "Need Improvement": 403,
@@ -1930,9 +1930,9 @@
       "breakdown": {
         "performance": {
           "label": "사이트 성능",
-          "points_avg": 99.41,
+          "points_avg": 99.37,
           "max": 100,
-          "pass_rate": 0.9942,
+          "pass_rate": 0.9938,
           "items_n": 6
         },
         "accessibility": {
@@ -1975,7 +1975,7 @@
         "perf_ttfb": {
           "label": "#1 TTFB < 600ms (PSI Lab)",
           "category": "performance",
-          "pass_rate": 0.9678,
+          "pass_rate": 0.9653,
           "applicable_n": 808
         },
         "perf_compression": {
@@ -2202,27 +2202,27 @@
         }
       },
       "agentic": {
-        "measured_n": 652,
-        "score_avg": 0.5791,
+        "measured_n": 703,
+        "score_avg": 0.5829,
         "audits": {
           "agent-accessibility-tree": {
-            "pass_rate": 0.3865,
-            "measured_n": 652
+            "pass_rate": 0.3983,
+            "measured_n": 703
           },
           "cumulative-layout-shift": {
-            "pass_rate": 0.0015,
-            "measured_n": 652
+            "pass_rate": 0.0014,
+            "measured_n": 703
           },
           "llms-txt": {
             "pass_rate": 1.0,
-            "measured_n": 652
+            "measured_n": 703
           }
         }
       },
       "psi_coverage": {
-        "measured": 652,
-        "estimated": 156,
-        "rate": 0.8069
+        "measured": 703,
+        "estimated": 105,
+        "rate": 0.87
       },
       "date": "2026-09-24",
       "run_file": "br_2026-09-24_run_0da0a651efd2.json",
@@ -3482,7 +3482,7 @@
       "type_cap": 1555,
       "support": 4
     },
-    "total_avg_weighted": 81.47,
+    "total_avg_weighted": 81.46,
     "missing": []
   }
 }
