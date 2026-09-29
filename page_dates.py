@@ -27,7 +27,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "reports", "page_dates.json")
-COUNTRIES = ["us", "uk", "de", "es", "ca", "au", "br", "mx", "in", "vn", "global"]
+COUNTRIES = ["us", "uk", "de", "es", "ca", "au", "br", "mx", "in", "vn", "be", "nl", "global"]
 DEFAULT_TYPES = ["newsroom", "press_media", "support_troubleshoot"]
 
 _DP = re.compile(r'"datePublished"\s*:\s*"([^"]+)"')

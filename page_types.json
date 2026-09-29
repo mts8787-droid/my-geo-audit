@@ -38,7 +38,7 @@
         ],
         "url_pattern": [
           "/us/(?!support|business|press)[^/]+/lg-[a-zA-Z0-9]",
-          "/(?!us/)[a-z]{2}(?:[_-][a-z]{2})?/(?!(?:support|soporte|suporte|tro-giup|business|about-lg|about|acerca-de-lg|sobre-a-lg|uber-lg|ueber-lg|gioi-thieu-lg|promotion|promociones|todas-las-promociones|promocoes|promotions|teilnahmebedingungen|khuyen-mai|tncs|lifesgood|magazine|lg-experience|experience|discover|monthly-lg|blog|press-release|press-media|newsroom|historias-con-lg|historias-com-lg|contact-us)(?:/|\\?|$))(?!.*-vs-)(?!.*buying-guides?(?:/|$))(?!.*/(?:why|what|how|best|top|which|when|where)-)(?:[a-z0-9-]+/){1,4}[a-z0-9]*\\d[a-z0-9-]*/?(?:[?#].*)?$"
+          "/(?!us/)[a-z]{2}(?:[_-][a-z]{2})?/(?!(?:support|soporte|suporte|tro-giup|business|about-lg|about|acerca-de-lg|sobre-a-lg|uber-lg|ueber-lg|gioi-thieu-lg|promotion|promociones|todas-las-promociones|promocoes|promotions|promoties|teilnahmebedingungen|khuyen-mai|tncs|lifesgood|magazine|lg-experience|experience|discover|monthly-lg|blog|press-release|press-media|newsroom|historias-con-lg|historias-com-lg|contact-us)(?:/|\\?|$))(?!.*-vs-)(?!.*buying-guides?(?:/|$))(?!.*/(?:why|what|how|best|top|which|when|where)-)(?:[a-z0-9-]+/){1,4}[a-z0-9]*\\d[a-z0-9-]*/?(?:[?#].*)?$"
         ]
       },
       "expected_schemas": [
@@ -73,7 +73,7 @@
           "^https?://[^/]+/us/(?!(?:support|business|about-lg|about|promotion|promotions|tncs|lifesgood|magazine|lg-experience|experience|discover|monthly-lg|blog|press-release|press-media|newsroom)(?:/|\\?|$))(?!(?:why|what|how|best|top|which|when|where)-)(?!.*-vs-)(?!.*buying-guides?(?:/|$))[a-z0-9-]+/?$",
           "/us/collections/",
           "/us/[^/]+/discontinued(/|$)",
-          "/(?!us/)[a-z]{2}(?:[_-][a-z]{2})?/(?!(?:support|soporte|suporte|tro-giup|business|about-lg|about|acerca-de-lg|sobre-a-lg|uber-lg|ueber-lg|gioi-thieu-lg|promotion|promociones|todas-las-promociones|promocoes|promotions|teilnahmebedingungen|khuyen-mai|tncs|lifesgood|magazine|lg-experience|experience|discover|monthly-lg|blog|press-release|press-media|newsroom|historias-con-lg|historias-com-lg|contact-us)(?:/|\\?|$))(?!.*-vs-)(?!.*buying-guides?(?:/|$))(?!.*/(?:why|what|how|best|top|which|when|where)-)(?:[a-z0-9-]+/){0,3}[a-z][a-z-]*/?(?:[?#].*)?$"
+          "/(?!us/)[a-z]{2}(?:[_-][a-z]{2})?/(?!(?:support|soporte|suporte|tro-giup|business|about-lg|about|acerca-de-lg|sobre-a-lg|uber-lg|ueber-lg|gioi-thieu-lg|promotion|promociones|todas-las-promociones|promocoes|promotions|promoties|teilnahmebedingungen|khuyen-mai|tncs|lifesgood|magazine|lg-experience|experience|discover|monthly-lg|blog|press-release|press-media|newsroom|historias-con-lg|historias-com-lg|contact-us)(?:/|\\?|$))(?!.*-vs-)(?!.*buying-guides?(?:/|$))(?!.*/(?:why|what|how|best|top|which|when|where)-)(?:[a-z0-9-]+/){0,3}[a-z][a-z-]*/?(?:[?#].*)?$"
         ]
       },
       "expected_schemas": [
@@ -90,10 +90,10 @@
       "_comment": "support 안에서 트러블슈팅/help-library 콘텐츠. support보다 먼저 매칭되어야 우선 적용됨.",
       "detection": {
         "url_pattern": [
-          "/[a-z]{2}(?:[_-][a-z]{2})?/(support|soporte|suporte|tro-giup)/(?:.*?/)?troubleshoot(/|$)",
-          "/[a-z]{2}(?:[_-][a-z]{2})?/(support|soporte|suporte|tro-giup)/(?:.*?/)?help-library(/|$)",
-          "/[a-z]{2}(?:[_-][a-z]{2})?/(support|soporte|suporte|tro-giup)/(?:.*?/)?[a-z-]*troubleshoot(?:ing)?[a-z-]*(/|$)",
-          "/[a-z]{2}(?:[_-][a-z]{2})?/(support|soporte|suporte|tro-giup)/(?:.*?/)?solucionar-problemas(/|$)"
+          "/[a-z]{2}(?:[_-][a-z]{2})?/(support|soporte|suporte|tro-giup|ondersteuning)/(?:.*?/)?troubleshoot(/|$)",
+          "/[a-z]{2}(?:[_-][a-z]{2})?/(support|soporte|suporte|tro-giup|ondersteuning)/(?:.*?/)?help-library(/|$)",
+          "/[a-z]{2}(?:[_-][a-z]{2})?/(support|soporte|suporte|tro-giup|ondersteuning)/(?:.*?/)?[a-z-]*troubleshoot(?:ing)?[a-z-]*(/|$)",
+          "/[a-z]{2}(?:[_-][a-z]{2})?/(support|soporte|suporte|tro-giup|ondersteuning)/(?:.*?/)?solucionar-problemas(/|$)"
         ],
         "exclude_url_pattern": [
           "/minho-page(/|$)",
@@ -121,7 +121,7 @@
           "support"
         ],
         "url_pattern": [
-          "/[a-z]{2}(?:[_-][a-z]{2})?/(support|soporte|suporte|tro-giup)(/|$)"
+          "/[a-z]{2}(?:[_-][a-z]{2})?/(support|soporte|suporte|tro-giup|ondersteuning)(/|$)"
         ]
       },
       "expected_schemas": [
@@ -214,7 +214,7 @@
         "url_pattern": [
           "/[a-z]{2}(?:[_-][a-z]{2})?/promotion(/|$)",
           "/[a-z]{2}(?:[_-][a-z]{2})?/tncs(/|$)",
-          "/[a-z]{2}(?:[_-][a-z]{2})?/(promociones|todas-las-promociones|promocoes|promotions|teilnahmebedingungen|khuyen-mai)(/|$)"
+          "/[a-z]{2}(?:[_-][a-z]{2})?/(promociones|todas-las-promociones|promocoes|promotions|promoties|teilnahmebedingungen|khuyen-mai)(/|$)"
         ]
       },
       "expected_schemas": [

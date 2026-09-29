@@ -17,7 +17,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 # ca 는 영어 사이트만 감사한다(사용자 결정) — ca_fr 은 대상 아님.
 SITE_TO_CODE = {
     "us": "us", "uk": "uk", "de": "de", "es": "es", "ca_en": "ca",
-    "au": "au", "br": "br", "mx": "mx", "in": "in", "vn": "vn", "global": "global",
+    "au": "au", "br": "br", "mx": "mx", "in": "in", "vn": "vn", "be": "be", "nl": "nl", "global": "global",
 }
 FIELDS = ["url", "product", "page_type_hint", "name"]
 

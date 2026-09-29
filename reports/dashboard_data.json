@@ -1564,27 +1564,27 @@
         }
       },
       "agentic": {
-        "measured_n": 610,
-        "score_avg": 0.6077,
+        "measured_n": 611,
+        "score_avg": 0.6072,
         "audits": {
           "agent-accessibility-tree": {
-            "pass_rate": 0.459,
-            "measured_n": 610
+            "pass_rate": 0.4583,
+            "measured_n": 611
           },
           "cumulative-layout-shift": {
             "pass_rate": 0.0131,
-            "measured_n": 610
+            "measured_n": 611
           },
           "llms-txt": {
             "pass_rate": 1.0,
-            "measured_n": 610
+            "measured_n": 611
           }
         }
       },
       "psi_coverage": {
-        "measured": 610,
-        "estimated": 111,
-        "rate": 0.846
+        "measured": 611,
+        "estimated": 110,
+        "rate": 0.8474
       },
       "date": "2026-09-24",
       "run_file": "ca_2026-09-24_run_47180eceecfc.json",
@@ -1883,27 +1883,27 @@
         }
       },
       "agentic": {
-        "measured_n": 902,
-        "score_avg": 0.6556,
+        "measured_n": 908,
+        "score_avg": 0.6541,
         "audits": {
           "agent-accessibility-tree": {
-            "pass_rate": 0.4601,
-            "measured_n": 902
+            "pass_rate": 0.457,
+            "measured_n": 908
           },
           "cumulative-layout-shift": {
-            "pass_rate": 0.0665,
-            "measured_n": 902
+            "pass_rate": 0.0661,
+            "measured_n": 908
           },
           "llms-txt": {
             "pass_rate": 1.0,
-            "measured_n": 902
+            "measured_n": 908
           }
         }
       },
       "psi_coverage": {
-        "measured": 902,
-        "estimated": 43,
-        "rate": 0.9545
+        "measured": 908,
+        "estimated": 37,
+        "rate": 0.9608
       },
       "date": "2026-09-24",
       "run_file": "au_2026-09-24_run_d67f6168f4b5.json",
@@ -2202,27 +2202,27 @@
         }
       },
       "agentic": {
-        "measured_n": 703,
-        "score_avg": 0.5829,
+        "measured_n": 704,
+        "score_avg": 0.5828,
         "audits": {
           "agent-accessibility-tree": {
-            "pass_rate": 0.3983,
-            "measured_n": 703
+            "pass_rate": 0.3977,
+            "measured_n": 704
           },
           "cumulative-layout-shift": {
             "pass_rate": 0.0014,
-            "measured_n": 703
+            "measured_n": 704
           },
           "llms-txt": {
             "pass_rate": 1.0,
-            "measured_n": 703
+            "measured_n": 704
           }
         }
       },
       "psi_coverage": {
-        "measured": 703,
-        "estimated": 105,
-        "rate": 0.87
+        "measured": 704,
+        "estimated": 104,
+        "rate": 0.8713
       },
       "date": "2026-09-24",
       "run_file": "br_2026-09-24_run_0da0a651efd2.json",

@@ -13,7 +13,7 @@ from collections import Counter, defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "reports", "status_sweep.json")
-COUNTRIES = ["us", "uk", "de", "es", "ca", "au", "br", "mx", "in", "vn", "global"]
+COUNTRIES = ["us", "uk", "de", "es", "ca", "au", "br", "mx", "in", "vn", "be", "nl", "global"]
 
 
 def sample_for(cc, per_type=100):

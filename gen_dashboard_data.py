@@ -38,7 +38,7 @@ CONFIG = os.path.join(HERE, "scoring_config.json")
 PSI_CACHE = os.path.join(HERE, "data", "psi_cache.json")
 OUT = os.path.join(HERE, "reports", "dashboard_data.json")
 
-STRATEGIC = ["us", "uk", "de", "es", "ca", "au", "br", "mx", "in", "vn", "global"]
+STRATEGIC = ["us", "uk", "de", "es", "ca", "au", "br", "mx", "in", "vn", "be", "nl", "global"]
 
 # 표시명. 코드와 다르게 부르는 곳만 적는다.
 COUNTRY_LABELS = {"global": "Global-Site"}
@@ -55,7 +55,7 @@ EXCLUDED_PAGE_TYPES = {"business", "promotion", "unknown", "home", "about", "sup
 #   - AEM(비US)은 단종을 페이지에 표기하지 않아(후보 12건 무표기) 목록 대조가 유일 신호
 # JSON-LD availability 는 66%가 미제공 + US 는 재고없음(OutOfStock)과 뒤섞여 못 쓴다.
 _PDP_SEG2CC = {"us": "us", "uk": "uk", "de": "de", "es": "es", "ca_en": "ca",
-               "au": "au", "br": "br", "mx": "mx", "in": "in", "vn": "vn"}
+               "au": "au", "br": "br", "mx": "mx", "in": "in", "vn": "vn", "be": "be", "nl": "nl"}
 _active_pdp_cache = None
 
 

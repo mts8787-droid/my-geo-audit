@@ -34,7 +34,7 @@ import time
 import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-STRATEGIC = ["us", "uk", "de", "es", "ca", "au", "br", "mx", "in", "vn"]
+STRATEGIC = ["us", "uk", "de", "es", "ca", "au", "br", "mx", "in", "vn", "be", "nl"]
 MAX_RESULTS = 2000          # Coveo 1회 응답 상한(실측)
 
 US = {
@@ -59,7 +59,9 @@ INTL = {
 }
 # 국가 → Coveo locale 코드. CA 는 영/불 2개 locale 로 나뉜다.
 LOCALES = {"uk": ["UK"], "de": ["DE"], "es": ["ES"], "ca": ["CA_EN"],   # 불어(CA_FR)는 감사 대상에서 제외 — 한 국가에 두 언어가 섞이면 표본이 오염된다
-           "au": ["AU"], "br": ["BR"], "mx": ["MX"], "in": ["IN"], "vn": ["VN"]}
+           "au": ["AU"], "br": ["BR"], "mx": ["MX"], "in": ["IN"], "vn": ["VN"],
+           # 베네룩스 (2026-09-29 추가). BE 는 네덜란드어판(/be/)만 — CA(ca_en만)와 동일 원칙.
+           "be": ["BE"], "nl": ["NL"]}
 
 # 채널 스토어 경로 — 딜러/교육/파트너 전용 스토어프런트다. 같은 제품의 채널별
 # 사본이라 소비자 사이트맵에 없는 게 정상이고 GEO 감사 대상도 아니다.
