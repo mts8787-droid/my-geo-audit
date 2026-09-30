@@ -525,6 +525,7 @@ _QWORD = re.compile(
     r"qu[ée]|cu[áa]l|c[óo]mo|por qu[ée]|cu[áa]ndo|d[óo]nde|qui[ée]n|"
     r"was|welche[rsn]?|wie|warum|wann|wo|wer|"
     r"qual|como|por que|quando|onde|quem|"
+    r"wat|welke|hoe|waarom|wanneer|waar|wie|kan ik|"
     r"왜|어떻게|무엇|무슨|어떤|언제|어디|누가"
     r")\b", re.I)
 # 한국어·베트남어는 의문사가 문장 중간이나 끝에 온다 — 앵커 없이 찾는다.
@@ -544,6 +545,7 @@ _FEEDBACK_WIDGET = re.compile(
     r"war dieser artikel hilfreich|wie k[öo]nnten wir|"
     r"como voc[êe] melhoraria|(?:isso|este artigo) foi [úu]til|"
     r"thông tin này có hữu ích|"
+    r"was deze informatie nuttig|is deze informatie nuttig|hoe kunnen we (?:dit )?verbeteren|"
     r"도움이 되었|유용했"
     r")", re.I)
 
@@ -1057,7 +1059,8 @@ _SOFT404_PHRASES = re.compile(
     r"p[áa]gina no (?:encontrada|existe)|no se (?:encontr[óo]|ha encontrado) la p[áa]gina|"
     r"seite (?:nicht gefunden|wurde nicht gefunden)|nicht gefunden werden|"
     r"p[áa]gina n[ãa]o (?:encontrada|existe|foi encontrada)|"
-    r"kh[ôo]ng t[ìi]m th[ấa]y trang|trang kh[ôo]ng t[ồo]n t[ạa]i"
+    r"kh[ôo]ng t[ìi]m th[ấa]y trang|trang kh[ôo]ng t[ồo]n t[ạa]i|"
+    r"pagina niet gevonden|pagina (?:kan niet worden|is niet) gevonden|bestaat niet(?: meer)?"
     r")", re.I)
 
 def _eval_soft_404_check(params: dict, ctx: dict) -> dict:
@@ -1455,7 +1458,13 @@ _BOILERPLATE_HINTS = ("gnb", "lnb", "global-nav", "site-header", "site-footer",
                       # 보다 먼저 나온다. 그 탓에 US 외 9개국 PDP 의 #11 이 0.5~4.8%
                       # 로 떨어졌다(실패 근거가 전부 «첫 레벨 h2, 역순 1건»).
                       # c-tabs 의 <h2>Specs</h2> 도 섹션 제목이 아니라 탭 버튼이다.
-                      "info-sticky", "sticky", "c-tabs", "tab-list", "anchor-inner")
+                      "info-sticky", "sticky", "c-tabs", "tab-list", "anchor-inner",
+                      # 전 페이지 공통 프로모 스트립 — NL 실측(2026-09-30): "LG Member
+                      # 2% korting"·"gratis verzending" 배너가 전 페이지에 붙어 #36 이
+                      # 페이지당 5~7건 공짜 매칭(트러블슈팅 100% 허수). UK 99% 도 동류 의심.
+                      "notification-banner",
+                      # 카루셀 이전/다음 버튼의 sr-only 라벨이 본문 문장에 섞인다
+                      "carousel-controls", "sr-only")
 
 
 def _visible_text(soup, strip_boilerplate: bool = False) -> str:
@@ -1525,11 +1534,11 @@ _CITABLE_PATTERNS = [
     # 기존 \b\d[\d.,]{2,}\b 는 '1.2' '3,5' 같은 소수·목록번호까지 잡아
     # 18패턴 중 최다 적중(949건)인데 예시 문장에 숫자가 안 보이는 수준이었다.
     re.compile(r"\b\d{1,3}(?:[.,]\d{3})+\b|\b\d{4,}\b"),
-    # 배수 — x2 / 2x / 2 times / veces / mal / vezes / lần
-    re.compile(r"\b\d+(?:[.,]\d+)?\s*(?:x|배|times|veces|mal|fach|vezes|vees|lần)\b", re.I),
+    # 배수 — x2 / 2x / 2 times / veces / mal / vezes / lần / keer(nl)
+    re.compile(r"\b\d+(?:[.,]\d+)?\s*(?:x|배|times|veces|mal|fach|vezes|vees|keer|lần)\b", re.I),
     # 대규모 수 — million/billion/millón/millones/Millionen/milhões/triệu/tỷ
     re.compile(r"\d+(?:[.,]\d+)?\s*(?:만|억|천만|million|billion|mill[oó]n(?:es)?|"
-               r"Millionen|Milliarden|milh[oõ]es|bilh[oõ]es|tri[eệ]u|t[yỷ])\b", re.I),
+               r"Millionen|Milliarden|milh[oõ]es|bilh[oõ]es|miljoen|miljard|tri[eệ]u|t[yỷ])\b", re.I),
     # 단위 — 물리량/전기/디스플레이
     # 끝은 \b 가 아니라 (?!\w) — 인치 축약(34")처럼 비단어 문자로 끝나는 단위 뒤에는
     # \b 가 성립하지 않아 '32" UHD' 가 안 잡혔다 (2026-09-20, US PDP 실측).
@@ -1539,7 +1548,7 @@ _CITABLE_PATTERNS = [
     re.compile(r"(?:에 따르면|보고서에 따르면|연구에 따르면|조사에 따르면|"
                r"according to|based on (?:a|the) (?:study|report|survey)|"
                r"seg[uú]n|de acuerdo con|laut|zufolge|segundo (?:o|a|um|uma)|"
-               r"theo (?:báo cáo|nghiên cứu))", re.I),
+               r"theo (?:báo cáo|nghiên cứu)|volgens (?:een )?(?:onderzoek|rapport|studie))", re.I),
     # 순위/최초 표현 + 숫자 — world's first, No.1, top 3
     re.compile(r"\b(?:world'?s first|first[- ]ever|no\.?\s?1|n[.º°]\s?1|top\s?\d+|"
                r"primer[oa]?|erste[rns]?|primeiro|đầu tiên)\b", re.I),
@@ -1554,7 +1563,7 @@ _CITABLE_PATTERNS = [
     # 기간·주기 — 10-year warranty, 24 months, 5년 보증, 2 semanas
     re.compile(r"\b\d+(?:[-\s])?(?:year|month|week|day|hour|hr|min|second)s?\b|"
                r"\d+\s*(?:년|개월|주|일|시간|분|초)\b|"
-               r"\b\d+\s*(?:años?|meses|semanas?|Jahre?|Monate|anos|meses|năm|tháng)\b", re.I),
+               r"\b\d+\s*(?:años?|meses|semanas?|Jahre?|Monate|anos|meses|jaar|maanden|weken|năm|tháng)\b", re.I),
     # 인증·표준 — ISO 9001, ENERGY STAR, IP68, HDR10, Dolby Atmos 등 규격 식별자
     re.compile(r"\b(?:ISO|IEC|EN|ANSI|ASTM|IP)\s?\d{2,5}\b|"
                r"\b(?:ENERGY\s?STAR|EPEAT|TÜV|UL|CE|RoHS|Wi-?Fi\s?\d|Bluetooth\s?\d(?:\.\d)?|"
@@ -1590,6 +1599,7 @@ _CITABLE_PATTERNS = [
         r"\bprobado (?:por|en|bajo|conforme|según)\b|\bverificado por\b|"
         r"\btestado (?:por|em|sob|conforme|de acordo)\b|\bcomprovado por\b|"
         r"\bđược (?:kiểm nghiệm|thử nghiệm|kiểm chứng)\b|"
+        r"\bgetest (?:door|volgens|onder)\b|\bonafhankelijk getest\b|"
         r"시험 결과|테스트 결과|실험 결과|검증(?:됐|되었|된))", re.I),
     # 전문성(X) — 특허·공동 개발 (사실 확인 가능한 주장만)
     re.compile(
@@ -1660,10 +1670,15 @@ _DEF_PATTERNS_MULTI = [
     # 베트남어 — được gọi là / được định nghĩa là / viết tắt của / bao gồm
     re.compile(r"\b[A-ZĐÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĨŨƠƯ][\w\-]{1,30}(?:\s+[\w\-]{1,20}){0,4}\s+"
                r"(?:được gọi là|được định nghĩa là|viết tắt của|bao gồm|tức là)\b", re.I),
+    # 네덜란드어 — betekent / staat voor / wordt gedefinieerd als / bestaat uit
+    # 계사 기본형(is een)은 de/es/pt 와 같은 이유로 제외 — 일반 문장 오탐.
+    re.compile(r"\b[A-Z][\w+\-]{1,30}(?:\s+[\w\-]{1,20}){0,4}\s+"
+               r"(?:betekent|staat voor|staan voor|wordt gedefinieerd als|"
+               r"bestaat uit|is een (?:type|soort)|wordt ook wel|verwijst naar)\b", re.I),
     # 약어 정의 — HDR (High Dynamic Range) / OLED stands for ...
     re.compile(r"\b[A-Z]{2,6}\s*\(\s*[A-Z][\w\-]+(?:\s+[\w\-]+){1,5}\s*\)"),
     # dfn/용어 정의 문형 — "What is X?" 바로 뒤 문장은 정의로 본다
-    re.compile(r"\b(?:What (?:is|are)|Was ist|¿?Qué es|O que é|X là gì)\b[^?]{2,60}\?", re.I),
+    re.compile(r"\b(?:What (?:is|are)|Was ist|¿?Qué es|O que é|Wat (?:is|zijn)|X là gì)\b[^?]{2,60}\?", re.I),
 ]
 
 
@@ -1676,6 +1691,7 @@ _CITABLE_NOISE = re.compile(
     r"copyright|©|all rights reserved|"
     r"paypal|klarna|finanzierung|kalkulationsbeispiel|laufzeit|bestellwert|"
     r"financ(?:ing|iaci[óo]n|iamento)|parcelamento|installment|"
+    r"\bin3\b|betaal in \d|betalen met|0% rente|betaalvoorwaarden|achteraf betalen|"
     r"terms (?:and|&) conditions|allgemeine gesch[äa]ftsbedingungen|"
     r"t[ée]rminos y condiciones|termos e condi[çc][õo]es|"
     r"cookie|privacy policy|datenschutz|pol[íi]tica de privacidad|"
@@ -1922,6 +1938,17 @@ async def _eval_sitemap_recent(params: dict, ctx: dict) -> dict:
                     # 200 발견 — lastmod 파싱
                     latest = _parse_sitemap_lastmod(r.text, r.headers.get("Last-Modified"))
                     if latest is None:
+                        # 국가 sitemap 이 존재하는데 lastmod 가 없으면 그 자체가 FAIL 이다.
+                        # 루트(/sitemap.xml)로 넘어가면 전 국가 공통 파일의 lastmod 로
+                        # 통과해 버린다 — 2026-09-30 실측: BE/NL 100%(허수), DE 도
+                        # 루트 통과 298건 혼입. #19 의 취지는 "국가 sitemap 의 최신성"이고
+                        # LG 전달 리포트 1번(US 외 lastmod 0개)과도 맞아야 한다.
+                        if country and path.startswith(f"/{country}"):
+                            return {
+                                "pass": False,
+                                "value": f"국가 디렉토리({path}) lastmod 없음",
+                                "hint": "국가 sitemap 에 <lastmod> 가 없어 갱신 여부 판별 불가",
+                            }
                         tried_results.append(f"{path}: 날짜 정보 없음")
                         continue
                     passed = latest >= threshold

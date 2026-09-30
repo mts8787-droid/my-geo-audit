@@ -399,6 +399,28 @@ class TestContentRules(unittest.TestCase):
                    "block_min_chars": 80, "block_min_lines": 1}, _ctx(html))
         self.assertTrue(r["pass"])
 
+    def test_citable_dutch_patterns_pass(self):
+        # 네덜란드어 지원 (베네룩스 추가, 2026-09-30)
+        html = ("<p>Volgens een onderzoek verbruikt dit model 3 keer minder energie. "
+                "Getest door onafhankelijke instituten. Meer dan 2 miljoen huishoudens.</p>")
+        r = _eval("citable_density_min", {"min_count": 3}, _ctx(html))
+        self.assertTrue(r["pass"])
+
+    def test_definition_dutch_pass(self):
+        html = "<p>OLED staat voor Organic Light Emitting Diode.</p>"
+        r = _eval("definition_pattern_min", {"min_count": 1}, _ctx(html))
+        self.assertTrue(r["pass"])
+
+    def test_notification_banner_excluded_from_citable(self):
+        # NL 전 페이지 프로모 스트립 — 보일러플레이트로 제거돼야 한다 (2026-09-30 실측:
+        # 트러블슈팅 #36 이 100% 허수). sr-only 카루셀 라벨도 본문이 아니다.
+        html = ('<div class="c-notification-banner__text"><p>Wordt LG Member en krijg '
+                '2% korting op je eerste aankoop! Altijd gratis verzending.</p></div>'
+                '<span class="sr-only">Vorige dia 2025</span>'
+                '<p>Gewone tekst zonder cijfers hier.</p>')
+        r = _eval("citable_density_min", {"min_count": 1}, _ctx(html))
+        self.assertFalse(r["pass"])
+
     def test_summary_label_tag_off_by_default(self):
         # label_tags 미지정이면 <p> 라벨은 스캔하지 않는다 (#32 오탐 방지)
         html = '<p>Key features</p>'
