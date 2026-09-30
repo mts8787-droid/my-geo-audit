@@ -1,6 +1,6 @@
 # GEO Agent Readability 검수 기준
 
-> 6개 카테고리 41개 채점 항목 + 9월 감사 시행 예정 4항목.
+> 6개 카테고리 41개 채점 항목 + 10월 감사 시행 예정 4항목.
 > 점수·통과율은 제외한 **기준 정의 문서**입니다. 실측치는 Readability 대시보드에서 확인하세요.
 > 원본: `data/readability/geo-agent-checklist.html` → `scripts/render-criteria.mjs` (별도 리포)
 > 이 사본 갱신: 2026-09-20 (9월 오탐 수정 12건 반영)
@@ -51,12 +51,12 @@
 ### (예정) LCP · CLS · INP
 - **PASS**: LCP ≤ 4,000ms / CLS ≤ 0.25 / INP ≤ 500ms
 - **측정방법**: PageSpeed Insights (INP는 CrUX 실사용자 데이터)
-- **상태**: 9월 감사부터 추가 시행 (데이터 추출 및 검증 진행중)
+- **상태**: 10월 감사부터 추가 예정 (데이터 추출 및 검증 진행중)
 
 ### (예정) Agentic Browsing
 - **정의**: AI Agent와 상호작용하기 위해 사이트가 얼마나 잘 구성되어 있는지 (구글 베타)
 - **측정방법**: CLS · llms.txt · 에이전트 접근성 항목 평가
-- **상태**: 9월 감사부터 추가 시행. WebMCP audit 3종은 대상 페이지가 Origin Trial 토큰을
+- **상태**: 10월 감사부터 추가 예정. WebMCP audit 3종은 대상 페이지가 Origin Trial 토큰을
   서빙해야 평가되며, 2026-08-26 확인 시 www.lg.com 은 토큰·구현 모두 없어 N/A로 남는다.
 
 ---
