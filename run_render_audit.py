@@ -380,6 +380,9 @@ def main():
                     help="전수 감사(비권장). 미지정 시 반드시 page_type별 샘플만 감사.")
     ap.add_argument("--no-reuse", action="store_true",
                     help="이전 run 결과 재사용 없이 전부 새로 측정")
+    ap.add_argument("--types", default="",
+                    help="지정 page_type 만 감사 (쉼표 구분, 예: support_troubleshoot). "
+                         "타깃 재검수용 — 샘플·must_audit 모두 해당 타입으로 제한된다.")
     ap.add_argument("--local", action="store_true",
                     help="Render 대신 로컬 analyze_url(lightweight)로 감사. IP차단 국가(AU/IN) 우회용. /usr/bin/python3 필요.")
     args = ap.parse_args()
@@ -395,6 +398,13 @@ def main():
         urls = [u for u in urls if u not in set(bad)]
     if not args.full:
         must = _load_must_audit(code)
+        only_types = {t.strip() for t in args.types.split(",") if t.strip()}
+        if only_types:
+            # 타깃 검수 (2026-10-03 신설): 지정 타입만 — URL·must 모두 사전 분류로 제한.
+            from page_type import detect_page_type as _dpt
+            urls = [u for u in urls if _dpt(None, u).get("id") in only_types]
+            must = [u for u in must if _dpt(None, u).get("id") in only_types]
+            print(f"[render-audit] --types {','.join(sorted(only_types))}: 대상 {len(urls)}건 · 필수 {len(must)}건")
         urls = _apply_must_audit(_sample_by_page_type(urls, args.per_type, must), urls, code)
     if args.limit:
         urls = urls[: args.limit]
