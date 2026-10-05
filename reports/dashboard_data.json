@@ -3465,27 +3465,27 @@
         }
       },
       "agentic": {
-        "measured_n": 696,
-        "score_avg": 0.5609,
+        "measured_n": 704,
+        "score_avg": 0.5615,
         "audits": {
           "agent-accessibility-tree": {
-            "pass_rate": 0.4239,
-            "measured_n": 696
+            "pass_rate": 0.4261,
+            "measured_n": 704
           },
           "cumulative-layout-shift": {
-            "pass_rate": 0.0029,
-            "measured_n": 696
+            "pass_rate": 0.0028,
+            "measured_n": 704
           },
           "llms-txt": {
             "pass_rate": 1.0,
-            "measured_n": 696
+            "measured_n": 704
           }
         }
       },
       "psi_coverage": {
-        "measured": 696,
-        "estimated": 11,
-        "rate": 0.9844
+        "measured": 704,
+        "estimated": 3,
+        "rate": 0.9958
       },
       "date": "2026-09-29",
       "run_file": "be_2026-09-29_run_6ff488a49b94.json",
@@ -3500,19 +3500,19 @@
         "promotion": 93
       },
       "excluded_count": 245,
-      "total_avg": 80.29,
+      "total_avg": 80.27,
       "max": 100,
       "grade_dist": {
-        "Good": 453,
-        "Need Improvement": 349,
+        "Good": 451,
+        "Need Improvement": 351,
         "Poor": 1
       },
       "breakdown": {
         "performance": {
           "label": "사이트 성능",
-          "points_avg": 99.85,
+          "points_avg": 99.75,
           "max": 100,
-          "pass_rate": 0.9985,
+          "pass_rate": 0.9975,
           "items_n": 6
         },
         "accessibility": {
@@ -3555,7 +3555,7 @@
         "perf_ttfb": {
           "label": "#1 TTFB < 600ms (PSI Lab)",
           "category": "performance",
-          "pass_rate": 0.9913,
+          "pass_rate": 0.9851,
           "applicable_n": 803
         },
         "perf_compression": {
@@ -3776,27 +3776,27 @@
         }
       },
       "agentic": {
-        "measured_n": 757,
-        "score_avg": 0.6207,
+        "measured_n": 795,
+        "score_avg": 0.6164,
         "audits": {
           "agent-accessibility-tree": {
-            "pass_rate": 0.4465,
-            "measured_n": 757
+            "pass_rate": 0.4289,
+            "measured_n": 795
           },
           "cumulative-layout-shift": {
             "pass_rate": 0.0013,
-            "measured_n": 757
+            "measured_n": 795
           },
           "llms-txt": {
             "pass_rate": 1.0,
-            "measured_n": 757
+            "measured_n": 795
           }
         }
       },
       "psi_coverage": {
-        "measured": 757,
-        "estimated": 46,
-        "rate": 0.9427
+        "measured": 795,
+        "estimated": 8,
+        "rate": 0.99
       },
       "date": "2026-09-29",
       "run_file": "nl_2026-09-29_run_11f2fdd8c5f7.json",

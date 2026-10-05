@@ -320,6 +320,26 @@ async def analyze_url(url: str, lightweight: bool = False, scope: str = "all") -
 
     score = await _calculate_score(context, robots, csr_ratio)
 
+    # ── 트러블슈팅 Shadow DOM SSR 적시 (사용자 결정 2026-10-05, A안 변형) ──
+    # LG CS 는 본문 SSR 을 <template shadowrootmode> (Declarative Shadow DOM) 로
+    # 전환 중 (BR 운영 실측: 본문 3,090자가 template 안). 정책:
+    #   - 콘텐츠 룰(#32~#36)은 섀도 본문을 읽는다 (콘텐츠 존재는 인정)
+    #   - #37 SSR 글자수는 섀도 제외 유지 (_safe_visible_text 의 _HIDDEN)
+    #   - 단, 해당 페이지의 판정 근거에 '주요 AI 크롤러 미인식' 상태를 명시한다
+    #     (ChatGPT·Claude 류 비JS 파서 다수가 template 내용을 본문으로 안 침 —
+    #      에이전시(CNX) 실측: BS/DOMParser/trafilatura 미인식, html5lib 만 인식)
+    if page_type.get("id") == "support_troubleshoot" and page_data.get("soup") is not None:
+        _tpl = page_data["soup"].find("template", attrs={"shadowrootmode": True})
+        if _tpl is not None and len(_tpl.get_text(strip=True)) >= 200:
+            _SHADOW_NOTE = "Shadow DOM SSR — 주요 AI 크롤러 미인식 가능(일반 DOM 전환 필요)"
+            for _cat in (score.get("breakdown") or {}).values():
+                for _iid in ("ai_faq_block", "ai_definition", "ai_summary_box",
+                             "ai_citable", "ai_ssr_ratio"):
+                    _it = (_cat.get("items") or {}).get(_iid)
+                    if _it is not None:
+                        _it["value"] = f"{_it.get('value') or ''} · {_SHADOW_NOTE}".strip(" ·")
+            score["shadow_dom_ssr"] = True
+
     # 페이지 fetch 실패 시 응답 최상단에 에러 표면화 — 룰들이 모두 "HTML 파싱 실패"로 보이는 혼란 방지
     page_error = None
     if page_data.get("status") != "ok" or page_data.get("soup") is None:

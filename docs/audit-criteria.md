@@ -153,7 +153,7 @@
 
 | # | 항목 | PASS | 측정방법 | check id |
 | :-: | :-- | :-- | :-- | :-- |
-| #37 | (JS) HTML Text Ratio | 밀도 ≥ 60% | JS 렌더링 후 텍스트 대비 HTML Text 비중 | `ai_ssr_ratio` |
+| #37 | (JS) HTML Text Ratio | 밀도 ≥ 60% | JS 렌더링 후 텍스트 대비 HTML Text 비중. **Shadow DOM SSR(`<template shadowrootmode>`)은 분자에서 제외** — 비JS 파서 다수(BS·DOMParser·trafilatura)가 본문으로 안 치며(CNX 실측, html5lib만 인식) ChatGPT·Claude류 해석은 비공개라 보수 기준 유지 (2026-10-05 결정) | `ai_ssr_ratio` |
 | #38 | (JS) HTML Resource | PDP 썸네일 1-3번째 이미지가 HTML에 존재 | PDP HTML 파싱 후 SSR 확인 | `ai_pdp_thumbnails` |
 | #39 | (JS) 핵심 element | PDP 핵심 element가 HTML로 존재 | PDP HTML 파싱 후 SSR 확인 | `ai_core_element` |
 | #40 | Image File Name | 브랜드·제품 키워드 포함 이미지 ≥ 30% | 파일명 키워드 검증 — logo·icon·sprite 등 장식 파일 제외 | `ai_image_filename` |
@@ -298,6 +298,17 @@
 - **#8 Render Blocking 0** — 통과율 2.3%로 변별력 없음
 - **#44 Sitemap XML** — #19 Sitemap과 rule이 완전히 동일한 중복 (`ai_sitemap_domain`, `enabled: false`)
 - **#20 Organization · #22 Speakable · #30 digitalDocument · #31 Recipe** — `enabled: false`
+
+### 트러블슈팅 Shadow DOM SSR 정책 (2026-10-05)
+
+LG CS 는 트러블슈팅 본문 SSR 을 Declarative Shadow DOM 방식으로 전환 중이다
+(10/5 실측 롤아웃: AU·BR·CA·IN·VN 배포 / DE·ES·MX·UK·US 미배포).
+
+- **콘텐츠 룰(#32~#36)**: 섀도 본문을 읽어 콘텐츠 존재는 **인정**한다.
+- **#37 SSR 비중**: 섀도 본문은 분자에서 **제외**한다 (보수 기준 — 위 #37 비고).
+- 두 경우 모두 해당 페이지 판정 근거(value)에 **"Shadow DOM SSR — 주요 AI 크롤러
+  미인식 가능(일반 DOM 전환 필요)"** 를 적시한다. 개선 요구 방향은 에이전시(CNX)
+  권고와 동일 — 일반 DOM 출력.
 
 ### 집계 대상에서 빠지는 페이지
 - **B2B(사업자) · 프로모션/약관** — GEO 대상이 아니라 점수·통과율·URL 카운트 전부에서 제외
