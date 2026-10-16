@@ -841,11 +841,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   // ── Scoped render (특정 항목만) ──────────────────────────────────────────────
   function renderScopedResults(data) {
-    // scope 응답에는 score만 포함 — score 카드 + 카테고리 카드 표시 후 필터
-    document.getElementById('scoreCard').style.display = '';
+    // scope 응답은 일부 분석(JSON-LD·CSR)을 생략하므로 총점은 숨기고 해당 카테고리 카드만 표시
+    document.getElementById('scoreCard').style.display = 'none';
+    renderPageError(data.page_error);
     if (data.score) {
-      renderScore(data.score);
       renderCategoryCards(data.score.breakdown);
+    } else if (data.json_ld) {
+      const types = data.json_ld.all_types?.join(', ') || '없음';
+      document.getElementById('categoryCards').innerHTML =
+        `<div class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6">
+           <h3 class="font-bold text-slate-800 mb-2">JSON-LD 스키마 (${data.json_ld.count || 0}개)</h3>
+           <p class="text-sm text-slate-600">${escHtml(types)}</p>
+         </div>`;
     }
     document.getElementById('results').classList.remove('hidden');
     filterResultCards();
@@ -882,6 +889,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       results.insertBefore(banner, results.firstChild);
     }
     if (!err) { banner.innerHTML = ''; return; }
+    if (typeof err === 'string') err = { message: err };
     const httpStatus = err.http_status ? `HTTP ${err.http_status}` : '';
     banner.innerHTML = `
       <div class="bg-red-50 border-2 border-red-200 rounded-2xl p-5">

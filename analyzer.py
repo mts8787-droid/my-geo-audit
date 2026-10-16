@@ -199,15 +199,20 @@ async def analyze_url(url: str, lightweight: bool = False, scope: str = "all") -
     # scope별 필요한 분석만 수행
     if scope != "all":
         if scope == "schema":
-            # 스키마 단독 체크 시 스텔스 모드(Playwright) 강제 적용
-            csr_raw = await _check_csr_chars(url)
-            if csr_raw.get("status") == "ok":
-                soup = BeautifulSoup(csr_raw["debug"]["raw_html"], "html.parser")
-                page_data = {"status": "ok", "soup": soup}
-                page_error = None
+            if lightweight:
+                # Render(워커 없음)·벌크: Playwright는 512MB OOM으로 인스턴스를 죽이므로 httpx만 사용
+                page_data = await _fetch_page(url)
+                page_error = None if page_data.get("soup") is not None else (page_data.get("error") or "페이지 로딩 실패")
             else:
-                page_data = {"status": "error", "soup": None}
-                page_error = csr_raw.get("error") or "스텔스 모드(Playwright) 로딩 실패"
+                # 스키마 단독 체크 시 스텔스 모드(Playwright) 강제 적용
+                csr_raw = await _check_csr_chars(url)
+                if csr_raw.get("status") == "ok":
+                    soup = BeautifulSoup(csr_raw["debug"]["raw_html"], "html.parser")
+                    page_data = {"status": "ok", "soup": soup}
+                    page_error = None
+                else:
+                    page_data = {"status": "error", "soup": None}
+                    page_error = csr_raw.get("error") or "스텔스 모드(Playwright) 로딩 실패"
 
             jsonld = _extract_json_ld(page_data)
             page_data["soup"] = None  # BS 메모리 즉시 회수 (N2)
