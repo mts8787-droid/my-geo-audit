@@ -1413,7 +1413,7 @@ _DEF_PATTERN = re.compile(
     r"(?:[가-힣A-Za-z0-9_]+(?:는|은|란|이란|이라는)\s+[가-힣A-Za-z0-9_,\s]+(?:이다|입니다|를 말한다|을 말한다))"
 )
 
-_NON_VISIBLE_TAGS = ("script", "style", "noscript", "svg", "path")
+_NON_VISIBLE_TAGS = ("script", "style", "noscript", "svg", "path", "title")
 
 
 def _eval_schema_for_page_type(params: dict, ctx: dict) -> dict:
@@ -1474,7 +1474,7 @@ def _visible_text(soup, strip_boilerplate: bool = False) -> str:
     CSS/JS 주석과 skip-to-content 마크업이 본문으로 새어 들어와 문장 수와
     인용 밀도를 왜곡한다.
     """
-    from bs4 import Comment
+    from bs4.element import PreformattedString
     skip = set()
     if strip_boilerplate:
         for el in soup.find_all(_BOILERPLATE_TAGS):
@@ -1486,7 +1486,9 @@ def _visible_text(soup, strip_boilerplate: bool = False) -> str:
 
     parts = []
     for s in soup.find_all(string=True):
-        if isinstance(s, Comment):
+        # 주석뿐 아니라 doctype·CDATA 도 PreformattedString — doctype 의 'html' 이
+        # <title> 과 이어 붙어 모든 페이지에 가짜 첫 문장을 만들었다(2026-10-17 판정).
+        if isinstance(s, PreformattedString):
             continue
         par = s.parent
         if par and par.name in _NON_VISIBLE_TAGS:
@@ -1512,7 +1514,11 @@ def _eval_definition_pattern_min(params: dict, ctx: dict) -> dict:
 
     dfn_count = len(soup.find_all(["dfn", "abbr"]))
     text = _visible_text(soup, strip_boilerplate=True)
-    pattern_count = sum(len(p.findall(text)) for p in _DEF_PATTERNS_MULTI)
+    # 문장 단위로 보고 약관·결제·상표 고지 문장은 뺀다. 'PayPal Credit is a regulated
+    # credit agreement' 같은 고지문이 정의문 패턴에 걸려 #33 오탐의 대부분을 차지했다.
+    sentences = [x for x in re.split(r"(?<=[.!?。\n])\s+", text) if not _CITABLE_NOISE.search(x)]
+    pattern_count = sum(1 for x in sentences for p in _DEF_PATTERNS_MULTI for m in p.finditer(x)
+                        if m.group(0).split()[0].lower() not in _DEF_DEMONSTRATIVES)
     total = dfn_count + pattern_count
     passed = total >= min_count
     return {
@@ -1633,6 +1639,10 @@ _CITABLE_PATTERNS = [
 # 독일어·스페인어·포르투갈어 '기본형'(계사 ist ein / es la / é a)은 2026-09-19 제거했다.
 # 계사는 어디에나 나와 'Im letzten Zimmer ist ein' · 'Cuál es la' 같은 일반 문장을
 # 정의문으로 잡았다. 확장형(steht für·se define como·trata-se de)과 질문형·약어정의는 유지.
+# 지시대명사 주어는 정의가 아니다 — 'Đây là một cách…'(이것은 ~한 방법이다)
+_DEF_DEMONSTRATIVES = {"this", "that", "it", "these", "those", "there", "here", "đây", "đó", "này",
+                       "esto", "eso", "esta", "este", "das", "dies", "es", "isso", "isto", "dit", "dat"}
+
 _DEF_PATTERNS_MULTI = [
     _DEF_PATTERN,
     # 영어: X is/are/refers to/means/stands for a|the ...
@@ -1695,6 +1705,14 @@ _CITABLE_NOISE = re.compile(
     r"terms (?:and|&) conditions|allgemeine gesch[äa]ftsbedingungen|"
     r"t[ée]rminos y condiciones|termos e condi[çc][õo]es|"
     r"cookie|privacy policy|datenschutz|pol[íi]tica de privacidad|"
+    # 2026-10-17 판정 반영 — 무이자·쿠폰·할부(vi)·할인·연락처·공유 UI·상표 고지
+    r"\b0\s?%\s*(?:interest|apr|intereses|inter[eé]s|juros|zinsen)|interest[- ]free|"
+    r"\bcoupons?\b|cup[oó]n(?:es)?|cupom|gutschein|voucher|"
+    r"tr[aả] g[oó]p|\bt[aặ]ng\b[^.]{0,80}tr[iị] gi[aá]|gi[aả]m gi[aá]|"
+    r"\d+\s?%\s*(?:de\s+)?(?:descuento|desconto|rabatt|off)\b|\bdto\b|[$€£]\s?[\d.,]+\s*off\b|"
+    r"[\w.+-]+@[\w-]+\.[a-z]{2,}|media contacts?|for immediate release|"
+    r"share (?:this )?content|comparte este contenido|compartilh|javascript|"
+    r"\btrademarks?\b|marcas? registradas?|warenzeichen|"
     r"약관|개인정보|저작권"
     r")", re.I)
 

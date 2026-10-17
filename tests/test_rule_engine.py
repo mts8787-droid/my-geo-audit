@@ -19,7 +19,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from rule_engine import (  # noqa: E402
     evaluate_rule, evaluate_rule_async, _HANDLERS, _ASYNC_HANDLERS, RULE_TYPES,
-    _detect_country_dir,
+    _detect_country_dir, _CITABLE_NOISE, _CITABLE_PATTERNS, _visible_text,
 )
 
 
@@ -772,6 +772,52 @@ class TestRegistryConsistency(unittest.TestCase):
                 if rt:
                     self.assertIn(rt, all_handlers,
                                   f"{cat_key}.{cr['id']}: 룰 타입 '{rt}' 핸들러 없음")
+
+
+class TestJudgedCorpusR1(unittest.TestCase):
+    """2026-10-17 사용자 판정(그림자 모드 1차)에서 '아니오'/'예'로 확정된 문장."""
+    NEG_36 = [
+        "Sign in Join us Welcome coupon New LG Members can use the Welcome Coupon towards their next purchase over $500.",
+        "Browse LG’s Range of Speakers & Sound Systems Now Ventajas de comprar en LG Iniciar sesión Registrarse Hasta 10% de descuento 5% dto por primera compra en el pago.",
+        "0% interest for: 12 months: Single purchase value of over £1,000.",
+        "Quy định chung: Thời gian trả góp: 3, 6, 9 và 12 tháng.",
+        "Tặng Bộ sản phẩm chuyên dụng LG trị giá 950.000 VNĐ khi mua Máy rửa bát LG LDT14BGA3, LDT14SVA4, LDT14BLA4.",
+        "Media Contacts: LG Electronics USA Taryn Brucia 201 816 2187 taryn.brucia@lge.com Related Content October 16, 2026",
+        "LG UNVEILS TWO GROUNDBREAKING SMARTPHONES Corporate 02/24/2019 Print Share this content.",
+    ]
+    POS_36 = [
+        "*Die Angabe zur Reaktionszeit von 0,03 ms (GtG) bezieht sich auf LG UlraGear-Modelle mit OLED.",
+        "4 Variable refresh rate (VRR) is supported on models 17Z90R and 16Z90R with GPU option only.",
+        "Prueba esto Los modelos lanzados en 2022 (webOS 22) y posteriores no son compatibles con la función Time Machine.",
+        "Plasmaster ™ Ionizer++ Loại bỏ vi khuẩn bám dính tới 99,9% Thanh lọc không khí trong phòng.",
+    ]
+
+    def _cit(self, s):
+        return not _CITABLE_NOISE.search(s) and any(p.search(s) for p in _CITABLE_PATTERNS)
+
+    def test_neg_36(self):
+        for s in self.NEG_36:
+            self.assertFalse(self._cit(s), s)
+
+    def test_pos_36(self):
+        for s in self.POS_36:
+            self.assertTrue(self._cit(s), s)
+
+    def test_doctype_and_title_not_body(self):
+        soup = BeautifulSoup("<!DOCTYPE html><html><head><title>22kg Washer | LG</title></head>"
+                             "<body><p>Hello world.</p></body></html>", "html.parser")
+        self.assertEqual(_visible_text(soup, strip_boilerplate=True), "Hello world.")
+
+    def _def(self, body):
+        return _HANDLERS["definition_pattern_min"]({"min_count": 1}, _ctx(f"<html><body><p>{body}</p></body></html>"))["pass"]
+
+    def test_definition_rejects_notices_and_demonstratives(self):
+        self.assertFalse(self._def("PayPal Credit is a regulated credit agreement."))
+        self.assertFalse(self._def("All other trademarks are the property of their respective owners."))
+        self.assertFalse(self._def("Đây là một cách dễ dàng để theo dõi mặt hàng đặc biệt."))
+
+    def test_definition_keeps_real_definition(self):
+        self.assertTrue(self._def("LG is a world-leading producer of TVs, refrigerators and air conditioners."))
 
 
 if __name__ == "__main__":
