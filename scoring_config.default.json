@@ -759,7 +759,9 @@
         "rule": {
           "type": "definition_pattern_min",
           "params": {
-            "min_count": 1
+            "min_count": 1,
+            "model": "yes",
+            "model_scan_max": 40
           }
         }
       },
@@ -793,7 +795,8 @@
             "block_exclude_class": "idt",
             "block_min_chars": 80,
             "block_min_lines": 1,
-            "match_class": "no", "label_tags": "p"
+            "match_class": "no",
+            "label_tags": "p"
           }
         }
       },
@@ -806,7 +809,8 @@
         "rule": {
           "type": "citable_density_min",
           "params": {
-            "min_count": 5
+            "min_count": 5,
+            "model": "yes"
           }
         }
       }

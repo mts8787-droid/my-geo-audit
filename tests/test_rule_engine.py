@@ -822,3 +822,85 @@ class TestJudgedCorpusR1(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+
+class TestModelBackedRules(unittest.TestCase):
+    """#33·#36 모델 결합 — audit_model.label_sentence 를 가짜로 바꿔 검증한다."""
+
+    def setUp(self):
+        import audit_model
+        self.am = audit_model
+        self._url, self._fn = audit_model.MODEL_URL, audit_model.label_sentence
+        audit_model.MODEL_URL = "http://model.test"
+
+    def tearDown(self):
+        self.am.MODEL_URL, self.am.label_sentence = self._url, self._fn
+
+    def _fake(self, rule):
+        calls = []
+        async def fake(sentence, client):
+            calls.append(sentence)
+            return rule(sentence)
+        self.am.label_sentence = fake
+        return calls
+
+    def _run(self, rule_type, params, ctx):
+        from rule_engine import evaluate_rule_async
+        return asyncio.run(evaluate_rule_async({"type": rule_type, "params": params}, ctx))
+
+    CITABLE_HTML = ("<p>Sales grew 30% in 2024. The 2023 report says 45% rose. "
+                    "It measures 120 cm wide. It weighs 25 kg. Just a plain sentence.</p>")
+
+    def test_citable_model_confirms_subset(self):
+        # 정규식 후보 4문장 중 모델이 2문장만 y → min_count 3 FAIL, 제외 사유가 hint 에 남는다
+        calls = self._fake(lambda s: {"citable": "y" if "grew" in s or "report" in s else "n",
+                                      "why": "단순 치수"})
+        r = self._run("citable_density_min", {"min_count": 3}, _ctx(self.CITABLE_HTML))
+        self.assertFalse(r["pass"])
+        self.assertTrue(r["value"].startswith("모델 확인 2/4"))
+        self.assertIn("단순 치수", r["hint"])
+        self.assertEqual(len(calls), 4)
+
+    def test_citable_model_early_stop(self):
+        calls = self._fake(lambda s: {"citable": "y"})
+        r = self._run("citable_density_min", {"min_count": 2}, _ctx(self.CITABLE_HTML))
+        self.assertTrue(r["pass"])
+        self.assertEqual(len(calls), 2)
+
+    def test_citable_model_unavailable_falls_back_to_regex(self):
+        async def down(sentence, client):
+            raise self.am.ModelUnavailable("connection refused")
+        self.am.label_sentence = down
+        r = self._run("citable_density_min", {"min_count": 3}, _ctx(self.CITABLE_HTML))
+        self.assertTrue(r["pass"])           # 정규식 후보 4개 ≥ 3
+        self.assertIn("정규식(모델 미연결)", r["value"])
+
+    def test_citable_model_param_no_uses_regex(self):
+        calls = self._fake(lambda s: {"citable": "n"})
+        r = self._run("citable_density_min", {"min_count": 3, "model": "no"}, _ctx(self.CITABLE_HTML))
+        self.assertTrue(r["pass"])
+        self.assertEqual(calls, [])
+
+    def test_definition_model_rejects_regex_match(self):
+        html = "<p>GEO는 검색 엔진 최적화를 말한다.</p>"
+        self._fake(lambda s: {"definition": "n", "why": "막연한 서술"})
+        r = self._run("definition_pattern_min", {"min_count": 1}, _ctx(html))
+        self.assertFalse(r["pass"])
+        self.assertIn("막연한 서술", r["hint"])
+
+    def test_definition_model_scans_when_regex_finds_nothing(self):
+        # 패턴 0건이면 본문 문장을 모델로 훑어 정의문을 찾는다 (정규식 OR 모델)
+        html = ("<p>The R1 Compressor reduces noise by up to 4dB in homes and offices. "
+                "Another plain sentence about nothing in particular here.</p>")
+        calls = self._fake(lambda s: {"definition": "y" if "Compressor" in s else "n"})
+        r = self._run("definition_pattern_min", {"min_count": 1}, _ctx(html))
+        self.assertTrue(r["pass"])
+        self.assertIn("모델 탐색", r["value"])
+        self.assertEqual(len(calls), 1)      # 첫 문장에서 조기 종료
+
+    def test_definition_dfn_counts_without_model_call(self):
+        html = "<p>Plain text only here with enough length.</p><dfn>RAG</dfn>"
+        calls = self._fake(lambda s: {"definition": "n"})
+        r = self._run("definition_pattern_min", {"min_count": 1}, _ctx(html))
+        self.assertTrue(r["pass"])
+        self.assertEqual(calls, [])

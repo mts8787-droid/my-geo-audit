@@ -133,10 +133,10 @@
 | # | 항목 | PASS | 측정방법 | check id |
 | :-: | :-- | :-- | :-- | :-- |
 | #32 | FAQ Block | 1개 이상 | FAQPage Schema, details/summary, Q&A 패턴 | `ai_faq_block` |
-| #33 | Definition Paragraph | 1개 이상 | 정의문 패턴 15종(6개 언어), `dfn`, `abbr` — [패턴 목록](#매칭-패턴-기준) | `ai_definition` |
+| #33 | Definition Paragraph | 1개 이상 | 정의문 패턴 15종(6개 언어), `dfn`, `abbr` — [패턴 목록](#매칭-패턴-기준). 모델 연결 시 패턴 매칭 문장을 모델이 확인하고, 0건이면 본문 40문장을 모델로 탐색 — [문장 판정 모델](#문장-판정-모델-33-36) | `ai_definition` |
 | #34 | Author/Source | 저자 또는 (출처+날짜) | **JSON-LD** `author` 또는 (`datePublished` + `publisher`/`sourceOrganization`/`source`) | `ai_author_source` |
 | #35 | Summary Box | 1개 이상 | TL;DR, Key Takeaways, Highlights, Abstract | `ai_summary_box` |
-| #36 | Citable Sentences | **5개 이상** | 인용 가능 패턴 22종에 걸리는 문장 수 — [패턴 목록](#매칭-패턴-기준) | `ai_citable` |
+| #36 | Citable Sentences | **5개 이상** | 인용 가능 패턴 22종에 걸리는 문장 수 — [패턴 목록](#매칭-패턴-기준). 모델 연결 시 패턴 후보를 모델이 확인한 문장만 센다 — [문장 판정 모델](#문장-판정-모델-33-36) | `ai_citable` |
 
 > **#34 주의**: HTML `meta author`·본문 byline은 판정에 **사용하지 않는다**. AI가 파싱 가능한
 > 구조화 데이터를 요구하는 기준이다. 따라서 통과율 0%는 "저자 표기가 없다"가 아니라
@@ -244,6 +244,25 @@
 > **제거**했다. 계사는 일반 문장(`Im letzten Zimmer ist ein…` · `Cuál es la…`)에도 흔해
 > 정의문이 아닌 것을 대량으로 잡았다 (오탐 수정으로 58.3% → 47.5%). 확장형·질문형·약어
 > 정의는 유지.
+
+### 문장 판정 모델 (#33 · #36)
+
+2026-10-18 도입. LG.com 문장 5,264개에 Claude가 라벨을 붙이고 사람이 328문장을 검수한 데이터로
+Qwen2.5-3B를 LoRA 미세조정한 모델(`geo-audit-3b`, 올라마). 문장 하나를 받아
+`citable` / `definition` / `summary` 각 y·n 과 판정 이유(한국어 30자)를 돌려준다.
+
+**우선순위 — DOM/셀렉터 규칙이 절대 규칙이다.** #35처럼 특정 요소·class·셀렉터를 지정한 규칙은
+모델이 개입하지 않는다. 모델은 텍스트 패턴(정규식)만으로 판정하던 #33·#36 에서만 쓴다.
+
+| 항목 | 모델 연결 시 | 모델 미연결 시(Render 등) |
+| :-- | :-- | :-- |
+| #36 | 정규식 후보 문장을 모델이 확인해 y 인 것만 센다. `min_count` 를 채우면 즉시 중단. 실패 시 hint 에 모델 제외 사유 표시 | 정규식 판정 그대로, value 에 `정규식(모델 미연결)` 표시 |
+| #33 | 정규식 매칭 문장을 모델이 확인. 매칭 0건이면 본문 앞 `model_scan_max`(40)문장을 모델로 훑어 정의문 탐색(정규식 OR 모델). `dfn`/`abbr` 이 기준을 채우면 모델 호출 없음 | 정규식 판정 그대로 |
+
+- 활성 조건: 환경변수 `AUDIT_MODEL_URL`(예 `http://127.0.0.1:11434`) 설정 + 룰 파라미터 `model: yes`(기본). 모델명은 `AUDIT_MODEL_NAME`(기본 `geo-audit-3b`).
+- 평가셋 1,052문장(사람 검수 268 포함, 엄격 기준) F1: 인용 88.7 · 정의 89.9 (정규식 #36 단독 36.4). 문장당 약 1.2초(M4 16GB).
+- 모델이 전 문장을 훑지 않으므로 #36 재현율은 정규식 후보에 묶인다. 정규식이 못 잡는 인용 문장은 여전히 놓친다.
+- 학습 자료: `reports/shadow_llm/train/` (GUIDELINE.md, dataset_v1.jsonl, Modelfile.v2, compare_corrected.txt).
 
 ### 클래스·선택자 매칭 항목
 

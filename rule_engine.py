@@ -303,6 +303,8 @@ RULE_TYPES = {
         "description": "본문에서 정의문 패턴(X는 Y이다 / dfn / abbr)이 임계 이상 발견되는지 확인",
         "params": {
             "min_count": {"label": "최소 발견 수", "type": "number", "placeholder": "1"},
+            "model": {"label": "판정 모델 사용 (AUDIT_MODEL_URL 설정 시)", "type": "select", "options": ["yes", "no"]},
+            "model_scan_max": {"label": "패턴 0건일 때 모델로 훑을 최대 문장 수", "type": "number", "placeholder": "40"},
         },
     },
     "citable_density_min": {
@@ -313,6 +315,7 @@ RULE_TYPES = {
             "min_count": {"label": "최소 개수", "type": "number", "placeholder": "10"},
             "min_ratio": {"label": "최소 비율 (0.0~1.0, min_count 미지정 시)", "type": "number", "placeholder": "0.1"},
             "skip_noise": {"label": "약관·결제 문구 제외", "type": "select", "options": ["yes", "no"]},
+            "model": {"label": "판정 모델 사용 (AUDIT_MODEL_URL 설정 시)", "type": "select", "options": ["yes", "no"]},
         },
     },
     "image_filename_keyword": {
@@ -1517,9 +1520,13 @@ def _eval_definition_pattern_min(params: dict, ctx: dict) -> dict:
     # 문장 단위로 보고 약관·결제·상표 고지 문장은 뺀다. 'PayPal Credit is a regulated
     # credit agreement' 같은 고지문이 정의문 패턴에 걸려 #33 오탐의 대부분을 차지했다.
     sentences = [x for x in re.split(r"(?<=[.!?。\n])\s+", text) if not _CITABLE_NOISE.search(x)]
+    matched = [x for x in sentences if any(m.group(0).split()[0].lower() not in _DEF_DEMONSTRATIVES
+                                           for p in _DEF_PATTERNS_MULTI for m in p.finditer(x))]
     pattern_count = sum(1 for x in sentences for p in _DEF_PATTERNS_MULTI for m in p.finditer(x)
                         if m.group(0).split()[0].lower() not in _DEF_DEMONSTRATIVES)
     total = dfn_count + pattern_count
+    if params.get("_return_sentences"):
+        return {"dfn": dfn_count, "matched": matched, "sentences": sentences}
     passed = total >= min_count
     return {
         "pass": passed,
@@ -1737,7 +1744,10 @@ def _eval_citable_density_min(params: dict, ctx: dict) -> dict:
         sentences = [x for x in sentences if not _CITABLE_NOISE.search(x)]
         if not sentences:
             return {"pass": False, "value": "본문 없음(노이즈만)", "hint": "인용 가능 문장이 없습니다."}
-    citable = sum(1 for s in sentences if any(p.search(s) for p in _CITABLE_PATTERNS))
+    candidates = [s for s in sentences if any(p.search(s) for p in _CITABLE_PATTERNS)]
+    if params.get("_return_sentences"):
+        return {"candidates": candidates, "sentences": sentences}
+    citable = len(candidates)
     ratio = citable / len(sentences)
     value = f"{citable}/{len(sentences)} ({ratio*100:.1f}%)"
 
@@ -2115,9 +2125,100 @@ _HANDLERS = {
 }
 
 # async 핸들러
+# ── 문장 판정 모델 결합 (#33·#36) ─────────────────────────────────────────
+# 우선순위: DOM/셀렉터 규칙(#35 등)은 절대 규칙이라 모델이 개입하지 않는다.
+# #36: 정규식 후보 문장을 모델이 확인(과잉 매칭 제거). min_count 를 채우면 조기 종료.
+# #33: 정규식 매칭 문장을 모델이 확인하고, 매칭이 0건이면 본문 앞 model_scan_max 문장을
+#      모델로 훑어 정의문을 찾는다(정규식 OR 모델).
+# 모델 미연결(AUDIT_MODEL_URL 미설정·올라마 다운)이면 정규식 판정으로 돌아가고 value 에 표시한다.
+import audit_model as _am
+
+
+def _model_on(params: dict) -> bool:
+    return _am.enabled() and str(params.get("model", "yes")).lower() not in ("no", "false", "0")
+
+
+async def _eval_citable_density_min_async(params: dict, ctx: dict) -> dict:
+    regex = _eval_citable_density_min(params, ctx)
+    min_count = params.get("min_count")
+    if not _model_on(params) or min_count in (None, "", 0):
+        return regex
+    cand = _eval_citable_density_min({**params, "_return_sentences": 1}, ctx)
+    if "candidates" not in cand:
+        return regex
+    min_count = int(min_count)
+    confirmed, checked, whys = 0, 0, []
+    try:
+        async with httpx.AsyncClient() as client:
+            for s in cand["candidates"]:
+                lab = await _am.label_sentence(s, client)
+                checked += 1
+                if lab.get("citable") == "y":
+                    confirmed += 1
+                elif lab.get("why"):
+                    whys.append(lab["why"])
+                if confirmed >= min_count:
+                    break
+    except _am.ModelUnavailable:
+        regex["value"] = f"{regex['value']} · 정규식(모델 미연결)"
+        return regex
+    n_cand = len(cand["candidates"])
+    passed = confirmed >= min_count
+    value = f"모델 확인 {confirmed}/{checked} (정규식 후보 {n_cand}/{len(cand['sentences'])}문장)"
+    hint = None
+    if not passed:
+        hint = f"인용 가능 문장 {confirmed}개 — {min_count}개 이상 필요"
+        if whys:
+            top = sorted(set(whys), key=whys.count, reverse=True)[:2]
+            hint += f" (모델 제외 사유: {', '.join(top)})"
+    return {"pass": passed, "value": value, "hint": hint}
+
+
+async def _eval_definition_pattern_min_async(params: dict, ctx: dict) -> dict:
+    regex = _eval_definition_pattern_min(params, ctx)
+    if not _model_on(params):
+        return regex
+    info = _eval_definition_pattern_min({**params, "_return_sentences": 1}, ctx)
+    if "matched" not in info:
+        return regex
+    min_count = int(params.get("min_count", 1))
+    if info["dfn"] >= min_count:
+        return regex
+    scan_max = int(params.get("model_scan_max", 40) or 40)
+    confirmed, checked, whys = 0, 0, []
+    pool = info["matched"] or [x for x in info["sentences"] if len(x.strip()) > 20][:scan_max]
+    path = "정규식 후보 확인" if info["matched"] else f"패턴 0건 → 본문 {len(pool)}문장 모델 탐색"
+    try:
+        async with httpx.AsyncClient() as client:
+            for s in pool:
+                lab = await _am.label_sentence(s, client)
+                checked += 1
+                if lab.get("definition") == "y":
+                    confirmed += 1
+                elif lab.get("why") and info["matched"]:
+                    whys.append(lab["why"])
+                if info["dfn"] + confirmed >= min_count:
+                    break
+    except _am.ModelUnavailable:
+        regex["value"] = f"{regex['value']} · 정규식(모델 미연결)"
+        return regex
+    total = info["dfn"] + confirmed
+    passed = total >= min_count
+    value = f"dfn/abbr {info['dfn']}개 + 모델 확인 정의문 {confirmed}건 ({path}, {checked}문장 판정)"
+    hint = None
+    if not passed:
+        hint = f"정의문 {total}건 — {min_count}건 이상 필요"
+        if whys:
+            top = sorted(set(whys), key=whys.count, reverse=True)[:2]
+            hint += f" (모델 제외 사유: {', '.join(top)})"
+    return {"pass": passed, "value": value, "hint": hint}
+
+
 _ASYNC_HANDLERS = {
     "http_status":     _eval_http_status,
     "sitemap_recent":  _eval_sitemap_recent,
+    "citable_density_min":    _eval_citable_density_min_async,
+    "definition_pattern_min": _eval_definition_pattern_min_async,
 }
 
 
