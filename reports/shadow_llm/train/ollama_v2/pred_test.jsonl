@@ -1,107 +1,107 @@
 {"id": "s00000", "why": "일반 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00002", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00004", "why": "안내 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00007", "why": "모호한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00007", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00008", "why": "주어 없는 일반 서술", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00009", "why": "명명 규격 명시", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s00014", "why": "주어 this, 홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00009", "why": "인증 규격 명시", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00014", "why": "제품 유형이 무엇인지 설명", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s00018", "why": "내비게이션 텍스트", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00025", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00035", "why": "스펙표 조각", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00036", "why": "제품군 소개", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00025", "why": "용량 수치+의미", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00035", "why": "스펙표 조각 혼합", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00036", "why": "홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00038", "why": "내비+질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00043", "why": "홈 내비+멤버십 홍보", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00043", "why": "홈 내비+회원십 홍보", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00046", "why": "할인 프로모션", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00055", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00056", "why": "홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00057", "why": "기능 동작 구체 사실", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s00067", "why": "홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00070", "why": "인용 발언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00072", "why": "회사 소개 보일러플레이트", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00057", "why": "기능 동작 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s00067", "why": "제품명+12시간·12시간 의미", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00070", "why": "인용 인용", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00072", "why": "회사 소개 보일러플레이트", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s00074", "why": "연락처", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00078", "why": "주어 peace, 홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00085", "why": "제품 사실", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00088", "why": "UL 인증+기술 원리 설명", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00078", "why": "마케팅 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00085", "why": "모델·크기 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00088", "why": "UL 인증+기술 원리 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s00089", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00096", "why": "각주 제약", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00099", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00105", "why": "UI/오류 메시지", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00099", "why": "사용 조언", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00105", "why": "시스템 메시지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00106", "why": "명명 인증 명시", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s00108", "why": "시장 전망", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00109", "why": "0.1ms 구체 수치", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s00111", "why": "기사 헤더+티저", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00118", "why": "0.1ms·165Hz 인증 명시", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00109", "why": "0.1ms 수치+의미", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00111", "why": "내비+제목+티저", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00118", "why": "비교 기준 명시 스펙", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s00124", "why": "DisplayPort·HDMI 지원 사실", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s00127", "why": "모호한 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00134", "why": "회사 소개 보일러플레이트", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00140", "why": "내비/UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00141", "why": "제목+네비 혼합 뉴스레터", "citable": "n", "definition": "n", "summary": "y"}
+{"id": "s00140", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00141", "why": "출처 명시 설문 결과 요약 블록", "citable": "n", "definition": "n", "summary": "y"}
 {"id": "s00156", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00162", "why": "면책 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00176", "why": "출처 없는 설문 조각", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00178", "why": "0.1ms 수치+의미", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s00180", "why": "기능 홍보", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00178", "why": "0.1ms 수치 의미", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00180", "why": "기능명+2배 수치", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s00191", "why": "보증 기간", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00192", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00194", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00208", "why": "할인 프로모션", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00209", "why": "폼 UI", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00219", "why": "제품 사실+마케팅", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00219", "why": "제목+스펙 혼합", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00224", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00230", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00233", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00235", "why": "지시", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00240", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00235", "why": "지시문", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00240", "why": "구체적 기술 설명", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s00243", "why": "비교 기준 각주", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00246", "why": "39dB 수치+의미", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s00249", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00256", "why": "2006 연도·수치 명시 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00256", "why": "출처 있는 수치 사실", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s00268", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00281", "why": "홈 내비+프로모션", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00281", "why": "홈 내비+마케팅 혼합", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00285", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00299", "why": "UL 인증+의미", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s00305", "why": "제품명+3시간·30분 구체 수치", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00299", "why": "UL 인증 인증 효과 구체 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00305", "why": "3시간·3시간 구체 수치", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s00327", "why": "설치 지시", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00330", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00332", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00334", "why": "각주 면책", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00339", "why": "마케팅 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00341", "why": "법적 고지", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00344", "why": "설정 지시", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00349", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00359", "why": "모호한 장점 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00371", "why": "막연한 홍보", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00375", "why": "모호한 기술 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00378", "why": "UL 검증 인증", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s00381", "why": "각주 고지", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00384", "why": "사용 권고", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00390", "why": "기능명+구체 작동", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00344", "why": "설치 지시", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00349", "why": "홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00359", "why": "마케팅 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00371", "why": "마케팅 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00375", "why": "5G 속도 수치", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00378", "why": "UL 검증 인증 명시", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00381", "why": "법적 고지", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00384", "why": "설치 조언", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00390", "why": "기능명+작동 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s00394", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00395", "why": "CTA+슬로건", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00400", "why": "회사 소개 보일러플레이트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00406", "why": "주어 없는 추천 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00407", "why": "핵심사양 블록, 구체 항목", "citable": "n", "definition": "n", "summary": "y"}
+{"id": "s00407", "why": "핵심사양 블록, UI 혼합", "citable": "n", "definition": "n", "summary": "y"}
 {"id": "s00408", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00415", "why": "일반 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00428", "why": "제품 유형 정의", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00431", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00433", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00433", "why": "프로모션 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00434", "why": "설치 지시문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00435", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00440", "why": "마케팅 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00444", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00445", "why": "홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00461", "why": "4K UHD+1ms 구체 스펙", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00461", "why": "4K UHD+1ms GtG 스펙", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s00465", "why": "사용 권고", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00469", "why": "제품 유형+구체 기능 사실", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s00472", "why": "홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00469", "why": "제품 유형+구체 기능 사실", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s00472", "why": "행동 유도 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00482", "why": "설정 기준·동작 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00486", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00490", "why": "마케팅 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00503", "why": "슬로건", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00518", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00518", "why": "모호한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00536", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00541", "why": "스펙 조각", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00541", "why": "스펙표 조각", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00547", "why": "스펙표 조각", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00548", "why": "인용 발언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00550", "why": "보증 기간+마케팅", "citable": "n", "definition": "n", "summary": "n"}
@@ -111,373 +111,373 @@
 {"id": "s00573", "why": "지원 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00585", "why": "조작 지시", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00586", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00587", "why": "주어 없는 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00598", "why": "배터리 용량 수치", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00587", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00598", "why": "18.5시간 구체 수치", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s00605", "why": "출처 명시 사실", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00606", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00607", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00609", "why": "표본 수·오류 범위", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s00618", "why": "모호한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00623", "why": "사용 조언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00627", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00630", "why": "인용 발언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00634", "why": "제3자 검증 인증기관·날짜 명시", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00609", "why": "표본 수·오차 수치", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00618", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00623", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00627", "why": "막연한 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00630", "why": "출처 없는 찬사", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00634", "why": "제3자 검증기관·날짜 명시 사실", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s00642", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00649", "why": "슬로건", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00649", "why": "마케팅 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00660", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00670", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00670", "why": "프로모션 조건", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00671", "why": "할부/배송 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00674", "why": "제품 유형+구체 기능 사실", "citable": "y", "definition": "y", "summary": "n"}
-{"id": "s00677", "why": "모호한 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00677", "why": "기술 동작 설명", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s00687", "why": "주어 없는 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00691", "why": "모호한 기능 사실", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00699", "why": "회사 연혁 보일러플레이트", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00691", "why": "구체 기능 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00699", "why": "출처 없는 회사 소개", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00702", "why": "기술 원리 설명", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s00704", "why": "설치 지시", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00706", "why": "기술 동작 설명", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s00708", "why": "제목+헤드라인 혼합", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00712", "why": "막연한 홍보", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00716", "why": "명명 기준 수치 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00708", "why": "제목+헤드라인+티저", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00712", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00716", "why": "명명 기준 각주", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s00719", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00728", "why": "비교 기준 각주", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00738", "why": "주요사양 블록", "citable": "n", "definition": "n", "summary": "y"}
+{"id": "s00738", "why": "주요사양 블록, 구체 항목", "citable": "y", "definition": "y", "summary": "y"}
 {"id": "s00739", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00743", "why": "각주 면책", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00764", "why": "보도자료 보일러 사실", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00771", "why": "스펙 수치 명시 사실", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s00774", "why": "홈 배너+슬로건", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00775", "why": "보도자료 제목+날짜", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00776", "why": "회사 연락처", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00774", "why": "제품명+인증 명+스펙", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00775", "why": "보도자료 제목+날짜+제목+티저", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00776", "why": "회사 소개 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00779", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00780", "why": "인용 수상", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00784", "why": "제목+20% 수치", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s00786", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00802", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00807", "why": "시험기관·방식 각주", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00815", "why": "제품 유형이 무엇인지 설명", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00817", "why": "각주+UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00820", "why": "네비+파일 경로", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00822", "why": "보도자료 인용 발언", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00807", "why": "제3자 검증 시험 결과", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00815", "why": "제품 유형이 무엇인지 정의", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00817", "why": "각주+각주 조각", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00820", "why": "보도자료 제목+파일 경로", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00822", "why": "인용 발언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00823", "why": "주어 없는 일반 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00824", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00831", "why": "일반 논의", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00836", "why": "할인 프로모션", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00831", "why": "인증 기준+구체 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s00836", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00839", "why": "연락처/UI", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00840", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00842", "why": "회사 소개 보일러리스 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00845", "why": "홈 내비+네비 혼합", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00853", "why": "스펙표 조각", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00860", "why": "HGiG가 무엇인지 정의", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00842", "why": "회사 소개 보일러플레이트", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00845", "why": "출처 명시 수상", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00853", "why": "스펙표 조각 혼합", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00860", "why": "HGiG가 무엇인지 정의", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s00867", "why": "UL 검증 인증 명시", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s00870", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00873", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00870", "why": "할인 프로모션", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00873", "why": "프로모션 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00880", "why": "안내 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00886", "why": "색역 수치+비교 기준", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s00889", "why": "모호한 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00886", "why": "색역 수치 명시", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00889", "why": "주어 없는 일반 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00892", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00893", "why": "폼 UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00893", "why": "폼 UI", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00895", "why": "시스템 메시지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00904", "why": "홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00909", "why": "UI 동작 조건", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00919", "why": "명령형 기능 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00909", "why": "프로모션 조건", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00919", "why": "기능명+작동 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s00921", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00924", "why": "결제 알림 UI", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00926", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00934", "why": "홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00940", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00962", "why": "제품명+주요 구성 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00940", "why": "사용 조언", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00962", "why": "88% 수치+주어 불명", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s00966", "why": "슬로건", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00967", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00967", "why": "제목+질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00970", "why": "기능명+동작 설명", "citable": "y", "definition": "y", "summary": "n"}
-{"id": "s00973", "why": "명명 규격+색역 수치", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s00974", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00978", "why": "시험기관 명시", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00973", "why": "명명 인증+90% 색역 수치", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00974", "why": "막연한 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00978", "why": "시험기관 보일러플레이트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s00981", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s00985", "why": "제품 유형별 효익 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00985", "why": "제품 구성 원리 설명", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s00998", "why": "조작 지시", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01006", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01008", "why": "연식·수치 명시 사실", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s01016", "why": "BT·VRR·Motion Booster 스펙+마케팅", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s01031", "why": "제품 유형이 무엇인지 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s01008", "why": "명명 기준 수치 사실", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s01016", "why": "BT·165Hz·VRR·Motion Booster 스펙+의미", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01031", "why": "기술 유형 정의+구체적 기술 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s01035", "why": "제휴 사실", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s01037", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01040", "why": "연락처/UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01050", "why": "'X는 ~를' 정의", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01050", "why": "명령형 기술 설명", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s01052", "why": "할인 프로모션", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01054", "why": "각주 제약", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01060", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01069", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01078", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01079", "why": "보도자료 제목+날짜", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01079", "why": "보도자료 제목+네비", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01082", "why": "프로모션 조건", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01090", "why": "내비+질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01092", "why": "회사 소개 보일러플레이트", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01095", "why": "시험 기준 명시 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01090", "why": "내비게이션 텍스트", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01092", "why": "회사 소개 보일러플레이트", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s01095", "why": "비교 기준 명시 사실", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s01096", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01098", "why": "기술 원리 설명", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s01101", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01102", "why": "모델·배터리 용량 사실", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s01105", "why": "제품 유형별 추천 온도 사실", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s01110", "why": "제품명 없는 수치", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s01112", "why": "제품 유형+구체 사실", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s01117", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01118", "why": "각주 표준+실험 방법", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01125", "why": "날짜+UI", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01126", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01143", "why": "스펙+마케팅 혼합", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01105", "why": "3°C·(-18°C) 권고 조언", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01110", "why": "4~6배 수치", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01112", "why": "비교 기준 명시 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01117", "why": "CTA/UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01118", "why": "각주 표준+각주 결과", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01125", "why": "보도자료 제목+날짜", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01126", "why": "사용 조언", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01143", "why": "제목+스펙+배너 혼합", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01146", "why": "각주 적용 범위", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01152", "why": "사용 조언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01168", "why": "각주 기준 각주", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01172", "why": "제품 유형+명칭 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01168", "why": "시험 기준 각주", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01172", "why": "제품 유형+240Hz 스펙 사실", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s01182", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01186", "why": "사용 권고", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01186", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01192", "why": "스펙+마케팅 혼합", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01200", "why": "홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01200", "why": "홈 내비+마케팅", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01201", "why": "슬로건", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01210", "why": "조작 지시문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01212", "why": "스펙+슬로건", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01212", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01214", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01219", "why": "출처 명시 수상", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s01233", "why": "제목+마케팅", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01236", "why": "제품 유형+구체 스펙", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s01245", "why": "제품 유형 소개", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01251", "why": "시험 결과 각주", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01254", "why": "제품+UI 개발 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01233", "why": "마케팅 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01236", "why": "제품 유형+구체 기능 목록", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s01245", "why": "제품 유형+마케팅", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01251", "why": "시험 방법 각주", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01254", "why": "UI 개발 사실", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s01258", "why": "할부 조건", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01267", "why": "내비+마케팅 혼합", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01278", "why": "핵심사양 블록, 구체 항목", "citable": "n", "definition": "n", "summary": "y"}
+{"id": "s01267", "why": "주어 없는 혜택 항목", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01278", "why": "핵심사양 블록, UI 혼합", "citable": "n", "definition": "n", "summary": "y"}
 {"id": "s01286", "why": "제목+일반 도입", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01289", "why": "명명 스펙+제품 유형", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01289", "why": "구체 스펙 수치", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s01294", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01296", "why": "출처 없는 수상", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01297", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01303", "why": "스펙표 조각", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01304", "why": "연락처", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01315", "why": "기술 원리 설명", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s01316", "why": "제품 유형 특성 서술", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01321", "why": "'X는 ~를 하는 기술' 정의", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s01315", "why": "기술 원리 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s01316", "why": "구체 사양+주어 it", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01321", "why": "기술 원리 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s01323", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01330", "why": "제3자 검증 기준 명시", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s01336", "why": "관리 조언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01340", "why": "제약 조언", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01340", "why": "제약 조건", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01343", "why": "할부/프로모션", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01344", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01344", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01349", "why": "기업 비전 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01354", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01356", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01366", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01369", "why": "제품 유형별 동작 범위 사실", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s01371", "why": "주요기능 블록, 구체 항목", "citable": "n", "definition": "n", "summary": "y"}
-{"id": "s01373", "why": "스펙 수치+명시 사실", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s01378", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01369", "why": "700~1200W 구체 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01371", "why": "메뉴 나열", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01373", "why": "스펙 수치+명명 기준", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01378", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01379", "why": "출처 없는 평가", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01384", "why": "제품명+배터리·시간 사실", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s01389", "why": "표준·모드·구체 기준", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01384", "why": "제품명+배터리 30시간 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01389", "why": "표준·조건 명시 인증", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s01407", "why": "배터리·Vapour Chamber 구체 스펙", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s01408", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01415", "why": "UL 검증·IDMS·200~500루멘", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s01423", "why": "기술명+구체 동작", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01415", "why": "UL 검증 인증+IDMS 11.5 IDMS 인증", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01423", "why": "기능명+구체 동작 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s01425", "why": "등록 알림", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01426", "why": "UI", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01428", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01438", "why": "막연한 홍보", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01438", "why": "마케팅 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01448", "why": "사용 권고", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01449", "why": "동작 제한 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01450", "why": "보도자료 보일러플레이트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01451", "why": "제품 사실+마케팅", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01454", "why": "제품 유형 정의", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01461", "why": "보증 기간", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01454", "why": "제품 유형 소개", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01461", "why": "보증 조건", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01463", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01465", "why": "일반 설명", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01469", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01470", "why": "할부 조건", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01480", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01480", "why": "피드백 UI", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01489", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01490", "why": "마케팅 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01491", "why": "용량 수치", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01491", "why": "용량 스펙", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s01494", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01495", "why": "가격·판매 사실", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01497", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01495", "why": "가격·가성비 사실", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01497", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01504", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01523", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01526", "why": "'X는 ~형식' 정의", "citable": "n", "definition": "y", "summary": "n"}
+{"id": "s01526", "why": "주어 없는 일반 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01533", "why": "프로모션 기한", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01542", "why": "시험 기준 각주", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01544", "why": "UL 인증+명령형 마케팅", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01542", "why": "시험기관·날짜·대상 각주", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01544", "why": "UL 인증+마케팅", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01549", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01550", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01550", "why": "할인 프로모션", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01552", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01554", "why": "비교표 조각", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01559", "why": "연결 회사 수·수치 명시 사실", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s01563", "why": "프로젝트 계약 조각", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01564", "why": "사양 요약 블록", "citable": "n", "definition": "n", "summary": "y"}
-{"id": "s01576", "why": "모호한 홍보", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01554", "why": "비교표 텍스트 혼합", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01559", "why": "연도·수치 명시 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01563", "why": "프로모션 기한", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01564", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01576", "why": "홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01583", "why": "기업 소개 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01616", "why": "기업 소개 보일러플레이트", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01617", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01617", "why": "막연한 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01618", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01622", "why": "출처 없는 수상 사실", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01622", "why": "출처 명시 수상 사실", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s01630", "why": "비교 기준 각주", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01639", "why": "일반 논평", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01642", "why": "단편 조각", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01644", "why": "할부/프로모션", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01655", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01644", "why": "할부/프로모션 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01655", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01659", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01663", "why": "스펙표 조각", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01663", "why": "스펙표 조각 혼합", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01667", "why": "프로모션 약관", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01669", "why": "주어 없는 일반 서술", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01673", "why": "출처 없는 인용+마케팅", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01678", "why": "주어 없는 홍보 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01673", "why": "뉴스레터 제목+마케팅", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01678", "why": "주어 없는 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01680", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01683", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01693", "why": "보도자료 보일러플레이트", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01693", "why": "제목+회사 소개", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01701", "why": "비교 기준 각주", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01703", "why": "모호한 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01704", "why": "RFID 모듈 구체 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01704", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01706", "why": "조작 지시문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01709", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01722", "why": "할부/UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01722", "why": "할인 프로모션", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01727", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01729", "why": "일반 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01737", "why": "주어 this, 홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01738", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01748", "why": "마케팅 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01748", "why": "홍보 CTA", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01755", "why": "주어 this, 홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01767", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01770", "why": "핵심사양 블록, 구체 항목", "citable": "y", "definition": "n", "summary": "y"}
-{"id": "s01775", "why": "주어 없는 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01775", "why": "주어 없는 추천 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01789", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01797", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01815", "why": "프로모션 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01817", "why": "할부 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01819", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01827", "why": "'X는 ~를' 정의", "citable": "n", "definition": "y", "summary": "n"}
-{"id": "s01831", "why": "주요사양 블록, 구체 항목", "citable": "n", "definition": "y", "summary": "y"}
+{"id": "s01819", "why": "문장 조각", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01827", "why": "주어 없는 일반 설명", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01831", "why": "주요사양 블록, 구체 항목", "citable": "n", "definition": "n", "summary": "y"}
 {"id": "s01836", "why": "시장 전망 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01841", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01848", "why": "비교 기준 각주", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01855", "why": "기술 원리 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s01855", "why": "UVnano™가 무엇인지 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s01856", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01859", "why": "슬로건", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01864", "why": "프로모션 약관", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01864", "why": "프로모션 조건", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01867", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01870", "why": "네비게이션 홍보", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01874", "why": "제3자 검증 인증기관·색상 기준 명시", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s01877", "why": "G-Sync·FreeSync 인증+주사율 스펙", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01870", "why": "홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01874", "why": "제3자 검증 인증기관·색상·색점 명시", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01877", "why": "VRR·165Hz·G-Sync·FreeSync 인증", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s01878", "why": "할부/금융 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01879", "why": "회사 소개 보일러플레이트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01894", "why": "제목+마케팅", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01906", "why": "내비+질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01909", "why": "스펙 요약 블록", "citable": "n", "definition": "n", "summary": "y"}
-{"id": "s01915", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01923", "why": "설정 권고", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01930", "why": "프로모션 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01935", "why": "가족용 카드", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01906", "why": "내비게이션 텍스트", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01909", "why": "스펙표 UI 혼합", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01915", "why": "할인 프로모션", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01923", "why": "설정 권고 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01930", "why": "배송 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01935", "why": "가격 조각", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01937", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01942", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01944", "why": "주어 없는 일반 서술", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01945", "why": "문장 조각", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01944", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01945", "why": "슬로건", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01954", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01968", "why": "안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01969", "why": "출처 없는 보도 사실", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01973", "why": "모호한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01969", "why": "출시 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01973", "why": "모호한 장점 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01978", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01979", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s01980", "why": "기능명+10% 수치", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01980", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s01986", "why": "UL 검증 인증 명시", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s01996", "why": "모델명+UHD 4K 지원 사실", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s10007", "why": "주어 that, 막연 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10007", "why": "주어 that, 막연한 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10015", "why": "일반 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10016", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10019", "why": "지원 CTA", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10028", "why": "마케팅 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10028", "why": "마케팅 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10032", "why": "인용 발언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10033", "why": "제품군 소개 리드", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10033", "why": "제품 유형+구체 사실", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s10042", "why": "마케팅 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10045", "why": "제목+마케팅", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10045", "why": "홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10056", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10070", "why": "디자인 마케팅", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10070", "why": "디자인 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10084", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10086", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10096", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10111", "why": "모호한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10112", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10121", "why": "프로모션 약관", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10112", "why": "주어 없는 일반 서술", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10121", "why": "법적 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10123", "why": "제품군 소개 보일러플레이트", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10125", "why": "페이지 내용 소개 리드", "citable": "n", "definition": "n", "summary": "y"}
+{"id": "s10125", "why": "내비+마케팅", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10128", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10133", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10140", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10141", "why": "프로모션 조건", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10146", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10147", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10150", "why": "주어 it, 모호", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10150", "why": "주어 it, 모호 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10161", "why": "설치 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10167", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10169", "why": "마케팅 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10172", "why": "'X는 ~를 무엇인지 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10172", "why": "기술 원리 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s10175", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10185", "why": "주어 없는 일반 서술", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10185", "why": "주어 없는 일반 논평", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10186", "why": "할부/프로모션", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10190", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10197", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10198", "why": "일반 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10205", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10211", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10212", "why": "스펙+UI 텍스트 혼합", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10212", "why": "스마트기능 블록, UI 텍스트", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s10213", "why": "기능 동작 구체 설명", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s10214", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10218", "why": "막연트립 리모컨 홍보", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10228", "why": "'X는 ~프로모션' 정의", "citable": "y", "definition": "y", "summary": "n"}
-{"id": "s10231", "why": "'X는 ~를 뜻한다' 정의", "citable": "n", "definition": "y", "summary": "n"}
-{"id": "s10239", "why": "주어 없는 홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10214", "why": "마케팅 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10218", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10228", "why": "기능명+작동 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10231", "why": "제품 유형 정의", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10239", "why": "주어 없는 홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10247", "why": "홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10248", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10251", "why": "연락처", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10256", "why": "주어 these, 홍보 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10261", "why": "앱 기능 구체 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s10261", "why": "앱 기능 홍보", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10267", "why": "일반 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10270", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10271", "why": "인용 의견", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10274", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10275", "why": "홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10276", "why": "기업 소개 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10276", "why": "홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10285", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10293", "why": "마케팅 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10294", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10310", "why": "프로모션 절차", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10323", "why": "프로모션 단계", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10330", "why": "동작 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10332", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10332", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10334", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10347", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10357", "why": "안내 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10362", "why": "할부 조건", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10366", "why": "막연한 홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10366", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10372", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10378", "why": "각주", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10379", "why": "일반 조언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10382", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10383", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10387", "why": "페이지 내용 소개 리드", "citable": "n", "definition": "n", "summary": "y"}
-{"id": "s10398", "why": "'X는 ~를 하는 모호한 혜택", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s10399", "why": "각주 요구 사양", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10400", "why": "일반 원인 설명", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10378", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10379", "why": "설정 조언", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10382", "why": "기능 동작 구체 사실", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10383", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10387", "why": "제목+질문", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10398", "why": "제품 유형 정의+구체 작동 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10399", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10400", "why": "일반 설명", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10401", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10404", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10410", "why": "일반 논평", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10411", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10412", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10414", "why": "감사 인용", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10417", "why": "스토리라인", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10427", "why": "문제 해결 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10430", "why": "보도자료 서술", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10414", "why": "감사 인사", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10417", "why": "슬로건", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10427", "why": "사용 주의 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10430", "why": "행동 유도 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10431", "why": "제품 유형이 무엇인지 설명", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10433", "why": "주어 없는 일반 설명", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10434", "why": "모호한 홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10436", "why": "지침 제목", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10437", "why": "프로모션/UI 나열", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10439", "why": "주어 this, 막연", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10439", "why": "사용 권고", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10448", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10449", "why": "사용 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10457", "why": "모호한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
@@ -485,7 +485,7 @@
 {"id": "s10460", "why": "홈 내비+프로모션", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10461", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10476", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10480", "why": "행사 서술", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10480", "why": "홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10492", "why": "스펙+UI 텍스트 혼합", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10496", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10501", "why": "슬로건", "citable": "n", "definition": "n", "summary": "n"}
@@ -494,32 +494,32 @@
 {"id": "s10537", "why": "할부/UI/프로모션", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10539", "why": "인용 의견", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10540", "why": "주어 these, 홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10543", "why": "주어 that, 홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10543", "why": "주어 that, 조각", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10544", "why": "제품이 무엇인지 설명", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s10546", "why": "제품군 소개", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10547", "why": "일반론", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10550", "why": "프로모션 약관", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10559", "why": "연락처/UI", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10560", "why": "제목+마케팅", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10561", "why": "피드백", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10573", "why": "내비게이션 홍보", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10560", "why": "제목+슬로건", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10561", "why": "문장 조각", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10573", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10581", "why": "모호한 장점 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10583", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10583", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10585", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10600", "why": "'X는 ~를 하는 기능'}", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10600", "why": "기능명+동작 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s10601", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10605", "why": "홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10608", "why": "프로모션 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10617", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10622", "why": "관리 조언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10631", "why": "내비게이션 서술", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10631", "why": "홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10634", "why": "기술 원리 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s10645", "why": "일반 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10648", "why": "문장 조각", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10652", "why": "홈 내비+프로모션", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10654", "why": "사용 권유", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10654", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10658", "why": "프로모션 요구 사양", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10669", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10669", "why": "제목+질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10674", "why": "출처 없는 인용 발언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10675", "why": "일반 설명", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10677", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
@@ -527,37 +527,37 @@
 {"id": "s10691", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10695", "why": "일반 설명", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10699", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10703", "why": "보도자료 인용+제목", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10709", "why": "시장 분위기 서술", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10713", "why": "멤버십 프로모션", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10715", "why": "UI 동작 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10703", "why": "보도자료 제목+날짜", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10709", "why": "시장 전망 서술", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10713", "why": "멤버십 홍보", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10715", "why": "UI 설명", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10716", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10723", "why": "주어 this, 막연", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10723", "why": "주어 this, 설명", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10729", "why": "일반 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10736", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10737", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10741", "why": "설정 주의 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10737", "why": "피드백 UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10741", "why": "사용 주의 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10744", "why": "인용 의견", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10750", "why": "명명 기능+구체 설명", "citable": "y", "definition": "y", "summary": "n"}
-{"id": "s10759", "why": "서비스 정의+구체 사실", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10750", "why": "기술 원리 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10759", "why": "LG Channels가 무엇인지 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s10767", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10770", "why": "사용 권고", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10778", "why": "제품 유형+구체 기능 사실", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s10783", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10787", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10788", "why": "내비게이션", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10794", "why": "기술명+구체 작동 설명", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s10794", "why": "기술명+작동 원리 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s10800", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10803", "why": "앱 기능 구체 사실", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s10806", "why": "'X는 ~를 뜻한다' 정의", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10803", "why": "앱 기능 구체 사실", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10806", "why": "X는 ~를 뜻한다 정의", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s10810", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10818", "why": "설치 지시", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10825", "why": "연락처 UI", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10829", "why": "안내 지시", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10833", "why": "주어 없는 일반 설명", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10825", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10829", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10833", "why": "주어 불명, 막연", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10834", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10836", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10838", "why": "각주 고지", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10838", "why": "주어 없는 일반 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10843", "why": "주어 this, 막연", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10844", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10857", "why": "모호한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
@@ -565,92 +565,92 @@
 {"id": "s10876", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10883", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10884", "why": "뉴스레터 CTA", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10885", "why": "'X는 ~프로모션' 정의", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10885", "why": "제품 유형이 무엇인지 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s10892", "why": "설정 팁", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10894", "why": "할부/프로모션", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10901", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10913", "why": "주어 this, 문맥 의존", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10913", "why": "주어 this, 막연", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10920", "why": "인증기관 명시", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s10924", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10926", "why": "배송 프로모션", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10927", "why": "모호한 홍보", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10926", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10927", "why": "마케팅 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10930", "why": "마케팅 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10939", "why": "마케팅 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10947", "why": "조작 지시문", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10947", "why": "조작 지시", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10953", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10955", "why": "각주 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10963", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10970", "why": "제품 유형 특성 사실", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10970", "why": "제품 유형 없는 설계 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10973", "why": "배송 약관", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10979", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10979", "why": "홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10983", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s10991", "why": "페이지 제목", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10991", "why": "시스템 메시지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s10995", "why": "홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11000", "why": "설정 지시", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11001", "why": "'X는 ~를 하는 X' 정의", "citable": "n", "definition": "y", "summary": "n"}
-{"id": "s11003", "why": "모호한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11000", "why": "설치 조언", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11001", "why": "제품 유형 정의", "citable": "n", "definition": "y", "summary": "n"}
+{"id": "s11003", "why": "마케팅 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11010", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11014", "why": "DisplayPort 2.1 규격 사실", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s11016", "why": "기능명+동작 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s11017", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11019", "why": "조작 지시", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11020", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11023", "why": "기업 슬로건", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11023", "why": "인용+슬로건", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11024", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11030", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11034", "why": "배송 약관", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11035", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11058", "why": "주어 없는 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11058", "why": "사용 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11069", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11087", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11091", "why": "마케팅 서술", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11091", "why": "마케팅 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11094", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11096", "why": "비교 기준 명시 수치", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s11103", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11106", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11112", "why": "주요사양 블록, 구체 항목", "citable": "n", "definition": "n", "summary": "y"}
-{"id": "s11113", "why": "주어 없는 홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11112", "why": "주요사양 블록, 구체 항목", "citable": "y", "definition": "n", "summary": "y"}
+{"id": "s11113", "why": "모호한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11117", "why": "네비/UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11125", "why": "모호한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11125", "why": "주어 없는 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11126", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11127", "why": "UI", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11128", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11127", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11128", "why": "주어 this, 막연", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11129", "why": "마케팅 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11136", "why": "연락처/UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11141", "why": "CTA/UI", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11142", "why": "기능명+작동 설명", "citable": "y", "definition": "y", "summary": "n"}
-{"id": "s11160", "why": "주어 없는 일반 서술", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11163", "why": "기술 원리 설명", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s11165", "why": "기술 원리 설명", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s11167", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11160", "why": "주어 없는 일반 설명", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11163", "why": "기술 원리 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s11165", "why": "기술 원리 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s11167", "why": "홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11177", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11180", "why": "프로세서+메모리 스펙", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s11184", "why": "기업 소개 보일러플레이트", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11185", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11190", "why": "사용 권장 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11185", "why": "프로모션/네비", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11190", "why": "사용 권장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11205", "why": "주의 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11209", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11215", "why": "주어 it, 일반 서술", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11217", "why": "기능명+작동 설명", "citable": "y", "definition": "y", "summary": "n"}
-{"id": "s11234", "why": "제품 구성 요약", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s11236", "why": "설치 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11239", "why": "각주 고지", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11242", "why": "프로모션 약관", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11244", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11217", "why": "용어 정의", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s11234", "why": "제품 구성 구체 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s11236", "why": "설치 조언", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11239", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11242", "why": "쿠폰 약관", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11244", "why": "CTA/UI", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11254", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11257", "why": "조작 지시", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11263", "why": "설정 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11257", "why": "조작 지시문", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11263", "why": "설치 주의 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11267", "why": "주어 없는 일반 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11268", "why": "주어 this, 홍보 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11278", "why": "서비스 홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11283", "why": "홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11286", "why": "'X는 ~스ys' 정의", "citable": "y", "definition": "y", "summary": "n"}
-{"id": "s11288", "why": "제품 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s11286", "why": "제품 유형이 무엇인지 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s11288", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11291", "why": "UI 알림", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11293", "why": "슬로건", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11294", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11296", "why": "제목+마케팅", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11297", "why": "제품 동작 구체 설명", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s11294", "why": "주어 없는 일반 조언", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11296", "why": "마케팅 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11297", "why": "6MotionDD 기능 구체 사실", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s11299", "why": "관리 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11302", "why": "슬로건", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11303", "why": "법적 약관", "citable": "n", "definition": "n", "summary": "n"}
@@ -661,37 +661,37 @@
 {"id": "s11328", "why": "디자인 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11334", "why": "각주 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11335", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11336", "why": "사용 권고", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11340", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11336", "why": "사용 권고 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11340", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11343", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11345", "why": "UI", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11351", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11353", "why": "기능 홍보", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11357", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11368", "why": "주어 this, 막연", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11376", "why": "마케팅 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11378", "why": "출처 명시 수상 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s11376", "why": "마케팅 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11378", "why": "출처 명시 수상", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s11379", "why": "폼 UI", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11400", "why": "주어 없는 일반 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11408", "why": "기술 원리 설명", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s11400", "why": "주의 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11408", "why": "기술 원리 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s11412", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11424", "why": "지시문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11433", "why": "주어 this, 홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11438", "why": "감상자 서술", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11438", "why": "감상자의 시선 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11443", "why": "할부/프로모션 조건", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11445", "why": "프로모션 혜택", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11445", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11450", "why": "제목+티저", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11452", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11458", "why": "AIDD® 동작 원리 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s11458", "why": "AIDD®가 무엇인지 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s11459", "why": "배송 약관", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11462", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11462", "why": "설정 지시", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11468", "why": "금융 약관", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11469", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11473", "why": "법적 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11482", "why": "보안 프로모션", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11484", "why": "주어 없는 홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11491", "why": "디자인 홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11493", "why": "설정 팁", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11484", "why": "주어 it, 홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11491", "why": "디자인 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11493", "why": "설정 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11494", "why": "기술 원리 설명", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s11499", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11501", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
@@ -699,76 +699,76 @@
 {"id": "s11512", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11521", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11525", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11526", "why": "홈 내비+마케팅", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11526", "why": "홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11532", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11533", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11553", "why": "제품 유형별 구체 사실", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s11555", "why": "주어 today, 홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11562", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11564", "why": "면책 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11569", "why": "페이지 전체 내용 소개 리드", "citable": "n", "definition": "n", "summary": "y"}
+{"id": "s11569", "why": "안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11575", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11578", "why": "디자인 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11583", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11584", "why": "설치 지시", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11603", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11604", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11604", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11606", "why": "슬로건", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11615", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11616", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11616", "why": "질문+슬로건", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11618", "why": "각주 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11619", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11626", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11627", "why": "각주", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11627", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11632", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11647", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11662", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11670", "why": "폼 UI", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11671", "why": "제품 유형 정의", "citable": "n", "definition": "y", "summary": "n"}
+{"id": "s11671", "why": "제품 유형 정의", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s11673", "why": "회사 소개 보일러플레이트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11679", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11682", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11685", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11688", "why": "마케팅 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11689", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11691", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11691", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11704", "why": "내비게이션 나열", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11707", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11709", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11709", "why": "안내 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11710", "why": "슬로건", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11711", "why": "슬로건", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11713", "why": "모호한 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11713", "why": "모델명+인텔·13세대 명시", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s11714", "why": "마케팅 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11718", "why": "비교 기준 각주", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11721", "why": "기능 설명", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11722", "why": "각주 고지", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11727", "why": "제품 유형이 무엇인지 설명", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11734", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11721", "why": "기능명+작동 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s11722", "why": "각주", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11727", "why": "주어 없는 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11734", "why": "사용 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11736", "why": "안내 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11742", "why": "연락처/UI", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11749", "why": "안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11749", "why": "안내 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11754", "why": "주어 없는 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11760", "why": "피드백", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11765", "why": "기능명+작동 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s11760", "why": "피드백 UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11765", "why": "기능명+동작 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s11767", "why": "각주 고지", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11769", "why": "'X는 ~ clean' 정의", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s11769", "why": "기능명+동작 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s11770", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11773", "why": "설치 조언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11787", "why": "제품명+기술 사실", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s11788", "why": "홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11787", "why": "구체 기술 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s11788", "why": "내비+마케팅", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11801", "why": "문장 조각", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11804", "why": "슬로건", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11822", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11822", "why": "사용 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11823", "why": "설치 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11827", "why": "시스템 메시지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11832", "why": "배송 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11834", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11836", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11842", "why": "인용 발언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11844", "why": "조건 각주", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11844", "why": "조건 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11858", "why": "회사 소개 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11862", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11865", "why": "제품 유형+구체 기능 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s11862", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11865", "why": "제품 유형+구체 기능 사실", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s11867", "why": "조작 지시", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11878", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11882", "why": "내비+홍보", "citable": "n", "definition": "n", "summary": "n"}
@@ -777,42 +777,42 @@
 {"id": "s11896", "why": "주어 없는 일반 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11900", "why": "주어 없는 일반 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11902", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11909", "why": "지시", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11909", "why": "지시문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11919", "why": "쿠폰 약관", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11925", "why": "홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11926", "why": "프로모션 약관", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11926", "why": "프로모션 조건", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11930", "why": "폼 UI", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11933", "why": "모호한 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11934", "why": "사용 조언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11947", "why": "인용 발언", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11933", "why": "모호한 효익 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11934", "why": "슬로건", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11947", "why": "인터뷰 인용+홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11952", "why": "인증기관+시험 결과", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s11954", "why": "할인 프로모션", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11959", "why": "막연한 찬사", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11970", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11959", "why": "막연한 홍보", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11970", "why": "면책 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11974", "why": "행사 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s11977", "why": "프로모션 약관", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s11983", "why": "금융 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11983", "why": "연락처 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12000", "why": "홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12001", "why": "일반 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12004", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12005", "why": "내비+회사 소개 제목", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12007", "why": "기술 원리 설명", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s12007", "why": "제품 유형+기능 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s12008", "why": "일반 설명", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12009", "why": "제품 유형 정의", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12009", "why": "제품 유형 정의", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s12016", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12026", "why": "사용 조언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12028", "why": "주어 없는 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12029", "why": "마케팅 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12033", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12028", "why": "기술 원리 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12029", "why": "사용 조언", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12033", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12036", "why": "주어 this, 막연", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12040", "why": "안내 지시", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12040", "why": "안내 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12047", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12055", "why": "주어 they, 모호", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12063", "why": "홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12068", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12069", "why": "각주 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12081", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12090", "why": "보도자료 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12090", "why": "보도자료 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12096", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12098", "why": "시장 전망", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12116", "why": "서비스 약관", "citable": "n", "definition": "n", "summary": "n"}
@@ -820,59 +820,59 @@
 {"id": "s12123", "why": "홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12125", "why": "법적 약관", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12126", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12135", "why": "주어 불명 일반 서술", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12135", "why": "주어 없는 일반 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12145", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12158", "why": "주어 it, 홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12160", "why": "주어 없는 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12164", "why": "기능 동작 구체 설명", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s12170", "why": "기술 원리 설명", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s12164", "why": "기능명+동작 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12170", "why": "기술 원리 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s12180", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12182", "why": "내비게이션 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12188", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12190", "why": "프로모션 UI", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12202", "why": "내비게이션 텍스트", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12202", "why": "내비게이션", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12203", "why": "주어 없는 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12207", "why": "각주+UI", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12214", "why": "기능명+동작 설명", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s12214", "why": "기능명+동작 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s12217", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12221", "why": "쿠폰 약관", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12224", "why": "기사 제목+날짜선 혼합", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12240", "why": "제품명+인증 명시", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s12224", "why": "기사 제목+날짜+날짜라인", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12240", "why": "인증 명시 사실", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s12242", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12245", "why": "주어 these, 모호", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12245", "why": "기술 동작 구체 설명", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s12254", "why": "제목+마케팅 혼합", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12255", "why": "연락처/UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12259", "why": "설치 조언", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12255", "why": "연락처/UI 나열", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12259", "why": "사용 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12260", "why": "사용 주의 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12261", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12263", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12274", "why": "홈 내비+프로모션", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12275", "why": "주어 불명 일반 서술", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12282", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12274", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12275", "why": "주어 불명, 막연", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12282", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12283", "why": "문장 조각", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12287", "why": "주어 this, 막연", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12290", "why": "UI 상태 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12287", "why": "각주 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12290", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12292", "why": "내비게이션 텍스트", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12295", "why": "모호한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12295", "why": "홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12299", "why": "기술 원리 설명", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s12302", "why": "마케팅 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12305", "why": "모호한 효익 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12305", "why": "모호한 장점 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12318", "why": "핵심기능 블록, 구체 항목", "citable": "y", "definition": "n", "summary": "y"}
-{"id": "s12336", "why": "일반 조언", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12336", "why": "슬로건", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12337", "why": "주어 this, 홍보 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12351", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12353", "why": "멤버십 홍보", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12353", "why": "회원십 홍보", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12354", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12362", "why": "법적 고지", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12365", "why": "막연한 마케팅", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12362", "why": "법적 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12365", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12370", "why": "프로모션 약관", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12391", "why": "각주 고지", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12398", "why": "일반 설명", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12400", "why": "제품 유형·모델 사실", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s12405", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12413", "why": "UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12391", "why": "각주 제공", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12398", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12400", "why": "제품 유형+구체 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s12405", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12413", "why": "프로모션 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12428", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12430", "why": "'X는 ~인' 정의", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12430", "why": "제품 유형 정의", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s12435", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12436", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12444", "why": "폼 UI", "citable": "n", "definition": "n", "summary": "n"}
@@ -882,67 +882,67 @@
 {"id": "s12465", "why": "제목+마케팅", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12466", "why": "서비스 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12467", "why": "등록 알림", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12472", "why": "조작 지시문", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12472", "why": "조작 지시", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12479", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12480", "why": "각주", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12482", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12482", "why": "구체 동작 사실", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s12483", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12484", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12485", "why": "주어 없는 일반 설명", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12491", "why": "스펙표 조각", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12515", "why": "사용 권고", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12517", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12518", "why": "각주 문장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12518", "why": "각주 조각", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12526", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12535", "why": "모호한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12539", "why": "보증 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12544", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12557", "why": "'X'는 ~를 하는 기능", "citable": "y", "definition": "y", "summary": "n"}
-{"id": "s12560", "why": "각주+UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12557", "why": "기능명+동작 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12560", "why": "각주+면책", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12561", "why": "기술 원리 설명", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s12563", "why": "기업 전망 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12567", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12578", "why": "각주 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12581", "why": "주어 없는 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12583", "why": "법적 약관", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12586", "why": "조작 지시", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12586", "why": "조작 지시문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12589", "why": "일반 도입 문장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12593", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12595", "why": "주어 없는 홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12599", "why": "조작 지시", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12595", "why": "주어 없는 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12599", "why": "링크", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12602", "why": "프로모션/UI 나열", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12603", "why": "주어 es, 모호", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12616", "why": "주의 안내", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12625", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12628", "why": "면책 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12630", "why": "주어 this, 막연 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12631", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12628", "why": "일반 설명", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12630", "why": "주어 this, 막연", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12631", "why": "마케팅 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12633", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12642", "why": "설정 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12647", "why": "홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12642", "why": "일반 원인 설명", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12647", "why": "홍보 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12649", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12650", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12658", "why": "사용 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12661", "why": "회사 소개 제목", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12666", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12680", "why": "연락처+네비", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12680", "why": "연락처/UI 혼합", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12686", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12694", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12696", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12696", "why": "내비+질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12697", "why": "주어 없는 일반 설명", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12698", "why": "인용 발언+면책", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12698", "why": "인용 발언+출처", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12703", "why": "주어 it, 모호", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12708", "why": "구체적 기술 설명", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12708", "why": "주어 없는 일반 논평", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12716", "why": "프로모션/UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12719", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12720", "why": "마케팅 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12721", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12722", "why": "제품 유형이 무엇인지 설명", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12731", "why": "'X는 ~를 하는 기능'}", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12722", "why": "제품 유형+구체 기능 사실", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12731", "why": "ESP는 ~를 하는 기능", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s12733", "why": "모호한 일반 서술", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12740", "why": "청소 팁", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12743", "why": "제품 유형이 무엇인지 설명", "citable": "n", "definition": "y", "summary": "n"}
-{"id": "s12748", "why": "'X는 ~모터' 정의", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12740", "why": "사용 팁", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12743", "why": "제품 유형이 무엇인지 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12748", "why": "기술 원리 정의", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s12755", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12770", "why": "마케팅 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12773", "why": "관리 조언", "citable": "n", "definition": "n", "summary": "n"}
@@ -952,16 +952,16 @@
 {"id": "s12787", "why": "시험 방법 각주", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12788", "why": "제품 유형 설명", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12789", "why": "안내 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12790", "why": "'X는 ~포스터' 형식의 항목 블록", "citable": "y", "definition": "n", "summary": "y"}
-{"id": "s12793", "why": "안내 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12790", "why": "핵심사양 블록, 구체 항목", "citable": "y", "definition": "n", "summary": "y"}
+{"id": "s12793", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12813", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12815", "why": "주어 없는 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12815", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12819", "why": "프로모션 약관", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12820", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12821", "why": "회원십 홍보", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12825", "why": "스펙표+비교 요약", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12825", "why": "비교 기준 블록, 주요기능 블록", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12828", "why": "디자인 홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12831", "why": "내비게이션", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12831", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12832", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12838", "why": "시스템 메시지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12840", "why": "전망 논평", "citable": "n", "definition": "n", "summary": "n"}
@@ -973,35 +973,35 @@
 {"id": "s12870", "why": "주어 this, 막연", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12871", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12882", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12883", "why": "프로모션 약관", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12883", "why": "쿠폰 약관", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12908", "why": "주어 없는 일반 도입", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12912", "why": "모호한 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12919", "why": "기능 동작 설명", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s12912", "why": "마케팅 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12919", "why": "기능명+동작 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s12920", "why": "비교 기준 각주", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12922", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12924", "why": "할인 프로모션", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12929", "why": "문장 조각", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12922", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12924", "why": "프로모션", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12929", "why": "각주 단편", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12931", "why": "법적 약관", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12948", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12949", "why": "주어 this, 막연", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12963", "why": "제품 유형 없는 마케팅", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12964", "why": "X는 ~로 정의", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12949", "why": "주어 this, 모호", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12963", "why": "모호한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12964", "why": "명명 기관 정의", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s12985", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s12996", "why": "홈 내비+마케팅", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12996", "why": "홈 내비+마케팅 혼합", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12997", "why": "각주 면책", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s12999", "why": "구체 기술 사실", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s13000", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13000", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13002", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13011", "why": "홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13013", "why": "행동 유도 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13013", "why": "홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13018", "why": "사용 지시", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13019", "why": "제조사 명시 사실", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s13020", "why": "UI 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13019", "why": "제조사·제품 사실", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s13020", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13027", "why": "지시 제목", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13028", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13031", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13044", "why": "제품 사실 서술", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13051", "why": "제품 사실+홍보", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13031", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13044", "why": "제품 사실, 사실 없음", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13051", "why": "모호한 홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13052", "why": "구매 조언", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13053", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13056", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
@@ -1010,43 +1010,43 @@
 {"id": "s13080", "why": "인터뷰 의견", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13082", "why": "일반 논평", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13087", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13091", "why": "연락처+UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13091", "why": "연락처/UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13093", "why": "사용 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13097", "why": "기능명+구체 작동", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s13097", "why": "기능명+구체 작동 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s13101", "why": "홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13105", "why": "내비+홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13106", "why": "'X는 ~를 하는 것을 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s13105", "why": "내비+마케팅", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13106", "why": "기능명+동작 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s13107", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13108", "why": "면책 고지", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13110", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13123", "why": "사용 조언", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13124", "why": "날짜선/UI", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13125", "why": "문장 조각", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13127", "why": "각주 고지", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13131", "why": "보유 기술 설명", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13124", "why": "날짜선/UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13125", "why": "제목 조각", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13127", "why": "설정 안내", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13131", "why": "기업 전망 서술", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13132", "why": "주어 없는 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13135", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13148", "why": "제목+일반 설명", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13151", "why": "기술 원리 설명", "citable": "y", "definition": "n", "summary": "n"}
-{"id": "s13153", "why": "UI 동작 안내", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13163", "why": "기술 원리 설명", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s13148", "why": "제품 유형 정의", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s13151", "why": "기술 원리 설명", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s13153", "why": "UI 텍스트", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13163", "why": "기술 원리 설명", "citable": "y", "definition": "y", "summary": "n"}
 {"id": "s13174", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13176", "why": "기술 원리 설명", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s13176", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13184", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13189", "why": "제품 홍보 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13199", "why": "제목+일반 도입", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13200", "why": "주어 this, 막연 서술", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13200", "why": "주어 this, 시장 전망", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13204", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13207", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13209", "why": "각주 적용 범위", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13218", "why": "안내 문구", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13219", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13225", "why": "내비게이션 문구", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13226", "why": "제3자 검증 결과", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s13226", "why": "제3자 검증 수상", "citable": "y", "definition": "n", "summary": "n"}
 {"id": "s13237", "why": "사용 권고", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13239", "why": "주어 this, 막연 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13240", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13240", "why": "주어 없는 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13245", "why": "질문", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13252", "why": "막연한 혜택 주장", "citable": "n", "definition": "n", "summary": "n"}
-{"id": "s13256", "why": "사용 지시문", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13256", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
 {"id": "s13262", "why": "홈 내비+마케팅", "citable": "n", "definition": "n", "summary": "n"}
