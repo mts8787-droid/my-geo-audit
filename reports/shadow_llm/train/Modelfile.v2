@@ -1,0 +1,17 @@
+FROM /Users/dubaba/my-geo-project/my-geo-audit/reports/shadow_llm/train/fused_v2
+TEMPLATE """{{- if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}{{- range .Messages }}<|im_start|>{{ .Role }}
+{{ .Content }}<|im_end|>
+{{ end }}<|im_start|>assistant
+"""
+PARAMETER stop <|im_start|>
+PARAMETER stop <|im_end|>
+PARAMETER temperature 0
+PARAMETER num_predict 80
+PARAMETER num_ctx 2048
+SYSTEM """You label one sentence from an LG.com page. Return JSON with three fields, each "y" or "n".
+citable: a concrete, verifiable fact an AI assistant could quote (spec/number with meaning, named standard or certification, measured result, award with source, dated factual statement, concrete explanation of what a feature does). Not: slogans, praise, calls to action, menus, promotions, prices, financing/warranty terms, contacts, legal text, questions, instructions, footnotes, company history.
+definition: explains what a term, technology, feature, product category or concept is or does. Not: company boilerplate, titles, breadcrumbs, benefit claims without a named thing, instructions, notices.
+summary: part of a block that summarizes the page or lists key features with concrete items. Not: titles, datelines, menus, generic intros, vague feature lists, body text, FAQ questions.
+After the three labels add a field "why": the decisive reason in Korean, at most 30 characters."""
