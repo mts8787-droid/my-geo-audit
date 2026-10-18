@@ -383,12 +383,17 @@ def main():
     ap.add_argument("--types", default="",
                     help="지정 page_type 만 감사 (쉼표 구분, 예: support_troubleshoot). "
                          "타깃 재검수용 — 샘플·must_audit 모두 해당 타입으로 제한된다.")
+    ap.add_argument("--tag", default="",
+                    help="비정기 감사 식별자. 출력이 <code>_<tag>_<date>_run_*.json 이 되어 월간 run 과 "
+                         "섞이지 않는다(대시보드·리포트의 국가별 최신 run 선정에서 제외됨). 예: --tag ts")
     ap.add_argument("--local", action="store_true",
                     help="Render 대신 로컬 analyze_url(lightweight)로 감사. IP차단 국가(AU/IN) 우회용. /usr/bin/python3 필요.")
     args = ap.parse_args()
 
     code = args.code.lower()
     csv_path = os.path.join(HERE, "reports", f"lg_urls_{code}.csv")
+    # 비정기 감사는 run 파일 접두어를 <code>_<tag> 로 바꿔 월간 run 과 분리한다.
+    run_code = f"{code}_{args.tag.strip().lower()}" if args.tag.strip() else code
     urls = [r[0].strip() for r in csv.reader(open(csv_path)) if r and r[0].strip() != "url"]
     # sitemap에 공백/제어문자가 든 잘못된 URL이 섞이면 Render bulk가 청크 전체를
     # 400 처리(50건 동반 거부)한다 → 사전 제거.
@@ -414,12 +419,12 @@ def main():
     # (2026-08-30 배치에서 US/UK/AU/IN 만 08-29 로 기록됐다).
     date = os.environ.get("AUDIT_RUN_DATE") or datetime.now(timezone.utc).strftime("%Y-%m-%d")
     run_hash = uuid.uuid4().hex[:12]
-    out_path = os.path.join(HERE, "data", "run_results", f"{code}_{date}_run_{run_hash}.json")
+    out_path = os.path.join(HERE, "data", "run_results", f"{run_code}_{date}_run_{run_hash}.json")
 
     # resume: 같은 날짜의 기존 출력에서 처리된 url 로드
     done_urls, summary = set(), []
     for fn in os.listdir(os.path.join(HERE, "data", "run_results")):
-        if fn.startswith(f"{code}_{date}_run_") and fn.endswith(".json"):
+        if fn.startswith(f"{run_code}_{date}_run_") and fn.endswith(".json"):
             try:
                 prev = json.load(open(os.path.join(HERE, "data", "run_results", fn)))
                 if prev.get("status") == "running" or prev.get("_resumable"):
@@ -433,7 +438,7 @@ def main():
 
     # 이전 run 에서 이미 측정한 URL 은 재사용 (같은 날짜 resume 과는 별개)
     if not args.no_reuse:
-        prior = _load_prior_results(code, date)
+        prior = _load_prior_results(run_code, date)
         reused = 0
         for u in urls:
             if u not in done_urls and u in prior:
@@ -450,8 +455,8 @@ def main():
     def _save(status):
         ok = sum(1 for it in summary if (it.get("result") or {}).get("score"))
         doc = {
-            "id": f"run_{run_hash}", "schedule_id": f"render_bulk_{code}",
-            "schedule_name": f"Render bulk audit - {code}", "group_id": f"grp_lg_{code}",
+            "id": f"run_{run_hash}", "schedule_id": f"render_bulk_{run_code}",
+            "schedule_name": f"Render bulk audit - {run_code}", "group_id": f"grp_lg_{code}",
             "group_name": f"LG Sitemap - {code}", "started_at": started,
             "finished_at": datetime.now(timezone.utc).isoformat() if status != "running" else None,
             "status": status, "url_count": len(urls), "success_count": ok,

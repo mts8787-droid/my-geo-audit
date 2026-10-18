@@ -17,8 +17,12 @@ set -u
 cd /Users/dubaba/my-geo-project/my-geo-audit || exit 1
 
 PY=/usr/bin/python3   # httpx 포함 env (--local 은 analyzer import 필요)
-RENDER_COUNTRIES="us uk de es ca au br mx in vn global"   # global = lg.com/global/newsroom (Global-Site)
-LOCAL_COUNTRIES=""
+# 2026-10-19 사용자 결정: 모든 감사는 이 Mac 에서 로컬로 돈다(Render bulk 사용 안 함).
+# 이유: #33·#36 문장 판정 모델(올라마 geo-audit-3b)이 로컬에만 있다. Render 는 UI 전용.
+RENDER_COUNTRIES=""
+LOCAL_COUNTRIES="us uk de es ca au br mx in vn global"   # global = lg.com/global/newsroom (Global-Site)
+export AUDIT_MODEL_URL="${AUDIT_MODEL_URL:-http://127.0.0.1:11434}"
+export LOCAL_AUDIT_CONCURRENCY="${LOCAL_AUDIT_CONCURRENCY:-5}"
 MAX_ATTEMPTS=3
 RETRY_GAP=1800        # 초 — 네트워크 복구 대기 (3회 × 30분 ≈ 1시간 커버)
 STAMP=$(date +%Y%m%d_%H%M%S)
@@ -78,6 +82,12 @@ run_country() {
 }
 
 echo "[monthly-audit] start ${STAMP}" >> "$LOG"
+# 올라마(brew services, homebrew.mxcl.ollama)가 내려가 있으면 모델 없이 정규식으로 돌게 되므로 미리 확인한다.
+if curl -sf "${AUDIT_MODEL_URL}/api/version" >/dev/null; then
+  echo "[monthly-audit] 판정 모델 연결 OK (${AUDIT_MODEL_URL})" >> "$LOG"
+else
+  echo "[monthly-audit] WARN 올라마 미응답 — #33·#36 은 정규식으로 판정됨" >> "$LOG"
+fi
 
 # ── 감사 전 US PDP 목록 갱신 ──────────────────────────────────────────────────
 # 사이트맵은 신제품을 늦게 반영한다(2026-08-28 실측: 활성 제품 211개 누락, 반대로
