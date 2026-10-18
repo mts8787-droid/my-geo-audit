@@ -256,6 +256,44 @@ summarizes the whole page? A page title, headline, breadcrumb, menu or a single 
 Return JSON: {{"found": true|false, "index": <int or null>, "quote": "<exact text or empty>"}}"""
 
 
+OUT3 = os.path.join(OUT_DIR, "pilot_r3.jsonl")
+
+# 3차: #33 전용. 2차 예시("LG is a world-leading producer…")가 회사소개 보일러플레이트를 정의문으로 오인시킴(2차 판정 1/12 정답)
+# → 예시 제거, 회사소개·제품명+스펙 나열·제목 제외를 명시.
+PROMPT_DEF3 = """Below is the beginning of a web page's main content (country={cc}), one sentence per line.
+Find ONE sentence that explains WHAT A TERM, TECHNOLOGY OR CONCEPT IS, written for a reader who does not know it
+(a dictionary-style explanation of a technology, feature, standard or concept).
+NOT a definition: a company profile or "About LG" boilerplate; a product name followed by a list of features or specs;
+a page title, headline or breadcrumb; marketing claims or benefits; instructions; questions; legal, payment or
+registration notices; sentences whose subject is "this/it/there".
+If no sentence qualifies, return found=false. Be strict.
+
+{numbered}
+
+Return JSON: {{"found": true|false, "index": <int or null>, "quote": "<exact text or empty>"}}"""
+
+
+async def run_r3():
+    """3차: #33 정의문 프롬프트만 재판정(오프라인, LG 재요청 없음)."""
+    rows = [json.loads(l) for l in open(OUT) if l.strip()]
+    done = set()
+    if os.path.exists(OUT3):
+        done = {json.loads(l)["url"] for l in open(OUT3) if l.strip()}
+    rows = [r for r in rows if r["url"] not in done]
+    print(f"3차 대상 {len(rows)}페이지 / 모델 {OLLAMA_MODEL}", flush=True)
+    async with httpx.AsyncClient(timeout=180) as llm:
+        for i, r in enumerate(rows, 1):
+            t0 = datetime.now()
+            sents = [x for x in r["sentences"] if not x.startswith("html ")]
+            rec = {"url": r["url"], "cc": r["cc"], "page_type": r["page_type"], "llm_def3": None}
+            if sents:
+                rec["llm_def3"] = await _llm(llm, PROMPT_DEF3.format(cc=r["cc"], numbered=_numbered(sents[:40])))
+            with open(OUT3, "a") as f:
+                f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+            print(f"[{i}/{len(rows)}] {r['cc']} {r['page_type']} def3={(rec.get('llm_def3') or {}).get('found')} "
+                  f"{(datetime.now()-t0).seconds}s", flush=True)
+
+
 async def run_r2():
     """1차 저장 문장으로 오프라인 재판정(LG 재요청 없음). 규칙은 현재 rule_engine 기준."""
     rows = [json.loads(l) for l in open(OUT) if l.strip()]
@@ -293,10 +331,13 @@ if __name__ == "__main__":
     ap.add_argument("--n", type=int, default=200)
     ap.add_argument("--report", action="store_true")
     ap.add_argument("--r2", action="store_true", help="1차 저장 문장으로 2차 프롬프트 재판정")
+    ap.add_argument("--r3", action="store_true", help="3차: #33 정의문 프롬프트만 재판정")
     a = ap.parse_args()
     if a.report:
         report()
     elif a.r2:
         asyncio.run(run_r2())
+    elif a.r3:
+        asyncio.run(run_r3())
     else:
         asyncio.run(run(a.n))
