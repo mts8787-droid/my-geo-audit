@@ -15,7 +15,9 @@ OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "qwen3:8b")
 D = "reports/shadow_llm/train"
 DATA = f"{D}/dataset_v1.jsonl"
 FS = f"{D}/fewshot"
-EX, SPLIT, OUT = f"{FS}/examples.json", f"{FS}/split.json", f"{FS}/pred.jsonl"
+TAG = os.environ.get("FS_TAG", "")
+EX, SPLIT, OUT = f"{FS}/examples{TAG}.json", f"{FS}/split.json", f"{FS}/pred{TAG}.jsonl"
+N_EX = int(os.environ.get("FS_N", "35"))
 LABELS = ("citable", "definition", "summary")
 BATCH = 10
 
@@ -55,26 +57,29 @@ def build():
             if r["id"] in used or not pred(r):
                 continue
             # 언어 다양성: 같은 국가 3개 초과 방지
-            if sum(1 for e in ex if e["cc"] == r["cc"]) >= 7:
+            if sum(1 for e in ex if e["cc"] == r["cc"]) >= max(7, N_EX // 5):
                 continue
             ex.append(r); used.add(r["id"]); k += 1
 
-    take(lambda r: r["summary"] == "y", 4)
-    take(lambda r: r["definition"] == "y" and r["citable"] == "y", 5)
-    take(lambda r: r["definition"] == "y" and r["citable"] == "n", 3)
-    take(lambda r: r["citable"] == "y" and r["definition"] == "n", 8)
-    take(lambda r: r["regex_candidate"] and r["citable"] == "n", 10)   # 규칙이 잡았지만 아님(어려운 음성)
-    take(lambda r: not r["regex_candidate"] and r["citable"] == "n" and r["definition"] == "n", 6)
+    f = N_EX / 36
+    take(lambda r: r["summary"] == "y", round(4 * f))
+    take(lambda r: r["definition"] == "y" and r["citable"] == "y", round(5 * f))
+    take(lambda r: r["definition"] == "y" and r["citable"] == "n", round(3 * f))
+    take(lambda r: r["citable"] == "y" and r["definition"] == "n", round(8 * f))
+    take(lambda r: r["regex_candidate"] and r["citable"] == "n", round(10 * f))   # 규칙이 잡았지만 아님(어려운 음성)
+    take(lambda r: not r["regex_candidate"] and r["citable"] == "n" and r["definition"] == "n", round(6 * f))
     rnd.shuffle(ex)
     json.dump(ex, open(EX, "w"), ensure_ascii=False, indent=1)
-    json.dump({"test": sorted(test), "examples": sorted(used)}, open(SPLIT, "w"))
+    old = json.load(open(SPLIT)) if os.path.exists(SPLIT) else {}
+    assert not old or set(old["test"]) == test, "test split changed"
+    json.dump({"test": sorted(test), "examples": sorted(used), f"examples{TAG}": sorted(used)}, open(SPLIT, "w"))
     print(f"예시 {len(ex)}개 (국가 {Counter(e['cc'] for e in ex)}), test {len(test)}개, 나머지 train {len(rows)-len(test)-len(ex)}개")
     for e in ex:
         print(" ", e["citable"], e["definition"], e["summary"], e["cc"], e["text"][:90])
 
 
 def prompt(examples, batch):
-    exs = "\n".join(json.dumps({"text": e["text"], "citable": e["citable"], "definition": e["definition"], "summary": e["summary"]},
+    exs = "\n".join(json.dumps({"text": e["text"][:180], "citable": e["citable"], "definition": e["definition"], "summary": e["summary"]},
                                ensure_ascii=False) for e in examples)
     items = "\n".join(f"[{i}] {r['text'][:400]}" for i, r in enumerate(batch))
     return f"""{RULES}
@@ -91,7 +96,7 @@ Now label each numbered sentence. Return JSON only:
 async def _llm(client, p):
     body = {"model": OLLAMA_MODEL, "stream": False, "think": False, "format": "json",
             "messages": [{"role": "user", "content": p}],
-            "options": {"temperature": 0, "num_ctx": 8192}}
+            "options": {"temperature": 0, "num_ctx": 16384}}
     r = await client.post(f"{OLLAMA_URL}/api/chat", json=body)
     r.raise_for_status()
     try:
@@ -102,7 +107,7 @@ async def _llm(client, p):
 
 async def run(all_rows):
     rows = load(); split = json.load(open(SPLIT)); ex = json.load(open(EX))
-    exids = set(split["examples"]); test = set(split["test"])
+    exids = set(split.get(f"examples{TAG}", split["examples"])); test = set(split["test"])
     targets = [r for r in rows if r["id"] not in exids and (all_rows or r["id"] in test)]
     done = set()
     if os.path.exists(OUT):
