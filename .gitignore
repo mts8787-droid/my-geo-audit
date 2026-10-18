@@ -43,3 +43,4 @@ data/psi_cache.json
 *.bak_*
 *.legacy_bak
 *.old_48items
+reports/shadow_llm/train/fused_*/

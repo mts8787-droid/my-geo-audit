@@ -93,3 +93,20 @@ summary:
 One JSON object per line (JSONL), same order as input, exactly these keys:
 {"id": "<id>", "citable": "y|n", "definition": "y|n", "summary": "y|n", "ko": "<faithful Korean translation, max ~150 chars; truncate long run-together nav text with …>", "why": "<Korean, ≤30 chars, the decisive reason>"}
 Do not skip, merge or reorder items. Do not add commentary outside the JSONL.
+
+## Reviewer corrections after model-disagreement review (2026-10-18, 186 eval sentences, 132 relabeled)
+The reviewer applied a STRICTER standard than batch 1/2 labels. Dominant direction: citable y→n (74), definition y→n (50), summary y→n (11).
+citable / definition = n (this overrides the "feature + what it does = definition y" note above):
+  - Feature-benefit descriptions ("X helps/lets you/reduces/circulates hot air for even cooking", "The door can be changed…") are NOT citable and NOT definitions.
+  - Recommendations ("8–9 kg is recommended for an average family") = n.
+  - Spec fragments / attribute strings (tilt -5~25°, dimensions W600×H850, "32\" 3840x2160 VA 16:9…") = citable n, summary n.
+  - Footnotes, test-condition notes, model-applicability notes ("*4K 144Hz applies to 83/77/65\" OLED M5") = n (reaffirmed).
+  - Support/troubleshoot behaviour notes ("2017 and later: turns off after 10 minutes", "cannot delete the app on webOS 6.0+") = n.
+  - Press-release boilerplate, datelines, survey statistics in PR copy, booth/event announcements = n.
+  - Company/partner profiles ("About the Energy Saving Trust…", "LG Pro Dealers are independent contractors…") = definition n.
+citable / definition = y (kept or added):
+  - Sentence naming a technology AND stating a concrete, verifiable claim: "R1 Compressor reduces up to 4dB of noise" = definition y;
+    "LG OLED evo: self-lit OLED pixels, infinite contrast, AI 4K upscaling" = citable y, definition y.
+  - PDP header with concrete feature names (Multi-Air Flow, Smart Diagnosis, ENERGY STAR) = citable y.
+summary: article-body "key features" lists and PDP spec headers are NOT summary (summary is decided by the #35 DOM rule in production).
+Note: the reviewer's calls are not perfectly consistent (e.g. "Air Fry circulates hot air…" = n but "AI engine analyses every frame" = y); when in doubt choose n.
