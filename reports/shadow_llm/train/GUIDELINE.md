@@ -71,6 +71,24 @@ Reviewer calibration — judged n:
   - p.info-desc, p.description, div.c-floating-features 1줄: Key Features Support up to 4K Resolution
   - p.info-desc, p.description, div.c-floating-features 1줄: Key Features TurboClean3D™ Powerful & Fa
 
+
+## Reviewer corrections after batch 1 (2026-10-18) — apply these
+citable:
+  - Asterisk/footnote disclaimers and test-method notes are NOT citable even when they name a standard or model:
+    "*Prueba de laboratorio interna de LG basada en EN 60456:2016 con F6V7RWP1WE." = n, "*AI DD có trong 3 chu trình." = n.
+  - UI/operation notes about what the device does in a situation ("※ Si es la primera vez que intentas grabar en USB, el televisor realiza una comprobación…") = n.
+  - A sentence that explains concretely what a feature/technology does and its effect IS citable even if it starts with "This":
+    "This stronger contrast allows bright highlights to stand out more clearly… especially in night scenes" = y.
+  - A feature description with a concrete fact ("…el motor Inverter Direct Drive brinda un control preciso y durabilidad con hasta 10 años de garantía") = y.
+definition:
+  - The reviewer treats a sentence that names a feature/technology and says what it does/provides as a definition:
+    "Motor Inverter DD … el motor Inverter Direct Drive brinda un control preciso y durabilidad…" = y.
+  - A PDP header block "product name + Key Features list" with concrete feature names (Dual Inverter Compressor, plasmaster ion filter…) = definition y AND citable y.
+summary:
+  - "Key Features" block = y only when items are concrete features/specs; if items are vague benefits
+    ("Solución perfecta para cargas pequeñas… Motor Inverter… Dimensiones") = n.
+  - Article header + dateline + one-line teaser ("…HOME APPLIANCES 11/01/2025 …aprende seus hábitos e economiza.") = n.
+
 ## Output format
 One JSON object per line (JSONL), same order as input, exactly these keys:
 {"id": "<id>", "citable": "y|n", "definition": "y|n", "summary": "y|n", "ko": "<faithful Korean translation, max ~150 chars; truncate long run-together nav text with …>", "why": "<Korean, ≤30 chars, the decisive reason>"}
