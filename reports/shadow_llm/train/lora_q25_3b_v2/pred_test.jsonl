@@ -1,0 +1,1052 @@
+{"id": "s00000", "why": "\uc77c\ubc18 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00002", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00004", "why": "\uc548\ub0b4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00007", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00008", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \uc77c\ubc18 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00009", "why": "\uc778\uc99d \uae30\uc900 \uba85\uc2dc", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00014", "why": "\uc81c\ud488 \uc720\ud615\uc774 \ubb34\uc5c7\uc778\uc9c0 \uc124\uba85", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00018", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00025", "why": "\uc6a9\ub7c9 \uc218\uce58+\uc758\ubbf8", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00035", "why": "\uc2a4\ud399\ud45c \uc870\uac01", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00036", "why": "\ud64d\ubcf4 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00038", "why": "\ub0b4\ube44+\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00043", "why": "\ud648 \ub0b4\ube44 \ub098\uc5f4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00046", "why": "\ud560\uc778 \ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00055", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00056", "why": "\ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00057", "why": "\uae30\ub2a5 \ub3d9\uc791 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s00067", "why": "\uc81c\ud488\uba85+12\uc2dc\uac04\u00b712\uc2dc\uac04 \uc758\ubbf8", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00070", "why": "\uc778\uc6a9+\ud68c\uc0ac \uc18c\uac1c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00072", "why": "\ud68c\uc0ac \uc18c\uac1c \ubcf4\uc77c\ub7ec\ud50c\ub808\uc774\ud2b8", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s00074", "why": "\uc5f0\ub77d\ucc98", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00078", "why": "\ub9c8\ucf00\ud305 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00085", "why": "\ubaa8\ub378\u00b7\ud06c\uae30 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00088", "why": "UL \uc778\uc99d+\uae30\uc220 \uc6d0\ub9ac \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s00089", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00096", "why": "\uac01\uc8fc \uc81c\uc57d", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00099", "why": "\uc0ac\uc6a9 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00105", "why": "\uc2dc\uc2a4\ud15c \uba54\uc2dc\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00106", "why": "\uba85\uba85 \uc778\uc99d \uba85\uc2dc", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00108", "why": "\uc2dc\uc7a5 \uc804\ub9dd", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00109", "why": "0.1ms \uc218\uce58+\uc758\ubbf8", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00111", "why": "\ub0b4\ube44+\uc81c\ubaa9+\ud2f0\uc800", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00118", "why": "\ube44\uad50 \uae30\uc900 \uba85\uc2dc \uc2a4\ud399", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00124", "why": "DisplayPort\u00b7HDMI \uc9c0\uc6d0 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00127", "why": "\ubaa8\ud638\ud55c \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00134", "why": "\ud68c\uc0ac \uc18c\uac1c \ubcf4\uc77c\ub7ec\ud50c\ub808\uc774\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00140", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00141", "why": "\ucd9c\ucc98 \uba85\uc2dc \uc124\ubb38 \uacb0\uacfc \uc694\uc57d \ube14\ub85d", "citable": "n", "definition": "n", "summary": "y"}
+{"id": "s00156", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00162", "why": "\uba74\ucc45 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00176", "why": "\ucd9c\ucc98 \uc5c6\ub294 \uc124\ubb38 \uc870\uac01", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00178", "why": "0.1ms \uc218\uce58 \uc758\ubbf8", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00180", "why": "\uae30\ub2a5\uba85+2\ubc30 \uc218\uce58", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00191", "why": "\ubcf4\uc99d \uae30\uac04", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00192", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00194", "why": "\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00208", "why": "\ud560\uc778 \ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00209", "why": "\ud3fc UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00219", "why": "\uad6c\uccb4 \uc0ac\uc591 \uba85\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00224", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00230", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00233", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00235", "why": "\uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00240", "why": "\uad6c\uccb4\uc801 \uae30\uc220 \uc124\uba85", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00243", "why": "\ube44\uad50 \uae30\uc900 \uac01\uc8fc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00246", "why": "39dB \uc218\uce58+\uc758\ubbf8", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00249", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00256", "why": "\ucd9c\ucc98 \uba85\uc2dc \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00268", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00281", "why": "\ud648 \ub0b4\ube44+\ub9c8\ucf00\ud305 \ud63c\ud569", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00285", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00299", "why": "UL \uc778\uc99d \uc778\uc99d \ud6a8\uacfc \uad6c\uccb4 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00305", "why": "3\uc2dc\uac04\u00b73\uc2dc\uac04 \uad6c\uccb4 \uc218\uce58", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00327", "why": "\uc124\uce58 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00330", "why": "\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00332", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00334", "why": "\uac01\uc8fc \uba74\ucc45", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00339", "why": "\ub9c8\ucf00\ud305 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00341", "why": "\ubc95\uc801 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00344", "why": "\uc124\uc815 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00349", "why": "\ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00359", "why": "\ubaa8\ud638\ud55c \uc7a5\uc810 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00371", "why": "\ub9c8\ucf00\ud305 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00375", "why": "5G \uc18d\ub3c4 \uc218\uce58", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00378", "why": "UL \uac80\uc99d \uc778\uc99d \uba85\uc2dc", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00381", "why": "\ubc95\uc801 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00384", "why": "\uc124\uc815 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00390", "why": "\uae30\ub2a5\uba85+\ub3d9\uc791 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s00394", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00395", "why": "CTA+\uc2ac\ub85c\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00400", "why": "\ud68c\uc0ac \uc18c\uac1c \ubcf4\uc77c\ub7ec\ud50c\ub808\uc774\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00406", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \ucd94\ucc9c \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00407", "why": "\ud575\uc2ec\uc0ac\uc591 \ube14\ub85d, UI \ud63c\ud569", "citable": "n", "definition": "n", "summary": "y"}
+{"id": "s00408", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00415", "why": "\uc77c\ubc18 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00428", "why": "\uc81c\ud488 \uc720\ud615 \uc815\uc758", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00431", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00433", "why": "\ud504\ub85c\ubaa8\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00434", "why": "\uc124\uce58 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00435", "why": "CTA+\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00440", "why": "\ub9c8\ucf00\ud305 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00444", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00445", "why": "\ud64d\ubcf4 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00461", "why": "4K UHD+1ms GtG \uc2a4\ud399", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00465", "why": "\uc0ac\uc6a9 \uad8c\uace0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00469", "why": "\uc81c\ud488 \uc720\ud615+\uad6c\uccb4 \uae30\ub2a5 \uc0ac\uc2e4", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s00472", "why": "\ud589\ub3d9 \uc720\ub3c4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00482", "why": "\uc124\uc815 \uae30\uc900\u00b7\ub3d9\uc791 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00486", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00490", "why": "\ub9c8\ucf00\ud305 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00503", "why": "\uc2ac\ub85c\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00518", "why": "\ubaa8\ud638\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00536", "why": "\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00541", "why": "\uc2a4\ud399\ud45c \uc870\uac01", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00547", "why": "\uc2a4\ud399\ud45c \uc870\uac01", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00548", "why": "\uc778\uc6a9 \ubc1c\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00550", "why": "\ubcf4\uc99d \uae30\uac04+\ub9c8\ucf00\ud305", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00551", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00556", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00567", "why": "\ucfe0\ud3f0 \uc57d\uad00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00573", "why": "\uc9c0\uc6d0 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00585", "why": "\uc870\uc791 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00586", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00587", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00598", "why": "18.5\uc2dc\uac04 \uad6c\uccb4 \uc218\uce58", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00605", "why": "\ucd9c\ucc98 \uba85\uc2dc \uc0ac\uc2e4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00606", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00607", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00609", "why": "\ud45c\ubcf8 \uc218\u00b7\uc624\ucc28 \uc218\uce58", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00618", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00623", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00627", "why": "\ub9c9\uc5f0\ud55c \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00630", "why": "\ucd9c\ucc98 \uc5c6\ub294 \ucc2c\uc0ac", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00634", "why": "\uc81c3\uc790 \uac80\uc99d\uae30\uad00\u00b7\ub0a0\uc9dc \uba85\uc2dc \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00642", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00649", "why": "\ub9c8\ucf00\ud305 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00660", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00670", "why": "\ud504\ub85c\ubaa8\uc158 \uc870\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00671", "why": "\ud560\ubd80/\ubc30\uc1a1 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00674", "why": "\uc81c\ud488 \uc720\ud615+\uad6c\uccb4 \uae30\ub2a5 \uc0ac\uc2e4", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s00677", "why": "\uae30\uc220 \ub3d9\uc791 \uc124\uba85", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00687", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00691", "why": "\uad6c\uccb4 \uae30\ub2a5 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00699", "why": "\ucd9c\ucc98 \uc5c6\ub294 \ud68c\uc0ac \uc18c\uac1c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00702", "why": "\uae30\uc220 \uc6d0\ub9ac \uc124\uba85", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00704", "why": "\uc124\uce58 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00706", "why": "\uae30\uc220 \ub3d9\uc791 \uc124\uba85", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00708", "why": "\uc81c\ud488 \uc720\ud615+\uc81c\ud488 \uc815\uc758", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s00712", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00716", "why": "\uba85\uba85 \ubaa8\ub378\u00b7\uc2dc\uac04 \uc218\uce58", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00719", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00728", "why": "\ube44\uad50 \uae30\uc900 \uac01\uc8fc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00738", "why": "\uc8fc\uc694\uc0ac\uc591 \ube14\ub85d, \uad6c\uccb4 \ud56d\ubaa9", "citable": "y", "definition": "y", "summary": "y"}
+{"id": "s00739", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00743", "why": "\uac01\uc8fc \uba74\ucc45", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00764", "why": "\ubcf4\ub3c4\uc790\ub8cc \ubcf4\uc77c\ub7ec \uc0ac\uc2e4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00771", "why": "\uc2a4\ud399 \uc218\uce58 \uba85\uc2dc \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00774", "why": "\uc81c\ud488\uba85+\uc778\uc99d \uba85+\uc2a4\ud399", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00775", "why": "\ubcf4\ub3c4\uc790\ub8cc \uc81c\ubaa9+\ub0a0\uc9dc+\uc81c\ubaa9+\ud2f0\uc800", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00776", "why": "\ud68c\uc0ac \uc18c\uac1c \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00779", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00780", "why": "\uc778\uc6a9 \uc218\uc0c1", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00784", "why": "\uc81c\ubaa9+20% \uc218\uce58", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00786", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00802", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00807", "why": "\uc81c3\uc790 \uac80\uc99d\uae30\uad00\u00b7\uae30\uc220 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00815", "why": "\uc81c\ud488 \uc720\ud615\uc774 \ubb34\uc5c7\uc778\uc9c0 \uc124\uba85", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00817", "why": "\uac01\uc8fc+\uac01\uc8fc \uc870\uac01", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00820", "why": "\ubcf4\ub3c4\uc790\ub8cc \uc81c\ubaa9+\ud30c\uc77c \uacbd\ub85c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00822", "why": "\ubcf4\ub3c4\uc790\ub8cc \uc778\uc6a9", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00823", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \uc77c\ubc18 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00824", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00831", "why": "\uc778\ud2b8\ub85c+\uad6c\uccb4\uc801 \uc6d0\ub9ac", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s00836", "why": "\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00839", "why": "\uc5f0\ub77d\ucc98", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00840", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00842", "why": "\ud68c\uc0ac \uc18c\uac1c \ubcf4\uc77c\ub7ec\ud50c\ub808\uc774\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00845", "why": "\ucd9c\ucc98 \uba85\uc2dc \uc218\uc0c1", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00853", "why": "\uc2a4\ud399\ud45c \uc870\uac01 \ud63c\ud569", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00860", "why": "HGiG\uac00 \ubb34\uc5c7\uc778\uc9c0 \uc815\uc758", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s00867", "why": "UL \uac80\uc99d IDMS 11.5\u00b7500\ub8e8\uba58 IDMS \uc778\uc99d", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00870", "why": "\ud560\uc778 \ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00873", "why": "\ud504\ub85c\ubaa8\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00880", "why": "\uc548\ub0b4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00886", "why": "\uc0c9\uc5ed \uc218\uce58 \uc2a4\ud399", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00889", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \uc77c\ubc18 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00892", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00893", "why": "\ud3fc UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00895", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00904", "why": "\ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00909", "why": "\ud504\ub85c\ubaa8\uc158 \uc870\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00919", "why": "\uae30\ub2a5\uba85+\uc791\ub3d9 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s00921", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00924", "why": "\uacb0\uc81c \uc54c\ub9bc UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00926", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00934", "why": "\ud64d\ubcf4 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00940", "why": "\uc0ac\uc6a9 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00962", "why": "88% \uc218\uce58+\uc8fc\uc5b4 \ubd88\uba85", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00966", "why": "\uc2ac\ub85c\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00967", "why": "\uc81c\ubaa9+\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00970", "why": "\uae30\ub2a5\uba85+\ub3d9\uc791 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s00973", "why": "\uba85\uba85 \uc778\uc99d+90% \uc0c9\uc5ed \uc218\uce58", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s00974", "why": "\ub9c9\uc5f0\ud55c \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00978", "why": "\uc2dc\ud5d8\uae30\uad00 \ubcf4\uc77c\ub7ec\ud50c\ub808\uc774\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00981", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00985", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s00998", "why": "\uc870\uc791 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01006", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01008", "why": "\uba85\uba85 \uae30\uc900 \uc218\uce58 \uc0ac\uc2e4", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s01016", "why": "BT\u00b7165Hz\u00b7VRR\u00b7Motion Booster \uc2a4\ud399+\uc758\ubbf8", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01031", "why": "\uc81c\ud488 \uc720\ud615\uc774 \ubb34\uc5c7\uc778\uc9c0 \uc124\uba85", "citable": "y", "definition": "y", "summary": "y"}
+{"id": "s01035", "why": "\uc81c\ud734 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01037", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01040", "why": "\uc5f0\ub77d\ucc98/UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01050", "why": "\uba85\ub839\ud615 \uae30\uc220 \uc124\uba85", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01052", "why": "\ud560\uc778 \ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01054", "why": "\uac01\uc8fc \uc81c\uc57d", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01060", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01069", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01078", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01079", "why": "\ubcf4\ub3c4\uc790\ub8cc \uc81c\ubaa9+\ub124\ube44", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01082", "why": "\ud504\ub85c\ubaa8\uc158 \uc870\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01090", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01092", "why": "\ud68c\uc0ac \uc18c\uac1c \ubcf4\uc77c\ub7ec\ud50c\ub808\uc774\ud2b8", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s01095", "why": "\ube44\uad50 \uae30\uc900 \uba85\uc2dc \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01096", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01098", "why": "\uae30\uc220 \uc6d0\ub9ac \uc124\uba85", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01101", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01102", "why": "\ubaa8\ub378\u00b7\ubc30\ud130\ub9ac \uc6a9\ub7c9 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01105", "why": "3\u00b0C\u00b7(-18\u00b0C) \uad8c\uace0 \uc870\uc5b8", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01110", "why": "4~6\ubc30 \uc218\uce58 \uc758\ubbf8", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01112", "why": "\ube44\uad50 \uae30\uc900 \uba85\uc2dc \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01117", "why": "CTA/UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01118", "why": "\uac01\uc8fc \ud45c\uc900+\uac01\uc8fc \uacb0\uacfc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01125", "why": "\ubcf4\ub3c4\uc790\ub8cc \uc81c\ubaa9+\ub0a0\uc9dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01126", "why": "\uc0ac\uc6a9 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01143", "why": "\uc81c\ubaa9+\uc2a4\ud399+\ubc30\ub108 \ud63c\ud569", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01146", "why": "\uac01\uc8fc \uc801\uc6a9 \ubc94\uc704", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01152", "why": "\uc0ac\uc6a9 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01168", "why": "\uc2dc\ud5d8 \uae30\uc900 \uac01\uc8fc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01172", "why": "\uc81c\ud488 \uc720\ud615+240Hz \uc2a4\ud399 \uc0ac\uc2e4", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s01182", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01186", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01192", "why": "\uc2a4\ud399+\ub9c8\ucf00\ud305 \ud63c\ud569", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01200", "why": "\ud648 \ub0b4\ube44+\ub9c8\ucf00\ud305", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01201", "why": "\uc2ac\ub85c\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01210", "why": "\uc870\uc791 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01212", "why": "\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01214", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01219", "why": "\ucd9c\ucc98 \uba85\uc2dc \uc218\uc0c1", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01233", "why": "\ub9c8\ucf00\ud305 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01236", "why": "\uc81c\ud488 \uc720\ud615+\uad6c\uccb4 \uae30\ub2a5 \ubaa9\ub85d", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s01245", "why": "\uc81c\ud488 \uc720\ud615+\ub9c8\ucf00\ud305", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01251", "why": "\uc2dc\ud5d8 \ubc29\ubc95 \uac01\uc8fc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01254", "why": "\uc81c\ud488 \uc720\ud615+UI \uac1c\ubc1c \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01258", "why": "\ud560\ubd80 \uc870\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01267", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \ud61c\ud0dd \ud56d\ubaa9", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01278", "why": "\ud575\uc2ec\uc0ac\uc591 \ube14\ub85d, UI \ud63c\ud569", "citable": "n", "definition": "n", "summary": "y"}
+{"id": "s01286", "why": "\uc81c\ubaa9+\uc77c\ubc18 \ub3c4\uc785", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01289", "why": "\uad6c\uccb4 \uc2a4\ud399 \uc218\uce58", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01294", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01296", "why": "\ucd9c\ucc98 \uc5c6\ub294 \uc218\uc0c1", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01297", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01303", "why": "\uc2a4\ud399\ud45c \uc870\uac01", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01304", "why": "\uc5f0\ub77d\ucc98", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01315", "why": "\uae30\uc220 \uc6d0\ub9ac \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s01316", "why": "\uad6c\uccb4 \uc0ac\uc591 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01321", "why": "\uae30\uc220 \uc6d0\ub9ac \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s01323", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01330", "why": "\uc81c3\uc790 \uac80\uc99d \uae30\uc900 \uba85\uc2dc", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01336", "why": "\uad00\ub9ac \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01340", "why": "\uc81c\uc57d \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01343", "why": "\ud560\ubd80/\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01344", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01349", "why": "\uae30\uc5c5 \ube44\uc804 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01354", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01356", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01366", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01369", "why": "700~1200W \uad6c\uccb4 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01371", "why": "\ud648 \ub0b4\ube44+\ub124\ube44 \ud63c\ud569", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01373", "why": "\uc2a4\ufffd\ud399 \uc218\uce58+\uc758\ubbf8", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01378", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01379", "why": "\ucd9c\ucc98 \uc5c6\ub294 \ud3c9\uac00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01384", "why": "\uc81c\ud488\uba85+\ubc30\ud130\ub9ac 30\uc2dc\uac04 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01389", "why": "\ud45c\uc900\u00b7\uc870\uac74 \uba85\uc2dc \uac80\uc99d \uacb0\uacfc", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01407", "why": "\ubc30\ud130\ub9ac\u00b7VAPOR CHAMBER \uad6c\uccb4 \uc2a4\ud399", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01408", "why": "\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01415", "why": "UL \uac80\uc99d\u00b7IDMS\u00b7200~500\ub8e8\uba58", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01423", "why": "\uae30\ub2a5\uba85+\uad6c\uccb4 \uc791\ub3d9 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s01425", "why": "\ub4f1\ub85d \uc54c\ub9bc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01426", "why": "UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01428", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01438", "why": "\ub9c8\ucf00\ud305 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01448", "why": "\uc0ac\uc6a9 \uad8c\uace0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01449", "why": "\ub3d9\uc791 \uc81c\ud55c \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01450", "why": "\ubcf4\ub3c4\uc790\ub8cc \ubcf4\uc77c\ub7ec\ud50c\ub808\uc774\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01451", "why": "\uc81c\ud488 \uc0ac\uc2e4+\ub9c8\ucf00\ud305", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01454", "why": "\uc81c\ud488 \uc720\ud615 \uc18c\uac1c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01461", "why": "\ubcf4\uc99d \uc870\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01463", "why": "\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01465", "why": "\uc77c\ubc18 \uc124\uba85", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01469", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01470", "why": "\ud560\ubd80 \uc870\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01480", "why": "\ud53c\ub4dc\ubc31 UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01489", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01490", "why": "\ub9c8\ucf00\ud305 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01491", "why": "\uc6a9\ub7c9 \uc2a4\ud399", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01494", "why": "\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01495", "why": "\uac00\uaca9\u00b7\uac00\uc131\ube44 \uc0ac\uc2e4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01497", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01504", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01523", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01526", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \uc77c\ubc18 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01533", "why": "\ud504\ub85c\ubaa8\uc158 \uae30\ud55c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01542", "why": "\uc2dc\ud5d8\uae30\uad00\u00b7\ub0a0\uc9dc\u00b7\ub300\uc0c1 \uac01\uc8fc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01544", "why": "UL \uc778\uc99d+\ub9c8\ucf00\ud305", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01549", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01550", "why": "\ud560\uc778 \ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01552", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01554", "why": "\ube44\uad50\ud45c \ud14d\uc2a4\ud2b8 \ud63c\ud569", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01559", "why": "\uc5f0\ub3c4\u00b7\uc218\uce58 \uba85\uc2dc \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01563", "why": "\ud504\ub85c\ubaa8\uc158 \uae30\ud55c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01564", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01576", "why": "\ud64d\ubcf4 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01583", "why": "\uae30\uc5c5 \uc18c\uac1c \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01616", "why": "\uae30\uc5c5 \uc18c\uac1c \ubcf4\uc77c\ub7ec\ud50c\ub808\uc774\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01617", "why": "\ub9c9\uc5f0\ud55c \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01618", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01622", "why": "\ucd9c\ucc98 \uba85\uc2dc \uc218\uc0c1 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01630", "why": "\ube44\uad50 \uae30\uc900 \uac01\uc8fc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01639", "why": "\uc77c\ubc18 \ub17c\ud3c9", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01642", "why": "\ub2e8\ud3b8 \uc870\uac01", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01644", "why": "\ud560\ubd80/\ud504\ub85c\ubaa8\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01655", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01659", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01663", "why": "\uc2a4\ud399\ud45c \uc870\uac01 \ud63c\ud569", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01667", "why": "\ud504\ub85c\ubaa8\uc158 \uc57d\uad00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01669", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \uc77c\ubc18 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01673", "why": "\ub274\uc2a4\ub808\ud130 \uc81c\ubaa9+\ub9c8\ucf00\ud305", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01678", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \ud64d\ubcf4 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01680", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01683", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01693", "why": "\uc81c\ubaa9+\ud68c\uc0ac \uc18c\uac1c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01701", "why": "\ube44\uad50 \uae30\uc900 \uac01\uc8fc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01703", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \ucd94\ucc9c \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01704", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01706", "why": "\uc870\uc791 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01709", "why": "\uba74\ucc45 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01722", "why": "\ud560\uc778 \ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01727", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01729", "why": "\uc77c\ubc18 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01737", "why": "\uc8fc\uc5b4 this, \ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01738", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01748", "why": "\ud64d\ubcf4 CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01755", "why": "\uc8fc\uc5b4 this, \ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01767", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01770", "why": "\ud575\uc2ec\uc0ac\uc591 \ube14\ub85d, \uad6c\uccb4 \ud56d\ubaa9", "citable": "y", "definition": "n", "summary": "y"}
+{"id": "s01775", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \ucd94\ucc9c \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01789", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01797", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01815", "why": "\ud504\ub85c\ubaa8\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01817", "why": "\ud560\ubd80 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01819", "why": "\ubb38\uc7a5 \uc870\uac01", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01827", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \uc77c\ubc18 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01831", "why": "\uc8fc\uc694\uc0ac\uc591 \ube14\ub85d, \uad6c\uccb4 \ud56d\ubaa9", "citable": "n", "definition": "n", "summary": "y"}
+{"id": "s01836", "why": "\uc2dc\uc7a5 \uc804\ub9dd \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01841", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01848", "why": "\ube44\uad50 \uae30\uc900 \uac01\uc8fc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01855", "why": "UVnano\u2122\uac00 \ubb34\uc5c7\uc778\uc9c0 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s01856", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01859", "why": "\uc2ac\ub85c\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01864", "why": "\ud504\ub85c\ubaa8\uc158 \uc870\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01867", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01870", "why": "\ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01874", "why": "\uc81c3\uc790 \uac80\uc99d \uc778\uc99d\uae30\uad00\u00b7\uc0c9\uc0c1\u00b7\uc0c9\uc810 \uba85\uc2dc", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01877", "why": "VRR\u00b7165Hz\u00b7G-Sync\u00b7FreeSync \uc778\uc99d", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01878", "why": "\ud560\ubd80/\uae08\uc735 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01879", "why": "\ud68c\uc0ac \uc18c\uac1c \ubcf4\uc77c\ub7ec\ud50c\ub808\uc774\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01894", "why": "\uc81c\ubaa9+\ub9c8\ucf00\ud305", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01906", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01909", "why": "\uc2a4\ud399\ud45c UI \ud63c\ud569", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01915", "why": "\ud560\uc778 \ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01923", "why": "\uc124\uc815 \uad8c\uace0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01930", "why": "\ud504\ub85c\ubaa8\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01935", "why": "\uac00\uaca9 \uc870\uac01", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01937", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01942", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01944", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01945", "why": "\uc2ac\ub85c\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01954", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01968", "why": "\uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01969", "why": "\ucd9c\uc2dc \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01973", "why": "\ubaa8\ud638\ud55c \uc7a5\uc810 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01978", "why": "\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01979", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01980", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s01986", "why": "UL \uac80\uc99d \uc778\uc99d \uba85\uc2dc", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s01996", "why": "\ubaa8\ub378\uba85+UHD 4K \uc9c0\uc6d0 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s10007", "why": "\uc8fc\uc5b4 that, \ub9c9\uc5f0\ud55c \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10015", "why": "\uc77c\ubc18 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10016", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10019", "why": "\uc9c0\uc6d0 CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10028", "why": "\ub9c8\ucf00\ud305 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10032", "why": "\uc778\uc6a9 \ubc1c\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10033", "why": "\uc81c\ud488 \uc720\ud615+\uad6c\uccb4 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s10042", "why": "\ub9c8\ucf00\ud305 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10045", "why": "\ud64d\ubcf4 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10056", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10070", "why": "\ub514\uc790\uc778 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10084", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10086", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10096", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10111", "why": "\ubaa8\ud638\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10112", "why": "\uc8fc\uc5b4 it, \ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10121", "why": "\ubc95\uc801 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10123", "why": "\uc81c\ud488\uad70 \uc18c\uac1c \ubcf4\uc77c\ub7ec\ud50c\ub808\uc774\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10125", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10128", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10133", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10140", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10141", "why": "\ud504\ub85c\ubaa8\uc158 \uc870\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10146", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10147", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10150", "why": "\uc8fc\uc5b4 it, \ubaa8\ud638 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10161", "why": "\uc124\uce58 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10167", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10169", "why": "\ub9c8\ucf00\ud305 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10172", "why": "\uae30\uc220 \uc6d0\ub9ac \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10175", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10185", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \uc77c\ubc18 \ub17c\ud3c9", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10186", "why": "\ud560\ubd80/\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10190", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10197", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10198", "why": "\uc77c\ubc18 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10205", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10211", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10212", "why": "\uc2a4\ub9c8\ud2b8\uae30\ub2a5 \ube14\ub85d, UI \ud14d\uc2a4\ud2b8", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s10213", "why": "\uae30\ub2a5 \ub3d9\uc791 \uad6c\uccb4 \uc124\uba85", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s10214", "why": "\ub9c8\ucf00\ud305 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10218", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10228", "why": "\uae30\ub2a5\uba85+\uc791\ub3d9 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10231", "why": "\uc81c\ud488 \uc720\ud615 \uc815\uc758", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10239", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10247", "why": "\ud64d\ubcf4 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10248", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10251", "why": "\uc5f0\ub77d\ucc98", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10256", "why": "\uc8fc\uc5b4 these, \ud64d\ubcf4 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10261", "why": "\uc571 \uae30\ub2a5 \ud64d\ubcf4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10267", "why": "\uc77c\ubc18 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10270", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10271", "why": "\uc778\uc6a9 \uc758\uacac", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10274", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10275", "why": "\ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10276", "why": "\ud64d\ubcf4 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10285", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10293", "why": "\ub9c8\ucf00\ud305 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10294", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10310", "why": "\ud504\ub85c\ubaa8\uc158 \uc808\ucc28", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10323", "why": "\ud504\ub85c\ubaa8\uc158 \ub2e8\uacc4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10330", "why": "\ub3d9\uc791 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10332", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10334", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10347", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10357", "why": "\uc548\ub0b4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10362", "why": "\ud560\ubd80 \uc870\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10366", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10372", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10378", "why": "\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10379", "why": "\uc124\uc815 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10382", "why": "\uae30\ub2a5 \ub3d9\uc791 \uad6c\uccb4 \uc0ac\uc2e4", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10383", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10387", "why": "\ud398\uc774\uc9c0 \ub0b4\uc6a9 \uc18c\uac1c \ub9ac\ub4dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10398", "why": "\uc81c\ud488 \uc720\ud615\uc774 \ubb34\uc5c7\uc778\uc9c0 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10399", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10400", "why": "\uc77c\ubc18 \uc124\uba85", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10401", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10404", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10410", "why": "\uc77c\ubc18 \ub17c\ud3c9", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10411", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10412", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10414", "why": "\uac10\uc0ac \uc778\uc0ac", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10417", "why": "\uc2ac\ub85c\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10427", "why": "\uc0ac\uc6a9 \uc8fc\uc758 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10430", "why": "\ud589\ub3d9 \uc720\ub3c4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10431", "why": "\ub9c8\ucf00\ud305 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10433", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \uc77c\ubc18 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10434", "why": "\ubaa8\ud638\ud55c \ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10436", "why": "\uc9c0\uce68 \uc81c\ubaa9", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10437", "why": "\ud504\ub85c\ubaa8\uc158/UI \ub098\uc5f4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10439", "why": "\uc0ac\uc6a9 \uad8c\uace0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10448", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10449", "why": "\uc0ac\uc6a9 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10457", "why": "\ubaa8\ud638\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10459", "why": "\uac10\uc0ac \uc778\uc6a9", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10460", "why": "\ud648 \ub0b4\ube44+\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10461", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10476", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10480", "why": "\ud64d\ubcf4 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10492", "why": "\uc2a4\ud399+UI \ud14d\uc2a4\ud2b8 \ud63c\ud569", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10496", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10501", "why": "\uc2ac\ub85c\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10511", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10518", "why": "\uc77c\ubc18 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10537", "why": "\ud560\ubd80/UI/\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10539", "why": "\uc778\uc6a9 \uc758\uacac", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10540", "why": "\uc8fc\uc5b4 these, \ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10543", "why": "\uc8fc\uc5b4 that, \uc870\uac01", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10544", "why": "\uc81c\ud488\uc774 \ubb34\uc5c7\uc778\uc9c0 \uc124\uba85", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s10546", "why": "\uc81c\ud488\uad70 \uc18c\uac1c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10547", "why": "\uc77c\ubc18 \uc124\uba85", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10550", "why": "\ud504\ub85c\ubaa8\uc158 \uc57d\uad00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10559", "why": "\uc5f0\ub77d\ucc98/UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10560", "why": "\uc81c\ubaa9+\uc2ac\ub85c\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10561", "why": "\ubb38\uc7a5 \uc870\uac01", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10573", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10581", "why": "\ubaa8\ud638\ud55c \uc7a5\uc810 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10583", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10585", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10600", "why": "\uae30\ub2a5\uba85+\ub3d9\uc791 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10601", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10605", "why": "\ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10608", "why": "\ud504\ub85c\ubaa8\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10617", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10622", "why": "\uad00\ub9ac \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10631", "why": "\ud64d\ubcf4 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10634", "why": "\uae30\uc220 \uc6d0\ub9ac \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10645", "why": "\uc77c\ubc18 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10648", "why": "\ubb38\uc7a5 \uc870\uac01", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10652", "why": "\ud648 \ub0b4\ube44+\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10654", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10658", "why": "\ud504\ub85c\ubaa8\uc158 \uc694\uad6c \uc0ac\uc591", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10669", "why": "\uc81c\ubaa9+\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10674", "why": "\ucd9c\ucc98 \uc5c6\ub294 \uc778\uc6a9 \ubc1c\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10675", "why": "\uc77c\ubc18 \uc124\uba85", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10677", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10684", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10691", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10695", "why": "\uc77c\ubc18 \uc124\uba85", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10699", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10703", "why": "\ubcf4\ub3c4\uc790\ub8cc \uc81c\ubaa9+\ub0a0\uc9dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10709", "why": "\uc2dc\uc7a5 \ubd84\ub958 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10713", "why": "\uba64\ubc84\uc2ed \ud64d\ubcf4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10715", "why": "UI \uc124\uba85", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10716", "why": "\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10723", "why": "\uc8fc\uc5b4 this, \uc124\uba85", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10729", "why": "\uc77c\ubc18 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10736", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10737", "why": "\ud53c\ub4dc\ubc31 UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10741", "why": "\uc0ac\uc6a9 \uc8fc\uc758 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10744", "why": "\uc778\uc6a9 \uc758\uacac", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10750", "why": "\uae30\uc220 \uc6d0\ub9ac \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10759", "why": "LG Channels\uac00 \ubb34\uc5c7\uc778\uc9c0 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10767", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10770", "why": "\uc0ac\uc6a9 \uad8c\uace0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10778", "why": "\uc81c\ud488 \uc720\ud615+\uad6c\uccb4 \uae30\ub2a5 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s10783", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10787", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10788", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10794", "why": "\uae30\uc220 \uc6d0\ub9ac \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10800", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10803", "why": "\uc571 \uae30\ub2a5 \uad6c\uccb4 \uc0ac\uc2e4", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10806", "why": "X\ub294 ~\ub97c \ub73b\ud55c\ub2e4 \uc815\uc758", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10810", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10818", "why": "\uc124\uce58 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10825", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10829", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10833", "why": "\uc8fc\uc5b4 '\uadf8\uac83\ub4e4' \ubd88\uba85", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10834", "why": "\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10836", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10838", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \uc77c\ubc18 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10843", "why": "\uc8fc\uc5b4 this, \ub9c9\uc5f0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10844", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10857", "why": "\ubaa8\ud638\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10861", "why": "\uae30\uc5c5 \ube44\uc804 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10876", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10883", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10884", "why": "\ub274\uc2a4\ub808\ud130 CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10885", "why": "\uc81c\ud488 \uc720\ud615\uc774 \ubb34\uc5c7\uc778\uc9c0 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s10892", "why": "\uc124\uc815 \ud301", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10894", "why": "\ud560\ubd80/\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10901", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10913", "why": "\uc8fc\uc5b4 this, \ub9c9\uc5f0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10920", "why": "\uc778\uc99d\uae30\uad00 \uba85\uc2dc", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s10924", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10926", "why": "\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10927", "why": "\ub9c8\ucf00\ud305 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10930", "why": "\ub9c8\ucf00\ud305 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10939", "why": "\ub9c8\ucf00\ud305 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10947", "why": "\uc870\uc791 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10953", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10955", "why": "\uac01\uc8fc \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10963", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10970", "why": "\uc81c\ud488 \uc720\ud615 \uc5c6\ub294 \uc81c\uc870 \uc0ac\uc2e4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10973", "why": "\ubc30\uc1a1 \uc57d\uad00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10979", "why": "\ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10983", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10991", "why": "\uc2dc\uc2a4\ud15c \uba54\uc2dc\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s10995", "why": "\ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11000", "why": "\uc124\uce58 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11001", "why": "\uc81c\ud488 \uc720\ud615 \uc124\uba85", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11003", "why": "\ub9c8\ucf00\ud305 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11010", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11014", "why": "DisplayPort 2.1 \uaddc\uaca9 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s11016", "why": "\uae30\ub2a5\uba85+\ub3d9\uc791 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s11017", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11019", "why": "\uc870\uc791 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11020", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11023", "why": "\uc778\uc6a9+\uc2ac\ub85c\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11024", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11030", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11034", "why": "\ubc30\uc1a1 \uc57d\uad00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11035", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11058", "why": "\uc0ac\uc6a9 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11069", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11087", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11091", "why": "\ub9c8\ucf00\ud305 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11094", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11096", "why": "\ube44\uad50 \uae30\uc900 \uba85\uc2dc \uc218\uce58", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s11103", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11106", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11112", "why": "\uc8fc\uc694\uc0ac\uc591 \ube14\ub85d, \uad6c\uccb4 \ud56d\ubaa9", "citable": "y", "definition": "n", "summary": "y"}
+{"id": "s11113", "why": "\ubaa8\ud638\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11117", "why": "\ub124\ube44/UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11125", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11126", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11127", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11128", "why": "\uc8fc\uc5b4 this, \ub9c9\uc5f0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11129", "why": "\ub9c8\ucf00\ud305 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11136", "why": "\uc5f0\ub77d\ucc98/UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11141", "why": "CTA/UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11142", "why": "\uae30\ub2a5\uba85+\uc791\ub3d9 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s11160", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \uc77c\ubc18 \uc124\uba85", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11163", "why": "\uae30\uc220 \uc6d0\ub9ac \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s11165", "why": "\uae30\uc220 \uc6d0\ub9ac \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s11167", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11177", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11180", "why": "\ud504\ub85c\uc138\uc11c+\uba54\ubaa8\ub9ac \uc2a4\ud399", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s11184", "why": "\uae30\uc5c5 \uc18c\uac1c \ubcf4\uc77c\ub7ec\ud50c\ub808\uc774\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11185", "why": "\ud504\ub85c\ubaa8\uc158/\ub124\ube44", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11190", "why": "\uc0ac\uc6a9 \uad8c\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11205", "why": "\uc8fc\uc758 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11209", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11215", "why": "\uc8fc\uc5b4 it, \uc77c\ubc18 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11217", "why": "\uc6a9\uc5b4 \uc815\uc758", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s11234", "why": "\uc81c\ud488 \uad6c\uc131 \uad6c\uccb4 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s11236", "why": "\uc124\uce58 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11239", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11242", "why": "\ucfe0\ud3f0 \uc57d\uad00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11244", "why": "CTA/UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11254", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11257", "why": "\uc870\uc791 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11263", "why": "\uc124\uce58 \uc8fc\uc758 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11267", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \uc77c\ubc18 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11268", "why": "\uc8fc\uc5b4 this, \ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11278", "why": "\uc11c\ube44\uc2a4 \ud64d\ubcf4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11283", "why": "\ud64d\ubcf4 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11286", "why": "\uc81c\ud488 \uc720\ud615\uc774 \ubb34\uc5c7\uc778\uc9c0 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s11288", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11291", "why": "UI \uc54c\ub9bc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11293", "why": "\uc2ac\ub85c\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11294", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \uc77c\ubc18 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11296", "why": "\ub9c8\ucf00\ud305 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11297", "why": "\uc81c\ud488 \ub3d9\uc791 \uad6c\uccb4 \uc124\uba85", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s11299", "why": "\uad00\ub9ac \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11302", "why": "\uc2ac\ub85c\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11303", "why": "\ubc95\uc801 \uc57d\uad00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11308", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11314", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11315", "why": "\uc0ac\uc6a9 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11323", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11328", "why": "\ub514\uc790\uc778 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11334", "why": "\uac01\uc8fc \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11335", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11336", "why": "\uc0ac\uc6a9 \uad8c\uace0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11340", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11343", "why": "CTA/UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11345", "why": "UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11351", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11353", "why": "\uae30\ub2a5 \ud64d\ubcf4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11357", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11368", "why": "\uc8fc\uc5b4 this, \ub9c9\uc5f0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11376", "why": "\ub9c8\ucf00\ud305 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11378", "why": "\ucd9c\ucc98 \uba85\uc2dc \uc218\uc0c1", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s11379", "why": "\ud3fc UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11400", "why": "\uc8fc\uc758 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11408", "why": "\uae30\uc220 \uc6d0\ub9ac \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s11412", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11424", "why": "\uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11433", "why": "\uc8fc\uc5b4 this, \ud64d\ubcf4 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11438", "why": "\uac10\uc0c1\uc790\uc758 \uc2dc\uc120 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11443", "why": "\ud560\ubd80/\ud504\ub85c\ubaa8\uc158 \uc870\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11445", "why": "\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11450", "why": "\uc81c\ubaa9+\ud2f0\uc800", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11452", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11458", "why": "AIDD\u00ae\uac00 \ubb34\uc5c7\uc778\uc9c0 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s11459", "why": "\ubc30\uc1a1 \uc57d\uad00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11462", "why": "\uc124\uc815 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11468", "why": "\uae08\uc735 \uc57d\uad00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11469", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11473", "why": "\ubc95\uc801 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11482", "why": "\ubcf4\uc548 \ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11484", "why": "\uc8fc\uc5b4 it, \ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11491", "why": "\ub514\uc790\uc778 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11493", "why": "\uc124\uc815 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11494", "why": "\uae30\uc220 \uc6d0\ub9ac \uc124\uba85", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s11499", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11501", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11508", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11512", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11521", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11525", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11526", "why": "\ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11532", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11533", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11553", "why": "\uc81c\ud488 \uc720\ud615\ubcc4 \uad6c\uccb4 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s11555", "why": "\uc8fc\uc5b4 today, \ud64d\ubcf4 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11562", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11564", "why": "\uba74\ucc45 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11569", "why": "\uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11575", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11578", "why": "\ub514\uc790\uc778 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11583", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11584", "why": "\uc124\uce58 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11603", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11604", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11606", "why": "\uc2ac\ub85c\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11615", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11616", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11618", "why": "\uac01\uc8fc \uc81c\uc57d", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11619", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11626", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11627", "why": "\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11632", "why": "\uc124\uce58 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11647", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11662", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11670", "why": "\ud3fc UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11671", "why": "\uc81c\ud488 \uc720\ud615 \uc815\uc758", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s11673", "why": "\ud68c\uc0ac \uc18c\uac1c \ubcf4\uc77c\ub7ec\ud50c\ub808\uc774\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11679", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11682", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11685", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11688", "why": "\ub9c8\ucf00\ud305 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11689", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11691", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11704", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11707", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11709", "why": "\uc548\ub0b4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11710", "why": "\uc2ac\ub85c\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11711", "why": "\uc2ac\ub85c\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11713", "why": "\ubaa8\ub378\uba85+\uc778\ud154\u00b7\uc5d0\ucf54 \uc778\uc99d \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s11714", "why": "\ub9c8\ucf00\ud305 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11718", "why": "\ube44\uad50 \uae30\uc900 \uac01\uc8fc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11721", "why": "\uae30\ub2a5\uba85+\uc791\ub3d9 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s11722", "why": "\uac01\uc8fc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11727", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11734", "why": "\uc0ac\uc6a9 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11736", "why": "\uc548\ub0b4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11742", "why": "\uc5f0\ub77d\ucc98/UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11749", "why": "\uc548\ub0b4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11754", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11760", "why": "\ud53c\ub4dc\ubc31 UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11765", "why": "\uae30\ub2a5\uba85+\ub3d9\uc791 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s11767", "why": "\uac01\uc8fc \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11769", "why": "\uae30\ub2a5\uba85+\ub3d9\uc791 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s11770", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11773", "why": "\uc124\uce58 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11787", "why": "\uad6c\uccb4 \uae30\uc220 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s11788", "why": "\ub0b4\ube44+\ub9c8\ucf00\ud305", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11801", "why": "\ubb38\uc7a5 \uc870\uac01", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11804", "why": "\uc2ac\ub85c\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11822", "why": "\uc0ac\uc6a9 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11823", "why": "\uc124\uce58 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11827", "why": "\uc2dc\uc2a4\ud15c \uba54\uc2dc\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11832", "why": "\ubc30\uc1a1 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11834", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11836", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11842", "why": "\ubcf4\ub3c4\uc790\ub8cc \ubc1c\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11844", "why": "\uc870\uac74 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11858", "why": "\ud68c\uc0ac \uc18c\uac1c \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11862", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11865", "why": "\uc81c\ud488 \uc720\ud615+\uad6c\uccb4 \uae30\ub2a5 \uc0ac\uc2e4", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s11867", "why": "\uc870\uc791 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11878", "why": "\ud648 \ub0b4\ube44+\ub9c8\ucf00\ud305", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11882", "why": "\ub0b4\ube44+\ud64d\ubcf4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11889", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11892", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11896", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \uc77c\ubc18 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11900", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \uc77c\ubc18 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11902", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11909", "why": "\uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11919", "why": "\ucfe0\ud3f0 \uc57d\uad00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11925", "why": "\ud64d\ubcf4 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11926", "why": "\ud504\ub85c\ubaa8\uc158 \uc57d\uad00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11930", "why": "\ud3fc UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11933", "why": "\ubaa8\ud638\ud55c \ud6a8\uc775 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11934", "why": "\uc2ac\ub85c\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11947", "why": "\uc778\ud130\ubdf0 \uc778\uc6a9+\ud64d\ubcf4 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11952", "why": "\uc778\uc99d\uae30\uad00+\uc2dc\ud5d8 \uacb0\uacfc", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s11954", "why": "\ud560\uc778 \ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11959", "why": "\ub9c9\uc5f0\ud55c \ud64d\ubcf4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11970", "why": "\uc124\uc815 \uc8fc\uc758 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11974", "why": "\ud589\uc0ac \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11977", "why": "\ud504\ub85c\ubaa8\uc158 \uc57d\uad00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s11983", "why": "\uc5f0\ub77d\ucc98 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12000", "why": "\ud64d\ubcf4 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12001", "why": "\uc77c\ubc18 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12004", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12005", "why": "\ub0b4\ube44+\ud68c\uc0ac \uc18c\uac1c \uc81c\ubaa9", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12007", "why": "\uc81c\ud488 \uc720\ud615+\uae30\ub2a5 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12008", "why": "\uc77c\ubc18 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12009", "why": "\uc81c\ud488 \uc720\ud615 \uc815\uc758", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12016", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12026", "why": "\uc0ac\uc6a9 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12028", "why": "\uae30\uc220 \uc6d0\ub9ac \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12029", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12033", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12036", "why": "\uc8fc\uc5b4 this, \ub9c9\uc5f0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12040", "why": "\uc548\ub0b4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12047", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12055", "why": "\uc8fc\uc5b4 they, \ubaa8\ud638", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12063", "why": "\ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12068", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12069", "why": "\uac01\uc8fc \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12081", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12090", "why": "\ubcf4\ub3c4\uc790\ub8cc \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12096", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12098", "why": "\uc2dc\uc7a5 \uc804\ub9dd", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12116", "why": "\uc11c\ube44\uc2a4 \uc57d\uad00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12122", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12123", "why": "\ud64d\ubcf4 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12125", "why": "\ubc95\uc801 \uc57d\uad00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12126", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12135", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \uc77c\ubc18 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12145", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12158", "why": "\uc8fc\uc5b4 it, \ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12160", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12164", "why": "\uae30\ub2a5\uba85+\ub3d9\uc791 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12170", "why": "\uae30\uc220 \uc6d0\ub9ac \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12180", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12182", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12188", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12190", "why": "\ud504\ub85c\ubaa8\uc158 UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12202", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12203", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12207", "why": "\uac01\uc8fc+UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12214", "why": "\uae30\ub2a5\uba85+\ub3d9\uc791 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12217", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12221", "why": "\ucfe0\ud3f0 \uc57d\uad00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12224", "why": "\ubcf4\ub3c4\uc790\ub8cc \uc81c\ubaa9+\ub0a0\uc9dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12240", "why": "\uc778\uc99d \uba85\uc2dc \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s12242", "why": "\ubaa8\ud638\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12245", "why": "\uae30\uc220 \ub3d9\uc791 \uad6c\uccb4 \uc124\uba85", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s12254", "why": "\uc81c\ubaa9+\ub9c8\ucf00\ud305 \ud63c\ud569", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12255", "why": "\uc5f0\ub77d\ucc98/UI \ub098\uc5f4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12259", "why": "\uc0ac\uc6a9 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12260", "why": "\uc0ac\uc6a9 \uc8fc\uc758 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12261", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12263", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12274", "why": "\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12275", "why": "\uc8fc\uc5b4 \ubd88\uba85, \ub9c9\uc5f0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12282", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12283", "why": "\ubb38\uc7a5 \uc870\uac01", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12287", "why": "\uac01\uc8fc \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12290", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12292", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12295", "why": "\ud64d\ubcf4 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12299", "why": "\uae30\uc220 \uc6d0\ub9ac \uc124\uba85", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s12302", "why": "\ub9c8\ucf00\ud305 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12305", "why": "\ubaa8\ud638\ud55c \uc7a5\uc810 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12318", "why": "\ud575\uc2ec\uc0ac\uc591 \ube14\ub85d, \uad6c\uccb4 \ud56d\ubaa9", "citable": "y", "definition": "n", "summary": "y"}
+{"id": "s12336", "why": "\uc2ac\ub85c\uac74", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12337", "why": "\uc8fc\uc5b4 this, \ud64d\ubcf4 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12351", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12353", "why": "\ud68c\uc6d0\uc2ed \ud64d\ubcf4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12354", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12362", "why": "\ubc95\uc801 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12365", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12370", "why": "\ud504\ub85c\ubaa8\uc158 \uc57d\uad00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12391", "why": "\uac01\uc8fc \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12398", "why": "\uc77c\ubc18 \uc124\uba85", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12400", "why": "\uc81c\ud488 \uc720\ud615+\uad6c\uccb4 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s12405", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12413", "why": "\ud504\ub85c\ubaa8\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12428", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12430", "why": "\uc81c\ud488 \uc720\ud615 \uc815\uc758", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12435", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12436", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12444", "why": "\ud3fc UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12445", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12454", "why": "\uac01\uc8fc \uba74\ucc45", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12461", "why": "\ub0b4\ube44 \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12465", "why": "\uc81c\ubaa9+\ub9c8\ucf00\ud305", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12466", "why": "\uc11c\ube44\uc2a4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12467", "why": "\ub4f1\ub85d \uc54c\ub9bc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12472", "why": "\uc870\uc791 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12479", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12480", "why": "\uac01\uc8fc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12482", "why": "\uad6c\uccb4 \ub3d9\uc791 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s12483", "why": "\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12484", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12485", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \uc77c\ubc18 \uc124\uba85", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12491", "why": "\uc2a4\ud399\ud45c \uc870\uac01", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12515", "why": "\uc0ac\uc6a9 \uad8c\uace0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12517", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12518", "why": "\uac01\uc8fc \uc870\uac01", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12526", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12535", "why": "\ubaa8\ud638\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12539", "why": "\ubcf4\uc99d \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12544", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12557", "why": "\uae30\ub2a5\uba85+\ub3d9\uc791 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12560", "why": "\uac01\uc8fc+\uba74\ucc45", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12561", "why": "\uae30\uc220 \uc6d0\ub9ac \uc124\uba85", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s12563", "why": "\uae30\uc5c5 \uc804\ub9dd \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12567", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12578", "why": "\uac01\uc8fc \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12581", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12583", "why": "\ubc95\uc801 \uc57d\uad00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12586", "why": "\uc870\uc791 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12589", "why": "\uc77c\ubc18 \ub3c4\uc785 \ubb38\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12593", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12595", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12599", "why": "\uc870\uac01", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12602", "why": "\ud504\ub85c\ubaa8\uc158/UI \ub098\uc5f4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12603", "why": "\uc8fc\uc5b4 es, \ubaa8\ud638", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12616", "why": "\uc124\uc815 \uc8fc\uc758 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12625", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12628", "why": "\uc77c\ubc18 \uc124\uba85", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12630", "why": "\uc8fc\uc5b4 this, \ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12631", "why": "\ub9c8\ucf00\ud305 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12633", "why": "\uc124\uc815 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12642", "why": "\uc77c\ubc18 \uc6d0\uc778 \uc124\uba85", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12647", "why": "\ud64d\ubcf4 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12649", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12650", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12658", "why": "\uc0ac\uc6a9 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12661", "why": "\ud68c\uc0ac \uc18c\uac1c \uc81c\ubaa9", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12666", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12680", "why": "\uc5f0\ub77d\ucc98/UI \ud63c\ud569", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12686", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12694", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12696", "why": "\ub0b4\ube44+\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12697", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \uc77c\ubc18 \uc124\uba85", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12698", "why": "\uc778\uc6a9 \ubc1c\uc5b8+\ucd9c\ucc98", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12703", "why": "\uc8fc\uc5b4 it, \ubaa8\ud638", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12708", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \uc77c\ubc18 \ub17c\ud3c9", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12716", "why": "\ud504\ub85c\ubaa8\uc158/UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12719", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12720", "why": "\ub9c8\ucf00\ud305 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12721", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12722", "why": "\uc81c\ud488 \uc720\ud615 \uc124\uba85", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12731", "why": "ESP\ub294 ~\ub97c \ud558\ub294 \uae30\ub2a5", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12733", "why": "\ubaa8\ud638\ud55c \uc77c\ubc18 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12740", "why": "\uc0ac\uc6a9 \ud301", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12743", "why": "\uc81c\ud488 \uc720\ud615\uc774 \ubb34\uc5c7\uc778\uc9c0 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12748", "why": "\uae30\uc220 \uc6d0\ub9ac \uc815\uc758", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12755", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12770", "why": "\ub9c8\ucf00\ud305 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12773", "why": "\uad00\ub9ac \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12775", "why": "\uc8fc\uc5b4 this, \ub9c9\uc5f0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12777", "why": "\uc81c\ud488 \uc720\ud615 \uad6c\uccb4 \uc0ac\uc2e4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12782", "why": "\uae30\uc220 \uc6d0\ub9ac \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12787", "why": "\uc2dc\ud5d8 \ubc29\ubc95 \uac01\uc8fc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12788", "why": "\uc81c\ud488 \uc720\ud615 \uc815\uc758", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12789", "why": "\uc548\ub0b4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12790", "why": "\ud575\uc2ec\uc0ac\uc591 \ube14\ub85d, \uad6c\uccb4 \ud56d\ubaa9", "citable": "y", "definition": "n", "summary": "y"}
+{"id": "s12793", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12813", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12815", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12819", "why": "\ud504\ub85c\ubaa8\uc158 \uc57d\uad00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12820", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12821", "why": "\ud68c\uc6d0\uc2ed \ud64d\ubcf4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12825", "why": "\ube44\uad50 \uae30\uc900 \ube14\ub85d, \uc8fc\uc694\uae30\ub2a5 \ube14\ub85d", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12828", "why": "\ub514\uc790\uc778 \ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12831", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12832", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12838", "why": "\uc2dc\uc2a4\ud15c \uba54\uc2dc\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12840", "why": "\uc804\ub9dd \ub17c\ud3c9", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12844", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12856", "why": "\ub514\uc790\uc778 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12858", "why": "\uba74\ucc45 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12859", "why": "\uc124\uce58 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12860", "why": "\uc8fc\uc5b4 this, \ubaa8\ud638", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12870", "why": "\uc8fc\uc5b4 this, \ub9c9\uc5f0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12871", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12882", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12883", "why": "\ucfe0\ud3f0 \uc57d\uad00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12908", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \uc77c\ubc18 \ub3c4\uc785", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12912", "why": "\ub9c8\ucf00\ud305 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12919", "why": "\uae30\ub2a5\uba85+\ub3d9\uc791 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12920", "why": "\ube44\uad50 \uae30\uc900 \uac01\uc8fc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12922", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12924", "why": "\ud504\ub85c\ubaa8\uc158", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12929", "why": "\uac01\uc8fc \ub2e8\ud3b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12931", "why": "\ubc95\uc801 \uc57d\uad00", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12948", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12949", "why": "\uc8fc\uc5b4 this, \ubaa8\ud638", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12963", "why": "\ubaa8\ud638\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12964", "why": "\uba85\uba85 \uae30\uad00 \uc815\uc758", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s12985", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12996", "why": "\ud648 \ub0b4\ube44+\ub9c8\ucf00\ud305", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12997", "why": "\uac01\uc8fc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s12999", "why": "\uad6c\uccb4 \uae30\uc220 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s13000", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13002", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13011", "why": "\ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13013", "why": "\ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13018", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13019", "why": "\uc81c\uc870\uc0ac\u00b7\uc81c\ud488 \uc0ac\uc2e4", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s13020", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13027", "why": "\uc9c0\uc2dc \uc81c\ubaa9", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13028", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13031", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13044", "why": "\uc81c\ud488 \uc0ac\uc2e4, \uc0ac\uc2e4 \uc5c6\uc74c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13051", "why": "\ubaa8\ud638\ud55c \ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13052", "why": "\uad6c\ub9e4 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13053", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13056", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13070", "why": "\ud64d\ubcf4 \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13076", "why": "\ucd9c\ucc98 \uc5c6\ub294 \uc218\uc0c1", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13080", "why": "\uc778\ud130\ubdf0 \uc758\uacac", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13082", "why": "\uc77c\ubc18 \ub17c\ud3c9", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13087", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13091", "why": "\uc5f0\ub77d\ucc98/UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13093", "why": "\uc0ac\uc6a9 \uc548\ub0b4", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13097", "why": "\ub450 \uae30\ub2a5 \ub3d9\uc791 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s13101", "why": "\ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13105", "why": "\ub0b4\ube44+\ub9c8\ucf00\ud305", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13106", "why": "\uae30\ub2a5\uba85+\ub3d9\uc791 \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s13107", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13108", "why": "\uba74\ucc45 \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13110", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13123", "why": "\uc0ac\uc6a9 \uc870\uc5b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13124", "why": "\ub0a0\uc9dc\uc120/UI", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13125", "why": "\uc81c\ubaa9 \uc870\uac01", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13127", "why": "\uac01\uc8fc \uace0\uc9c0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13131", "why": "\uae30\uc5c5 \uc804\ub9dd \uc11c\uc220", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13132", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13135", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13148", "why": "\uc81c\ud488 \uc720\ud615 \uc815\uc758", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s13151", "why": "\uae30\uc220 \uc6d0\ub9ac \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s13153", "why": "UI \ud14d\uc2a4\ud2b8", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13163", "why": "\uae30\uc220 \uc6d0\ub9ac \uc124\uba85", "citable": "y", "definition": "y", "summary": "n"}
+{"id": "s13174", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13176", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13184", "why": "\uc0ac\uc6a9 \uc9c0\uc2dc\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13189", "why": "\uc81c\ud488 \ud64d\ubcf4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13199", "why": "\uc81c\ubaa9+\uc77c\ubc18 \ub3c4\uc785", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13200", "why": "\uc8fc\uc5b4 this, \uc2dc\uc7a5 \uc804\ub9dd", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13204", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13207", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13209", "why": "\uac01\uc8fc \uc801\uc6a9 \ubc94\uc704", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13218", "why": "\uc548\ub0b4 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13219", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13225", "why": "\ub0b4\ube44\uac8c\uc774\uc158 \ubb38\uad6c", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13226", "why": "\uc81c3\uc790 \uac80\uc99d \uc218\uc0c1", "citable": "y", "definition": "n", "summary": "n"}
+{"id": "s13237", "why": "\uc0ac\uc6a9 \uad8c\uace0", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13239", "why": "\uc8fc\uc5b4 this, \ub9c9\uc5f0 \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13240", "why": "\uc8fc\uc5b4 \uc5c6\ub294 \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13245", "why": "\uc9c8\ubb38", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13252", "why": "\ub9c9\uc5f0\ud55c \ud61c\ud0dd \uc8fc\uc7a5", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13256", "why": "CTA", "citable": "n", "definition": "n", "summary": "n"}
+{"id": "s13262", "why": "\ud648 \ub0b4\ube44+\ub9c8\ucf00\ud305", "citable": "n", "definition": "n", "summary": "n"}
