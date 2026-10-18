@@ -273,7 +273,13 @@ def is_excluded(r):
     return None
 
 
-def aggregate_country(doc, cr, psi):
+def counted_results(doc):
+    """집계에 실제로 들어가는 페이지 목록과 제외 사유 집계.
+
+    is_excluded → 리다이렉트 도착지 중복 제거 → 타입별 상한(TYPE_CAP) 순으로 거른다.
+    aggregate_country 가 쓰며, 비정기 재감사(run_support_ts_audit.sh)도 "리포트에 올라간
+    페이지"를 이 함수로 뽑아 같은 기준을 공유한다.
+    """
     excluded = defaultdict(int)
     results = []
     seen_dest = {}
@@ -318,7 +324,11 @@ def aggregate_country(doc, cr, psi):
             capped += group[:TYPE_CAP]
             excluded["type_cap"] += len(group) - TYPE_CAP
         results = capped
+    return results, excluded
 
+
+def aggregate_country(doc, cr, psi):
+    results, excluded = counted_results(doc)
     n = len(results)
     if not n:
         return None

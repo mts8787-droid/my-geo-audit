@@ -386,6 +386,9 @@ def main():
     ap.add_argument("--tag", default="",
                     help="비정기 감사 식별자. 출력이 <code>_<tag>_<date>_run_*.json 이 되어 월간 run 과 "
                          "섞이지 않는다(대시보드·리포트의 국가별 최신 run 선정에서 제외됨). 예: --tag ts")
+    ap.add_argument("--urls-file", default="",
+                    help="감사할 URL 목록 파일(한 줄 1 URL). 지정하면 sitemap CSV·샘플링·must_audit 을 "
+                         "건너뛰고 이 목록만 감사한다. 리포트 수록 페이지 재검수용(--tag 와 함께).")
     ap.add_argument("--local", action="store_true",
                     help="Render 대신 로컬 analyze_url(lightweight)로 감사. IP차단 국가(AU/IN) 우회용. /usr/bin/python3 필요.")
     args = ap.parse_args()
@@ -394,14 +397,20 @@ def main():
     csv_path = os.path.join(HERE, "reports", f"lg_urls_{code}.csv")
     # 비정기 감사는 run 파일 접두어를 <code>_<tag> 로 바꿔 월간 run 과 분리한다.
     run_code = f"{code}_{args.tag.strip().lower()}" if args.tag.strip() else code
-    urls = [r[0].strip() for r in csv.reader(open(csv_path)) if r and r[0].strip() != "url"]
+    if args.urls_file:
+        # 명시 목록 감사 (2026-10-19 신설): 리포트에 이미 올라간 페이지만 다시 재는 용도.
+        with open(args.urls_file, encoding="utf-8") as f:
+            urls = [l.strip() for l in f if l.strip().startswith("http")]
+        print(f"[render-audit] --urls-file {args.urls_file}: {len(urls)}건 (샘플링·must_audit 생략)")
+    else:
+        urls = [r[0].strip() for r in csv.reader(open(csv_path)) if r and r[0].strip() != "url"]
     # sitemap에 공백/제어문자가 든 잘못된 URL이 섞이면 Render bulk가 청크 전체를
     # 400 처리(50건 동반 거부)한다 → 사전 제거.
     bad = [u for u in urls if (not u.startswith("http")) or re.search(r"\s", u)]
     if bad:
         print(f"[render-audit] invalid URL {len(bad)}건 제외 (공백/형식 오류). 예: {bad[0]}")
         urls = [u for u in urls if u not in set(bad)]
-    if not args.full:
+    if not args.full and not args.urls_file:
         must = _load_must_audit(code)
         only_types = {t.strip() for t in args.types.split(",") if t.strip()}
         if only_types:
