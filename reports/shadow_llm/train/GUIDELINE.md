@@ -111,7 +111,8 @@ citable / definition = y (kept or added):
 summary: article-body "key features" lists and PDP spec headers are NOT summary (summary is decided by the #35 DOM rule in production).
 Note: the reviewer's calls are not perfectly consistent (e.g. "Air Fry circulates hot air…" = n but "AI engine analyses every frame" = y); when in doubt choose n.
 
-## v3 relabel — consolidated strict standard (2026-10-20) — THIS SECTION OVERRIDES EVERYTHING ABOVE
+## [WITHDRAWN 2026-10-20 — do not apply] v3 relabel — consolidated strict standard
+> Withdrawn: a blind relabel of the 328 human-reviewed sentences with this section reached only 10 % citable recall (F1 18 vs. v2 model 79). It wrongly extended troubleshoot-page strictness to all pages. Superseded by the calibrated section below.
 Derived from three reviewer passes (batch-1 review, 186-sentence model-disagreement review, 418-sentence troubleshoot review).
 In every pass the reviewer flipped most y labels to n. The reviewer's real question is:
 **"Would an AI answer engine copy this sentence verbatim as a FACT about a specific LG product, technology, spec, standard or error code?"**
@@ -139,3 +140,49 @@ summary = n for everything except a genuine page-level overview sentence ("This 
   Key-feature lists, PDP spec headers, article lists, titles = n (summary is decided by the #35 DOM rule in production).
 For page type support_troubleshoot also apply reports/shadow_llm/train/GUIDELINE_TS.md including its "검수자 보정" section.
 When unsure → n.
+
+
+## v3 calibrated standard (2026-10-20, derived from the reviewer's own labels) — THIS SECTION OVERRIDES EVERYTHING ABOVE
+Derived from the reviewer's actual y/n decisions on 328 reviewed sentences. On general pages (PDP, PLP, experience, buying guide,
+microsite, business, press, promotion, home) the reviewer is strict about BENEFIT TALK but accepts concrete TECHNICAL content.
+For page type support_troubleshoot apply GUIDELINE_TS.md (with its "검수자 보정" section) instead — that page type is much stricter.
+
+### citable = y when the sentence states at least one of these, with its subject named in the sentence:
+  1. A named LG technology / product / feature AND how it works or a measurable effect:
+     "The R1 Compressor works to reduce up to 4dB of noise and vibration" · "NanoCell technology delivers a broad colour spectrum by filtering out impurities"
+     · "Der neue Algorithmus des alpha 11 AI Processor Gen3 liefert hellere Highlights" · "Adaptiver Kontrast regelt die Stromstärke abhängig von der Helligkeit des Bildes"
+     · "O DoorCooling+ mantém a temperatura estável nas prateleiras da porta, enquanto o LinearCooling reduz variações internas"
+  2. A spec / number with its meaning: "0.03ms response time and up to 240Hz refresh rate" · "bis zu 24 bit / 192 kHz" · "Pixelabstand von 1,56 Millimetern"
+     · "4 a 6 veces más calor por cada kW" · "8 kg für Einzelpersonen, 9 kg für kleine Familien, 10,5 kg …" (capacity-to-household table)
+  3. A requirement / compatibility / applicability: "Compatible smartphone with Android 4.1.2 or later or iOS 9 or later required for LG ThinQ app"
+     · "Dolby Atmos: H7, M7 support it natively; M5 …" · "the UVnano filter box is an optional accessory for the mid static UMN models"
+  4. A test result, certification or award WITH its source: "UL verified for Perfect Black, measured per IDMS 11.5" · "im Test bei Konsolenfan '5 von 5'"
+     · "World's first OLED gaming monitors with 240Hz"
+  5. A glossary-style definition of a display/technology term: "8K Ultra HD — eight times the resolution of Full HD" · "Full HD (1080p) — …"
+  6. A PDP header / key-features block whose items are concrete specs or named technologies
+     ("Laser-Beamer mit nativer 4K-UHD-Auflösung von 3.840 x 2.160 Pixeln …", "MULTI V S, 5 HP, R32 … Menor GWP …").
+  7. A press sentence announcing a dated, concrete product fact ("Sydney, September 2023 – LG Electronics Australia announced the local availability of its 1:1 ducted … range").
+
+### citable = n:
+  - Benefit / convenience talk without a mechanism or number: "The Air Fry circulates hot air for the perfect, even cook" · "AI technology selects optimal dry motions"
+    · "The Pet Care cycle helps reduce odours" · "Smudge Resistant finish wipes clean" · "works with Google Assistant and Alexa" · "The door can be changed from right to left swing"
+    · "Ambient Mode lets announcements come through" · "Com o Switching Hub, você conecta mouse e teclado" · "Fusion Lighting: customise backlight colours"
+  - Feature lines carrying a footnote number ("10) Der LG AI TV erkennt deine Stimme…", "21) Game Dashboard …") and feature-tagline lists in articles
+    ("Some of its key features include: Flexible Curved Display … '1 screen, 20 curves'").
+  - Spec attribute strings without a predicate (tilt -5~15°, "Exibição - Tamanho 32\" Resolução 3840x2160 …"), simulated-image notes, "*Sold separately".
+  - Recommendations ("8–9 kg is recommended for an average family"), survey statistics in PR, company boilerplate, marketing awards quotes without the fact.
+  - Prices, promotions, financing, warranty, delivery, contacts, legal, navigation, titles, questions.
+
+### definition = y when a NAMED term / technology / feature / product is explained by what it is or how it works:
+  "The R1 Compressor works to reduce up to 4dB…" · "NanoCell … by filtering out impurities" · "ClearMR 10000 minimiert Bewegungsunschärfen"
+  · "Auto Clean+ se activa después de usar el aire, detecta la humedad y sopla aire para eliminarla" · "8K Ultra HD — eight times the resolution of Full HD"
+  · "The SmartDiagnosis feature helps the service center diagnose problems over the phone or with an app" · "the UVnano filter box is an optional accessory for UMN models".
+### definition = n: benefit talk ("Air Fry circulates hot air…", "AI selects optimal motions"), company profiles ("LG Electronics is a global innovator…"),
+  "X lets you / you can …" convenience sentences, footnoted feature lines, generic category claims ("Smart TVs allow voice control…").
+
+### summary: n for almost everything (decided by the #35 DOM rule). y only for a page-level overview sentence or a PDP key-features block with concrete items.
+
+### Calibration: on these reviewed sentences the reviewer marked citable y on ~29 % and definition y on ~12 % — a general-page batch with < 5 % y means you are too strict.
+
+### why: write a SPECIFIC reason for each sentence naming the decisive element (e.g. "R1 압축기 4dB 소음 저감 수치", "혜택 서술, 작동 원리 없음", "각주 번호 붙은 기능 문구").
+  Do not reuse the same why text for more than 5 sentences in a batch.

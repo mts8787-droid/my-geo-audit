@@ -1,0 +1,340 @@
+페이지 정보: 국가=ES, 유형=support_troubleshoot, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002103-20155179477232/
+문장:
+s11604 Pulsa la rueda (OK) mientras se está grabando para ver los detalles de la grabación.
+
+페이지 정보: 국가=ES, 유형=pdp, URL=https://www.lg.com/es/tvs-soundbars/mini-rgb-evo/65mrgb86b6a-aeud/
+문장:
+s00002 Ir a la página de inicio Tu dirección de correo electrónico se ha registrado correctamente.
+
+페이지 정보: 국가=ES, 유형=pdp, URL=https://www.lg.com/es/tvs-soundbars/oled-evo/oled65c6elb/
+문장:
+s00013 Procesador α11 Gen3 AI El procesador más potente, ahora un 70% más inteligente (4K α11 Gen3) El procesador α11 Gen3 IA está preparado para incorporar las novedades de la IA.
+s00071 El tiempo de respuesta de LG OLED puede alcanzar los 0,1 ms, lo que supone hasta 50 veces mayor rapidez frente a otros modelos comercializados Los resultados pueden variar según el modelo, las condiciones de prueba y el entorno de uso.
+s00118 Imbatible en gaming: hasta 50 veces más rápido que el mejor TV LED del mercado (tiempo de respuesta 0,1ms) 8 , máxima fluidez VRR 165Hz, compatible y certificado con nVidia G-sync/AMD Freesync Premium y cloud gaming 9 .
+s00807 10.Basado en pruebas de resistencia realizadas por un tercero independiente sobre los principales modelos de paneles OLED o de tecnologías similares comercializadas.
+s01848 8.Según comparación interna entre el tiempo de respuesta de los televisores LG OLED y el de otros televisores LED comercializados en España.
+s12299 Los creadores de los TV OLED te ofrecen la mejor calidad de imagen 1 gracias al único negro puro del mundo y el exclusivo subpíxel blanco de su panel OLED evo.
+
+페이지 정보: 국가=ES, 유형=microsite, URL=https://www.lg.com/es/tvs-soundbars/why-true-wireless/
+문장:
+s00860 *HGiG es un grupo voluntario de empresas de la industria del videojuego y de la fabricación de pantallas de televisión que se han unido para crear unas pautas para mejorar la experiencia de juego en HDR de los consumidores y ponerlas a disposición del público.
+s01112 *OLED T4: El primer televisor transparente e inalámbrico del mundo, en comparación con los televisores tradicionales que tienen un sintonizador para la radiodifusión.
+s01118 *Sin pérdidas visuales según los resultados de pruebas internas con ISO/IEC 29170-2 con rendimientos reales dependiendo de ajustes, condiciones del entorno y uso.
+s01146 *4K 144Hz se aplica a OLED M5 de 83/77/65 pulgadas y QNED9M.
+
+페이지 정보: 국가=IN, 유형=home, URL=https://www.lg.com/in/
+문장:
+s00845 Buy Now Search for Smart Monitor made for work and streaming Find your ideal monitor for more on one screen Highlight Story Washing Machine LG OLED evo Refrigerator Computing LG Core-Tech Proud to announce as the Most Energy Efficient Appliance of the Year 2025 By National Energy Conservation Awards (NECA) Bureau of Energy Efficiency (BEE) Learn more Presenting LG WashTower New Form of Laundry Presenting LG WashTower Unibody Washer & Dryer Watch Video Presenting LG Washer Dryer The New Way of Wa
+
+페이지 정보: 국가=IN, 유형=press_media, URL=https://www.lg.com/in/about-lg/press-and-media/lg-electronics-introduces-new-range-of-microwave-ovens-this-festive-season/
+문장:
+s01495 Price and Availability The all-new Microwave range starts from INR 13,599/- and is available across stores.
+s10920 These recipes are certified by the Heart Care Foundation of India.
+s12055 They utilise lesser space while offering better performance.
+s12581 With Quartz Heater-Concealed Heating , cooking has become safer as there is no chance of a hand injury.
+
+페이지 정보: 국가=IN, 유형=pdp, URL=https://www.lg.com/in/air-conditioners/split-air-conditioners/as-q18tnxe1/
+문장:
+s00180 Enable VIRAAT Mode for quicker relief, as the system offers up to 2x faster vertical air swing to cover a wider area.
+s00334 Watch the Full Movie *Maximum Cooling Capacity may vary Model to Model from 108% to 124%.
+s00985 Gold Fin+ Thicker fins and hydrophilic layers boost durability for long-lasting performance.
+s10581 By tracking key parameters, ADC Sensors help to avoid abnormal conditions that can affect performance or durability.
+
+페이지 정보: 국가=IN, 유형=microsite, URL=https://www.lg.com/in/magazine/how-lg-convertible-microwaves-are-revolutionizing-indian-cooking/
+문장:
+s00008 The result is still crispy.
+s00962 60 dedicated Air Fry Low Calorie recipes are pre-programmed into the oven — from aloo tikki and samosa to chicken 65 and fish amritsari — using up to 88% less oil vs.
+s11727 Creates a crunchy outside, juicy inside texture that regular microwaves simply cannot achieve Delivers gourmet flavour — not just heated food, but genuinely cooked food with depth Works across grilling, baking, and rotisserie cooking modes Air Fry Mode: 60 Recipes, Real Indian Food, Almost No Oil The air fry capability is where the LG Convertible Oven becomes a daily-use appliance for Indian households, not just a weekend cooking gadget.
+
+페이지 정보: 국가=IN, 유형=promotion, URL=https://www.lg.com/in/promotions/electronics-festive-offers-terms-and-conditions/
+문장:
+s00015 The Coupon may not apply to shipping and handling charges or taxes.
+
+페이지 정보: 국가=IN, 유형=plp, URL=https://www.lg.com/in/refrigerators/all-refrigerators/
+문장:
+s10228 Smart Inverter Compressor: Helps deliver efficient and reliable cooling while supporting energy saving.
+
+페이지 정보: 국가=IN, 유형=pdp, URL=https://www.lg.com/in/refrigerators/double-door-refrigerators/gl-s412sesy-es/
+문장:
+s01461 Not only this, it comes with 10 year warranty and provides super silent operation.
+
+페이지 정보: 국가=IN, 유형=buying_guide, URL=https://www.lg.com/in/tv-soundbars/tv-buying-guide/sport-tv/
+문장:
+s00240 Why LG TVs are great for sports viewing LG TVs are good for watching sports because they deliver sharp detail, responsive processing, and immersive sound.
+
+페이지 정보: 국가=IN, 유형=pdp, URL=https://www.lg.com/in/water-purifiers/ww156rttb-new/
+문장:
+s00033 NOIDA (UP) - 201306 Net quantity 1 Close What people are saying PICKS FOR YOU: Need help?
+s00040 The Product Dimensions (WxHxD mm) of WW156RTTB is 365 x 508 x 264.
+s00079 Range Catalogue-Water purifiers Download Now FAQs Q.
+
+페이지 정보: 국가=MX, 유형=microsite, URL=https://www.lg.com/mx/55ua751c0sa-bulk7
+문장:
+s00004 Empieza por nuestra página de inicio o navega por los enlaces siguientes.
+
+페이지 정보: 국가=MX, 유형=press_media, URL=https://www.lg.com/mx/acerca-de-lg/press-and-media/energy-star/
+문장:
+s00548 “ENERGY STAR apoya la misión ‘Innovación para una vida mejor’ de LG, que significa crear una vida mejor para las personas y un futuro mejor para nuestro planeta a través de soluciones de vida inteligentes”, dijo Chris Jung, presidente y CEO de LG Electronics Norteamérica.
+
+페이지 정보: 국가=MX, 유형=press_media, URL=https://www.lg.com/mx/acerca-de-lg/press-and-media/hitec-2024/
+문장:
+s00445 Para salas de conferencias u otras áreas más grandes, LG demostrará varios proyectores láser 4K ProBeam y CineBeam para mostrar cómo cualquier espacio puede beneficiarse de una proyección de pantalla grande y alta definición.
+s10275 “Ya sea que estén buscando mejorar la conveniencia, la automatización, los ingresos publicitarios o elevar los alojamientos de lujo, LG tiene soluciones para satisfacer las necesidades de cada empresa y proveedor de hospitalidad”.
+s13044 También se presenta en el stand de LG un nuevo gabinete Melitron que incluye tecnologías de cargador EV y señalización digital de LG.
+
+페이지 정보: 국가=MX, 유형=business, URL=https://www.lg.com/mx/business/backups/hvac/soluciones-comerciales/sistema-vrf/unidades-interiores/fan-coil/
+문장:
+s12170 Instalación Flexible (Solo Conducto de Baja Estática) El nuevo conducto de baja estática permite la entrada de aire en la parte trasera o inferior en condiciones de instalación.
+
+페이지 정보: 국가=MX, 유형=buying_guide, URL=https://www.lg.com/mx/home-appliances/buying-guide/fridge-freezer/feature-performance/
+문장:
+s00053 Ver todos los Total No Frost Dispensador de hielo y agua Refrigeración instantánea incorporada Agua filtrada y hielo fresco disponibles siempre que lo necesites con los dispensadores LG.
+s12996 Enhanced energy efficiency Conciencia energética que se adapta a tu estilo de vida InstaView™ Información al instante, conveniencia inteligente LG InstaView™ te permite ver el interior de la elegante pantalla de cristal con sólo dar dos golpecitos rápidos.
+
+페이지 정보: 국가=MX, 유형=pdp, URL=https://www.lg.com/mx/lavadoras-y-secadoras/lavadoras-de-carga-frontal/wd300cw/
+문장:
+s00001 Lavadora TWINWash™ Mini Inverter DD 3.5kg WD300CW ( ) Características clave Solución perfecta para cargas pequeñas o cargas diarias Motor Inverter Direct Drive Dimensiones (An.
+s00009 2) Las calificaciones de energía, centrifugado y ruido son de acuerdo con la UE 2019/2014.
+s00031 *Prueba de laboratorio interna de LG basada en EN 60456:2016/A11:2020 con F6V7RWP1WE.
+s00065 Motor Inverter DD Control preciso y durabilidad Diseño ideal que se ajusta a la TWINWash™ Mini,  el motor Inverter Direct Drive brinda un control preciso y durabilidad con hasta 10 años de garantía.
+s01340 (No compatible con capacidades menores a 18kg) La lavadora pedestal TWINWash™ Mini debe colocarse debajo de una lavadora LG carga frontal compatible para que funcione adecuadamente.
+s01937 LG recomienda una lavadora con una capacidad de tambor de 8 a 9 kg para un hogar de tamaño medio.
+
+페이지 정보: 국가=MX, 유형=pdp, URL=https://www.lg.com/mx/lavadoras-y-secadoras/lavadoras-de-carga-frontal/wm22wv26sr/
+문장:
+s00022 Aun así, la mayoría de las Lavadoras LG de carga frontal cuentan con sistema de lavado con Inteligencia Artificial AI DD™, que identifica automáticamente los tejidos y adapta los movimientos de lavado, para proporcionar un lavado óptimo, con hasta un 18% más protección de la ropa.
+s00042 *La compatibilidad con dispositivos domésticos inteligentes que son compatibles con Alexa y el Asistente de Google puede variar según el país y la configuración individual de su hogar inteligente.
+s01980 Cuidado inteligente con 10% más protección de tejidos AI Inverter Direct Drive™ maximiza el desempeño de limpieza y prolonga la vida útil de tus prendas.
+s11297 Ninguna carga de lavado tiene un solo tipo de tela en específico, por eso, con el sistema 6MotionDD obtienes 6 diferentes movimientos de lavado, que se adaptan a la carga, los cuales son ideales para todo tipo de prendas.
+s11553 Además, el motor Inverter DD disipa menos energía, reduciendo el consumo de electricidad.
+s13093 Mantenimiento Eficiente del Producto Verifica el estado de tu lavadora, descarga nuevos ciclos o controla el uso de energía con LG ThinQ™.
+
+페이지 정보: 국가=MX, 유형=experience, URL=https://www.lg.com/mx/lg-experience/helpful-hints/how-to-clean-your-refrigerator/
+문장:
+s00005 Haga una pasta de bicarbonato de sodio y agua, aplíquela suavemente y luego limpie.
+
+페이지 정보: 국가=MX, 유형=experience, URL=https://www.lg.com/mx/lg-experience/helpful-hints/microwave-size-and-buying-guide/
+문장:
+s00014 Esta superficie avanzada es resistente a las manchas y a la acumulación de residuos, lo que te permite limpiar derrames con solo un paño húmedo, sin necesidad de químicos agresivos.
+s00069 Para un rendimiento óptimo del microondas, elige la potencia en vatios que se adapte a tus hábitos de cocina.
+s01369 La potencia en vatios se refiere a la potencia de calentamiento del microondas, no simplemente a su consumo de electricidad, y, por lo general, oscila entre 700 W y 1200 W en los modelos de uso doméstico.
+
+페이지 정보: 국가=MX, 유형=support_troubleshoot, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001177-20155048186372
+문장:
+s00019 * 0 / 500 Caracteres Completa los campos obligatorios.
+s00909 2015 - 2019: Apagar después de 10 minutos de funcionamiento.
+s01449 Después de 2017: El producto se apaga tras funcionar durante 10 minutos.
+s10382 Función de secado automático Cuando detenga las operaciones de refrigeración o deshumidificación, la función de secado se iniciará automáticamente.
+
+페이지 정보: 국가=MX, 유형=plp, URL=https://www.lg.com/mx/tv-soundbars/qned/?ec_ft_07545230=86_pulgadas_y_m%C3%A1s
+문장:
+s00299 Las certificaciones UL Perfect Black** y Perfect Color** mejoran el brillo y el contraste percibidos con colores precisos, ya sea en entornos brillantes u oscuros.
+s00867 Volumen de color al 100 %: (2025) todos los televisores QNED evo y QNED, (2024) solo QNED99/90 **La pantalla LG OLED está verificada por UL para un negro perfecto, medido según el estándar IDMS 11.5 de reflexión de luz anular, basado en una iluminación interior típica (de 200 lux a 500 lux).
+s00870 Precios Exclusivos Disfruta de un 5% adicional pagando con SPEI.
+s12484 ¿Qué televisor LG QNED es mejor?
+s12999 *Los modelos LG QNED y QNED evo están equipados con diferentes soluciones de color que utilizan la tecnología más reciente y exclusiva de amplia gama cromática de LG, que incluye la sustitución de puntos cuánticos.
+
+페이지 정보: 국가=MX, 유형=microsite, URL=https://www.lg.com/mx/tv-soundbars/why-lg-qned-evo-mini-led/
+문장:
+s00039 *La disponibilidad de los servicios varía según la región y el país.
+s00056 Disfruta de entretenimiento sin límites y de una auténtica calidad cinematográfica Dolby Vision y FILMMAKER Mode Dolby Atmos LG Channels Imágenes nítidas y fieles a la visión original del creador gracias a Dolby Vision y FILMMAKER Mode Disfruta del cine tal y como fue concebido.
+s00066 LG no asume ninguna responsabilidad por las acciones o decisiones tomadas basándose en dicha información.
+s00088 Certificado por UL para una baja emisión de luz azul: una imagen ultra grande que no cansa la vista 2) La tecnología Super Escalador AI ofrece una calidad de imagen 4K incluso en pantallas gigantes LG AI TV utiliza el procesamiento neuronal con AI para reconocer objetos en cada fotograma y aplicar una optimización basada en objetos con el fin de mejorar la calidad hasta 4K.
+s00702 3) La exclusiva tecnología de LG basada en Nano tecnología para una gama de colores más amplia ofrece un volumen de color del 100% en tu televisor Disfruta de colores más dinámicos y vivos en movimiento gracias a la exclusiva tecnología de gama de colores ampliada basada en Nano tecnología de LG, que sustituye a la tecnología Quantum Dot y mejora la reproducción del color de tu televisor para expresar una gran variedad de sensaciones con Dynamic QNED Color Pro..
+s00743 Mini LED con Precision Dimming Ultra LED convencional *Las especificaciones de Mini LED y las zonas de atenuación pueden variar según el tamaño, el modelo y la región.
+s00786 *Las especificaciones y características varían según la región, el modelo y el tamaño.
+s01098 Dolby Vision realza cada detalle, y el FILMAKER Mode elimina el procesamiento innecesario para ofrecer una experiencia auténtica con calidad de estudio.
+s01523 *La compatibilidad con HGiG puede variar según el país.
+s10605 Vive una emocionante experiencia deportiva que hará que cada partido sea aún más memorable Recibe pronósticos deportivos de Sports Forecast como parte de Concierge AI La AI analiza las estadísticas y el rendimiento de tu equipo para ofrecerte predicciones sobre los partidos.
+
+페이지 정보: 국가=UK, 유형=home, URL=https://www.lg.com/uk/
+문장:
+s00030 Buy Now Experience ultra-fast gameplay with UltraGear™ Gaming Monitors Learn More 10.9mm & 990g The Thinnest gram Ever Learn More Expansive Portable Monitor Expand Your View Learn More LG Core-tech, Difference at the Core Learn More Inverter DirectDrive™ Complete clothing care Learn More Inverter Linear™ Long-lasting freshness Learn More DUAL Inverter™ Faster, Efficient, DUAL is better Learn More xboom, inspired by will.i.am Introducing new xboom, an intergration of creative culture and cutting-
+s00043 Smart TVs Learn More AI Laundry Learn More Optimising Remote Work Learn More Our Picks for You New Most Popular Become an LG Member Enjoy all the benefits of FREE LG membership, from special discounts to exclusive services and offers.
+
+페이지 정보: 국가=UK, 유형=press_media, URL=https://www.lg.com/uk/about-lg/press-media/lg-unveils-two-groundbreaking-smartphones/
+문장:
+s00375 LG’s first 5G handset will exceed expectations, offering uncompromising reliability and allowing users to experience high-quality content at 5G speeds, expected to deliver up to 20 times the speed of 4G.
+s01035 In the UK, LG is partnering with EE - the UK’s number one mobile network - to bring the V50 5G to UK consumers later this year.
+s01060 The Dual Screen display and the LG V50 ThinQ 5G can be used independently, allowing for many interesting usage scenarios.
+s01315 With DTS:X technology onboard, LG V50 ThinQ 5G allows users to experience surround sound that enhances the quality of any content to create a realistic soundscape with suburb clarity and depth.
+s11787 Looking beyond still images, LG implemented Video Depth Control in both the front and rear cameras to ensure that moving subjects remain in focus.
+s12557 A multi-window feature divides each screen in two, making it possible to display and use multiple applications at the same time.
+s12697 In select games, the Dual Screen can be used as a dedicated controller, resolving the age old problem of thumbs getting in the way of the action.
+
+페이지 정보: 국가=UK, 유형=press_media, URL=https://www.lg.com/uk/about-lg/press-media/your-kitchen-in-bloom/
+문장:
+s00256 Comprising four business units -- Mobile Communications, Digital Appliance, Digital Display and Digital Media with 2006 global sales of US $38.5 billion -- LG Electronics is the world's largest producer of CDMA handsets, air conditioners, optical storage products, DVD players and home theater systems.
+s12964 About the Energy Saving Trust The Energy Saving Trust is one of the UK's leading organisations set up to mitigate the damaging effects of climate change.
+
+페이지 정보: 국가=UK, 유형=business, URL=https://www.lg.com/uk/business/blog/air-solution/heat-pump-grant-market-forecast/
+문장:
+s01008 REPowerEU is the newest driver from the EU Commission to quickly reduce the use of fossil fuels, aiming to have 60 million heat pumps installed by 2030, which would mean an average of 5 million per year.
+
+페이지 정보: 국가=UK, 유형=business, URL=https://www.lg.com/uk/business/cloud-devices/thin-client/ck500w-3a/
+문장:
+s00035 1.4) DVI-I 1 x DVI-I (Output) USB 4 x USB2.0/2 x USB3.0 Mic-in Yes Headphone Out Yes NETWORKING Wireless Intel Dual Band Wireless-AC 3168 1x1 AC (AGN support, BT 4.0 + LE Combo) BT over BT4.0 Ethernet Yes (Gigabit) BATTERY Battery (No Battery) DIMENSIONS & WEIGHT WxDxH (with Stand) (No Stand) WxDxH (without Stand) 7.1 x 1.6 x 4.6 (in)/180 x 39.9 x 117 (mm) Weight (with Stand) (No Stand) Weight (without Stand) 2.2lbs/1kg VESA 100 x 100 (mm), 75 x 75 (mm) STAND Stand (No Stand) SECURITY TPM (Trust
+s00068 1.2) HDMI 1 x HDMI (Input, ver.
+
+페이지 정보: 국가=UK, 유형=buying_guide, URL=https://www.lg.com/uk/buying-guides/laundry-spec-library/
+문장:
+s00037 ezDispense ™ Pre-load the detergent dispenser and let your washing machine do the work.
+s01564 Dimensions: W 600mm x H 850mm x D 565–675mm Use this five-point checklist to ensure your LG Washing Machine will be the perfect fit for your home: 1.
+s10261 Energy Monitoring Whether it’s daily maintenance or bigger tasks, the LG ThinQ ™ app lets you easily monitor your washing machine’s energy consumption.
+
+페이지 정보: 국가=UK, 유형=experience, URL=https://www.lg.com/uk/lg-experience/buying-guide/choosing-the-best-type-of-fridge-freezer/
+문장:
+s00061 Choosing a fridge freezer based not just on size and looks, but also on advanced features for efficiency and freshness, is a rare “win-win.” You may reduce your power bills, and waste less food—all with one thoughtful purchase that supports smarter everyday living.
+s00078 ✓  Peace and quiet : Say goodbye to mechanical hums and clattering compressors—energy savings come with silence.
+s01639 Uneaten, wasted food—estimated to cost the average UK family up to £700 a year—landfills money and natural resources right alongside those leftovers.
+s10544 Best Overall LG Fridge Freezer: GSGV81PYLL If you want the ultimate performance in energy savings and food freshness, the LG GSGV81PYLL leads the pack.
+s10885 Smart Inverter Compressor™ Traditional compressors run at the same speed all day, burning power at full tilt (even when you only need a nudge of cooling).
+s12949 This helps reduce unnecessary cooling loss , which may contribute to improved energy efficiency over time, depending on usage patterns.
+
+페이지 정보: 국가=UK, 유형=pdp, URL=https://www.lg.com/uk/monitors/gaming/27g810a-b/
+문장:
+s00407 27” LG UltraGear™ G8 Gaming Monitor, 4K UHD, Dual-Mode (Max 360Hz), 1ms GtG, HDMI 2.1, Black 27G810A-B ( ) 360° Key Features 27-inch 4K UHD (3840x2160) IPS display VESA DisplayHDR™ 400 180Hz refresh rate 1ms (GtG) response time NVIDIA® G-SYNC® Compatible / VESA Certified AdaptiveSync / AMD FreeSync™ Premium More Gallery 360° 27-inch 4K 180Hz IPS Gaming Monitor with Dual-Mode *The images simulated to enhance feature understanding.
+
+페이지 정보: 국가=UK, 유형=support_troubleshoot, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00001302-20155060990113
+문장:
+s10913 Power Cooling Function This function rapidly cools the indoor space by emitting colder air than
+s12454 At a glance The SP, CP, and PO codes appear when Power Cooling is enabled.
+
+페이지 정보: 국가=UK, 유형=support_troubleshoot, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008386-20155021554412/
+문장:
+s00023 What should I do if I have an older model purchased before 2024?
+
+페이지 정보: 국가=UK, 유형=pdp, URL=https://www.lg.com/uk/tvs-soundbars/smart-tvs/50nano816pa/
+문장:
+s00048 Its an easy way to keep track of that special something Youve had your eye on or save gift ideas for friends and family.
+s00049 18 months: Single purchase value of over £1,500.
+s01278 LG NanoCell NANO81 50" 4K Smart TV 50NANO816PA 50" 55" 65" 75" ( 4 ) Key Features LG NanoCell technology for pure colours in 4K Ultra HD Fast Quad Core Processor 4K & local dimming for bolder contrast HDR for impressive cinema, sport and gaming Scintillating and atmospheric sound quality with AI Sound webOS smart platform with Freeview Play, Netflix, Disney+ and more More Gallery Print See All Specs Close All Spec DISPLAY Type 4K NanoCell Screen Size 50 Resolution 3840 x 2160 Color / NanoCell Ye
+
+페이지 정보: 국가=US, 유형=home, URL=https://www.lg.com/us
+문장:
+s00016 Reprinted with permission.
+s00077 Shop Now Save $200 - $250 on select 4-piece laundry sets Save $200 on an ultra-modern Front Load Washer & Dryer pair Save $200 on a top load washer & dryer pair Get 2 free specialty hangers with LG Styler® Steam Closet Save $200 on an ultra-modern Front Load Washer & Dryer pair Save $200 on a top load washer & dryer pair Get 2 free specialty hangers with LG Styler® Steam Closet Save up to $2,000 on select Big Screen TVs Start checking off that holiday list with savings on select Big Screen TVs—p
+s00208 Save up to 35% on select LG TVs + up to $200 Virtual Visa® Prepaid Card Save 30-50% on top home appliances Exclusively here.
+s01219 Start Chat Recommended for you Home appliances you can count on LG Reliability Kitchen Laundry Energy Innovation Other Appliances What LG Customers Say Highly Rated by Consumer Reports in Major Appliance Reliability for 7 Years in a Row Learn More Shop Now LG is the Consumer Reports 2026 Best Brand for Washing Machines LG is the Consumer Reports 2026 Best Brand for Top Freezer Refrigerators LG is the Consumer Reports 2026 Best Brand for Wall Ovens Check out our Consumer Reports Recommended WT840
+s11378 * LG OLED TV has been ranked the #1 selling OLED TV Brand for 13 consecutive years by Omdia.
+
+페이지 정보: 국가=US, 유형=business, URL=https://www.lg.com/us/business/cloud-computing/lg-24cr671ik-6p
+문장:
+s01704 Public but Personalized With RFID module, multiple people can use the device as a personalized thin client.
+s11180 Powerful Performance This All-in-One Thin Client has an advanced Quad-core Processor and a powerful system memory option to help get work done quick and easy.
+s11865 Features and Specs Why Cloud for Healthcare Experience Management Specs and Resources Easy and Secure LG Thin Client offers medical facilities an endpoint that delivers end-user performance and strong data protection.¹ It provides a secure, reliable virtual desktop experience that is easy to implement and manage.
+
+페이지 정보: 국가=US, 유형=plp, URL=https://www.lg.com/us/collections/97-inch-tvs
+문장:
+s01236 LG OLED evo: Featuring self-lit OLED pixels, infinite contrast, and AI-powered 4K upscaling, LG’s 97-inch OLED TVs deliver deep blacks, vibrant colors, and exceptional motion handling.
+s01659 97 Inch-100 Inch TV FAQs Q: Does LG offer a 100-inch TV?
+s13002 Home Theater–Ready Audio & Gaming: Pair the 97-inch OLED with LG Soundbars for a full cinematic setup.
+
+페이지 정보: 국가=US, 유형=experience, URL=https://www.lg.com/us/experience/luxury-tech-gift-ideas-for-women
+문장:
+s00051 Whether gaming or working, the LG gram Pro enhances her experience with features like LPDDR5x RAM, NVMe PCle Gen4 SSD, a lightweight design of just over 3lbs, and a 90Wh high-capacity battery.
+
+페이지 정보: 국가=US, 유형=press_media, URL=https://www.lg.com/us/press-release/2023-lg-gram-lineup-offers-more-stylish-yet-powerful-user-experience
+문장:
+s00024 LG gram Ultraslim Headlining the LG gram showcase at CES 2023 is the brand-new LG gram Ultraslim (model 15Z90RT), the thinnest gram model yet.
+s00072 About LG Electronics USA LG Electronics USA, Inc., based in Englewood Cliffs, N.J., is the North American subsidiary of LG Electronics, Inc., a $63 billion global innovator in technology and manufacturing.
+s00096 4 Variable refresh rate (VRR) is supported on models 17Z90R and 16Z90R with GPU option only.
+s00219 Great for productivity and entertainment, the latest 17- and 16-inch grams are equipped with an NVIDIA GeForce™ RTX 3050 4GB Laptop GPU, Intel’s 13th Gen Raptor Lake P - Core CPU, and a Gen4 NVMe™ SSD.
+s00822 “Welcoming the arrival of the brand-new gram Ultraslim and gram Style, the 2023 LG gram lineup gets even more diverse,” said Seo Young-jae, senior vice president and head of the IT business unit of LG Electronics Business Solutions Company.
+s01693 3, 2023 — LG Electronics (LG) is introducing an expanded LG gram lineup, which offers more diversity than ever thanks to the arrival of the exciting, new gram Ultraslim and gram Style , at CES 2023.
+
+페이지 정보: 국가=US, 유형=press_media, URL=https://www.lg.com/us/press-release/cure-the-end-of-summer-blues-with-mega-labor-day-lg-energy-star-appliance-deals
+문장:
+s00010 • Enjoy up to $200 in savings on LG QuadWash™ dishwashers featuring revolutionary cleaning technology that uses four Multi-Motion spray arms instead of just two that power-clean dishes from multiple angles.
+s00012 To see all of LG’s 2019 Labor Day appliance promotions, visit www.lg.com/us/promotions .
+s00029 Power ranked LG highest in 2019 customer satisfaction for French-door refrigerators two out of three years, side-by-side refrigerators two years in a row, top-mount freezer refrigerators five years in a row, and dishwashers two out of three years.
+s00433 22, 2019 — LG Electronics USA’s 2019 Labor Day promotions are here – just in time to help families save time, money and energy with major deals on the latest smart home appliances at participating retailers across the country and on LG.com.
+s01092 About LG Electronics USA LG Electronics USA Inc., based in Englewood Cliffs, N.J., is the North American subsidiary of LG Electronics Inc., a $54 billion global force and technology leader in home appliances, consumer electronics and mobile communications.
+s11096 Visit jdpower.com 4 Percent in water spot reduction compared to comparable LG non-steam dishwasher on delicate wash cycle.
+
+페이지 정보: 국가=US, 유형=promotion, URL=https://www.lg.com/us/promotions/soundbar-bundle-savings
+문장:
+s13204 Designed with aesthetics and convenience in mind, LG Soundbars also feature ThinQ® technology , enabling seamless integration with your smart home ecosystem.
+
+페이지 정보: 국가=US, 유형=microsite, URL=https://www.lg.com/us/residential-hvac/why-lg/sustainability
+문장:
+s13225 Find top-notch contractors near you LG Pro Dealers are independent contractors experienced in HVAC and water heating installation.
+
+페이지 정보: 국가=US, 유형=pdp, URL=https://www.lg.com/us/subwoofers/lg-sound-suite-w7-wireless-subwoofer
+문장:
+s00074 LG Product Experts are available to help you find the product and offer that is right for you.
+
+페이지 정보: 국가=US, 유형=support_troubleshoot, URL=https://www.lg.com/us/support/help-library/lg-dishwasher-why-is-cl-showing-on-the-display-and-buttons-not-responding-CT10000009-20155118238912
+문장:
+s00057 Child Lock Stays On After Power Off Child Lock remains active even after a wash cycle ends or the dishwasher is turned off.
+s12743 LG.com utilizes responsive design to provide a convenient experience that conforms to your devices screen size.
+
+페이지 정보: 국가=US, 유형=microsite, URL=https://www.lg.com/us/top-freezer-refrigerators
+문장:
+s00046 plans for $9.99- $69.99 w/ select fridges Learn More VALID THROUGH 10/21/26 Save up to $600 when you buy 2+ appliances Shop Now TOP DEALS Save up to 41% on select refrigerators Shop Now 1/2 Timeless style meets the latest innovations, maximum storage space, advanced digital temperature controls and exclusive LG technology in our top-freezer refrigerators.
+s11494 Nice, quiet operation: Thanks to the LG’s exclusive Linear Compressor with fewer moving parts, our refrigerators have lower noise levels than those with traditional inverter compressors.
+
+페이지 정보: 국가=US, 유형=buying_guide, URL=https://www.lg.com/us/tvs/tv-buying-guide/picture-quality-tv-guide
+문장:
+s00831 Contrast ratio The foundation of depth and sharpness The human eye reacts more strongly to differences between light and dark (dynamic range) than to color itself.
+s11217 Black level The canvas of the image Black level is the base layer that defines contrast and acts as the canvas on which all other colors appear.
+
+페이지 정보: 국가=US, 유형=buying_guide, URL=https://www.lg.com/us/tvs/tv-buying-guide/tv-for-watching-movies
+문장:
+s00011 Experts recommend LG TVs because they bring together advanced picture quality, immersive sound, and AI-powered features, specifically designed to make watching movies more intuitive and cinematic at home.
+s00032 This stronger contrast allows bright highlights to stand out more clearly, creating a greater sense of depth and immersion, especially in night scenes, space visuals, or high-contrast films.
+s12630 This helps reveal more depth in both bright highlights and darker scenes, making movies feel more lifelike and immersive.
+
+페이지 정보: 국가=VN, 유형=home, URL=https://www.lg.com/vn/
+문장:
+s00034 Mua ngay 14.09 - 18.10.2026 TẶNG KHO GIẢI TRÍ ĐỈNH CAO KHÁM PHÁ NGAY ĐẶC QUYỀN Tìm hiểu thêm Weekend Flash Sale CUỐI TUẦN THẢNH THƠI ĐẾN LG SĂN DEAL HỜI Nhập mã LGHOTSALE nhận thêm ưu đãi giới hạn.
+
+페이지 정보: 국가=VN, 유형=pdp, URL=https://www.lg.com/vn/dieu-hoa/v13aph2/
+문장:
+s00063 Điều hòa LG DUALCOOL™Inverter 1 chiều 12.000 BTU (1.5HP) V13APH2 V13APH2 ( ) Tính năng chính Lọc khí ion plasmaster tăng cường Tấm lọc các tác nhân gây dị ứng Làm lạnh tức thì Tiết kiệm năng lượng Dual Inverter Compressor™ Thêm Bộ sưu tập Màng lọc bụi mịn Loại bỏ bụi bẩn, đem lại không khí trong lành Loại bỏ 90% bụi mịn với màng lọc PM 2.5 Hiệu suất làm sạch không khí của điều hòa treo tường được xác minh bằng cách đo mức giảm bụi PM2.5 trong khu vực xác định.
+s01251 *Biến động "điện áp định mức ± 15%" được thử nghiệm nội bộ của LG và có thể thay đổi tùy thuộc vào môi trường.
+s11952 *Tổ chức BAF (British Allergy Foundation) chứng nhận màng lọc có khả năng loại bỏ các tác nhân gây gây dị ứng như mạt bụi, nấm, mốc trong không khí.Kết quả thực tế có thể thay đổi tùy theo môi trường và điều kiện sử dụng.
+
+페이지 정보: 국가=VN, 유형=pdp, URL=https://www.lg.com/vn/giat-say/may-giat-long-ngang/fv1412s3ba/
+문장:
+s00685 *AI DD có trong 3 chu trình.
+s01630 Chu trình TurboWash39 với 5kg mẻ giặt IEC so với chu trình giặt vải bông thông thường với TurboWash (F4V9RWP2W so với FC1450S2W).
+s01831 Máy giặt lồng ngang LG AI DD™ Inverter 12kg màu đen FV1412S3BA FV1412S3BA ( ) Tính năng chính Giặt sạch, thông minh với AI DD™ Tự động điều chỉnh lượng nước giặt với hệ thống ezDispense™ Giặt nhanh trong 39 phút với TurboWash™360 Giảm thiểu chất gây dị ứng với các chu trình Steam™ Khởi động từ xa và theo dõi tiến trình giặt với ThinQ® Thêm Bộ sưu tập Sản phẩm có trong combo: 1 WD1250BAM16.ABAE Combo Máy giặt lồng ngang LG AI DD™ Inverter 12kg màu đen FV1412S3BA & Máy sấy LG DUAL Inverter Heat Pu
+
+페이지 정보: 국가=VN, 유형=experience, URL=https://www.lg.com/vn/lg-experience/huong-dan-mua-hang/huong-dan-mua-may-giat/
+문장:
+s01330 * Được thử nghiệm bởi Intertek, dựa trên tiêu chuẩn IEC 60456 : phiên bản 5.0.
+s11288 Tạm dừng và thêm đồ Một số máy giặt của chúng tôi cho phép bạn tạm dừng chu trình và thêm quần áo vào giữa quá trình giặt.
+s11458 Động cơ truyền động trực tiếp tích hợp trí tuệ nhân tạo (AIDD®) Động cơ truyền động trực tiếp tích hợp trí tuệ nhân tạo (AIDD®) của chúng tôi sử dụng những cải tiến mới nhất trong công nghệ để chăm sóc cho quá trình giặt giũ của bạn, đồng thời sử dụng nước, năng lượng và thời gian hiệu quả hơn.
+s11754 Có các ngăn chứa chất tẩy rửa và chất làm mềm vải riêng biệt có thể được sử dụng riêng lẻ hoặc liên kết với nhau, cho phép bạn linh hoạt lưu trữ hai loại chất tẩy rửa khác nhau để sử dụng tùy thuộc vào quá trình giặt.
+
+페이지 정보: 국가=VN, 유형=experience, URL=https://www.lg.com/vn/lg-experience/huong-dan-mua-hang/huong-dan-mua-may-say/
+문장:
+s01031 Lợi ích của máy sấy heatpump Dưới đây là một số ưu điểm của máy sấy heatpump: ● Bởi vì chúng hâm nóng và tái chế không khí nóng được tạo ra bên trong lồng sấy, máy sấy heatpump được biết đến với hiệu quả năng lượng của chúng.
+s01894 Chu trình chăm sóc dị ứng Chu trình Chăm sóc dị ứng của chúng tôi được thiết kế để giảm tiếp xúc với các chất gây dị ứng phổ biến trong gia đình* để bảo vệ gia đình bạn.
+s01968 Hãy coi đây là hướng dẫn cơ bản để mua một chiếc máy sấy hoàn toàn mới cho ngôi nhà của bạn.
+
+페이지 정보: 국가=VN, 유형=pdp, URL=https://www.lg.com/vn/man-hinh-may-tinh/man-hinh-gaming-ultragear/27gs95qe-b/
+문장:
+s00378 *Tấm nền OLED LG đã được UL chứng nhận.
+s00853 Màn hình OLED 27" QHD (2560 x 1440) HDR400 True black / DCI-P3 98,5%** Chống lóa mắt / Phản chiếu thấp Tốc độ Tốc độ làm mới 240 Hz Thời gian phản hồi 0,03 ms (GtG) QHD ở 240 Hz từ HDMI 2.1 Công nghệ Tương thích NVIDIA® G-SYNC® AMD FreeSync™ Premium Pro *Hình ảnh được mô phỏng để hiểu tính năng rõ hơn.
+s10838 *Công suất tiêu thụ có thể tăng khi tắt chế độ Tiết kiệm điện thông minh.
+s12028 Chống lóa & phản chiếu thấp Chỉ hiển thị trò chơi của bạn Việc áp dụng công nghệ Chống lóa mắt và phản chiếu thấp có thể mang lại trải nghiệm xem tốt hơn ở mọi nơi bằng cách giảm sự mất tập trung vào màn hình ngay cả trong môi trường có ánh sáng xung quanh.
+s13239 Công nghệ này giúp giảm đáng kể hiện tượng màn hình xước hoặc giật.
+
+페이지 정보: 국가=VN, 유형=plp, URL=https://www.lg.com/vn/may-giat-say-cong-nghiep/giai-phap-giat-say-thong-minh/
+문장:
+s12908 API dành cho máy giặt công nghiệp LG cho phép giao tiếp giữa các hệ thống bên ngoài và máy giặt công nghiệp LG.
+
+페이지 정보: 국가=VN, 유형=microsite, URL=https://www.lg.com/vn/tivi/why-lgoled/10years-world-no1-oled/
+문장:
+s00127 8K bổ sung những chi tiết nhỏ nhất vào độ phân giải.
+
+페이지 정보: 국가=VN, 유형=promotion, URL=https://www.lg.com/vn/tncs/lg-tv-oct-new-promotion-free-100/
+문장:
+s00064 • Gift(s) may be redeemed by Customer via LG’s online redemption portal: https://www.lg-redemption.com/register during the Redemption Period, upon submission of valid Redemption Documents.
+
+페이지 정보: 국가=VN, 유형=support_troubleshoot, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001453-20155381409648/
+문장:
+s01125 [Máy chiếu] Hướng dẫn sửa hình ảnh máy chiếu bị mờ hoặc lệch Troubleshooting Thiết bị nghe nhìn 08/13/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+s11351 Hướng dẫn điều chỉnh vị trí hình ảnh Sử dụng các núm xoay chuyển ống kính để di chuyển hình ảnh chiếu theo chiều dọc hoặc ngang mà không làm di chuyển máy chiếu Bước 1.
