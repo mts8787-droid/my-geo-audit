@@ -1,0 +1,200 @@
+{"id": "t00600", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "제품 없는 일반 비용 안내"}
+{"id": "t00601", "citable": "n", "definition": "n", "summary": "n", "type": "I-A", "reason": "버튼명 미특정, 실행 불가"}
+{"id": "t00602", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "제품명 없는 버튼 조작"}
+{"id": "t00603", "citable": "n", "definition": "n", "summary": "n", "type": "I-H", "reason": "설명서 참조 안내"}
+{"id": "t00604", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "질문형 제목"}
+{"id": "t00605", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "가이드 소개문, 정보 없음"}
+{"id": "t00606", "citable": "n", "definition": "n", "summary": "n", "type": "C2", "reason": "구체 조건 없는 기능 안내"}
+{"id": "t00607", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "섹션 제목 나열"}
+{"id": "t00608", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "일반 안내, 구체 정보 없음"}
+{"id": "t00609", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "질문형 제목"}
+{"id": "t00610", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "범용 전원 켜기 지시"}
+{"id": "t00611", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "모든 제품 공통 일반 안내"}
+{"id": "t00612", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "질문형 제목"}
+{"id": "t00613", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "미완결 조각, 제목 혼재"}
+{"id": "t00614", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "미완결 조각"}
+{"id": "t00615", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "미완결 조각"}
+{"id": "t00616", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "미완결 조각"}
+{"id": "t00617", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "미완결 조각, 제품명 없음"}
+{"id": "t00618", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "미완결 조각, 제목 혼재"}
+{"id": "t00619", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "Therefore로 앞 문단 의존"}
+{"id": "t00620", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·목록 조각 혼재"}
+{"id": "t00621", "citable": "y", "definition": "n", "summary": "n", "type": "I-B", "reason": "제품·목적·메뉴 경로 명시"}
+{"id": "t00622", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "모델별 상이 일반 안내"}
+{"id": "t00623", "citable": "n", "definition": "n", "summary": "n", "type": "C2", "reason": "제품명 없는 막연한 진술"}
+{"id": "t00624", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "질문형 제목"}
+{"id": "t00625", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "메뉴·설정값 없는 범용 지시"}
+{"id": "t00626", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "메뉴·설정값 없는 범용 지시"}
+{"id": "t00627", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "목적 없는 메뉴 조작"}
+{"id": "t00628", "citable": "n", "definition": "n", "summary": "n", "type": "C2", "reason": "Therefore로 앞 문단 의존"}
+{"id": "t00629", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "As a result로 앞 문단 의존"}
+{"id": "t00630", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "범용 입력 확인 지시"}
+{"id": "t00631", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "범용 비교 점검 지시"}
+{"id": "t00632", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "타사 셋톱박스 범용 재시작"}
+{"id": "t00633", "citable": "n", "definition": "n", "summary": "n", "type": "I-I", "reason": "범용 안전 주의"}
+{"id": "t00634", "citable": "n", "definition": "n", "summary": "n", "type": "I-I", "reason": "범용 안전 주의"}
+{"id": "t00635", "citable": "n", "definition": "n", "summary": "n", "type": "I-I", "reason": "범용 안전 주의"}
+{"id": "t00636", "citable": "n", "definition": "n", "summary": "n", "type": "C3", "reason": "코드 미명시, 막연한 진술"}
+{"id": "t00637", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "these situations 목록 의존"}
+{"id": "t00638", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "원인이 포괄적·비구체"}
+{"id": "t00639", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "일반 진단 안내"}
+{"id": "t00640", "citable": "y", "definition": "y", "summary": "n", "type": "D1", "reason": "기능명과 역할 서술"}
+{"id": "t00641", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "질문형 제목"}
+{"id": "t00642", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "타사 셋톱박스 범용 진단"}
+{"id": "t00643", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "증상 나열, 정보 없음"}
+{"id": "t00644", "citable": "y", "definition": "y", "summary": "n", "type": "D2", "reason": "표시 메시지명과 의미 명시"}
+{"id": "t00645", "citable": "n", "definition": "n", "summary": "n", "type": "I-G", "reason": "앞 단계 의존 연결 조각"}
+{"id": "t00646", "citable": "n", "definition": "n", "summary": "n", "type": "I-I", "reason": "범용 안전 주의"}
+{"id": "t00647", "citable": "n", "definition": "n", "summary": "n", "type": "I-I", "reason": "범용 안전 주의"}
+{"id": "t00648", "citable": "n", "definition": "n", "summary": "n", "type": "I-H", "reason": "타사 설명서 참조 안내"}
+{"id": "t00649", "citable": "n", "definition": "n", "summary": "n", "type": "I-H", "reason": "점검 의뢰 안내, 고유 정보 없음"}
+{"id": "t00650", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "제목 혼재, 막연한 추정"}
+{"id": "t00651", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "일반 상식 원인"}
+{"id": "t00652", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "일반 상식 원인"}
+{"id": "t00653", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "범용 점검 지시"}
+{"id": "t00654", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "제목 혼재, 원인 포괄적"}
+{"id": "t00655", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·날짜·버튼 텍스트"}
+{"id": "t00656", "citable": "y", "definition": "y", "summary": "n", "type": "D1", "reason": "기능명과 하는 일 정의"}
+{"id": "t00657", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "주어·서술어 없는 조각"}
+{"id": "t00658", "citable": "n", "definition": "n", "summary": "n", "type": "I-B", "reason": "목적 미명시, 안드로이드 범용"}
+{"id": "t00659", "citable": "n", "definition": "n", "summary": "n", "type": "I-B", "reason": "아이폰 범용 조작, LG 고유 없음"}
+{"id": "t00660", "citable": "y", "definition": "n", "summary": "n", "type": "I-B", "reason": "증상·메뉴명·설정 명시"}
+{"id": "t00661", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "질문형 제목"}
+{"id": "t00662", "citable": "n", "definition": "n", "summary": "n", "type": "I-G", "reason": "앞 단계 의존 연결 조각"}
+{"id": "t00663", "citable": "y", "definition": "n", "summary": "n", "type": "I-B", "reason": "메뉴·설정값·버튼 명시"}
+{"id": "t00664", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "제품 없는 아이폰 범용 조작"}
+{"id": "t00665", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "막연한 범용 지시"}
+{"id": "t00666", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·날짜·버튼 텍스트"}
+{"id": "t00667", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목 혼재, 상식적 버튼 설명"}
+{"id": "t00668", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "버튼명 없음, 앞 항목 의존"}
+{"id": "t00669", "citable": "n", "definition": "n", "summary": "n", "type": "D1", "reason": "제품명 없는 버튼 목록 조각"}
+{"id": "t00670", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "제품명 없는 버튼 조작"}
+{"id": "t00671", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목 혼재, 상식적 버튼 설명"}
+{"id": "t00672", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목 혼재, 상식적 버튼 설명"}
+{"id": "t00673", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "버튼명 없음, 앞 항목 의존"}
+{"id": "t00674", "citable": "y", "definition": "n", "summary": "n", "type": "I-A", "reason": "목적·모델연도·버튼조합·5초"}
+{"id": "t00675", "citable": "n", "definition": "n", "summary": "n", "type": "I-A", "reason": "목적(재등록) 미명시"}
+{"id": "t00676", "citable": "n", "definition": "n", "summary": "n", "type": "I-C", "reason": "제품·기능명 없음"}
+{"id": "t00677", "citable": "y", "definition": "y", "summary": "n", "type": "D1", "reason": "제품명과 기능 정의"}
+{"id": "t00678", "citable": "y", "definition": "n", "summary": "n", "type": "C1", "reason": "증상·원인(연결 끊김) 명시"}
+{"id": "t00679", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "지시어 의존, 방법 없음"}
+{"id": "t00680", "citable": "y", "definition": "n", "summary": "n", "type": "I-D", "reason": "증상·인터넷·지역설정 조건"}
+{"id": "t00681", "citable": "n", "definition": "n", "summary": "n", "type": "D1", "reason": "제품명 없는 버튼 목록 조각"}
+{"id": "t00682", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "버튼명 없음, 앞 항목 의존"}
+{"id": "t00683", "citable": "n", "definition": "n", "summary": "n", "type": "D1", "reason": "제품명 없는 버튼 목록 조각"}
+{"id": "t00684", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "앞 단계 결과 서술"}
+{"id": "t00685", "citable": "n", "definition": "n", "summary": "n", "type": "D1", "reason": "제품명 없는 버튼 목록 조각"}
+{"id": "t00686", "citable": "n", "definition": "n", "summary": "n", "type": "D1", "reason": "제품명 없는 버튼 목록 조각"}
+{"id": "t00687", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "날짜·버튼 텍스트"}
+{"id": "t00688", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "영상 제목"}
+{"id": "t00689", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "주어·서술어 없는 나열"}
+{"id": "t00690", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "영상 제목"}
+{"id": "t00691", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "피드백 폼 텍스트"}
+{"id": "t00692", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "버튼·UI 텍스트"}
+{"id": "t00693", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·날짜·버튼 텍스트"}
+{"id": "t00694", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "윈도우 범용 점검 지시"}
+{"id": "t00695", "citable": "y", "definition": "n", "summary": "n", "type": "I-B", "reason": "증상·설정값·LG 업데이트 명시"}
+{"id": "t00696", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "질문형 제목"}
+{"id": "t00697", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "증상·제품 없는 원인 조각"}
+{"id": "t00698", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "증상·제품 없는 원인 조각"}
+{"id": "t00699", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "윈도우 일반, LG 고유 없음"}
+{"id": "t00700", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·단계 번호 조각"}
+{"id": "t00701", "citable": "n", "definition": "n", "summary": "n", "type": "I-G", "reason": "앞 단계 의존 연결 조각"}
+{"id": "t00702", "citable": "n", "definition": "n", "summary": "n", "type": "I-H", "reason": "설명서 참조 안내"}
+{"id": "t00703", "citable": "n", "definition": "n", "summary": "n", "type": "I-G", "reason": "In der Liste 앞 단계 의존"}
+{"id": "t00704", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "증상 나열, 정보 없음"}
+{"id": "t00705", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "날짜·버튼 텍스트"}
+{"id": "t00706", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "질문형 제목"}
+{"id": "t00707", "citable": "y", "definition": "n", "summary": "n", "type": "C1", "reason": "제품·증상·원인(잠금) 명시"}
+{"id": "t00708", "citable": "n", "definition": "n", "summary": "n", "type": "I-A", "reason": "제품명 없는 버튼 조작"}
+{"id": "t00709", "citable": "n", "definition": "n", "summary": "n", "type": "I-G", "reason": "앞 단계 의존 연결 조각"}
+{"id": "t00710", "citable": "n", "definition": "n", "summary": "n", "type": "C3", "reason": "제품명 없음, 내부 문제 막연"}
+{"id": "t00711", "citable": "n", "definition": "n", "summary": "n", "type": "I-H", "reason": "상담 안내, 정보 없음"}
+{"id": "t00712", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "모델별 상이 일반 안내"}
+{"id": "t00713", "citable": "n", "definition": "n", "summary": "n", "type": "I-A", "reason": "제목 혼재, 제품·목적 없음"}
+{"id": "t00714", "citable": "n", "definition": "n", "summary": "n", "type": "I-H", "reason": "설명서 참조 안내"}
+{"id": "t00715", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "제품 없는 일반 원인"}
+{"id": "t00716", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·날짜·버튼 텍스트"}
+{"id": "t00717", "citable": "n", "definition": "n", "summary": "n", "type": "C2", "reason": "MS 일반 정보, LG 고유 없음"}
+{"id": "t00718", "citable": "n", "definition": "n", "summary": "n", "type": "C2", "reason": "인증서명 없음, 앞 문장 의존"}
+{"id": "t00719", "citable": "n", "definition": "n", "summary": "n", "type": "C2", "reason": "인증서명 없음, 앞 문장 의존"}
+{"id": "t00720", "citable": "y", "definition": "n", "summary": "n", "type": "I-A", "reason": "제품·키·횟수·목적 명시"}
+{"id": "t00721", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "질문형 제목"}
+{"id": "t00722", "citable": "n", "definition": "n", "summary": "n", "type": "C2", "reason": "제품명 없는 모델 범위"}
+{"id": "t00723", "citable": "n", "definition": "n", "summary": "n", "type": "C2", "reason": "MS 일반 정보, LG 고유 없음"}
+{"id": "t00724", "citable": "y", "definition": "n", "summary": "n", "type": "C2", "reason": "제품·업데이트 방식 완결 진술"}
+{"id": "t00725", "citable": "y", "definition": "n", "summary": "n", "type": "I-B", "reason": "증상·BIOS 설정값 명시"}
+{"id": "t00726", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "질문형 제목"}
+{"id": "t00727", "citable": "y", "definition": "y", "summary": "n", "type": "D1", "reason": "기능명과 역할을 정의함"}
+{"id": "t00728", "citable": "n", "definition": "n", "summary": "n", "type": "C3", "reason": "인증서명 없음, 앞 문장 의존"}
+{"id": "t00729", "citable": "n", "definition": "n", "summary": "n", "type": "C2", "reason": "Allerdings 의존, 막연"}
+{"id": "t00730", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "MS 범용 안내, 지시어 의존"}
+{"id": "t00731", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "UI·알림 텍스트"}
+{"id": "t00732", "citable": "n", "definition": "n", "summary": "n", "type": "I-G", "reason": "앞 단계 의존 연결 조각"}
+{"id": "t00733", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "날짜·버튼 텍스트"}
+{"id": "t00734", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "영상 제목"}
+{"id": "t00735", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "지시어 시작, 대상 불명"}
+{"id": "t00736", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "영상 제목"}
+{"id": "t00737", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·날짜·버튼 텍스트"}
+{"id": "t00738", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "질문형 제목"}
+{"id": "t00739", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "수치 없는 범용 주의"}
+{"id": "t00740", "citable": "y", "definition": "n", "summary": "n", "type": "I-C", "reason": "제품·조건·대기 시간 명시"}
+{"id": "t00741", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "Dadurch 앞 문장 의존"}
+{"id": "t00742", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "수치 없는 일반 주의"}
+{"id": "t00743", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "지시어 es, 대상 불명"}
+{"id": "t00744", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "지시어 Dies, 대상 불명"}
+{"id": "t00745", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "질문형 제목"}
+{"id": "t00746", "citable": "n", "definition": "n", "summary": "n", "type": "I-C", "reason": "지시어 es, 제품명 없음"}
+{"id": "t00747", "citable": "n", "definition": "n", "summary": "n", "type": "C3", "reason": "지시어, 맥락 의존 답변"}
+{"id": "t00748", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "결과 막연(내부 부품)"}
+{"id": "t00749", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·날짜·버튼 텍스트"}
+{"id": "t00750", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "범용 사양 확인 지시"}
+{"id": "t00751", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "범용 케이블·설정 점검"}
+{"id": "t00752", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "증상 없는 일반 원인"}
+{"id": "t00753", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "제목 혼재, 범용 점검"}
+{"id": "t00754", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "대상·목적 없는 웹 조작"}
+{"id": "t00755", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "자명한 일반 안내"}
+{"id": "t00756", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "범용 지시"}
+{"id": "t00757", "citable": "y", "definition": "n", "summary": "n", "type": "I-A", "reason": "제품·버튼·조작 방향·목적"}
+{"id": "t00758", "citable": "n", "definition": "n", "summary": "n", "type": "C3", "reason": "범용 추론, 고유 정보 없음"}
+{"id": "t00759", "citable": "n", "definition": "n", "summary": "n", "type": "I-D", "reason": "제품·목적 없음"}
+{"id": "t00760", "citable": "y", "definition": "n", "summary": "n", "type": "I-B", "reason": "메뉴·설정값([LG Monitor])"}
+{"id": "t00761", "citable": "n", "definition": "n", "summary": "n", "type": "I-H", "reason": "상담 안내, 정보 없음"}
+{"id": "t00762", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "질문형 제목"}
+{"id": "t00763", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "증상 없는 일반 원인"}
+{"id": "t00764", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "증상 없는 일반 원인"}
+{"id": "t00765", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·단계 번호 조각"}
+{"id": "t00766", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "범용 케이블 교체 지시"}
+{"id": "t00767", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "막연한 호환 문제 추정"}
+{"id": "t00768", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "날짜·버튼 텍스트"}
+{"id": "t00769", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·목록 조각 혼재"}
+{"id": "t00770", "citable": "n", "definition": "n", "summary": "n", "type": "C2", "reason": "제품(TV)명 없음"}
+{"id": "t00771", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "질문형 제목"}
+{"id": "t00772", "citable": "y", "definition": "n", "summary": "n", "type": "I-B", "reason": "제품·증상·메뉴 기능명 명시"}
+{"id": "t00773", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "제품 없는 일반 안내"}
+{"id": "t00774", "citable": "y", "definition": "n", "summary": "n", "type": "C2", "reason": "기능명·조건 완결 진술"}
+{"id": "t00775", "citable": "n", "definition": "n", "summary": "n", "type": "I-H", "reason": "설명서 참조 안내"}
+{"id": "t00776", "citable": "n", "definition": "n", "summary": "n", "type": "I-H", "reason": "상담 안내+일반 주의"}
+{"id": "t00777", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "질문형 제목"}
+{"id": "t00778", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "제품 없는 일반 안내"}
+{"id": "t00779", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "질문형 제목"}
+{"id": "t00780", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "날짜·버튼 텍스트"}
+{"id": "t00781", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "영상 제목"}
+{"id": "t00782", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "지시어 질문 조각"}
+{"id": "t00783", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "영상 제목"}
+{"id": "t00784", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "날짜·버튼 텍스트"}
+{"id": "t00785", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "영상 제목"}
+{"id": "t00786", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "영상 제목"}
+{"id": "t00787", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·날짜·버튼 텍스트"}
+{"id": "t00788", "citable": "y", "definition": "y", "summary": "n", "type": "D1", "reason": "앱명과 하는 일을 정의함"}
+{"id": "t00789", "citable": "n", "definition": "n", "summary": "n", "type": "I-H", "reason": "앱명 없음, 다운로드 안내"}
+{"id": "t00790", "citable": "y", "definition": "n", "summary": "n", "type": "C2", "reason": "업데이트 조건(USB 연결) 명시"}
+{"id": "t00791", "citable": "n", "definition": "n", "summary": "n", "type": "C2", "reason": "지원 범위 불특정"}
+{"id": "t00792", "citable": "n", "definition": "n", "summary": "n", "type": "I-H", "reason": "설명서 참조 안내"}
+{"id": "t00793", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "질문형 제목"}
+{"id": "t00794", "citable": "y", "definition": "n", "summary": "n", "type": "I-B", "reason": "앱명·기능(Screen Split) 명시"}
+{"id": "t00795", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "FAQ 섹션 제목"}
+{"id": "t00796", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "목적 없는 범용 연결 지시"}
+{"id": "t00797", "citable": "n", "definition": "n", "summary": "n", "type": "I-H", "reason": "설명서 참조 안내"}
+{"id": "t00798", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·날짜·버튼 텍스트"}
+{"id": "t00799", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "원인 막연(전원 변동/하드웨어)"}

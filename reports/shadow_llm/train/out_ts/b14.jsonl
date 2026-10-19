@@ -1,0 +1,131 @@
+{"id": "t02800", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "메뉴명 있으나 제품·목적 없음"}
+{"id": "t02801", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·날짜·버튼 텍스트"}
+{"id": "t02802", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "공유 버튼 잡음 혼재, 제품명 없음"}
+{"id": "t02803", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "제목 조각 혼재, 제품명 없음"}
+{"id": "t02804", "citable": "n", "definition": "n", "summary": "n", "type": "I-C", "reason": "수치 있으나 제품명 없음"}
+{"id": "t02805", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "구체 정보 없는 범용 지시"}
+{"id": "t02806", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "제품명 없는 일반 원인"}
+{"id": "t02807", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "제품명 없는 일반 원인"}
+{"id": "t02808", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "대상 없는 범용 세척 지시"}
+{"id": "t02809", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "섹션 제목 조각"}
+{"id": "t02810", "citable": "n", "definition": "n", "summary": "n", "type": "I-G", "reason": "지시어 '그것', 앞 단계 의존"}
+{"id": "t02811", "citable": "n", "definition": "n", "summary": "n", "type": "I-G", "reason": "앞 단계 의존 연결 조각"}
+{"id": "t02812", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "제품명 없는 범용 지시"}
+{"id": "t02813", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·날짜·버튼 텍스트"}
+{"id": "t02814", "citable": "n", "definition": "n", "summary": "n", "type": "I-A", "reason": "제품·키 조합 있으나 목적 없음"}
+{"id": "t02815", "citable": "y", "definition": "n", "summary": "n", "type": "I-A", "reason": "제품·목적·키 조합 명시"}
+{"id": "t02816", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "공유 버튼 잡음 혼재"}
+{"id": "t02817", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "제품·증상 불명, 해결 대상 없음"}
+{"id": "t02818", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·목록 나열 조각"}
+{"id": "t02819", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "구체 키·제품 없는 일반 안내"}
+{"id": "t02820", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "제품·목적 없는 단계"}
+{"id": "t02821", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "'기타 모델' 대상 불명"}
+{"id": "t02822", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "지시어 시작, 증상 불명"}
+{"id": "t02823", "citable": "n", "definition": "n", "summary": "n", "type": "I-G", "reason": "앞 단계 의존 연결 조각"}
+{"id": "t02824", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "윈도우 범용 조작, 제품·목적 없음"}
+{"id": "t02825", "citable": "n", "definition": "n", "summary": "n", "type": "I-G", "reason": "앞 단계 의존 연결 조각"}
+{"id": "t02826", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "윈도우 설정, 제품명 없음"}
+{"id": "t02827", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·날짜·버튼 텍스트"}
+{"id": "t02828", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "목록 조각+질문형"}
+{"id": "t02829", "citable": "n", "definition": "n", "summary": "n", "type": "D2", "reason": "제품(WM)·버튼명 불명확"}
+{"id": "t02830", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "제품 없음, 조각 혼재"}
+{"id": "t02831", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "목록 조각 혼재"}
+{"id": "t02832", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "공유 잡음+질문형"}
+{"id": "t02833", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "목록 조각+질문형"}
+{"id": "t02834", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "목록 조각 혼재, 지시어"}
+{"id": "t02835", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "목록 조각+질문형"}
+{"id": "t02836", "citable": "n", "definition": "n", "summary": "n", "type": "I-G", "reason": "앞 조건 의존 조각"}
+{"id": "t02837", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "'왜냐하면' 시작, 앞 문장 의존"}
+{"id": "t02838", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "제품명 없는 일반 원리"}
+{"id": "t02839", "citable": "n", "definition": "n", "summary": "n", "type": "I-G", "reason": "조건 조각, 참조 안내"}
+{"id": "t02840", "citable": "n", "definition": "n", "summary": "n", "type": "I-H", "reason": "아래 내용 참조 안내"}
+{"id": "t02841", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "제품 없음, 임시 조치 조각"}
+{"id": "t02842", "citable": "n", "definition": "n", "summary": "n", "type": "I-G", "reason": "제품 없는 단계 조각"}
+{"id": "t02843", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·날짜·버튼 텍스트"}
+{"id": "t02844", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "공유 잡음+미완성 조각"}
+{"id": "t02845", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "문장 중간 조각, 제품명 없음"}
+{"id": "t02846", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목 조각+막연한 증상"}
+{"id": "t02847", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "증상 목록 조각"}
+{"id": "t02848", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "제품명 없는 증상 나열"}
+{"id": "t02849", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "제품명 없는 증상 나열"}
+{"id": "t02850", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목+사용자 문의 문구"}
+{"id": "t02851", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "제품명·목적 없는 조치"}
+{"id": "t02852", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "제품명 없는 일반 원인"}
+{"id": "t02853", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "미완성 문장 조각"}
+{"id": "t02854", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·날짜·버튼 텍스트"}
+{"id": "t02855", "citable": "n", "definition": "n", "summary": "n", "type": "I-B", "reason": "제목·목록 조각 다수 혼재"}
+{"id": "t02856", "citable": "y", "definition": "n", "summary": "n", "type": "I-A", "reason": "모델 범위·버튼·횟수·목적 명시"}
+{"id": "t02857", "citable": "y", "definition": "n", "summary": "n", "type": "I-A", "reason": "모델 범위·버튼·횟수·목적 명시"}
+{"id": "t02858", "citable": "n", "definition": "n", "summary": "n", "type": "I-G", "reason": "1단계 조각, 후속 단계 필요"}
+{"id": "t02859", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "공유 버튼 잡음 혼재"}
+{"id": "t02860", "citable": "n", "definition": "n", "summary": "n", "type": "I-B", "reason": "지시어 '이것', 증상 불명"}
+{"id": "t02861", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "제목 조각 혼재, 일반 원인"}
+{"id": "t02862", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "'이 경우' 앞 문장 의존"}
+{"id": "t02863", "citable": "n", "definition": "n", "summary": "n", "type": "I-G", "reason": "번호 단계 조각"}
+{"id": "t02864", "citable": "n", "definition": "n", "summary": "n", "type": "I-G", "reason": "번호 단계 조각"}
+{"id": "t02865", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "구체 버튼 없는 막연한 안내"}
+{"id": "t02866", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "UI 안내 텍스트"}
+{"id": "t02867", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·날짜·버튼 텍스트"}
+{"id": "t02868", "citable": "n", "definition": "n", "summary": "n", "type": "I-B", "reason": "제목·목록 조각 다수 혼재"}
+{"id": "t02869", "citable": "n", "definition": "n", "summary": "n", "type": "I-B", "reason": "공유 버튼 잡음 혼재"}
+{"id": "t02870", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "LG 고유 정보 없는 범용 지시"}
+{"id": "t02871", "citable": "n", "definition": "n", "summary": "n", "type": "I-G", "reason": "앞 조건 의존, 목적 없음"}
+{"id": "t02872", "citable": "n", "definition": "n", "summary": "n", "type": "D1", "reason": "지시어 시작, 기능명 없음"}
+{"id": "t02873", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "섹션 제목 조각"}
+{"id": "t02874", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "LG 고유 정보 없는 일반 원인"}
+{"id": "t02875", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "일반 상식 원인"}
+{"id": "t02876", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "범용 전원 재시작 지시"}
+{"id": "t02877", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "막연한 원인"}
+{"id": "t02878", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "범용 케이블 재연결 지시"}
+{"id": "t02879", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "사용자 문의 문구"}
+{"id": "t02880", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·날짜·버튼 텍스트"}
+{"id": "t02881", "citable": "n", "definition": "n", "summary": "n", "type": "C2", "reason": "공유 버튼 잡음 혼재"}
+{"id": "t02882", "citable": "n", "definition": "n", "summary": "n", "type": "I-G", "reason": "'그 다음' 앞 단계 의존"}
+{"id": "t02883", "citable": "n", "definition": "n", "summary": "n", "type": "I-G", "reason": "앞 단계 의존 연결 조각"}
+{"id": "t02884", "citable": "n", "definition": "n", "summary": "n", "type": "C2", "reason": "'지원 모델' 조건 막연, 제조사 없음"}
+{"id": "t02885", "citable": "y", "definition": "n", "summary": "n", "type": "I-A", "reason": "TV·조건·버튼명·목적 명시"}
+{"id": "t02886", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "모든 제품 공통 일반 안내"}
+{"id": "t02887", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "섹션 제목 조각"}
+{"id": "t02888", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "제목+범용 전원 켜기"}
+{"id": "t02889", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "제품·목적 없는 단계"}
+{"id": "t02890", "citable": "n", "definition": "n", "summary": "n", "type": "C2", "reason": "앞 질문 의존 답변 조각"}
+{"id": "t02891", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "제목+메뉴 경로, 제품 없음"}
+{"id": "t02892", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·날짜·버튼 텍스트"}
+{"id": "t02893", "citable": "y", "definition": "n", "summary": "n", "type": "I-D", "reason": "세탁기·조건·설치 간격 수치"}
+{"id": "t02894", "citable": "n", "definition": "n", "summary": "n", "type": "I-D", "reason": "제품명 없음('thiết bị')"}
+{"id": "t02895", "citable": "n", "definition": "n", "summary": "n", "type": "I-D", "reason": "제품명 없음, 수치만"}
+{"id": "t02896", "citable": "y", "definition": "n", "summary": "n", "type": "I-D", "reason": "세탁기·조건·설치 간격 수치"}
+{"id": "t02897", "citable": "n", "definition": "n", "summary": "n", "type": "I-D", "reason": "제품명 없음('thiết bị')"}
+{"id": "t02898", "citable": "n", "definition": "n", "summary": "n", "type": "I-D", "reason": "모든 세탁기 공통 일반 안내"}
+{"id": "t02899", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "모든 제품 공통 일반 안내"}
+{"id": "t02900", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·날짜·버튼 텍스트"}
+{"id": "t02901", "citable": "n", "definition": "n", "summary": "n", "type": "N1", "reason": "공유 잡음 혼재, 일반 안내"}
+{"id": "t02902", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "제품명 없음, 일반 원리"}
+{"id": "t02903", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "LG 고유 정보 없는 생활 안내"}
+{"id": "t02904", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "LG 고유 정보 없는 일반 주의"}
+{"id": "t02905", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "제목 조각, 제품명 없음"}
+{"id": "t02906", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "지시어 시작, 앞 문장 의존"}
+{"id": "t02907", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "제목 조각, 일반 상식 원인"}
+{"id": "t02908", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "'이 경우' 앞 문장 의존"}
+{"id": "t02909", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "대상 없는 범용 지시"}
+{"id": "t02910", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "LG 고유 정보 없는 생활 안내"}
+{"id": "t02911", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "LG 고유 정보 없는 생활 안내"}
+{"id": "t02912", "citable": "n", "definition": "n", "summary": "n", "type": "I-H", "reason": "후속 단계 참조 안내"}
+{"id": "t02913", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·날짜·버튼 텍스트"}
+{"id": "t02914", "citable": "n", "definition": "n", "summary": "n", "type": "I-D", "reason": "제품·호스 종류 없음"}
+{"id": "t02915", "citable": "n", "definition": "n", "summary": "n", "type": "D2", "reason": "공유 버튼 잡음 혼재"}
+{"id": "t02916", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "제품·증상 불명('문제')"}
+{"id": "t02917", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "범용 안전 주의"}
+{"id": "t02918", "citable": "n", "definition": "n", "summary": "n", "type": "I-I", "reason": "대상 제품 없는 주의 문구"}
+{"id": "t02919", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "섹션 제목 조각"}
+{"id": "t02920", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "제목 조각, 일반 상식 원인"}
+{"id": "t02921", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "제목 조각, 일반 상식 원인"}
+{"id": "t02922", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "제품 없는 범용 점검 지시"}
+{"id": "t02923", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "'이 문제' 앞 문장 의존"}
+{"id": "t02924", "citable": "n", "definition": "n", "summary": "n", "type": "I-F", "reason": "LG 고유 정보 없는 범용 지시"}
+{"id": "t02925", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "제목·날짜·버튼 텍스트"}
+{"id": "t02926", "citable": "n", "definition": "n", "summary": "n", "type": "N2", "reason": "방법 제목 조각"}
+{"id": "t02927", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "버튼명 있으나 제품명 없음"}
+{"id": "t02928", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "제품명 없는 단계"}
+{"id": "t02929", "citable": "n", "definition": "n", "summary": "n", "type": "C1", "reason": "지시어 '그것', 대상 불명"}
+{"id": "t02930", "citable": "n", "definition": "n", "summary": "n", "type": "I-E", "reason": "제품명 없는 단계"}
