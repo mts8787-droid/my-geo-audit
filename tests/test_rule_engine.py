@@ -421,6 +421,16 @@ class TestContentRules(unittest.TestCase):
         r = _eval("citable_density_min", {"min_count": 1}, _ctx(html))
         self.assertFalse(r["pass"])
 
+    def test_hidden_modal_excluded_from_body(self):
+        # US help-library 전 페이지의 브라우저 지원 안내 모달이 본문 첫 문장으로 잡혀
+        # #33 모델 탐색을 허위 통과시켰다(2026-10-19, 67/100). 모달/다이얼로그는 본문이 아니다.
+        html = ('<div class="modal-contentainer"><div class="modal-body"><p>LG.com utilizes '
+                'responsive design to provide a convenient experience.</p></div></div>'
+                '<div role="dialog" class="c-dialog"><p>OLED is a display technology.</p></div>'
+                '<p>Press the power button.</p>')
+        self.assertEqual(_visible_text(_ctx(html)["soup"], strip_boilerplate=True),
+                         "Press the power button.")
+
     def test_summary_label_tag_off_by_default(self):
         # label_tags 미지정이면 <p> 라벨은 스캔하지 않는다 (#32 오탐 방지)
         html = '<p>Key features</p>'

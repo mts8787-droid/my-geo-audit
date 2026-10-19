@@ -1467,7 +1467,11 @@ _BOILERPLATE_HINTS = ("gnb", "lnb", "global-nav", "site-header", "site-footer",
                       # 페이지당 5~7건 공짜 매칭(트러블슈팅 100% 허수). UK 99% 도 동류 의심.
                       "notification-banner",
                       # 카루셀 이전/다음 버튼의 sr-only 라벨이 본문 문장에 섞인다
-                      "carousel-controls", "sr-only")
+                      "carousel-controls", "sr-only",
+                      # 숨은 모달/다이얼로그 — US help-library 전 페이지의 브라우저 지원
+                      # 안내 모달("LG.com utilizes responsive design…")이 본문 첫 문장으로
+                      # 잡혀 #33 모델 탐색이 67/100 페이지를 허위 통과시켰다(2026-10-19).
+                      "modal", "dialog")
 
 
 def _visible_text(soup, strip_boilerplate: bool = False) -> str:
