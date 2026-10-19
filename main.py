@@ -1,4 +1,4 @@
-"""GEO Audit Tool — AI Readability Analytics
+"""Hiro — GEO Audit for LGE (AI Readability Analytics)
 
 모델 사용 가이드:
   - 개발(Development): Claude Opus (claude-opus-4-6) — 코드 작성, 리팩토링, 디버깅
@@ -164,7 +164,7 @@ async def lifespan(app: FastAPI):
                 pass
 
 
-app = FastAPI(title="GEO Audit Tool", version="2.23.0", lifespan=lifespan)
+app = FastAPI(title="Hiro — GEO Audit for LGE", version="2.23.0", lifespan=lifespan)
 
 # Rate Limiter
 limiter = Limiter(key_func=get_remote_address)

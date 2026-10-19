@@ -3,7 +3,7 @@
 # pre-commit hook
 # extension/ 안 파일이 staged면 자동으로:
 #   1. extension/manifest.json version patch +1
-#   2. static/geo-audit-extension.zip 재빌드
+#   2. static/hiro-extension.zip 재빌드
 #   3. static/index.html 의 download attribute 파일명에 버전 반영
 #   4. 모든 변경을 다시 staging
 #
@@ -13,7 +13,7 @@ set -e
 
 REPO=$(git rev-parse --show-toplevel)
 MANIFEST="$REPO/extension/manifest.json"
-ZIP_PATH="$REPO/static/geo-audit-extension.zip"
+ZIP_PATH="$REPO/static/hiro-extension.zip"
 INDEX="$REPO/static/index.html"
 
 # extension/ 안에 staged 파일 있나?
@@ -55,8 +55,8 @@ import re
 path = '$INDEX'
 content = open(path).read()
 new = re.sub(
-    r'href=\"/static/geo-audit-extension\.zip\"\s+download(?:=\"[^\"]*\")?',
-    'href=\"/static/geo-audit-extension.zip\" download=\"my-geo-audit-for-lge-v$NEW_VER.zip\"',
+    r'href=\"/static/hiro-extension\.zip\"\s+download(?:=\"[^\"]*\")?',
+    'href=\"/static/hiro-extension.zip\" download=\"hiro-for-lge-v$NEW_VER.zip\"',
     content, count=1,
 )
 if new != content:

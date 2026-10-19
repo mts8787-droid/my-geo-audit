@@ -1,12 +1,12 @@
 """
-올라마에 올린 감사 모델(geo-audit-3b) 평가 — lora_data_v2/test.jsonl(1,052문장)로 라벨 3개 정밀도/재현율 + 문장당 시간.
+올라마에 올린 감사 모델(hiro) 평가 — lora_data_v2/test.jsonl(1,052문장)로 라벨 3개 정밀도/재현율 + 문장당 시간.
 시스템 프롬프트는 Modelfile에 내장돼 있으므로 user 메시지(문장)만 보낸다.
-  /usr/bin/python3 ollama_eval.py --model geo-audit-3b --out reports/shadow_llm/train/ollama_v2/pred_test.jsonl
+  /usr/bin/python3 ollama_eval.py --model hiro --out reports/shadow_llm/train/ollama_v2/pred_test.jsonl
 """
 import argparse, json, sys, time, urllib.request
 
 ap = argparse.ArgumentParser()
-ap.add_argument("--model", default="geo-audit-3b")
+ap.add_argument("--model", default="hiro")
 ap.add_argument("--data", default="reports/shadow_llm/train/lora_data_v2/test.jsonl")
 ap.add_argument("--out", required=True); ap.add_argument("--limit", type=int, default=0)
 ap.add_argument("--host", default="http://127.0.0.1:11434")

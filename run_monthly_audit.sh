@@ -18,7 +18,7 @@ cd /Users/dubaba/my-geo-project/my-geo-audit || exit 1
 
 PY=/usr/bin/python3   # httpx 포함 env (--local 은 analyzer import 필요)
 # 2026-10-19 사용자 결정: 모든 감사는 이 Mac 에서 로컬로 돈다(Render bulk 사용 안 함).
-# 이유: #33·#36 문장 판정 모델(올라마 geo-audit-3b)이 로컬에만 있다. Render 는 UI 전용.
+# 이유: #33·#36 문장 판정 모델(올라마 hiro)이 로컬에만 있다. Render 는 UI 전용.
 RENDER_COUNTRIES=""
 LOCAL_COUNTRIES="us uk de es ca au br mx in vn global"   # global = lg.com/global/newsroom (Global-Site)
 export AUDIT_MODEL_URL="${AUDIT_MODEL_URL:-http://127.0.0.1:11434}"

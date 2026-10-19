@@ -8,7 +8,7 @@ pip install -r requirements.txt
 if [ -d extension ]; then
   python -c "
 import os, zipfile
-src = 'extension'; dst = 'static/geo-audit-extension.zip'
+src = 'extension'; dst = 'static/hiro-extension.zip'
 os.makedirs('static', exist_ok=True)
 with zipfile.ZipFile(dst, 'w', zipfile.ZIP_DEFLATED) as z:
     for root, _, files in os.walk(src):

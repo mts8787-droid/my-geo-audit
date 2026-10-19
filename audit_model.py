@@ -1,5 +1,5 @@
 """
-문장 판정 모델(올라마 geo-audit-3b) 호출.
+문장 판정 모델(올라마 hiro, 구 geo-audit-3b) 호출.
 
 환경변수 AUDIT_MODEL_URL 이 비어 있으면 비활성(Render 등) — 룰 엔진은 정규식 판정으로 돌아간다.
 모델은 문장 하나를 받아 {"citable","definition","summary","why"} 를 돌려준다.
@@ -11,7 +11,7 @@ import os
 import httpx
 
 MODEL_URL = os.environ.get("AUDIT_MODEL_URL", "").rstrip("/")
-MODEL_NAME = os.environ.get("AUDIT_MODEL_NAME", "geo-audit-3b")
+MODEL_NAME = os.environ.get("AUDIT_MODEL_NAME", "hiro")
 MAX_CHARS = 400
 
 

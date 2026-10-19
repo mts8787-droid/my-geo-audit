@@ -1,4 +1,4 @@
-# 생성: ollama create geo-audit-3b -f reports/shadow_llm/train/Modelfile.v2 --quantize q8_0
+# 생성: ollama create hiro -f reports/shadow_llm/train/Modelfile.v2 --quantize q8_0
 # - 템플릿은 .Messages 만 사용한다. SYSTEM 을 따로 찍으면 올라마가 메시지에도 넣어 시스템 프롬프트가 두 번 들어간다(2026-10-18 실측 +213토큰).
 # - repeat_penalty 1.0 필수: 기본 1.1 이면 "n" 반복을 억제해 정의·요약 재현율이 떨어진다.
 # - q4_K_M 은 정의 F1 90→80 손실, q8_0 은 mlx 와 1,048/1,052 일치. 문장당 q4 1.1초 / q8 1.8초(M4).

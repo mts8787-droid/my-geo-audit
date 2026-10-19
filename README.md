@@ -1,4 +1,4 @@
-# GEO Audit Tool
+# Hiro — GEO Audit for LGE
 
 **Generative Engine Optimization(생성 엔진 최적화) 감사 도구**
 

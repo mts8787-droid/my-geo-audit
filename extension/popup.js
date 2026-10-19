@@ -1,5 +1,5 @@
 // ──────────────────────────────────────────────────────────────────────────
-// GEO Audit — Chrome Extension popup
+// Hiro — Chrome Extension popup (GEO Audit for LGE)
 // Single-page mode: analyze the active tab via the backend /analyze endpoint
 // (Render IP is on Akamai whitelist, so LG sites work without bot blocks)
 // ──────────────────────────────────────────────────────────────────────────
