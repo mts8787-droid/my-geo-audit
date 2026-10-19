@@ -1,0 +1,220 @@
+페이지 정보: 국가=VN, 유형=experience, URL=https://www.lg.com/vn/lg-experience/huong-dan-mua-hang/huong-dan-mua-may-giat/
+문장:
+s10823 Loại máy tất cả trong một này có dạng xếp chồng lên nhau, vì vậy nó chiếm không gian theo chiều dọc thay vì theo chiều ngang.
+s10842 Đối với cài đặt nhiều tải, AIDD® phát hiện trọng lượng và tự động chọn các chuyển động giặt tối ưu phù hợp với tải.
+s11072 Có rất nhiều lựa chọn khiến bạn khó có thể biết được đâu là chiếc máy giặt phù hợp nhất với mình.
+s11124 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình HƯỚNG DẪN MUA HÀNG Hướng dẫn mua Máy giặt Bạn đang cần một chiếc máy giặt mới?
+s11294 Các.iảm thời gian của chu kỳ mà không ảnh hưởng đến hiệu suất.
+s11307 Máy giặt TWINWash Máy giặt LG TWINWash® của chúng tôi cho phép bạn giặt hai mẻ riêng biệt cùng một lúc, đây là một lựa chọn tiết kiệm thời gian cho các gia đình bận rộn.
+s11316 Cần có điện thoại thông minh tương thích với Android 4.1.2 (Jellybean) trở lên hoặc iOS 9 trở lên cho ứng dụng LG ThinQ®.
+s11368 Điều này tạo không gian cho đường ống và cho phép không khí lưu thông phía sau máy.
+s11479 ezDispense® Tính năng ezDispense® của chúng tôi phát hiện trọng lượng của tải giặt và lấy ra lượng nước giặt thích hợp để giặt, vì vậy bạn chỉ cần đổ đầy ngăn chứa một lần cho nhiều mẻ giặt; bạn cũng sẽ được thông báo nếu cần đổ vào thêm.
+s11488 LG ThinQ® LG ThinQ® cho phép kết nối Nhà thông minh trên nhiều loại thiết bị, bao gồm cả máy giặt.
+s11569 May mắn thay, chúng tôi đã tập hợp một bản hướng dẫn mua máy giặt hữu ích có thể giúp bạn quyết định được.
+s11668 CÁC TÍNH NĂNG CỦA MÁY GIẶT Ngày nay, máy giặt của chúng tôi có một loạt tính năng được thiết kế để giúp công việc giặt giũ của bạn trở nên nhẹ nhàng.
+s11743 Bạn nên kiểm tra chiều rộng, chiều cao và chiều sâu của máy giặt mà bạn đang xem xét và so các thông số với không gian có sẵn.
+s11822 Thường không có ngăn đựng chất tẩy rửa riêng; bạn chỉ cần thêm chất tẩy rửa vào cùng với tải giặt của bạn.
+s12161 Và do tính năng Turbo Clean™ 360 sử dụng ít nước hơn trong thời gian ngắn hơn** nên các sản phẩm Turbo Clean 360® của chúng tôi cũng được thiết kế để tiết kiệm năng lượng hơn.
+s12198 * Ứng dụng LG ThinQ® khả dụng trên điện thoại thông minh Android hoặc iOS.
+s12324 Tìm hiểu về dung tích Dung tích – hoặc kích thước lồng giặt của máy giặt xác định lượng đồ giặt mà máy có thể chứa.
+s12343 Yêu cầu kết nối dữ liệu Wi-Fi tại nhà và điện thoại và cần đăng ký sản phẩm trên ứng dụng ThinQ®.
+s12404 Dưới đây, chúng tôi sẽ giải thích về từng loại máy giặt, giúp bạn có thể xác định được loại máy giặt nào là phù hợp nhất với ngôi nhà của bạn.
+s12463 Đây là những lựa chọn lý tưởng cho các hộ gia đình lớn có nhiều đồ giặt phải giặt mỗi tuần.
+s12565 MUA SẮM MÁY GIẶT LG CÁC LOẠI MÁY GIẶT KHÁC NHAU Trước khi mua sắm, bạn nên tìm hiểu trước các mẫu khác nhau đang có hiện nay.
+s12676 Phần trên với dung tích lớn có thể được sử dụng để giặt đồ thường xuyên hoặc nhiều đồ bẩn bằng chế độ giặt nóng hoặc lạnh; phần dưới có công suất nhỏ hơn, có thể giặt các loại quần áo ít bẩn nhưng chỉ có thể giặt ở chế độ giặt lạnh.
+s12709 TÔI CẦN MÁY GIẶT VỚI KÍCH THƯỚC NHƯ THẾ NÀO?
+s12757 Chúng tôi đã liệt kê điều này dưới đây để giúp bạn tìm ra kích thước nào có thể phù hợp nhất với nhu cầu của bạn.
+s12793 Tại LG, chúng tôi có sẵn nhiều loại dung tích khác nhau.
+s13187 Máy giặt cửa trên Máy giặt cửa trên có cửa ở phía trên cùng của máy thay vì ở phía trước.
+
+페이지 정보: 국가=VN, 유형=experience, URL=https://www.lg.com/vn/lg-experience/huong-dan-mua-hang/huong-dan-mua-may-say/
+문장:
+s00201 Sự khác biệt chính giữa máy sấy heatpump và máy sấy ngưng tụ là máy sấy ngưng tụ không tái chế không khí nóng trong lồng giặt.
+s00255 Tự động vệ sinh bình ngưng Công nghệ Tự động vệ sinh bình ngưng của LG tự động làm sạch bình ngưng 1-3 lần mỗi chu kỳ, vì vậy bạn không cần phải loại bỏ xơ vải khỏi bình ngưng theo cách thủ công.
+s00285 Bạn cần máy sấy kích thước nào?
+s00358 Bạn sẽ nhận thấy rằng nhiều loại máy sấy của chúng tôi nằm trong danh sách 'máy sấy heat pump' và bạn có thể thắc mắc điều này có nghĩa là gì.
+s00483 Bộ lọc không khí 2 lớp Công nghệ bộ lọc không khí 2 lớp thu giữ xơ vải và các mảnh vụn khác từ quần áo, để đảm bảo máy sấy của bạn luôn ở tình trạng tốt nhất sau mỗi tải.
+s00520 Dưới đây là tổng quan về các tính năng đặc biệt mà bạn sẽ thấy trong các sản phẩm LG.
+s00680 Chúng sử dụng công nghệ heatpump để làm ấm không khí và hút ẩm từ quần áo của bạn; điều này tạo ra sự ngưng tụ, sau đó được thu thập trong bể chứa nước.
+s00779 Yêu cầu kết nối dữ liệu Wi-Fi tại nhà và điện thoại và đăng ký sản phẩm trên ứng dụng ThinQ™.
+s00935 Điều khiển biến tần Công nghệ điều khiển biến tần làm giảm ma sát động cơ nên máy hoạt động ít tiếng ồn hơn so với các loại khác.
+s00961 Tại LG, chúng tôi có loại máy sấy lớn với dung tích 9kg, phù hợp với hộ gia đình đông người hoặc những người thường xuyên giặt giũ.
+s00984 Tính năng thông minh Ngày nay, máy sấy quần áo được trang bị những tính năng thông minh với khả năng kết nối Wi-Fi được cải tiến, nhờ đó bạn dễ dàng quản lý hơn.
+s01596 Động cơ biến tần được điều khiển kỹ thuật số, giúp điều chỉnh công suất và tốc độ quay để chúng hoạt động hiệu quả hơn.
+s10029 Ghi lại kích thước của bất kỳ máy sấy nào bạn đang xem trong thông số kỹ thuật của sản phẩm và kiểm tra kích thước này với không gian có sẵn trong nhà bạn.
+s10345 Kiểm tra với nhà bán lẻ địa phương của bạn hoặc LG để biết tính khả dụng của dịch vụ.
+s10393 Ngoài ra, những máy sấy này có độ bền cao, vì vậy bạn không cần phải lo lắng về chi phí bảo dưỡng hoặc sửa chữa khá nhiều.
+s10428 Gentle Care™ Chu trình Gentle Care™ làm khô quần áo mỏng ở nhiệt độ thấp hơn để giảm khả năng bị co rút và nhàu.
+s10444 Chúng cũng không phù hợp với những ngôi nhà có hệ thống thông gió hạn chế, vì vậy nếu bạn sống ở một căn hộ ở trung tâm thành phố hoặc không có không gian bên ngoài để chứa đường ống bên ngoài, tốt nhất bạn nên chọn máy sấy heatpump hoặc máy sấy ngưng tụ.
+s10461 Các tính năng thông minh và sản phẩm trợ lý giọng nói có thể khác nhau tùy theo quốc gia và kiểu máy.
+s10482 Máy sấy thông hơi có thể cần phải được lắp một đường ống loại bỏ không khí ẩm, thông qua cửa sổ mở hoặc thiết bị cố định cố định trên tường.
+s10496 Những loại này rẻ hơn để mua, nhưng chúng không linh hoạt hơn và đắt tiền hơn để hoạt động, vì vậy nếu bạn không có không gian để phơi quần áo trên giá hoặc dây phơi, bạn có thể không nên mua một chiếc máy sấy thông hơi trong thời gian dài.
+s10551 By LG VN Bạn đang tìm kiếm máy sấy quần áo mới?
+s10564 Chia sẻ nội dung này.
+s10609 Máy sấy quần áo có nhiều kích thước, và kích thước bạn chọn sẽ phụ thuộc vào không gian hộ gia đình của bạn và tần suất bạn dùng máy sấy quần áo (chứ không phải phơi trên giá, bộ tản nhiệt hoặc dây phơi).
+s10611 Combo máy giặt sấy Máy giặt sấy là một giải pháp tiết kiệm không gian tốt – đặc biệt nếu bạn cũng đang tìm kiếm một chiếc máy giặt mới.
+s10649 * Độ sạch của bình ngưng có thể khác nhau tùy thuộc vào môi trường hoạt động.
+s10718 Mặc dù chúng có thể làm khô quần áo nhanh chóng, nhưng chúng không tiết kiệm năng lượng và có thể tốn nhiều chi phí hơn để hoạt động.
+s10721 Trong máy sấy ngưng tụ, độ ẩm được hút ra từ đồ giặt ướt và thoát ra ngoài; không khí được làm nóng qua một cuộn dây đi vào lồng sấy, sau đó làm khô đồ giặt của bạn.
+s10786 Điều quan trọng là phải giữ sạch bình ngưng trong máy của bạn để đảm bảo nó tiếp tục hoạt động bình thường*; tính năng Tự động vệ sinh bình ngưng của chúng tôi sẽ làm điều đó cho bạn, giúp bạn tiết kiệm thời gian và công sức!
+s10787 Với rất nhiều lựa chọn ngoài kia, thật khó để biết cái nào là phù hợp với bạn.
+s10966 Chẩn đoán thông minh Tính năng Chẩn đoán Thông minh cho phép bạn chẩn đoán và khắc phục mọi sự cố mà bạn có thể gặp phải với máy sấy của mình bằng cách gửi dữ liệu này tới ứng dụng LG ThinQ™ trên điện thoại thông minh của bạn.
+s11000 Bạn sẽ được cung cấp chiều rộng, chiều sâu và chiều cao của máy sấy, cũng như trọng lượng; hãy nhớ tính đến một số phòng bổ sung ở phía sau và hai bên để thông gió.
+s11041 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình HƯỚNG DẪN MUA HÀNG Hướng dẫn mua Máy sấy Cùng tìm hiểu nên mua máy sấy quần áo nào với hướng dẫn từ chuyên gia của chúng tôi.
+s11049 Chúng tôi đã tập hợp một hướng dẫn hữu ích để giúp bạn hiểu được sự khác biệt giữa máy sấy heatpump và các loại khác như máy sấy ngưng tụ và máy sấy thông hơi; chúng tôi cũng sẽ đề cập đến dung tích và xem xét các tính năng bạn sẽ thấy trên các sản phẩm của LG.
+s11172 Bạn cũng cần xem xét hai khía cạnh của kích thước: kích thước vật lý và dung tích của máy sấy.
+s11193 Những điều cân nhắc thêm Có một vài điều cuối bạn có thể muốn nghĩ đến trước khi quyết định chọn máy sấy nào: dưới đây là một số trong số đó.
+s11210 * Ứng dụng LG ThinQ™ khả dụng trên điện thoại thông minh hệ điều hành Android hoặc iOS.
+s11383 Không khí khô còn lại sau đó được tái chế và bơm trở lại lồng giặt để làm khô đồ giặt của bạn.
+s11406 Khám phá thêm về các loại và kích cỡ máy sấy, cũng như các tính năng khác nhau của máy sấy bơm nhiệt của LG.
+s11577 Máy sấy heatpump và máy sấy ngưng tụ so với máy sấy thông hơi Cả máy sấy heatpump và máy sấy ngưng tụ đều khác nhau khá nhiều so với máy sấy quần áo thông hơi.
+s11629 Cần có điện thoại thông minh tương thích với Android 4.1.2 (Jellybean) trở lên hoặc iOS 9 trở lên cho ứng dụng LG ThinQ™.
+s11712 Những tính năng bạn sẽ thấy trên Máy sấy LG Máy sấy của chúng tôi sử dụng nhiều công nghệ tiên tiến được thiết kế để giúp cuộc sống của bạn dễ dàng hơn một chút.
+s11833 Cảm biến khô Bằng cách theo dõi độ ẩm và nhiệt độ không khí trong lồng giặt, công nghệ cảm biến khô (Sensor Dry) tự động kiểm soát thời gian và nhiệt độ sấy để có kết quả tốt nhất trong mỗi chu kỳ.
+s11861 ● Vì chúng làm khô ở nhiệt độ thấp hơn nên máy sấy heatpump cũng phù hợp hơn với quần áo.
+s11941 Dung tích của máy sấy được đo bằng kg, và đề cập đến trọng lượng khô của tải, không phải trọng lượng ướt.
+s11944 ● Chúng cũng rẻ hơn để vận hành và không cần phải lắp ống nước vào vì tất cả độ ẩm được lưu trữ trong một bể chứa có thể được làm trống bằng tay.
+s12257 Các tính năng và dịch vụ có thể được LG thay đổi mà không cần thông báo trước.
+s12328 Dưới đây là một số tính năng thông minh chính mà bạn sẽ thấy trong một số máy sấy của chúng tôi.
+s12469 Điều này có nghĩa là bạn linh hoạt hơn về vị trí đặt chúng; Nếu bạn sống trong một căn hộ hoặc không có phòng tiện ích riêng trong nhà, bạn vẫn có thể dễ dàng lắp đặt máy sấy heatpump.
+s12477 * Các máy sấy LG khác nhau có các chu kỳ Chăm sóc dị ứng giúp giảm tiếp xúc với các loại chất gây dị ứng khác nhau, vui lòng kiểm tra trang sản phẩm của từng Máy sấy LG để biết thêm chi tiết về từng chu trình Chăm sóc Dị ứng.
+s12517 MUA SẮM MÁY SẤY LG Máy sấy heatbump là gì và chúng hoạt động như thế nào?
+s12761 ThinQ™ Công nghệ LG ThinQ™ cho phép bạn giám sát và quản lý máy sấy từ xa thông qua ứng dụng ThinQ™*; bạn có thể theo dõi mức tiêu thụ năng lượng của máy sấy, ghi lại các chu trình sấy trước đó và tải xuống các chu trình mới.
+s12867 Máy sấy heatpump là một loại máy sấy ngưng tụ và chúng hiện đại hơn các loại thông hơi truyền thống.
+s13063 Khi được kết nối với ứng dụng LG ThinQ™, Ghép nối thông minh sẽ tự động đặt chu trình máy sấy tối ưu dựa trên chu trình giặt đã hoàn thành gần đây nhất, vì vậy bạn không cần phải chọn đúng chu trình theo cách thủ công.
+s13160 Ghép nối thông minh Với Ghép nối thông minh, bạn có thể đồng bộ hóa chu trình máy giặt cửa trước và máy sấy LG của mình.
+s13166 Máy sấy heatpump so với máy sấy ngưng tụ và máy sấy thông hơi Như chúng tôi đã đề cập, máy sấy heatpump thực sự là một loại máy sấy ngưng tụ, nhưng có một điều quan trọng để phân biệt hai loại.
+
+페이지 정보: 국가=VN, 유형=microsite, URL=https://www.lg.com/vn/lg-thinq/magazine/how-to-make-sure-your-home-is-ready-for-summer/
+문장:
+s00133 Thật tuyệt khi biết rằng tính năng giám sát năng lượng thông minh mà bạn sử dụng cho điều hòa không khí LG cũng hoạt động cho tủ lạnh, vì vậy bạn sẽ không để thiết bị phải làm việc quá sức khi cần nhất.
+s01048 Ghi lại ngày bảo quản dự kiến của các món đồ dễ hỏng trên tính năng "Quản lý thực phẩm" của Tủ lạnh thông minh LG và ứng dụng LG ThinQ sẽ nhắc bạn khi đến lúc bạn phải dùng món đồ ngay.
+s01502 Làm thế nào để đảm bảo ngôi nhà của bạn sẵn sàng cho mùa hè 08/06/2022 Chia sẻ nội dung.
+s01792 Chuẩn bị nhà bếp của bạn cho giải trí mùa hè Bảo quản cả các nguyên liệu lưu trữ của bạn và sản phẩm luôn tươi ngon có thể là một thách thức trong mùa hè ngột ngạt, nhưng thực sự không cần phải như vậy khi có cảnh báo về ngày bảo quản của ứng dụng LG ThinQ.
+s01849 Với các công cụ phù hợp, bạn có thể dành ít thời gian hơn cho việc giặt giũ và nhiều thời gian hơn để tận hưởng mùa hè.
+s10515 Hơn nữa, ứng dụng LG ThinQ cung cấp một loạt các chương trình giặt có thể tải xuống cho mọi trang phục - từ váy chống nắng vải bông nhẹ cho đến đồ bơi polyester.
+s10518 Nhưng mặc dù việc giữ cho máy điều hòa không khí hoạt động suốt đêm có thể giúp bạn ngủ ngon hơn, điều đó là một báo hiệu không tốt cho hóa đơn tiền điện của bạn.
+s10644 Bạn có thể chia sẻ sản phẩm bạn thích với bạn bè Dã ngoại mùa hè và các chuyến đi đến bãi biển là những hoạt động theo mùa tuyệt vời, nhưng không gì có thể hơn được việc trở về nhà với những tiện nghi mát mẻ trong những ngày nóng nhất trong năm.
+s10824 Khao khát một que kem lạnh tuyệt vời để làm dịu cái nóng?
+s11043 Ngày nay có rất nhiều loại máy giặt và máy sấy đổi mới giúp bạn không phải phỏng đoán trong công việc giặt giũ.
+s11113 Với công nghệ nhà thông minh tiên tiến, bạn có thể khiến cho ngôi nhà của mình trở nên mát mẻ, thú vị và thuận tiện.
+s11347 Bạn có thể kích hoạt tính năng này từ mọi nơi trong nhà, vì tính năng có sẵn từ cả bảng điều khiển tủ lạnh và ứng dụng LG ThinQ.
+s11374 Ví dụ, máy giặt với công nghệ AI DD của LG giúp tiết kiệm thời gian và công sức bằng cách tự động xác định chu trình giặt tốt nhất sau khi đo trọng lượng và độ mềm của vải.
+s11602 Tiết kiệm thời gian và giảm bớt căng thẳng trong phòng giặt ủi Mùa hè thường có nhiều công việc giặt giũ hơn vì các gia đình dành nhiều thời gian hơn bên ngoài dưới ánh mặt trời, khiến công việc giặt giũ trở nên tẻ nhạt hơn.
+s11616 Biến phòng ngủ của bạn thành nơi trốn tránh tuyệt vời nhất vào mùa hè Chúng ta sẽ làm gì nếu không có máy điều hòa treo tường đáng tin cậy cứu chúng ta khỏi những đêm nóng nực, mất ngủ vào mùa hè?
+s12041 Thưởng thức một món ăn băng giá ngay từ tủ lạnh sẽ nhanh hơn và dễ dàng hơn rất nhiều với sự trợ giúp của tính năng Đông lạnh cấp tốc, giúp tăng cường chức năng làm đá và đông lạnh của tủ lạnh.
+s12546 Một buổi chiều "nghỉ dưỡng tại nhà" vào mùa hè đầy nắng sẽ đến với những giấc ngủ ngắn bất tận, ăn kem trước TV và đọc một cuốn sách hay trong không khí mát mẻ, thoải mái, tất cả đều có thể thực hiện được với thiết bị nhà thông minh.
+s12589 Dưới đây là một số mẹo và thủ thuật nhanh để sống cuộc sống mùa hè tốt nhất của bạn ở nhà.
+s13179 Với tính năng giám sát năng lượng thông minh của ứng dụng LG ThinQ, bạn có thể truy cập tức thì vào thông tin chi tiết về việc sử dụng hàng tháng cho mọi thiết bị kết nối của LG, đảm bảo bạn luôn biết được mức tiêu thụ năng lượng và tất cả những gì phải làm là ngồi xuống, thư giãn và tận hưởng sự mát mẻ của ngôi nhà.
+
+페이지 정보: 국가=VN, 유형=pdp, URL=https://www.lg.com/vn/man-hinh-may-tinh/man-hinh-gaming-ultragear/27gs95qe-b/
+문장:
+s00124 Sản phẩm cho phép game thủ tận hưởng trọn vẹn độ phân giải QHD và 240 Hz bằng DisplayPort hoặc HDMI.
+s00146 Cần có card đồ họa hỗ trợ HDMI 2.1 và cáp HDMI 2.1 (có sẵn trong bộ sản phẩm) để hoạt động bình thường.
+s00267 Cổng ra tai nghe 4 cực Trình cắm cho hiệu ứng âm thanh sống động Vừa tận hưởng trò chơi vừa trò chuyện bằng giọng nói nhờ khả năng kết nối dễ dàng với cổng ra tai nghe 4 cực.
+s00361 Tốc độ đáng kinh ngạc, OLED với tốc độ làm mới 240 Hz Tốc độ 240 Hz siêu nhanh cho phép game thủ nhìn thấy khung hình tiếp theo nhanh hơn và giúp hình ảnh hiển thị mượt mà hơn.
+s00494 *TrueBlack 400 đang ở mức hình ảnh trung bình 10% và 1,5m:1 là tỷ lệ tương phản ở mức hình ảnh trung bình 25%.
+s00507 Hòa mình vào thế giới game sống động hơn với DCI-P3 98,5% (Điển hình).
+s00509 Công nghệ tập trung vào trải nghiệm chơi game mượt mà Tương thích NVIDIA® G-SYNC® 27GS95QE là màn hình G-SYNC® Compatible đã được NVIDIA kiểm định và chứng nhận chính thức, hứa hẹn mang đến cho bạn trải nghiệm chơi game tuyệt vời với khả năng giảm đáng kể hiện tượng xước hoặc giật hình.
+s00519 Màn hình OLED với 240Hz & 0,03 ms (GtG) OLED nhanh như chớp Màn hình UltraGear™ mới của LG là màn hình OLED sở hữu tốc độ làm mới cực nhanh 240 Hz và thời gian phản hồi 0,03 ms (GtG).
+s00585 *Chọn “Tắt” chế độ Tiết kiệm điện thông minh (Chung → TIẾT KIỆM ĐIỆN THÔNG MINH → Tắt).
+s00597 *Sản phẩm hỗ trợ tốc độ làm mới nhanh lên tới 240 Hz.
+s00835 Bộ đếm FPS Bộ đếm FPS sẽ cho bạn biết tình trạng tải nội dung.
+s00872 OLED 27 inch QHD sáng hơn Thiết kế đắm chìm trong trò chơi Đắm chìm trong thế giới game với màn hình OLED luôn mang đến hình ảnh sáng tỏ, rực rỡ và sống động cho mọi trò chơi.
+s00886 **DCI-P3 Thông thường 98,5%, Tối thiểu 90%.
+s00905 DisplayHDR™ TRUE BLACK 400/DCI-P3 98,5% Bùng nổ sắc màu HDR TRUE BLACK 400 khiến mọi khung cảnh, dù sáng hay tối, trở nên sống động nhờ chi tiết chân thực và tỷ lệ tương phản 1,5M.
+s00965 Đồng thời, cảm thấy đắm chìm hơn trong âm thanh 3D ảo với DTS Headphone:X.
+s01007 Bạn sẽ chẳng bao giờ phải chơi trong bóng tối vì màn hình OLED mới luôn cho hình ảnh thật sự sống động và rực rỡ.
+s01021 Cân bằng tối Tính năng Cân bằng tối giúp game thủ tránh được các tay súng bắn tỉa ẩn nấp ở những nơi tối nhất và nhanh chóng thoát thân khi bom choáng phát nổ.
+s01034 *275 nit là độ sáng thông thường ở mức hình ảnh trung bình 100%.
+s01226 Điểm ngắm Điểm ngắm mục tiêu được cố định ở chính giữa để tăng độ chính xác khi bắn.
+s01318 OLED QHD với 240 Hz từ HDMI 2.1 Nâng tầm trải nghiệm chơi game với màn hình OLED 27GS95QE có tốc độ làm mới lên tới 240 Hz từ HDMI 2.1.
+s01552 *Hình ảnh được mô phỏng để hiểu tính năng rõ hơn.
+s01694 *Bộ sản phẩm được cung cấp kèm theo điều khiển từ xa.
+s01701 *Độ sáng của màn hình được so sánh với model trước đó, LG UltraGear 27GR95QE.
+s01731 AMD FreeSync™ Premium Pro Với công nghệ FreeSync™ Premium Pro, game thủ có thể trải nghiệm chuyển động liền mạch mượt mà trong những trò chơi có độ phân giải cao và nhịp độ nhanh.
+s01796 275 nit lên đến 1000 nit Điểm ảnh OLED tự phát sáng Màn hình có độ sáng 275 nit khi sử dụng ở chế độ tiêu chuẩn và lên đến 1000 nit khi ở chế độ sáng nhất.
+s01844 Thời gian phản hồi 0,03 ms cực nhanh Với thời gian phản hồi 0,03 ms (GtG), giảm hiện tượng bóng mờ ngược và giúp các vật thể được hiển thị rõ ràng, cho phép bạn thưởng thức trò chơi với chuyển động mượt mà hơn và chuyển động hình ảnh siêu thực.
+s01883 Màn hình Gaming 27'' LG UtraGear, OLED QHD với tốc độ làm mới 240Hz Thời gian phản hồi 0,03ms (GtG) - 27GS95QE-B 27GS95QE-B 45 27" ( 2 ) Tính năng chính OLED với Tốc độ làm mới 240Hz Thời gian phản hồi 0,03ms (GtG) Tỷ lệ tương phản 1,5M:1 Tương thích NVIDIA® G-SYNC® AMD FreeSync™ Premium NVIDIA® G-SYNC® Compatible / AMD FreeSync™ Premium Pro Thêm Bộ sưu tập Sinh ra để chơi game Màn hình chơi game OLED 240Hz số 1 thế giới với Thời gian phản hồi 0,03ms (GtG).
+s10255 Mọi khung hình đều quan trọng, cho dù bạn đang biên tập, chơi trò chơi hay xem phim.
+s10258 Đồng bộ hành động năng động Với Đồng bộ hành động năng động, game thủ có thể nắm bắt những khoảnh khắc quan trọng theo thời gian thực, giảm độ trễ tín hiệu đầu vào và nhanh chóng phản ứng lại đối thủ.
+s10378 *Tai nghe được bán riêng.
+s10408 *Bộ đếm FPS có thể hiển thị giá trị vượt quá tốc độ làm mới tối đa của màn hình.
+s10415 *Bộ sản phẩm KHÔNG kèm theo phần mềm và Bộ cảm biến hiệu chuẩn.
+s10586 *Tính năng Điểm ngắm không khả dụng khi Bộ đếm FPS được kích hoạt.
+s10869 Công nghệ hạn chế ánh sáng xanh của LG mang đến trải nghiệm chơi game tuyệt vời và giúp đôi mắt luôn thoải mái.
+s11006 Game thủ có thể phản ứng với đối thủ nhanh hơn và nhắm mục tiêu dễ dàng.
+s11284 Chân đế có thể điều chỉnh hỗ trợ khả năng xoay màn hình, độ nghiêng, độ cao và pivot giúp bạn chơi game thoải mái hơn.
+s11516 Với Bộ đếm FPS, bạn sẽ có được dữ liệu theo thời gian thực.
+s11548 Nâng tầm trải nghiệm chơi game với màn hình OLED tuyệt vời này.
+s11592 Xoay màn hình Độ nghiêng / Độ cao Pivot Thiết kế không viền Điều khiển từ xa UltraGear™ Thiết lập và điều khiển cùng lúc Với Điều khiển từ xa UltraGear™, bạn có thể thuận tiện thiết lập và điều khiển màn hình bằng cách bật hoặc tắt màn hình, điều chỉnh âm thanh, thay đổi chế độ và nhiều tùy chọn khác.
+s11697 Hãy tắt chế độ Tiết kiệm điện thông minh để có được trải nghiệm hình ảnh OLED sáng hơn.
+s11722 *Card đồ họa được bán riêng.
+s12013 Hình ảnh được mô phỏng để hiểu tính năng rõ hơn.
+s12340 Hình ảnh có thể khác với sử dụng thực tế.
+s12391 *Tính năng này được cung cấp dưới dạng bộ điều khiển từ xa đi kèm trong bộ sản phẩm.
+s12508 Vui lòng truy cập LG.COM để tải xuống phần mềm LG Calibration Studio mới nhất.
+s12633 *Chế độ Tiết kiệm điện thông minh được áp dụng theo mặc định để tối ưu hóa công suất tiêu thụ, nhưng bạn có thể tắt chế độ này để tận hưởng trải nghiệm chơi game sáng hơn.
+s12679 Giao diện người dùng đồ họa chơi game Giao diện người dùng đồ họa chơi game giành giải thưởng Người chơi có thể sử dụng Hiển thị trên màn hình và Điều khiển trên màn hình để dễ dàng tùy chỉnh cài đặt, từ điều chỉnh các tùy chọn màn hình cơ bản đến tạo phím tắt bằng cách đăng ký “Phím bấm do người dùng xác định”.
+s12885 [Mẹo] Làm thế nào để trải nghiệm màn hình chơi game OLED theo cách tuyệt nhất?
+s12925 Bảo vệ màn hình với OLED Care OLED Care giúp ngăn hiện tượng dư ảnh, lưu ảnh màn hình thường xảy ra khi chuyển từ ảnh tĩnh có độ tương phản cao đã chiếu lâu sang hình ảnh mới.
+s13003 *Tính năng trên có thể thay đổi tùy thuộc vào môi trường hoặc điều kiện sử dụng máy tính của người dùng.
+s13133 Thiết kế vì game thủ Trải nghiệm chơi game tuyệt vời hơn nhờ đèn Hexagon mới và thiết kế viền màn hình 4 cạnh siêu mỏng.
+s13203 *Để tải xuống Điều khiển trên màn hình mới nhất, hãy truy cập LG.COM.
+s13215 LG Calibration Studio Màu sắc chính xác được cập nhật Tối ưu hóa hiệu suất màu với chức năng hiệu chỉnh phần cứng thông qua LG Calibration Studio, tận dụng tối đa phổ màu rộng và tính nhất quán của màn hình LG OLED QHD.
+
+페이지 정보: 국가=VN, 유형=plp, URL=https://www.lg.com/vn/may-giat-say-cong-nghiep/giai-phap-giat-say-thong-minh/
+문장:
+s00613 Giải pháp giặt sấy thông minh của LG LG cung cấp các giải pháp tối ưu giúp doanh nghiệp của bạn thành công.
+s00900 Quy trình truy cập API và cấp phát khóa cho máy giặt công nghiệp LG Tăng cường hiệu quả hoạt động giặt sấy công nghiệp với hơn 40 điểm cuối API trên các Thiết bị, Thống kê, Cửa hàng, Nhật ký và API Gọi lại (Webhook).
+s01040 Thỏa thuận NDA / API / Giấy phép / Chính sách bảo mật / Điều khoản sử dụng Đảm bảo chất lượng: Khóa QA Tạo kênh QA / Cấp phát khóa / Ứng dụng cài đặt / Đảm bảo chất lượng / Hỗ trợ kỹ thuật Thao tác: Phím OP Tạo kênh OP / Cấp phát khóa OP / Hỗ trợ kỹ thuật Yêu cầu khóa API Kết nối với doanh nghiệp LG Nếu bạn muốn nhận báo giá cho sản phẩm mà bạn quan tâm hoặc có bất kỳ câu hỏi nào khác, đừng ngần ngại liên hệ với tôi.
+s10036 API là viết tắt của Giao diện Lập trình Ứng dụng.
+s10199 Contact us Đăng nhập để tạo danh sách yêu thích Thêm mặt hàng vào danh sách yêu thích để bạn có thể dễ dàng tìm thấy mặt hàng này khi quay lại LG.com.
+s10694 Ứng dụng của khách hàng Một ứng dụng cho phép khách hàng sử dụng dịch vụ giặt sấy một cách thuận tiện.
+s10979 API giặt sấy công nghiệp LG Xây dựng giải pháp kinh doanh riêng của bạn với API giặt sấy công nghiệp của LG.
+s11130 Ứng dụng của chủ doanh nghiệp Ứng dụng của khách hàng Ứng dụng của chủ doanh nghiệp Một ứng dụng dành cho chủ doanh nghiệp và người điều hành để quản lý các cửa hàng giặt sấy.
+s11671 Giải pháp LG Laundry Crew Ứng dụng LG Laundry Crew là giải pháp thông minh kết nối doanh nghiệp và máy giặt với ngýời dùng, từ chủ doanh nghiệp đến khách hàng.
+
+페이지 정보: 국가=VN, 유형=buying_guide, URL=https://www.lg.com/vn/qned-tvs/2021/qned-buying-guide/
+문장:
+s00143 QNED99: TV QNED Mini LED 8K tốt nhất của chúng tôi.
+s00260 Nếu bạn muốn có một chiếc TV 4K tuyệt đẹp dành cho phim ảnh, thể thao và chơi game, thì TV QNED Mini LED 4K tốt nhất của chúng tôi là sản phẩm dành cho bạn.
+s00765 *Các cổng băng thông HDMI 2.1, HDMI 2.0.
+s01238 Màn hình sáng tạo với vẻ đẹp ngoạn mục ở mọi kích thước, trong khi đó AMD FreeSyncTM Premium, VRR và các thông số kỹ thuật HDMI 2.1 mới nhất giúp bạn tăng tốc với các trò chơi mới nhất.
+s01554 Table Caption Tính Năng QNED99 QNED91 TV QNED Mini LED 8K tốt nhất của chúng tôi Sản phẩm đỉnh cao của TV QNED Mini LED 4K Hiển thị 8K (7680x4320) 86 / 75 / 65” 4K (3840x2160) 86 / 75 / 65” Âm thanh 4.2ch / 60W 4.2ch / 60W Chân đỡ Chân đỡ, giá treo tường tùy chọn Chân đỡ, giá treo tường tùy chọn Bộ xử lý Bộ xử lý α9 Gen4 AI 8K Bộ xử lý AI α7 Gen4 4K Xử lý AI Picture Pro, AI Sound Pro AI Picture, AI Sound Màu sắc Nano Color Pro / Khối lượng màu Nano Color Pro / Khối lượng màu HDR Dolby Vision IQ 
+s01574 QNED91: Sản phẩm đỉnh cao của TV QNED Mini LED 4K.
+s01749 Kích thước cùng với hiệu suất cao nhất trong TV QNED Mini LED 8K hiện đại của chúng tôi.
+s10660 TÌM HIỂU THÊM Trải nghiệm kỳ quan với LG OLED KHÁM PHÁ NGAY Đăng nhập để tạo danh sách yêu thích Thêm mặt hàng vào danh sách yêu thích để bạn có thể dễ dàng tìm thấy mặt hàng này khi quay lại LG.com.
+s10793 Một cuộc cách mạng TV LCD.
+s11293 TÌM HIỂU THÊM Thiết kế chưa từng có trước đây.
+s11457 Mở rộng để tìm TV thích hợp cho bạn.
+s11679 TÌM HIỂU THÊM Trò chơi chưa từng có trước đây.
+s11960 Cho dù bạn là người đam mê phim ảnh, người hâm mộ thể thao hoặc game thủ, nếu bạn đang tìm kiếm trải nghiệm màn hình LCD hạng nhất, thì đây là TV dành cho bạn.
+s12880 TÌM HIỂU THÊM Thể thao chưa từng có trước đây.
+s12890 TV QNED nào dành cho bạn?
+s13057 TÌM HIỂU THÊM Phim ảnh chưa từng có trước đây.
+
+페이지 정보: 국가=VN, 유형=microsite, URL=https://www.lg.com/vn/tivi/why-lgoled/10years-world-no1-oled/
+문장:
+s00349 Độ sâu tăng cường của HDR tiếp tục làm nổi bật hình ảnh từ trong bóng tối.
+s00376 Sự cải tiến 3650 ngày không ngừng đổi mới Một thập kỷ cải tiến liên tục.
+s00549 Đầu tiên của thế giới Thập kỷ của những sự đột phá Ra mắt những công nghệ đột phá chưa từng thấy trước đây.
+s00728 ****So với các mẫu evo không phải OLED và dựa trên Phép đo màu trắng hoàn toàn.
+s01017 Cuộc sống được tái hiện qua màn hình sống động tuyệt vời hơn trước, nhờ hình ảnh trung thực nâng cao của Bộ xử lý AI a9 4K Thế hệ 6 và Bộ tăng cường độ sáng tối đa, giúp tăng độ sáng lên 70%.
+s01166 Số đơn vị vận chuyển, 2013-2022.
+s01290 Năm 2014, LG có một bước nhảy vọt khổng lồ với OLED 4K và sau đó là 8K vào năm 2019.
+s01422 Năm 2020 chứng kiến cuộc cách mạng hình dạng TV của với OLED có thể cuộn được.
+s01437 Và năm 2022, LG đã vượt xa sức tưởng tượng với OLED Flex 42 inch có thể uốn cong.
+s01445 Thiết kế đổi mới 10 năm vượt qua mọi ranh giới Trong 10 năm, LG OLED đã đi trước mong đợi với những đổi mới như OLED W7 mỏng như giấy dán tường năm 2017 và OLED Flex với 20 lựa chọn có thể uốn cong năm 2022.
+s01531 *Thương hiệu OLED bán chạy nhất thế giới từ năm 2013 đến năm 2022.
+s01624 Năm 2013, chiếc OLED 55 inch vượt mọi ranh giới lần đầu tiên được ra mắt trên thé giới.
+s10247 Sự khởi đầu của thập kỷ tiếp theo Biểu tượng của OLED TV OLED số 1 thế giới Vị thế của LG OLED được xác định nhờ công nghệ liên tục đổi mới trong thập kỷ qua.
+s10263 Cuộc sống kết hợp với phong cách hòa hợp với không gian của bạn Biểu tượng cho cách sống của bạn, LG OLED là sự kết hợp hoàn hảo của cuộc sống cao cấp và thẩm mỹ trong gia đình của bạn.
+s10501 Một thập kỷ đỉnh cao.
+s10839 Độ sáng thay đổi theo dòng sản phẩm và kích thước.
+s11975 Truy cập https://www.omdia.com/ để biết thêm chi tiết.
+s12074 Kết quả không phải là sự xác nhận của LG Electronics.
+s12210 Màn hình chính mới của webOS 23 Tùy chỉnh theo sở thích của bạn Màn hình chính mới của webOS 23 phản ánh thị hiếu của bạn với Thẻ nhanh để chuyển đến các ứng dụng, nội dung và dịch vụ mà bạn yêu thích.
+s12480 *Hình ảnh màn hình mô phỏng.
+s12503 LG OLED evo G3 Tái xác lập độ sáng Chân thực tuyệt đối với độ sáng ngoài sức tưởng tượng.
+s12509 **Áp dụng cho tất cả các mẫu OLED evo ngoại trừ 48/42 C3.

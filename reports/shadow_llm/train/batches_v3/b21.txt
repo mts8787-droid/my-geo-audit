@@ -1,0 +1,214 @@
+페이지 정보: 국가=US, 유형=support_troubleshoot, URL=https://www.lg.com/us/support/help-library/lg-air-conditioner-why-is-water-dripping-or-condensation-forming-on-the-air-conditioner-CT10000014-20155363574975
+문장:
+s10302 If the filter is dirty, dust can mix with water, which may clog the drain hose and cause leaks.
+s10400 Weak Cooling and Water Leakage If your air conditioner is malfunctioning or low on refrigerant, the refrigerant may not circulate properly through the cooling coils, leaving some parts of the coils warm.
+s10502 If this happens, gently move the pump side to side to free the sensor and resume normal operation.
+s10506 Keep the air outlet wide and the fan speed high.
+s10614 The air conditioner cools well, but water is pooling under the unit Remove any blockage from the drain hose.
+s10662 To prevent this, empty the water container regularly so that the hose does not become submerged.
+s10679 Water droplets around the vent or pipes When you use the cooling mode, you may notice some condensation.
+s10723 This happens when the cool air from your AC meets the warm air in the room.
+s10805 When this happens, water may drip onto the floor instead of flowing evenly.
+s10843 This is normal and occurs when warm indoor air meets cool air from the air conditioner.
+s10919 This can cause weak cooling and water leakage under the unit.
+s11214 ➔ If the hose is too long and lies horizontally, it may sag or bend.
+s11289 Once the room reaches the set temperature, condensation will stop.
+s11469 Test the outlet by plugging in another device, such as a hair dryer, to make sure it’s working.
+s11478 To reduce condensation, set the air vents to a wider angle and increase the fan speed.
+s11796 To refill the refrigerant, we recommend contacting LG Support for professional service.
+s11809 Ensure the drain hose is straight and free of bends.
+s11850 The drain pump needs its own power source, separate from the air conditioner.
+s11907 If you are unable to perform this repair yourself, please contact LG Support for assistance.
+s11915 If the hose has severe bends and you cannot fix it yourself, please contact LG Support for assistance.
+s11993 It’s similar to how water droplets form on a cold bottle taken out of the refrigerator.
+s12056 Make sure the end of the drain hose is not submerged in water when connected to a container.
+s12128 Clean the ultra-fine filter regularly.
+s12186 ➔ Insert the drain hose firmly into the pump.
+s12193 After removing the filter, use a vacuum cleaner or gently clean it with a soft brush.
+s12262 Skip to Contents Skip to Accessibility Help Help library Find helpful information about your LG product [LG Air Conditioner] Why is water dripping or condensation forming on the air conditioner?
+s12271 Ensure the drain hose is securely connected to the pump.
+s12312 If you find a blockage, disconnect the hose at the middle joint or at the end, and clean it using compressed air.
+s12322 Filter location and removal steps may differ by model, so check your user manual.
+s12389 Gently shake the drain pump from side to side.
+s12398 Once the humidity drops, the condensation will go away.
+s12718 ➔ Use a dry towel to wipe off any moisture on the air conditioner’s surface.
+s12766 On hot and humid days, avoid setting the air outlet to a narrow angle with low fan speed for long periods.
+s12775 This can create greater temperature and humidity differences, which may lead to condensation and water leakage.
+s12853 Shorten the hose if possible.
+s12873 If the hose is underwater, water may flow back into the unit and cause leakage.
+s13073 When the indoor humidity is high, moisture in the air condenses more quickly, so you’ll see more condensation.
+s13099 When you use cooling mode in these conditions, moisture in the air can quickly turn into droplets, which may look like water forming on the vent or even mist coming out.
+s13184 If the hose is disconnected or torn, reconnect it securely and wrap the connection point with electrical tape.
+s13201 Once the room reaches your desired temperature, the condensation will disappear.
+
+페이지 정보: 국가=US, 유형=support_troubleshoot, URL=https://www.lg.com/us/support/help-library/lg-dishwasher-why-is-cl-showing-on-the-display-and-buttons-not-responding-CT10000009-20155118238912
+문장:
+s00105 Submission form temporarily unavailable to (GMT -05:00, United States of America local time) We apologize for this inconvenience.
+s00581 Close Related Help Library See more See more html Request a Repair Setup a repair request for your appliance or other electronic device START SERVICE REQUEST Register a Product Get the most out of your LG product by registering!
+s00622 Need immediate help?
+s00748 Contact us for all your product questions or concerns.
+s00926 As long as the dishwasher is powered on, you can disable Child Lock at any time by pressing and holding the [Child Lock] button for 3 seconds.
+s00979 Press and hold the [Child Lock] button on the control panel for 3 seconds.
+s01006 Therefore, when you turn the dishwasher back on, the buttons will still be unresponsive.
+s01090 Skip to Contents Skip to Accessibility Help Help library Find helpful information about your LG product [LG Dishwasher] Why Is 'CL' Showing on the Display and Buttons Not Responding?
+s01555 To disable Child Lock, make sure the dishwasher is turned on, then press and hold the Child Lock button for 3 seconds.
+s01885 A lock icon lights up on the display, or "CL" appears on the screen.
+s01889 Troubleshooting Dishwashers 04/08/2026 html Print Email Copy Link Share If your LG dishwasher displays "CL" and the buttons are unresponsive, the Child Lock feature is active.
+s01976 Once the "CL" indicator or lock icon disappears from the display, select your desired cycle.
+s10030 Was this information helpful?
+s10156 * YES NO Please fill out the required field.
+s10175 Why Is "CL" Appearing on My Dishwasher?
+s10196 How can we improve the information?
+s10251 If the issue persists, contact LG Customer Support for further assistance.
+s10436 How to Disable Child Lock 1.
+s10510 In order to get the best possible experience from our website, please follow below instructions.
+s10601 If the buttons remain unresponsive after disabling Child Lock, check the control panel surface for moisture or debris and wipe it clean with a soft cloth.
+s10646 Please note that this is not a malfunction.
+s10783 I've disabled Child Lock, but the touch buttons are still unresponsive.
+s10983 How would you improve the information?
+s11057 | LG USA Support JavaScript appears to be disabled in your browser.
+s11061 Close RETURN TO RESULTS is copied.
+s11117 Register Now Parts & Accessories Find genuine Parts and Accessories for your LG products Shop Now Need to Contact Us?
+s11158 If the buttons are unresponsive after powering on, disable Child Lock before use.
+s11200 This guide was created for all models, so the images or content may be different from your product.
+s11340 Select Ctrl+V to paste Close Transfer complete.
+s11372 All cycle and option buttons are disabled.
+s11647 Characters left : 140 / 140 Submit Thank you for your feedback!
+s11726 Press the [Power] button to turn on the dishwasher.
+s11806 This safety feature prevents unintended use.
+s11807 Child Lock Is Active Child Lock is a safety feature designed to prevent accidental operation by children.
+s12173 Chat with us now Request a repair 1-1.
+s12180 Can I disable Child Lock while a wash cycle is running?
+s12229 Frequently Asked Questions (FAQ) Q.
+s12488 If you're using Internet Explorer 9 or earlier, you will need to use an alternate browser such as Firefox or Chrome or upgrade to a newer version of internet Explorer (IE10 or greater) .
+s12606 * Please fill out the required field.
+s12615 Thank your for your feedback.
+s12629 Please enable JavaScript to ensure you get the most out of the LG site, products, and services To properly experience our LG.com website, you will need to use an alternate browser or upgrade to a newer version of internet Explorer (IE10 or greater).
+s13104 OK Submit failed due to system error.
+s13127 Important * Note: Child Lock remains active even if you turn the dishwasher off and on again after a cycle ends.
+
+페이지 정보: 국가=US, 유형=microsite, URL=https://www.lg.com/us/top-freezer-refrigerators
+문장:
+s00449 LG top-freezer refrigerators are packed with all the latest innovations in LG technology, including Multi-Air Flow technology, innovative crispers and the exclusive, whisper-quiet LG Linear Compressor.
+s00568 Multi-Air Flow for freshness: Breathe new life into your food with a smart system that maintains optimum cooling and humidity levels throughout your top-freezer refrigerator -- keeping your foods fresher longer.
+s00643 The Glide N’ Serve Pantry Drawer is just the right size for wide items, while the humidity controlled crisper drawers make the perfect home for fruits, vegetables and beverages.
+s00720 Sophisticated style and smart designs: Contoured doors, hidden hinges, and a host of great interior features like energy-efficient LED lighting give your top-freezer refrigerator a look that’s as sleek and stylish as it is functional.
+s00901 View the Report opens in a new window Extended Coverage > Free Delivery > Haul Away Your Old Appliance > 14-Day Free Returns > Chat with an Expert > MyLG Ownership Program > EXTENDED SERVICE PLAN 1 to 3 yr.
+s01177 Product enhanced with AI * Consumer Reports does not endorse products or services.
+s01872 View the Report opens in a new window RATED AND RELIABLE The 2026 Best Top Freezer Refrigerator Brand With LG, you get next-level energy efficiency and trusted reliability that’s unmatched.
+s11097 See why we’ve been rated the Best Top Freezer Refrigerator Brand by Consumer Reports.
+s11116 LG top-freezer refrigerators are packed with innovations from top to bottom.
+s11449 Find your perfect fit or browse our complete collection of refrigerators, including counter-depth, side-by-side, bottom-freezer, French-door and door-in-door styles, as well as all of our innovative home appliances and see how LG is making life good.
+s11711 From Multi-Air Flow freshness to LG’s Linear Compressor, see how we’re making life good.
+s11950 Discover all the state-of-the-art features including: Innovative crispers: With humidity-controlled crisper drawers and features like the full-width Glide N’ Serve Pantry Drawer, it’s never been easier to keep all of your food organized and fresh.
+s12414 Perfect for parties, outings and big family gatherings.
+s12631 Factory-installed ice makers: Now you can have ice on demand whenever you need it.
+s12835 * Half the functional floor space.
+
+페이지 정보: 국가=US, 유형=buying_guide, URL=https://www.lg.com/us/tvs/tv-buying-guide/picture-quality-tv-guide
+문장:
+s00389 Effective reflection management solutions reduce reflections while preserving black depth, contrast, and color accuracy, rather than diffusing light in ways that can mute colors or lift blacks.
+s00430 Great picture quality is not just about sharpness; it's about how clearly details appear in bright scenes, how deep shadows feel in darker moments, and how naturally colors and motion come together.
+s00490 With balanced Mini LED light control and screen sizes reaching up to 115 inches, QNED evo Mini LED brings immersive big‑screen viewing into the living space, combining stable performance, comfortable clarity, and confidence across every kind of content.
+s00529 QNED evo combines Mini LED brightness with advanced dimming.
+s00693 Deep blacks allow every other tone to stand out more clearly.
+s00694 Picture quality is ultimately defined by how well brightness, contrast, and color are balanced across different environments.
+s00739 For bright living rooms, choose TVs with high brightness, strong reflection control, and reliable color performance under ambient light.
+s00833 Processor Optimization and finishing touches The processor enhances image quality through upscaling, noise reduction, and tone mapping, refining the signal to maximize display performance.
+s00888 LG OLED evo represents the pinnacle of picture quality, delivering Perfect Black alongside Hyper Radiant Color Tech for exceptional depth, contrast, and color.
+s00889 While the image created cannot exceed the display's hardware limits, the processor serves as the final layer of polish that elevates overall visual consistency and detail.
+s00923 It performs best when supported by solid light and dark performance.
+s00938 When these elements are balanced, every image feels vivid, immersive, and true-to-life.
+s00948 Premium picture quality is a perfect harmony of contrast, brightness, and color.
+s00951 Powered by LG's most advanced alpha 11 AI Processor 4K Gen3 with Dual AI Engine, OLED evo achieves up to X3.9 brighter peak brightness with finely balanced control, enhancing detail, depth, and realism without sacrificing accuracy.
+s00954 At its core lies Hyper Radiant Color Tech, delivering UL-verified Perfect Black and Perfect Color that remain uncompromised, whether the viewing environment is dark or bright.
+s00986 Micro RGB evo enhances color expression with a pure RGB light structure for highly accurate and refined color reproduction.
+s01024 If you value precise and accurate color for content such as broadcasts, digital cinema, and photography, Micro RGB evo is better suited.
+s01134 Along with brightness, advanced reflection management is essential.
+s01216 Micro RGB evo, The New Color Evolution LG Micro RGB evo is LG's most advanced pure RGB spectrum LCD TV, delivering exceptional color accuracy through Micro RGB technology, certified by Intertek for Triple 100% Color Coverage across BT2020, DCI-P3, and Adobe RGB.
+s01354 Explore LG's lineup across OLED evo, Micro RGB evo,  and QNED evo Mini LED TVs.
+s01365 Why choose LG TVs for picture quality?
+s01816 Certified for 100% color volume, it maintains vivid, consistent color and clear contrast even in bright scenes, making sports, entertainment, and streaming content look lively and easy to enjoy.
+s01825 By understanding how they compare, you can choose the LG TV that best fits your viewing environment and preferences.
+s01865 Bringing our 13 years of OLED expertise into the RGB category, Micro RGB evo inherits LG's most advanced alpha 11 AI processor for stunning picture quality.
+s01867 What should you look for when evaluating picture quality?
+s10092 TVs with higher brightness help preserve clarity and keep images vivid throughout the day.
+s10183 Adequate screen brightness also ensures visibility, maintaining clarity when watching low-light content in well-lit living rooms.
+s10210 QNED evo Mini LED TVs OLED evo vs.
+s10281 Each LG TV lineup differs in how it balances contrast, brightness, color accuracy, and processing.
+s10683 Compare LG TVs to find the right option for your viewing needs Each LG TV takes a different approach to color, brightness, and contrast.
+s10858 LG TVs are designed to bring these elements together through a range of display technologies.
+s10887 What we actually see on screen is the result of multiple elements working together, shaping clarity, depth, and realism at the same time.
+s11311 Why is brightness important in bright environments?
+s11344 However, without strong contrast and sufficient brightness, a wide color range alone has limited visual impact.
+s11509 From live broadcasts to photography and visually demanding content, it delivers studio‑level depth and clarity that truly stand out.
+s11524 Understanding the differences in picture quality between LG TV models is the first step to choosing your next display.
+s11530 If black looks gray or washed out, even high brightness cannot prevent the image from appearing hazy, and color purity is reduced.
+s11551 The human eye is less sensitive to how many colors there are, and more responsive to contrasts between light and dark, the density of black areas, the impact of bright areas, the accuracy of colors, and the technology that refines it all.
+s11560 Micro RGB evo If you prioritize immersive contrast and depth for movies and gaming, or want the most complete performance across all five picture quality elements, OLED evo is the right choice.
+s11689 QNED evo Mini LED: What's the difference in picture quality?
+s11799 These five core factors shape how we experience picture quality.
+s11904 It ensures that content from HDR broadcasts, movies, and even graphic design and photography is rendered in ultra-rich and detailed.
+s11906 OLED evo, The Next OLED TV LG OLED evo is LG's most advanced next-generation OLED TV, elevating every aspect of picture quality to a new level of precision and immersion, and with advanced reflection control, especially LG OLED evo with Reflection-Free Premium, it effectively reduces reflection while preserving black depth and color accuracy.
+s12011 Micro RGB evo, Precision Performance for Advanced Viewing LG Micro RGB evo is best for viewers who expect color to look unmistakably real, where every hue feels precise, every highlight richly layered, and every detail vividly defined, even on a grand scale.
+s12151 QNED evo Mini LED | TV Comparison Guide | LG USA OLED evo vs.
+s12363 Micro RGB evo Best for OLED evo, The Ultimate Premium Viewing Experience LG OLED evo is best for viewers who demand uncompromised picture quality, delivering perfect black, perfect color, and stunning detail across movies, OTT series, live sports, and high‑performance gaming, while seamlessly elevating the space with a refined, minimal presence, so every scene looks exactly as creators intended: immersive, precise, and beautifully true to life.
+s12500 Color Richness and accuracy of color Color gamut measures how faithfully and vividly a display can reproduce the creator's intended colors.
+s12544 What defines picture quality?
+s12545 LG OLED evo keeps black depth and color clarity intact, ensuring stunning focus and consistency in any lighting condition, so every scene feels exactly as intended: beautifully vivid and effortlessly immersive.
+s12640 QNED evo Mini LED, Expanded Color Volume for Ultra Big TVs LG QNED evo Mini LED is LG's premium Mini LED TV designed to deliver dependable, everyday picture quality on an ultra‑large scale.
+s12742 TV picture quality is not defined by a single specification.
+s12812 Brightness Realism and HDR impact With HDR content becoming standard, peak brightness is responsible for on-screen sparkle, highlights, and lifelike realism.
+s12887 A higher contrast ratio makes edges clearer and adds dimensional depth to the image, which is why professionals often consider contrast the most critical indicator of picture quality.
+s12912 At the center of this approach, LG OLED evo integrates brightness, contrast, and color at the highest level, delivering exceptional depth, refined detail, and a truly immersive viewing experience.
+s13156 Brighter screens maintain visibility, contrast, and color in strong ambient light, where glare can wash out detail.
+
+페이지 정보: 국가=US, 유형=buying_guide, URL=https://www.lg.com/us/tvs/tv-buying-guide/tv-for-watching-movies
+문장:
+s00082 Dolby Vision™ prevents color banding and enables more precise brightness control.
+s00147 "So when we think of films like Harry Potter, where a whole class wears black clothes at night lit only by candles or organic lights, it's all about the shadows and the blacks.
+s00241 What makes TVs with Dolby Vision™ special?
+s00386 HDR10 Pro optimizes brightness and color for clearer detail HDR10 Pro enhances color, brightness, and contrast to deliver more vivid visuals and sharper detail.
+s00466 See every cinematic detail, from deep shadows to brilliant highlights Step into vivid visuals with Dolby Vision and FILMMAKER Mode Experience movies as they were meant to be seen.
+s00573 With a TV with Dolby Vision™ support, you can enjoy content mastered in Dolby Vision™ from Netflix, Apple TV, and more.
+s00717 How does HDR compare to SDR for movie watching?
+s00819 LG OLED evo takes it further Perfect Black and Perfect Color in any light, always LG OLED TV features UL-verified Perfect Black and Perfect Color, delivering deeper contrast, enhanced brightness, and vivid, accurate color.
+s00913 Surround yourself with immersive, theater-like audio Dolby Atmos surrounds you with immersive sound Dolby Atmos creates immersive 360° audio by placing sound as dynamic objects, rather than fixed channels.
+s01059 Top filmmakers and experts choose LG OLED LG OLED meets the highest cinema standards and is the top TV recommended for watching movies.
+s01088 Hear why industry professionals prefer the quality of LG OLED.
+s01207 A pioneer of early digital color grading.
+s01314 Dolby Vision™ is one of the widely adopted HDR formats, supporting up to 68 billion colors and theoretical peak brightness levels of up to 10,000 nits.
+s01333 Dolby Atmos® brings cinema-level surround sound into your home, placing you at the center of the action.
+s01510 Technologies like HDR and precise black levels help create depth and clarity, while Dolby Vision and Dolby Atmos further enhance the cinematic experience.
+s01537 With Sound Suite, customize your sound setup for your space Designed to be fully flexible with over 50 possible combinations, LG Sound Suite lets you to choose from the many available speakers and combine them to create your own setup that matches your needs.
+s01593 With Dolby Atmos® support, sound moves all around you—creating a more immersive, three-dimensional audio experience.
+s01619 Ensure your TV supports these features to enjoy cinematic quality even outside the theater.
+s01640 Recipient of the FilmLight Colour Award (2025).
+s01684 Dolby Vision enhances detail, contrast, and color, while FILMMAKER Mode removes unnecessary processing to preserve the creator's original intent.
+s01724 What makes TVs with Dolby Atmos® special?
+s01807 Immersive audio tuned to your preferences LG TV's DAFC (Dolby Atmos FlexConnect) optimizes sound based on your speaker placement, creating a surround experience tailored to your room layout.
+s01820 Discover the best LG TVs to watch movies on Easily compare features side-by-side to choose the best TV for your movie-watching needs.
+s01834 This helps deliver more balanced, immersive audio without complex setup.
+s01951 DAFC (Dolby Atmos FlexConnect) allows your TV and wireless speakers to work together.
+s10055 Unlike SDR (Standard Dynamic Range) which often suffers from washed-out dark scenes, true blacks preserve shadow detail.
+s10308 Enjoy movies with greater depth and clarity.
+s10488 Shadow as Another Character in the Film Peter Doyle Harry Potter series, Inside Llewyn Davis An award-winning supervising visual colourist known for his work on the Harry Potter series and major films including The Matrix and The Lord of the Rings.
+s10826 Why is DAFC important for cinematic experience?
+s10878 *This story was edited from an advertorial feature article published on Variety.com  This interview was conducted following attendance at the LG Electronics-hosted Hollywood Roadshow event in L.A.
+s10923 It preserves detail in both dark and bright scenes, so you can see every moment clearly, even in a bright room.
+s10982 The essentials of a great cinema TV Why is deep black important for movies?
+s11155 AI HDR Remastering upgrades every frame to HDR quality AI automatically optimizes color, brightness, and contrast and elevates SDR picture quality to HDR levels for richer, more realistic visuals.
+s11216 Compared to SDR's more limited brightness and color range, HDR (High Dynamic Range) supports a wider range of contrast and color expression.
+s11240 The first woman nominated for the Academy Award for Best Cinematography for Mudbound.
+s11241 Smarter ways to discover content AI Concierge recommends movies based on your viewing habits AI Concierge suggests movies based on your viewing habits, helping you discover cinematic content that fits your preferences.
+s11314 Why do experts recommend deep black for watching movies?
+s11323 Why choose LG TVs for a cinematic experience?
+s11438 In many night scenes, the black itself becomes a character in the film - an anchor that defines everything else.
+s11512 For a more cinematic experience at home, look for strong contrast, refined highlights, and rich color depth.
+s11594 Looking for a more immersive cinematic experience?
+s11620 Deep black levels are essential for cinematic realism.
+s11688 The best TV for watching movies recreates every scene with depth, clarity, and emotion, from high intensity action to subtle moments in close ups.
+s11763 On HDR-supported content, images can appear brighter and more vibrant compared to SDR.
+s11794 Your browser does not support the video tag.
+s11856 This helps deliver a more accurate and cinematic viewing experience at home.
+s11972 Its dynamic metadata helps optimize color and brightness scene by scene for a more cinematic viewing experience.

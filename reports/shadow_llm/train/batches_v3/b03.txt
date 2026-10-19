@@ -1,0 +1,232 @@
+페이지 정보: 국가=BR, 유형=buying_guide, URL=https://www.lg.com/br/home-appliances/buying-guide/washing-machine/size-capacity/
+문장:
+s12108 Verifique as páginas individuais dos produtos para obter as informações mais atualizadas.
+s12305 Esses modelos maiores podem até mesmo lavar um edredom king-size.
+s12711 Lavadoras de roupas Qual tamanho atende às suas necessidades?
+s12809 Confira todos os modelos grandes de carregamento frontal Comparar produtos Compare as principais características da linha LG para escolher o produto que melhor se adapta à sua casa e ao seu estilo de vida.
+s12941 Explore mais, escolha certo Qual tipo você procura?
+s12977 Deixe espaço atrás e ao redor para ventilação e tubulações, e certifique-se de que a porta abra completamente.
+s13140 Tamanho e capacidade Escolha uma capacidade que se adeque à sua família e aos seus hábitos.
+
+페이지 정보: 국가=BR, 유형=plp, URL=https://www.lg.com/br/home-audio/mini-componentes/
+문장:
+s00916 Produto Recomendado xboom Mini System Outlet da loja online LG Fim de semana das grandes ofertas!
+s10006 Uma seleção especial de oportunidades por tempo limitado.
+s12139 Compre Agora Seu endereço de e-mail foi cadastrado com sucesso.
+
+페이지 정보: 국가=BR, 유형=experience, URL=https://www.lg.com/br/lg-experience/dicas-uteis/lava-seca-inteligente-wifi-ia/
+문장:
+s00115 Digite duas vezes seguidas os últimos quatro caracteres ou números do nome da rede para usar como senha.
+s00142 ● Motor econômico e eficiente 4 : o motor Direct Drive™ é acoplado diretamente no tambor, dispensando o uso de correias e polias e diminuindo os pontos de atrito para garantir estabilidade e segurança – complementada pelos 10 anos de garantia LG.
+s00288 Com recursos inteligentes, os usuários podem acessar programas adicionais para elevar o cuidado com os diferentes tipos de roupas.
+s00342 Neste artigo, vamos ver como a tecnologia está transformando as máquinas lava e seca e simplificando cada aspecto do processo de lavagem de roupas com controles remotos intuitivos e funções avançadas por inteligência artificial.
+s00810 ▪          Mantenha pressionado o botão de habilitação do Wi-Fi na máquina por mais de 3 segundos.
+s01140 Explore os recursos inovadores das máquinas inteligentes da LG com conectividade por Wi-Fi: Monitoramento remoto: você pode acompanhar os ciclos de lavagem e secagem de casa, do trabalho e de qualquer lugar.
+s01181 Pareamento Smart: para produtos como a Lavadora e Secadora Elétrica Smart LG WashTower™, a lavadora e a secadora se conectam automaticamente e já programam os ciclos de lavagem e secagem com base nas suas roupas.
+s01433 Destaques do produto: ● Tecnologia AI DD™ 2: a Inteligência Artificial AI DD™ analisa automaticamente a quantidade e os tipos de tecido no cesto para definir o padrão de lavagem ideal das roupas.
+s01618 Eleve sua experiência de lavagem conectando sua máquina inteligente ao aplicativo LG ThinQ.
+s01985 ● Ciclos de lavagem com vapor 5 : a tecnologia Steam™ elimina 99,9% dos agentes alergênicos.
+s10048 Máquinas lava e seca inteligentes: a recomendação da LG Conheça um mundo de desempenho e sustentabilidade, cuidado e conveniência.
+s10145 o   Para conectar o dispositivo à rede Wi-Fi usando o código QR: ▪          Verifique se o aplicativo tem permissão para usar a câmera do seu celular.
+s10147 Com conectividade por Wi-Fi, você obtém sem esforços a capacidade de interação e acesso às mais recentes inovações.
+s10278 DICAS ÚTEIS Lavagem de roupas inteligente: conheça as máquinas lava e seca LG Smart By LG Tenha o futuro na ponta dos dedos com máquinas lava e seca inteligentes que você pode controlar diretamente pelo smartphone.
+s10346 Integração perfeita com dispositivos de automação residencial: integre sua lava e seca inteligente ao seu ecossistema de automação residencial para torná-la compatível com assistentes virtuais como o Google Assistente.
+s10487 Para começar, siga estas instruções simples: Conecte-se ao Wi-Fi: verifique se o seu smartphone está conectado à rede Wi-Fi que você deseja usar para sua lava e seca inteligente.
+s10535 A LG está refinando o cuidado com os tecidos com sua nova linha de máquinas, que apresentarão tecnologia de inteligência artificial para garantir resultados melhores e roupas mais duradouras.
+s10684 ▪          Com o Wi-Fi ativado, toque no botão “Concluído” do aplicativo.
+s10766 o   Escolha sua rede Wi-Fi na lista de opções disponíveis.
+s10815 Sua área de serviço nunca mais será a mesma!
+s10899 Configure sua rede: o   toque no ícone de configurações e acesse as configurações de Wi-Fi do smartphone.
+s10946 Como conectar sua lava e seca inteligente ao aplicativo LG ThinQ ?
+s10989 Com isso, você consegue usar seu smartphone para controlar remotamente sua lava e seca e outros dispositivos, eliminando as constantes idas à área de serviço.
+s11044 Experimente hoje mesmo o futuro da lavagem de roupas com as máquinas lava e seca LG Smart .
+s11140 Verifique se o ícone ou luz LED do  Wi-Fi está piscando para indicar que  o recurso está ativado.
+s11251 o   Volte ao aplicativo LG ThinQ e acesse a tela de configurações de rede.
+s11369 ▪          Localize a etiqueta com informações do modelo e número de série no aparelho e encontre o código QR.
+s11408 ● Exclusiva tecnologia 6 Motion 3 : diferente das lavadoras convencionais, que só têm 1 movimento, a lava e seca LG tem 6 movimentos de lavagem para limpar e conservar melhor suas peças.
+s11444 ▪          Escolha “Lavadora” na lista de opções disponíveis.
+s11543 Receba alertas quando as roupas estiverem prontas para garantir o manuseio correto e pontual.
+s11707 ▪          Aproxime-se da máquina e siga as instruções na tela.
+s11710 Dê adeus às preocupações com o processo de lavagem.
+s11838 O futuro dos cuidados com as roupas: tecnologia de IA da LG Em breve, as dificuldades de tentar adivinhar o melhor ciclo de lavagem ficarão no passado.
+s11862 Veja sua lavadora: a lava e seca agora aparece na tela inicial do aplicativo LG ThinQ, permitindo a você monitorá-la e controlá-la remotamente com facilidade.
+s11946 Diga adeus ao tedioso processo de lavar roupas e aproveite a nova era de conveniência e eficácia.
+s12104 Productos más vistos Seu endereço de e-mail foi cadastrado com sucesso.
+s12248 o   Procure uma rede Wi-Fi chamada @LG_Smart_Dryer_XXXX” (com quatro caracteres ou números ao final).
+s12442 o   Toque em “Concluído” para finalizar o processo.
+s12496 A tecnologia de inteligência artificial oferece resultados impecáveis para sua comodidade.
+s12505 As máquinas lava e seca LG Smart, como o modelo CV5012MC4 , integram-se perfeitamente ao ecossistema de automação de sua residência com a tecnologia ThinQ™.
+s12573 Adicione a máquina inteligente: você pode conectar seu dispositivo manualmente ao Wi-Fi ou usando o código QR localizado na etiqueta com informações do modelo e número de série.
+s12576 Além disso, ajustes de temperatura automáticos e tempos de lavagem otimizados permitem que a máquina com IA se adapte às diferentes condições da carga e proporcione maior cuidado e proteção a cada ciclo.
+s12647 Fique de olho nas futuras inovações que a LG lançará para revolucionar o tratamento de roupas.
+s12654 ▪          No painel do aplicativo ThinQ, toque em “Adicionar dispositivos”, selecione o tipo de dispositivo e toque em “Escanear código QR”.
+s12682 Aproveite os benefícios de uma operação sem mãos usando comandos simples de voz.
+s12701 Abra o aplicativo ThinQ: inicie o aplicativo LG ThinQ no smartphone.
+s12720 Seja para definir o ciclo de lavagem ideal, baixar novos programas ou usar outros recursos, sua máquina acaba de ficar mais inteligente.
+s12875 Perfeitamente sincronizadas com o ThinQ™, as máquinas lava e seca LG Smart usam a conectividade por Wi-Fi para aumentar a conveniência e a eficácia da sua rotina.
+s12909 o   Se o seu dispositivo não tem um código QR, ou se você não consegue localizá-lo: ▪          No aplicativo, toque na opção “Adicionar dispositivos”.
+s12923 As principais recomendações da LG para máquinas lava e seca inteligentes redefinem o padrão de lavagem conveniente, consistente e eficaz.
+s13151 Os ciclos capacitados por IA usam algoritmos avançados para analisar o peso, o material e a umidade das roupas, oferecendo uma configuração de lavagem customizada de acordo com as características de cada peça.
+s13194 ● ThinQ (Wi-Fi) 6 : com a conectividade com o ThinQ por Wi-Fi, você controla e monitora sua secadora remotamente, o que proporciona maior conveniência e a flexibilidade.
+
+페이지 정보: 국가=BR, 유형=experience, URL=https://www.lg.com/br/lg-experience/inspiracao/design-tvs-modernas/
+문장:
+s00305 ● Duração da bateria: a bateria de longa duração permite usar a TV por até 3 horas de visualização contínua, para você ver um filme inteiro ou vários episódios de sua série favorita sem a necessidade de recarga.
+s00354 Essas TVs são extremamente finas e leves, podendo ser colocadas inteiramente contra uma parede sem deixar espaços .
+s00532 A linha de TVs ultrafinas e telas Lifestyle da LG, como a OLED Flex , StanbyME e outras TVs OLED , como a Posé da LG Objet Collection, estão sendo cada vez mais procuradas por consumidores que prezam por tecnologia e design, representando a avançada tecnologia da LG com seus estilos únicos.
+s00607 ● Interface de uso prático: controles intuitivos e um controle remoto refinado oferecem praticidade na navegação.
+s00703 Essa TV OLED curva representa a união perfeita entre flexibilidade e estilo.
+s01341 ● Conectividade avançada: as portas de entrada e opções sem fio permitem uma integração facilitada com outros dispositivos.
+s01454 Essa família de TVs ultrafinas para montagem na parede e telas Lifestyle foi criada para atender às necessidades dos clientes modernos que exigem desempenho e elegância em seus sistemas de entretenimento residencial.
+s01465 A televisão costuma ser o elemento principal de uma sala de estar, e sua aparência pode afetar diretamente o apelo visual do ambiente.
+s01467 A linha de TVs OLED é uma demonstração disso, com modelos que oferecem funcionalidade e beleza estética.
+s01469 ● Experiência de áudio aprimorada: os alto-falantes embutidos proporcionam um som claro, próprio para uso casual.
+s01881 ● Iluminação gamer: personalize as cores da luz de fundo para combinar com o clima do seu jogo.
+s01931 Para uma experiência mais imersiva, uma caixa de som externa (opcional) está disponível como parte de um combo.
+s01977 INSPIRAÇÃO Versáteis e funcionais: os designs das TVs LG modernas By LG Em uma época em que todos querem encontrar dispositivos que, além de funcionais, também contenham estilo, existe uma grande demanda por TVs mais leves e modernas.
+s10005 ● Opções de conectividade: apresenta várias possibilidades de conexão sem fio, incluindo Wi-Fi e Bluetooth, para uma integração perfeita com outros dispositivos.
+s10070 ● Design elegante: Design elegante: ultrafina com bordas arredondadas e um acabamento têxtil em bege discreto, uma combinação de charme e estilo que pode ser apreciada de qualquer ângulo.
+s10074 Os consumidores atuais buscam dispositivos que possam complementar a decoração, com designs minimalistas que se mesclem com cada ambiente.
+s10157 O Video Sync sincroniza a iluminação com as imagens na tela para mergulhar você no mundo do jogo.
+s10167 ● Interface intuitiva e sensível ao toque: os controles com toque possibilitam uma experiência fluida.
+s10390 ● Sistema de som integrado: um sistema de áudio integrado de alta qualidade permite criar uma experiência sonora imersiva.
+s10413 Isso garante que a tela esteja sempre posicionada perfeitamente, aprimorando ainda mais sua jogabilidade.
+s10504 ● Suporte ajustável: o suporte permite fazer ajustes para encontrar diferentes ângulos de visualização e opções de posicionamento, garantindo seu conforto em qualquer lugar da casa.
+s10593 ● Qualidade de imagem superior: com a tecnologia OLED evo, a LG OLED Flex oferece uma magnífica experiência visual.
+s10645 Hoje em dia, todos querem uma TV que não apenas ofereça imagens de ótima qualidade, como também se integre perfeitamente à sala de estar.
+s10732 Veja alguns dos principais recursos: ● Tela curva flexível para jogos: a LG OLED Flex oferece uma flexibilidade sem paralelo com o recurso “1 tela, 20 curvas”.
+s10734 Esse modelo é perfeito para quem aprecia simplicidade e elegância.
+s10776 StanbyME: elegância móvel A LG StanbyME , uma tela sem fios , redefine o conceito de portabilidade em televisões.
+s10876 Assim, você tem a certeza de encontrar o ângulo de visão perfeito para seus jogos, seja com uma leve curva ou uma experiência totalmente imersiva.
+s10999 Telas e TVs LG Lifestyle A LG está na vanguarda da união entre tecnologia de ponta com design e estilo em aparelhos de televisão.
+s11011 O Sound Sync faz as luzes acompanharem o áudio do jogo, tornando as explosões e cenas de ação ainda mais radicais.
+s11076 Você pode ajustar a tela, deixando-a completamente plana ou selecionando uma das 20 opções de curvatura – até uma impressionante curva de 900R.
+s11111 Ficaram no passado os antigos aparelhos de televisão, grandes e volumosos, que ocupavam todo o espaço disponível na parede da sala.
+s11131 O suporte é robusto, possibilitando diversos ajustes de altura e inclinação.
+s11285 ● Suporte integrado: o suporte charmoso e resistente, que remete a um cavalete de pintura, complementa o design minimalista e garante estabilidade.
+s11328 ● Estética elegante e minimalista: com linhas suaves e um design minimalista, ela adiciona um toque de charme a qualquer espaço.
+s11335 Com diferentes configurações e modos, você ajusta facilmente a experiência de acordo com suas preferências.
+s11415 ● Funções de Smart TV: o acesso a inúmeros serviços e aplicativos de streaming oferece uma abrangente experiência de entretenimento.
+s11455 Por que o design é importante nas TVs modernas No universo dos dispositivos audiovisuais modernos para casa, o design tem um papel fundamental.
+s11485 Posé A LG Objet Posé , por outro lado, foi projetada com uma abordagem mais minimalista, exibindo uma moldura única e sofisticada.
+s11506 Essa mudança para aparelhos eletrônicos com foco no design reflete uma tendência maior de convergência entre tecnologia e estilo que visa criar espaços de convivência mais harmônicos.
+s11723 As TVs modernas, mais finas e elegantes, elevam o primor estético de um espaço e ainda contribuem para uma atmosfera mais organizada e sofisticada.
+s11813 Os pixels autoiluminados proporcionam níveis profundos de preto, cores vibrantes e alto contraste, dando vida aos gráficos dos jogos com clareza hiper-realista.
+s12009 Projetada para quem procura uma experiência de visualização flexível, a StanbyME é uma tela inteligente sem fios e com uma bateria embutida que pode ser movida facilmente pela casa.
+s12018 ● Compacta com base móvel: feita para ser transportada e reposicionada com simplicidade nos diferentes espaços de uma casa.
+s12122 Além disso, são ótimas opções para quem tem ambientes de convivência reduzidos.
+s12208 Veja alguns dos principais recursos: ● Design minimalista: linhas suaves e uma moldura refinada ampliam a estética moderna da TV.
+s12289 LG OLED Objet Collection: Posé Expandindo sua linha de TVs com design moderno e artístico, a LG lançou a OLED Objet Collection , que inclui modelos como The Posé .
+s12358 ● Design otimizado para jogos: além de todo o seu estilo, essa TV foi desenvolvida para os gamers.
+s12422 Como se fossem obras de arte!
+s12694 Escolha um dos cinco modos de iluminação para criar a atmosfera perfeita.
+s12990 ● Interface de jogo prática: a LG OLED Flex conta com uma interface personalizável, ideal para quem gosta de jogar.
+s13165 ● Botões reduzidos: maximizam o espaço da tela e complementam a aparência contemporânea.
+
+페이지 정보: 국가=BR, 유형=microsite, URL=https://www.lg.com/br/lg-thinq/magazine/how-to-make-sure-your-home-is-ready-for-summer/
+문장:
+s00174 Uma tarde ensolarada de verão passada em casa deve ter sonecas tranquilas, sorvete para tomar na frente da TV e um ambiente fresco e confortável para ler um bom livro, e tudo isso é possível com os eletrodomésticos inteligentes.
+s00315 Com a inovação das tecnologias inteligentes, você pode deixar sua casa fresca, agradável e prática.
+s00616 Economize tempo e estresse na lavanderia Tempo quente geralmente significa uma quantidade tediosamente maior de roupa para lavar, já que as famílias passam mais tempo ao ar livre aproveitando o sol.
+s00993 O problema é que, embora manter o ar-condicionado ligado durante a noite possa ajudar a dormir melhor, isso não faz muito bem para a sua conta de luz.
+s01729 Atualmente, há uma variedade de lavadoras e secadoras inteligentes que eliminam as dúvidas na hora de lavar a roupa.
+s10451 Aqui estão algumas dicas e macetes para passar o verão em casa da melhor maneira possível.
+s10754 As lavadoras com tecnologia AI DD da LG, por exemplo, medem o peso e a maciez do tecido para determinar automaticamente o melhor ciclo a ser usado, ajudando a poupar tempo e esforço.
+s10803 Com a função inteligente de monitoramento energético do aplicativo LG ThinQ, você tem acesso instantâneo a informações de uso mensal de cada aparelho LG conectado, o que ajuda a manter sob controle o consumo de energia para você poder sentar, relaxar e aproveitar o frescor do lar.
+s10968 Fazer piqueniques ou pegar uma praia são ótimas atividades para o verão, mas nada supera voltar para o frescor confortável do lar durante os dias mais quentes do ano.
+s10984 Também vale salientar que o recurso inteligente de monitoramento de energia usado para o ar-condicionado LG também funciona para a geladeira, para que você não sobrecarregue o aparelho quando mais precisar.
+s11480 Anote a data de validade estimada dos itens perecíveis no “Gerenciador de Alimentos” da geladeira LG Smart, e o aplicativo LG ThinQ emitirá um lembrete quando o vencimento estiver próximo.
+s11913 Como Deixar Sua Casa Preparada para o Verão 2022-06-08 Compartilhe este conteúdo.
+s11935 Transforme seu quarto num refúgio à prova de verão O que seria de nós sem o um confiável ar-condicionado de parede para nos salvar das tórridas noites em claro do verão?
+s12134 Com as ferramentas certas, você consegue passar menos tempo lavando e mais tempo aproveitando a temporada de verão.
+s12277 Quer um picolé bem gelado para aliviar o calor?
+s12375 Desfrutar uma delícia gelada diretamente da geladeira fica muito mais rápido e fácil com a ajuda do recurso Express Freeze, que intensifica as funções de congelamento e criação de gelo do refrigerador.
+s12485 O recurso pode ser ativado de qualquer lugar da casa, pois está disponível tanto no painel do refrigerador como no aplicativo LG ThinQ.
+s12566 Prepare sua cozinha para entreter no verão Manter o frescor dos produtos e ingredientes armazenados durante um verão escaldante pode ser desafiador, mas, com o alerta de data de validade do aplicativo LG ThinQ, não precisa ser.
+
+페이지 정보: 국가=BR, 유형=pdp, URL=https://www.lg.com/br/monitores/monitores-uhd-4k/32ur500k-b/
+문장:
+s00153 *Para descarregar a versão mais recente da aplicação LG Switch, procure por 32UR500K-B no menu de suporte do LG.com.
+s00162 Elas podem diferir do uso real.
+s00533 Fechar A notificação de reposição de estoque já foi atualizada.
+s00546 Resolução de Problemas Encontre informações e dicas de como resolver problemas do seu produto Garantia Verifique as informações de garantia do seu produto aqui.
+s00565 Podem diferir do uso real.
+s00610 A Tela UHD 4K (3840x2160) 32” Design sem bordas em três lados A Qualidade de imagem HDR10 DCI-P3 90% (Típico) A Funcionalidade LG Switch Inclinação ajustável Recursos focados no game Experiência Ultra Imersiva Com o monitor 32UR500K-B você entrará em uma  experiência ultra imersiva compatível com os novos consoles 4K, proporcionando emoção durante as batalhas com os recursos Dynamic Action Sync e Black Stabilizer, além de imagens impressionantes em HDR 10 e som estéreo com MaxxAudio® (5W x2).
+s00975 É uma maneira fácil de acompanhar algo especial que você está de olho ou salvar ideias de presentes para amigos e familiares.
+s01133 Desligado Ligado Black Stabilizer Ataque primeiro no escuro Mantenha a visibilidade mesmo em cenas escuras.
+s01183 Entre em Contato Suporte Técnico Fale com nosso Suporte Técnico via WhatsApp para sanar sua dúvida ou problema Loja Online Fale com nossa Loja Online para sanar suas dúvidas sobre seu pedido Localizar Assistência Técnica Encontre a assistência mais próxima de você Acompanhar Reparo Verifique o status da solicitação de reparo do seu produto Produto Recomendado Seu endereço de e-mail foi cadastrado com sucesso.
+s01676 Aproveite também para assistir seus conteúdos favoritos e jogar em uma tela com imagens deslumbrantes.
+s10324 Não aplicar DAS DAS Dynamic Action Sync Reaja mais rápido aos adversários Experimente um jogo otimizado e com ritmo alucinante com o Dynamic Action Sync, um recurso avançado para jogos de estratégia que sincroniza os seus sentidos com cenas em tempo real, minimizando o atraso de entrada.
+s10407 *O recurso pode variar dependendo da condição e do ambiente que o usuário está usando.
+s10677 Suporte para Pedidos Rastrear seu pedido e verificar as perguntas frequentes.
+s11080 Ative o JavaScript para garantir que você aproveite ao máximo o site, os produtos e os serviços da LG.
+s11164 Solicitação de Reparo Solicite o serviço de reparo online e ganhe mais praticidade.
+s11561 um Membro da LG Aproveite todos os benefícios da comunidade de membros LG, que vão de descontos especiais a serviços e ofertas exclusivas.
+s11675 Entrar Cadastre-se Cupom  de Boas-Vindas Garanta 5% de desconto na sua primeira compra ao se inscrever como membro LG Preços  Exclusivos Receba ofertas exclusivas de lançamentos de produtos em primeira mão Entrega Grátis Em produtos selecionados e regiões atendidas.
+s11717 Design e ergonomia Fácil e confortável O suporte One Click facilita a instalação do seu monitor sem a necessidade de outros equipamentos, permitindo ajustar facilmente a inclinação da tela na posição ideal para você.
+s11836 Cadastro de Produtos Cadastrar o seu produto te ajudará a ter um atendimento mais rápido.
+s11881 WhatsApp sobre Serviços WhatsApp sobre Compras Minha LG Registro de Produto Suporte ao Produto Solicitar Reparo Fale Conosco HVAC AI Assistant
+s11961 Verify right now Verify later Como posso ajudá-lo?
+s11986 Obtenha suporte Manual e Software Baixe os manuais dos produtos e as versões de software mais recentes.
+s12150 O dispositivo OTT e o controle remoto NÃO estão incluídos no pacote (vendidos separadamente).
+s12316 O Black Stabilizer ajuda a tornar tudo mais claro, para que você possa encontrar os inimigos escondidos.
+s12426 *O serviço de streaming OTT só está disponível conectando um dispositivo OTT a um monitor.
+s12502 *As imagens são simuladas para aprimorar a compreensão dos recursos.
+s12510 Pode ser diferente do uso real.
+s12590 Estamos aqui para te ajudar com o que você precisar.
+s12719 Não obrigado(a), Agora não CONTINUE A ENTRAR Adicione itens à sua lista de desejos do MY LG Remover item Continuar para MINHA lista de desejos LG OTP authentication failed.
+s12785 Peças e Acessórios Descubra acessórios para o seu produto.
+s12786 Fechar Environmental Handing Fee (EHF) EHFs vary by product and province.
+s12863 *As imagens simuladas para melhorar a compreensão dos recursos.
+s13161 Suporte para Produtos Encontre o manual, solução de problemas e garantia do seu produto LG.
+s13220 Aplicativo LG Switch Aumente sua produtividade no trabalho Com o aplicativo LG Switch, você pode dividir a tela do monitor em seis áreas, gerenciar horários ou iniciar uma plataforma de videoconferência com apenas uma tecla de atalho mapeada, tudo de maneira simples e rápida, facilitando seu dia a dia e aumentando sua produtividade *As imagens são simuladas para melhorar a compreensão das funcionalidades.
+
+페이지 정보: 국가=BR, 유형=pdp, URL=https://www.lg.com/br/multi-split/unidades-externas-multi/z4uq30gfb1/
+문장:
+s01916 Não consegue encontrar o que procura?
+s10991 A Página Solicitada Não Está Disponível.
+s11619 Vá para a página inicial Seu endereço de e-mail foi cadastrado com sucesso.
+s12922 Comece em nossa página inicial ou navegue nos links abaixo.
+
+페이지 정보: 국가=BR, 유형=promotion, URL=https://www.lg.com/br/promocoes/combos/oled65c5-24g411a/
+문장:
+s00114 Viva o game com a taxa de 144Hz (O/C) que permite carregar imagens em movimento em até 144 vezes a cada segundo para você se sobressair no game.
+s00198 Monitor Gamer 144Hz (O/C), 1ms (MBR), IPS FHD 24“ *As imagens são simuladas para aprimorar a compreensão dos recursos.
+s00352 12 anos como número 1 em unidades mais vendidas de 2013 a 2024.
+s00372 Comece a quebrar o game com 144Hz de taxa de atualização Cada frame importa para atingir a melhor performance durante a gameplay.
+s00552 100% de fidelidade de cores para cores realistas e precisas, e 100% de volume de cores para tons mais intensos.
+s00564 Smart TV LG OLED evo AI C5 4K de 65 polegadas 2025 Monitor LG UltraGear™ G4, 24G411A-B, 144Hz (O/C), Tela IPS FHD 24", 1ms (MBR), NVIDIA G-SYNC, AMD FreeSync, HDR10, sRGB 99% Imprimir Especificação chave IMAGEM (DISPLAY) - Tipo de Painel 4K OLED IMAGEM (DISPLAY) - Frequência Nativa 120Hz Nativo (VRR 144Hz) IMAGEM (DISPLAY) - Ampla Gama de Cores OLED Cores IMAGEM (PROCESSAMENTO) - Processador α9 AI Processor 4K Gen8 IMAGEM (PROCESSAMENTO) - HDR (High Dynamic Range) Dolby Vision / HDR10 / HLG JOGO
+s00736 Combo Smart TV LG OLED evo AI C5 65" 2025 + Monitor LG UltraGear™ 24G411A-B, 144Hz (O/C), Tela IPS FHD 24" OLED65C5.24G411A ( ) Principais recursos Qualidade de imagem 4K aprimorada e áudio surround com o Processador Alpha 9 AI Gen8.
+s00994 Taxa de atualização de 144Hz (O/C) Tempo de resposta de 1ms (MBR) Compatível com NVIDIA® G-SYNC® & AMD FreeSync™ Mais Galeria Produtos neste pacote OLED65C5PSA Smart TV LG OLED evo AI C5 4K de 65 polegadas 2025 24G411A-B Monitor LG UltraGear™ G4, 24G411A-B, 144Hz (O/C), Tela IPS FHD 24", 1ms (MBR), NVIDIA G-SYNC, AMD FreeSync, HDR10, sRGB 99% Veja os detalhes de cada luz e sombra *Omdia.
+s01847 Ao reconhecer rostos, ele oferece não apenas qualidade visual 4K, mas também expressões faciais aprimoradas e maior profundidade.
+s01986 Visuais mais brilhantes com o Intensificador de brilho O Preto Perfeito é verificado pela UL e oferece níveis de preto verdadeiros para aprimorar o brilho e o contraste percebidos, seja em ambientes claros ou escuros ao seu redor.
+s10104 Níveis de preto puro em cada pixel para contraste, profundidade e detalhes impressionantes.
+s10181 Visite https://www.omdia.com/ para mais detalhes.
+s10917 Detalhes visuais de outro nível com o brilhante processador alpha 9 AI Gen8.
+s11529 Este resultado não é um endosse da LGE ou de seus produtos.
+s13232 *Em comparação com a TV Smart de entrada do mesmo ano, com o processador alpha 7 AI Gen8, com base na comparação de especificações internas.
+
+페이지 정보: 국가=BR, 유형=promotion, URL=https://www.lg.com/br/promocoes/fousy/
+문장:
+s01356 Adicionado com sucesso ao seu carrinho Continuar Comprando Ver carrinho A notificação de reabastecimento já foi atualizada.
+s01978 Peça já o seu cupom!
+s10100 Sua casa mais inteligente e completa com a LG Descontos exclusivos para parceiros.
+s11962 * Promoção não cumulativa com outras promoções/cupons vigentes no site LG; ** Adquira mais descontos pagamento no PIX, verificar desconto no site; *** Cupom do Parceiro valido apenas para produtos residenciais (Audio & Video + Refrigeradores, Micro-ondas, Lava e Seca + Ar Condicionado Residencial) **** Para adquirir o cupom exclusivo, entre em contato com a empresa de automação parceira.
+s12437 LG Para Empresas Alavanque seu negócio com ofertas exclusivas CONFIRA!
+s13061 Fechar Member login You are not logged in, please log in to continue Fechar OK Seu endereço de e-mail foi cadastrado com sucesso.
+
+페이지 정보: 국가=BR, 유형=microsite, URL=https://www.lg.com/br/qr-code/top-freezer/b372pqw2/
+문장:
+s10039 Imagens meramente ilustrativas.
+s10273 Para mais informações dos produtos e suas funcionalidades, acesse lg.com/br Imagens meramente ilustrativas.
+s12205 Para mais informações dos produtos e suas funcionalidades, acesse lg.com/br Voltar Home Seu endereço de e-mail foi cadastrado com sucesso.
+s12298 Para mais informações dos produtos e suas funcionalidades, acesse lg.com/br 395 litros Branca 395 litros Inox Look Imagens meramente ilustrativas.
+
+페이지 정보: 국가=BR, 유형=press_media, URL=https://www.lg.com/br/sobre-a-lg/press-media/ar-condicionado-com-ia-como-o-lg-dual-inverter-aprende-seus-habitos/
+문장:
+s00502 Seja voltando para casa após um dia quente ou buscando uma noite de sono mais agradável, a climatização ideal deixa de ser um detalhe e se transforma em parte da rotina.
+s00852 Antes de escolher o modelo ideal, é fundamental calcular corretamente a capacidade do ar-condicionado.
+s01197 Em um dia a dia cada vez mais dinâmico, ter um ar-condicionado LG Dual Inverter AI em casa garante conforto e praticidade desde o primeiro momento.
+s01245 Para quem busca modernidade e performance, a linha LG DUAL Inverter AI [LNERPT-S3.1]— com versões de diferentes potências, entre elas a de 12.000 BTUs — se destaca como uma das soluções mais completas, inteligentes e inovadoras do mercado.
+s01887 Por isso, os modelos da linha LG Dual Inverter AI contam com: • Wi-Fi integrado • Compatibilidade com LG ThinQ • Integração com Google Assistente e Amazon Alexa Na prática, isso significa ajustar a temperatura de qualquer lugar, programar horários, monitorar o consumo e acionar funções por comandos de voz.
+s10169 Com o ar-condicionado LG AI Dual Inverter , o conforto vai além do básico.

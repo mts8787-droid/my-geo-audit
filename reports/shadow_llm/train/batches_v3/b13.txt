@@ -1,0 +1,236 @@
+페이지 정보: 국가=IN, 유형=microsite, URL=https://www.lg.com/in/magazine/how-lg-convertible-microwaves-are-revolutionizing-indian-cooking/
+문장:
+s13090 It is best suited for tandoori chicken, tikka, kebabs, and BBQ-style cooking.
+s13177 A standard grill heats food from one direction — you get a browned top and an undercooked bottom, and you have to flip it manually.
+
+페이지 정보: 국가=IN, 유형=promotion, URL=https://www.lg.com/in/promotions/electronics-festive-offers-terms-and-conditions/
+문장:
+s00199 Actual products may vary in appearance and features due to enhancements.
+s00229 The Coupon cannot be redeemed for cash or credit.
+s00370 The Coupon is only applicable on lg.com .
+s00567 Redemption: The Coupon Code will be auto applied at checkout at the time of buying of the product.
+s01695 Validity: The Coupon is valid for a discount as mentioned in the below table and is applicable to the products listed below (the "Discount"), subject to stock availability.
+s01696 TERMS AND CONDITIONS This coupon (the " Coupon ") is issued by LG Electronics India Private Limited ("we" or "us" or “LGEIL”).
+s01780 By using the Coupon, the customer confirms that they have read, understood, and accepted these Terms and Conditions and agrees to be bound by all terms and conditions outlined herein.
+s10121 We may modify the offer Validity Period at any time without notice.
+s10201 This offer is subject to Force Majeure Conditions including but not limited to Pandemic, Epidemic, Natural Disasters Etc.
+s10268 By registering under this offer the customer agrees to have read, understood and unconditionally accept the Privacy Policy ( www.lg.com/in/privacy ) and specifically agrees to be contacted by us in relation to the offer.
+s10284 CATG Model Coupon Value (In INR) TV OLED65G3PSA 2250 TV OLED65B3PSA 38956 TV OLED55G3PSA 3312 TV OLED48C3PSA 7999 TV 65UR8040PSB 8196 TV 65UR7550PSC 8031 TV 65QNED80SRA 12759 TV 65QNED75SRA 4400 TV 55UQ7500PSF 920 TV 55UR8050PSB 9280 TV 55UR8040PSB 11433 TV 43UQ7500PSF 680 TV 55UR7550PSC 4025 TV 55QNED80SRA 8799 TV 55NANO77SRA 6560 TV 32LQ570BPSA 680 TV 43LM5600PTC 1247 TV 32LM560BPTC 688 TV 50UR7550PSC 4268 TV 43UR8020PSB 2589 TV 43UR7550PSC 3916 TV 43UQ7300PTAQ 2680 TV 43NANO77SRA 3413 TV OLED
+s10318 All disputes arising are to be settled under the jurisdiction of the Delhi courts and shall be governed by the laws applicable in India.
+s10361 Restrictions: The Coupon may not apply to all products.
+s10445 Any taxes and/or statutory levies as applicable under this offer shall be borne by the customer.
+s10574 By registering as LG Member on ( https://www.lg.com/in/my-lg/login?page=signup ), the customer agrees and accepts the user agreement and terms and conditions of the said website and accepts.
+s10846 LGEIL shall also not assume any legal and/or financial responsibility for any unclaimed benefits beyond the applicable period of the promotional offer.
+s11098 The Coupon is not valid on previously purchased items.
+s11242 We reserve the right to cancel or modify the Coupon at any time without notice.
+s11366 Benefits given under this offer are not transferable and no cash payment will be made in lieu of the same.
+s11730 LGEIL shall not assume any legal or financial responsibility for unclaimed benefits beyond the promotional Validity Period.
+s11919 The Coupon can only be combined with membership discount.
+s12384 LGEIL shall not be responsible for any loss or damage, if it has to alter, modify or withdraw this offer in compliance with any law, ruling, order, regulation, requirement or instruction of any Central/State Government, or for any other unavoidable reason beyond their control.
+s12506 We reserve the right to interpret these Terms and Conditions at our sole discretion.
+s12817 The Coupon can only be redeemed once per customer/transaction.
+s12931 Miscellaneous: These Terms and Conditions are governed by the laws of India.
+
+페이지 정보: 국가=IN, 유형=promotion, URL=https://www.lg.com/in/promotions/package-deal-1-test/
+문장:
+s01323 Go to homepage Your email has been successfully registered.
+
+페이지 정보: 국가=IN, 유형=plp, URL=https://www.lg.com/in/refrigerators/all-refrigerators/
+문장:
+s00083 Yes, stainless steel utensils can generally be safely stored inside a refrigerator.
+s00122 Convertible Function: Lets you convert freezer space into refrigerator space when additional storage is needed.
+s00130 Click the button below to get step-by-step guidance for shopping on LG.com/in, making your experience smooth, simple and quick.
+s00345 LG BIG French Door Buy Now Presenting LG Essential Series Happier Life is within reach today Know More Presenting The New Range of French Door Refrigerators Know More Bring Home India's Most Trusted Refrigerator Brand 2026 Buy Now InstaView Door-in-Door TM InstaView Door-in-Door TM has a sleek mirrored glass panel that illuminates with two quick knocks, allowing you to see inside the easy access compartment without ever opening the door, reducing cold air loss to help keep food fresher longer.
+s00754 Smart Diagnosis™: Helps identify and troubleshoot certain refrigerator issues conveniently.
+s00788 LG Refrigerators Awarded by DIGIT India's Top Appliance Awards 2026 Buy Now Two Achievements Worth Celebrating!
+s00815 The latest refrigerator technology focuses on AI-powered cooling, energy efficiency, freshness, smart connectivity, and flexible storage.
+s10095 Yes, AI-powered refrigerators are available, offering intelligent features designed to make cooling, freshness, and energy management more convenient.
+s10426 Introducing LG Bottom Freezer Refrigerator Built for Easy Access Buy Now HOW TO SHOP ON LG.COM/IN?
+s10652 Similar Product Introducing LG Convertible Chest Freezer 2-in-1 Cooling or Freezing Buy Now Introducing LG Convertible Chest Freezer Buy Now Two Achievements Worth Celebrating!
+s10686 However, it is better to avoid storing too hot stainless steel utensils directly in the refrigerator, as the heat can affect the internal temperature and cooling efficiency.
+s10728 Discounted LG Best Care (AMC) Get Discounted LG Best Care (AMC) to ensure long-lasting life for your LG products.
+s10850 AI Fresh: Analyses usage patterns to help adjust cooling and maintain suitable conditions for stored food.
+s10894 Sign in / Join us No Cost EMI* On Select products Enjoy easy upgrades with No Cost EMI-pay in flexible installments with zero interest or hidden charges.
+s11068 Style More, Space More.
+s11093 Check prices online and buy now.
+s11099 Live chat Chat with LG Product Experts for shopping assistance, discounts and offers in real time WhatsApp Chat with LG Service Support using the most popular messenger Email us Send an Email to LG Service Support Call Us FOR CONSUMERS: For any customer assistance, our support team is available 24/7, except on national holidays.
+s11325 LG Wi-Fi Convertible Refrigerators Convert freezer to fridge from anywhere!
+s11467 Smart Diagnosis™: Helps identify certain refrigerator issues and simplifies troubleshooting.
+s11617 AI ThinQ™: Enables compatible refrigerators to connect with the LG ThinQ™ app for convenient monitoring and control.
+s11645 The range enables you effortless connectivity with AI ThinQ (Wi-Fi) & flexibility with Convertible functionality.
+s11785 What are the must-have features of a refrigerator?
+s11912 AI ThinQ™ with Wi-Fi: Enables compatible refrigerators to be monitored and controlled through a smartphone.
+s12007 DoorCooling+™: Provides faster and more even cooling, including areas around the door shelves.
+s12227 Learn more Frequently asked questions (FAQs) on refrigerators Q.
+s12374 LG models like GL-L257CPZ3 and GL-B257DUW3 offer smart connectivity, while compatible LG refrigerators may also include AI-based features.
+s12394 Technologies such as DoorCooling+™ help provide more even cooling, while Convertible functionality offers greater flexibility by allowing selected freezer compartments to be used as refrigerator space when required.
+s12406 When choosing a refrigerator, look for features that improve cooling, freshness, energy efficiency, storage flexibility, and convenience.
+s12460 Free shipping Avail Free & Safe shipping in serviceable pin codes, whenever you shop form https://www.lg.com/in We take pride in delivering most of our orders on priority Need help?
+s12515 Allow cooked food to cool properly before refrigeration, and use clean, food-safe utensils or containers to maintain hygiene and freshness.
+s12625 Is there an AI-powered refrigerator?
+s12713 Some important features include: Hygiene Fresh+™: Helps maintain a clean and fresh storage environment by reducing bacterial activity and minimising odours.
+s12877 Become an LG member Enjoy all the benefits of free LG membership, from special discounts to exclusive services and offers.
+s12904 LG India’s refrigerator range includes technologies like AI Inverter, AI Fresh, AI ThinQ™, DoorCooling+™, Hygiene Fresh+™, and Convertible functionality.
+s12916 Is stainless steel good for refrigerators?
+s12982 They are durable, do not easily absorb odours, and are suitable for storing many types of food when used with appropriate lids or covers.
+s13069 What is the latest technology in refrigerators?
+s13097 AI Fresh uses usage patterns to help manage cooling, while AI ThinQ™ enables compatible refrigerators to be monitored and controlled through the LG ThinQ™ app.
+s13106 AI Inverter: Intelligently manages compressor operation to support efficient and consistent cooling.
+s13164 Multi Air Flow: Circulates cool air across different sections for more uniform cooling.
+s13172 Watch Now PICKS FOR YOU: Learn more about LG all refrigerators Elevate your spaces with LG refrigerator range - producing lasting freshness with features like Hygiene Fresh+ & Door Cooling+.
+
+페이지 정보: 국가=IN, 유형=pdp, URL=https://www.lg.com/in/refrigerators/double-door-refrigerators/gl-s412sesy-es/
+문장:
+s00148 CFL Bulb wattage should not be less than 18 W individually.
+s00181 2 L Bottle Storage LG Refrigerators come with space to keep as much as 2 Litre Bottles in the refrigerator doors.
+s00228 What is the dimension of GL-S412SESY LG Refrigerator model?
+s00455 *The image of the product are for illustration purpose only and may differ from actual product.
+s00837 Simply call the LG Customer Service Helpline and place the phone on the appliance.
+s01030 The capacity of GL-S412SESY is 380 L.
+s01074 SUMMARY Print DIMENSIONS Storage Volume Total (L) 380 Product Dimension (WxHxD, mm) 700 x 1720 x 680 Star Rating 2 Compressor Type Smart Inverter Compressor (BLDC) Key Specs DIMENSIONS & WEIGHT - Product Dimension (WxHxD, mm) 700 x 1720 x 680 PERFORMANCE - Energy Consumption (kWh/Year) 288 BASIC SPEC - ENERGY CONSUMPTION GRADE 2 Star PERFORMANCE - Compressor Type Smart Inverter Compressor (BLDC) MATERIAL & FINISH - Finish (Door) Ebony Sheen See All Specs Close All Spec BASIC SPEC Product Type To
+s01346 *1 year on parts and labor on the product and additional 9 years warranty on the compressor.
+s01374 LG 380L Double Door Refrigerator, Convertible, Smart Diagnosis™, Ebony Sheen Finish, 2 Star GL-S412SESY Chat with an expert ( ) Key Features Smart Inverter Compressor Convertible Multi Air Flow 2 Star Smart Diagnosis™ Auto Smart Connect™ More Gallery Chill In Style with LG Double-Door Refrigerators Convertible Convert the Freezer When You Need More Fridge Space Convert a section of the freezer to more refrigeration as needed to keep foods fresher for longer.
+s01662 LG Double Door Refrigerator Range Catalogue Download Now FAQs Q.
+s01720 The Product Dimensions (WxHxD mm) of GL-S412SESY is 700x1720x680.
+s01863 Consumes power less than 2 CFL~ bulbs during power cut.
+s01920 Office: A-24/6,Mohan Cooperative Ind Estate, Mathura Road, New Delhi-110044 Manufacturer LG Electronics India Ltd., Plot No A-5, MIDC, Ranjangaon, Tai Shirur, Pune (Maharashtra) - 412220 Mark of Origin MADE IN INDIA Net Quantity 1 FREEZER COMPARTMENT Door Basket_Transparent 2 Shelf_Tempered Glass 1 Close What people are saying PICKS FOR YOU: Need help?
+s10107 Actual results may vary from model to model and also depends upon the kind of usage under general conditions.
+s10422 Smart Inverter Compressor The new range of LG Frost Free Refrigerators with cutting edge Smart Inverter Compressor technology that takes energy efficiency to another level and helps you save more.
+s10536 Toughened Glass Shelves LG Refrigerators come with specialized Toughened Glass Shelves that are meant to carry heavy load without any spillage.
+s10569 Watch the Full Movie *The image of the product are for illustration purpose only and may differ from actual product.
+s10627 *Based on LG internal Lab test report under standard test conditions.
+s11017 What is the capacity of GL-S412SESY LG Refrigerator model?
+s11187 Multi Air Flow Multiple cooling air vents distribute and circulate cool air to every corner of the refrigerator, ensuring that each and every food item is properly cooled.
+s11232 Auto Smart Connect™ Auto Smart Connect™ is a technology that helps connect your refrigerator to home inverter.
+s11733 Now store more without any worry.
+s12020 The appliance then communicates with a computer that produces a diagnosis within seconds and provides an immediate solution.
+s12109 Smart Diagnosis™ LG's Smart Diagnosis™ is a fast and easy way to troubleshoot issues.
+s12706 Once the refrigerator is connected to the home inverter, every time the power goes off it automatically takes inverter power to run the refrigerator without any manual supervision.
+
+페이지 정보: 국가=IN, 유형=support_troubleshoot, URL=https://www.lg.com/in/support/product-support/troubleshoot/help-library/cs-CT00025179-20150117260489/
+문장:
+s10158 Downlaod the Split Screen software from LG website (Both for Windows & Mac OS listed on this Page) Link to Download  : https://www.lg.com/in/support/software-firmware?csSalesCode=25UM58-P.ATR 2.
+s10676 Close Process to use the Split Screen Function in LG Monitors : Split screen allows a user to split the monitor screen into multiple parts & the applications & programs can be set to open in the specific part of the split window.
+s11424 To do the same, plz follow the steps 1.
+s11643 After installation, Run the software from the desktop shorcut & operate as per the on screen guideline s Refer to the video guide for details.
+s11884 [Video] How to use the 4-way screen split function in LG Monitor Product Usage Computing Device 05/08/2026 Print Share Share This Content.
+s12382 Split Screen software also known as "LG On Screen Control" is pretty much common for all the supported LG models & can be downloaded from the link given below.
+s12478 Process to use the Split Screen Function in LG Monitors : Split screen allows a user to split the monitor screen into multiple parts & the applications & programs can be set to open in the specific part of the split window.
+s12574 Install the software in your Windows or Mac PC 3.
+
+페이지 정보: 국가=IN, 유형=support_troubleshoot, URL=https://www.lg.com/in/support/product-support/troubleshoot/help-library/cs-CT52006627-20155263923751
+문장:
+s00144 When you stand in front of the product, a message saying 'DOOR OPEN' will be displayed.
+s01446 For proper operation, place your foot in such a way that the message 'DOOR OPEN' reaches the top of your foot.
+s01460 Try this Auto Door Open Setting When the Auto Door Open button is pressed, the Auto Door Open icon appears on the control panel and the function
+is set.
+s01686 Close What is Auto Door Open?
+s01953 If the door on the right side of the refrigerator compartment is opened to about 20º and is not fully opened, it
+will automatically close 3 seconds later.
+s10592 Place your foot on the displayed message 'DOOR OPEN'.
+s10921 [LG refrigerator door] [Signature] The Auto Door does not open Repair Home Appliances 22/06/2026 Print Share Share This Content.
+s12260 If you place your toe on the message 'DOOR OPEN', it may not be recognized properly.
+s12301 When you place your foot on the bottom of the product, the door on the right side of the refrigerator
+compartment opens automatically, making it easy to use even when holding food in both hands.
+s12802 Each time the button is pressed, the Auto Door Open function switches in the order of ON → Sound Off → OFF.
+s13047 Using Auto Door Open 1.
+s13055 What is Auto Door Open?
+s13228 This guide was created for all models, so the images or content may be different from your
+product.
+
+페이지 정보: 국가=IN, 유형=buying_guide, URL=https://www.lg.com/in/tv-soundbars/tv-buying-guide/sport-tv/
+문장:
+s00444 Read on to understand more about what makes a TV great for watching sports.
+s00495 4)*The images are for illustrative purposes only.
+s00559 Table Caption Features OLED evo G6 MRGB95 QNED90 Display OLED evo 4K / 120Hz Micro RGB evo 4K / 120Hz QNED evo Mini LED 4K / 120Hz Size 210cm (83) / 195cm (77) / 164cm (65) / 139cm (55) / 121cm (48) 254cm (100) / 217cm (86) / 190cm (75) 292cm (115) / 215cm (85) / 190cm (75) / 164cm (65) / 139cm (55) Processor alpha11 AI Processor Gen3 with Dual AI Engine alpha11 AI Processor Gen3 with Dual AI Engine alpha8 AI Processor Gen3 (292cm (115)) alpha8 AI Processor Gen2 (215cm (85) / 190cm (75) / 164cm 
+s00578 Why is upscaling important for sports?
+s00806 *Keyword recommendations vary according to the app and time of day.
+s00995 *ClearMR is a certification program of VESA to evaluate the motion blur performance of the display.
+s01405 1) Upscale every frame to 4K with pixel precision With the alpha 11 AI Processor, AI Super Upscaling processes images even faster, analyzing genres to upscale pictures to 4K with optimal contrast.
+s01482 Total immersion on a grand scale LG Ultra Big TVs offer immersive viewing across a range of sizes, up to 292cm (115), providing the scale every sports fan craves.
+s01520 ClearMR certified by VESA LG OLED evo is VESA Certified ClearMR, ensuring that even in fast-paced scenes, every image is clear without blurry pixels.
+s01565 *‘In This Scene’ card is available in countries that support EPG(Electronic Program Guide).
+s01602 Not all live broadcasts are delivered in 4K.
+s01751 2)*HGiG is a volunteer group of companies from the game and TV display industries that meet to specify and make available for the public guidelines to improve consumer gaming experiences in HDR.
+s10022 Set up alerts and get notified about your team’s game schedule and scores in real time.
+s10045 Discover the best LG TVs for sports fans, including OLED evo and QNED models designed for motion clarity, immersive viewing, and powerful performance.
+s10069 Industry-leading motion clarity makes LG TVs ideal for sports fans.
+s10189 *Menus displayed may be different upon release.
+s10585 3)*Some of these features may not be supported in certain regions or models.
+s10753 3) Sports Alert lets you set up alerts and never miss a moment Catch every moment of the action.
+s10847 Learn More *The images are for illustrative purposes only.
+s10871 Easily compare features side-by-side to choose the best LG TV for your needs.
+s10901 Why does motion handling matter?
+s10918 Motion clarity is crucial for sports TVs, ensuring you never miss a split-second of the action.
+s11142 Advanced upscaling enhances lower-resolution feeds in real time, sharpening detail so matches look cleaner on large screens.
+s11206 Cheer harder and enjoy supporting your team armed with these AI-generated insights.
+s11239 *Support for HGiG may vary by country.
+s11308 The essentials of a great sports TV How does screen size change the experience?
+s11334 *‘Generative AI’ card is available in certain regions or models.
+s11418 Since sports move quickly, with camera pans, sudden plays, and fast player movement, motion clarity matters just as much as screen size for a truly stadium-like experience at home.
+s11453 Access streaming apps and YouTube highlights with live games and league tables all on one screen.
+s11637 *‘On Now’ card is not available on Netflix and Other CP(Content Provider) apps, so the card will not be displayed.
+s11902 Which is the best TV for sports fans?
+s12114 *The scope of support may vary by country.
+s12250 Fast-paced sports demand smooth, blur-free motion.
+s12346 By combining OLED technology with sports-specific features, LG provides the ultimate answer for sports fans.
+s12498 The best TV for sports fans is one that keeps fast action smooth and clear, fills your view with a big, immersive screen, and helps you stay on top of your favorite teams with live updates.
+s12587 4) Which LG TVs are best for sports fans?
+s12632 LG TV features that take game day to the next level Sports Forecast by AI Concierge delivers AI game predictions AI analyzes your team’s stats and performance to provide game predictions.
+s12782 2) TruMotion's motion smoothing technology for sports and fast action AI Genre Selection identifies content and TruMotion adjusts judder levels to apply the right amount of smoothing for a natural viewing experience, perfect for high-speed football or racing.
+s12797 Strong motion processing and motion clarity keep fast camera pans, player movements, and ball tracking clear and sharp, so every play feels fluid.
+s12927 Bigger displays enhance depth, helping you feel like you’re right there in the stands.
+s12935 A larger screen pulls you closer to the action, making stadiums feel wider.
+s12988 1)*Maximum screen size may vary by model and region.
+s13157 Learn More Which is the best AI TV for a smarter viewing?
+s13206 Sports Portal makes game day easy Set up a personalized home page for sports.
+
+페이지 정보: 국가=IN, 유형=microsite, URL=https://www.lg.com/in/tvs/why-lgoled/10years-world-no1-oled/
+문장:
+s00094 The start of another decade The definitive OLED The world's no.1 OLED TV LG OLED is defined by technology refined over the last decade.
+s00210 The intensifying depth of HDR keeps pulling the picture out of the shadows.
+s00398 Today, life looks more incredible than before, thanks to the heightened reality of the a9 AI Processor 4K Gen6 and Brightness Booster Max, which boosts brightness by 70%.
+s00488 2020 saw us revolutionize the shape of television with rollable OLED.
+s00514 Evolution 3650 Days of evolution A decade of continuous refinements.
+s00526 Innovative design 10 years of defying boundaries For 10 years, LG OLED has stayed ahead of your expectations with innovations like 2017's wallpaper-thin OLED W7 and the 20 bendable options of 2022's OLED Flex.
+s00673 Unit shipments, 2013-2022.
+s00832 *The world's best-selling OLED brand from 2013 to 2022.
+s00884 In 2014, we took a giant leap forward with OLED 4K in 2014 and then 8K in 2019.
+s00974 8K adds unimaginable detail to the resolution.
+s01015 ***Applies to 55/65/75 G3.
+s01256 10 years of LG OLED.
+s01419 In 2013, we introduced the world to our boundary-defying 55" OLED.
+s01573 And in 2022, we went beyond your imagination with the bendable 42-inch OLED Flex.
+s10086 Brightness varies by series and size.
+s10359 ****Compared to non-OLED evo models and based on the Full White Measurement.
+s10567 webOS 23 New Home Tailored to your liking webOS 23 New Home reflects your tastes with Quick Cards to jump into your favourite apps, content, and services.
+s10757 **Applies to all OLED evo models except 48/42 C3.
+s10988 Learn more Your email has been successfully registered.
+s11376 And the scene-refining α9 Processor constantly transforms to bring innovations that challenge the norm.
+s11510 Life meets style Blends into your space Complementing how you live, LG OLED is the perfect match for your exceptional life and home aesthetic.
+s11735 LG OLED evo G3 Brilliance redefined Realism like you're really there, meets brightness beyond belief.
+s11804 A decade at the top.
+s12137 *Screen images simulated.
+s12329 World firsts A decade of debuting innovations Premiering ground-breaking technologies never seen before.
+s13102 Visit https://www.omdia.com/ for more details.
+
+페이지 정보: 국가=IN, 유형=buying_guide, URL=https://www.lg.com/in/washing-machine-buying-guide/
+문장:
+s00224 Want to keep the fun alive?
+s11081 Washing Machine Buying Guide What experience are you looking for?
+s12514 Front Loading We'll help you find the right product!
+
+페이지 정보: 국가=IN, 유형=pdp, URL=https://www.lg.com/in/water-purifiers/ww156rttb-new/
+문장:
+s00102 EverFresh UV Plus In Tank Purifies stored water every 6 hours for75 minutes to prevent bacterial growth and keep it fresh.
+s00123 Similar Product Your email has been successfully registered.
+s00203 Get support Manual& Software Download product manuals and latest software for your product.
+s00207 Call 08069379999 anytime.
+s00324 What is the dimension of WW156RTTB LG water purifier model?
+s00418 Safety Certified LG's Stainless Steel water storage tanks have 94.4%* less E.
+s00976 coli growth in 24 hrs.
+s01291 The All-New RO Recovery Plus Filter Maximize water conservation with the innovative RO Recovery Plus Filter in LG Water Purifiers, designed to recover over 60%* of water.
+s01380 SUMMARY Print DIMENSIONS Capacity (L) 8.0 Product Dimension (WxHxD, mm) 365 x 508 x 264 UV Indicator Yes In Tank UV LED Yes See All Specs Close All Spec GENERAL Color / Pattern Solid Black Dual Protection Stainless Steel Tank Yes Gross Weight (kg) 12.3 In Tank UV LED Yes Installation Type Wall Mount Net Weight (kg) 9.3 Packaging (WxHxD, mm) 447 x 660 x 371 Product Dimension (WxHxD, mm) 365 x 508 x 264 Purified Water Temperature Room Temperature PERFORMANCE & FUNCTIONS Filters Outside Sediment Fi
+s01399 Trust of Purity ● Dual Protection Airtight Stainless Steel Tank with 10-year warranty ● In Tank UV Airtight Stainless Steel Tank Assurance of 100%* Purity throughout the day.
+s01491 The capacity of WW156RTTB is 8.0 L.
+s01494 Get 7.5%* instant Cashback up to ₹3000* (Max Discount) on No Cost EMI on selected credit and debit cards.

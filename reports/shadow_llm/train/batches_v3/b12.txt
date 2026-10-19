@@ -1,0 +1,226 @@
+페이지 정보: 국가=ES, 유형=pdp, URL=https://www.lg.com/es/tvs-soundbars/oled-evo/oled65c6elb/
+문장:
+s12608 Esta certificación evalúa la emisión de luz de la pantalla y su impacto potencial en los ritmos circadianos, midiendo cómo la calidad y composición de la luz pueden influir en el bienestar visual y en los ciclos de sueño.
+s12907 ¿Por qué elegir LG OLED evo?
+s12920 7.Comparación frente al procesador LG α7 Gen9.
+
+페이지 정보: 국가=ES, 유형=microsite, URL=https://www.lg.com/es/tvs-soundbars/why-true-wireless/
+문장:
+s00106 *El televisor OLED M5 cuenta con NVIDIA G-Sync, FreeSync Premium, GeForce NOW, Game Portal, VRR, ALLM, eARC y HGiG.
+s00158 Juega sin interrupciones a tus videojuegos en latencia extremadamente baja La transmisión sin retardo es compatible con Nvidia G-Sync y certificación AMD FreeSync, garantiza un juego fluido incluso con transferencia inalámbrica.
+s00184 Libérate de los límites de los televisores cableados Siente la libertad inalámbrica Cambia libremente la colocación de los televisores inalámbricos de LG siempre que redecores o modifiques tu hogar con un simple movimiento del módulo de conexiones inalámbrico Zero Connect Box.
+s00190 Otros modelos True Wireless ofrecen una tasa de refresco de 120Hz.
+s00254 Primer televisor verdaderamente inalámbrico (1), con transferencia de vídeo y audio sin cables 4K de 144Hz Nuestra Zero Connect Box retransmite imagen sin pérdidas visuales 4K con baja latencia.
+s00293 Juega sin pausas a 144Hz en 4K.
+s00344 *Los dispositivos deben conectarse mediante un cable de conexión al módulo de conexión inalámbrico Zero Connect Box.
+s00511 Disfruta de detalles sin pérdidas visuales y calidad de imagen como la de los televisores cableados Contenido sin pérdida de calidad y retardo.
+s00656 *clearMR es un programa de certificación de VESA que evalúa el rendimiento del desenfoque del movimiento de la pantalla.
+s01299 *Validación de Nvidia G-Sync y AMD FreeSync basada en una baja demora de entrada, reducción de la fragmentación y rendimiento sin parpadeos.
+s01474 *La transparencia del producto determinada por pruebas internas es del 43 %, esto puede variar en función del entorno y las condiciones de uso reales.
+s01522 *Se requiere utilizar la conexión de cable de alimentación para la pantalla de televisión y la caja Zero Connect Box.
+s01606 *Los 144Hz funcionan exclusivamente con juegos o entradas de ordenador compatibles con 144Hz.
+s01712 *OLED M4: El primer televisor inalámbrico 144Hz del mundo, en comparación con los televisores tradicionales que tienen un sintonizador para la radiodifusión.
+s01763 *QNED9M cuenta con certificación AMD FreeSync Premium.
+s01764 El primer TV OLED realmente inalámbrico del mundo(1), para diseñar tu espacio *El sistema True Wireless se basa en la validación NVIDIA G-Sync compatible para la reducción de la fragmentación, la baja demora de entrada y el rendimiento sin intermitencias.
+s01773 Explora los televisores verdaderamente inalámbricos de LG LG OLED evo AI M4 Nuestro primer televisor verdaderamente inalámbrico 4K 144Hz Primer televisor True Wireless OLED TV con transferencia de vídeo y audio inalámbrica 4K de 144Hz.
+s01784 *144Hz se aplica a OLED M5 de 83/77/65 pulgadas y QNED9M.
+s10166 *La ubicación de la Zero Connect Box en un armario puede resultar en interferencia de la señal dependiendo del material y el grosor del armario.
+s10229 Tu dirección de correo electrónico se ha registrado correctamente.
+s10497 *Los primeros televisores verdaderamente inalámbricos basándose en los televisores tradicionales con un sintonizador para la emisión.
+s10775 Más información *Todas las imágenes de arriba son simuladas.
+s11229 La transferencia inalámbrica de vídeo y audio de última generación ofrece las mismas imágenes y paisajes sonoros que los televisores cableados (1).
+s11570 Coloca tu TV donde quieras Coloca tu TV LG inalámbrica y diseña tu espacio como más te guste, con el módulo de conexiones inalámbrico Zero Connect Box Gallery Design, ideal para colgar en la pared Perfecta integración en tu hogar gracias a su soporte especial Zero Gap Descubre la libertad y la comodidad de un TV verdaderamente inalámbrico *El módulo de conexión inalámbrico Zero Connect Box debe instalarse a un nivel inferior al receptor inalámbrico del televisor.
+s11725 *OLED TV inalámbrico se refiere a la conectividad entre Zero Connect Box y la pantalla.
+s11939 Elimina el desorden y disfruta contenidos sin los inconvenientes de las complicadas configuraciones por cable.
+s13214 Sin cables Libertad de diseño de interiores sin cables entre tu TV y tus dispositivos externos.
+
+페이지 정보: 국가=IN, 유형=home, URL=https://www.lg.com/in/
+문장:
+s00536 Buy Now Offer Period – 13 th Oct 2026 – 30 th Oct 2026 Grab More, Save More.
+s00733 Learn more LG UHD 4K & 5K Monitors Picture Perfect Image Quality Learn more LG Core-tech, Difference at the Core Learn More Inverter Direct Drive™ Complete clothing care Learn More Wi-Fi Convertible Convert freezer to fridge from anywhere!
+s00836 Up to 35%* off | Cashback up to 22.5%* Buy Royal Package Buy Luxury Package LG Energy Manager + You Decide Your Bill Buy Now Two Appliances.
+s01212 18, 2026​ Learn more Built on Trust.
+s01327 Celebrate Diwali with Exclusive Offers Up to 55%* off Buy Now The All New LG AI TVs Big Leap for Innovation, Bigger for Entertainment.
+s01551 Watch video LG UltraGear TM 32GS95UV Born to Game Learn More LG UltraGear Monitors Elevate your gaming experience Learn more LG Smart Monitors One Screen.
+s01776 All Promotions Best Sellers Shop the Latest Buy AMC Accessories Sale Corporate Employee Program Benefits for your business Contact us PICKS FOR YOU: Best Deal Recently Viewed Most Popular Newest Combo Offers Our Month's Handpicks Celebrate Diwali with Exclusive Offers Up to 55%* off Buy Now Big Leap for Innovation, Bigger for Entertainment.
+s10103 Buy Now LG Air Purifiers Shield Your Health Air that Truly Cares Buy Now Two Appliances.
+s11204 Watch video Style Meets Art™ Taking elegance to the next level.
+s11333 Watch video Wi-Fi Convertible Convert freezer to fridge from anywhere!.
+s11991 Honoured for Excellence.
+s12171 Learn More DUAL Inverter™ Faster, Efficient, DUAL is better Learn More HOW TO SHOP ON LG.COM/IN?
+s12353 Watch Now Become an LG member Enjoy all the benefits of free LG membership, from special discounts to exclusive services and offers.
+
+페이지 정보: 국가=IN, 유형=press_media, URL=https://www.lg.com/in/about-lg/press-and-media/lg-electronics-introduces-new-range-of-microwave-ovens-this-festive-season/
+문장:
+s00489 It helps in preserving nutrition while reducing protein denaturation.
+s00554 The unique design makes it appealing and a perfect choice for all Indian customers which resonates with the notion of ‘Make in India.’ The range is loaded with key features.
+s00641 As Indian cooking involves deep drying, LG microwaves allow the customers to enjoy crispy delights with Diet Fry feature which uses up to 88% lesser oil, a perfect choice for the health conscious.
+s00959 It comes with a Charcoal Lighting Feature that offers natural and healthier cooking with a perfect taste of barbeque – crispy outside, juicy inside.
+s01331 Its compact design offers a much larger interior capacity which can fit into even the smallest of kitchens but provide enough room for tall or wide dishes.
+s01334 The microwave offers a unique 360-degree rotating motorized rotisserie that ensures even cooking and helps in retaining nutrition of the food.
+s01402 Today, we are thrilled to announce the launch of our all-new festive range of MICROWAVE OVENS that are stylish and loaded with advanced technology and innovative features.
+s01496 LG ELECTRONICS INTRODUCES NEW RANGE OF MICROWAVE OVENS THIS FESTIVE SEASON Corporate 10/11/2022 Print • The new line up consists of designer Microwaves with advanced features and the latest technology • The new range offers a healthier way of cooking • The microwaves come with compact designs that add elegance and style to the kitchen NEW DELHI, OCTOBER 11, 2022 – LG Electronics, India’s leading consumer durable brand today unveiled the new range of 2022 MICROWAVE OVENS with sophisticated design
+s01620 We want our customers to opt for a healthy lifestyle with our new range.” “With an Indian insight based products range we have further strengthened market leadership in Microwave segment; our focus is to offer wide range of choices for consumers who are looking for healthycooking through microwave cooking, there is a huge potential in India as current penetration level is low and to drive the same we will be launching an exhaustive marketing & consumer awareness campaign.
+s01810 The temperature control enables consumers to cook a variety of dishes which microwaves were previously never able to prepare.
+s01879 (LG Electronics), a wholly-owned subsidiary of LG Electronics, South Korea was established in January 1997 in India.
+s10061 The all-new range of Charcoal Microwaves by LG offers a healthier way of cooking while keeping the authentic smoky taste.
+s10406 We are committed to offering products that make their life more comfortable, convenient, and healthier.
+s10418 In India, LG has earned a premium brand positioning and is the acknowledged trendsetter for the industry.
+s10554 The Stainless-Steel Cavity in the latest range of LG Microwaves enhances the overall performance of the appliance.
+s10584 It is designed keeping in mind the interest of Indian customers.
+s10762 It is one of the most formidable brands in consumer electronics, home appliances, HVAC, IT hardware.
+s10779 It has also made it possible to cook Indian breads with a click of a button.
+s11145 The second Greenfield facility is located at Ranjangaon; Pune has the capacity to manufacture LED TVs, air conditioners, commercial air conditioning systems, washing machines, refrigerators, and monitors.
+s11277 The MICROWAVE OVENS range is equipped with the latest technology.
+s11301 It also helps in saving time and energy than normal microwaves.
+s11425 *Home Appliances include- Refrigerator, Washing Machine, AC, Water purifier, Microwave, Fan, Dishwasher & Air purifier Media Contacts: LG Neeta Linz– neeta.linz@lge.com Deepika Kukreti– deepika.kukreti@lge.com LG-One Megha Behl– megha.behl@lg-one.com/9999636849 Nikita Sengupta- Nikita.Sengupta@hkstrategies.com /8800692096 For more information visit www.lg.com/in Disclaimers • Ghee in 12 minutes*: Time may vary from model to model • Diet Fry (Up to 88% less oil usage) – As per test reports Previo
+s11466 With the latest range of LG Microwaves, customers can make hygienic ghee with no smell in 12 minutes.
+s11514 The unique Pasteurize Milk feature offers fresh and pure milk with the touch of a button.
+s11578 The new Regal range is stylish with a beautiful and sophisticated design.
+s11660 The seamless stream of cooking power preserves the flavour and texture of the food.
+s11693 Deepak Bansal- VP-Home Appliances & Air Conditioners LG Electronics India , said, “At LG Electronics, our aim is to offer the best-in-class technology to our customers.
+s11917 The new range of Microwaves is specially designed to satisfy the taste of our customers, with thirty pre-installed healthy recipes to indulge in guilt-free binging.
+s12158 It is completely rust-free, easy to clean, faster and more hygienic.
+s12634 Said Anuj Ayodhyawasi- Business Head- Small Appliances- LG Electronics India.
+s12661 About LG Electronics India Pvt Ltd LG Electronics India Pvt.
+s12736 LGEIL's manufacturing unit at Greater Noida is one of the most eco-friendly units among all LG manufacturing plants in the world.
+s12856 The Microwave range adds elegance to the kitchen with its exquisite, minimal design.
+s13139 The Charcoal range comes with a Healthy Heart Autocook Menu which offers thirty heart-friendly recipes that are preinstalled in the microwave.
+
+페이지 정보: 국가=IN, 유형=press_media, URL=https://www.lg.com/in/about-lg/press-and-media/lg-indias-free-service-camp-offers-relief-to-flood-hit-customers-in-chennai/
+문장:
+s00200 Ltd., a wholly owned subsidiary of LG Electronics, South Korea was established in January 1997 in India.
+s00770 The flood relief free camp will continue till 24 th December, 2015 and is for all LG India customers in Chennai.
+s00977 It is one of the most formidable brands in consumer electronics, home appliances, IT hardware and mobile communications space.
+s01077 LG India’s Free Service Camp offers relief to flood hit customers in Chennai Corporate 12/16/2015 Print - Offers 50 per cent discount on spare parts Chennai, 15 th December, 2015: LG Electronics India announced that it is starting a free service camp in Chennai effective immediately.
+s01301 We care for our customers and want to invest in their wellbeing thus, we are starting this initiative to provide some relief to them.” About LG Electronics India Pvt.
+s01398 The company will not be charging for its services and any parts that need replacing will be offered at a 50% discount.
+s01509 LG Electronics India Pvt.
+s10356 In India for a decade, LG has earned a premium brand positioning and is the acknowledged trendsetter for the industry.
+s10744 The damage and destruction is huge and we want to help people get back to normal life as soon as they can.
+s11600 The free service is applicable to LG customers on products that were adversely impacted by water seepage during the recent flooding in Chennai and is valid across LG dealerships in Chennai.
+s11746 For further information contact:- Neeta Linz- neeta.linz@lge.com Deepika Kukreti- deepika.kukreti@lge.com Ramanpreet Kaur Batth- Ramanpreet.Batth@lg-one.com Previous watch latest movies tv shows with google play movies tv on lg smart tvs 23/11/2015 Next lgs 2015 mallika e kitchen cooking queen crowned 24/12/2015 BACK TO LIST /content/lge/in/en/about-lg/press-and-media/lg-indias-free-service-camp-offers-relief-to-flood-hit-customers-in-chennai isCopied paste Your email has been successfully regis
+s12230 Commenting on the initiative Mr Vinod Kumar- Head Customer Service, LG Electronics India said, “LG is a responsible corporate and understands the plight of those affected by the recent floods in Chennai.
+s12308 The second Greenfield facility is located at Ranjangaon; Pune has the capacity to manufacture LED TV’s, air conditioners, washing machines, refrigerators, and monitors.
+
+페이지 정보: 국가=IN, 유형=pdp, URL=https://www.lg.com/in/air-conditioners/split-air-conditioners/as-q18tnxe1/
+문장:
+s00155 Whether the space is mildly occupied, crowded, or extremely hot, the system ensures the best cooling tailored to your needs.
+s00197 By improving safety, reliability, and balance in functionality, the ADC Sensors reduce stress on the components and ensure stable functionality.
+s00223 It maintains upto 124% cooling capacity, which provides instant cooling for maximum user comfort with no time limit—a big advantage for quick relief during the hottest of days.
+s00282 100% Copper Tubes with Ocean Black Protection for Indian Conditions Special Ocean Black Protection applied on Copper tubes of Indoor unit provides exceptional durability for the air conditioner in typical Indian regions affected from sand, salt, industrial smoke and pollutants.
+s00290 LG 3 Star (1.5) Split AC, AI Convertible, Auto Clean, Gold Fin+, Diet Mode+, Viraat Mode, 4.4 kW, 2026 Model AS-Q18TNXE1 Chat with an expert ( ) 360° Key Features AI Convertible 6-in-1 Cooling Artificial Intelligency cooling mode HD Filter with Anti Virus Protection Viraat Mode Gold Fin+ More Gallery 360° AI Convertible 6-in-1 Effortlessly achieves perfect cooling by automatically adjusting capacity, temperature, and fan speed for optimal comfort *Maximum Cooling Capacity may vary from model to 
+s00309 Mode 4 (60% Capacity) is designed for low-activity areas with few occupants, which reduces energy consumption by maintaining comfort.
+s00414 Mode 3 (80% Capacity) is best for spaces with fewer people and moderate activity, offering balanced cooling.
+s00441 May vary from model to model from 108% to 124%.
+s00614 This feature optimizes cooling efficiency while providing increased airflow, offering a simple yet effective means to manage electricity costs without sacrificing comfort.
+s00737 Mode 2 (AI Convertible) automatically changes cooling according to the room conditions and usage patterns for smart comfort.
+s00787 The in-built safety feature of the sensors ensures reliable functionality, increased reliability, and sustained functionality without any need for user intervention.
+s00838 LG Split Air Conditioners Range Catalogue Download Now SUMMARY Print DIMENSIONS Key Specs GENERAL - Product Type Wall Mounted GENERAL - HVAC Type C/O GENERAL - Cooling Capacity Max(W) 5000 GENERAL - Cooling Power Consumption Rated/Min(W) 1280 Energy Saving - Energy Grade 3 Star See All Specs Close All Spec DESIGN Color(Body) White Display 88 Hidden BAR CODE Bar Code 8806096825846 GENERAL Cooling Capacity Rated/Min(W) 4400 / - Cooling Power Consumption Rated/Min(W) 1280 Indoor Unit Dimension_WxHx
+s01037 How do ADC Sensors help maintain stable AC performance?
+s01089 Mode 5 (40% Capacity) is best for minimal-activity or a single person; this mode provides gentle and efficient cooling.
+s01209 Select this mode when you require extra power, with capacity automatically increasing between 108% and 124% for comfort cooling.
+s01235 It should be kept running during hot spells because it supports continuous operation by maintaining a low temperature at a comfortable level of 18°C.
+s01246 *124% Capacity Claim from actual rated capacity.
+s01271 Cool at 55°C Engineered for India's extreme heat, delivering powerful, consistent cooling even at 55°C.
+s01306 Watch the Full Movie *10 Year Warranty Applicable only on Inverter Compressor.
+s01350 VIRAAT Mode Delivers 124%* cooling power for instant, continuous cooling with high fan speed and maximum comfort.
+s01441 Mode 1 (100% Capacity) is perfect for high-activity crowded spaces, providing strong cooling for maximum comfort.
+s01586 Him Clean Automatically removes bacteria and impurities, ensuring cleaner air and improved efficiency with one tap.
+s01774 LG AC model AS-Q18TNXE1 has a feature called diet mode+ that leverages compressor technology to reduce power consumption by upto 75%.
+s01853 Mode 6 (124% Capacity) provides higher performance in extreme conditions for faster, stronger cooling.
+s10182 It is designed to provide stronger, faster, and longer-lasting comfort by increasing cooling capacity and airflow, helping rooms feel comfortable quickly even in peak summer conditions.
+s10257 Monsoon Comfort Smart climate control that senses humidity and automatically optimizes temperature to keep your surroundings light, airy, & pleasant.
+s10516 The ambient sensor senses the surrounding environment, while the condenser and discharge sensors detect the internal functioning.
+s10588 Mute Function One-touch beep mute enables smoother, silent AC operation without unnecessary sound alerts.
+s10590 What does Diet Mode+ do in AS-Q18TNXE1?
+s10657 These safety sensors function in a way that ensures the operation of the AC is within the safe limits, hence allowing the AC to perform the functions in a smooth, reliable, and balanced operation at every stage.
+s10860 AS-Q18TNXE1 is highly capable of instant cooling with the help of Viraat Mode.
+s10965 ADC Sensor LG Air Conditioners comes with ADC Safety sensors as a built of robustness and power of safety at every step of operation.
+s11191 *The image shown is for illustration purposes only and may not be an exact representation of the product.
+s11197 Above data is based on testing done at standard conditions, actual consumption can vary as per environmental condition & room size.
+s11266 Watch the Full Movie *Ocean Black Protection feature is applied to indoor unit in split ac as shown in the above image.
+s11385 Watch the Full Movie *Goldfin+ has been newly introduced and applicable based on the manufacturing date.
+s11701 VIRAAT Mode is most suitable for use when the room is subjected to excessive heat, where regular cooling feels like it is taking too long or is insufficient.
+s11769 Auto Cleaning An Internal Clean that's Automatic Automatically dries any moisture inside the air conditioner to ensure it's always clean.
+s11782 Every mode auto-adjusts the AC capacity to have the right balance of energy efficiency and comfort.
+s12206 The AI Convertible 6-in-1 system offers numerous cooling functionalities that can adapt to different room conditions and activity levels.
+s12385 The ADC Sensors function to keep the AC running steadily by monitoring the most important operating conditions inside the air conditioner.
+s12636 What is Viraat Mode in AS-Q18TNXE1?
+s12662 Such synchronization in the sensors helps the air conditioner function in the right way while in operation, supporting constant cooling output and system protection.
+s12703 It can be used during the peak hours of the day when temperatures rise sharply, and cooling demand is high, especially above the normal comfort level.
+s12804 Users can easily activate and benefit from this single-setting feature, ensuring a balanced and cost-effective approach to air conditioning Q.
+s12971 When should I use VIRAAT Mode for maximum comfort?
+s13030 What are the modes available in the AI Convertible 6-in-1 system?
+
+페이지 정보: 국가=IN, 유형=business, URL=https://www.lg.com/in/business/air-solution/chiller/absorption-chiller-steam-type/
+문장:
+s00392 Easy pipe cleaning When cleaning the piping, only the water box cover can be opened without disconnecting the piping.
+s00557 The vacuum rate is automatically set and saved.
+s01376 Learn more Absorption chiller steam type line up Connect with LG business If you’d like to receive a quote for a product you’re interested in or have any other questions, feel free to let me know.
+s10285 Verify right now Verify later Installment Calculator The URL has been copied to the clipboard.
+s10796 Absorption chiller steam type Absorption chiller steam type Absorption Chiller Steam Type uses heat instead of electricity, which is highly recommended for areas with electricity shortage.
+s10944 Prevention of Power Failure Absorbent concentration control The prevention control is executed when the concentration rises above the set value.
+s12430 Similar Product Steam Absorption Chiller An Steam Type Absorption Chiller is an eco-friendly alternative to other air and temperature regulation units, using nearby power-plant heat sources instead of electricity.
+s12464 Contact us Your email has been successfully registered.
+s12524 The saved data can be used to accurately and quickly monitor and diagnose leakage.
+s12690 Digital pressure check Digital pressure gauge is used to monitor the pressure inside the refrigerator in real time.
+s12826 By controlling the absorption liquid concentration automatically, it prevents the pre-absorption of liquid crystals and calculates the time from the power failure to the completion of power recovery through the independent timer built in the product.
+s12833 Make your business eco-friendly with a Steam Type Absorption Chiller.
+s12967 Optimized central control Control solutions such as ACP and AC Smart enable easy monitoring and allow remote control to manage various HVAC models at anywhere.
+s13010 Superior installation convenience 3 Parts Partition enables easy installation at narrow places such as remodeling & renovation sites.
+s13248 It is a more environmentally friendly and economical product because it uses the heat energy source from the surrounding thermal power plant as a heat source.
+
+페이지 정보: 국가=IN, 유형=plp, URL=https://www.lg.com/in/commercial-washing-machines/commercial-dryer/
+문장:
+s00686 Similar Product Commercial Dryer Introducing Your Business Partner Buy Now Wet Cleaning Combines optimized drum motion with precise water control ensures to clean with minimal fabric stress Buy Now Built to Fit Every Space Easily stack or place side by side to optimize space and suit different layout needs Buy Now Sensor Dry Auto-Sensing Technology for Even Drying Automatically monitors moisture in the fabric & adjusts the total drying time to deliver excellent results each time Buy Now Buy LG C
+s11681 Browse LG’s range of commercial washing machines Become an LG member Enjoy all the benefits of free LG membership, from special discounts to exclusive services and offers.
+
+페이지 정보: 국가=IN, 유형=microsite, URL=https://www.lg.com/in/magazine/how-lg-convertible-microwaves-are-revolutionizing-indian-cooking/
+문장:
+s00295 The best way to understand this is through heat distribution.
+s00314 According to LG Microwaves Section, LG's Convertible Microwave Oven handles reheating and defrosting, air frying with low oil, 360° rotisserie grilling, charcoal-style flavour cooking, convection baking, — all in a single appliance that takes up the counter space of one device.
+s00665 The horizontal skewer design also makes it far easier to load chicken pieces, paneer cubes, or seekh kebabs compared to a vertical skewer.
+s00758 Does the LG Convertible Microwave Oven replace both a microwave and a standalone air fryer?
+s00823 The answer is essentially any household where cooking quality, counter space, and health matter.
+s00861 In LG's range, convertible means the oven genuinely switches between distinct cooking modes — not just temperature adjustments.
+s01033 JavaScript appears to be disabled in your browser.
+s01286 Who Genuinely Benefits From This Range Health-conscious families who want the texture of fried food without the oil Busy households cooking Indian meals daily who want automation without compromising flavour Home entertainers who want BBQ and tandoori results without an outdoor setup Small kitchen owners who can't accommodate both a microwave and a standalone air fryer Anyone who's been manually flipping food in an oven and wondering if there's a better way Microwave vs.
+s01447 Many have now also bought a standalone air fryer.
+s01605 Just without the kadai full of oil, the splatter, and the guilt.
+s01746 05/15/2026 4 Key Takeaways Before You Read LG's Convertible Microwave Ovens combine microwave and air fry in one appliance — eliminating the need for a separate air fryer on your counter.
+s01869 How many Air Fry recipes are pre-programmed in the LG Convertible Microwave Oven, and what Indian dishes are included?
+s01880 According to this product detail page, LG Convertible Microwave Oven comes with 60 dedicated Air Fry menu options pre-programmed, covering a wide range of Indian snacking and cooking.
+s10072 Who is the LG Convertible Microwave Oven range best suited for?
+s10223 Rotisserie grilling for the weekend BBQ.
+s10270 You flip it, you wait, you check.
+s10328 Air-fried samosas on a weekday.
+s10350 The food rotates continuously through the heat, cooking from every angle simultaneously.
+s10388 The Motorised Rotisserie with 360° rotation cooks food evenly from all sides without any manual flipping — delivering restaurant-style grilling results at home.
+s10398 LG's Motorised Rotisserie eliminates that entirely as the food rotates continuously through the heat, cooking from every angle simultaneously (360°), delivering consistent and even browning with no manual flipping required.
+s10543 That's two appliances, two power points, two footprints — and two things to clean after every meal.
+s10621 What is the Charcoal Lighting Heater™ on LG Convertible Microwave Ovens and how does it work?
+s10666 The range is particularly well-suited for health-conscious families who want the texture of fried food without the oil; busy households cooking Indian meals daily who want automation without compromising on flavour; home entertainers who want BBQ and tandoori results without an outdoor setup; small kitchen owners who cannot accommodate both a microwave and a standalone air fryer.
+s10789 Visit lg.com/in/microwave-ovens for the full range.
+s10806 The Charcoal Lighting Heater™ refers to a specially designed heating element in LG's Convertible Microwave Ovens that generates deep, intense heat — the kind that replicates what charcoal cooking does to food.
+s10831 LG Convertible Oven Capability Standard    Microwave Standalone    Air Fryer LG    Convertible Oven Reheat & defrost Yes No Yes Air fry (low oil) No Yes Yes 360° rotisserie grilling No No Yes Charcoal-style flavour No No Yes Indian autocook menus Partial No Yes (400+ menus) Counter space needed 1 appliance 1 appliance 1 appliance The Bottom Line The LG Convertible Microwave Oven range is built around a simple but powerful idea, Indian homes deserve an appliance that cooks the way Indian families
+s11048 Load it, press start, and wait for your delicious recipes The Charcoal Lighting Heater™: The Flavour Flame Here's what separates LG's range from every other convection microwave on the market.
+s11168 One appliance handles both jobs — and then goes further with grilling, rotisserie, and charcoal-style cooking that no standard microwave or basic air fryer can touch.
+s11207 A sample of what's covered: Category Examples Indian snacks Aloo Tikki, Sabudana Vada, Batata Vada,    Palak Tikki, Pyaaz Pakora Street food Samosa, Hara Bhara Kebab, Masala Vada, Poha    Patties Frozen foods Chicken Nuggets, French Fries, Onion Rings,    Pizza Pockets, Veg Spring Rolls Non-veg Chicken 65, Fish Amritsari, Chicken Seekh    Kebab, Chicken Wings Snacks & bakes Butter Cookies, Chocolate Cookies, Coconut    Cookies, Gujiya, Fafda Regional Thattai Snacks, Meethi Mathi, Punjabi Mathi, 
+s11564 Features may vary from model to model.
+s11696 What "Convertible" Actually Means The word gets used loosely.
+s11893 The Problem With Most Indian Kitchen Setups Today Most households own a microwave.
+s11905 In short, yes — it is designed to do exactly that.
+s12016 The LG Motorised Rotisserie eliminates that entirely.
+s12019 Motorised Rotisserie & 360° Cooking Explained: How LG's Convertible Microwave Ovens Are Changing the Way India Cooks?
+s12065 The Charcoal Lighting Heater™ is a specially designed heating element that generates deep, intense heat — the kind that replicates what charcoal cooking does to food.
+s12066 How does the LG Motorised Rotisserie cook food differently from a standard oven grill?
+s12204 These include Indian snacks like Aloo Tikki, Sabudana Vada, Batata Vada, and Pyaaz Pakora; street food like Samosa, Hara Bhara Kebab, and Poha Patties; non-veg options like Chicken 65, Fish Amritsari, Chicken Seekh Kebab, and Chicken Wings.
+s12269 LG's Convertible Microwave Oven range solves this cleanly.
+s12620 You get a browned top and an undercooked bottom.
+s12664 It creates a crunchy outside, juicy inside texture that regular microwaves simply cannot achieve, and delivers gourmet flavour with genuine depth across grilling, baking, and rotisserie cooking modes.
+s12702 Explore LG convertible microwave ovens now.
+s12783 The Charcoal Lighting Heater™ is what gives LG ovens their signature deep flavour — mimicking real charcoal cooking for that crunchy outside, juicy inside result.
+s12825 standard grill: Feature Standard Grill LG Motorised Rotisserie Heat distribution One direction 360° — all sides equally Manual flipping Required Not required Browning Uneven Consistent and even Skewer design Vertical — awkward Horizontal — easy to load Best results for Basic toast, reheating Tandoori chicken, tikka, kebabs, BBQ The horizontal skewer design is a practical upgrade — it's far easier to thread chicken pieces, paneer cubes, or seekh kebabs onto a horizontal skewer than wrestle with a
+s12855 Microwave mode → everyday reheating, defrosting, steaming, Indian curries Air Fry mode → crispy snacks, frozen foods, low-oil cooking Convection/Grill mode → baking, grilling, browning Charcoal Lighting Heater™ → deep, natural heat for tandoor-style flavour Motorised Rotisserie: Why 360° Matters More Than You Think Standard oven grilling heats food from one direction.
+s13078 60 dedicated Air Fry menu options are pre-programmed, covering the full width of Indian snacking and cooking culture.

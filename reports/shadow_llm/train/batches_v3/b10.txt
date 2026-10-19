@@ -1,0 +1,223 @@
+페이지 정보: 국가=ES, 유형=pdp, URL=https://www.lg.com/es/aire-acondicionado-domestico/split-1x1/gallery09tv2-set/
+문장:
+s01692 *Las funciones de la app LG ThinQ pueden variar según el producto y el país.
+s01924 3) Flujo de aire indirecto *En modo Indirecto(Confort), el protector de aire bloquea aire emitido por la parte inferior del producto.
+s10004 Portada Crea tu propia colección Revitaliza el estilo de tu hogar con una selección de obras de arte elegidas por ti *Con el mando a distancia, puedes seleccionar o ajustar la visualización a imagen básica, imagen en directo, imagen especial, pintura de artista famoso o meditación a través del botón de configuración situado en la parte inferior de la pantalla del producto.
+s10180 ¿Qué hace la función Auto Clean+?
+s10234 Control remoto Fácil manejo con el mando a distancia Utiliza la función del mando a distancia para un control sencillo y cómodo.
+s10238 Dependiendo de la temperatura y la humedad del aire en la habitación, el secado en el interior puede variar.
+s10307 Consulte la sección de ayuda de la app para más información.
+s10317 *Ten en cuenta que la app LG ThinQ puede no funcionar en algunos smartphones y algunas funciones pueden variar dependiendo del producto y del país.
+s10330 Cuando se detiene el funcionamiento, la función de secado se pondrá en marcha automáticamente.
+s10380 *Para registrar su máquina en la app LG ThinQ y optimizar su funcionalidad, asegúrese de que está conectado al Wi-Fi de su casa.
+s10458 El modo Auto Clean+ se activa en el momento del envío del producto.
+s10591 - La humedad provoca la proliferación de moho y bacterias, por lo que recomendamos poner el aire acondicionado en secado automático para mantenerlo limpio.
+s10615 *Función disponible a través del mando a distancia y ThinQ.
+s10691 - Cuando ajuste la función de secado automático, aparecerá en la pantalla del mando a distancia.
+s10722 (Comprueba las especificaciones de tu teléfono antes de usarlo (Android OS 7.0 / iOS 14.0 o superior).
+s10810 *Para registrar su aire acondicionado en la app LG ThinQ y optimizar su funcionalidad, asegúrese de que está conectado al Wi-Fi de su casa.
+s10852 *Para utilizar la función ThinQ, es necesario instalar la app 'LG ThinQ' desde Google PlayStore o Apple ApapStore en su smartphone y conectarse a Wi-Fi.
+s10866 Esta función puede utilizarse en dispositivos inteligentes compatibles con la función de compartir pantalla basada en Android.
+s11026 ¿Funciona la función de duplicación en todos los teléfonos?
+s11045 La función de duplicación puede estar restringida para contenidos de pago protegidos por derechos de autor.
+s11367 *Dependiendo del modelo de dispositivo inteligente, el nombre de la función puede ser diferente.
+s11461 Freeze cleaning Mantén el interior de tu máquina impecable Limpiar los espacios de díficil acceso del interior de tu aire acondicionado es fácil con el modo Freeze Cleaning 4) .
+s11490 Flujo de aire indirecto Fresco agradable y confortable La aleta oculta difunde ingeniosamente el aire por todo su espacio con un flujo de aire uniforme e indirecto 3) .
+s11641 Una vez que se inicie la función de secado automático, el acondicionador de aire funcionará en modo Ventilador durante un período de tiempo para eliminar cualquier resto de humedad del intercambiador de calor.
+s11655 Utiliza el hielo descongelado para eliminar el polvo y los contaminantes que causan olores, reduciendo las bacterias dañinas y dejando el hogar más fresco.
+s11775 Puede haber variaciones en función del entorno real de instalación del producto.
+s11844 *El aire acondicionado está habilitado para Wi-Fi y requiere el registro del producto a través de la app LG ThinQ.
+s11936 Personaliza tu pared enviando tus fotos favoritas desde el teléfono para crear tu galeria de fotos 1) .
+s11985 Consulta la sección de ayuda de la app para instrucciones detalladas.
+s11990 Consulte la app para instrucciones detalladas.
+s12138 Puede haber variaciones dependiendo del entorno real de instalación del producto.
+s12282 *Para utilizar la función ThinQ, es necesario instalar la app 'LG ThinQ' desde Google PlayStore o Apple AppStore en su smartphone y establecer una conexión a Wi-Fi.
+s12445 A través de la app ThinQ, puedes configurar la velocidad del viento y ajustar la velocidad de secado.
+s12482 *Durante el funcionamiento, el aire se emite simultáneamente en 3 vías a través de las salidas situadas a la izquierda, derecha e inferior del producto.
+s12523 Aporta buenas sensaciones y frescura a la vida cotidiana Flujo de aire 3D Refrigeración envolvente con su flujo de aire 3D Dispersa el aire por la parte izquierda, derecha e inferior del marco, lo que proporciona una brisa refrescante en cada centímetro de tu habitación.
+s12658 Ajusta el volumen de aire para un secado más rápido y fuerte o un funcionamiento más silencioso.
+s12717 2) Duplicación *Esta función puede utilizarse en dispositivos inteligentes compatibles con la función de compartir pantalla basada en Android.
+s12756 Dependiendo del modelo de dispositivo inteligente, el nombre de la función puede ser diferente.
+s12932 Disclaimer 1) Memoria *Esta función puede cargar una foto personal en la configuración de la pantalla de portada en la app ThinQ.
+s13236 5) Limpieza automática *Cuando el producto está parado, la función Auto Clean+ funciona automáticamente.
+
+페이지 정보: 국가=ES, 유형=business, URL=https://www.lg.com/es/business/climatizacion/gama-industrial/multi-v-i/zrum120lts6/
+문장:
+s00129 MULTI V i, unidad exterior, 12 HP, R32 ZRUM120LTS6 ( ) Características principales Innovador, muy potente con alta eficiencia, diseño compacto con gran capacidad, combinación flexible de unidades exteriores Inteligente_AI Smart Care, gestión energética mediante IA, control de ruido adaptativo, Auto Tuning y sistema de actualización a distancia Interactivo con una gran variedad de productos y soluciones Impacto medioambiental bajo (1/3 de potencial de calentamiento global de gas refrigerante R410
+s00177 Diagnóstico de Problemas Descubre los vídeos de guía básica sobre tu producto.
+s00301 ) mm 930 x 1745 x 760 Envío (An.
+s00323 El funcionamiento de refrigeración es más fiable hasta los 52 °C, y el rendimiento llega a ser notable a los 45 °C.
+s00517 (kW) - EFICIENCIA EER(Nominal) (W/W) 2.88 COP(Nominal) (W/W) 4.32 COP(Máx.) (W/W) - ESEER (W/W) - ESEER(SLC) (W/W) - SEER (Wh/Wh) 7.94 SCOP (Wh/Wh) 4.99 Pdiseño(@-10℃, calefacción) (kW) 18.4 INTERCAMBIADOR TÉRMICO Tipo Fin & Tube VENTILADOR EXTERIOR Tipo Propeller fan Caudal de aire(Alto) (m³/mín.
+s00682 (Condicional) (EA) 20(30) CABLE DE CONEXIÓN Cable de comunicación (VCTF-SB) (mm² × núcleos) 0.75 ~ 1.5 x 2C DIMENSIONES Neto (An.
+s00700 ) mm 965 x 1919 x 802 ALIMENTACIÓN #1 50 Hz 380-415 V 3N~ #2 60 Hz 380 V 3N~ INFORMACIÓN DE CUMPLIMIENTO PRODUCT FICHE ( ZRUM120LTS6 ) WEB INFO ( ZRUM120LTS6 ) MÁS INFORMACIÓN DE CUMPLIMIENTO The safety information for accessories is included with the safety information for the product and is not provided separately.
+s00722 Estamos aquí para ayudarte.
+s00760 Hace que la gestión del edificio sea inteligente al establecer una lógica optimizada para el sitio.
+s00803 Click here for more information (FAQ) at Frequently Asked Questions - Support & Help | LG CA CERRAR Iniciar sesión para crear tu Lista de deseos Añadir artículos a tu lista de deseos para que puedas encontrarlos fácilmente cuando regreses a LG.com.
+s00946 x N.º) 220 x 1 Dirección de descarga (lateral/superior) Top MOTOR DEL VENTILADOR EXTERIOR Transmisión Direct Potencia (W x n.º) 1,200 x 1 PESO Neto (kg) 215 Envío (kg) 225 COMPRESOR Tipo Hermetically Sealed Scroll Desplazamiento del pistón (cm³/rev.) 62.1 Potencia del motor (W x n.º) 5,300 x 1 Método de arranque Inverter Tipo de aceite FW68L(PVE) REFRIGERANTE Tipo R32 Cantidad precargada (kg) 8.5 GWP (Potencial de calentamiento global) 675 t-CO₂ eq.
+s01063 Para obtener más información sobre cómo este producto maneja los datos y sus derechos como usuario, visite ″Cobertura de datos y especificaciones″ en LG Privacy PRODUCT INFORMATION SUBMITTAL ( ZRUM120LTS6 ) Cerrar ¿Necesitas ayuda?
+s01473 Es una forma sencilla de seguir ese algo especial que te llamó la atención o para guardar ideas de regalos para amigos y familiares.
+s01660 Asimismo, el funcionamiento de la calefacción es más fiable hasta -30 °C y el rendimiento excelente a -10 °C.
+s01663 5.738 Tipo de control EEV EXTERIOR RAL (clásico) RAL 7038 / RAL 7037 Color Morning Gray / Dawn Gray TUBERÍA DE CONEXIÓN Líquido (mm(pulgadas)) Φ12.7 (1/2) Gas (mm(pulgadas)) Φ22.2 (7/8) Gas de baja presión (Recuperación de calor) (mm(pulgadas)) Φ22.2 (7/8) Gas de alta presión (Recuperación de calor) (mm(pulgadas)) Φ19.05 (3/4) NIVEL DE POTENCIA ACÚSTICA (UNIDAD EXTERIOR) Refrigeración/Calefacción (dB(A)) 80 / 82 NIVEL DE PRESIÓN ACÚSTICA (UNIDAD EXTERIOR) Refrigeración/Calefacción (dB(A)) 59 / 6
+s01710 Petición de Reparación Solicita cómodamente un servicio de reparación online.
+s01955 (Btu/h) 129000 ENTRADA DE POTENCIA (REFRIGERACIÓN) Nominal (kW) 11.65 ENTRADA DE POTENCIA (CALEFACCIÓN) Nominal (kW) 7.77 Máx.
+s10051 No gracias, ahora no CONTINUAR EN INICIO DE SESIÓN Añadir artículos a Mi lista de deseos LG Eliminar artículo Continuar en Mi lista de deseos LG OTP authentication failed.
+s10085 Al gestionar fácilmente la energía a través de la IA, se puede evitar los costes operativos excesivos del sistema de climatización.
+s10118 Ayuda Manuales y Software Descarga los manuales y las últimas actualizaciones para tus productos.
+s10287 Cerrar Environmental Handing Fee (EHF) EHFs vary by product and province.
+s10332 Registrar Producto Registra tu producto y obtén asistencia técnica más rápido.
+s10740 Soporte de Pedidos Localiza tu envío y consulta las preguntas frecuentes sobre envíos.
+s11576 La información de seguridad de los accesorios se incluye con la información de seguridad del del producto y no se proporciona por separado.
+s11783 Gestión energética mediante IA Si se establece una potencia objetivo específica del sistema con Multi V i, el motor de IA predice el consumo energético y controla automáticamente la temperatura para alcanzar la cantidad de potencia objetivo.
+s11803 Recambios y Accesorios Discover accessories for your product.
+s11891 Empeza chat de servicio Mi LG Registrar un producto Soporte de Producto Encuesta web Solicitar compra Contacto HVAC AI Assistant
+s11892 Garantía Consulta la información sobre la garantía de tu producto aquí.
+s12314 Verify right now Verify later Calcula tu financiación Cerrar Como puedo ayudarte ?
+s12692 Búsquedas Relacionadas Encuentra los manuales, diagnósticos y políticas de garantía de tus productos LG.
+s13115 Contáctanos Chat en Directo Chatea con nuestros expertos en productos LG y recibe asistencia en tus compras, descuentos y ofertas en tiempo real Envíanos un Correo Electrónico Envía un correo electrónico al servicio de asistencia de LG Llámanos Habla directamente con uno de nuestros representantes.
+s13227 Para obtener más documentación técnica y recursos, visita la página LG B2B Partner Portal.
+
+페이지 정보: 국가=ES, 유형=business, URL=https://www.lg.com/es/business/climatizacion/gama-industrial/multi-v-s-r32/zrun050gss0/
+문장:
+s00090 ) mm 950 x 834 x 330 Envío (An.
+s00278 ) mm 1147 x 919 x 461 ALIMENTACIÓN #1 50 Hz 220-240 V~ INFORMACIÓN DE CUMPLIMIENTO PRODUCT FICHE ( ZRUN050GSS0 ) EU PPWR TD ( ZRUN050GSS0 ) WEB INFO ( ZRUN050GSS0 ) MÁS INFORMACIÓN DE CUMPLIMIENTO The safety information for accessories is included with the safety information for the product and is not provided separately.
+s00402 x N.º) 80 Dirección de descarga (lateral/superior) Side MOTOR DEL VENTILADOR EXTERIOR Transmisión DC INVERTER Potencia (W x n.º) 198 x 1 PESO Neto (kg) 71.6 Envío (kg) 79.6 COMPRESOR Tipo LG Inverter Scroll Desplazamiento del pistón (cm³/rev.) 31.6 Potencia del motor (W x n.º) 3198 x 1 Método de arranque Inverter Tipo de aceite FW68D(PVE) REFRIGERANTE Tipo R32 Cantidad precargada (kg) 2.0 GWP (Potencial de calentamiento global) 675 t-CO₂ eq.
+s00840 Tamaño compacto y peso ligero El tamaño de los equipos se ha reducido, lo que supone un ahorro en el valor de la compra, además de en el coste de instalación y mantenimiento.
+s01828 1.350 Tipo de control Electronic Expansion Valve EXTERIOR RAL (clásico) RAL 7044 Color WARM GRAY TUBERÍA DE CONEXIÓN Líquido (mm(pulgadas)) Φ9.52 (3/8) Gas (mm(pulgadas)) Φ15.88 (5/8) NIVEL DE POTENCIA ACÚSTICA (UNIDAD EXTERIOR) Refrigeración/Calefacción (dB(A)) 70 / 74 NIVEL DE PRESIÓN ACÚSTICA (UNIDAD EXTERIOR) Refrigeración/Calefacción (dB(A)) 57 / 60 NÚMERO DE UNIDADES INTERIORES CONECTABLES Máx.
+s01892 (Btu/h) 54600 ENTRADA DE POTENCIA (REFRIGERACIÓN) Nominal (kW) 4.90 ENTRADA DE POTENCIA (CALEFACCIÓN) Nominal (kW) 3.48 EFICIENCIA EER(Nominal) (W/W) 2.86 COP(Nominal) (W/W) 4.02 SEER (Wh/Wh) 6.44 SCOP (Wh/Wh) 3.81 Pdiseño(@-10℃, calefacción) (kW) 9.66 INTERCAMBIADOR TÉRMICO Tipo Fin & Tube VENTILADOR EXTERIOR Tipo Propeller Fan Caudal de aire(Alto) (m³/mín.
+s10455 Intercambiador de calor óptimo Mejora la eficiencia en función de los distintos recorridos del intercambiador de calor para la refrigeración y calefacción con el uso del Circuito Variable del Intercambiador de Calor, que selecciona la ruta óptima de forma inteligente.
+s10555 (Condicional) (EA) 10 CABLE DE CONEXIÓN Cable de comunicación (VCTF-SB) (mm² × núcleos) 2C x 1.0 ~ 1.5 DIMENSIONES Neto (An.
+s10820 Para obtener más información sobre cómo este producto maneja los datos y sus derechos como usuario, visite ″Cobertura de datos y especificaciones″ en LG Privacy PRODUCT INFORMATION SUBMITTAL ( ZRUN050GSS0 ) Cerrar ¿Necesitas ayuda?
+s11228 Componentes refrigerantes fiables Multi V S mejora la fiabilidad al adoptar un acumulador de gran volumen.
+s11599 Esta fiabilidad se mejora al reducir la caída de la presión gracias a una estructura en espiral de alta eficiencia y al duplicarse el tamaño.
+s12491 Imprimir Ver todas las especificaciones Cerrar Todas las especificaciones CAPACIDAD DE REFRIGERACIÓN Nominal (kW) 14 CAPACIDAD DE CALEFACCIÓN Nominal (kW) 14 Máx.
+
+페이지 정보: 국가=ES, 유형=experience, URL=https://www.lg.com/es/lg-experience/consejos-utiles/como-limpiar-nevera/
+문장:
+s01689 Comience desde nuestra página de inicio o explore los enlaces a continuación Go to Homepage
+s10937 ¿No encuentras lo que buscas?
+s11761 La página que solicitó no está disponible.
+s12461 Saltar contenidos Skip to Accessibility Help Lo sentimos.
+
+페이지 정보: 국가=ES, 유형=experience, URL=https://www.lg.com/es/lg-experience/inspiracion/zona-de-ocio-sala-de-juegos/
+문장:
+s00111 Consejos útiles Cómo configurar un proyector 4K Tech Hub Guía para elegir el sistema de ventilación, calefacción y aire acondicionado adecuado Descubre cómo elegir el sistema de climatización adecuado para apartamentos y casas, y conoce a fondo las bombas de calor, los sistemas inverter y mucho más.
+s00150 Consejos útiles ¿Cuál es la distancia correcta entre la pared y el proyector?
+s00236 Consejos útiles Cómo configurar un proyector 4K Go to slide 1 Go to slide 2 Go to slide 3 Consejos útiles ¿Vale la pena un combo de lavadora y secadora?
+s00596 Esta guía explora cómo funcionan los combos de lavadora y secadora, sus ventajas y desventajas, y si son una elección inteligente para tu hogar en 2026.
+s00862 Consejos útiles Cómo ajustar la temperatura correcta del frigorífico y el congelador Aprende a mantener tus alimentos frescos, deliciosos y en buen estado tanto en el frigorífico como en el congelador con esta guía rápida y sencilla.
+s00899 Inspiración El futuro sostenible de LG: dispositivos inteligentes y ecológicos para el hogar Descubre cómo LG lidera la innovación con dispositivos inteligentes para el hogar que están pensados para ahorrar energía y cuidar el medio ambiente.
+s00967 Tech Hub 16:9 vs 21:9 vs 32:9: ¿te conviene tener un monitor gaming 4K?
+s01072 ¿Cuáles son las diferencias entre los AI TV y los Smart TV?
+s01221 Descubre en qué se diferencian los televisores UHD y los Mini LED, incluyendo cómo la resolución 4K se compara con la retroiluminación Mini LED, y averigua si un televisor UHD o uno Mini...
+s01293 Este artículo trata sobre qué hace que una lavadora sea «inteligente» y explica cómo la avanzada tecnología...
+s01302 Conoce las diferencias entre las relaciones de aspecto 21:9 y 32:9 y descubre cómo la resolución 4K...
+s01404 Inspiración El futuro sostenible de LG: La IA y la sostenibilidad tecnológica Descubre los avances de LG en tecnología de IA y su efecto en la sostenibilidad.
+s01440 Descubre por qué tu lavadora no desagua, incluyendo causas comunes como filtros obstruidos o mangueras bloqueadas, y cómo solucionarlo en unos pocos pasos sencillos.
+s01529 Analizamos a fondo todos los aspectos en esta guía detallada para que tengas una experiencia...
+s01575 Inspiración La nueva generación Therma V™ R290 Monobloc de LG en el IFA 2024 Descubre la nueva bomba de calor de fuente de aire de LG, Therma V™ R290 Monobloc en IFA 2024-compacta, eficiente y diseñada para los hogares europeos modernos.
+s01615 Descubre los mejores monitores gaming 4K 16:9 para una experiencia de juego inmersiva.
+s01638 Tech Hub Barras de sonido recomendadas para televisores LG ¿En qué se distingue una buena barra de sonido y cuáles son las mejores para los televisores LG?
+s01745 La variada gama de altavoces bluetooth de LG está concebida para ofrecer sonido de alta calidad y duración de la batería.
+s01778 Inspiración Despliegue de excelencia: LG OLED TV alcanza los 10 millones de ventas en Europa Celebrando la venta de 10 millones de LG OLED TV vendidos en Europa y 12 años de liderazgo con innovaciones como OLED T, OLED M inalámbricos y televisores evo con IA.
+s01803 Compara las opciones de calefacción...
+s01833 Explora las funciones de inteligencia artificial, integraciones inteligentes y la avanzada tecnología LG ultra personalizada para...
+s10125 Consulta aquí las características y ventajas de algunos monitores ultrapanorámicos...
+s10135 Consejos útiles ¿Cuál es la mejor secadora inteligente para mí?
+s10371 Consejos útiles 9 maneras de utilizar un monitor con pantalla táctil giratoria de 360 grados de rotación Quizás hayas considerado una notebook con pantalla táctil, pero ¿de qué otra manera podría este tipo de pantalla portátil mejorar tu vida diaria?
+s10565 ¿Es realmente mejor que la SDR en cuanto al rendimiento de la imagen de tu televisor?
+s10774 Tech Hub ¿Es un altavoz inalámbrico la mejor opción tus fiestas?
+s10863 Consejos útiles Cómo medir y leer los tamaños de los televisores Con esta guía aprenderás a leer los tamaños de los televisores y a calcular la altura y la distancia de visualización perfectas para cualquier habitación.
+s11054 Saltar contenidos Skip to Accessibility Help Consejos útiles ¿Vale la pena un combo de lavadora y secadora?
+s11135 Consejos útiles ¿Cuál es la diferencia entre los televisores UHD y Mini LED?
+s11150 Compara las secadoras LG de bomba de calor, con condensador y con salida de aire y descubre funciones avanzadas que te ayudarán a elegir...
+s11304 Tech Hub Smart TV vs.
+s11405 Consejos útiles Cómo configurar tu barra de sonido Descubre cómo configurar tu barra de sonido, conectarla a tu TV y resolver posibles problemas.
+s11450 Consejos útiles Cómo crear un hogar inteligente automatizado con la aplicación LG ThinQ Si quieres tener una casa llena de electrodomésticos que escuchen tus necesidades y evolucionen contigo, descubre por qué LG ThinQ es la innovación de IA que necesitas para tu hogar inteligente...
+s11503 Descubre cómo LG integra IA en sus productos para mejorar la eficiencia y la experiencia de usuario.
+s11562 Sigue leyendo para saber más.
+s11683 Tech Hub Sácale el máximo partido a tu pantalla: monitores ultrapanorámicos Los monitores ultrapanorámicos o UltraWide ofrecen una mayor productividad y un entretenimiento envolvente.
+s11728 Tech Hub ¿Cuál es la mejor configuración para monitores curvos y cuál para planos?
+s11793 Consejos útiles HDR vs.
+s11864 Tech Hub Lavadoras más rápidas e inteligentes ¿Cómo están cambiando las lavadoras inteligentes el futuro del lavado de prendas?
+s11882 Inspiración Construir un futuro mejor: el enfoque de LG sobre la responsabilidad social corporativa Descubre las diferentes iniciativas de RSC de LG en toda Europa, desde trabajos medioambientales hasta voluntariado comunitario.
+s11973 Consejos útiles Guía de tamaños de frigoríficos: conoce las medidas estándar de los frigoríficos Si estás pensando en comprar un nuevo frigorífico, es fundamental conocer las medidas estándar así como las características y modelos más comunes para encontrar la mejor opción para tu hogar.
+s11988 AI TV: ¿cuál es el más adecuado para ti?
+s12045 Encuentra el mejor altavoz inalámbrico para fiestas para tu próxima...
+s12219 Tech Hub ¿Qué es un TV inalámbrico?
+s12462 Consejos útiles Cómo usar LG Channels en tu smart TV Descubre cómo ver cientos de canales gratis en tu smart TV LG usando la aplicación LG Channels integrada, sin necesidad de suscripciones ni descargas.
+s12495 Consejos útiles ¿Por qué mi lavadora no desagua?
+s12531 Este artículo te mostrará 9 maneras de optimizar...
+s12570 Inspiración ¿Qué es un smart TV y cómo funciona?
+s12597 ¿Estás buscando la secadora inteligente adecuada?
+s12651 ¿Cuál es la mejor configuración para monitores curvos y cuál para planos?
+s12735 Descubre cómo la tecnología de vanguardia del TV inalámbrico OLED evo M4 de LG ofrece la libertad de crear un espacio de entretenimiento perfecto y ordenado.
+s12879 SDR en televisores: ¿cuáles son las diferencias?
+s13105 Inspiración El futuro sostenible de LG: diseño ecológico y productos sostenibles Descubre los principios de diseño ecológico y una gama de productos innovadores y sostenibles que contribuyen a un futuro más verde.
+s13195 ¿Qué es la tecnología HDR?
+
+페이지 정보: 국가=ES, 유형=buying_guide, URL=https://www.lg.com/es/microsite-article/ms/it/monitor/ultragear-buying-guide/productividad-y-entretenimiento/
+문장:
+s00230 ¿Qué ventajas ofrece LG UltraGear al momento de conectar múltiples dispositivos?
+s00515 *La imagen es solo con fines ilustrativos, comparando las estructuras de subpíxeles RWBG y RGWB, las cuales pueden afectar la claridad percibida del texto según la pantalla y el contenido.
+s01253 Comparación de los monitores gaming LG UltraGear Table Caption Características técnicas 45GX950A 32G810SA 45GX90SA 39GX90SA 34GX90SA Tamaño de pantalla 45 pulgadas 32 pulgadas 45 pulgadas 39 pulgadas 34 pulgadas Resolución Dual Mode: WUHD 5160x2160 - WFHD 2560x1080 UHD 3840x2160 WQHD 3440x1440 WQHD 3440x1440 WQHD 3440x1440 Tipo de panel OLED OLED OLED OLED OLED Conectividad 1 x DisplayPort 2.1 (con DSC) - 2 x HDMI™ 2.1 - 1 x USB Tipo-C™ (PD 90W) 1 x DisplayPort 1.4 (con DSC) - 2 x HDMI™ 2.1 - US
+s01705 12 La característica webOS únicamente está presente en modelos seleccionados.
+s01941 Los usuarios pueden ajustar de forma precisa la configuración de la pantalla según cada tarea, dividirla en diseños personalizables para jugar o trabajar en paralelo y unirse rápidamente a videollamadas mediante accesos directos, todo sin interrumpir su flujo de trabajo ni su partida.
+s10395 ¿De qué manera LG UltraGear combina productividad y entretenimiento?
+s10438 11 LG Switch requiere la instalación de software y la descarga e instalación manual de dicho software desde LG.com para su correcto funcionamiento.
+s10595 Además, incluyen función de concentrador USB, lo que te permite conectar periféricos como el teclado y el ratón directamente al monitor.
+s10767 ¿Cómo mejora LG Switch 11 la multitarea tanto para el trabajo como para el entretenimiento?
+s11084 LG Switch potencia la multitarea al combinar funciones como Personalized Picture Wizard, Screen Split y Video Call.
+s11146 Gracias a su elevada densidad de píxeles y a un diseño optimizado de subpíxeles, LG UltraGear OLED garantiza una lectura clara y precisa.
+s11290 Los monitores UltraGear cuentan con numerosos puertos como USB-C, HDMI y DisplayPort, para que puedas conectar desde tu consola hasta tu portátil.
+s11417 La mejora en la definición de bordes y la alineación de colores contribuye a una experiencia visual más limpia, permitiéndote trabajar o estudiar por horas y disfrutar de la misma nitidez cuando juegas a tus juegos favoritos.
+s11556 Ofrece una experiencia fluida, pensada para maximizar tanto la productividad como el entretenimiento.
+s11860 ¿Por qué webOS 12 es útil no solo para jugar, sino también para tu día a día?
+s12199 ¿De qué manera LG UltraGear OLED proporciona textos más claros y legibles?
+s12243 Así, no tendrás que estar conectando y desconectando cables: cambia fácilmente entre trabajo y juego sin modificar la configuración de tu escritorio.
+s12578 La característica DisplayPort únicamente está presente en modelos seleccionados.
+s12641 10 La característica DisplayPort únicamente está presente en modelos seleccionados.
+s12862 Gracias a webOS 12 , los monitores LG UltraGear te ofrecen la posibilidad de ver videos, navegar o acceder a apps de productividad sin necesidad de encender tu ordenador o consola.
+s13116 Perfecto para momentos en los que no estás jugando, podrás realizar tareas rápidas o relajarte con contenido multimedia sin el ruido ni el gasto energético de un equipo completo.
+s13175 Desde documentos y correos electrónicos hasta la navegación en internet, el texto se ve definido incluso en fuentes pequeñas.
+
+페이지 정보: 국가=ES, 유형=buying_guide, URL=https://www.lg.com/es/microsite-article/ms/it/monitor/ultragear-buying-guide/tamano-de-pantalla/
+문장:
+s00138 Explora la extensa línea de monitores 16:9 de UltraGear, diseñados para precisión y velocidad.
+s00157 ¿Prefieres un estilo más tradicional?
+s00263 Para juegos AAA inmersivos como títulos de mundo abierto, simuladores de carreras o RPGs cinematográficos, las pantallas grandes de 32″ a 45″ amplían tu campo de visión y mejoran la sensación de amplitud, sumergiéndote aún más en la acción.
+s00724 UltraGear ofrece tamaños de pantalla para todo tipo de jugador: encuentra el que mejor se ajuste a tu estilo de juego 4 FPS: Disparos en primera persona; MOBA: Arena de batalla en línea multijugador ¿Por qué LG UltraGear ofrece la relación de aspecto ideal para cada estilo de juego?
+s00734 UltraGear ofrece una amplia gama de monitores 21:9 en varios tamaños, para que encuentres el ajuste perfecto para tu configuración.
+s00790 La curvatura 800R de UltraGear mantiene una distancia uniforme de la pantalla en todo tu campo de visión, reduciendo la distorsión y mejorando la comodidad.
+s00930 Comparación de los monitores gaming LG UltraGear Table Caption Características técnicas 45GX950A 34GX90SA-W 32GX870A 27GX790A 27GX704A Tipo de juego Mundo abierto / Simulación de carreras / Soul-like Mundo abierto / simulación de carreras / Soul - like RPG / Aventura de acción FPS / MOBA FPS / MOBA Tamaño de pantalla 45 pulgadas 34 pulgadas 32 pulgadas 27 pulgadas 27 Pulgadas Relación de aspecto 21:9 21:9 16:9 16:9 16:9 Curvatura 800R 800R - - - Resolución Dual mode - WUHD 5120x2160 - WFHD 2560x
+s01635 En juegos FPS o MOBAs 4 , los monitores compactos de 24″ a 27″ mantienen la mira, el minimapa y la interfaz (HUD) siempre a la vista, permitiéndote reaccionar rápido con un mínimo movimiento de tu vista.
+s01655 El formato 21:9 ultrapanorámico logra el equilibrio perfecto entre una escala inmersiva y un uso práctico del espacio en tu escritorio.
+s10549 No todos los equipos LG UltraGear cuentan con dicha cualidad.
+s10558 ¿Qué tamaño de pantalla y relación de aspecto se adaptan mejor a mi estilo de juego?
+s11052 LG UltraGear ofrece una amplia gama de tamaños de pantalla, para que elijas el que mejor se adapte a tu estilo de juego.
+s12140 LG UltraGear te da la libertad de elegir la curvatura que te hará vivir el juego al máximo.
+s12256 ¿Por qué los diferentes tamaños de pantalla de LG UltraGear ofrecen la mejor experiencia para cada tipo de juego?
+s12281 ¿Por qué la curvatura 800R 5 de LG UltraGear es ideal para jugar?
+s12554 Por favor, consulte las especificaciones del equipo.
+s12854 Para MOBA, RPG o títulos AAA, este formato más ancho revela más terreno y elementos de la interfaz de un solo vistazo, mientras que las pantallas curvas mantienen los bordes cómodamente a la vista.
+s12939 5 La curvatura 800R únicamente está presente en modelos seleccionados.
+s13243 Elige la relación de aspecto que se adapte a tu forma de jugar.
+
+페이지 정보: 국가=ES, 유형=support_troubleshoot, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT40007083-20155062562649
+문장:
+s00159 Preguntas frecuentes (FAQ) P.
+s00353 Antes de empezar Dispositivos compatibles: televisores inteligentes LG o monitores inteligentes fabricados en 2016 o posteriormente.
+s00711 ※ La lista de canales de LG Channels puede variar según el país.
+s00887 Busca y abre la aplicación, acepta los Términos de uso y empieza a verla de inmediato.
+s00921 Televisores lanzados en 2021 o posteriores (webOS 6.0+): Abre la aplicación LG Channels → Selecciona [MY] en el menú → [Configuración] → [Desactivar LG Channels] Televisores lanzados en 2020 o antes (webOS 5.0-): Pulse el botón [Inicio] del mando a distancia → Seleccione el icono [Editar] (lápiz) situado en la parte inferior derecha → Seleccione el botón [X] situado encima de la aplicación que desea eliminar → Seleccione [Hecho].
+s00931 * 0 / 500 Caracteres Rellena los campos obligatorios.
+s00981 Muévete hacia la izquierda o hacia la derecha para comprobar el contenido.
+s01055 [Monitor LG Smart TV] ¿Cómo puedo ver LG Channels?
+s01069 Product Register Product Registration Failed Enviar close btn Volver a los resultados close btn Selecciona Ctrl+V para pegar.
+s01076 LG Channels es un servicio exclusivo y gratuito de LG que transmite televisión en directo, incluyendo noticias, programas de televisión y entretenimiento, a través de Internet sin necesidad de equipos adicionales.
+s01137 Televisores lanzados en 2021 o posteriores (webOS 6.0+): [Configuración] → [Todas las configuraciones] → [General] → [Sistema] → [Ubicación] Televisores lanzados en 2020 o antes (webOS 5.0-): [Configuración] → [Todas las configuraciones] → [General] → [Ubicación] P.
+s01159 Explora y ve canales en directo y contenido bajo demanda (VOD) por género.
+s01515 Pulse el botón Inicio [ ] o Entrada o Fuente [ ] del mando a distancia y seleccione LG Channels en la pantalla.
+s01658 Valoración Del Artículo * Campos obligatorios 1.
+s01797 Las pantallas reales pueden variar según la región y la disponibilidad de LG Channels.
+s01871 ¿Cómo puedo ver información detallada sobre LG Channels?
+s10089 ¿Cómo puedo ver LG Channels?

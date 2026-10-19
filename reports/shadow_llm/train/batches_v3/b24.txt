@@ -1,0 +1,150 @@
+페이지 정보: 국가=VN, 유형=microsite, URL=https://www.lg.com/vn/tivi/why-lgoled/10years-world-no1-oled/
+문장:
+s12882 TÌM HIỂU THÊM TÌM HIỂU THÊM Đăng nhập để tạo danh sách yêu thích Thêm mặt hàng vào danh sách yêu thích để bạn có thể dễ dàng tìm thấy mặt hàng này khi quay lại LG.com.
+s12937 Và bộ xử lý α9 có vai trò hoàn thiện hình ảnh sẽ liên tục biến đổi để mang lại những cải tiến vượt xa tiêu chuẩn.
+s13077 Bên thứ ba phải tự chịu rủi ro khi dựa vào những kết quả này.
+s13209 *** Áp dụng cho 55/65/75 G3.
+
+페이지 정보: 국가=VN, 유형=promotion, URL=https://www.lg.com/vn/tncs/lg-tv-oct-new-promotion-free-100/
+문장:
+s00098 • Promotion is only valid for Customers who purchased the selected LG product(s) from participating authorised LG dealers or resellers during the Promotion period.
+s00279 Submit your gift redemption request *Kindly note that LG reserves the right to reject any redemption if any of the above Redemption Documents is not submitted.
+s00283 • LG reserves the right to reject any redemption where (a) if LG reasonably believes in its sole discretion that the redemption is not in accordance with these Terms and Conditions; (b) the redemption is submitted after the Redemption Period; (c) any of the Redemption Documents as stated in the Terms and Conditions is not submitted to LG; or (d) if LG reasonably suspects any of the Redemption Documents is fraudulent in any way.
+s00310 Fill in your purchase details and upload proof of purchase a.
+s00528 Qualifying Products The products or models qualifying for this Promotion (“Qualifying Products”) are as follows: • OLED97G2PSA Participating Retailers The retailers participating in this Promotion (“Participating Retailers”) are as follows: • Audio House Marketing Pte Ltd • Best Denki Pte Ltd • Courts (Singapore) Pte Ltd • Gain City Best-Electric Pte Ltd • Giant Supermarket • Goh Joo Hin Pte Ltd • Hao Mart Pte Ltd • LG Flagship Store on Lazada • LG Official Brand Store on Amazon • LG Official Br
+s00588 • LG will not be liable for any lost, damaged or stolen of gifts.
+s00675 All rules and regulations and instructions issued by LG Electronics Singapore Pte.
+s01047 Each Customer further consents to LG’s use of his/her personal data for other marketing and promotional activities which may be organized by LG from time to time and in accordance with LG Privacy Policy.
+s01082 The delivery of LG product(s) and redemption have to be made on or before 31 January 2024.
+s01654 For Customer who have not yet attained 18 years old (as of 01 November 2023), such Customer’s parent/guardian warrants and agrees that the Customer including his/her parent/guardian shall be irrevocably bound by these Terms and Conditions.
+s01739 TERMS & CONDITIONS LG TV November New Promotion - Free $100 Grocery E-Vouchers Promotion Period : 01 November 2023 to 30 November 2023 Promotion : Free $100 Grocery E-Vouchers with every purchase of OLED evo 97G2 during this promotion period.
+s01960 (”LG”) from time to time will be deemed incorporated in these Terms and Conditions (“T&Cs”).
+s10063 Select your product details, fill in the serial number and upload photo of serial number a.
+s10094 Place of purchase b.
+s10113 • All intellectual property rights vested in or arising out of the redemption shall, at all times, belong to LG.
+s10191 LG reserves the right to reject any redemption where it is not made by the Customer whose name is stated in the required proof of purchase.
+s10280 Please check in-store or the LG Website for the most up-to-date information.
+s10355 Information contained herein is correct at time of printing or publishing.
+s10550 • Promotion does not apply to display set, trade, corporate or bulk purchases.
+s10817 Requests for extension of Redemption Period will not be entertained.
+s11031 • LG reserves the right to amend these Terms and Conditions without prior notice.
+s11034 Requests for delivery of gift(s) will not be entertained.
+s11133 • Gifts are STRICTLY while stocks last during Redemption Period, and not exchangeable for cash or other items.
+s11245 • By participating in this Promotion, each Customer warrants and agrees to be bound by these Terms and Conditions.
+s11549 • By participating in the Promotion, each Customer consents to LG’s collection, use, processing and disclosure (including to overseas third parties) of his/her personal data for the purposes of LG organizing, conducting, managing and administering this Survey, in accordance with these Terms and Conditions and LG Privacy Policy (http://www.lg.com/sg/privacy).
+s11749 • Customers are advised to check www.lg.com/sg (“LG Website”) for the most up-to-date information regarding availability of gift for redemption.
+s12125 • These T&Cs are governed by law of Republic of Singapore and their interpretation and application will be subject to the exclusive jurisdiction of the courts of Republic of Singapore.
+s12146 • Please note that LG promoters, retailers and dealers are not allowed to make redemption on behalf of Customers.
+s12169 In the event that a gift is fully redeemed, a notice will be published on LG Website to notify customers that the gift has been fully redeemed.
+s12220 For the avoidance of doubt, a “bulk purchase” shall mean 3 or more purchases of the same product model.
+s12366 By participating in the redemption, each participant hereby irrevocably assigns to LG a perpetual, world-wide, royalty free, irrevocable, non-exclusive license to use, reproduce, transmit, modify, translate, distribute, perform and display the Entry, in whole or in part and alone or as part of other works in any media, and to sublicense such rights, in whole or in part, to others for marketing purposes.
+s12529 Fill in your personal details • First name • Last name • Mobile number • Email address 3.
+s12534 • LG reserves the right to replace any gift with an item of a similar or other value without prior notice.
+s12583 • Each Customer represents and warrants that in respect of any personal data provided by him/her to LG is true and accurate.
+s12588 Photo of serial number (for TV products, please take photo of the serial number at the back of the physical product and not outside on the carton box) 5.
+s12762 Visit https://www.lg-redemption.com/register 2.
+s12768 Proof of purchase (original invoice, receipt, or order confirmation slip) 4.
+s13007 Promotions Terms & Conditions • This Promotion is open to residents of Singapore (“Customer(s)”).
+
+페이지 정보: 국가=VN, 유형=support_troubleshoot, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001451-20155102802037/
+문장:
+s00953 Tháo bàn chải quay ra khỏi vòi phun và loại bỏ bất kỳ mảnh vụn nào trước khi sử dụng lại máy hút.
+s01281 (Chế độ an toàn) Troubleshooting Thiết bị điện gia dụng 03/31/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+s01822 Kiểm tra bộ lọc sơ bộ và bộ tách bụi lớn Động cơ có thể không hoạt động nếu bộ lọc sơ bộ hoặc bộ tách bụi lớn bị tắc bởi các mảnh vụn.
+s01942 Loại bỏ bất kỳ mảnh vụn nào khỏi các bộ phận sau trước khi sử dụng lại máy hút.
+s10014 Kiểm tra các mảnh vụn trong thân sản phẩm, ống nối dài hoặc vòi phun Nếu chân không bị tắc nghẽn bởi các mảnh vụn, khiến động cơ quá nóng, nó sẽ tự động tắt như một biện pháp an toàn.
+s10020 Máy hút sẽ không hoạt động nếu bộ lọc bị tắc.
+s10427 Kiểm tra bàn chải quay Bàn chải quay có thể không hoạt động nếu các mảnh vụn bị kẹt trong đó.
+s10561 Thân sản phẩm Ống nối dài Vòi phun 2.
+s11238 Tham khảo hướng dẫn sử dụng để làm sạch bộ lọc và dải phân cách trước khi sử dụng lại máy hút.
+s11513 [LG CordZero A9] Máy hút hoặc vòi phun không hoạt động.
+s12046 Nguyên nhân và triệu chứng Máy hút sẽ không hoạt động nếu các mảnh vụn chặn thân sản phẩm, ống nối dài hoặc vòi phun.
+s12095 (Chế độ an toàn) Có vẻ như JavaScript đã bị tắt trong trình duyệt của bạn.
+s12197 Hướng dẫn này được tạo cho tất cả các kiểu máy, vì vậy hình ảnh hoặc nội dung có thể khác với sản phẩm của bạn.
+s12893 * Lưu ý: Nếu sự cố vẫn tiếp diễn, hãy liên hệ với Dịch vụ khách hàng của LG để được hỗ trợ thêm.
+s12958 Máy hút sẽ không hoạt động nếu có vật lạ vướng vào bàn chải quay của vòi phun.
+s13238 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Nguyên nhân và triệu chứng Máy hút sẽ không hoạt động nếu các mảnh vụn chặn thân sản phẩm, ống nối dài hoặc vòi phun.
+
+페이지 정보: 국가=VN, 유형=support_troubleshoot, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001453-20155269143134/
+문장:
+s00086 Trò chuyện với chúng tôi ngay Yêu cầu sửa chữa Vui lòng điền vào trường bắt buộc.
+s00422 Sau khi lịch sử duyệt web, cookie hoặc dữ liệu được lưu trong bộ nhớ cache của bạn bị xóa, bạn sẽ không thể khôi phục được.
+s00551 Product Register Product Registration Failed Gửi close btn Quay lại kết quả close btn Chọn Ctrl+V để dán.
+s00591 Trong cửa sổ bật lên [Chọn nội dung cần xóa], chỉ chọn [Lịch sử duyệt web] và [Hình ảnh và tệp được lưu trong bộ nhớ đệm].
+s00676 Xóa dữ liệu duyệt web có thể hữu ích khi bạn sử dụng PC dùng chung, muốn bảo vệ quyền riêng tư của mình hoặc gặp phải tốc độ duyệt web chậm hoặc lỗi trang web.
+s01004 Bạn có thể khám phá các tùy chọn hỗ trợ có sẵn, chẳng hạn như hỗ trợ trò chuyện hoặc thăm kỹ thuật viên, tùy thuộc vào khu vực của bạn.
+s01019 Cách xóa lịch sử duyệt web trong Microsoft Edge trên máy tính xách tay LG của bạn Troubleshooting SẢN PHẨM TIN HỌC 06/24/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+s01480 Thông tin này có hữu ích không?
+s01838 Menu cài đặt có thể thay đổi tùy theo kiểu máy.
+s01856 Mật khẩu và dữ liệu tự động điền Mật khẩu trang web, email, địa chỉ và thông tin biểu mẫu khác đã lưu.
+s01886 Để xóa lịch sử duyệt web của bạn trong Microsoft Edge, hãy chọn [Cài đặt và hơn thế nữa] ở góc trên bên phải, sau đó chọn [Cài đặt].
+s01972 * Có Không Bạn cần trợ giúp ngay lập tức?
+s10376 Tôi có thể giữ lại thông tin đăng nhập đã lưu và chỉ xóa lịch sử duyệt web của mình không?
+s10661 • Hướng dẫn này dựa trên các mô hình tiêu chuẩn.
+s10714 Lịch sử tải xuống Danh sách các tệp được tải xuống từ web.
+s10790 Xóa lịch sử duyệt web trong Microsoft Edge 1) Chọn [Cài đặt và hơn thế nữa] (biểu tượng ba chấm) ở góc trên bên phải của Microsoft Edge, sau đó chọn [Cài đặt].
+s10830 • Phí dịch vụ có thể áp dụng cho chuyến thăm của kỹ thuật viên nếu sản phẩm hết bảo hành.
+s10844 Tại sao tôi nên xóa dữ liệu duyệt web và những gì bị xóa?
+s10889 Các loại dữ liệu chính có thể bị xóa bao gồm: 1.
+s11107 5) Chọn hộp kiểm cho các loại dữ liệu duyệt web bạn muốn xóa, chẳng hạn như [Lịch sử duyệt web], [Cookie và dữ liệu trang web khác] hoặc [Hình ảnh và tệp được lưu trong bộ nhớ cache], sau đó chọn [Xóa ngay].
+s11292 2) Từ menu bên trái trên màn hình Cài đặt, chọn [Quyền riêng tư, tìm kiếm và dịch vụ].
+s11327 Phản hồi bài viết * Thông tin cần thiết 1.
+s11470 Tôi có thể khôi phục lịch sử duyệt web của mình sau khi xóa không?
+s11475 Vui lòng xem lại lựa chọn của bạn một cách cẩn thận trước khi chọn [Xóa ngay].
+s11528 Cookie và dữ liệu trang web khác Thông tin đăng nhập trang web và tùy chọn trang web đã lưu.
+s11563 Bạn sẽ cải thiện thông tin này bằng cách nào?
+s11565 Nếu các bước này không giải quyết được sự cố, hãy truy cập trang web của LG để được hỗ trợ thêm.
+s11609 Cách xóa lịch sử duyệt web trong Microsoft Edge Bước 1.
+s11818 Thao tác này không xóa các tệp đã tải xuống thực tế.
+s11872 3) Trong [Xóa dữ liệu duyệt web], chọn [Chọn nội dung cần xóa].
+s12004 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Để xóa lịch sử duyệt web của bạn trong Microsoft Edge, hãy chọn [Cài đặt và hơn thế nữa] ở góc trên bên phải, sau đó chọn [Cài đặt].
+s12076 Hình ảnh và tệp được lưu trong bộ nhớ cache Bản sao tạm thời của hình ảnh và tệp được lưu để giúp trang web tải nhanh hơn.
+s12296 Thao tác này sẽ lưu thông tin đăng nhập của bạn.
+s12419 Lịch sử chèo thuyền URL của các trang web bạn đã truy cập, cùng với ngày và giờ của mỗi lần truy cập.
+s12444 * 0 / 500 Ký tự Vui lòng điền vào trường bắt buộc.
+s12459 Cảm ơn bạn đã gửi phản hồi!
+s12537 4) Ở đầu cửa sổ bật lên, chọn [Giờ qua], sau đó chọn phạm vi thời gian bạn muốn, chẳng hạn như [24 giờ qua] hoặc [Mọi lúc].
+s12800 Bỏ chọn [Cookie và dữ liệu trang web khác], [Mật khẩu] và [Tự động điền dữ liệu biểu mẫu], sau đó xóa dữ liệu.
+s13020 Đăng nhập để tạo danh sách yêu thích Thêm mặt hàng vào danh sách yêu thích để bạn có thể dễ dàng tìm thấy mặt hàng này khi quay lại LG.com.
+s13100 Đi tới [Quyền riêng tư, tìm kiếm và dịch vụ], sau đó chọn [Chọn nội dung cần xóa] trong [Xóa dữ liệu duyệt web] để xóa các mục bạn muốn.
+
+페이지 정보: 국가=VN, 유형=support_troubleshoot, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001453-20155381409648/
+문장:
+s00195 Tập trung vào khu vực cụ thể này giúp bạn đạt được độ rõ nét tổng thể hình ảnh chính xác nhất.
+s00233 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Nếu hình ảnh chiếu bị mờ, hãy từ từ xoay núm lấy nét khi nhìn vào trung tâm trên màn hình.
+s00491 Keystone chỉnh sửa các hình dạng hình ảnh bị méo hoặc nghiêng (ví dụ, hiệu ứng hình thang).
+s00689 Nhẹ nhàng xoay núm cho đến khi văn bản hoặc hình ảnh trên màn hình trở nên sắc nét và rõ ràng.
+s00894 Ngừng quay ngay lập tức để tránh làm hỏng máy chiếu.
+s00940 Giữ máy chiếu ổn định trong khi điều chỉnh tiêu cự.
+s01228 Đảm bảo hình ảnh được đặt đúng vị trí trên màn hình.
+s01475 Nhấn nút nguồn và chờ hình ảnh chiếu xuất hiện trên màn hình.
+s01806 Tìm núm xoay trên thân máy chiếu điều khiển chuyển động lên xuống của hình ảnh.
+s01904 Nếu hình ảnh được đặt đúng vị trí nhưng vẫn bị méo, hãy sử dụng tính năng Keystone để chỉnh sửa hình dạng.
+s10170 Từ từ xoay núm xoay chuyển ống kính ngang để di chuyển hình ảnh sang trái hoặc phải.
+s10245 Bật máy chiếu và hiển thị hình ảnh trên màn hình.
+s10309 Xác định vị trí núm xoay chuyển ống kính dọc trên máy chiếu.
+s10498 Nếu hình ảnh không được đặt đúng vị trí, hãy sử dụng các núm xoay chuyển ống kính để di chuyển theo chiều dọc hoặc chiều ngang.
+s10617 Vặn núm này từ từ để hình ảnh căn chỉnh hoàn hảo trên màn hình.
+s10667 Điều chỉnh cho đến khi cả hai bên trái và phải của hình ảnh đều sắc nét và rõ nét.
+s10707 Vặn nhẹ nhàng núm số để căn chỉnh hình ảnh với chiều cao màn hình.
+s10741 Nguyên nhân hình ảnh chiếu lại bị mờ hoặc lệch hướng Hình ảnh chiếu có thể bị mờ nếu tiêu cự không được điều chỉnh đúng.
+s10781 Nếu một núm xoay không quay, hãy điều chỉnh nhẹ núm xoay đối diện ra khỏi giới hạn đó rồi thử lại.
+s10997 Đảm bảo hình ảnh chiếu hoàn toàn nằm trong ranh giới màn hình và được đặt đúng vị trí bạn muốn.
+s11030 Phạm vi điều chỉnh dịch chuyển ống kính có giới hạn không?
+s11037 Menu cài đặt có thể khác nhau tùy theo mẫu.
+s11040 Sự khác biệt giữa Lens Shift và Keystone là gì?
+s11255 Hãy nhìn vào tâm trên cùng của hình ảnh chiếu.
+s11282 Hướng dẫn điều chỉnh tiêu điểm máy chiếu Bước 1.
+s11460 Ngoài ra, hình ảnh có thể xuất hiện quá cao, quá thấp hoặc lệch tâm nếu ống kính máy chiếu không thẳng hàng với màn hình.
+s11729 Cẩn thận Tiếng lách cách cho biết núm xoay đã đạt giới hạn.
+s11898 Nếu hình ảnh trông giống hình thang sau khi định vị, hãy vào menu cài đặt và áp dụng hiệu chỉnh Keystone để tạo thành hình chữ nhật hoàn hảo.
+s12129 Kiểm tra tổng thể hình ảnh để đảm bảo cả bên trái lẫn bên phải đều bị mờ, và tìm điểm lấy nét tối ưu.
+s12163 Nếu hình ảnh chiếu bị mờ, hãy từ từ xoay núm lấy nét khi nhìn vào trung tâm trên màn hình.
+s12396 Nếu hình ảnh vẫn bị méo, hãy sử dụng tính năng Keystone để chỉnh sửa hình dạng.
+s12579 Từ từ xoay núm xoay chuyển ống kính dọc để di chuyển hình ảnh lên hoặc xuống.
+s12619 Từ từ xoay núm lấy nét sang trái hoặc phải trong khi nhìn vào trung tâm trên cùng của hình ảnh.
+s12789 Hướng dẫn này dựa trên các mô hình tiêu chuẩn.
+s12799 Dịch chuyển ống kính di chuyển hình ảnh lên, xuống, trái hoặc phải mà không di chuyển máy chiếu.
+s12911 Việc điều chỉnh theo chiều dọc và chiều ngang ảnh hưởng lẫn nhau.
+s12926 Nếu thấu kính đạt giới hạn tối đa theo một hướng, nó có thể không di chuyển theo hướng còn lại.
+s13123 Giữ thiết bị chắc chắn, vì bất kỳ chuyển động nào cũng khiến việc điều chỉnh tiêu điểm chính xác trở nên khó khăn.

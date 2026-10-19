@@ -1,0 +1,223 @@
+페이지 정보: 국가=UK, 유형=buying_guide, URL=https://www.lg.com/uk/buying-guides/laundry-spec-library/
+문장:
+s01787 With 3D Multi Spray and an Inverter Pump, it uses water efficiently while delivering a fast, thorough clean that’s gentle on fabrics.
+s01812 Make sure to read clearance space requirements for your model before ordering.
+s01947 How can Laundry Appliance features and terms help you quickly understand what they mean?
+s10028 Save time and effort with an LG smart pairing ™ dryer that syncs and auto-selects drying programs.
+s10312 This is because the drying process requires more space in the drum, allowing hot air to circulate efficiently to dry your items.
+s10334 *Features may vary by model or capacity.
+s10338 *Product images are for illustrative purposes only and may differ from the actual product.
+s10425 When using a washer dryer, either reduce the washing load or remove some items before you switch from wash to drying mode.
+s10435 LG recommends plugging your washing machine directly into the mains power, not via an extension cord.
+s10453 The LG ThinQ ™ app allows you to connect with your washer like never before.
+s10493 Measured in kilograms, this figure tells you how much laundry can fit in one load.
+s10594 Start your load with just the tap of a button.
+s10613 Please see each product page for detailed specifications.
+s10624 *Support for some features may vary by region and country.
+s10687 Remote control Control your laundry anytime, anywhere.
+s10987 There must be enough space behind and around your washing machine for piping and installation.
+s11002 With features and terms displayed in clear card form, you can instantly see what each one means and understand its role.
+s11065 Inverter Direct Drive ™ LG Washing Machine appliances are powered by intelligent Inverter Direct Drive ™ technology.
+s11103 When choosing a washer dryer, make sure the drying capacity meets your needs.
+s11156 AI DD ™ LG’s AI DD ™ detects fabric type and weight, adjusting the wash for tailored care.
+s11381 The results may be different depending on the clothes and environment.
+s11410 Which Laundry Appliance is right for you?
+s11422 Measure and plan the access route beforehand as installation might otherwise cause problems.
+s12172 Check there is enough clearance in front of your washing machine to open the door.
+s12280 DirectDrive ™ technology combined with artificial intelligence in LG appliances draws on the power of big data to deliver an even more effective and intelligent washing machine to meet your laundry needs.
+s12388 *Support for smart home devices compatible with Alexa and Google Assistant may vary by country and your individual smart home setup.
+s12390 Stacking is a good way to save floor space – but do check there is a compatible stacking kit for your washer and dryer.
+s12549 Drying Capacity The drying capacity of a Washer Dryer is generally smaller than its wash load capacity.
+s12600 Think about how you will get your washing machine to its final destination.
+s12737 DirectDrive ™ motors mean that your washing drum is operated directly by an inverter motor without a belt or pulley—fewer moving parts mean less to go wrong.
+s12739 LG’s auto-dosing ezDispense ™ technology senses the weight of your laundry load and automatically adds exactly the right amount of detergent every time.
+s12899 Super convenient and good for the environment.
+s12959 *AI DD ™ is available in 3 cycles.
+s12992 Removes the risk of over-dosing, saves you time, and helps prolong the life of your clothing.
+s13022 *Usage of this function requires the washer and dryer to be connected to your home Wi-Fi network and registered within the LG ThinQ ™ smart application.
+s13046 ALL 19 Capacity & Size 3 Performance 7 Smart & Convenience 3 Efficiency & Durability 6 Washing Capacity Laundry volume per load AI DD ™ Tailored fabric care Smart Pairing ™ Seamless washer dryer connection Inverter Direct Drive ™ Less noise and vibration Product Dimensions Space requirements at a glance TurboWash ™ 360° Fast and thorough cleaning Remote control App-based washer control Energy Monitoring Power usage at a glance Drying Capacity Load limits for drying ezDispense ™ Automatic deterge
+s13142 *Support for smart home devices compatible with Alexa and Google Assistant may vary by country and your individual settings.
+s13205 TurboWash ™ 360° Complete care in 39 minutes.
+s13254 It’s only the depth that changes depending on the drum size.
+
+페이지 정보: 국가=UK, 유형=experience, URL=https://www.lg.com/uk/lg-experience/buying-guide/
+문장:
+s11539 LG EXPERIENCE Essentials Tech that improves your daily life ENTERTAINMENT APPLIANCES PC PRODUCTS TV Explore Audio Explore Wireless Earbuds Explore InstaView Explore Washing Explore Styler Explore Laptops Explore Monitors Explore Beamers Explore Your email has been successfully registered.
+
+페이지 정보: 국가=UK, 유형=experience, URL=https://www.lg.com/uk/lg-experience/buying-guide/choosing-the-best-type-of-fridge-freezer/
+문장:
+s00346 That’s why our 2025 recommendations cover the best LG fridge freezer models in a range of categories, ensuring there’s a perfect fit for your budget, lifestyle, and design taste.
+s00357 Beyond the up-front cost, a fridge freezer becomes part of your family’s rhythm—responsible for storing food fresh and keeping your bills as low as possible.
+s00493 Here’s why it’s our best overall pick for 2025: Learn More *10-year Warranty on Smart Inverter Compressor (Parts only).
+s00506 Our Expert Picks: the Best LG Fridge Freezers for Every UK Home in 2025 No two households are the same.
+s00550 ✓  Long-lasting reliability : Less wear and tear means your fridge freezer lasts for years (with that 10-year warranty as a safety net).
+s00605 According to a recent BBC report , electricity prices have more than doubled in just a few years, with a graph revealing little relief in sight.
+s00623 Check the capacity in litres Bigger isn’t always better.
+s00647 Check the warranty LG offers up to 10 years on the compressor.
+s00697 Special vents and rapid air circulation ensure everywhere is equally cold, keeping everything from milk to leftovers as safe as the back row.
+s00792 So today, we’ll explore how the best-rated fridge freezers in 2025, especially from LG, are more than just a kitchen essential—they’re a wise investment for your wallet and our planet.
+s00960 Here’s how each of our core technologies translates to practical benefits: LinearCooling™ It’s no secret: inconsistent temperatures speed up spoilage.
+s01003 How the energy price cap has changed If you’re a UK homeowner, you’ve probably felt the pinch from soaring electricity bills and the frustration of having to throw out forgotten or spoiled food.
+s01157 LG’s exclusive LinearCooling™ maintains a rock-solid temperature (fluctuating barely ±0.5°C)—meaning your groceries stay in the safe “fresh zone” for up to seven days longer.
+s01292 Backed by a 10-year parts warranty, it gives total peace of mind.
+s01319 Since 2021, energy costs have climbed to levels never seen before—and while they’ve found some stability, bills remain a heavy burden for most households.
+s01545 An older or less efficient model quietly drives up your energy bill every month.
+s01607 Remember to register your appliance Registered products qualify for rapid safety notifications and recall support (more below).
+s01649 Large families store differently than single professionals, and kitchen spaces come in every imaginable shape and size.
+s01859 That’s decades of peace of mind.
+s01905 LinearCooling™ It’s no secret: inconsistent temperatures speed up spoilage.
+s01910 ✓ DoorCooling+™ and LinearCooling™ : These systems cool evenly and rapidly, with temperature fluctuations kept to just ±0.5°C.
+s01989 *10-year Warranty on Smart Inverter Compressor (Parts only).
+s10007 That’s a big deal because stable temperatures mean fresher food for longer, which helps prevent costly spoilage.
+s10159 ✓  Instaview™ technology : A sleek glass panel lights up with a double knock, allowing you to check the contents without opening the door.
+s10172 DoorCooling+™ DoorCooling+™ directs cool air right to the inside of the door, tackling a common weakness—door shelves that warm up faster from frequent opening.
+s10507 Odd as it may sound, your fridge freezer has a much bigger role to play in this than you might think.
+s10511 Over ten years, a highly efficient fridge freezer can save you several hundred pounds, compared to older, inefficient ones.
+s10675 ✓  Food waste : Poor temperature management and uneven cooling cause food to spoil quicker.
+s10742 Many families are looking for ways to reduce daily expenses while adopting practices that encourage more responsible and efficient use of resources.
+s10756 LG’s Total No Frost design blows cold air through multiple vents, keeping the interior frost-free while ensuring every item chills evenly.
+s10950 LG’s Smart Inverter Compressor™, built into every model we’ve spotlighted, reads internal and external conditions and instantly adjusts to use only the power needed.
+s11003 LG’s innovative fridge freezers don’t just look smart—they work smart, solving daily headaches like food spoilage and surprise power bills through unique, user-centric features.
+s11502 Measure your space Check both width and depth.
+s11698 Fridge Freezer Buying Checklist: 7 Things to Check Before You Buy It’s easy to get swept away by fancy features or bold designs, but here are seven essentials every UK shopper should tick off before making their final fridge freezer decision: 1.
+s11826 Consider the Frost-Free feature No more scraping ice!
+s11830 How our smart fridge freezers help you save money and reduce food waste Let’s talk specifics.
+s11883 With electricity costs holding steady at record highs, and food waste costing the average UK household hundreds each year, choosing the right appliance may shield your family budget from unnecessary losses.
+s11943 BUYING GUIDES How to Choose the Best Fridge Freezer – Top Rated Picks By LG UK In today’s environment, every saving counts.
+s11953 Smart Features (ThinQ™) With ThinQ™1), you can: ✓  Monitor temperatures : Check and control your fridge remotely for total peace of mind.
+s11984 Nearly all of LG’s latest line-up features total no frost.
+s12214 ✓  Learn and smartly adjust : The Smart Learner™ system tracks your patterns (like when you’re most likely to open the fridge) and pre-adjusts settings to avoid energy or cooling loss.
+s12215 The benefits add up fast: ✓  Lower electricity costs : You only use the energy you truly need.
+s12315 Total No Frost Manual defrosting is a chore nobody misses, and ice build-up reduces efficiency by blocking airflow and making your freezer work twice as hard.
+s12387 These smart touches keep everything simple for you, while driving down waste and running costs behind the scenes.
+s12423 Check for reversible doors In smaller kitchens, doors that switch direction can avoid space headaches.
+s12441 Listen for the noise level (in dB) If your kitchen is part of an open plan, opt for quieter models—your future self will thank you.
+s12748 ✓  Smart Inverter Compressor™ : Adjusts motor speed based on demand, running quietly and efficiently.
+s12758 Let’s break it down: ✓  Energy cost : The fridge freezer is one of only a few appliances that run 24/7, year in and year out.
+s12759 Size to your household’s needs; smaller households often benefit from models with more organised space rather than sheer volume.
+s12811 Remember to allow a little space behind for ventilation, and make sure it’ll fit through your doors!
+s13045 Warm spots mean forgotten yoghurts or vegetables wilt faster, while cold spots ruin texture and taste.
+s13082 Why choosing the right fridge freezer matters Replacing your fridge freezer isn’t just a routine chore—it’s an opportunity to make a strategic upgrade for the long run.
+
+페이지 정보: 국가=UK, 유형=pdp, URL=https://www.lg.com/uk/monitors/gaming/27g810a-b/
+문장:
+s00131 Certified with a widely adopted technology Powered by AMD FreeSync™ Premium, NVIDIA-validated G-SYNC® compatibility, and VESA AdaptiveSync™ certification, this monitor ensures tear-free, ultra-smooth visuals and low latency, delivering unmatched gaming precision and fluidity.
+s00262 *Select ’Faster Mode’ to perform ‘1ms Response Time’.
+s00410 Enjoy Dual-Mode with selectable options and easily choose your favourite screen size among two refresh rate (180Hz, 360Hz) through the On-Screen Display.
+s00615 Also, you can feel even more immersive with virtual 3D sound with DTS Headphone:X.
+s00621 Plus, you can easily switch between a physical hotkey or keyboard shortcut via LG Switch, optimising gameplay across all genres.
+s00653 4-pole headphone out Plugin for immersive sound effect Enjoy your games while having voice chat by connecting easily with 4-pole headphone out.
+s00878 Dominate with the ideal size Our 27-inch gaming monitor with 4K resolution delivers native 4K UHD clarity right out of the box.
+s00997 A clutter-free L stand and wide-range swivel adjustment are designed to minimise desk space usage and eliminate dead space efficiently.
+s01091 DisplayHDR 600 | DCI-P3 99% Immerse in true colours, conquer the game Our gaming monitor supports a wide colour spectrum, DCI-P3 95% coverage, expressing high-fidelity colour for reproducing with VESA DisplayHDR™ 400, enabling a realistic gaming experience.
+s01273 Overwhelming speed, diving into gaming The ultra-fast 1ms response time (GtG), reducing reverse ghosting and providing fast response time, lets you to enjoy a whole new gaming performance.
+s01276 Print Key Spec Display - Size [Inch] 27 Display - Resolution 3840 x 2160 Display - Panel Type IPS Display - Aspect Ratio 16:9 Display - Color Gamut (Typ.) DCI-P3 95% (CIE1976) Display - Refresh Rate (Max.) [Hz] 180 Display - Response Time 1ms (GtG at Faster) Mechanical - Display Position Adjustments Tilt/Height/Swivel/Pivot See All Specs Close All Spec INFO Product name UltraGear Year Y25 DISPLAY Size [Inch] 27 Size [cm] 68.4 Resolution 3840 x 2160 Panel Type IPS Aspect Ratio 16:9 Pixel Pitch [m
+s01455 *The images simulated to enhance feature understanding.
+s01786 Clutter-free, sleek design Experience our hexagon lighting and 3-side virtually borderless design featuring a fully adjustable base with swivel, tilt, and height.
+s01794 Swivel -30° ~ 30° Tilt -5° ~ 21° Height 130mm Pivot Bi-direction HDMI™ 2.1 x2 DisplayPort 1.4 x1 with DSC *Images have been simulated to enhance feature understanding, and may differ from actual use experience.
+s01875 When you crave extra speed, switch on Dual-Mode: enjoy 4K at 180 Hz for balanced detail and fluidity, or jump to Full HD at 360 Hz for maximum frame pacing—all sustained by a 1ms GtG response that keeps every motion razor-sharp.
+s01995 Dual-Mode with selectable options switches between 360Hz - 185Hz With VESA Certified Dual-Mode, seamlessly switch between 4K UHD 180Hz for graphically rich games and FHD 360Hz for fast-paced action.
+s10016 *The performance of 'Dual-Mode' may vary depending on the game type, computer graphics specifications, and configurations.
+s10358 *Images have been simulated to enhance feature understanding, and may differ from actual use experience.
+s10867 It may differ from actual use.
+s11151 (Game Adjust → Response Time → Faster Mode).
+s11627 *Headsets sold separately.
+s11751 *The performance of the feature is compared to the models not applying the sync technology.
+s12369 Black Stabiliser Black Stabiliser helps gamers detect snipers lurking in the darkest corners and swiftly navigate through flash explosions.
+s12468 Crosshair The target point is fixed in the center to enhance shooting accuracy.
+s12871 *Errors or delays may occur depending on the network connection.
+s13025 Dynamic Action Sync Reducing input lag with Dynamic Action Sync, gamers can catch critical moments in real-time and respond quickly.
+
+페이지 정보: 국가=UK, 유형=promotion, URL=https://www.lg.com/uk/promotion/40-off-second-tv/
+문장:
+s00136 2) Membership Discount - For your purchases as an LG.com Member, you receive a 2% membership discount to redeem in the LG online store for all orders.
+s01680 Chat with Us Get your answers from our virtual assistants.
+s10187 Repair Request Request repair service conveniently online.
+s10335 Welcome voucher may not be valid in conjunction with other offers.
+s10576 Please refer to our Delivery Terms and Conditions for postcode specific charges.
+s10746 Voucher code must be applied to shopping cart to redeem this offer.
+s10932 Welcome voucher is valid for the first 90 days since sign-up.
+s10973 Products can only be delivered within UK area.
+s11170 Product Support Find manual, troubleshoot and warranty of your LG product.
+s11436 Sign In Join Us Welcome Voucher Get 5% off your first purchase when you join Exclusive Pricing Receive an extra 2% membership discount Free Delivery On all orders purchased on LG.com Additional fees may apply based on region 1) Welcome 5% Discount Voucher - Receive a Welcome Voucher giving a 5% discount on your first purchase when you join.
+s11537 Call Us Speak directly with our support representatives.
+s11964 LG provides free delivery service to members only.
+s12189 This is valid as long as the LG membership policy is maintained.
+s12202 Get Support Order Support Track your order and check order FAQ.
+s12234 Delivery of the Product(s) does not include installation, except where we expressly specify otherwise at the time of ordering on our LG Online Store.
+s12569 Voucher is only valid for products, including accessories, purchased online at lg.com/uk.
+s12605 3) Free Delivery for members.
+s12796 Postcode-related delivery fees are not covered by membership benefits.
+s13122 Shop and save with promotions and discounts from LG UK Become an LG Member Enjoy all the benefits of FREE LG membership, from special discounts to exclusive services and offers.
+
+페이지 정보: 국가=UK, 유형=promotion, URL=https://www.lg.com/uk/promotion/big-tv-offers/
+문장:
+s00684 Join Us Become an LG Member Enjoy all the benefits of FREE LG membership, from special discounts to exclusive services and offers.
+s00906 Buy Now Terms & Conditions Member benefits Receive a Welcome Voucher with 5% off, plus a 2% member discount on your first purchase when you become an LG.com member.
+s01247 A 2% member discount applies to all subsequent orders.
+s01305 Explore big offers on LG TVs Successfully added to your basket Continue Shopping View Basket The restocking notification has already been updated.
+s01815 Not applicable with any other promotion.
+s10392 Free Delivery for members.
+s10437 Close Member login You are not logged in, please log in to continue Close OK Trending Offers Up to 60% off selected Soundbars when you buy an eligible TV Buy Now Terms & Conditions Extended 5 year warranty on LG TVs on all OLED and QNED TVs Buy Now Terms & Conditions Trade-Up, any brand Trade up your older appliances and tech to get an instant discount.
+s10909 Buy Now Terms & Conditions Multi-buy Additional 2% membership discount automatically applies when logged in.
+s12803 Supporting the Red Roses!
+
+페이지 정보: 국가=UK, 유형=support_troubleshoot, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00001302-20155060990113
+문장:
+s01900 It does not work during Dehumidification or standalone Air Purification
+s01970 This guide was created for all models, so the images or content may be
+s10083 Function Display The function name and how it appears on the display may vary by model.
+s10116 Depending on the model, it may be labeled as Jet Mode, Power Cooling,
+s10137 Thank you for your feedback!
+s10548 Ice Cool Power, Super Cool Power, Turbo Z, etc.
+s11025 * Yes No Need immediate help?
+s11495 Power Cooling is only available during Cooling operation.
+s11670 Article Feedback * Required Fields 1.
+s11801 different from your product.
+s11930 * 0 / 500 Characters Please fill out the required field.
+s12023 Product Register Product Registration Failed Submit close btn Return to results close btn Select Ctrl+V to paste.
+s12043 Close At a glance The SP, CP, and PO codes appear when Power Cooling is enabled.
+s12582 The URL has been copied to the clipboard.
+s12667 [LG Air Conditioner Error Code] The display shows SP, CP, and PO Troubleshooting HVAC 03/03/2026 Print Share Support Share this content.
+s12906 Your email has been successfully registered.
+s12953 Chat with us now Request a repair Please fill out the required field.
+s13152 The fan speed and set temperature are automatically adjusted.
+s13185 standard cooling mode.
+
+페이지 정보: 국가=UK, 유형=support_troubleshoot, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008386-20155021554412/
+문장:
+s00280 Close As the Secure Boot certificate is set to expire in June 2026, Microsoft is distributing a new certificate.
+s00527 Enter the code, then click [Verify].
+s00669 In collaboration with Microsoft, LG Electronics has already applied the new certificate to models released in 2024 and later.
+s00723 Secure Boot is a critical security feature that helps prevent malware by ensuring only trusted software runs during startup.
+s00998 Turn on the PC and immediately press [F2] repeatedly (3–4 times) to enter BIOS setup.
+s01042 Models released before 2024 or those not on the support list may not have a separate BIOS update available.
+s01135 How to disable BitLocker Windows 11: On the Taskbar, select [Start] → [Settings] → [Privacy & security] → [Device encryption] → [Off].
+s01706 Windows 10: On the Taskbar, select [Start] → [Settings] → [Update & Security] → [Device encryption] → [Turn off].
+s01808 For older models, the new certificate has been rolling out through Windows Update since the second half of 2025.
+s10071 BitLocker Recovery Screen If the BitLocker recovery screen appears, enter your BitLocker recovery key.
+s10122 If you have lost the key, use a smartphone or another PC to access the Microsoft BitLocker Recovery Key page to unlock the device.
+s10299 However, if your PC fails to boot or displays the BitLocker screen after the update, please change [Secure Boot] to [Disabled] in the BIOS or enter your BitLocker recovery key.
+s10331 Find Your BitLocker Recovery Key via Microsoft Account.
+s10396 However, the new certificate is automatically installed via Windows Update, so no further action is required.
+s10533 On most LG PCs, the Secure Boot certificate update completes automatically via Windows Update, so no further action is required.
+s10597 Will My PC Be Affected if the Secure Boot Certificate Expires?
+s10749 Once you’re in BIOS setup, press [F9] to select [Load Setup Defaults].
+s10795 [LG PC] Windows Secure Boot Certificate Update & Troubleshooting Guide Troubleshooting Computing 06/02/2026 Print Share Support Share this content.
+s10825 ※ Options: Email, Text message, or Voice Message.
+s10936 Select [Secure Boot Option] or [Secure Boot] and set it to [Disabled] (Off), then press [Enter].
+s10941 Type [msinfo32] and press [Enter].
+s10947 In the [System Information] window, check the [Secure Boot State].
+s11012 How to Check if Secure Boot is Enabled Press [Windows] + [R] on your keyboard to open the Run dialog box.
+s11020 Find the 48-digit recovery key that matches your [Device Name] and [Key ID], then use it to unlock BitLocker.
+s11066 When the BIOS menu appears, use the arrow keys on the keyboard to navigate to the [Security] tab.
+s11199 If you have manually updated the new certificate and then reset the BIOS to its default settings (Load Default), the new certificate information may be lost.
+s11223 Even if the certificate expires, Windows Update will continue to work normally, and you shouldn’t see major issues in everyday use.
+s11448 Off: Secure Boot is disabled.
+s11464 This can lead to boot failures or trigger a BitLocker Recovery.
+s11525 ※ Note: Menu names may vary by model.
+s11581 Use a smartphone or another PC to access the Microsoft BitLocker Recovery key page.
+s11590 Turn on the PC and immediately press [F2] repeatedly.
+s11615 Check the 7-digit Microsoft account [Security code] sent to the email address you entered.
+s11828 Once the settings are complete, press [F10] to save the changes.
+s11873 How to Fix Boot Issues or BitLocker Screen After an Update In rare cases, boot failures may occur, or the BitLocker (device encryption) recovery screen may appear during the new certificate update process.

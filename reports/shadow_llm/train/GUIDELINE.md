@@ -110,3 +110,32 @@ citable / definition = y (kept or added):
   - PDP header with concrete feature names (Multi-Air Flow, Smart Diagnosis, ENERGY STAR) = citable y.
 summary: article-body "key features" lists and PDP spec headers are NOT summary (summary is decided by the #35 DOM rule in production).
 Note: the reviewer's calls are not perfectly consistent (e.g. "Air Fry circulates hot air…" = n but "AI engine analyses every frame" = y); when in doubt choose n.
+
+## v3 relabel — consolidated strict standard (2026-10-20) — THIS SECTION OVERRIDES EVERYTHING ABOVE
+Derived from three reviewer passes (batch-1 review, 186-sentence model-disagreement review, 418-sentence troubleshoot review).
+In every pass the reviewer flipped most y labels to n. The reviewer's real question is:
+**"Would an AI answer engine copy this sentence verbatim as a FACT about a specific LG product, technology, spec, standard or error code?"**
+If not clearly yes → n. Expected rates on LG.com body text: citable y ≈ 4–10 %, definition y ≈ 2–5 %.
+
+citable = y ONLY when the sentence is self-contained (subject named in the sentence, not "it/this/these") AND carries at least one of:
+  - a spec/number with its meaning (capacity, temperature range, pressure, size, response time, refresh rate, energy rating, % result with test basis in the same sentence)
+  - a named standard / certification / compatibility (NVIDIA G-SYNC Compatible, ENERGY STAR, VESA DisplayHDR 400, webOS 22+ only)
+  - a model-year / model-range applicability stated as a full sentence ("Time Machine is supported only on models released before 2021")
+  - an error code / indicator with its meaning ("CH04 indicates a drain problem caused by …")
+  - a concrete technical mechanism of a named LG technology with a verifiable claim ("R1 Compressor reduces noise by up to 4 dB")
+citable = n (always), even if well written:
+  - feature-benefit / what-it-lets-you-do descriptions ("X lets you control…", "X helps keep food fresh", "enjoy immersive sound")
+  - recommendations, usage tips, how-to steps, button presses, menu paths, settings instructions (unless the sentence states a product spec/installation spec number)
+  - hedged causes ("may be", "usually because", "could be") and generic causes
+  - spec fragments / attribute strings without a predicate, key-feature lists run together, product name + spec list
+  - footnotes, asterisk notes, test-condition notes, "results may vary", model-applicability footnotes
+  - press-release boilerplate, datelines, quotes from executives, survey stats in PR copy, event/booth announcements, awards without source
+  - prices, promotions, financing, warranty, delivery, coupons, membership, contacts, legal, cookie/JS notices, navigation, titles, questions
+definition = y ONLY when the sentence names the thing and states WHAT IT IS ("X is a … / X refers to … / X는 ~이다 / X es un …"),
+  or what a named code/indicator MEANS. Includes general (non-LG) term definitions (set-top box, MAC address) — those are definition y but citable n.
+definition = n: what a feature does or enables, benefits, company profiles ("LG is a world-leading …", "About LG …"), sequences/step lists,
+  sentences whose subject is "this/it/there", product name + features.
+summary = n for everything except a genuine page-level overview sentence ("This guide explains how to …", "In this article: …").
+  Key-feature lists, PDP spec headers, article lists, titles = n (summary is decided by the #35 DOM rule in production).
+For page type support_troubleshoot also apply reports/shadow_llm/train/GUIDELINE_TS.md including its "검수자 보정" section.
+When unsure → n.
