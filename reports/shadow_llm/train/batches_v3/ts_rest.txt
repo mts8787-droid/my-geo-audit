@@ -1,0 +1,191 @@
+페이지 정보: 국가=US, 유형=support_troubleshoot, URL=https://www.lg.com/us/support/help-library/lg-air-conditioner-why-is-water-dripping-or-condensation-forming-on-the-air-conditioner-CT10000014-20155363574975
+문장:
+s10302 If the filter is dirty, dust can mix with water, which may clog the drain hose and cause leaks.
+s10400 Weak Cooling and Water Leakage If your air conditioner is malfunctioning or low on refrigerant, the refrigerant may not circulate properly through the cooling coils, leaving some parts of the coils warm.
+s10502 If this happens, gently move the pump side to side to free the sensor and resume normal operation.
+s10506 Keep the air outlet wide and the fan speed high.
+s10614 The air conditioner cools well, but water is pooling under the unit Remove any blockage from the drain hose.
+s10662 To prevent this, empty the water container regularly so that the hose does not become submerged.
+s10679 Water droplets around the vent or pipes When you use the cooling mode, you may notice some condensation.
+s10723 This happens when the cool air from your AC meets the warm air in the room.
+s10805 When this happens, water may drip onto the floor instead of flowing evenly.
+s10843 This is normal and occurs when warm indoor air meets cool air from the air conditioner.
+s10919 This can cause weak cooling and water leakage under the unit.
+s11214 ➔ If the hose is too long and lies horizontally, it may sag or bend.
+s11289 Once the room reaches the set temperature, condensation will stop.
+s11469 Test the outlet by plugging in another device, such as a hair dryer, to make sure it’s working.
+s11478 To reduce condensation, set the air vents to a wider angle and increase the fan speed.
+s11796 To refill the refrigerant, we recommend contacting LG Support for professional service.
+s11809 Ensure the drain hose is straight and free of bends.
+s11850 The drain pump needs its own power source, separate from the air conditioner.
+s11907 If you are unable to perform this repair yourself, please contact LG Support for assistance.
+s11915 If the hose has severe bends and you cannot fix it yourself, please contact LG Support for assistance.
+s11993 It’s similar to how water droplets form on a cold bottle taken out of the refrigerator.
+s12056 Make sure the end of the drain hose is not submerged in water when connected to a container.
+s12128 Clean the ultra-fine filter regularly.
+s12186 ➔ Insert the drain hose firmly into the pump.
+s12193 After removing the filter, use a vacuum cleaner or gently clean it with a soft brush.
+s12262 Skip to Contents Skip to Accessibility Help Help library Find helpful information about your LG product [LG Air Conditioner] Why is water dripping or condensation forming on the air conditioner?
+s12271 Ensure the drain hose is securely connected to the pump.
+s12312 If you find a blockage, disconnect the hose at the middle joint or at the end, and clean it using compressed air.
+s12322 Filter location and removal steps may differ by model, so check your user manual.
+s12389 Gently shake the drain pump from side to side.
+s12398 Once the humidity drops, the condensation will go away.
+s12718 ➔ Use a dry towel to wipe off any moisture on the air conditioner’s surface.
+s12766 On hot and humid days, avoid setting the air outlet to a narrow angle with low fan speed for long periods.
+s12775 This can create greater temperature and humidity differences, which may lead to condensation and water leakage.
+s12853 Shorten the hose if possible.
+s12873 If the hose is underwater, water may flow back into the unit and cause leakage.
+s13073 When the indoor humidity is high, moisture in the air condenses more quickly, so you’ll see more condensation.
+s13099 When you use cooling mode in these conditions, moisture in the air can quickly turn into droplets, which may look like water forming on the vent or even mist coming out.
+s13184 If the hose is disconnected or torn, reconnect it securely and wrap the connection point with electrical tape.
+s13201 Once the room reaches your desired temperature, the condensation will disappear.
+
+페이지 정보: 국가=US, 유형=support_troubleshoot, URL=https://www.lg.com/us/support/help-library/lg-dishwasher-why-is-cl-showing-on-the-display-and-buttons-not-responding-CT10000009-20155118238912
+문장:
+s00105 Submission form temporarily unavailable to (GMT -05:00, United States of America local time) We apologize for this inconvenience.
+s00581 Close Related Help Library See more See more html Request a Repair Setup a repair request for your appliance or other electronic device START SERVICE REQUEST Register a Product Get the most out of your LG product by registering!
+s00622 Need immediate help?
+s00748 Contact us for all your product questions or concerns.
+s00926 As long as the dishwasher is powered on, you can disable Child Lock at any time by pressing and holding the [Child Lock] button for 3 seconds.
+s00979 Press and hold the [Child Lock] button on the control panel for 3 seconds.
+s01006 Therefore, when you turn the dishwasher back on, the buttons will still be unresponsive.
+s01090 Skip to Contents Skip to Accessibility Help Help library Find helpful information about your LG product [LG Dishwasher] Why Is 'CL' Showing on the Display and Buttons Not Responding?
+s01555 To disable Child Lock, make sure the dishwasher is turned on, then press and hold the Child Lock button for 3 seconds.
+s01885 A lock icon lights up on the display, or "CL" appears on the screen.
+s01889 Troubleshooting Dishwashers 04/08/2026 html Print Email Copy Link Share If your LG dishwasher displays "CL" and the buttons are unresponsive, the Child Lock feature is active.
+s01976 Once the "CL" indicator or lock icon disappears from the display, select your desired cycle.
+s10030 Was this information helpful?
+s10156 * YES NO Please fill out the required field.
+s10175 Why Is "CL" Appearing on My Dishwasher?
+s10196 How can we improve the information?
+s10251 If the issue persists, contact LG Customer Support for further assistance.
+s10436 How to Disable Child Lock 1.
+s10510 In order to get the best possible experience from our website, please follow below instructions.
+s10601 If the buttons remain unresponsive after disabling Child Lock, check the control panel surface for moisture or debris and wipe it clean with a soft cloth.
+s10646 Please note that this is not a malfunction.
+s10783 I've disabled Child Lock, but the touch buttons are still unresponsive.
+s10983 How would you improve the information?
+s11057 | LG USA Support JavaScript appears to be disabled in your browser.
+s11061 Close RETURN TO RESULTS is copied.
+s11117 Register Now Parts & Accessories Find genuine Parts and Accessories for your LG products Shop Now Need to Contact Us?
+s11158 If the buttons are unresponsive after powering on, disable Child Lock before use.
+s11200 This guide was created for all models, so the images or content may be different from your product.
+s11340 Select Ctrl+V to paste Close Transfer complete.
+s11372 All cycle and option buttons are disabled.
+s11647 Characters left : 140 / 140 Submit Thank you for your feedback!
+s11726 Press the [Power] button to turn on the dishwasher.
+s11806 This safety feature prevents unintended use.
+s11807 Child Lock Is Active Child Lock is a safety feature designed to prevent accidental operation by children.
+s12173 Chat with us now Request a repair 1-1.
+s12180 Can I disable Child Lock while a wash cycle is running?
+s12229 Frequently Asked Questions (FAQ) Q.
+s12488 If you're using Internet Explorer 9 or earlier, you will need to use an alternate browser such as Firefox or Chrome or upgrade to a newer version of internet Explorer (IE10 or greater) .
+s12606 * Please fill out the required field.
+s12615 Thank your for your feedback.
+s12629 Please enable JavaScript to ensure you get the most out of the LG site, products, and services To properly experience our LG.com website, you will need to use an alternate browser or upgrade to a newer version of internet Explorer (IE10 or greater).
+s13104 OK Submit failed due to system error.
+s13127 Important * Note: Child Lock remains active even if you turn the dishwasher off and on again after a cycle ends.
+
+페이지 정보: 국가=VN, 유형=support_troubleshoot, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001451-20155102802037/
+문장:
+s00953 Tháo bàn chải quay ra khỏi vòi phun và loại bỏ bất kỳ mảnh vụn nào trước khi sử dụng lại máy hút.
+s01281 (Chế độ an toàn) Troubleshooting Thiết bị điện gia dụng 03/31/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+s01822 Kiểm tra bộ lọc sơ bộ và bộ tách bụi lớn Động cơ có thể không hoạt động nếu bộ lọc sơ bộ hoặc bộ tách bụi lớn bị tắc bởi các mảnh vụn.
+s01942 Loại bỏ bất kỳ mảnh vụn nào khỏi các bộ phận sau trước khi sử dụng lại máy hút.
+s10014 Kiểm tra các mảnh vụn trong thân sản phẩm, ống nối dài hoặc vòi phun Nếu chân không bị tắc nghẽn bởi các mảnh vụn, khiến động cơ quá nóng, nó sẽ tự động tắt như một biện pháp an toàn.
+s10020 Máy hút sẽ không hoạt động nếu bộ lọc bị tắc.
+s10427 Kiểm tra bàn chải quay Bàn chải quay có thể không hoạt động nếu các mảnh vụn bị kẹt trong đó.
+s10561 Thân sản phẩm Ống nối dài Vòi phun 2.
+s11238 Tham khảo hướng dẫn sử dụng để làm sạch bộ lọc và dải phân cách trước khi sử dụng lại máy hút.
+s11513 [LG CordZero A9] Máy hút hoặc vòi phun không hoạt động.
+s12046 Nguyên nhân và triệu chứng Máy hút sẽ không hoạt động nếu các mảnh vụn chặn thân sản phẩm, ống nối dài hoặc vòi phun.
+s12095 (Chế độ an toàn) Có vẻ như JavaScript đã bị tắt trong trình duyệt của bạn.
+s12197 Hướng dẫn này được tạo cho tất cả các kiểu máy, vì vậy hình ảnh hoặc nội dung có thể khác với sản phẩm của bạn.
+s12893 * Lưu ý: Nếu sự cố vẫn tiếp diễn, hãy liên hệ với Dịch vụ khách hàng của LG để được hỗ trợ thêm.
+s12958 Máy hút sẽ không hoạt động nếu có vật lạ vướng vào bàn chải quay của vòi phun.
+s13238 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Nguyên nhân và triệu chứng Máy hút sẽ không hoạt động nếu các mảnh vụn chặn thân sản phẩm, ống nối dài hoặc vòi phun.
+
+페이지 정보: 국가=VN, 유형=support_troubleshoot, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001453-20155269143134/
+문장:
+s00086 Trò chuyện với chúng tôi ngay Yêu cầu sửa chữa Vui lòng điền vào trường bắt buộc.
+s00422 Sau khi lịch sử duyệt web, cookie hoặc dữ liệu được lưu trong bộ nhớ cache của bạn bị xóa, bạn sẽ không thể khôi phục được.
+s00551 Product Register Product Registration Failed Gửi close btn Quay lại kết quả close btn Chọn Ctrl+V để dán.
+s00591 Trong cửa sổ bật lên [Chọn nội dung cần xóa], chỉ chọn [Lịch sử duyệt web] và [Hình ảnh và tệp được lưu trong bộ nhớ đệm].
+s00676 Xóa dữ liệu duyệt web có thể hữu ích khi bạn sử dụng PC dùng chung, muốn bảo vệ quyền riêng tư của mình hoặc gặp phải tốc độ duyệt web chậm hoặc lỗi trang web.
+s01004 Bạn có thể khám phá các tùy chọn hỗ trợ có sẵn, chẳng hạn như hỗ trợ trò chuyện hoặc thăm kỹ thuật viên, tùy thuộc vào khu vực của bạn.
+s01019 Cách xóa lịch sử duyệt web trong Microsoft Edge trên máy tính xách tay LG của bạn Troubleshooting SẢN PHẨM TIN HỌC 06/24/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+s01480 Thông tin này có hữu ích không?
+s01838 Menu cài đặt có thể thay đổi tùy theo kiểu máy.
+s01856 Mật khẩu và dữ liệu tự động điền Mật khẩu trang web, email, địa chỉ và thông tin biểu mẫu khác đã lưu.
+s01886 Để xóa lịch sử duyệt web của bạn trong Microsoft Edge, hãy chọn [Cài đặt và hơn thế nữa] ở góc trên bên phải, sau đó chọn [Cài đặt].
+s01972 * Có Không Bạn cần trợ giúp ngay lập tức?
+s10376 Tôi có thể giữ lại thông tin đăng nhập đã lưu và chỉ xóa lịch sử duyệt web của mình không?
+s10661 • Hướng dẫn này dựa trên các mô hình tiêu chuẩn.
+s10714 Lịch sử tải xuống Danh sách các tệp được tải xuống từ web.
+s10790 Xóa lịch sử duyệt web trong Microsoft Edge 1) Chọn [Cài đặt và hơn thế nữa] (biểu tượng ba chấm) ở góc trên bên phải của Microsoft Edge, sau đó chọn [Cài đặt].
+s10830 • Phí dịch vụ có thể áp dụng cho chuyến thăm của kỹ thuật viên nếu sản phẩm hết bảo hành.
+s10844 Tại sao tôi nên xóa dữ liệu duyệt web và những gì bị xóa?
+s10889 Các loại dữ liệu chính có thể bị xóa bao gồm: 1.
+s11107 5) Chọn hộp kiểm cho các loại dữ liệu duyệt web bạn muốn xóa, chẳng hạn như [Lịch sử duyệt web], [Cookie và dữ liệu trang web khác] hoặc [Hình ảnh và tệp được lưu trong bộ nhớ cache], sau đó chọn [Xóa ngay].
+s11292 2) Từ menu bên trái trên màn hình Cài đặt, chọn [Quyền riêng tư, tìm kiếm và dịch vụ].
+s11327 Phản hồi bài viết * Thông tin cần thiết 1.
+s11470 Tôi có thể khôi phục lịch sử duyệt web của mình sau khi xóa không?
+s11475 Vui lòng xem lại lựa chọn của bạn một cách cẩn thận trước khi chọn [Xóa ngay].
+s11528 Cookie và dữ liệu trang web khác Thông tin đăng nhập trang web và tùy chọn trang web đã lưu.
+s11563 Bạn sẽ cải thiện thông tin này bằng cách nào?
+s11565 Nếu các bước này không giải quyết được sự cố, hãy truy cập trang web của LG để được hỗ trợ thêm.
+s11609 Cách xóa lịch sử duyệt web trong Microsoft Edge Bước 1.
+s11818 Thao tác này không xóa các tệp đã tải xuống thực tế.
+s11872 3) Trong [Xóa dữ liệu duyệt web], chọn [Chọn nội dung cần xóa].
+s12004 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Để xóa lịch sử duyệt web của bạn trong Microsoft Edge, hãy chọn [Cài đặt và hơn thế nữa] ở góc trên bên phải, sau đó chọn [Cài đặt].
+s12076 Hình ảnh và tệp được lưu trong bộ nhớ cache Bản sao tạm thời của hình ảnh và tệp được lưu để giúp trang web tải nhanh hơn.
+s12296 Thao tác này sẽ lưu thông tin đăng nhập của bạn.
+s12419 Lịch sử chèo thuyền URL của các trang web bạn đã truy cập, cùng với ngày và giờ của mỗi lần truy cập.
+s12444 * 0 / 500 Ký tự Vui lòng điền vào trường bắt buộc.
+s12459 Cảm ơn bạn đã gửi phản hồi!
+s12537 4) Ở đầu cửa sổ bật lên, chọn [Giờ qua], sau đó chọn phạm vi thời gian bạn muốn, chẳng hạn như [24 giờ qua] hoặc [Mọi lúc].
+s12800 Bỏ chọn [Cookie và dữ liệu trang web khác], [Mật khẩu] và [Tự động điền dữ liệu biểu mẫu], sau đó xóa dữ liệu.
+s13020 Đăng nhập để tạo danh sách yêu thích Thêm mặt hàng vào danh sách yêu thích để bạn có thể dễ dàng tìm thấy mặt hàng này khi quay lại LG.com.
+s13100 Đi tới [Quyền riêng tư, tìm kiếm và dịch vụ], sau đó chọn [Chọn nội dung cần xóa] trong [Xóa dữ liệu duyệt web] để xóa các mục bạn muốn.
+
+페이지 정보: 국가=VN, 유형=support_troubleshoot, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001453-20155381409648/
+문장:
+s00195 Tập trung vào khu vực cụ thể này giúp bạn đạt được độ rõ nét tổng thể hình ảnh chính xác nhất.
+s00233 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Nếu hình ảnh chiếu bị mờ, hãy từ từ xoay núm lấy nét khi nhìn vào trung tâm trên màn hình.
+s00491 Keystone chỉnh sửa các hình dạng hình ảnh bị méo hoặc nghiêng (ví dụ, hiệu ứng hình thang).
+s00689 Nhẹ nhàng xoay núm cho đến khi văn bản hoặc hình ảnh trên màn hình trở nên sắc nét và rõ ràng.
+s00894 Ngừng quay ngay lập tức để tránh làm hỏng máy chiếu.
+s00940 Giữ máy chiếu ổn định trong khi điều chỉnh tiêu cự.
+s01228 Đảm bảo hình ảnh được đặt đúng vị trí trên màn hình.
+s01475 Nhấn nút nguồn và chờ hình ảnh chiếu xuất hiện trên màn hình.
+s01806 Tìm núm xoay trên thân máy chiếu điều khiển chuyển động lên xuống của hình ảnh.
+s01904 Nếu hình ảnh được đặt đúng vị trí nhưng vẫn bị méo, hãy sử dụng tính năng Keystone để chỉnh sửa hình dạng.
+s10170 Từ từ xoay núm xoay chuyển ống kính ngang để di chuyển hình ảnh sang trái hoặc phải.
+s10245 Bật máy chiếu và hiển thị hình ảnh trên màn hình.
+s10309 Xác định vị trí núm xoay chuyển ống kính dọc trên máy chiếu.
+s10498 Nếu hình ảnh không được đặt đúng vị trí, hãy sử dụng các núm xoay chuyển ống kính để di chuyển theo chiều dọc hoặc chiều ngang.
+s10617 Vặn núm này từ từ để hình ảnh căn chỉnh hoàn hảo trên màn hình.
+s10667 Điều chỉnh cho đến khi cả hai bên trái và phải của hình ảnh đều sắc nét và rõ nét.
+s10707 Vặn nhẹ nhàng núm số để căn chỉnh hình ảnh với chiều cao màn hình.
+s10741 Nguyên nhân hình ảnh chiếu lại bị mờ hoặc lệch hướng Hình ảnh chiếu có thể bị mờ nếu tiêu cự không được điều chỉnh đúng.
+s10781 Nếu một núm xoay không quay, hãy điều chỉnh nhẹ núm xoay đối diện ra khỏi giới hạn đó rồi thử lại.
+s10997 Đảm bảo hình ảnh chiếu hoàn toàn nằm trong ranh giới màn hình và được đặt đúng vị trí bạn muốn.
+s11030 Phạm vi điều chỉnh dịch chuyển ống kính có giới hạn không?
+s11037 Menu cài đặt có thể khác nhau tùy theo mẫu.
+s11040 Sự khác biệt giữa Lens Shift và Keystone là gì?
+s11255 Hãy nhìn vào tâm trên cùng của hình ảnh chiếu.
+s11282 Hướng dẫn điều chỉnh tiêu điểm máy chiếu Bước 1.
+s11460 Ngoài ra, hình ảnh có thể xuất hiện quá cao, quá thấp hoặc lệch tâm nếu ống kính máy chiếu không thẳng hàng với màn hình.
+s11729 Cẩn thận Tiếng lách cách cho biết núm xoay đã đạt giới hạn.
+s11898 Nếu hình ảnh trông giống hình thang sau khi định vị, hãy vào menu cài đặt và áp dụng hiệu chỉnh Keystone để tạo thành hình chữ nhật hoàn hảo.
+s12129 Kiểm tra tổng thể hình ảnh để đảm bảo cả bên trái lẫn bên phải đều bị mờ, và tìm điểm lấy nét tối ưu.
+s12163 Nếu hình ảnh chiếu bị mờ, hãy từ từ xoay núm lấy nét khi nhìn vào trung tâm trên màn hình.
+s12396 Nếu hình ảnh vẫn bị méo, hãy sử dụng tính năng Keystone để chỉnh sửa hình dạng.
+s12579 Từ từ xoay núm xoay chuyển ống kính dọc để di chuyển hình ảnh lên hoặc xuống.
+s12619 Từ từ xoay núm lấy nét sang trái hoặc phải trong khi nhìn vào trung tâm trên cùng của hình ảnh.
+s12789 Hướng dẫn này dựa trên các mô hình tiêu chuẩn.
+s12799 Dịch chuyển ống kính di chuyển hình ảnh lên, xuống, trái hoặc phải mà không di chuyển máy chiếu.
+s12911 Việc điều chỉnh theo chiều dọc và chiều ngang ảnh hưởng lẫn nhau.
+s12926 Nếu thấu kính đạt giới hạn tối đa theo một hướng, nó có thể không di chuyển theo hướng còn lại.
+s13123 Giữ thiết bị chắc chắn, vì bất kỳ chuyển động nào cũng khiến việc điều chỉnh tiêu điểm chính xác trở nên khó khăn.

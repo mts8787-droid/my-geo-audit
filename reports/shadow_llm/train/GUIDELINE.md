@@ -186,3 +186,14 @@ For page type support_troubleshoot apply GUIDELINE_TS.md (with its "검수자 �
 
 ### why: write a SPECIFIC reason for each sentence naming the decisive element (e.g. "R1 압축기 4dB 소음 저감 수치", "혜택 서술, 작동 원리 없음", "각주 번호 붙은 기능 문구").
   Do not reuse the same why text for more than 5 sentences in a batch.
+
+## 검수자 결정 (2026-10-20) — 판정이 엇갈리던 4개 유형. 위 모든 섹션보다 우선
+1. 각주(별표 *, 번호 "1)" "10." 로 시작하는 주석)는 시험·인증·규정 근거를 담고 있어도 citable n, definition n.
+   예: "*LG OLED 패널은 UL 인증을 받았습니다" n · "2) 에너지 등급은 EU 2019/2014 기준" n · "10. 독립 제3자 시험 기준…" n.
+2. 제품 페이지 상단 핵심 기능(Key Features / Características principales / Hauptmerkmale / Tính năng chính) 블록이
+   제품명·기능명·스펙의 단어 나열이면 citable n, definition n, summary n. 예: "UltraGear 27G810A 4K UHD, Dual-Mode (Max 360Hz), 1ms GtG, HDMI 2.1 …" n.
+3. 이름 붙은 기술·기능·부품이 어떻게 작동하는지 설명하는 문장은 수치가 없어도 citable y, definition y.
+   예: "NanoCell 기술은 색 스펙트럼의 불순물을 걸러 넓은 색을 낸다" y · "Inverter DD 모터는 에너지 손실이 적어 전력 소비를 줄인다" y
+   · "Gold Fin+ 의 두꺼운 핀과 친수 코팅이 내구성을 높인다" y · "Air Fry 는 뜨거운 공기를 고속 순환시켜 고르게 조리한다" y.
+   단, 작동 방식 없이 결과·편의만 말하면 n: "Pet Care 코스는 냄새를 줄여 준다" n · "Google Assistant 와 함께 쓸 수 있다" n · "부드러운 천으로 쉽게 닦인다" n.
+4. 용량 안내(가구 규모·용도별 권장 용량 수치)는 citable y. 예: "8kg는 1인, 9kg는 소가족, 10.5kg는 일반 가정" y · "일반 가정에는 8~9kg 권장" y.

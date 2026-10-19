@@ -10,11 +10,12 @@ ap = argparse.ArgumentParser()
 ap.add_argument("--model", required=True); ap.add_argument("--adapter", default=None)
 ap.add_argument("--data", default="reports/shadow_llm/train/lora_data/test.jsonl")
 ap.add_argument("--out", required=True); ap.add_argument("--limit", type=int, default=0)
+ap.add_argument("--ids", default="reports/shadow_llm/train/lora_data/test_ids.json")
 a = ap.parse_args()
 
 model, tok = load(a.model, adapter_path=a.adapter)
 rows = [json.loads(l) for l in open(a.data) if l.strip()]
-ids = json.load(open("reports/shadow_llm/train/lora_data/test_ids.json"))
+ids = json.load(open(a.ids))
 if a.limit: rows, ids = rows[:a.limit], ids[:a.limit]
 sampler = make_sampler(temp=0.0)
 LAB = ("citable", "definition", "summary")

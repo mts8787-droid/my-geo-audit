@@ -1,0 +1,200 @@
+{"id": "s00555", "tag": "none", "why": ""}
+{"id": "s00639", "tag": "none", "why": ""}
+{"id": "s00699", "tag": "none", "why": ""}
+{"id": "s00869", "tag": "none", "why": ""}
+{"id": "s01352", "tag": "none", "why": ""}
+{"id": "s01401", "tag": "none", "why": ""}
+{"id": "s01407", "tag": "mechanism", "why": "Vapour Chamber 방열 구조로 내부 온도 유지"}
+{"id": "s01483", "tag": "kf_list", "why": "제품명+스펙 단어 나열"}
+{"id": "s01486", "tag": "none", "why": ""}
+{"id": "s01623", "tag": "none", "why": ""}
+{"id": "s01672", "tag": "none", "why": ""}
+{"id": "s01771", "tag": "none", "why": ""}
+{"id": "s01781", "tag": "none", "why": ""}
+{"id": "s01908", "tag": "none", "why": ""}
+{"id": "s01917", "tag": "none", "why": ""}
+{"id": "s01969", "tag": "none", "why": ""}
+{"id": "s10568", "tag": "none", "why": ""}
+{"id": "s10958", "tag": "none", "why": ""}
+{"id": "s11036", "tag": "none", "why": ""}
+{"id": "s11222", "tag": "none", "why": ""}
+{"id": "s11332", "tag": "none", "why": ""}
+{"id": "s11388", "tag": "none", "why": ""}
+{"id": "s11858", "tag": "none", "why": ""}
+{"id": "s12179", "tag": "none", "why": ""}
+{"id": "s12409", "tag": "none", "why": ""}
+{"id": "s12595", "tag": "none", "why": ""}
+{"id": "s12723", "tag": "none", "why": ""}
+{"id": "s12767", "tag": "mechanism", "why": "Dual FOV가 거리·심도 분석"}
+{"id": "s12950", "tag": "none", "why": ""}
+{"id": "s13051", "tag": "none", "why": ""}
+{"id": "s00202", "tag": "none", "why": ""}
+{"id": "s00348", "tag": "none", "why": ""}
+{"id": "s00759", "tag": "none", "why": ""}
+{"id": "s00842", "tag": "none", "why": ""}
+{"id": "s01202", "tag": "none", "why": ""}
+{"id": "s01205", "tag": "mechanism", "why": "도어 장착 제빙 구조로 공간 확보"}
+{"id": "s01394", "tag": "none", "why": ""}
+{"id": "s01406", "tag": "none", "why": ""}
+{"id": "s01485", "tag": "none", "why": ""}
+{"id": "s01501", "tag": "none", "why": ""}
+{"id": "s10053", "tag": "footnote", "why": "문장 중간 *각주 주석"}
+{"id": "s10340", "tag": "none", "why": ""}
+{"id": "s10651", "tag": "none", "why": ""}
+{"id": "s10967", "tag": "none", "why": ""}
+{"id": "s11224", "tag": "mechanism", "why": "Refresh 코스가 스팀으로 주름 제거"}
+{"id": "s11430", "tag": "none", "why": ""}
+{"id": "s11499", "tag": "none", "why": ""}
+{"id": "s11764", "tag": "none", "why": ""}
+{"id": "s11814", "tag": "mechanism", "why": "Moist Balance Crisper 온습도 유지"}
+{"id": "s12084", "tag": "none", "why": ""}
+{"id": "s12119", "tag": "none", "why": ""}
+{"id": "s13006", "tag": "mechanism", "why": "Direct Drive 벨트 없는 구동 구조"}
+{"id": "s13208", "tag": "none", "why": ""}
+{"id": "s00192", "tag": "none", "why": ""}
+{"id": "s00608", "tag": "none", "why": ""}
+{"id": "s00632", "tag": "none", "why": ""}
+{"id": "s00828", "tag": "none", "why": ""}
+{"id": "s00885", "tag": "none", "why": ""}
+{"id": "s01039", "tag": "none", "why": ""}
+{"id": "s01505", "tag": "mechanism", "why": "전면 벤트로 냉기를 도어에 분사"}
+{"id": "s01603", "tag": "none", "why": ""}
+{"id": "s10035", "tag": "mechanism", "why": "도어 선반 냉각으로 온도차 감소"}
+{"id": "s10127", "tag": "none", "why": ""}
+{"id": "s10193", "tag": "none", "why": ""}
+{"id": "s10204", "tag": "none", "why": ""}
+{"id": "s10433", "tag": "none", "why": ""}
+{"id": "s10466", "tag": "none", "why": ""}
+{"id": "s10468", "tag": "none", "why": ""}
+{"id": "s10512", "tag": "mechanism", "why": "분사 범위·세기 조합 세척 방식"}
+{"id": "s10530", "tag": "none", "why": ""}
+{"id": "s10578", "tag": "none", "why": ""}
+{"id": "s10607", "tag": "none", "why": ""}
+{"id": "s10710", "tag": "none", "why": ""}
+{"id": "s10822", "tag": "none", "why": ""}
+{"id": "s11007", "tag": "none", "why": ""}
+{"id": "s11610", "tag": "none", "why": ""}
+{"id": "s11651", "tag": "none", "why": ""}
+{"id": "s11857", "tag": "mechanism", "why": "도어 열림 시 작동 일시정지"}
+{"id": "s12006", "tag": "none", "why": ""}
+{"id": "s12038", "tag": "none", "why": ""}
+{"id": "s12078", "tag": "none", "why": ""}
+{"id": "s12351", "tag": "none", "why": ""}
+{"id": "s12356", "tag": "none", "why": ""}
+{"id": "s12411", "tag": "none", "why": ""}
+{"id": "s12677", "tag": "mechanism", "why": "DoorCooling+ 도어로 냉기 공급"}
+{"id": "s12850", "tag": "mechanism", "why": "Dual Zone Wash 구역별 분사 세기"}
+{"id": "s12888", "tag": "none", "why": ""}
+{"id": "s12891", "tag": "mechanism", "why": "도어 선반에 냉기 직접 공급"}
+{"id": "s12934", "tag": "none", "why": ""}
+{"id": "s12947", "tag": "none", "why": ""}
+{"id": "s12962", "tag": "none", "why": ""}
+{"id": "s13096", "tag": "mechanism", "why": "전면 전용 벤트로 냉기 공급"}
+{"id": "s13138", "tag": "none", "why": ""}
+{"id": "s13244", "tag": "none", "why": ""}
+{"id": "s00396", "tag": "none", "why": ""}
+{"id": "s10271", "tag": "none", "why": ""}
+{"id": "s10353", "tag": "none", "why": ""}
+{"id": "s10674", "tag": "none", "why": ""}
+{"id": "s10804", "tag": "none", "why": ""}
+{"id": "s11786", "tag": "none", "why": ""}
+{"id": "s12167", "tag": "none", "why": ""}
+{"id": "s12399", "tag": "none", "why": ""}
+{"id": "s12861", "tag": "none", "why": ""}
+{"id": "s00101", "tag": "none", "why": ""}
+{"id": "s00108", "tag": "none", "why": ""}
+{"id": "s00335", "tag": "none", "why": ""}
+{"id": "s00383", "tag": "none", "why": ""}
+{"id": "s00413", "tag": "none", "why": ""}
+{"id": "s00820", "tag": "none", "why": ""}
+{"id": "s00964", "tag": "none", "why": ""}
+{"id": "s01234", "tag": "none", "why": ""}
+{"id": "s01284", "tag": "none", "why": ""}
+{"id": "s01298", "tag": "none", "why": ""}
+{"id": "s01549", "tag": "none", "why": ""}
+{"id": "s01567", "tag": "none", "why": ""}
+{"id": "s01577", "tag": "none", "why": ""}
+{"id": "s01735", "tag": "none", "why": ""}
+{"id": "s01836", "tag": "none", "why": ""}
+{"id": "s10002", "tag": "none", "why": ""}
+{"id": "s10117", "tag": "none", "why": ""}
+{"id": "s10142", "tag": "none", "why": ""}
+{"id": "s10333", "tag": "none", "why": ""}
+{"id": "s10447", "tag": "none", "why": ""}
+{"id": "s10739", "tag": "none", "why": ""}
+{"id": "s10992", "tag": "none", "why": ""}
+{"id": "s11027", "tag": "none", "why": ""}
+{"id": "s11028", "tag": "none", "why": ""}
+{"id": "s11060", "tag": "none", "why": ""}
+{"id": "s11134", "tag": "none", "why": ""}
+{"id": "s11318", "tag": "none", "why": ""}
+{"id": "s11587", "tag": "none", "why": ""}
+{"id": "s11715", "tag": "none", "why": ""}
+{"id": "s11874", "tag": "none", "why": ""}
+{"id": "s11895", "tag": "none", "why": ""}
+{"id": "s11923", "tag": "none", "why": ""}
+{"id": "s11968", "tag": "none", "why": ""}
+{"id": "s12024", "tag": "none", "why": ""}
+{"id": "s12035", "tag": "none", "why": ""}
+{"id": "s12057", "tag": "none", "why": ""}
+{"id": "s12098", "tag": "none", "why": ""}
+{"id": "s12297", "tag": "none", "why": ""}
+{"id": "s12417", "tag": "none", "why": ""}
+{"id": "s12580", "tag": "none", "why": ""}
+{"id": "s12591", "tag": "none", "why": ""}
+{"id": "s12648", "tag": "none", "why": ""}
+{"id": "s12660", "tag": "none", "why": ""}
+{"id": "s12685", "tag": "none", "why": ""}
+{"id": "s12699", "tag": "none", "why": ""}
+{"id": "s12840", "tag": "none", "why": ""}
+{"id": "s12851", "tag": "none", "why": ""}
+{"id": "s12864", "tag": "none", "why": ""}
+{"id": "s12872", "tag": "none", "why": ""}
+{"id": "s12876", "tag": "none", "why": ""}
+{"id": "s12895", "tag": "none", "why": ""}
+{"id": "s13080", "tag": "none", "why": ""}
+{"id": "s13094", "tag": "none", "why": ""}
+{"id": "s13137", "tag": "none", "why": ""}
+{"id": "s13192", "tag": "none", "why": ""}
+{"id": "s13219", "tag": "none", "why": ""}
+{"id": "s00235", "tag": "none", "why": ""}
+{"id": "s00379", "tag": "none", "why": ""}
+{"id": "s00545", "tag": "none", "why": ""}
+{"id": "s00579", "tag": "none", "why": ""}
+{"id": "s00949", "tag": "kf_list", "why": "Key Features 스펙 나열"}
+{"id": "s00996", "tag": "none", "why": ""}
+{"id": "s01347", "tag": "none", "why": ""}
+{"id": "s01372", "tag": "none", "why": ""}
+{"id": "s01644", "tag": "none", "why": ""}
+{"id": "s01991", "tag": "none", "why": ""}
+{"id": "s10323", "tag": "none", "why": ""}
+{"id": "s10336", "tag": "none", "why": ""}
+{"id": "s10643", "tag": "none", "why": ""}
+{"id": "s10882", "tag": "footnote", "why": "별표 각주(할부 조건)"}
+{"id": "s11120", "tag": "none", "why": ""}
+{"id": "s11443", "tag": "none", "why": ""}
+{"id": "s11579", "tag": "none", "why": ""}
+{"id": "s11780", "tag": "none", "why": ""}
+{"id": "s11789", "tag": "none", "why": ""}
+{"id": "s11909", "tag": "none", "why": ""}
+{"id": "s12050", "tag": "none", "why": ""}
+{"id": "s12209", "tag": "none", "why": ""}
+{"id": "s12352", "tag": "none", "why": ""}
+{"id": "s13059", "tag": "none", "why": ""}
+{"id": "s13193", "tag": "none", "why": ""}
+{"id": "s13261", "tag": "none", "why": ""}
+{"id": "s12772", "tag": "none", "why": ""}
+{"id": "s00172", "tag": "none", "why": ""}
+{"id": "s00243", "tag": "footnote", "why": "시험 조건 각주 조각"}
+{"id": "s00275", "tag": "none", "why": ""}
+{"id": "s00307", "tag": "footnote", "why": "별표 각주(시험 기관)"}
+{"id": "s00620", "tag": "none", "why": ""}
+{"id": "s00715", "tag": "none", "why": ""}
+{"id": "s00950", "tag": "footnote", "why": "시험 코스 각주 조각"}
+{"id": "s00966", "tag": "kf_list", "why": "기능명+문구 조각"}
+{"id": "s01036", "tag": "none", "why": ""}
+{"id": "s01099", "tag": "none", "why": ""}
+{"id": "s01100", "tag": "none", "why": ""}
+{"id": "s01413", "tag": "footnote", "why": "별표 각주(보증 범위)"}
+{"id": "s01601", "tag": "none", "why": ""}
+{"id": "s01631", "tag": "none", "why": ""}
