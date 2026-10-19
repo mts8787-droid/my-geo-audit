@@ -1,0 +1,277 @@
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008333-20155145284137/
+문장:
+t00600 ※ Please note that service fees may apply for engineer visits if your product is out of warranty.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008362-20152500940660DRC
+문장:
+t00601 While the washing machine is turned on, you can turn the notification
+sound off or back on by pressing two specific buttons on the control
+panel simultaneously for 3 seconds.
+t00602 Find the two buttons above the ‘Beep On/Off’ label on the control
+panel and press and hold them at the same time for 3 seconds.
+t00603 Please
+refer to the manual included with your product for detailed
+instructions on proper use and installation.
+t00604 What should I do if the sound
+does not turn off after pressing the buttons for 3 seconds?
+t00605 Close This guide explains how to turn the start/end melody and button sounds
+on or off on your LG washing machine.
+t00606 You can turn the melody and button sounds on or off to suit your
+preference when switching the washing machine on or off or changing
+settings on the control panel.
+t00607 How to Turn the Start/End Melody On or Off Why Turn the Sound Off?
+t00608 If you prefer a quieter home environment or want to reduce noise
+when using the washing machine at night, you can turn the sound off
+and back on again at any time.
+t00609 How Do I Turn the Sound On or Off?
+t00610 Press the Power button to turn on the washing machine so that the
+display lights up.
+t00611 The controls will not respond when the power is off, so make sure the
+machine is turned on before changing the setting.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT32002741-20155062102677/
+문장:
+t00612 [LG Air Conditioner Installation] Can I reuse the existing piping when reinstalling?
+t00613 Close At a glance An installation technician can inspect the piping on site and advise
+
+t00614 whether it can be reused.
+t00615 If the unit is removed for a move, the piping may not return to their
+
+t00616 original condition depending on the environment, so it may not be
+
+t00617 Reusing the piping can cause refrigerant leaks or reduce cooling
+
+t00618 At a glance An installation technician can inspect the piping on site and advise
+
+t00619 Therefore, reusing old pipes is not recommended.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008333-20155051198477
+문장:
+t00620 How to Change Location Settings Location Settings by Model Year 2021 or later TVs (webOS 6.0 or later): Press [Settings] on the remote → Select [All Settings] → [General] → [System] → [Location] → [LG Services Country] 2020 or earlier TVs (webOS 5.0 or earlier): Press [Settings] on the remote → Select [All Settings] → [General] → [Location] → [LG Services Country] How to Change Location Settings on 2025 or Later TVs (webOS 25 or Later) 1.
+t00621 Close To change the Location settings on your LG TV, press [Settings] on the remote, then go to [All Settings] → [General] → [System] or [Location].
+t00622 The menu path may vary depending on your webOS version.
+t00623 Set-top box settings may be restricted for models purchased overseas.
+t00624 Why Do I Need to Change the Location Settings?
+t00625 If you have moved or changed your Internet Service Provider (ISP), you should update the location/region settings on your TV to receive personalized services.
+t00626 If you bought your TV overseas or you’re using it in a different country, you need to change the location settings to access apps and services available in that country.
+t00627 Press [Settings] on the remote, and then select [All Settings] in the top-left corner of the TV screen.
+t00628 Therefore, even if the TV supports the [Universal Control Settings], it may not contain the database for local service provider set-top boxes in the country/region where you are using the TV.
+t00629 As a result, the TV may fail to detect your set-top box, or Universal Control setup may not be possible.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008333-20155146888237
+문장:
+t00630 Confirm the issue is coming from the set-top box (not the TV tuner) 1) Use the TV remote to confirm you are watching the set-top box input (for example, HDMI 1/HDMI 2).
+t00631 2) If your home also uses an antenna/cable directly to the TV, test Live TV (TV tuner) separately to compare whether the issue occurs only through the set-top box.
+t00632 2) Unplug the set-top box power cord for at least 30 seconds, then plug it back in and turn it on.
+t00633 Close Please Note Before checking cables, turn off the TV and the set-top box, then unplug them from power.
+t00634 Do not force HDMI, antenna, or coaxial connectors; align plugs carefully to avoid port damage.
+t00635 If you smell burning, see smoke, or the set-top box is unusually hot, stop using it and contact your service provider.
+t00636 Some error messages indicate an account, subscription, or smart card issue that only your service provider can resolve.
+t00637 Set-top box error messages on an LG TV can occur in these situations.
+t00638 When you use a set-top box, error messages shown on the LG TV screen may be triggered by the set-top box itself, the service provider network, or signal reception conditions.
+t00639 Identifying whether the issue affects only certain channels, only on-demand services, or all viewing helps narrow down the cause.
+t00640 Note: SIMPLINK does not fix provider network/authentication errors, but it can help ensure the TV and set-top box coordinate power and input switching correctly.
+t00641 Is this an LG TV problem?
+t00642 If live channels work but VOD/on-demand fails, the set-top box may not be connecting to the provider network or your account may need verification.
+t00643 Some channels are missing or the picture quality is poor, but other channels work.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008386-20155132493493/
+문장:
+t00644 No Signal usually means the TV is not receiving a signal from an external source If No Signal appears, the TV is not receiving a signal from a set-top box or service provider.
+t00645 Wait 5 seconds.
+t00646 Close Please Note Before reconnecting any cables, turn off the TV and connected devices, and unplug power cords to reduce the risk of electric shock.
+t00647 When reconnecting HDMI or antenna/cable lines, insert connectors straight and firmly to avoid port damage.
+t00648 If you use a set-top box, router, or other third-party device, check the manufacturer’s customer service or user manual for exact reset and settings instructions.
+t00649 If the TV shows no picture and no on-screen menus/messages, stop troubleshooting and arrange professional inspection.
+t00650 Why you may see a black screen, no sound, or a No Signal message The TV may be off even if the standby light is on.
+t00651 The TV may be on but set to the wrong input, or the connected device may be off.
+t00652 Loose or incorrect cable connections can prevent video and audio from reaching the TV.
+t00653 Inspect or test the external device and cables.
+t00654 Decide the next action based on what you see on screen If the TV is on and No Signal is shown, the issue is likely with the cable, set-top box, or other connected device.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000817-20155311503511/
+문장:
+t00655 Spiegeln Sie Ihr Smartphone drahtlos auf Ihren LG-Fernseher (Android und iPhone) Product Usage IT Produkte 07/13/2026 Drucken Teilen Diesen Inhalt teilen.
+t00656 Close Mit der Bildschirmfreigabe Ihres Smartphones können Sie den Bildschirm und den Ton Ihres Handys drahtlos auf Ihren LG-Fernseher spiegeln.
+t00657 Keine Kabel erforderlich.
+t00658 Auf Android wischen Sie vom oberen Rand Ihres Bildschirms nach unten, um das Schnelleinstellungsfeld zu öffnen, und wählen Sie Ihren LG-Fernseher aus der Liste der verfügbaren Geräte aus.
+t00659 Auf dem iPhone stellen Sie sicher, dass Ihr Telefon und Ihr Fernseher im selben WLAN-Netzwerk sind, öffnen Sie dann das Kontrollzentrum und verwenden Sie Screen Mirroring (AirPlay), um Ihren Fernseher auszuwählen.
+t00660 Wenn dein iPhone keine Verbindung herstellen kann, öffne das [Home Dashboard] auf deinem Fernseher und stelle sicher, dass AirPlay aktiviert ist.
+t00661 Warum verbindet sich mein Handy nicht mit meinem Fernseher?
+t00662 Wählen Sie Ihren LG-Fernseher aus der Liste aus.
+t00663 In [AirPlay und HomeKit-Einstellungen], wenn [AirPlay] auf [Aus] steht, drücken Sie die [OK]-Taste auf Ihrer Fernbedienung, um es auf [Ein] zu stellen.
+t00664 Wischen Sie von oben rechts auf dem Bildschirm nach unten, um [Kontrollzentrum] zu öffnen.
+t00665 Um sich erfolgreich zu verbinden, nutzen Sie die Bildschirmfreigabefunktion, die zu Ihrem Handytyp passt.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000817-20155316493952/
+문장:
+t00666 LG TV Wie man die Magic Remote für das Fernsehen benutzt Troubleshooting IT Produkte 07/15/2026 Drucken Teilen Diesen Inhalt teilen.
+t00667 Wie man die Magic Remote für das Fernsehen benutzt AI Magic Remote Funktionen (Modell 2025) [Power]: Schaltet den Fernseher an oder aus.
+t00668 Drücken und halten, um Sprachsteuerung oder SAP (Secondary Audio Programming) zu aktivieren.
+t00669 [Lautstärke]: Passt die Lautstärke an.
+t00670 Drücke und halte die Lautstärke gedrückt, um stummzuschalten.
+t00671 Wie man die Magic Remote für das Fernsehen benutzt AI Magic Remote Funktionen (Modell 2021) [Power]: Schaltet den Fernseher an oder aus.
+t00672 Wie man die Magic Remote für das Fernsehen benutzt AI Magic Remote Funktionen (Modell 2020) [Power]: Schaltet den Fernseher an oder aus.
+t00673 Drücken und halten, um SAP (Secondary Audio Programming) zu aktivieren.
+t00674 Koppele deine Fernbedienung neu Für Modelle aus den Jahren 2021 und 2025: Halte die Fernbedienung auf den Fernseher gerichtet und drücke und halte HOME[ ] und EINSTELLUNGEN [ ] Tasten mindestens 5 Sekunden lang zusammen, bis Anweisungen auf dem Bildschirm erscheinen.
+t00675 Bei Modellen, die 2020 erschienen sind: Halte die Fernbedienung auf den Fernseher gerichtet und drücke die Guide-Taste, bis die Anweisungen auf dem Bildschirm erscheinen.
+t00676 Für beste Ergebnisse halten Sie die Fernbedienung etwa 10 cm (4 Zoll) vom Mund entfernt und sprechen Sie langsam und klar mit normaler Lautstärke.
+t00677 Close Mit der LG Magic Remote kannst du auf den Fernsehbildschirm zeigen und so intuitiv navigieren wie eine Maus.
+t00678 Wenn der Zeiger nicht auf dem Bildschirm erscheint, hat die Fernbedienung wahrscheinlich die Verbindung zum Fernseher verloren.
+t00679 Um das zu beheben, registrieren Sie die Fernbedienung erneut an Ihrem Fernseher.
+t00680 Wenn die Spracherkennung nicht funktioniert, stelle sicher, dass du die richtige Taste benutzt (drücke und halte beim Sprechen) und überprüfe, ob dein Fernseher mit dem Internet verbunden ist und ob deine Regionseinstellung mit der Menüsprache übereinstimmt.
+t00681 [Home Hub]: Greift auf den Home Hub zu.
+t00682 Drücken und halten, um externe Eingangsquellen wie Antenne, Kabel oder Set-Top-Box auszuwählen.
+t00683 [Zurück]: Kehrt zum vorherigen Bildschirm zurück.
+t00684 Die LED-Leuchte auf der Fernbedienung blinkt und die Fernbedienung entkoppelt sich vom Fernseher.
+t00685 [HOME]: Zugriff auf das Home-Menü.
+t00686 [STB Power]: Schaltet die Set-Top-Box ein oder aus.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000814-20150174547472/
+문장:
+t00687 Product Usage Home Entertainment 11/12/2020 Drucken Teilen Diesen Inhalt teilen.
+t00688 Video]LG TV - Sie möchten Ihre Soundbar mit dem TV verbinden.
+t00689 Optisches Digitalkabel, Bluetooth (Drahtlos) oder per HDMI-Kabel.
+t00690 Close Video]LG TV - Sie möchten Ihre Soundbar mit dem TV verbinden.
+t00691 Artikel-Feedback * Pflichtfelder 1.
+t00692 Verify right now Verify later Wie kann ich dir helfen ?
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000817-20155115715323/
+문장:
+t00693 [LG-Laptop] Wie man Bluetooth-Verbindungsprobleme behebt und Treiber installiert Troubleshooting IT Produkte 04/07/2026 Drucken Teilen Diesen Inhalt teilen.
+t00694 Close Wenn dein Laptop keine Verbindung zu einem Bluetooth-Gerät hat, stelle zuerst sicher, dass Bluetooth in den Windows-Einstellungen aktiviert ist.
+t00695 Wenn Bluetooth bereits aktiviert ist, das Gerät aber trotzdem keine Verbindung herstellen will, setze den Bluetooth-Support-Dienst in Windows Services auf [Automatisch] oder entferne den Treiber, der im Geräte-Manager einen Fehler anzeigt, und installiere ihn mit dem LG-Update-Programm neu.
+t00696 Warum verbindet sich Bluetooth nicht?
+t00697 Bluetooth ist in den Windows-Einstellungen deaktiviert.
+t00698 Der Bluetooth-Support-Service ist eingestellt.
+t00699 Der Bluetooth-Treiber fehlt oder ist beschädigt, wodurch das Gerät als [Unbekanntes Gerät] erscheint.
+t00700 Wie man Bluetooth-Verbindungsprobleme behebt Schalte Bluetooth ein und füge ein Gerät in den Windows-Einstellungen hinzu 1.
+t00701 Nach der Deinstallation starte du deinen PC neu.
+t00702 Die Methode zum Einschalten des Paarungsmodus variiert je nach Gerät, daher konsultieren Sie das Benutzerhandbuch Ihres Geräts.
+t00703 In der Liste finden Sie Bluetooth-bezogene Dienste wie: Bluetooth User Support Service, Bluetooth Audio Gateway Service und Bluetooth Support Service.
+t00704 Das Bluetooth-Symbol fehlt in der Taskleiste.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20155272221509
+문장:
+t00705 Troubleshooting Haushalts- geräte 06/25/2026 Drucken Teilen Diesen Inhalt teilen.
+t00706 Was soll ich tun, wenn die Tasten des Bedienfelds meines LG-Kühlschranks nicht reagieren?
+t00707 Close Wenn die Knöpfe am Bedienfeld Ihres LG Top-Gefrierschranks nicht funktionieren, kann das Bedienfeld verschlossen sein.
+t00708 Drücke und halte die [Verriegeln/Entriegeln]-Taste im Bedienfeld 3 Sekunden lang, bis das Schloss-Symbol auf entsperrt wechselt.
+t00709 Versuche dann erneut, die Tasten zu benutzen.
+t00710 Wichtig Wenn die Tasten nach dem Entsperren des Bedienfelds immer noch nicht funktionieren oder ein Fehlercode erscheint, kann es ein internes Problem geben.
+t00711 Bitte wenden Sie sich für Unterstützung an den LG-Kundensupport.
+t00712 Verfügbare Funktionen und Knopfstandorte können je nach Modell variieren.
+t00713 Drück den [Sperren/Entsperren]-Knopf Drücken Sie die [Sperren/Entsperren]-Taste am unteren Rand des Bedienfelds für 3 Sekunden gedrückt.
+t00714 Bitte lesen Sie Ihre Benutzeranleitung für weitere Details.
+t00715 Schmutz oder Feuchtigkeit am Tastenbereich kann verhindern, dass die Touch-Steuerung reagiert.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000817-20155021550233/
+문장:
+t00716 [LG PC] Windows Secure Boot Certificate Update & Troubleshooting Leitfaden Troubleshooting IT Produkte 02/06/2026 Drucken Teilen Diesen Inhalt teilen.
+t00717 Close Da das Secure Boot-Zertifikat im Juni 2026 abläuft, verteilt Microsoft ein neues Zertifikat.
+t00718 In Zusammenarbeit mit Microsoft hat LG Electronics das neue Zertifikat bereits auf Modelle angewendet, die ab 2024 veröffentlicht wurden.
+t00719 Für ältere Modelle wird das neue Zertifikat seit der zweiten Hälfte des Jahres 2025 über Windows Update ausgerollt.
+t00720 Schalte den PC ein und drücke sofort [F2] wiederholt (3–4 Mal), um die BIOS-Einrichtung zu öffnen.
+t00721 Was soll ich tun, wenn ich ein älteres Modell vor 2024 gekauft habe?
+t00722 Modelle, die vor 2024 veröffentlicht wurden oder nicht auf der Support-Liste sind, verfügen möglicherweise nicht über ein separates BIOS-Update.
+t00723 Da das Secure Boot-Zertifikat im Juni 2026 abläuft, verteilt Microsoft ein neues Zertifikat.
+t00724 Bei den meisten LG-PCs wird das Secure Boot Zertifikatsupdate automatisch über Windows Update abgeschlossen, sodass keine weiteren Maßnahmen erforderlich sind.
+t00725 Wenn Ihr PC jedoch nach dem Update nicht booten kann oder der BitLocker-Bildschirm angezeigt wird, ändern Sie bitte [Secure Boot] im BIOS auf [Deaktiviert] oder geben Sie Ihren BitLocker-Wiederherstellungsschlüssel ein.
+t00726 Wird mein PC betroffen, wenn das Secure Boot Certificate abläuft?
+t00727 Secure Boot ist eine entscheidende Sicherheitsfunktion, die hilft, Malware zu verhindern, indem sie sicherstellt, dass nur vertrauenswürdige Software während des Starts läuft.
+t00728 Selbst wenn das Zertifikat abläuft, funktioniert Windows Update weiterhin normal, und du solltest im Alltag keine größeren Probleme haben.
+t00729 Allerdings können Updates für bestimmte Secure Boot-Komponenten eingeschränkt sein.
+t00730 Wenn Sie den Schlüssel verloren haben, nutzen Sie ein Smartphone oder einen anderen PC, um auf die Microsoft BitLocker Recovery Key-Seite zuzugreifen und das Gerät zu entsperren.
+t00731 Product Register Product Registration Failed Senden Zurück zu Ergebnissen Ihre E-Mail wurde erfolgreich registriert.
+t00732 Wählen Sie [Ja].
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20150147515764/
+문장:
+t00733 Product Usage Haushalts- geräte 05/23/2016 Drucken Teilen Diesen Inhalt teilen.
+t00734 Video]LG Vacuum Cleaner - Der Staubsauger-Roboter arbeitet nicht richtig mit dem Wischmop.
+t00735 Er kann keine Unebenheiten übersteigen.
+t00736 Close Video]LG Vacuum Cleaner - Der Staubsauger-Roboter arbeitet nicht richtig mit dem Wischmop.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20155255785293/
+문장:
+t00737 Wie man es sicher bewegt und installiert Troubleshooting Haushalts- geräte 06/18/2026 Drucken Teilen Diesen Inhalt teilen.
+t00738 Kann ich meinen LG-Kühlschrank auf die Seite stellen?
+t00739 Close Um Schäden zu vermeiden, halten Sie den Kühlschrank beim Bewegen immer aufrecht.
+t00740 Wenn du den Kühlschrank auf die Seite legen musst, um ihn durch eine Tür zu bewegen, warte mindestens 2 Stunden, bevor du ihn einsteckst.
+t00741 Dadurch kann sich das Öl im Kompressor absetzen.
+t00742 Wichtig Stecken Sie den Kühlschrank nicht sofort ein, nachdem Sie ihn auf die Seite gestellt haben.
+t00743 Wenn es zu früh eingesteckt wird, hat sich das Öl im Kompressor möglicherweise nicht richtig abgesetzt.
+t00744 Dies kann die Kühlleistung beeinträchtigen oder ernsthafte Schäden am Kompressor verursachen.
+t00745 Wenn ich meinen Kühlschrank auf die Seite legen muss, in welche Richtung ist dann am sichersten?
+t00746 Selbst wenn es nur kurze Zeit auf der Seite lag, empfehlen wir, mindestens 2 Stunden zu warten, bevor man es einsteckt.
+t00747 Ja, du kannst es sofort anschließen.
+t00748 Wenn der Kühlschrank eingeschaltet wird, bevor das Öl eingesackt ist, können innere Teile beschädigt werden.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000819-20155140646426/
+문장:
+t00749 [LG-Monitor] Wie man keine Soundprobleme behebt Troubleshooting Mobile & Tablets 04/20/2026 Drucken Teilen Diesen Inhalt teilen.
+t00750 Close Wenn kein Ton von deinem Monitor kommt, überprüfe zuerst die Produktspezifikationen, ob er eingebaute Lautsprecher hat.
+t00751 Wenn dein Monitor eingebaute Lautsprecher hat, du aber trotzdem keinen Ton hörst, überprüfe die Signalkabelanschlüsse (HDMI, DP, USB-C) und deine Windows-Soundausgabe-Einstellungen.
+t00752 Der Monitor hat möglicherweise keine eingebauten Lautsprecher oder die Lautstärke ist stummgeschaltet.
+t00753 Wie man den Tonfall des Monitors behebt Überprüfe, ob dein Monitor eingebaute Lautsprecher hat Wenn kein Ton von deinem LG-Monitor kommt, überprüfe zuerst die Produktspezifikationen, ob er eingebaute Lautsprecher hat.
+t00754 Wählen Sie das Produktbild aus und prüfen Sie die Spezifikationen, um zu sehen, ob Lautsprecher aufgeführt sind.
+t00755 * Hinweis: Wenn Ihr Monitor keine eingebauten Lautsprecher hat, wird der Ton nicht durch den Monitor abgespielt.
+t00756 Schließen Sie externe Lautsprecher an.
+t00757 Überprüfe die Lautstärke des Monitors Bewege die Joystick-Taste am unteren Rand des Monitors nach links oder rechts, um die Lautstärke anzupassen und sicherzustellen, dass sie nicht stumm geschaltet ist.
+t00758 Wenn der Ton abgespielt wird, wenn externe Lautsprecher oder Ohrhörer an der Rückseite des Monitors angeschlossen sind, hat dein Monitor wahrscheinlich keine eingebauten Lautsprecher.
+t00759 Wir empfehlen die Verwendung eines HDMI-2.0- oder DP-Kabels, das 4K bei 60 Hz unterstützt.
+t00760 Klicken Sie auf das [Lautsprecher]-Symbol unten rechts in der Windows-Taskleiste und prüfen, ob [LG Monitor] als Tonausgabegerät ausgewählt ist.
+t00761 Wenn das Problem weiterhin besteht, wenden Sie sich für weitere Unterstützung an den LG-Kundensupport.
+t00762 Warum gibt es keinen Ton vom Monitor?
+t00763 Das HDMI-, DP- oder USB-C-Signalkabel, das PC und Monitor verbindet, kann beschädigt oder nicht sicher angeschlossen sein.
+t00764 Das Windows-Soundausgabegerät kann auf ein anderes Gerät als den Monitor eingestellt werden.
+t00765 Installieren Sie den Soundtreiber neu 1.
+t00766 Probier ein anderes Kabel aus, um zu sehen, ob der Ton abgespielt wird.
+t00767 Audio funktioniert möglicherweise nicht wegen der Kabelversion oder Kompatibilitätsproblemen zwischen dem Monitor und dem angeschlossenen Gerät (wie einem PC).
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000817-20155311401179/
+문장:
+t00768 Troubleshooting Home Entertainment 07/13/2026 Drucken Teilen Diesen Inhalt teilen.
+t00769 Wie man den Fernseher zurücksetzt Fernseher ab 2021 oder neueren [webOS 6.0 oder neuer]: Drücken Sie die Schaltfläche [Einstellungen] auf der Fernbedienung, [Alle Einstellungen], [Allgemein], [System], [Zurücksetzen auf Starteinstellungen] 2020er Fernseher [webOS 5.0]: Drücken Sie die [Einstellungen]-Taste auf der Fernbedienung, [Alle Einstellungen], [Support], [Zurücksetzen auf Anfangseinstellungen] Fernseher von 2019 oder älter [webOS 4.5 oder früher]: Drücken Sie die [Einstellungen]-Taste auf der Fernbedienung, [Alle Einstellungen], [Allgemein], [Zurücksetzen auf Anfangseinstellungen] Schritt 2.
+t00770 Bei einigen Modellen, die 2024 oder später veröffentlicht wurden, können Sie im Reset-Menü [Alle außer Netzwerkeinstellungen zurücksetzen] auswählen, um das System zurückzusetzen und Fehler zu beheben, während die aktuelle WLAN-Verbindung erhalten bleibt.
+t00771 Wie setze ich meinen LG-Fernseher auf Werkseinstellungen zurück, wenn er ständig einfriert oder Fehler zeigt?
+t00772 Close Wenn du Probleme mit der Fernbedienung oder App-Fehler auf deinem LG-Fernseher hast, kann die Funktion [Zurücksetzen auf Anfangseinstellungen (Werkseinstellungen)] helfen, das Problem zu lösen.
+t00773 Bitte beachten Sie, dass ein vollständiger Reset alle installierten Apps und persönlichen Einstellungen entfernt.
+t00774 Vorsicht Wenn die TV-Sperrfunktion aktiviert ist, musst du dein Passwort eingeben, um den Fernseher zurückzusetzen.
+t00775 (Das Standardpasswort findest du im Benutzerhandbuch auf der LG-Website.
+t00776 Wenn Sie Ihr Passwort nach der Änderung vergessen, wenden Sie sich bitte an den LG-Kundensupport für Unterstützung.) Ziehen Sie das Netzkabel nicht aus und schalten Sie den Fernseher während des Zurücksetzens nicht aus.
+t00777 Wann sollte ich meinen Fernseher zurücksetzen?
+t00778 Nach Abschluss des Zurücksetzens musst du die Apps neu installieren und dich erneut mit deiner Konto-ID und deinem Passwort anmelden.
+t00779 Muss ich mich nach dem Zurücksetzen des Fernsehers wieder bei Netflix oder YouTube anmelden?
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20150201189039/
+문장:
+t00780 Troubleshooting Haushalts- geräte 10/07/2016 Drucken Teilen Diesen Inhalt teilen.
+t00781 Video]LG refrigerator - Da sind Markierungen und Spuren auf den Zubehörteilen.
+t00782 Sind diese defekt?
+t00783 Close Video]LG refrigerator - Da sind Markierungen und Spuren auf den Zubehörteilen.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000814-20150157400878/
+문장:
+t00784 Product Usage Home Entertainment 06/20/2016 Drucken Teilen Diesen Inhalt teilen.
+t00785 Video]LG TV - Wie kann ich die Magic Zoom-Funktion nutzen?
+t00786 Close Video]LG TV - Wie kann ich die Magic Zoom-Funktion nutzen?
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000817-20155181424434/
+문장:
+t00787 Wie man die LG OnScreen Control (OSC) App herunterlädt und die Monitorsoftware oder -firmware aktualisiert Troubleshooting MONITORE 05/13/2026 Drucken Teilen Diesen Inhalt teilen.
+t00788 Close [OnScreen Control] ist eine App, mit der Sie LG-Monitorfunktionen einfach von Ihrem PC aus verwalten können, einschließlich Screen Split, Monitoreinstellungen sowie Software- oder Firmware-Updates.
+t00789 Du kannst die App für dein Betriebssystem auf der LG-Website herunterladen.
+t00790 Um die Software oder Firmware zu aktualisieren, müssen Ihr PC und Monitor über ein USB-Kabel verbunden sein.
+t00791 [OnScreen Control] ist nur bei bestimmten Modellen verfügbar.
+t00792 Schau in deinem Benutzerhandbuch, ob dein Monitor unterstützt wird.
+t00793 Wann brauche ich die OnScreen Control App?
+t00794 Verwenden Sie [OnScreen Control], wenn Sie Einstellungen wie Screen Split oder Helligkeit mit der Maus anpassen möchten.
+t00795 Häufig gestellte Fragen (FAQ) Q.
+t00796 Schließen Sie Ihren PC und Monitor mit dem entsprechenden USB-Kabel an.
+t00797 Überprüfe deine Kabelverbindung und schau in deinem Benutzerhandbuch, ob dein Monitor unterstützt wird.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20155297567656/
+문장:
+t00798 LG-Kühlschrankdisplay flackert: Ursachen und wie man es behebt Troubleshooting Haushalts- geräte 07/07/2026 Drucken Teilen Diesen Inhalt teilen.
+t00799 Close Wenn das Bedienfeld Ihres LG-Kühlschranks flackert oder nicht richtig funktioniert, könnte dies durch eine vorübergehende Stromschwankung oder ein Hardwareproblem verursacht werden.

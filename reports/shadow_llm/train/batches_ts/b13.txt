@@ -1,0 +1,256 @@
+페이지 정보: 국가=IN, URL=https://www.lg.com/in/support/product-support/troubleshoot/help-library/cs-CT52006627-20155102936765
+문장:
+t02600 Even heat-resistant glass containers can be damaged if heated for too long.
+
+페이지 정보: 국가=IN, URL=https://www.lg.com/in/support/product-support/troubleshoot/help-library/cs-CT52006627-20155101722647
+문장:
+t02601 Please note that these lines are a normal, natural design characteristic created during the exterior manufacturing process.
+t02602 [LG CordZero T9] Why are there marks on the product exterior?
+t02603 This product does not use spray coating processes that release environmentally harmful substances.
+t02604 Instead, aluminum powder is added during exterior manufacturing to create a premium sheen directly in the material.
+t02605 The patterns shown below do not affect the product's durability or performance.
+t02606 Because there is no coating to peel off from external impacts, the product will maintain a clean appearance longer than coated products.
+t02607 Parts with flow marks Problems with spray coating Releases toxic chemicals (which can cause atopic symptoms and dermatitis).
+t02608 Increases carbon dioxide emissions.
+t02609 For these reasons, the LG CordZero T9 does not use spray coating.
+t02610 Cannot be recycled after use.
+
+페이지 정보: 국가=IN, URL=https://www.lg.com/in/support/product-support/troubleshoot/help-library/cs-CT52006627-20155101715657
+문장:
+t02611 [LG CordZero A9] How do I install the exhaust filter?
+t02612 If you look closely at the vacuum, you will see circular marks on the exhaust filter and the handle.
+t02613 Use the circle marks as a guide to align and install the exhaust filter correctly.
+t02614 Align the circle on the exhaust filter with the circle on the handle.
+t02615 Turn the exhaust filter clockwise until the mark aligns with the black circle.
+t02616 Always ensure the exhaust filter and pre-filter are installed before use.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001451-20155028349634/
+문장:
+t02617 [Máy sấy LG] Hướng dẫn kiểm tra khi nhận hàng và lắp đặt Troubleshooting Thiết bị điện gia dụng 03/04/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02618 Cần có khe hở ít nhất 2 inch (5 cm) ở bên trái và bên phải của máy sấy.
+t02619 Cần có khoảng trống ít nhất 7.8 inch (20 cm) phía trên máy sấy.
+t02620 Cần có khe hở 4 inch (10 cm) giữa mặt sau của thiết bị và tường.
+t02621 Khoảng cách đường thẳng giữa ổ cắm điện và máy sấy phải trong vòng 47 inch (120 cm).
+t02622 Hộp bao bì thông thường Hộp bao bì trong suốt ※ Để di chuyển sản phẩm một cách an toàn, hãy đảm bảo khoảng cách từ 5 đến 10cm (1,9 đến 3,9 inch) giữa sản phẩm đóng gói và đường giao hàng (hành lang, cầu thang, v.v.).
+t02623 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Trước khi mua hoặc lắp đặt lại máy giặt hoặc máy sấy LG của bạn, hãy sử dụng hướng dẫn này để kiểm tra xem thiết bị có thể được lắp đặt an toàn trong nhà của bạn hay không.
+t02624 Bạn có thể tìm thấy kích thước của kiểu máy giặt hoặc máy sấy đã chọn trên trang web của LG Electronics.
+t02625 Thông tin dưới đây đóng vai trò là tài liệu tham khảo chung.
+t02626 Để được hỗ trợ thêm, vui lòng liên hệ với bộ phận Hỗ trợ khách hàng của LG.
+t02627 Kiểm tra vị trí lắp đặt Kiểm tra xem không gian lắp đặt có đủ cho kích thước của sản phẩm được mua hoặc lắp đặt hay không.
+t02628 - Để tránh rung và ồn, máy giặt nên được lắp đặt trên sàn cứng, bằng phẳng, chẳng hạn như nền xi măng hoặc bê tông.
+t02629 Xin lưu ý rằng việc lắp đặt trên sàn gỗ, kim loại hoặc dốc có thể gây rung và tiếng ồn trong quá trình sử dụng.
+t02630 Máy sấy bơm nhiệt Đây là danh sách kiểm tra để lắp đặt máy sấy.
+t02631 Nếu không đảm bảo chắc chắn, vui lòng liên hệ tới bộ phận Bán hàng để được hỗ trợ khảo sát trước khi mua hàng.
+t02632 Product Register Product Registration Failed Gửi Quay lại kết quả Đăng nhập để tạo danh sách yêu thích Thêm mặt hàng vào danh sách yêu thích để bạn có thể dễ dàng tìm thấy mặt hàng này khi quay lại LG.com.
+t02633 Trước khi mua hoặc lắp đặt lại máy giặt hoặc máy sấy LG của bạn, hãy sử dụng hướng dẫn này để kiểm tra xem thiết bị có thể được lắp đặt an toàn trong nhà của bạn hay không.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001451-20152940974134/
+문장:
+t02634 Cách Thiết lập Google Assistant trên LG TV Product Usage Sản phẩm tin học 05/22/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02635 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Phản hồi bài viết * Thông tin cần thiết 1.
+t02636 Verify right now Verify later Tôi có thể giúp gì cho bạn?
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001451-20155255793703/
+문장:
+t02637 Hướng dẫn cách di chuyển tủ lạnh đúng và an toàn Installation Thiết bị điện gia dụng 07/08/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02638 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Để tránh hư hỏng, hãy luôn giữ tủ lạnh thẳng đứng khi di chuyển.
+t02639 Nếu bạn phải đặt tủ lạnh nằm nghiêng để di chuyển tủ lạnh qua ngưỡng cửa, hãy đợi ít nhất 2 giờ trước khi cắm điện.
+t02640 Điều này cho phép dầu bên trong máy nén lắng xuống.
+t02641 Quan trọng Không cắm điện vào tủ lạnh ngay sau khi di chuyển tủ lạnh.
+t02642 Nếu cắm quá sớm, dầu bên trong máy nén có thể không lắng đúng cách.
+t02643 Điều này có thể ảnh hưởng đến hiệu suất làm mát hoặc gây hư hỏng nghiêm trọng cho máy nén.
+t02644 Nguyên nhân cần giữ tủ lạnh thẳng đứng khi di chuyển?
+t02645 Di chuyển tủ lạnh nằm nghiêng hoặc nghiêng tủ lạnh quá xa có thể gây ra các vấn đề sau: · Chuyển động của dầu và hư hỏng bộ phận: Dầu bên trong máy nén có thể di chuyển ra khỏi vị trí khi tủ lạnh bị nghiêng.
+t02646 Nếu bật tủ lạnh trước khi dầu lắng xuống, các bộ phận bên trong có thể bị hỏng.
+t02647 Di chuyển nó cẩn thận qua các ô cửa hẹp Nếu bạn phải đặt tủ lạnh nằm nghiêng trong thời gian ngắn để vừa với ô cửa, hãy di chuyển tủ từ từ và cẩn thận để tránh va đập.
+t02648 Câu hỏi thường gặp (FAQ) Q.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001452-20155048198576/
+문장:
+t02649 [Hệ thống sưởi điều hòa không khí LG] Hệ thống sưởi không được cung cấp và làm nóng trước mất nhiều thời gian Troubleshooting Giải pháp không khí 02/23/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02650 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Nếu quá trình làm nóng sơ bộ mất nhiều thời gian và xảy ra thường xuyên, hãy lắp đặt thanh dẫn khí để ngăn dàn nóng bị nhiệt độ lạnh, hoặc loại bỏ chướng ngại vật hoặc làm sạch bụi để giảm thời gian làm nóng sơ bộ và tạo điều kiện thuận lợi cho hiệu suất sưởi ấm.
+t02651 Không khí ấm áp thổi cả ngày dài Nếu đường ống không được làm nóng trước đủ do nhiệt độ giảm đột ngột, không khí thổi chậm hơn điều kiện bình thường hoặc không khí ấm thổi trong một thời gian dài để không làm tăng nhiệt độ trong nhà.
+t02652 Không khí nóng trở nên nhẹ hơn và bay lên trần nhà, và không khí mát trở nên nặng hơn và di chuyển xuống dưới.
+t02653 Không khí chỉ ấm ở vùng lân cận lỗ thông hơi và toàn bộ không gian trong nhà có thể cảm thấy lạnh.
+t02654 Rã đông lamp và làm nóng trước lamp thường xuyên ánh sáng.
+t02655 Chất làm lạnh ấm trong máy điều hòa không khí lưu thông trong nhà và chất làm lạnh lưu thông ngoài trời trong chế độ sưởi ấm.
+t02656 Cần chuẩn bị làm nóng sơ bộ để làm ấm bên trong sản phẩm khi bắt đầu chế độ sưởi ấm và cần phải có khu vực rã đông để loại bỏ hoặc ngăn chặn sự đóng băng của dàn nóng do chất làm lạnh trong chế độ sưởi ấm.
+t02657 Nếu khí hậu ẩm ướt hoặc tuyết rơi, có thể thường xuyên bị đóng băng ở mặt sau của dàn nóng.
+t02658 Dàn nóng tạm thời dừng trong quá trình rã đông và vùng không khí ấm trở nên ngắn hơn gây ra hiện tượng sưởi ấm yếu.
+t02659 Cũng có thể mất 1 giờ hoặc lâu hơn do các biến số khác nhau như nhiệt độ / độ ẩm ngoài trời và điều kiện đóng băng của sản phẩm.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001451-20155029323585/
+문장:
+t02660 [TV LG] Hướng dẫn bật âm thanh AI Troubleshooting Thiết bị nghe nhìn 03/04/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02661 Hướng dẫn bật âm thanh AI Cài đặt âm thanh AI theo model từng năm TV 2020 trở lên (webOS 5.0 trở lên): Nhấn [Cài đặt] trên điều khiển từ xa → Chọn [Tất cả cài đặt] → [Chung] → [Dịch vụ AI] → [AI Sound Pro] Tivi 2019 trở về trước (webOS 4.5 trở xuống): Nhấn [Cài đặt] trên điều khiển từ xa → Chọn [Tất cả cài đặt] → [Âm thanh] → [Âm thanh AI] Hướng dẫn đặt âm thanh AI trên TV 2025 (webOS 25 trở lên) 1.
+t02662 TV 2025 trở lên: Nhấn nút [Cài đặt] 3 lần liên tiếp.
+t02663 TV 2024 trở lên: Nhấn nút [Tắt tiếng] 3 lần liên tiếp.
+t02664 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng AI Sound sử dụng AI để phân tích nội dung trong thời gian thực nhằm mang lại hiệu ứng âm thanh được tối ưu hóa và giọng nói rõ ràng hơn.
+t02665 Nó cũng sử dụng các công nghệ âm thanh tiên tiến để tạo ra âm thanh 3D sống động.
+t02666 Chức năng này chỉ áp dụng cho loa trong của TV hoặc soundbar LG hỗ trợ Chia sẻ chế độ âm thanh TV.
+t02667 Các tùy chọn có sẵn có thể khác nhau tùy theo kiểu máy.
+t02668 Trước khi sử dụng âm thanh AI Chức năng này chỉ áp dụng cho loa trong của TV hoặc soundbar LG hỗ trợ Chia sẻ chế độ âm thanh TV.
+t02669 Tham khảo hướng dẫn sử dụng để kiểm tra xem kiểu máy của bạn có hỗ trợ tính năng này hay không.
+t02670 Nhấn nút [Cài đặt] trên điều khiển từ xa của bạn, sau đó chọn [Tất cả cài đặt] ở trên cùng bên trái của màn hình.
+t02671 Chọn [Chung] rồi chọn [Dịch vụ AI].
+t02672 Vui lòng tham khảo hướng dẫn sử dụng của bạn.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001451-20155004256211/
+문장:
+t02673 [Máy giặt cửa trước LG] Hướng dẫn vận hành một chu trình kiểm tra sau khi lắp đặt Troubleshooting Thiết bị điện gia dụng 06/05/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02674 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Hướng dẫn vận hành một chu trình kiểm tra sau khi lắp đặt Sau khi lắp đặt, chạy một chu trình kiểm tra để đảm bảo máy giặt hoạt động bình thường.
+t02675 Điều này giúp bạn xác nhận các kết nối đầu vào của nước, san lấp mặt bằng và lắp đặt ống thoát nước.
+t02676 Thêm quần áo vào lồng giặt Cho vào máy giặt 6 khăn tắm dày Để kiểm tra chính xác hơn, hãy chạy chu trình với đồ giặt thay vì với lồng giặt rỗng.
+t02677 Chọn chu trình - Nhấn nút [Nguồn] để bật máy giặt.
+t02678 - Xoay núm để chọn - Chọn chu trình Giặt nhanh hoặc Xả + Vắt .
+t02679 - Chọn chu kỳ ngắn hơn để kiểm tra nhanh hơn.
+t02680 - Nhấn nút [Bắt đầu / Tạm dừng] để bắt đầu chu trình.
+t02681 Các kiểu máy có núm xoay LCD: Chọn Giặt nhanh.
+t02682 Các kiểu máy có núm xoay tiêu chuẩn: Chọn Giặt + Vắt Đảm bảo máy giặt đổ đầy đúng cách, không rung lắc hoặc rung quá mức và thoát nước tốt trong chu kỳ vắt.
+t02683 Tại sao máy giặt rung quá mức?
+t02684 Đảm bảo rằng ống thoát nước được lắp đặt đúng cách.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT32012582-20155117737831
+문장:
+t02685 [Điều hòa không khí LG] Cách đọc mã lỗi Troubleshooting Giải pháp không khí 06/06/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02686 Cách kiểm tra lỗi trong máy điều hòa LG Cách kiểm tra lỗi trong máy điều hòa không khí treo tường / kiểu đứng Cách đọc mã lỗi trên AC treo tường hoặc đặt trên sàn Đèn LED đầu tiên cho biết chữ số của mã lỗi.
+t02687 (Ví dụ: Nếu đèn LED đầu tiên nhấp nháy đều đặn 5 lần, điều đó có nghĩa là mã lỗi CH05.) Cách đọc mã lỗi trên AC đặt sàn Bảng hiển thị hiển thị lỗi.
+t02688 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Mã lỗi máy điều hòa không khí LG khác nhau tùy thuộc vào kiểu máy.
+t02689 Đối với các thiết bị treo tường, hãy kiểm tra đèn LED trên điều khiển từ xa, trong khi các mẫu kiểu chân đế hiển thị chúng trên bảng điều khiển hoặc đèn LED.
+t02690 Xem các ví dụ và hướng dẫn đọc mã.
+t02691 Đèn LED thứ hai cho biết chữ số hàng chục.
+t02692 (Ví dụ: Nếu màn hình hiển thị CH → 2 → 37 theo trình tự, điều đó có nghĩa là mã lỗi CH237.) Cách đọc mã lỗi trên AC di động hoặc cửa sổ Mô hình LCD: Mã lỗi được hiển thị trực tiếp trên màn hình.
+t02693 Mô hình LED: Mã lỗi được hiển thị theo trình tự sau: CH → 02 → CH → 02 (lặp lại) Cách đọc mã lỗi trên Acsette gắn trần Đèn LED Màu chỉ báo là xanh lá cây hoặc đỏ, tùy thuộc vào kiểu máy.
+t02694 Số lần nhấp nháy cho biết số (1, 2, 3, v.v.) và khoảng thời gian giữa các lần nhấp nháy cho biết chữ số: Khoảng thời gian dài : Hàng trăm chữ số Khoảng thời gian trung bình : Hàng chục chữ số Khoảng thời gian ngắn : Một chữ số Mã lỗi có thể khó đọc trong thời gian thực.
+t02695 ※ Lưu ý: Nếu xảy ra lỗi trong quá trình vận hành và không thể khắc phục bằng cách khởi động lại sản phẩm, lỗi đó sẽ được hiển thị trong ứng dụng ThinQ.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT32015582-20155104844850
+문장:
+t02696 [Máy tính LG] Cách thay đổi trang khởi động trình duyệt Troubleshooting Sản phẩm tin học 04/01/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02697 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Trang khởi động trình duyệt là trang web tự động mở khi bạn khởi chạy trình duyệt web, chẳng hạn như Microsoft Edge hoặc Google Chrome.
+t02698 Cài đặt này cho phép bạn truy cập thẳng vào các trang web bạn truy cập thường xuyên, chẳng hạn như công cụ tìm kiếm hoặc trang liên quan đến công việc mà không cần phải nhập URL mỗi lần.
+t02699 Tại sao nên thiết lập trang khởi động?
+t02700 Bạn muốn mở một trang web cụ thể - như Google hoặc mạng nội bộ của công ty bạn - tự động mỗi khi bạn khởi chạy trình duyệt.
+t02701 Một trang không mong muốn, chẳng hạn như MSN hoặc Bing, xuất hiện dưới dạng mặc định sau khi mua PC mới hoặc cập nhật trình duyệt của bạn.
+t02702 Trang khởi động của bạn đã được thay đổi thành một trang web lạ hoặc nhiều quảng cáo, có thể là do phần mềm độc hại hoặc chương trình không mong muốn.
+t02703 Phiên duyệt web trước đó của bạn tiếp tục khôi phục và bạn muốn bắt đầu lại mỗi lần.
+t02704 Cách thay đổi trang khởi động bằng trình duyệt Microsoft Edge — Thay đổi trang khởi động 1.Mở Microsoft Edge.
+t02705 2.Nhấp vào biểu tượng Tùy chọn khác [ ] ở góc trên cùng bên phải, sau đó chọn [Cài đặt].
+t02706 Liên hệ với bộ phận CNTT hoặc quản trị viên hệ thống của bạn để được hỗ trợ.
+t02707 Trong trường hợp này, bạn sẽ không thể tự mình thay đổi trang khởi động.
+t02708 4.Nhấp chuột Áp dụngOK và sau đó lưu các thay đổi của bạn.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001452-20155297259457/
+문장:
+t02709 Đèn báo máy lọc không khí chuyển sang màu đỏ khi bật máy điều hòa không khí Troubleshooting Giải pháp không khí 07/07/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02710 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Khi bạn bật máy điều hòa không khí, nó sẽ tạo ra luồng không khí trong phòng, điều này có thể khiến máy lọc không khí của bạn phát hiện bụi hoặc khí.
+t02711 Điều này là bình thường và không cho thấy sự cố.
+t02712 Xin lưu ý Máy điều hòa không khí không thải ra bụi hoặc khí.
+t02713 Luồng không khí có thể di chuyển bụi xung quanh, khiến máy lọc không khí của bạn phát hiện ra nó.
+t02714 Nếu chỉ báo tiếp tục hiển thị 'Kém' sau thời gian dài sử dụng, chúng tôi khuyên bạn nên kiểm tra bộ lọc của mình.
+t02715 Tại sao đèn báo máy lọc không khí của bạn thay đổi khi máy điều hòa không khí đang bật?
+t02716 Máy điều hòa không khí của bạn liên tục hút không khí trong nhà, làm mát và giải phóng không khí trở lại phòng.
+t02717 Điều này tạo ra luồng không khí có thể di chuyển bụi hoặc khí xung quanh, khiến máy lọc không khí của bạn phát hiện ra chúng.
+t02718 Ngay cả khi chỉ báo chất lượng không khí chuyển sang màu đỏ ('Kém'), cả hai thiết bị đều hoạt động bình thường.
+t02719 Nếu sự cố vẫn tiếp diễn sau khi vệ sinh bộ lọc, hãy liên hệ với bộ phận Hỗ trợ khách hàng của LG để được hỗ trợ.
+t02720 Kết quả là, bụi hoặc khí không lưu thông nhiều, vì vậy chỉ báo chất lượng không khí vẫn ở mức 'Tốt' (màu xanh lam).
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001452-20155304392472/
+문장:
+t02721 Khắc phục sự cố xoay Clean Booster trên máy lọc không khí LG PuriCare™ 360 Troubleshooting Giải pháp không khí 10/08/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02722 Khi chế độ hoạt động được đặt thành [AI (Thông minh)] / [Tự động], Clean Booster chỉ tự động quay khi chất lượng không khí rất kém (màu đỏ).
+t02723 Chế độ [AI (Thông minh)] / [Tự động]: Clean Booster hoạt động tự động dựa trên chất lượng không khí tổng thể.
+t02724 Kiểm tra chế độ hiện tại Kiểm tra màn hình để xem chế độ hiện tại được đặt thành [AI (Thông minh)] hoặc [Tự động].
+t02725 (Kiểu máy Alpha: [AI (Thông minh)] → [Tăng cường sạch] / Kiểu máy tiêu chuẩn: [Tự động] → [Tăng cường sạch]) Bước 3.
+t02726 Ở chế độ [AI (Thông minh)] / [Tự động], Clean Booster chỉ tăng và quay khi chất lượng không khí rất kém (màu đỏ).
+t02727 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Nếu Clean Booster trên máy lọc không khí LG PuriCare™ 360 của bạn không quay, điều này thường là bình thường.
+t02728 Để kiểm tra xem nó có hoạt động bình thường hay không, hãy chuyển chế độ sang [Chế độ tăng cường sạch].
+t02729 Xin lưu ý Các nút có thể không phản hồi: Ở chế độ [AI] / [Tự động], hoạt động được điều khiển tự động dựa trên chất lượng không khí.
+t02730 Các nút [Tốc độ], [Tốc độ tăng cường] và [Swing] sẽ không phản hồi.
+t02731 Độ trễ hoạt động: Khi chất lượng không khí được cải thiện từ đỏ / cam sang xanh lá cây / xanh lam (Trung bình / Tốt), Clean Booster sẽ ngừng quay và tự động hạ xuống sau khoảng 5 phút.
+t02732 Nguyên nhân Clean Booster không quat Clean Booster hoạt động khác nhau tùy thuộc vào chế độ đã chọn.
+t02733 Khi chất lượng không khí được cải thiện, nó có thể ngừng quay hoặc thổi không khí.
+t02734 Thay đổi chế độ thành [Chế độ tăng cường làm sạch], sau đó nhấn nút [Swing] hoặc [Booster Speed].
+t02735 Đối với các mẫu PuriCare™ 360, nhấn nút [Swing].
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT32012582-20155048193118
+문장:
+t02736 [Điều hòa LG] [Treo tường] Hướng dẫn vệ sinh bề mặt bên ngoài dàn nóng Troubleshooting Giải pháp không khí 03/04/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02737 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Nguyên nhân và triệu chứng Bề mặt bên ngoài của dàn nóng có bị nhiễm bẩn nghiêm trọng bởi vật lạ hoặc bụi không?
+t02738 Hãy thử điều này Rút dây nguồn trước khi vệ sinh dàn nóng.
+t02739 (Có thể vẫn còn nguồn điện trực tiếp khi bạn vệ sinh dàn nóng khi chưa tắt nguồn.) Xác định vị trí của dàn nóng và chỉ vệ sinh dàn nóng ở nơi an toàn.
+t02740 Cần cẩn thận để ngăn nước chảy vào động cơ khi bạn vệ sinh dàn nóng bằng nước.
+t02741 (Cho phép làm sạch bằng nước; tuy nhiên, nên được thực hiện theo cách mà nước thường chảy ra khỏi thiết bị như nước mưa.) Nếu dàn nóng được lắp đặt ngoài tay vịn, không cố gắng vệ sinh vì có nguy cơ gây nguy hiểm.
+t02742 (Nếu cần thiết bị an toàn để làm sạch, nó cần được xử lý bởi kỹ thuật viên dịch vụ của LG Electronics.) Với các sản phẩm lắp đặt ở vị trí phức tạp/ nguy hiểm, Kỹ thuật viên không thể tiếp cận hoặc không đủ an toàn để tiếp cận sản phẩm trong điều kiện làm việc bình thường, khách hàng cần đưa sản phẩm xuống/đến vị trí mà Kỹ thuật viên tiếp cận, thao tác kiểm tra và sửa chữa được trong điều kiện bình thường và an toàn Hướng dẫn này được tạo cho tất cả các kiểu máy, vì vậy hình ảnh hoặc nội dung có thể khác với sản phẩm của bạn.
+t02743 Nguyên nhân và triệu chứng Bề mặt bên ngoài của dàn nóng có bị nhiễm bẩn nghiêm trọng bởi vật lạ hoặc bụi không?
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT32012582-20155060949611
+문장:
+t02744 [Điều hòa không khí LG] Kiểm tra điều hòa trước mùa hè Troubleshooting Giải pháp không khí 05/14/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02745 ※ Lưu ý: Các mẫu 2021 trở lên yêu cầu kết nối nguồn riêng cho dàn nóng, dàn lạnh đặt sàn và dàn lạnh treo tường.
+t02746 (Không sử dụng nước nóng hơn 40 ° C.) ➔ Làm khô bộ lọc hoàn toàn ở nơi thông thoáng, có bóng râm.
+t02747 Nhấn nút [Đặt / Hủy] trên điều khiển từ xa cho thiết bị treo tường 3 lần trong vòng 5 giây.
+t02748 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Trước khi bước vào mùa hè, cần kiểm tra tổng thể sản phẩm điều hòa sau một mùa đông không sử dụng để đảm bảo giữ được hiệu quả khi vận hành.
+t02749 Kiểm tra nguồn điện và điều khiển từ xa Kiểm tra nguồn điện - Kiểm tra kết nối ổ cắm.
+t02750 ➔ Nếu bạn đã rút phích cắm của thiết bị sau mùa hè năm ngoái, hãy cắm lại thiết bị trước khi tự kiểm tra.
+t02751 - Nếu bạn đang sử dụng dải nguồn, hãy kiểm tra điều này trước.
+t02752 ➔ Không sử dụng dải nguồn hoặc dây nối.
+t02753 Cắm dây nguồn trực tiếp vào ổ cắm trên tường.
+t02754 ➔ Nếu không thể tránh khỏi việc sử dụng dải nguồn.
+t02755 ※ Lưu ý: Đảm bảo công suất tối đa của dải nguồn đáp ứng các thông số kỹ thuật của sản phẩm được liệt kê trong sách hướng dẫn sử dụng.
+t02756 Sử dụng bàn chải làm sạch để loại bỏ bụi và đảm bảo luồng không khí thông thoáng.
+t02757 Hướng điều khiển từ xa về phía bộ thu tín hiệu trên thiết bị.
+t02758 Chờ cho đến khi nó kết thúc.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001451-20155103101985/
+문장:
+t02759 [Máy rửa bát LG] Lỗi [IE] xuất hiện trên màn hình Troubleshooting Thiết bị điện gia dụng 04/28/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02760 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Máy rửa bát của bạn có hiển thị [IE] (Lỗi đầu vào nước) khi đang chạy không?
+t02761 Bạn có nghe thấy tiếng báo động 'dingdong' trong khi không có nước được cung cấp cho bồn tắm không?
+t02762 Nguyên nhân và triệu chứng Nước bị cắt hoặc ống cấp nước bị nén.
+t02763 Van nước đã đóng.
+t02764 Máy rửa bát của bạn liên tục phun mạnh và đổ hết nước bên trong máy trong khi rửa bát đĩa của bạn.
+t02765 Nếu một lượng nước cụ thể không được cung cấp cho máy rửa bát, lỗi [IE] sẽ được hiển thị.
+t02766 Hãy thử điều này Nước có bị cắt không?
+t02767 Hay ống cấp nước bị nén hoặc bị đứt?
+t02768 ➔ Kiểm tra xem nước có chảy ra ở vòi bồn rửa hoặc vòi trong phòng tắm không.
+t02769 Nếu ống cấp nước bị nén hoặc đứt, hãy duỗi thẳng và/hoặc sửa chữa/thay thế để đảm bảo dòng nước thông suốt.
+t02770 Mở van cấp nước kết nối với máy rửa bát ① Mở cửa bồn rửa dưới vòi nước.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001450-20155105903674
+문장:
+t02771 [Máy chiếu LG] Tuổi thọ pin ngắn hơn dự kiến Troubleshooting Sản phẩm tin học 04/02/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02772 Đặc điểm pin: Pin là một thành phần tiêu hao.
+t02773 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Tuổi thọ pin được liệt kê trong thông số kỹ thuật của sản phẩm được đo bằng cài đặt Tiết kiệm năng lượng [Tối đa].
+t02774 Nếu bạn chọn cài đặt màn hình sáng hơn, chẳng hạn như [Tối thiểu] hoặc [Trung bình] trong Bước tiết kiệm năng lượng, mức tiêu thụ điện năng sẽ tăng lên và thời lượng pin có thể ngắn hơn.
+t02775 Đây không phải là lỗi pin, mà là hoạt động bình thường tùy thuộc vào cài đặt đã chọn.
+t02776 Tại sao pin cạn kiệt nhanh hơn dự kiến?
+t02777 Cài đặt tiết kiệm năng lượng: Thời lượng pin hiển thị trong thông số kỹ thuật dựa trên chế độ [Tiết kiệm năng lượng tối đa].
+t02778 Sử dụng cài đặt màn hình sáng hơn, chẳng hạn như Tiết kiệm năng lượng [Tối thiểu], sẽ tiêu hao pin nhanh hơn.
+t02779 Khi nó trải qua các chu kỳ sạc và xả lặp đi lặp lại, hiệu suất của nó giảm dần.
+t02780 Thời lượng pin ngắn hơn so với khi sản phẩm còn mới là điều bình thường.
+t02781 Tuổi thọ pin được liệt kê trong thông số kỹ thuật của sản phẩm được đo bằng cài đặt Tiết kiệm năng lượng [Tối đa].
+t02782 Thời lượng pin có thể thay đổi tùy thuộc vào cài đặt Tiết kiệm năng lượng và các điều kiện sử dụng khác.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001451-20155101722942/
+문장:
+t02783 [Máy hút bụi LG] Đèn báo sáng nhưng máy hút không khởi động Troubleshooting Thiết bị điện gia dụng 03/31/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02784 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Hãy thử điều này.
+t02785 Máy hút có thể không bật nếu kết nối giữa ống và thân chính bị lỏng.
+t02786 Vui lòng kết nối lại ống với thân chính.
+t02787 Nếu sự cố vẫn tiếp diễn, hãy liên hệ với bộ phận Hỗ trợ khách hàng của LG để được hỗ trợ thêm.
+t02788 Hãy thử điều này.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT32015582-20155069781221
+문장:
+t02789 Troubleshooting SẢN PHẨM TIN HỌC 03/09/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02790 Đặt lại cài đặt trình duyệt của bạn là một trong những cách hiệu quả nhất để giải quyết những vấn đề này.
+t02791 [Máy tính LG] Làm cách nào để đặt lại cài đặt trình duyệt web của tôi?
+t02792 Nó xóa các tệp và dữ liệu tạm thời, khôi phục trình duyệt về cài đặt mặc định, cải thiện hiệu suất và tăng cường bảo mật.
+t02793 Khi nào tôi nên đặt lại trình duyệt web?
+t02794 Sự cố phát lại video: Màn hình bị méo, pixel hoặc trễ đáng kể khi phát video.
+t02795 Trình duyệt không ổn định: Trình duyệt gặp sự cố đột ngột, bị treo hoặc ngừng phản hồi do lỗi.
+t02796 Mối quan tâm về quyền riêng tư: Bạn muốn tăng cường bảo mật bằng cách xóa mật khẩu đã lưu và thông tin đăng nhập để bảo vệ quyền riêng tư cá nhân của mình.
+t02797 Cách đặt lại cài đặt theo loại trình duyệt Cách đặt lại cài đặt Microsoft Edge 1.
+t02798 Mở Microsoft Edge.
+t02799 Để có trải nghiệm nhanh hơn và an toàn hơn, chúng tôi khuyên bạn nên sử dụng Microsoft Edge hoặc Google Chrome.

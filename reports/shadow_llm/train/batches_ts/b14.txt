@@ -1,0 +1,166 @@
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT32015582-20155069781221
+문장:
+t02800 Nhấp vào [Khôi phục cài đặt về mặc định ban đầu], sau đó nhấp vào [Đặt lại cài đặt] trong hộp thoại bật lên.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001451-20155103114569/
+문장:
+t02801 [Máy giặt] Nước xả vải không chảy vào lồng giặt hoặc chảy vào quá sớm Troubleshooting Thiết bị điện gia dụng 08/12/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02802 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Nước xả vải không chảy vào lồng giặt Nếu nước xả vải để trong ngăn chứa bột giặt quá lâu, có thể đã cứng lại và có thể không được thêm vào.
+t02803 Hướng dẫn khắc phục Nước xả vào không chảy xuống lồng giặt ➔ Nếu bạn thêm nước xả vải và để quá 2 ngày, nước xả vải có thể trở nên nhớt hoặc cứng hơn.
+t02804 Không để nước xả vải trong ngăn chứa bột giặt quá 2 ngày.
+t02805 ➔ Vệ sinh ngăn chứa nước giặt xả định kỳ.
+t02806 Nếu cặn bột giặt và nước giặt bị đóng cặn có thể dẫn tới nước không cấp được cho ngăn chứa, v.v., vì vậy cần tách từng bộ phận và làm sạch định kỳ.
+t02807 Việc không vệ sinh ngăn chứa nước giặt xả thường xuyên, có thể gây ra hiện tượng chảy nước.
+t02808 Khi làm sạch, rửa bằng bàn chải mềm và nước ấm.
+t02809 Hướng dẫn vệ sinh hộp đựng bột giặt 1.
+t02810 Kéo nó về phía trước trong khi ấn nhẹ nắp nước xả vải.
+t02811 Sau khi làm sạch, nhấn và lắp ráp hoàn toàn nắp.
+t02812 Làm sạch hộp đựng bột giặt hàng tuần.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001453-20155410299212/
+문장:
+t02813 Hướng dẫn khắc phục bàn di chuột laptop LG không hoạt động Troubleshooting SẢN PHẨM TIN HỌC 09/25/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02814 Các mẫu LG gram 2025 trở lên: Nhấn và giữ phím Fn, sau đó nhấn F4.
+t02815 Các mẫu LG Gram 2024 trở lên: Nhấn và giữ phím Fn, sau đó nhấn F5 để bật lại touchpad.
+t02816 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Nếu touchpad trên laptop LG của bạn không hoạt động, có thể nó bị vô hiệu hóa do phím tắt, cài đặt Windows hoặc thiếu driver.
+t02817 Bạn có thể dễ dàng khắc phục bằng cách bật lại touchpad, bật ứng dụng HotKeyManager hoặc cập nhật driver touchpad qua LG Update.
+t02818 Nguyên nhân touchpad không hoạt động Touchpad đã tắt Phím tắt Fn không hoạt động Trình điều khiển touchpad bị thiếu hoặc bị hỏng Hướng dẫn khắc phục sửa bàn di chuột laptop LG không hoạt động Bước 1.
+t02819 Bật bàn di động bằng phím tắt bàn phím Nếu bàn di chuột của bạn tắt, bạn có thể dễ dàng bật lại bằng phím tắt.
+t02820 Tìm chỉ báo Touchpad On trên màn hình của bạn.
+t02821 Các mẫu khác: Nhấn và giữ phím Fn, sau đó nhấn phím chức năng (F1–F12) có biểu tượng touchpad.
+t02822 Điều này thường xảy ra khi lòng bàn tay bạn vô tình chạm vào bàn di chuột.
+t02823 Tìm HotKeyManager trong danh sách.
+t02824 Trong cửa sổ Trình quản lý Tác vụ, nhấp vào biểu tượng Ứng dụng Khởi động (hoặc tab Khởi động).
+t02825 Mở rộng phần Touchpad.
+t02826 Đánh dấu vào ô bên cạnh Giữ touchpad bật khi chuột được kết nối nếu bạn muốn sử dụng cả hai thiết bị cùng lúc.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001451-20155105958736/
+문장:
+t02827 [Máy giặt cửa trên LG] Giặt yếu Troubleshooting Thiết bị điện gia dụng 04/04/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02828 Khuyến nghị khách hàng vệ sinh lồng giặt 1 lần/tháng 4 Kiểm tra chu trình khách hàng đã chọn: Khách hàng có giặt bằng chu trình Quick wash hay Delicate không?
+t02829 ➔ Sau khi bật nút giữ quá trình trong 3 giây thì màn hình sẽ hiển thị "3", điều đó có nghĩa là WM sẽ xả 3 lần.
+t02830 Bạn có thể tăng nhiều hơn tùy thích bằng cách giữ "nút quy trình" (Xả tối đa là 5 lần) ➔ Thông báo cho khách hàng thêm nước xả Nó sẽ giúp loại bỏ vết bẩn.
+t02831 (Tối đa 5 lần) 6 Kiểm tra loại vải mà khách hàng giặt: Nếu khách hàng giặt bằng vải dễ nổi ➔ Đề nghị khách hàng nhấn nút Tạm dừng sau khi đổ đầy nước, sau đó mở cửa để nhúng đồ giặt vào nước.
+t02832 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Kiểm tra thời gian khách hàng sử dụng máy giặt?
+t02833 (Dưới một tháng) 1 Khai thác thói quen sử dụng Máy giặt của khách hàng, khách có tự chọn mực nước hay không?
+t02834 1 Có - Khách hàng tự chọn mức nước mỗi khi sử dụng ➔ Khuyến nghị khách hàng sử dụng tính năng tự động cân đồ giặt và cấp mức nước phù hợp (Tính năng này sử dụng cảm biến để cân đồ giặt và cấp xuống lồng giặt một mức nước phù hợp với khối lượng đồ) Bởi vì nó sẽ trông giống như giặt yếu, khách hàng đã chọn quá nhiều nước (Vải nổi làm cho trông giống như giặt yếu.) ➔ Nếu khách hàng muốn lựa chọn, không nên lựa chọn mức nước quá chênh lệch so với khối lượng đồ giặt Mực nước khuyến nghị dựa trên Tải lượng đồ giặt 1.
+t02835 2 Không - Khách hàng sử dụng tính năng tự động ➔ Khách hàng có cho đồ giặt ướt vào không?
+t02836 Nếu có - Khuyến nghị khách hàng chỉ cho đồ khô vào lồng giặt.
+t02837 Bởi vì nếu khách hàng cho đồ ướt vào máy giặt sẽ cân một lượng đồ giặt nặng hơn và cấp nhiều nước hơn.
+t02838 Việc cấp quá nhiều nước khiến lồng giặt tạo cảm giác quay yêu hơn do vải nổi lên mặt nước.
+t02839 [Hơn một tháng] - Vui lòng kiểm tra lý do nếu khách hàng cũng phàn nàn về vải bẩn.
+t02840 Vui lòng giải thích bằng nội dung bẩn vải bên dưới.
+t02841 Đối với tạm thời, vui lòng yêu cầu khách hàng làm sạch bộ lọc đầu vào.
+t02842 ④ Nhấn nút [Bắt đầu / Tạm dừng] (Màn hình hiển thị thời gian còn lại) ⑤ Khi âm thanh báo cho biết quá trình vệ sinh đã kết thúc, nguồn điện sẽ tự động tắt sau khoảng 10 giây.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001450-20155063963359
+문장:
+t02843 [LG TONE FREE] Tôi đặt tai nghe vào hộp sạc và đóng hộp, nhưng chúng vẫn được kết nối với thiết bị Bluetooth của tôi Product Usage Thiết bị nghe nhìn 04/08/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02844 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Nếu các chất lạ như mồ hôi, nước, mỹ phẩm, v.v.
+t02845 bị kẹt trong tai nghe hoặc hộp sạc, Bluetooth vẫn có thể được kết nối ngay cả khi bạn đặt tai nghe vào hộp sạc và đóng lại.
+t02846 ➔ Các triệu chứng có thể xảy ra Tai nghe có thể không sạc đúng cách.
+t02847 Bluetooth không bị ngắt kết nối.
+t02848 Tai nghe có thể phát ra âm thanh tần số cao.
+t02849 Đèn báo có thể không hoạt động bình thường.
+t02850 Nguyên nhân và triệu chứng Tôi đặt tai nghe vào hộp sạc và đóng hộp, nhưng chúng vẫn được kết nối với thiết bị Bluetooth của tôi.
+t02851 Hãy thử điều này Nhẹ nhàng lau khu vực đặt tai nghe trong hộp sạc bằng khăn giấy hoặc vải khô và đặt lại tai nghe vào hộp.
+t02852 Lưu ý Nếu tai nghe không được đặt đúng cách vào hộp hoặc nếu hết pin, Bluetooth vẫn có thể được kết nối.
+t02853 Nếu các chất lạ như mồ hôi, nước, mỹ phẩm, v.v.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001450-20155115745225
+문장:
+t02854 [TV LG] Chỉ báo âm lượng không hiển thị trên màn hình Troubleshooting Thiết bị nghe nhìn 04/13/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02855 Hướng dẫn khắc phục chỉ báo âm lượng bị thiếu Thay đổi cài đặt [Sound Out] thành loa của TV Cài đặt [Sound Out] theo kiểu sản phẩm TV 2021 trở lên (webOS 6.0 trở lên): Nhấn [Cài đặt] trên điều khiển từ xa → Chọn [Tất cả cài đặt] trên màn hình TV → [Âm thanh] → [Âm thanh] → [Sử dụng loa TV] Tivi 2020 trở về trước (webOS 5.0 trở xuống): Nhấn [Cài đặt] trên điều khiển từ xa → Chọn [Tất cả cài đặt] trên màn hình TV → [Âm thanh] → [Âm thanh] → [Loa TV trong] Hướng dẫn thay đổi thành [Sử dụng loa TV] trên TV 2025 trở lên (webOS 25 trở lên) 1.Nhấn nút [Cài đặt] trên điều khiển từ xa và chọn [Tất cả cài đặt] ở trên cùng bên trái của màn hình TV.
+t02856 Hướng dẫn đặt lại theo các model TV TV 2025 trở lên (webOS 25 trở lên): Nhấn nút [Cài đặt] ba lần để đặt lại cài đặt AV.
+t02857 Tivi 2024 trở về trước (webOS 24 trở xuống): Nhấn nút [Tắt tiếng] ba lần để đặt lại cài đặt AV.
+t02858 Hướng dẫn đặt lại cài đặt âm thanh và video trên TV 2025 trở lên (webOS 25 trở lên) 1.Nhấn nút [Cài đặt] trên điều khiển từ xa ba lần và cửa sổ bật lên [Chọn mục menu] sẽ xuất hiện.
+t02859 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Nếu cài đặt đầu ra của âm thanh đã bị thay đổi, mức âm lượng không xuất hiện trên màn hình TV khi bạn điều chỉnh âm thanh.
+t02860 Bạn có thể dễ dàng khắc phục điều này bằng cách thay đổi cài đặt [Sound Out] trở lại [Sử dụng loa TV] bằng menu cài đặt TV hoặc nút [Cài đặt] hoặc [Tắt tiếng] trên điều khiển từ xa.
+t02861 Nguyên nhân chỉ báo âm lượng không hiển thị Khi kết nối thiết bị âm thanh bên ngoài như soundbar hoặc tai nghe Bluetooth, cài đặt loa của TV có thể thay đổi.
+t02862 Trong trường hợp này, chỉ báo âm lượng trên màn hình có thể không xuất hiện.
+t02863 2.Chọn [Âm thanh], sau đó chọn [Âm thanh].
+t02864 3.Chọn [Sử dụng loa TV].
+t02865 Đặt lại cài đặt âm thanh / video bằng điều khiển từ xa Nếu gặp khó khăn khi truy cập menu, bạn có thể nhanh chóng khôi phục cài đặt loa bằng cách đặt lại chúng bằng điều khiển từ xa.
+t02866 Di chuyển sang trái hoặc phải để kiểm tra nội dung.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001453-20155311250480/
+문장:
+t02867 Hướng dẫn khắc phục sự cố TV LG không có âm thanh Troubleshooting Thiết bị nghe nhìn 07/16/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02868 Khắc phục sự cố âm thanh Tivi bằng cách sử dụng tính năng Tự chẩn đoán âm thanh TV OLED từ năm 2024 trở lên [TV OLED chạy webOS 24 trở lên]: Nhấn nút [Cài đặt] trên điều khiển từ xa, [Tất cả cài đặt], [Hỗ trợ], [Tự chẩn đoán âm thanh] TV OLED từ năm 2021 đến năm 2023 [TV OLED có webOS 6.0 đến 23]: Nhấn nút [Cài đặt] trên điều khiển từ xa, [Tất cả cài đặt], [Chung], [Chăm sóc OLED], [Tự chăm sóc thiết bị], [Tự chẩn đoán âm thanh] TV từ năm 2021 trở lên [TV có webOS 6.0 trở lên]: Nhấn nút [Cài đặt] trên điều khiển từ xa, [Tất cả cài đặt], [Hỗ trợ], [Tự chẩn đoán âm thanh] TV 2020 [TV webOS 5.0]: Nhấn nút [Cài đặt] trên điều khiển từ xa, [Tất cả cài đặt], [Hỗ trợ], [Cài đặt bổ sung], [Kiểm tra âm thanh] Tivi 2019 trở về trước [TV webOS 4.5 trở xuống]: Nhấn nút [Cài đặt] trên điều khiển từ xa, [Tất cả cài đặt], [Âm thanh], [Kiểm tra âm thanh] Bước 4.
+t02869 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Nếu không có âm thanh từ TV của bạn, trước tiên hãy kiểm tra xem [Âm thanh ra] đã được đặt thành [Loa trong TV] hoặc thiết bị bên ngoài được kết nối của bạn chưa.
+t02870 Nếu bạn đang sử dụng hộp giải mã tín hiệu, hãy thử tăng âm lượng bằng điều khiển từ xa của hộp giải mã tín hiệu.
+t02871 Nếu cài đặt chính xác, hãy chạy [Tự chẩn đoán âm thanh] trên Tivi của bạn.
+t02872 Điều này sẽ giúp bạn kiểm tra xem loa TV có hoạt động bình thường hay không.
+t02873 Nguyên nhân gây ra hiện tượng TV không có âm thanh 1.
+t02874 Sự cố cài đặt đầu ra âm thanh Nếu gần đây bạn đã ngắt kết nối loa ngoài, chẳng hạn như soundbar, bạn có thể không nghe thấy âm thanh vì TV của bạn vẫn được đặt để phát âm thanh qua loa ngoài.
+t02875 Các vấn đề về âm lượng và tắt tiếng của thiết bị được kết nối Ngay cả khi tăng âm lượng TV, bạn sẽ không nghe thấy gì nếu hộp giải mã tín hiệu số hoặc thiết bị bên ngoài của bạn bị tắt tiếng hoặc đặt thành 0.
+t02876 Rút dây nguồn của cả TV và thiết bị bên ngoài, sau đó cắm lại để khởi động lại thiết bị.
+t02877 Sự cố phần cứng TV Bạn có thể không nghe thấy âm thanh nếu có vấn đề với chính TV.
+t02878 Rút phích cắm cả hai đầu của cáp HDMI kết nối Tivi và thiết bị bên ngoài (chẳng hạn như hộp giải mã tín hiệu số hoặc bảng điều khiển trò chơi), sau đó cắm lại.
+t02879 Tôi đã chạy Tự chẩn đoán âm thanh, nhưng tôi hoàn toàn không thể nghe thấy âm thanh kiểm tra.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001453-20155410117264/
+문장:
+t02880 Cách thay đổi từ báo thức trên TV LG của bạn Troubleshooting Thiết bị nghe nhìn 08/24/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02881 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Bạn có thể đặt từ đánh thức để điều khiển giọng nói rảnh tay thành "Hi LG" hoặc "Hi TV." Nhấn Cài đặt trên điều khiển từ xa của bạn.
+t02882 Sau đó, chọn Tất cả Cài đặt, Tổng quát, Dịch vụ AI và Nhận diện giọng nói.
+t02883 Chọn từ đánh thức bạn muốn sử dụng.
+t02884 Lưu ý Điều khiển giọng nói rảnh tay chỉ có trên các mẫu TV được hỗ trợ có micro tích hợp.
+t02885 Nếu TV của bạn không hỗ trợ điều khiển giọng nói rảnh tay, hãy nhấn và giữ nút Nhận dạng giọng nói trên điều khiển khi nói lệnh.
+t02886 Tên menu có thể khác nhau tùy theo quốc gia, ngôn ngữ, mẫu TV và phiên bản webOS của bạn.
+t02887 Cách Thay đổi Từ Đánh Thức Bước 1.
+t02888 Mở tất cả cài đặt Bật TV lên đi.
+t02889 Nhấn nút Cài đặt (biểu tượng bánh răng) trên điều khiển từ xa, sau đó chọn Tất cả Cài đặt.
+t02890 Không, bạn không cần phải nói một từ đánh thức nào.
+t02891 Mở Cài đặt Nhận diện Giọng nói Chọn Cài đặt Chung, Dịch vụ AI và Nhận dạng giọng nói.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001451-20155028326077/
+문장:
+t02892 [Máy giặt cửa trước LG] Danh sách kiểm tra khi nhận hàng và lắp đặt Troubleshooting Thiết bị điện gia dụng 03/04/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02893 Nếu nguồn cấp nước phía sau máy giặt Để ít nhất 1 inch (2.5 cm) ở mỗi bên và 0.2 inch (0.5 cm) phía trên máy giặt.
+t02894 Đảm bảo khe hở ít nhất 4 inch (10 cm) giữa mặt sau của thiết bị và nguồn cấp nước.
+t02895 Mặt trước yêu cầu khoảng trống từ 19,6 đến 23,6 inch (50 đến 60 cm), xem xét việc mở cửa.
+t02896 Nếu nguồn cấp nước bên cạnh máy giặt Để khoảng cách 4 inch (10 cm) giữa nguồn cấp nước và mặt bên của máy giặt, 1 inch (2.5 cm) ở phía đối diện và 0.19 inch (0.5 cm) phía trên máy giặt.
+t02897 Cần có khoảng trống ít nhất 4 inch (10 cm) giữa mặt sau của thiết bị và tường và mặt trước cần thêm 19.6 đến 23.6 inch (50 đến 60 cm) không gian, xem xét việc mở cửa.
+t02898 - Để tránh rung động và tiếng ồn, máy giặt nên được lắp đặt trên sàn cứng, bằng phẳng, chẳng hạn như xi măng hoặc bê tông.
+t02899 Kích thước sản phẩm thực tế và kích thước bao bì có thể khác nhau tùy thuộc vào kiểu sản phẩm.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001452-20155366428870/
+문장:
+t02900 [Máy lọc không khí] Không nên sử dụng máy lọc không khí khi nấu ăn Product Usage Giải pháp không khí 08/13/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02901 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Nên tắt máy lọc không khí khi nấu ăn.
+t02902 Dầu mỡ và độ ẩm từ quá trình nấu ăn có thể tích tụ trên bộ lọc, làm giảm tuổi thọ và gây ra mùi khó chịu.
+t02903 Sau khi nấu ăn, mở cửa sổ để thông gió trong phòng trước khi bật lại máy lọc không khí.
+t02904 Cẩn thận Không đặt hoặc sử dụng máy lọc không khí ngay cạnh khu vực nấu ăn, như bếp gas hoặc bếp từ.
+t02905 Lý do không nên sử dụng máy lọc không khí khi nấu ăn Rút ngắn tuổi thọ bộ lọc và gây mùi Các hạt mùi, bụi mịn, dầu mỡ và độ ẩm sinh ra trong quá trình nấu ăn có thể tích tụ trên bộ lọc.
+t02906 Điều này làm giảm hiệu suất của bộ lọc, rút ngắn tuổi thọ và gây ra mùi khó chịu khi bạn bật lại máy lọc không khí.
+t02907 Gây ra các chỉ số bụi mịn cao Nướng hoặc chiên thực phẩm tạo ra một lượng lớn bụi mịn, khiến mức bụi hiển thị trên máy lọc không khí tăng nhanh chóng.
+t02908 Chỉ cần chạy máy lọc không khí trong trường hợp này sẽ khiến các chất gây ô nhiễm tích tụ quá mức trên bộ lọc.
+t02909 Luôn mở cửa sổ để thông gió phòng trước.
+t02910 Tắt máy lọc không khí trước khi nấu ăn Trước khi bắt đầu nấu ăn, hãy tắt máy lọc không khí để ngăn các chất gây ô nhiễm xâm nhập vào thiết bị.
+t02911 Đóng cửa sổ và bật máy lọc không khí Sau khi phòng được thông gió kỹ lưỡng, đóng cửa sổ lại và bật máy lọc không khí để loại bỏ các mùi hôi và bụi mịn còn sót lại.
+t02912 Hướng dẫn cách thông gió và sử dụng máy lọc không khí sau khi nấu ăn Hãy làm theo các bước sau để loại bỏ hiệu quả mùi hôi nấu ăn và bụi mịn, đồng thời sử dụng máy lọc không khí đúng cách.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001451-20155352262364/
+문장:
+t02913 [Máy rửa chén] Hướng dẫn xử lý máy rửa chén không thoát nước (lỗi OE) Troubleshooting Thiết bị điện gia dụng 08/12/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02914 Ống không được dài quá 3,6 m (12 ft), và đầu ống phải cao 30–100 cm (12–40 inch) so với mặt đất.
+t02915 Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Máy rửa bát không thoát nước, hoặc hiển thị mã lỗi OE thường do các mảnh vụn thực phẩm bị tắc bên trong, hoặc do lắp đặt như ống thoát nước bị cong.
+t02916 Trước khi đặt lịch bảo dưỡng, bạn thường có thể tự giải quyết vấn đề với vài bước đơn giản: vệ sinh bộ lọc, chỉnh thẳng ống thoát nước, kiểm tra khe hở không khí và máy nghiền rác.
+t02917 Cẩn thận Trước khi làm sạch khe hở không khí hoặc các bộ phận bên trong, hãy đảm bảo máy rửa chén đã tắt để tránh điện giật hoặc sự cố.
+t02918 Khi tháo bộ lọc, hãy cầm cẩn thận để tránh bị thương do các cạnh sắc nhọn trên các bộ phận như bộ lọc thép không gỉ.
+t02919 Nguyên nhân gây ra hiện tượng máy rửa chén không thoát nước 1.
+t02920 Tắc nghẽn bên trong do rác thực phẩm Mảnh vụn thực phẩm hoặc vật thể lạ trong bồn rửa chén hoặc bộ lọc, hoặc khe hở không khí trong bồn rửa bị tắc nghẽn có thể khiến máy rửa chén không thoát nước đúng cách.
+t02921 Ống thoát nước bị gập Nếu các vật nặng đè lên ống thoát nước dưới bồn rửa, thường có màu trắng hoặc xám, chúng có thể làm nghiền nát hoặc cong ống và ngăn máy rửa chén thoát nước đúng cách.
+t02922 Kiểm tra ống thoát nước Mở tủ dưới bồn rửa và kiểm tra xem ống thoát nước không bị gấp khúc hoặc bị cong do vật nặng.
+t02923 Lắp đặt không đúng hoặc phích cắm không được tháo ra Sự cố này có thể xảy ra nếu ống thoát nước không đáp ứng yêu cầu lắp đặt.
+t02924 Vận hành chu trình làm sạch Nếu máy rửa chén vẫn thoát nước chậm hoặc có mùi, hãy làm sạch bộ lọc và tay xịt.
+
+페이지 정보: 국가=VN, URL=https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001451-20155102825706/
+문장:
+t02925 [Máy hút bụi LG CordZero] Cách đổ đầy nước vào vòi lau nhà Troubleshooting Thiết bị điện gia dụng 03/31/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.
+t02926 Cách đổ đầy bình chứa nước trên vòi lau nhà LG CordZero A9 1.
+t02927 Trước khi sử dụng vòi phun, nhấn nút PUSH để tách ngăn chứa nước ra khỏi vòi phun.
+t02928 Chỉ mở một trong các nắp ở hai bên của ngăn chứa nước và sử dụng cốc đo nước được cung cấp để đổ đầy bình đến vạch MAX.
+t02929 Nếu bạn đổ đầy nó trên vạch MAX, nước có thể bị tràn.
+t02930 Căn chỉnh hai mấu trên ngăn chứa nước với các rãnh trên vòi lau nhà và ấn nó xuống cho đến khi bạn nghe thấy tiếng tách.

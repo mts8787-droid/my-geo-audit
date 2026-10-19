@@ -1,0 +1,263 @@
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/lg-tv-gallery-stand-dimensions-CT10000030-20153292386216
+문장:
+t00200 Models released in 2019 Models released in 2019 list Product Family Inch Series OLED 55/65 C9 B9 SUHD 55 SM95 SM90 55/65 SM86 SM81 Move left or right to check the contents.
+t00201 Models released in 2020 Models released in 2020 list Product Family Inch Series OLED 55/65 GX CX BX NANO 55/65 NANO90 NANO85 NANO80 55 NANO95 Move left or right to check the contents.
+t00202 Models released in 2021 Models released in 2021 list Product Family Inch Series OLED 55/65 G1 C1 B1 A1 NANO 55/65 NANO85 NANO75 UHD 55/65 UP80 Move left or right to check the contents.
+t00203 Try this Installed height by model/screen size ➔ When installed with a TV, the stand height can be adjusted to one of three different levels with a 37 mm distance between nearest levels.
+t00204 Installed heights: 2021 models and screen sizes (FS21GB) Installed heights: 2021 models and screen sizes (FS21GB) list Product Family Series Inch VESA Size Upper bezel height (H, in mm) Lower bezel height (h, in mm) OLED G1 65 300 x 300 1,273 / 1,310 / 1,347 443 / 480 / 517 55 300 x 300 1,180 / 1,217 / 1,254 480 / 517 / 554 C1 65 300 x 200 1,269 / 1,306 / 1,343 443 / 480 / 517 55 300 x 200 1,145 / 1,182 / 1,219 443 / 480 / 517 B1 65 300 x 200 1,269 / 1,306 / 1,343 443 / 480 / 517 55 300 x 200 1,145 / 1,182 / 1,219 443 / 480 / 517 A1 65 300 x 200 1,269 / 1,306 / 1,343 443 / 480 / 517 55 300 x 200 1,145 / 1,182 / 1,219 443 / 480 / 517 NANO NANO85 65 300 x 300 1,192 /1,229 /1,266 353 / 390 / 427 55 300 x 300 1,045 /1,082 /1,119 400 / 437 / 474 NANO75 65 300 x 300 1,334 / 1,371 / 1,408 495 / 532 / 569 55 300 x 300 1,211 / 1,248 / 1,285 495 / 532 / 569 UHD UP80 65 300 x 300 1,334 / 1,371 / 1,408 495 / 532 / 569 60 300 x 300 1,278 / 1,315 / 1,352 495 / 532 / 569 55 300 x 300 1,211 / 1,248 / 1,285 495 / 532 / 569 Move left or right to check the contents.
+t00205 Installed heights: 2020 models and screen sizes (FS21GA/GB) Installed heights: 2020 models and screen sizes (FS21GA/GB) list Product Family Series Inch VESA Size Upper bezel height (H, in mm) Lower bezel height (h, in mm) OLED GX 65 300 x 300 1,273 / 1,310 / 1,347 443 / 480 / 517 55 300 x 300 1,180 / 1,217 / 1,254 480 / 517 / 554 CX 65 300 x 200 1,269 / 1,306 / 1,343 443 / 480 / 517 55 300 x 200 1,145 / 1,182 / 1,219 443 / 480 / 517 BX 65 300 x 200 1,269 / 1,306 / 1,343 443 / 480 / 517 55 300 x 200 1,145 / 1,182 / 1,219 443 / 480 / 517 NANO NANO95 55 300 x 300 1,162 / 1,199 / 1,236 446 / 483 / 520 NANO90 65 300 x 300 1,319 / 1,356 / 1,393 478 / 515 / 552 55 300 x 300 1,196 / 1,233 / 1,270 480 / 517 / 554 NANO85 65 300 x 300 1,330 / 1,367 / 1,404 489 / 526 / 563 55 300 x 300 1,221 / 1,258 / 1,295 506 / 543 / 580 NANO80 65 300 x 300 1,330 / 1,367 / 1,404 489 / 526 / 563 55 300 x 300 1,221 / 1,258 / 1,295 506 / 543 / 580 Move left or right to check the contents.
+t00206 Installed heights: 2019 models and screen sizes (FS21GA/GB) Installed heights: 2019 models and screen sizes (FS21GA/GB) list Product Family Series Inch VESA Size Upper bezel height (H, in mm) Lower bezel height (h, in mm) OLED C9 65 300 x 200 1,269 / 1,306 / 1,343 443 / 480 / 517 55 300 x 200 1,145 / 1,182 / 1,219 443 / 480 / 517 B9 65 300 x 200 1,269 / 1,306 / 1,343 443 / 480 / 517 55 300 x 200 1,145 / 1,182 / 1,219 443 / 480 / 517 SUHD SM95 55 300 x 300 1,195 / 1,232 / 1,269 488 / 525 / 562 SM90 55 300 x 300 1,196 / 1,233 / 1,270 488 / 525 / 562 SM986 65 300 x 300 1,330 / 1,367 / 1,404 489 / 526 / 563 55 300 x 300 1,221 / 1,258 / 1,295 506 / 543 / 580 UHD SM81 65 300 x 300 1,330 / 1,367 / 1,404 489 / 526 / 563 55 300 x 300 1,221 / 1,258 / 1,295 506 / 543 / 580 Move left or right to check the contents.
+t00207 Please refer to the figures below for how to position and connect your IR repeater.
+t00208 When installed to models other than those specified below, a Gallery Stand may not fit right or present some problems, and the installed height may deviate from the figures in the table below, even when it fits.
+t00209 Gallery Stand Dimensions ➔ The figure below presents the dimensions based on the measurement viewed from above.
+t00210 Gallery Stand Tilting → To adjust the horizontal tilt, loosen the screw at the bottom of the stand on the back of the TV about half a turn (until the TV starts to play), adjust the tilt, and then tighten the screw again.
+t00211 The vertical tilt cannot be adjusted.
+t00212 (to prevent tip over) ※ For more information, please refer to the user manual.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/lg-tv-viewing-content-on-a-usb-device-CT10000030-20153192465296
+문장:
+t00213 Use a USB memory of 32GB or less, or an external storage device of 2TB or less.
+t00214 In the case of an external hard disk, use one with a rated voltage of 5V and a rated current of 500mA or less.
+t00215 Please refer to the user manual for details.
+t00216 If you connect a USB storage device to the TV, you can easily enjoy the content of the USB storage device through your TV.
+t00217 Try This Connect the USB storage device to the TV.
+t00218 How to set input mode ➔ Press the [External Input] button on the TV remote control and select [USB Flash Drive] on the TV screen.
+t00219 You can select the file types you want to display.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/lg-cordzero-a9-why-is-the-vacuum-so-loud-CT10000013-20155092842730
+문장:
+t00220 Troubleshooting Vacuums 03/31/2026 Print Email Copy Link Share Causes and Symptoms There is a foreign object in the vacuum nozzle.
+t00221 The vacuum nozzle or extension pipe is not attached properly.
+t00222 The exhaust filter is not attached properly.
+t00223 The vacuum cleaner operates by drawing in outside air as the motor rotates.
+t00224 However, if the nozzle, pipe, or filter is not attached properly, gaps may form and cause an air-leaking sound.
+t00225 Also, if there is dust or foreign objects in the nozzle or filter, it becomes difficult to draw in air, causing the motor to overwork and become louder.
+t00226 If the nozzle or pipe is blocked by foreign objects, the suction power becomes excessively strong as it draws air through a narrowed passage, resulting in noise.
+t00227 Is the nozzle or pipe blocked by foreign objects such as tissue, stockings, or plastic bags?
+t00228 ③ Press and hold the [PUSH] button to remove the rotary brush.
+t00229 Reassembling the exhaust filter ① First, remove the battery from the vacuum cleaner for safety.
+t00230 ② Press the nozzle release button to remove the nozzle from the pipe or the main body.
+t00231 You can remove it by pressing the buttons on both ends of the battery.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/lg-cordzero-a9s-2025-model-is-the-suction-getting-weaker-or-does-the-vacuum-suddenly-turn-off-while-in-use-CT10000013-20155102926255
+문장:
+t00232 Troubleshooting Vacuums 03/31/2026 Print Email Copy Link Share Let's find out more.
+t00233 After washing the dust bin and filters with water, dry them completely in a well-ventilated shaded area for at least 24 hours before use.
+t00234 Please clean the product.
+t00235 If the product is clogged with foreign objects, the motor will make a humming noise, and a blockage notification will appear on the status display.
+t00236 If the blockage persists, the power will turn off to protect the product, and an alarm will sound.
+t00237 If the nozzle or extension pipe is clogged with foreign objects, the product may turn off to protect itself.
+t00238 ➔ Notes on product turning off 1.
+t00239 If the inside of the product is clogged with foreign objects, the suction power will decrease , and a blockage notification will appear on the screen along with a humming noise.
+t00240 If the blockage persists, the power will automatically turn off to protect the product.
+t00241 Check if there are any foreign objects stuck inside the product, such as the main body, adjustable extension pipe, or nozzle.
+t00242 If they do not come out together, reassemble the large dust separator into the main body and then remove the pre-filter.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/how-to-calibrate-your-monitor-using-lg-calibration-studio-CT32009622-20155410023763
+문장:
+t00243 What Is Hardware Calibration?
+t00244 First, check the product specifications or the digital user manual on the LG website to confirm if your monitor supports hardware calibration.
+t00245 Then, download the latest version of the software from the LG Support website.
+t00246 Hardware calibration uses a color sensor to directly adjust your monitor's internal settings, rather than just changing your computer's display settings.
+t00247 This ensures highly accurate and consistent colors.
+t00248 Note that this feature is available only on specific LG monitors that support hardware calibration.
+t00249 How to Install and Use LG Calibration Studio Step 1.
+t00250 Check Monitor Compatibility Find the model number on the sticker on the back of your monitor (e.g., 48GQ900).
+t00251 Then, check the product specifications on the LG website to confirm if your monitor supports hardware calibration or LG Calibration Studio.
+t00252 Connect the Monitor and Colorimeter Make sure only the monitor you want to calibrate is connected to your computer.
+t00253 Download the installer for your operating system (Windows or macOS).
+t00254 Position the colorimeter correctly, and then start the calibration.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/why-does-my-lg-air-purifier-indicator-turn-red-poor-when-i-turn-on-my-air-conditioner-CT32001601-20155297247983
+문장:
+t00255 Troubleshooting Air Care Solutions 07/07/2026 Print Email Copy Link Share When you turn on the air conditioner, it creates airflow in the room, which may cause your air purifier to detect dust or gases.
+t00256 This is normal and does not indicate a malfunction.
+t00257 Please note The air conditioner does not release dust or gases.
+t00258 Airflow can move dust around, causing your air purifier to detect it.
+t00259 If the indicator continues to show 'Poor' after extended use, we recommend checking your filter.
+t00260 Why does your air purifier indicator change when the air conditioner is on?
+t00261 Your air conditioner repeatedly takes in indoor air, cools it, and releases it back into the room.
+t00262 This creates airflow that can move dust or gases around, causing your air purifier to detect them.
+t00263 Even if the air quality indicator turns red ('Poor'), both units are operating normally.
+t00264 If the air purifier filter is dirty, clean or replace it.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/lg-robot-vacuum-r9-my-robot-vacuum-keeps-spinning-in-place-or-only-goes-backward-CT10000013-20155049070429
+문장:
+t00265 Press the left, right, and front sides of the nozzle 3 to 5 times, then turn the unit off and back on.
+t00266 Clean the sensor window using a cotton swab or soft cloth.
+t00267 Run the Smart Diagnosis function on the robot vacuum.
+t00268 If the Smart Diagnosis provides one of the following voice message, follow the instructions in the message.
+t00269 Voice Alert “Please wipe the cliff detection sensors.” “Please wipe the obstacle detection sensor window.” 1.
+t00270 Place a soft cloth on the floor and turn the robot vacuum upside down 2.
+t00271 Clean the robot vacuum's sensors using a cotton swab or soft cloth before Voice Alert: “A problem has been detected with the bumper sensor.” (Perform this step if you hear the following voice alert) 3.
+t00272 Caution Do not clean the product with volatile or organic solvents (e.g., thinner, solvent, acetone).
+t00273 This may cause product damage.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/lg-washing-machine-sound-mini-washer-a-fabric-softener-injection-alarm-sound-buzzer-sound-is-not-heard-during-the-rinse-cycle-CT10000010-20153067191536
+문장:
+t00274 Troubleshooting Laundry Accessories, Washers 06/04/2026 Print Email Copy Link Share It may occur if an option is changed when the Add Rinse function is used or the button is pressed and held down for 3 seconds or more.
+t00275 Press and hold down the Add Rinse button for 3 seconds to see if a ringing (↑) sound is heard.
+t00276 When it is turned on, a fabric softener alarm sound (ringing~ ringing) is heard for 20 seconds at the final rinsing.
+t00277 Press and hold down the Add Rinse button for 3 seconds to see if a ringing sound is heard.
+t00278 Causes and Symptoms A fabric softener injection alarm sound is not heard during the rinse cycle in the Mini Washer.
+t00279 Try this How to set the alarm sound (buzzer sound) ➔ To turn on the alarm sound (On) 1.
+t00280 (An ascending rinsing sound is heard.) 2.
+t00281 ➔ To turn off the alarm sound (Off) 1.
+t00282 (A descending rinsing sound is heard.) 2.
+t00283 When it is turned off, no sound is heard.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/lg-tv-how-to-use-the-family-settings-feature-CT10000030-20153280792929
+문장:
+t00284 Running Family Settings in the Settings menu [2022 WebOS22] Press the [ ] button on your TV remote.
+t00285 If no password is entered for more than 2 minutes, the TV will automatically power off.
+t00286 The lock password corresponds to the number set in the TV lock setting, and the default password is [0000].
+t00287 Guide to the Family Settings feature Time Limit: Allows you to enter and control the start and end time for TV viewing.
+t00288 Eye Care Mode: This function reduces blue light to prevent eye strain.
+t00289 Volume Limit Mode: This function safeguards children's hearing by limiting and fixing the maximum TV volume.
+t00290 Screen Time Report : This function tracks the total TV usage time and provides an app usage list.
+t00291 Try this I would like to use the Family Settings feature.
+t00292 ➔ Open the TV Home menu and select the menu items as instructed below.
+t00293 Select [All Settings] → [General] → [Family Settings].
+t00294 Select [All Settings] in the [Settings] menu.
+t00295 Even if children accidentally or intentionally press buttons on the TV remote, the volume cannot be set above 60.
+t00296 It is similar to the [Blue Light Reduction] option found in the [Picture Quality] settings.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/lg-tv-how-to-use-the-always-ready-feature-webos-22-CT10000030-20153280995321
+문장:
+t00297 2022 WebOS22 Press the [ ] button on your TV remote.
+t00298 When the TV is not in use, if you turn off the TV, it goes into the Always Ready mode, allowing you to play art frames through the selection of wallpapers that suit your taste and/or music files from your smartphone through a Bluetooth connection.
+t00299 You can trigger the voice recognition function by saying "Hi, LG" even when the background screen is turned off.
+t00300 The TV also offers the Background Screen mode and other features that can be used in the Always Ready mode.
+t00301 Note The voice recognition function requires direct voice recognition capability.
+t00302 The Background Screen mode is triggered only when the TV is turned off by the AI remote control.
+t00303 Try this I would like to use the Always Ready mode.
+t00304 Running the Always Ready mode in the Settings menu.
+t00305 Go to [All Settings] → [General] → [Always Ready Mode] and select [Enable].
+t00306 Set [Enable] to [On] in [Always Ready Mode].
+t00307 Sound Palette : Allows you to select and play background music.
+t00308 Movement : Displays built-in video clips with motion on the TV screen along with the music.
+t00309 Select the settings icon( )at the top right to change the [Always Ready Mode Settings].
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/how-to-adjust-the-temperature-for-lg-refrigerators-CT10000021-20155177646963
+문장:
+t00310 For models with an external control panel, press and hold the [Lock/Unlock] button for 3 seconds to unlock it, then adjust the temperature.
+t00311 Recommended temperatures: Refrigerator 3°C (37°F), Freezer -18°C (0°F) How to adjust the temperature when the controls are on the refrigerator door 1.
+t00312 If the lock function is enabled, press and hold the [Lock/Unlock] button for 3 seconds to unlock it.
+t00313 The refrigerator temperature can be set between 0°C (32°F) and 6°C (43°F).
+t00314 Lower numbers mean a colder refrigerator temperature.
+t00315 Higher numbers mean a warmer refrigerator temperature.
+t00316 The temperature settings cycle in the following order: Refrigerator: 3°C → 2°C → 1°C → 7°C → 6°C → 5°C → 4°C → 3°C Freezer: -20°C → -21°C → -22°C → -23°C → -15°C → -16°C → -17°C → -18°C → -19°C → -20°C ※ Note: The appearance of the temperature control, default settings, and temperature range may vary by model.
+t00317 The temperature ranges are as follows: Refrigerator: Level 5 (Max) is 0°C (32°F), and Level 1 (Min) is 6°C (43°F).
+t00318 Freezer: Level 5 (Max) is -23°C (-9°F), and Level 1 (Min) is -15°C (5°F).
+t00319 Press the Refrigerator Temperature button to adjust the temperature between 1°C and 7°C (34°F and 45°F).
+t00320 What is the ideal refrigerator temperature?
+t00321 The recommended temperature is 2°C–4°C (36°F–39°F) for the refrigerator and around -18°C (0°F) for the freezer.
+t00322 For models with internal controls, use the buttons or dial to set the desired temperature.
+t00323 Press the refrigerator temperature button to set your desired temperature.
+t00324 ※ Note: The appearance and display may vary by model.
+t00325 Objet Collection refrigerators Open the door to find the temperature control panel at the top.
+t00326 Setting the temperature too low may increase frost buildup and energy consumption.
+t00327 As the number increases, the freezer becomes colder.
+t00328 As the freezer gets colder, the refrigerator may become warmer.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/no-sound-from-a-connected-external-device-sound-bar-bluetooth-earbuds-on-your-lg-tv-CT41000327-20155394137664
+문장:
+t00329 Check the connection cable between your TV and the external device HDMI cable: Connect it to the [HDMI ARC] or [HDMI eARC] port on the back of your TV.
+t00330 2026 and later TVs (webOS 26 and later): Press [Settings] on your remote, and select [All Settings], [Sound], [Sound Out], [Bluetooth Devices], [Connectable Devices] 2021–2025 TVs (webOS 6.0–25): Press [Settings] on your remote, and select [All Settings], [Sound], [Sound Out], [Use Wireless Speaker], [Bluetooth Devices], [Connectable Devices] 2020 and earlier TVs (webOS 5.0 and earlier): Press [Settings] on your remote, and select [All Settings], [Sound], [Sound Out], [Bluetooth], [Connectable Devices] Step 4.
+t00331 Make sure the HDMI cable is connected to the port labeled HDMI ARC or HDMI eARC, not a standard HDMI port.
+t00332 To send audio from the TV to the soundbar through an HDMI cable, you must use an HDMI ARC or HDMI eARC port.
+t00333 Also, use your remote to make sure the TV's audio output is set to the correct device.
+t00334 Why is there no sound from my external device?
+t00335 A loose cable or incorrect connection port The TV's sound output isn't set correctly The Bluetooth device isn't in pairing mode A problem with the TV How to Fix No Sound from an External Device Step 1.
+t00336 Optical cable: Make sure it's facing the right way and fully plugged in.
+t00337 Check the sound output settings on your TV How to check your TV's webOS version On your TV remote, press the [Settings] (gear icon) or [Mute] button three times in a row.
+t00338 Set the output to match your connected device.
+t00339 To change the TV's sound output: Press [Settings] on your remote, and select [All Settings], [Sound], [Sound Out] Step 3.
+t00340 Pair and set up your Bluetooth device Put your Bluetooth device or sound bar into pairing mode.
+t00341 If it won't connect, temporarily turn off Bluetooth on nearby smartphones or tablets to prevent auto-pairing interference.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008333-20155132363655
+문장:
+t00342 Close Please Note AI Sound Pro applies only to the TV’s internal speakers or to devices connected to the HDMI (eARC/ARC) port that support Sound Share.
+t00343 It can also apply when using an audio device connected to the HDMI (eARC/ARC) port that supports Sound Share.
+t00344 How to turn on AI Sound Pro and confirm it is applied Turn on AI Sound Pro in the TV settings, then verify your sound is coming from the TV’s internal speakers or a compatible HDMI (eARC/ARC) Sound Share device.
+t00345 If using an external audio device, connect it to the HDMI (eARC/ARC) port and confirm the device supports Sound Share.
+t00346 It applies to the TV’s internal speakers or to devices connected to the HDMI (eARC/ARC) port that support Sound Share.
+t00347 Check that audio is output through the TV’s internal speakers or a compatible HDMI (eARC/ARC) Sound Share device.
+t00348 Please Note AI Sound Pro applies only to the TV’s internal speakers or to devices connected to the HDMI (eARC/ARC) port that support Sound Share.
+t00349 Menu names and locations may differ depending on your TV model.
+t00350 If you are using a third-party audio device, check the manufacturer’s customer service or user manual for exact usage and settings.
+t00351 Why AI Sound Pro may not sound different or may not be available AI Sound Pro effects depend on the content genre and the current audio output device.
+t00352 If sound is being output through an unsupported connection or device, the feature may not apply.
+t00353 Some menus, labels, or available features can vary by model.
+t00354 The current audio output does not support AI Sound Pro AI Sound Pro is designed to work with the TV’s internal speakers.
+t00355 Remote control navigation differences can cause incorrect selections With a pointer-type remote, you can use the on-screen pointer and the Wheel (OK) button.
+t00356 Also try different content types, because the effect can vary depending on the genre of the video.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008333-20154988832858
+문장:
+t00357 Please refer to the User Manual.
+t00358 [LG Wireless Speaker] Why is my USB drive not recognized?
+t00359 Close The speaker supports USB drives formatted as FAT16 or FAT32 only.
+t00360 If your USB isn’t recognized, check the format and file extensions.
+t00361 If everything looks correct, connect the USB drive to another device to make sure it’s
+
+t00362 Note that some USB-C ports are for charging only.
+t00363 For more details, please refer to the User Manual.
+t00364 USB Not Recognized?
+t00365 How to Connect a USB Drive Locate the USB port on the speaker.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT32002741-20155114025971/
+문장:
+t00366 After placing the product in the installation location, then make sure it protrudes toward the indoor side by 110 to 180mm.
+t00367 To ensure that the condensed water can be smoothly drained toward the backside, make sure that the rear of the air conditioner is tilted downward by about 10 to 15mm.
+t00368 Close A non removable/window type air conditioner is installed by customers themselves.
+t00369 Firmly fix the product to make sure it does not fall toward the outdoor unit side.
+t00370 Note When using the level meter, make sure to adjust it to ¼ bubbles.
+t00371 During product installation, if there is no tilt in the rear, then condensed water can overflow to indoors, thus causing electrical shocks, fire, property damages and so on.
+t00372 LG Electronics U.K.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008386-20155146794919/
+문장:
+t00373 If the following prompt appears when the power button is pressed, press and hold the button for more than 3
+seconds.
+t00374 Close This may be the case where the TV remote receiver is blocked by obstacles (picture frame, sound bar, etc.)
+hampering the signal reception, or where the remote control’s battery has run out.
+t00375 Causes and Symptoms My remote does not work.
+t00376 Try this The TV won’t turn off with the TV remote control?
+t00377 ➔ Turn off the TV power with the power button on the main unit.
+t00378 The location of the button varies depending on the model, so please refer to the user manual.
+t00379 Doing so will turn off the power.
+t00380 If the power button works okay, check if the remote control battery has run out or if the remote control
+works normally.
+t00381 Set-top box remote controls have different pairing mechanisms depending on the communications carrier.
+t00382 Unplug the power cord from the back of the TV and then plug it back in.
+t00383 If the power button does not work after reconnecting the power cord, contact our service technician for a
+diagnosis and precise check.
+t00384 ➔ Disconnect the TV power cord, wait for 1 minute, and connect it again.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008362-20154982207124
+문장:
+t00385 The maximum drain height is 96 inches (244 cm).
+t00386 What is the difference between
+
+t00387 [LG Top Load Washer] Why won’t the washer start after the initial installation?
+t00388 Close [LG Washer] How do I run the initial installation check and test cycle?
+t00389 The Installation Check runs a test cycle to verify that the washer is
+
+t00390 installed correctly.
+t00391 This process takes approximately 3 minutes and checks the water inlet
+
+t00392 and drain hose connections.
+t00393 On some models, you must run this mode after the initial installation
+
+t00394 before the first use.
+t00395 fully open to prevent a water supply error.
+t00396 (The code may vary by
+
+t00397 If the washer won’t run the first time you use it, run this mode first.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008386-20155051180443/
+문장:
+t00398 Why are the Fn keys (hotkeys) not working?
+t00399 If the Fn keys on your LG laptop suddenly stop working, check the following causes based on your model and installed software: The [Fn Key Lock] feature is enabled in the My gram app (Models released in 2025 or later).

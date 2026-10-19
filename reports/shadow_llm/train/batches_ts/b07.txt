@@ -1,0 +1,304 @@
+페이지 정보: 국가=CA, URL=https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT52001646-20155051174286/
+문장:
+t01400 3.Click [Not Use].
+
+페이지 정보: 국가=CA, URL=https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT52001644-20155065328685/
+문장:
+t01401 Close Applicable to : Models that employ the standard 40 ℃ or 60 ℃ course.
+t01402 If your washer is supplied with water at normal temperatures, 20 to 25 ℃, the water will be heated up to the temperature that you have set.
+t01403 Applicable to : Models that employ the standard 40 ℃ or 60 ℃ course.
+t01404 [LG washing machine - washing] Water heater is malfunctioning.
+t01405 If you supply cold water below the normal temperature, then it takes longer to reach the set temperature.
+t01406 To prevent overconsumption of electricity, the washer is designed to jump to the next course after a set time even when the temperature has not met the setting.
+t01407 Try this Don’t worry and use your washer.
+t01408 This is not a product failure.
+t01409 If you want to save time, connect the hose to a hot water tap.
+
+페이지 정보: 국가=CA, URL=https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT52006110-20155048182195
+문장:
+t01410 Floor standing air conditioner ➔ Automatic drying time ~ Prior to 2014: Turn off after operating for 3 minutes 2015 - 2019: Turn off after operating for 10 minutes 2020 - 2021: 10/30/60 minutes selective drying After 2022: AI dry (the drying time is set automatically according to the operation time and indoor
+humidity) 1.
+t01411 Display of automatic drying for LED type (3) Application year: 2017 - 2019 Status: [01~99] automatic drying progress (%) is displayed on the display of the product.
+t01412 [increasing
+number] Application year: 2020 ~ Status: The remaining time (minute(s)) of automatic drying operation is displayed on the display of the
+product.
+t01413 Display of automatic drying for LED type Application year: 2017 - 2019 Status: [01~99] automatic drying progress (%) is displayed on the display of the product.
+t01414 [increasing
+number] Application year: 2020 - 2021 Status: The remaining time (minute(s)) of automatic drying operation is displayed on the display of the
+product.
+t01415 [Decreasing number] Application year: 2022 ~ Status: The remaining time is displayed after the drying time is set automatically according to the
+operating time/indoor humidity.
+t01416 ※ AI drying time up to 1 hour is set automatically according to indoor temperature and
+humidity.
+t01417 Display of automatic drying for LED type ➔ Automatic drying time Prior to 2016: The product turns off after operating for 30 minutes.
+t01418 After 2017: The product turns off after operating for 10 minutes.
+t01419 2019 - 2021: The product turns off after operating for 10 minutes or the set time of 10 minutes/30
+minutes/60 minutes.
+t01420 After 2022: The product turns off after AI drying (the drying time is set automatically according to the
+operating time) Application year: Products released prior to 2021 Status: [Co] is displayed on the display of the product.
+t01421 Application year: Products released after 2022 Status: The remaining time of automatic drying in [minute(s)] is displayed on the display of the product.
+t01422 Close Causes and Symptoms The automatic drying function operates.
+t01423 Auto drying function When you stop the cooling or dehumidification operations, the drying function will begin automatically.
+t01424 When the automatic drying function begins, the air conditioner operates in air blowing status for a set
+period of time in order to remove any moisture remaining in the evaporator.
+t01425 Moisture produces a favorable habitat condition for mold and bacteria, so, it is recommended to set and use
+the automatic drying function for a clean air conditioner.
+t01426 The inside drying status may vary depending on the temperature of indoor air and humidity conditions.
+t01427 Display on remote control screen ➔ When the automatic drying function is set, automatic drying is displayed on the
+remote control screen.
+t01428 The relevant screen may vary by product.
+t01429 Display of automatic drying for LED type (1) Status: [SC] is displayed on the display of the product.
+t01430 Combined (master bedroom) wall mounted air conditioner 1.
+
+페이지 정보: 국가=CA, URL=https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT52001643-20155140877576
+문장:
+t01431 If the TV is the only device that won't connect, there may be a network settings issue, or your TV may need service.
+t01432 If your TV is the only device that won't connect, turn on your smartphone’s [Mobile Hotspot] and try connecting the TV to it.
+t01433 How to Connect to Wi-Fi by TV Model Year 2021 and later TVs (webOS 6.0 or later):
+
+t01434 Press [Settings] on the remote → Select [All Settings] on the TV screen → [General] → [Network] → [Internet Connection] → [Wi Fi Connection] 2020 TVs (webOS 5.0):
+
+t01435 Press [Settings] on the remote [Settings] → Select [All Settings] on the TV screen → [Connection] → [Network Connection Settings] → [Wi Fi Connection] 2019 and earlier TVs (webOS 4.5):
+
+t01436 Press [Settings] on the remote → Select [All Settings] on the TV screen → [Connection] → [Wi Fi Connection] 2018 and earlier TVs (before webOS 4.0):
+
+t01437 Unplug your modem’s power cable, wait about 10 seconds, then plug it back in.
+t01438 Unplug your router’s power cable, wait about 10 seconds, then plug it back in.
+t01439 Close If your LG TV is not connecting to the internet, first check if other devices, such as a smartphone or laptop, can connect to the same network.
+t01440 If no devices can connect, the issue is likely with your router or internet service provider (ISP).
+t01441 Additionally, if no network name appears under [Network Connection], please contact LG Customer Support for further assistance.
+t01442 Why Isn’t My LG TV Connecting to the Internet?
+t01443 The router may be turned off, or there may be a temporary outage with your internet service provider (ISP).
+t01444 The TV may be too far from the router, or walls and other obstacles may be causing an unstable signal.
+t01445 The TV’s network settings may be incorrect, or the Wi-Fi password was entered incorrectly (check uppercase and lowercase letters).
+t01446 If your router's name does not appear at all in the TV’s network settings, your TV may need service.
+
+페이지 정보: 국가=CA, URL=https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT52001644-20155102978829
+문장:
+t01447 [LG CordZero A9, A9S] How Do I Use the Wet Mop Nozzle?
+t01448 Dampen both mop pads with water and squeeze out any excess water before attaching.
+t01449 → Align the center of each mop pad with the center of each attachment plate, and press them down with the striped sides facing up
+.
+t01450 Attaching the mop pads upside down or improperly may reduce cleaning performance.
+t01451 Two types of mop pads are provided.
+t01452 Use the regular mop pads for everyday cleaning, and the heavy-duty mop pads for stubborn stains.
+t01453 Caution Use the mop nozzle on hard, non-absorbent floors only, such as hardwood, tile, or marble.
+t01454 Do not use it for purposes other than floor cleaning, such as polishing a car.
+
+페이지 정보: 국가=CA, URL=https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT52001644-20155114214879/
+문장:
+t01455 Important: What to Know Before You Book Service fees apply: Door reversal is a paid service.
+t01456 [LG Refrigerator] Can I Reverse the Door on My Refrigerator?
+t01457 Close Most LG refrigerator doors are designed to open from left to right and
+
+t01458 are not easily reversible.
+t01459 However, certain models do support door reversal.
+t01460 Even so, it can be
+
+t01461 difficult to do on your own.
+t01462 To have this done safely, contact LG Customer Support for service.
+t01463 How to Request a Door Reversal Service 1.
+t01464 Check if your model supports door reversal: Not
+
+t01465 How much does door reversal
+
+t01466 Service fees vary depending on
+
+
+페이지 정보: 국가=CA, URL=https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT32005681-20155119003826
+문장:
+t01467 Close LG Switch is a dedicated application designed to help you get the most out of your LG monitor, helping you stay productive and unwind.
+t01468 LG Switch is a dedicated application designed to help you get the most out of your LG monitor, helping you stay productive and unwind.
+t01469 With [Work Mode], you can easily split your screen and use video call shortcuts.
+t01470 [Life Mode] lets you set wallpapers and integrate Google Calendar.
+t01471 This app helps you tailor your display setup to suit your needs.
+t01472 What you can do with LG Switch?
+t01473 Split your screen into multiple windows for seamless multitasking.
+t01474 Adjust monitor settings, like brightness and contrast, with your mouse instead of the physical buttons.
+t01475 Use your monitor as a calendar or digital photo frame to refresh your workspace during breaks.
+t01476 How to Download LG Switch and Use Its Features How to Download and Install the LG Switch App The LG Switch app can be downloaded from the LG website through the Customer Support section.
+t01477 With [Work Mode], you can easily access [Screen Settings], [Screen Split], and [Video Call] features to help you work more efficiently.
+t01478 Search for your monitor model, download the installer for your operating system ([Windows 10, 11] or [macOS]), and complete the installation.
+t01479 ③ Select [Browse] to locate a monitor software file saved on your PC, then select [Run] to start the update.
+
+페이지 정보: 국가=CA, URL=https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT52001646-20155146788052/
+문장:
+t01480 Close TV won’t turn off This may be the case where the TV remote receiver is blocked by obstacles (picture frame, sound bar, etc.)
+hampering the signal reception, or where the remote control’s battery has run out.
+t01481 The TV won't turn off with the set-top box remote control?
+t01482 This problem may be caused by a temporary malfunction of the power circuit.
+t01483 Please contact us via E-mail, chat or telephone calls.
+
+페이지 정보: 국가=CA, URL=https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT52001646-20155311502235/
+문장:
+t01484 Close With your smartphone's screen sharing feature, you can wirelessly mirror your phone's screen and audio to your LG TV.
+t01485 No cables required.
+t01486 On Android, swipe down from the top of your screen to open the Quick Settings panel, and select your LG TV from the list of available devices.
+t01487 On iPhone, make sure your phone and TV are on the same Wi-Fi network, then open Control Center and use Screen Mirroring (AirPlay) to select your TV.
+t01488 If your iPhone can't connect, open the [Home Dashboard] on your TV and make sure AirPlay is turned on.
+t01489 Why won't my phone connect to my TV?
+t01490 Different connection methods by phone type Android and iPhone (iOS) use different methods to send your screen to the TV.
+t01491 To connect successfully, use the screen sharing feature that matches your type of phone.
+t01492 Why doesn't my LG TV appear in my iPhone's device list?
+t01493 When a connection request appears on your TV, press the [OK] button on your TV remote to accept it.
+t01494 On older models, swipe up from the bottom edge.
+t01495 Make sure both devices are connected to the same Wi-Fi network.
+
+페이지 정보: 국가=CA, URL=https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT52001644-20155048201823/
+문장:
+t01496 [LG refrigerator door] The door opens wide abruptly as the refrigerator leans back.
+t01497 Door swings wide open.
+t01498 Close Generally, refrigerators are installed with the front raised to keep the door sealed shut.
+t01499 As a result, if the food storage in the door basket becomes heavy as a result of the quantity of food stored in it, the door may naturally swing open and back abruptly.
+t01500 However, even if the refrigerator door swings open all the way, there is a device to keep it fixed in place.
+t01501 So, rest assured as it is not a product defect.
+t01502 Generally, refrigerators are installed with the front raised to keep the door sealed shut.
+
+페이지 정보: 국가=CA, URL=https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT52001643-20155063961192
+문장:
+t01503 Close If foreign substances such as sweat, water, cosmetics, etc.
+t01504 are stuck in the earbuds or charging case, Bluetooth may be still connected even if you place the earbuds into the charging case and close it.
+t01505 ➔ Possible symptoms Earbuds may not charge properly.
+t01506 Bluetooth is not disconnected.
+t01507 Earbuds may make a high-frequency sound.
+t01508 The indicator light may not work properly.
+t01509 Causes and Symptoms I placed my earbuds into the charging case and closed the case, but they are still connected to my Bluetooth device.
+t01510 Try this Gently wipe the area where the earbuds are placed in the charging case with a tissue or dry cloth and put the earbuds back in the case.
+t01511 Note If the earbuds are not properly placed into the case or if the battery is discharged, the Bluetooth may be still connected.
+
+페이지 정보: 국가=CA, URL=https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT52001644-20155102795862/
+문장:
+t01512 [LG CordZero A9] The vacuum or nozzle is not working.
+t01513 Close Causes and Symptoms The vacuum will not operate if debris is blocking the product body, extension pipe, or nozzle.
+t01514 The vacuum will not operate if the filter is clogged.
+t01515 The vacuum will not operate if a foreign object is caught in the nozzle’s rotating brush.
+t01516 Check for debris in the product body, extension pipe, or nozzle If the vacuum becomes clogged with debris, causing the motor to overheat, it will automatically shut off as a safety measure.
+t01517 Remove any debris from the following parts before using the vacuum again.
+t01518 Product body Extension pipe Nozzle 2.
+t01519 Refer to the user manual to clean the filter and separator before using the vacuum again.
+
+페이지 정보: 국가=CA, URL=https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT32004641-20155199003031
+문장:
+t01520 The smell will naturally fade within 1–2 weeks.
+t01521 In most cases, the new-product smell will naturally fade within 1–2 weeks with regular use and ventilation.
+t01522 Close A chemical or plastic smell from a newly installed LG ceiling-mounted air conditioner is normal for a new product.
+t01523 It is similar to the smell of a new car or new furniture.
+t01524 This is temporary and does not indicate a defect.
+t01525 Open the windows and run the air conditioner in [Fan Mode] to help clear the smell.
+t01526 Please note On a clear day, open the windows and run the air conditioner in [Fan Mode].
+t01527 Avoid doing this on dusty or humid days, as dust or moisture may enter the room and the unit.
+t01528 Why does a new air conditioner smell like chemicals?
+t01529 When you first turn on a new air conditioner, the internal parts may give off a slight smell.
+t01530 Please click here .
+t01531 This is normal and comes from the manufacturing process.
+t01532 Repeat if needed Repeat this process regularly during the first few days.
+
+페이지 정보: 국가=CA, URL=https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT52001644-20155177649603/
+문장:
+t01533 [Lock/Unlock] button for 3 seconds to unlock it, then adjust the
+
+t01534 Recommended temperatures: Refrigerator 3°C (37°F), Freezer -18°C (0°F) How to adjust the temperature when the controls are on the
+
+t01535 button for 3 seconds to unlock it.
+t01536 The refrigerator temperature can be set between 0°C (32°F) and
+
+t01537 The temperature settings cycle in the following order: Refrigerator: 3°C → 2°C → 1°C → 7°C → 6°C → 5°C → 4°C → 3°C Freezer: -20°C → -21°C → -22°C → -23°C → -15°C → -16°C → -17°C →
+
+t01538 -18°C → -19°C → -20°C ※ Note: The appearance of the temperature control, default settings, and
+
+t01539 The temperature ranges are as follows: Refrigerator: Level 5 (Max) is 0°C (32°F), and Level 1 (Min) is
+
+t01540 Freezer: Level 5 (Max) is -23°C (-9°F), and Level 1 (Min) is
+
+t01541 Close To adjust the temperature of your refrigerator, first check where the
+
+t01542 temperature control is located (on the external control panel or inside
+
+t01543 the appliance).
+t01544 For models with an external control panel, press and hold the
+
+t01545 For models with internal controls, use the buttons or dial to set the
+
+t01546 desired temperature.
+t01547 to the left makes it warmer.
+t01548 dial all the way to the left turns off the refrigerator to defrost.
+
+페이지 정보: 국가=CA, URL=https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT52001644-20155102799560/
+문장:
+t01549 The battery cannot be removed unless the battery release buttons are pressed.
+t01550 Press the release buttons on both sides at the same time and pull the battery down to remove it.
+
+페이지 정보: 국가=CA, URL=https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT32005681-20155014963117
+문장:
+t01551 What are the main causes of no sound?
+t01552 Models released in 2025 or later - Using LG Update & Renew 1.
+t01553 Models released in 2022 or later - Using LG Update & Recovery 1.
+t01554 Models released in 2022 or earlier (LG Update Center / DnA Center Plus) 1.Search for [LG Update Center] or [LG DnA Center Plus], and launch the app.
+t01555 Models Released Before 2017 or Non-OS Models (LG Electronics Website) 1.
+t01556 [LG Laptop] I can’t hear any sound from the speaker or my headphones.
+t01557 Close If you cannot hear any sound in Windows, first ensure that the volume is unmuted and the
+
+t01558 output device is correctly set to [Speakers].
+t01559 If the settings are correct, the issue is likely caused by an audio driver error.
+t01560 uninstall the existing driver from [Device Manager] and reinstall it using LG software
+
+t01561 (e.g., LG Update).
+t01562 The Windows volume is set to [Mute] or turned down to [0].
+t01563 If the button shows [Allow], audio is currently disabled.
+t01564 ※ If the speaker remains inactive even after adjusting
+
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001891-20152057095565/
+문장:
+t01565 The LG Easy Slim wall mount is a fine choice available at LG.com Top-quality wall mounts are also available at your favorite retailer.
+t01566 You just want to make sure that they meet the VESA standards for quality and safety.
+t01567 Close Show Script [Title] LG TV - Wall Mounting HDTV / webOS / Netcast Video [Narrator] The sleek design of your LG TV makes it ideal for wall mounting.
+t01568 Of course doing it right takes a little time in preparation.
+t01569 And you'll definitely need a good friend for the final steps.
+t01570 First things first, you want to choose the correct wall mount for your new TV.
+t01571 And that they're the correct size for your screen dimensions.
+t01572 Depending on where you're planning to hang your TV.
+t01573 Tapping on the wall until you hear a solid thump, it's hit or miss.
+t01574 Okay, let's get going.
+t01575 You want to attach the bracket components that go on your TV.
+t01576 Consider this, do you want to be able to swivel the TV left and right?
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001892-20155028330557/
+문장:
+t01577 A clearance of at least 2 inches (5 cm) is required on the left and right sides of the dryer.
+t01578 A clearance of at least 7.8 inches (20 cm) is required above the dryer.
+t01579 A clearance of at 4 inches (10 cm) is required between the back of the unit and wall.
+t01580 The straight-line distance between the electric outlet and the dryer should be within 47 inches (120 cm).
+t01581 If water will be drained using a water container (tank), ensure there is clearance at the front equivalent to the
+depth of the unit Gas dryer This is a checklist for installing electric dryers.
+t01582 A clearance of at least 5 inches (13 cm) is required between the back of the unit and the wall to allow for
+installation of the rear exhaust duct.
+t01583 **Dryer Duct Installation Precautions** - Use only 4-inch (10.2 cm) rigid or semi-rigid metal ducts for safety and efficiency.
+t01584 - Seal all duct joints securely with UL-listed duct tape to avoid air leaks.
+t01585 Regular packaging box Transparent packaging box ※ To safely move the product, ensure a space of 5 to 10cm (1.9 to 3.9 inches) between the packaged product and the
+delivery path (hallway, stairs, etc.).
+t01586 Close Before making a purchase or reinstalling your LG washing machine or dryer, use this guide to check whether the
+unit can be safely installed in your home.
+t01587 You can find the dimensions of your chosen washing machine or dryer model on the LG Electronics website.
+t01588 The information below serves as a general reference.
+t01589 For additional assistance, please contact LG Customer
+Support.
+t01590 Check the installation location Check if the installation space is sufficient for the size of the product to be purchased or installed.
+t01591 - To prevent vibration and noise, the washing machine should be installed on a hard, even floor, such as cement or
+concrete.
+t01592 Please note that installation on wooden, metal, or steeply sloped floors may cause vibration and noise during use.
+t01593 Electric/heat pump dryer This is a checklist for installing electric dryers.
+t01594 For gas dryers, please seek assistance from an installation
+specialist.
+t01595 Check if there is enough space for the dryer to be installed.
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001893-20155118502551
+문장:
+t01596 Child Lock is a standard safety feature designed to
+prevent children from accidentally operating the unit Depending on your
+model year, simply press and hold the designated button for 3 seconds to
+unlock it and use the buttons normally.
+t01597 2024 and Newer Models 1.
+t01598 Press and hold the “Humidity Up” (▲) button on the control panel
+for 3 seconds.
+t01599 2020 - 2023 Models 1.

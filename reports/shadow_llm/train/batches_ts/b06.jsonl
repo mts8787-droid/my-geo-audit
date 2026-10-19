@@ -1,0 +1,200 @@
+{"id": "t01200", "cc": "es", "pt": "support_troubleshoot", "text": "Para solucionar este problema, selecciona tu televisor LG como dispositivo de salida de audio en la barra de tareas del ordenador o desconecta y vuelve a conectar el cable HDMI."}
+{"id": "t01201", "cc": "es", "pt": "support_troubleshoot", "text": "¿Por qué no se oye nada en la tele?"}
+{"id": "t01202", "cc": "es", "pt": "support_troubleshoot", "text": "Si no se oye nada al conectar el ordenador al televisor, suele deberse a una configuración incorrecta o a problemas de conexión."}
+{"id": "t01203", "cc": "es", "pt": "support_troubleshoot", "text": "Ajustes de volumen: Es posible que el volumen de tu ordenador o televisor esté demasiado bajo, o que la función de silencio esté activada."}
+{"id": "t01204", "cc": "es", "pt": "support_troubleshoot", "text": "Configuración incorrecta de la salida de sonido: En tu ordenador, puedes seleccionar los altavoces del ordenador como salida de sonido en lugar de la del televisor."}
+{"id": "t01205", "cc": "es", "pt": "support_troubleshoot", "text": "Conexión suelta del cable HDMI: Es posible que el cable no esté bien conectado o que el cableado interno esté dañado, lo que impide que la señal de audio se transmita correctamente."}
+{"id": "t01206", "cc": "es", "pt": "support_troubleshoot", "text": "Problema con el controlador de sonido: Es posible que el controlador de sonido, que gestiona el audio de tu ordenador, no esté instalado, o que haya un problema derivado de una actualización reciente de Windows."}
+{"id": "t01207", "cc": "es", "pt": "support_troubleshoot", "text": "Selecciona el televisor como salida de audio del ordenador 1."}
+{"id": "t01208", "cc": "es", "pt": "support_troubleshoot", "text": "Configurar el televisor como dispositivo de salida de audio Si tu televisor no aparece en la lista de dispositivos de salida, es posible que tengas que comprobar su estado en la configuración de sonido de Windows."}
+{"id": "t01209", "cc": "es", "pt": "support_troubleshoot", "text": "[LG CordZero A7] ¿Cómo se montan el prefiltro, el separador de polvo grande y el depósito de polvo?"}
+{"id": "t01210", "cc": "es", "pt": "support_troubleshoot", "text": "Cerrar Si el depósito de polvo de la aspiradora inalámbrica A7 no está correctamente montado, es posible que los terminales de carga no se conecten al colocarla en la estación de carga, lo que impediría que se cargara."}
+{"id": "t01211", "cc": "es", "pt": "support_troubleshoot", "text": "¿Por qué no se carga la aspiradora si el depósito de polvo está mal montado, y cómo puedo solucionarlo?"}
+{"id": "t01212", "cc": "es", "pt": "support_troubleshoot", "text": "Causas Si el prefiltro y el separador de polvo grande no están completamente montados, es posible que las piezas internas no queden bien alineadas."}
+{"id": "t01213", "cc": "es", "pt": "support_troubleshoot", "text": "Si el depósito de polvo no se monta en la posición correcta (con la palanca a la vista), es posible que los terminales de carga no hagan contacto."}
+{"id": "t01214", "cc": "es", "pt": "support_troubleshoot", "text": "Si no oye un clic durante el montaje, es posible que las piezas no hayan quedado bien encajadas."}
+{"id": "t01215", "cc": "es", "pt": "support_troubleshoot", "text": "Retira el prefiltro y el separador de polvo de gran tamaño Gire el prefiltro y el separador de polvo grande tal y como se muestra en la imagen y tire de ellos hacia abajo para retirarlos."}
+{"id": "t01216", "cc": "es", "pt": "support_troubleshoot", "text": "El robot aspirador está en la estación de carga, pero no se está cargando."}
+{"id": "t01217", "cc": "es", "pt": "support_troubleshoot", "text": "Es posible que el prefiltro, el separador de polvo grande o el depósito de polvo no estén bien montados."}
+{"id": "t01218", "cc": "es", "pt": "support_troubleshoot", "text": "Si las teclas Fn de tu portátil LG dejan de funcionar repentinamente, comprueba las siguientes causas en función de tu modelo y del software instalado: La función [Bloqueo de teclas Fn] está habilitada en la aplicación My gram (modelos lanzados en 2025 o posteriores)."}
+{"id": "t01219", "cc": "es", "pt": "support_troubleshoot", "text": "La función [Bloqueo de teclas Fn] está habilitada en la aplicación LG Smart Assistant (modelos lanzados en 2022 o posteriores)."}
+{"id": "t01220", "cc": "es", "pt": "support_troubleshoot", "text": "La [configuración del modo de teclas rápidas] está habilitada en la aplicación LG Control Center (modelos lanzados antes de 2022)."}
+{"id": "t01221", "cc": "es", "pt": "support_troubleshoot", "text": "Cerrar Si las teclas Fn (teclas de acceso rápido) de tu portátil LG no funcionan, o si no puedes ajustar el brillo de la pantalla o el volumen, es probable que sea porque la opción [Bloqueo de teclas Fn] está activada en la aplicación de configuración, o porque no está instalado el controlador esencial LG On Screen Display3 (OSD3)."}
+{"id": "t01222", "cc": "es", "pt": "support_troubleshoot", "text": "¿Por qué no funcionan las teclas Fn (teclas de acceso rápido)?"}
+{"id": "t01223", "cc": "es", "pt": "support_troubleshoot", "text": "La aplicación LG On Screen Display3 (OSD3) no está instalada o no se encuentra."}
+{"id": "t01224", "cc": "es", "pt": "support_troubleshoot", "text": "La aplicación [HotKeyManager] está configurada como [Desactivada] en las aplicaciones de inicio de Windows."}
+{"id": "t01225", "cc": "es", "pt": "support_troubleshoot", "text": "¿Cómo puedo solucionar los errores de la tecla Fn (tecla de acceso rápido)?"}
+{"id": "t01226", "cc": "es", "pt": "support_troubleshoot", "text": "Comprueba [Configuración del modo de teclas rápidas] en LG Control Center."}
+{"id": "t01227", "cc": "es", "pt": "support_troubleshoot", "text": "Seleccione [Configuración del sistema] y, a continuación, busque [Configuración del modo de teclas rápidas]."}
+{"id": "t01228", "cc": "es", "pt": "support_troubleshoot", "text": "Cómo instalar: Busque [LG Update] en el cuadro de búsqueda de la barra de tareas e inicie la aplicación."}
+{"id": "t01229", "cc": "es", "pt": "support_troubleshoot", "text": "Modelos sin sistema operativo (sin Windows preinstalado): utilice los archivos de instalación proporcionados en la partición DnA independiente o descargue los controladores desde el sitio web de LG Electronics."}
+{"id": "t01230", "cc": "es", "pt": "support_troubleshoot", "text": "Pasados 30 segundos, la potencia de succión disminuye considerablemente y el aspirador se detiene automáticamente."}
+{"id": "t01231", "cc": "es", "pt": "support_troubleshoot", "text": "[Aspiradora LG Cyking] ¿Por qué la aspiradora emite un pitido y se apaga?"}
+{"id": "t01232", "cc": "es", "pt": "support_troubleshoot", "text": "Cerrar Modelos compatibles: VK8902DCAL, VK8903LHAY, VK8904LHA, VK8906/07DCAL, VK8801/02/03/04/07/10FHAY, VK8805/06/08FHY, VK8100LHAY, VK7901/02LHA, VK7100LHAY, VK6101/02LHAY Prueba esto."}
+{"id": "t01233", "cc": "es", "pt": "support_troubleshoot", "text": "La función de apagado automático se activa para evitar daños cuando el depósito de polvo está lleno."}
+{"id": "t01234", "cc": "es", "pt": "support_troubleshoot", "text": "Vacíe el depósito de polvo antes de utilizar el aspirador."}
+{"id": "t01235", "cc": "es", "pt": "support_troubleshoot", "text": "Asegúrate de que el depósito de polvo esté bien fijado al cuerpo principal antes de utilizarlo."}
+{"id": "t01236", "cc": "es", "pt": "support_troubleshoot", "text": "Si sigues aspirando cuando el depósito de polvo está lleno, el polvo puede volver a entrar en el separador de polvo y reducir su eficacia de separación."}
+{"id": "t01237", "cc": "es", "pt": "support_troubleshoot", "text": "Esto permite que el polvo entre directamente en el motor, lo que puede provocar fallos de funcionamiento, como la aparición de chispas."}
+{"id": "t01238", "cc": "es", "pt": "support_troubleshoot", "text": "Para evitarlo, LG ha incorporado una función de detección del nivel de polvo."}
+{"id": "t01239", "cc": "es", "pt": "support_troubleshoot", "text": "Cuando el nivel de polvo alcanza un determinado nivel, el aspirador avisa al usuario mediante un LED y un zumbador, y a continuación se apaga para impedir que siga funcionando."}
+{"id": "t01240", "cc": "es", "pt": "support_troubleshoot", "text": "Cerrar ¿Qué es la función «Apertura automática de la puerta»?"}
+{"id": "t01241", "cc": "es", "pt": "support_troubleshoot", "text": "Si la puerta del lado derecho del compartimento del frigorífico se abre unos 20º y no se abre del todo, se cerrará automáticamente 3 segundos después."}
+{"id": "t01242", "cc": "es", "pt": "support_troubleshoot", "text": "¿Qué es la función «Apertura automática de la puerta»?"}
+{"id": "t01243", "cc": "es", "pt": "support_troubleshoot", "text": "Al apoyar el pie en la parte inferior del producto, la puerta situada a la derecha del compartimento del frigorífico se abre automáticamente, lo que facilita su uso incluso cuando se llevan las dos manos ocupadas con alimentos."}
+{"id": "t01244", "cc": "es", "pt": "support_troubleshoot", "text": "Prueba esto Configuración de apertura automática de la puerta Al pulsar el botón «Apertura automática de la puerta», aparece el icono de «Apertura automática de la puerta» en el panel de control y se activa la función."}
+{"id": "t01245", "cc": "es", "pt": "support_troubleshoot", "text": "Cada vez que se pulsa el botón, la función de apertura automática de la puerta cambia en el siguiente orden: ON → Sonido desactivado → OFF."}
+{"id": "t01246", "cc": "es", "pt": "support_troubleshoot", "text": "Cómo utilizar la función de apertura automática de la puerta 1."}
+{"id": "t01247", "cc": "es", "pt": "support_troubleshoot", "text": "Cuando te sitúes delante del producto, aparecerá un mensaje que dice «PUERTA ABIERTA»."}
+{"id": "t01248", "cc": "es", "pt": "support_troubleshoot", "text": "Para un funcionamiento correcto, coloca el pie de manera que el mensaje «DOOR OPEN» quede a la altura de la parte superior del pie."}
+{"id": "t01249", "cc": "es", "pt": "support_troubleshoot", "text": "Durante el funcionamiento, sale aire caliente por la parte inferior del producto."}
+{"id": "t01250", "cc": "es", "pt": "support_troubleshoot", "text": "El horno de onda luminosa está diseñado para extraer el aire por la parte inferior."}
+{"id": "t01251", "cc": "es", "pt": "support_troubleshoot", "text": "Dependiendo del producto, el aire puede salir por la parte inferior delantera o lateral."}
+{"id": "t01252", "cc": "es", "pt": "support_troubleshoot", "text": "Cerrar Los mandos a distancia LG Magic para televisores lanzados en 2021 o posteriormente no disponen de un botón específico para encender el decodificador."}
+{"id": "t01253", "cc": "es", "pt": "support_troubleshoot", "text": "Para simplificar el diseño, los mandos a distancia LG Magic Remotes lanzados en 2021 o posteriormente ya no incluyen un botón específico para encender el decodificador."}
+{"id": "t01254", "cc": "es", "pt": "support_troubleshoot", "text": "Los mandos a distancia LG Magic para televisores lanzados en 2021 o posteriormente no disponen de un botón específico para encender el decodificador."}
+{"id": "t01255", "cc": "es", "pt": "support_troubleshoot", "text": "Si aparece el mensaje «Sin señal» en tu televisor, pulsa el botón «Más acciones (...)» del mando a distancia y selecciona el icono de encendido que aparece en pantalla para encender el decodificador."}
+{"id": "t01256", "cc": "es", "pt": "support_troubleshoot", "text": "¿Por qué no se enciende el descodificador?"}
+{"id": "t01257", "cc": "es", "pt": "support_troubleshoot", "text": "Debido a este cambio, ya no es posible encender el decodificador mediante un botón específico del mando a distancia."}
+{"id": "t01258", "cc": "es", "pt": "support_troubleshoot", "text": "Es posible que el decodificador permanezca apagado y que aparezca el mensaje «Sin señal» en el televisor, incluso si seleccionas «Sí» en el mensaje que aparece en pantalla."}
+{"id": "t01259", "cc": "es", "pt": "support_troubleshoot", "text": "Cómo encender el descodificador Si aparece el mensaje [Sin señal] en la pantalla, sigue estos pasos: Paso 1."}
+{"id": "t01260", "cc": "es", "pt": "support_troubleshoot", "text": "Pulsa el botón «Más acciones» Pulsa el botón «Más acciones» (...) situado en la parte inferior derecha del mando Magic Remote."}
+{"id": "t01261", "cc": "es", "pt": "support_troubleshoot", "text": "Cerrar En primer lugar, haz una prueba sencilla para comprobar si la fuga se debe a un fallo de la lavadora."}
+{"id": "t01262", "cc": "es", "pt": "support_troubleshoot", "text": "※ En el caso del detergente en polvo, el nivel adecuado es 5 mm por debajo del borde superior del compartimento del detergente."}
+{"id": "t01263", "cc": "es", "pt": "support_troubleshoot", "text": "La dosis varía según la marca y el tipo."}
+{"id": "t01264", "cc": "es", "pt": "support_troubleshoot", "text": "En el caso del detergente en polvo, el nivel adecuado es 5 mm por debajo del borde superior del compartimento del detergente."}
+{"id": "t01265", "cc": "es", "pt": "support_troubleshoot", "text": "La dosis varía según la marca y el tipo de detergente."}
+{"id": "t01266", "cc": "es", "pt": "support_troubleshoot", "text": "En primer lugar, haz una prueba sencilla para comprobar si la fuga se debe a un fallo de la lavadora."}
+{"id": "t01267", "cc": "es", "pt": "support_troubleshoot", "text": "Si el problema no se debe a un fallo técnico, es posible que se apliquen gastos de reparación, incluso durante el periodo de garantía."}
+{"id": "t01268", "cc": "es", "pt": "support_troubleshoot", "text": "Prueba para detectar un mal funcionamiento de la lavadora Cómo realizar la prueba 1."}
+{"id": "t01269", "cc": "es", "pt": "support_troubleshoot", "text": "Realiza un ciclo de aclarado (una vez) con la cuba vacía."}
+{"id": "t01270", "cc": "es", "pt": "support_troubleshoot", "text": "Si sale agua de la lavadora durante esta operación, solicite asistencia técnica."}
+{"id": "t01271", "cc": "es", "pt": "support_troubleshoot", "text": "Nota: Si sale agua por la parte trasera mientras se vacía la bañera, es posible que el orificio de desagüe esté obstruido."}
+{"id": "t01272", "cc": "es", "pt": "support_troubleshoot", "text": "Consulte la sección titulada «Fugas solo cuando la lavadora está desaguatando» de esta guía."}
+{"id": "t01273", "cc": "es", "pt": "support_troubleshoot", "text": "Asegúrate de que la manguera de desagüe esté bien fijada; si está suelta, el agua podría derramarse sobre el suelo."}
+{"id": "t01274", "cc": "es", "pt": "support_troubleshoot", "text": "Si la manguera de desagüe no está bien fijada al desagüe, el agua puede derramarse sobre el suelo durante el vaciado."}
+{"id": "t01275", "cc": "es", "pt": "support_troubleshoot", "text": "¿Sale agua por el desagüe?"}
+{"id": "t01276", "cc": "ca", "pt": "support_troubleshoot", "text": "Preheat/defrosting takes maximum 15 minutes; however some products may takes 1 hour or longer for removing latent heat."}
+{"id": "t01277", "cc": "ca", "pt": "support_troubleshoot", "text": "It may also take 1 hour or longer due to various variables such as outdoor temperature/humidity, and freezing conditions of products."}
+{"id": "t01278", "cc": "ca", "pt": "support_troubleshoot", "text": "Close If preheat takes long and occurs frequently, install an air guide to prevent outdoor unit from cold temperature, or remove obstacles or clean dusts off to reduce preheat time, and facilitate heating performance."}
+{"id": "t01279", "cc": "ca", "pt": "support_troubleshoot", "text": "Lukewarm air blowing all day long If the pipe is not sufficiently preheated due to sudden drop of temperature, air blows slower than normal condition, or lukewarm air blows for a long period of time to fail elevating indoor temperature."}
+{"id": "t01280", "cc": "ca", "pt": "support_troubleshoot", "text": "Heated air becomes lighter and rises toward the ceiling, and cool air gets heavier and moves downward."}
+{"id": "t01281", "cc": "ca", "pt": "support_troubleshoot", "text": "Air is warm in the vicinity of the outlet vent only, and the entire indoor space may be felt chill."}
+{"id": "t01282", "cc": "ca", "pt": "support_troubleshoot", "text": "The defrosting lamp and the preheat lamp are frequently light."}
+{"id": "t01283", "cc": "ca", "pt": "support_troubleshoot", "text": "Warm refrigerant in the air conditioner circulates indoor, and cold refrigerant does outdoor during the heating mode."}
+{"id": "t01284", "cc": "ca", "pt": "support_troubleshoot", "text": "Getting ready for preheat is required to warm the inside of the product when starting the heating mode, and defrosting sector is required to remove or prevent freezing of the outdoor unit caused by chill refrigerant during the heating mode."}
+{"id": "t01285", "cc": "ca", "pt": "support_troubleshoot", "text": "If the climate is humid, or it snows, freezing on the rear side of the outdoor unit may be frequent."}
+{"id": "t01286", "cc": "ca", "pt": "support_troubleshoot", "text": "The outdoor unit temporarily stops during defrosting, and the sector of warm air becomes shorter to cause weak heating."}
+{"id": "t01287", "cc": "ca", "pt": "support_troubleshoot", "text": "If preheat takes long and occurs frequently, install an air guide to prevent outdoor unit from cold temperature, or remove obstacles or clean dusts off to reduce preheat time, and facilitate heating performance."}
+{"id": "t01288", "cc": "ca", "pt": "support_troubleshoot", "text": "(around 20–25°C / 68–77°F), the machine naturally requires more time\r\n"}
+{"id": "t01289", "cc": "ca", "pt": "support_troubleshoot", "text": "If your model features a Normal 40°C or\r\n"}
+{"id": "t01290", "cc": "ca", "pt": "support_troubleshoot", "text": "Normal 60°C cycle, selecting one of these can help optimize the water\r\n"}
+{"id": "t01291", "cc": "ca", "pt": "support_troubleshoot", "text": "[LG Washing Machine] Why Isn’t the Water Heating Up During a Wash?"}
+{"id": "t01292", "cc": "ca", "pt": "support_troubleshoot", "text": "Close If the water doesn't seem to reach the selected temperature during a\r\n"}
+{"id": "t01293", "cc": "ca", "pt": "support_troubleshoot", "text": "wash, don't worry—your machine is operating normally."}
+{"id": "t01294", "cc": "ca", "pt": "support_troubleshoot", "text": "LG washers are designed to optimize energy efficiency and prevent high\r\n"}
+{"id": "t01295", "cc": "ca", "pt": "support_troubleshoot", "text": "electricity bills."}
+{"id": "t01296", "cc": "ca", "pt": "support_troubleshoot", "text": "Cold Water Supply If the incoming tap water is colder than average room temperature\r\n"}
+{"id": "t01297", "cc": "ca", "pt": "support_troubleshoot", "text": "to heat the water."}
+{"id": "t01298", "cc": "ca", "pt": "support_troubleshoot", "text": "Product Register Product Registration Failed Submit Return to results Your email has been successfully registered."}
+{"id": "t01299", "cc": "ca", "pt": "support_troubleshoot", "text": "What are the causes and solutions for the E15 error code?"}
+{"id": "t01300", "cc": "ca", "pt": "support_troubleshoot", "text": "Soak the filter in a mild detergent solution Mix a mild detergent with warm water (35 °C–40 °C / 95 °F–104 °F)."}
+{"id": "t01301", "cc": "ca", "pt": "support_troubleshoot", "text": "Let it dry completely for 12–24 hours."}
+{"id": "t01302", "cc": "ca", "pt": "support_troubleshoot", "text": "every 1–2 months to maintain optimal performance and help prevent\r\n"}
+{"id": "t01303", "cc": "ca", "pt": "support_troubleshoot", "text": "Close The E15 error code appears on your LG SIGNATURE air purifier's display\r\n"}
+{"id": "t01304", "cc": "ca", "pt": "support_troubleshoot", "text": "when dust or debris has built up on the Ultra Fine Dust Black Filter."}
+{"id": "t01305", "cc": "ca", "pt": "support_troubleshoot", "text": "Remove the filter, wash it in warm water with a mild detergent, let it\r\n"}
+{"id": "t01306", "cc": "ca", "pt": "support_troubleshoot", "text": "dry completely in a shaded area, and then reinstall it to clear the\r\n"}
+{"id": "t01307", "cc": "ca", "pt": "support_troubleshoot", "text": "Why does the E15 error code appear?"}
+{"id": "t01308", "cc": "ca", "pt": "support_troubleshoot", "text": "The E15 error code appears when the Ultra Fine Dust Black Filter becomes\r\n"}
+{"id": "t01309", "cc": "ca", "pt": "support_troubleshoot", "text": "dirty and restricts airflow."}
+{"id": "t01310", "cc": "ca", "pt": "support_troubleshoot", "text": "Simply cleaning the filter thoroughly will\r\n"}
+{"id": "t01311", "cc": "ca", "pt": "support_troubleshoot", "text": "filter is facing the correct direction."}
+{"id": "t01312", "cc": "ca", "pt": "support_troubleshoot", "text": "it is fully closed."}
+{"id": "t01313", "cc": "ca", "pt": "support_troubleshoot", "text": "(Press repeatedly to cycle through High → Low → Off) Applicable models: 8kg and 9kg Heat Pump Dryers (Button locations may vary depending on the RH8** and RH9** models.) Buzzer: You can adjust the volume for button sounds and cycle start/end alerts."}
+{"id": "t01314", "cc": "ca", "pt": "support_troubleshoot", "text": "(Press repeatedly to cycle through High → Low → Off) Applicable models: 14kg and 16kg Heat Pump Dryers (RH14** / RH16**) Alert: You can turn the sound ON or OFF."}
+{"id": "t01315", "cc": "ca", "pt": "support_troubleshoot", "text": "The Buzzer/Alert function allows you to adjust the volume or turn the button and alert sounds ON and OFF."}
+{"id": "t01316", "cc": "ca", "pt": "support_troubleshoot", "text": "When the Buzzer/Alert is ON, a sound plays when you turn on the dryer, select a cycle, or press a button on the control panel."}
+{"id": "t01317", "cc": "ca", "pt": "support_troubleshoot", "text": "To mute these sounds, press the [Buzzer/Alert] button to adjust the volume or turn it OFF."}
+{"id": "t01318", "cc": "ca", "pt": "support_troubleshoot", "text": "This disables the sounds for button presses and cycle completion."}
+{"id": "t01319", "cc": "ca", "pt": "support_troubleshoot", "text": "If the Buzzer is set to OFF, it remains OFF even after the dryer is powered off or shuts down automatically."}
+{"id": "t01320", "cc": "ca", "pt": "support_troubleshoot", "text": "Press the [Buzzer] button to turn it back ON to hear sounds again."}
+{"id": "t01321", "cc": "ca", "pt": "support_troubleshoot", "text": "[Stand TV] Ensure there is at least 10cm (3.93 inches) of space between the TV and the ceiling and side walls."}
+{"id": "t01322", "cc": "ca", "pt": "support_troubleshoot", "text": "[Wall-mounted TV] Ensure there is at least 10cm (3.93 inches) of space between the TV and the ceiling, floor, and side walls."}
+{"id": "t01323", "cc": "ca", "pt": "support_troubleshoot", "text": "[Check the size of the safe moving route into your home] ※To safely move the product, there should be a clearance of 5cm ~ 10cm (1.9 inches ~ 3.9 inches) between the product (packaging box) and the moving route."}
+{"id": "t01324", "cc": "ca", "pt": "support_troubleshoot", "text": "Close Check the installation location and feasibility before purchasing a TV."}
+{"id": "t01325", "cc": "ca", "pt": "support_troubleshoot", "text": "Verify the size of the desired model on the LG Electronics website."}
+{"id": "t01326", "cc": "ca", "pt": "support_troubleshoot", "text": "This information is for reference during installation, so please seek help from a professional consultant or installation expert."}
+{"id": "t01327", "cc": "ca", "pt": "support_troubleshoot", "text": "When setting up your TV, please ensure a safe installation by following these precautions."}
+{"id": "t01328", "cc": "ca", "pt": "support_troubleshoot", "text": "① When opening the box, be careful with sharp knives as they can damage the product."}
+{"id": "t01329", "cc": "ca", "pt": "support_troubleshoot", "text": "② To prevent damage to the TV, hold the protective film on both sides and lift it up while supporting the bottom of the TV with your other hand."}
+{"id": "t01330", "cc": "ca", "pt": "support_troubleshoot", "text": "③ When moving the TV, be careful not to press the screen panel with your fingers as it may cause damage."}
+{"id": "t01331", "cc": "ca", "pt": "support_troubleshoot", "text": "Do not move the TV by yourself."}
+{"id": "t01332", "cc": "ca", "pt": "support_troubleshoot", "text": "④ When assembling the stand, lay the TV down on a table or a flat surface and check if there are any other objects in the area where you will lay it down."}
+{"id": "t01333", "cc": "ca", "pt": "support_troubleshoot", "text": "Check the installation location and feasibility before purchasing a TV."}
+{"id": "t01334", "cc": "ca", "pt": "support_troubleshoot", "text": "[Environments where wall mounting is difficult] Check if the product can be safely moved into your home by measuring the route."}
+{"id": "t01335", "cc": "ca", "pt": "support_troubleshoot", "text": "[Difference between actual product size and packaging box size] ※The actual product size and packaging box size may vary depending on the product and inches, so please refer to this during installation."}
+{"id": "t01336", "cc": "ca", "pt": "support_troubleshoot", "text": "The refrigerator keeps beeping even when the door is closed."}
+{"id": "t01337", "cc": "ca", "pt": "support_troubleshoot", "text": "What should I do?"}
+{"id": "t01338", "cc": "ca", "pt": "support_troubleshoot", "text": "Close When the refrigerator door is left open, an alarm beeps to prevent the\r\n"}
+{"id": "t01339", "cc": "ca", "pt": "support_troubleshoot", "text": "internal temperature from rising."}
+{"id": "t01340", "cc": "ca", "pt": "support_troubleshoot", "text": "If the alarm continues even after you close the door, check the\r\n"}
+{"id": "t01341", "cc": "ca", "pt": "support_troubleshoot", "text": "Check food placement and shelves Make sure the refrigerator is not overfilled and that shelves and\r\n"}
+{"id": "t01342", "cc": "ca", "pt": "support_troubleshoot", "text": "drawers are properly installed."}
+{"id": "t01343", "cc": "ca", "pt": "support_troubleshoot", "text": "Important If the door is completely closed with no visible gaps but the alarm\r\n"}
+{"id": "t01344", "cc": "ca", "pt": "support_troubleshoot", "text": "the door bins, the added weight can cause the door to sag and not\r\n"}
+{"id": "t01345", "cc": "ca", "pt": "support_troubleshoot", "text": "Remove any obstructions around the\r\n"}
+{"id": "t01346", "cc": "ca", "pt": "support_troubleshoot", "text": "once the door is closed all the way."}
+{"id": "t01347", "cc": "ca", "pt": "support_troubleshoot", "text": "drops to approximately 10Hz."}
+{"id": "t01348", "cc": "ca", "pt": "support_troubleshoot", "text": "Close Identify Sounds from Your Air Conditioner Normal Operating Sounds: These sounds may occur as\r\n"}
+{"id": "t01349", "cc": "ca", "pt": "support_troubleshoot", "text": "the temperature changes or components operate."}
+{"id": "t01350", "cc": "ca", "pt": "support_troubleshoot", "text": "They may include\r\n"}
+{"id": "t01351", "cc": "ca", "pt": "support_troubleshoot", "text": "snapping, clicking, gurgling, hissing, or humming sounds."}
+{"id": "t01352", "cc": "ca", "pt": "support_troubleshoot", "text": "Sounds That Require Inspection: These sounds may\r\n"}
+{"id": "t01353", "cc": "ca", "pt": "support_troubleshoot", "text": "occur when components are touching, vibrating, or not working\r\n"}
+{"id": "t01354", "cc": "ca", "pt": "support_troubleshoot", "text": "They may include loud rattling, rapid tapping, or\r\n"}
+{"id": "t01355", "cc": "ca", "pt": "support_troubleshoot", "text": "high-pitched sounds."}
+{"id": "t01356", "cc": "ca", "pt": "support_troubleshoot", "text": "The volume may vary, parts of a sound may not be\r\n"}
+{"id": "t01357", "cc": "ca", "pt": "support_troubleshoot", "text": "especially in a quiet room."}
+{"id": "t01358", "cc": "ca", "pt": "support_troubleshoot", "text": "This can be a normal operating sound."}
+{"id": "t01359", "cc": "ca", "pt": "support_troubleshoot", "text": "Close LG TVs, StanbyME, and projectors use the same remote control signals."}
+{"id": "t01360", "cc": "ca", "pt": "support_troubleshoot", "text": "If your products are close together, pressing a button on one remote might turn them on or off at the same time."}
+{"id": "t01361", "cc": "ca", "pt": "support_troubleshoot", "text": "For StanbyME and supported projectors, turn on the Use Provided Remote Only setting in the settings menu to limit the product to its provided remote."}
+{"id": "t01362", "cc": "ca", "pt": "support_troubleshoot", "text": "If this setting is unavailable on your TV, place the products in different rooms or partially cover the remote control sensor on the device you don't want to control."}
+{"id": "t01363", "cc": "ca", "pt": "support_troubleshoot", "text": "Why do multiple devices respond to one remote?"}
+{"id": "t01364", "cc": "ca", "pt": "support_troubleshoot", "text": "LG TVs, StanbyME, and projectors generally use the same infrared remote control signals."}
+{"id": "t01365", "cc": "ca", "pt": "support_troubleshoot", "text": "If the products are in the same room or close together, pressing a button on one remote may send the signal to both products."}
+{"id": "t01366", "cc": "ca", "pt": "support_troubleshoot", "text": "This can cause both products to turn on or off at the same time."}
+{"id": "t01367", "cc": "ca", "pt": "support_troubleshoot", "text": "How to Prevent Multiple Devices from Responding to One Remote 1."}
+{"id": "t01368", "cc": "ca", "pt": "support_troubleshoot", "text": "Nearby LG products might also respond to this signal."}
+{"id": "t01369", "cc": "ca", "pt": "support_troubleshoot", "text": "Turn on the projector, then press Settings (gear icon) on the remote."}
+{"id": "t01370", "cc": "ca", "pt": "support_troubleshoot", "text": "How do I turn off the Use Provided Remote Only setting?"}
+{"id": "t01371", "cc": "ca", "pt": "support_troubleshoot", "text": "Set Your StanbyME Screen to Use Only Its Provided Remote If you use a StanbyME, you can turn on the Use Provided Remote Only setting to prevent it from responding to other LG TV remotes."}
+{"id": "t01372", "cc": "ca", "pt": "support_troubleshoot", "text": "Turn on Use Provided Remote Only."}
+{"id": "t01373", "cc": "ca", "pt": "support_troubleshoot", "text": "Close Align the LG AeroCat Tower using the LG logo on the front as a guide."}
+{"id": "t01374", "cc": "ca", "pt": "support_troubleshoot", "text": "When attaching the Cat Dome to the main unit, push it down until you\r\n"}
+{"id": "t01375", "cc": "ca", "pt": "support_troubleshoot", "text": "If the Cat Dome is not assembled correctly, the product will not turn on\r\n"}
+{"id": "t01376", "cc": "ca", "pt": "support_troubleshoot", "text": "even when plugged in."}
+{"id": "t01377", "cc": "ca", "pt": "support_troubleshoot", "text": "How to assemble the LG AeroCat Tower step by step Position the product facing you, then follow the steps below to assemble\r\n"}
+{"id": "t01378", "cc": "ca", "pt": "support_troubleshoot", "text": "Locate the LG logo on the main unit to identify the front."}
+{"id": "t01379", "cc": "ca", "pt": "support_troubleshoot", "text": "Cat Step Base, then gently press the main unit down into the Cat\r\n"}
+{"id": "t01380", "cc": "ca", "pt": "support_troubleshoot", "text": "Which ones should I use?"}
+{"id": "t01381", "cc": "ca", "pt": "support_troubleshoot", "text": "(The 2 longer screws are for securing the Main Unit.) 9."}
+{"id": "t01382", "cc": "ca", "pt": "support_troubleshoot", "text": "Close If you can hear sound from the TV but the screen is blank, press the [Volume] button on your TV remote."}
+{"id": "t01383", "cc": "ca", "pt": "support_troubleshoot", "text": "If the volume indicator appears on the screen, your TV's display is likely working fine."}
+{"id": "t01384", "cc": "ca", "pt": "support_troubleshoot", "text": "The issue may be caused by a signal problem from an external device, a loose connection, or a faulty HDMI cable."}
+{"id": "t01385", "cc": "ca", "pt": "support_troubleshoot", "text": "Try turning the external device off and back on, or disconnecting and reconnecting the HDMI cable."}
+{"id": "t01386", "cc": "ca", "pt": "support_troubleshoot", "text": "Why does my TV have sound but no picture?"}
+{"id": "t01387", "cc": "ca", "pt": "support_troubleshoot", "text": "The external device is temporarily frozen or is not sending a video signal."}
+{"id": "t01388", "cc": "ca", "pt": "support_troubleshoot", "text": "The HDMI cable connecting the TV and external device is loose or damaged."}
+{"id": "t01389", "cc": "ca", "pt": "support_troubleshoot", "text": "There is an issue with the TV itself."}
+{"id": "t01390", "cc": "ca", "pt": "support_troubleshoot", "text": "How to fix a TV with sound but no picture Step 1."}
+{"id": "t01391", "cc": "ca", "pt": "support_troubleshoot", "text": "If the picture appears but the issue occurs again, the HDMI cable may be faulty."}
+{"id": "t01392", "cc": "ca", "pt": "support_troubleshoot", "text": "Try replacing it with a new HDMI cable."}
+{"id": "t01393", "cc": "ca", "pt": "support_troubleshoot", "text": "Close Try this."}
+{"id": "t01394", "cc": "ca", "pt": "support_troubleshoot", "text": "Hot air comes out from the bottom of the product during operation."}
+{"id": "t01395", "cc": "ca", "pt": "support_troubleshoot", "text": "The lightwave oven is designed to exhaust air from the bottom."}
+{"id": "t01396", "cc": "ca", "pt": "support_troubleshoot", "text": "Depending on the product, air may come out from the bottom front or side."}
+{"id": "t01397", "cc": "ca", "pt": "support_troubleshoot", "text": "Disable [Lock Fn Key] in My gram 1.In the taskbar search box, type [My gram] and then open the app."}
+{"id": "t01398", "cc": "ca", "pt": "support_troubleshoot", "text": "How to install: Search for [LG Update] in the taskbar search box and launch the application."}
+{"id": "t01399", "cc": "ca", "pt": "support_troubleshoot", "text": "Enable HotkeyManager in Task Manager If [HotKeyManager] is set to [Disabled] under [Startup apps] in Task Manager, the hotkeys won’t work."}

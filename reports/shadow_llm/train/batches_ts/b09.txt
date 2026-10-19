@@ -1,0 +1,256 @@
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001892-20155103111147
+문장:
+t01800 This means that the highlight and the induction burners have different heating powers due to the different
+heating methods and burner sizes.
+t01801 Does the burner turn off and on repeatedly while using the highlight?
+t01802 ➔ Highlight burner's heating method maintains the temperature of the top plate without
+reducing the heating power even when the burner is turned off.
+t01803 If you operate the remaining burner while using the dual function with the small burner or the medium
+burner and the large burner together, the dual function will be cancelled automatically.
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001891-20153119161989LST/
+문장:
+t01804 ➔ [2022 WebOS 22][2021 WebOS 6.0] How to disable Store Mode Press the button on the TV remote and select [All Settings] → [General] → [Devices] → [TV Management] → [Home/Store Mode] → [Home Mode].
+t01805 [LG TV Settings] My TV comes out of power saving mode by itself.
+t01806 Close [Store Mode] displays key features of the product on the screen.
+t01807 If [Store Mode] is on, your TV reverts to the mode even when power saving mode has been triggered.
+t01808 To prevent this, you need to enable [Home Mode] first.
+t01809 Causes and Symptoms [Store Mode] is enabled.
+t01810 Try this Is power saving mode overridden?
+t01811 Go to [Settings], and switch the mode to [Home Mode] from [Store Mode].
+t01812 Select [Home Mode] in [Home/Store Mode].
+t01813 Select [Home Mode] in [Preferences].
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001891-20155063960870/
+문장:
+t01814 If foreign substances such as sweat, water, cosmetics, etc.
+
+페이지 정보: 국가=BR, URL=https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001755-20155410116910
+문장:
+t01815 Close Você pode definir a palavra de despertar para controle de voz mãos-livres para "Hi LG" ou "Hi TV." Pressione Configurações no seu controle remoto.
+t01816 Depois, selecione Todas as Configurações, Geral, Serviço de IA e Configurações de Reconhecimento de Voz.
+t01817 Selecione a palavra de despertar que deseja usar.
+t01818 Nota O controle por voz mãos-livres está disponível apenas em modelos de TV suportados com microfone embutido.
+t01819 Se sua TV não suportar controle por voz mãos-livres, pressione e segure o botão de Reconhecimento de Voz no controle remoto enquanto pronuncia um comando.
+t01820 Os nomes dos menus podem variar dependendo do seu país, idioma, modelo de TV e versão do webOS.
+t01821 Como Mudar a Palavra de Despertar Passo 1.
+t01822 Abrir Todas as Configurações Ligue sua TV.
+t01823 Pressione o botão Configurações (ícone de engrenagem) no controle remoto e selecione Todas as Configurações.
+t01824 Não, você não precisa dizer uma palavra para acordar.
+t01825 Você não pode criar uma palavra de despertar personalizada.
+
+페이지 정보: 국가=BR, URL=https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001753-20155368587101
+문장:
+t01826 Close Se a luz da sua geladeira LG não estiver funcionando Se a luz não acender ao abrir a porta da geladeira, ou se a geladeira parecer não ter luz, tente as seguintes verificações antes de entrar em contato com o Suporte ao Cliente da LG.
+t01827 Verifique se sua geladeira tem luz Geladeiras pequenas geralmente têm espaço limitado para congelar.
+t01828 Como a comida pode bloquear a luz, alguns modelos são projetados sem luz de freezer para maximizar o espaço de armazenamento.
+t01829 Modelos com menos de 11 pés cúbicos (300 litros) : Luz apenas no compartimento da geladeira.
+t01830 Modelos de 14 pés cúbicos (400 litros) ou mais : Luzes tanto no freezer quanto no compartimento da geladeira.
+t01831 Verifique a abertura no teto Se você vir uma abertura vazia no teto do compartimento da geladeira, pode parecer que uma lâmpada está faltando.
+t01832 No entanto, isso é um Respiração que circula ar frio, não uma tomada.
+t01833 Sua geladeira não está faltando nenhuma peça.
+t01834 Mantenha alimentos e outros itens longe da ventilação.
+t01835 Product Register Product Registration Failed Enviar Voltar para resultados Seu endereço de e-mail foi cadastrado com sucesso.
+
+페이지 정보: 국가=BR, URL=https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001752-20155006056176
+문장:
+t01836 O LG Gallery+ está disponível em TVs LG lançadas em 2025 ou posteriores que rodam [webOS25] ou versões posteriores.
+t01837 [TV LG] Como uso o LG Gallery+?
+t01838 Close O LG Gallery+ é um serviço integrado que combina o Always Ready e o aplicativo LG Gallery.
+t01839 Ele oferece uma variedade de conteúdos visuais, incluindo pinturas famosas, cenas da natureza e imagens geradas por IA.
+t01840 Além do conteúdo gratuito, uma assinatura paga oferece acesso a uma seleção mais ampla para uma experiência de visualização mais rica.
+t01841 Este serviço é suportado em modelos rodando webOS 25 ou posteriores.
+t01842 Ao integrar o app anterior Gallery com o Always Ready, o LG Gallery+ proporciona uma experiência de visualização mais imersiva com recursos adicionais.
+t01843 A disponibilidade do serviço e o conteúdo suportado podem variar de país para país.
+t01844 Por favor, consulte o manual do usuário do seu produto para detalhes específicos.
+t01845 Como usar a LG Gallery+ Comece a LG Gallery+ 1.
+t01846 Perguntas Frequentes (FAQ) Q.
+t01847 Você pode mudar a localização para informações meteorológicas nas configurações de Localização.
+t01848 Fotos: Defina fotos de dispositivos externos conectados, dispositivos móveis conectados via LG ThinQ ou Google Fotos como papel de parede.
+
+페이지 정보: 국가=BR, URL=https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001753-20155299537900
+문장:
+t01849 Troque o filtro de água Para a melhor qualidade da água, troque o filtro a cada 6 ou 12 meses, dependendo do seu modelo (consulte o manual do proprietário para o cronograma exato).
+t01850 Close Se a água ou gelo do seu purificador de água LG ou da sua geladeira tiver um gosto ou cheiro incomum, as causas mais comuns são uma troca atrasada do filtro, falta prolongada de uso, mangueira de abastecimento inadequada ou um problema na própria água da torneira.
+t01851 Na maioria dos casos, trocar o filtro de água e dar descarga a cerca de 10 litros (2,6 galões) de água do tanque resolve o problema.
+t01852 Importante Evite usar água subterrânea: A água subterrânea pode conter nitratos ou algas, que podem causar odores fortes e entupir rapidamente o filtro de água.
+t01853 Use a linha adequada de abastecimento de água: tubulações de aço, borracha ou cobre podem dar à sua água e gelo um gosto químico ou metálico.
+t01854 Recomenda-se uma sonda de EP de grau alimentício.
+t01855 Por que a água tem gosto ou cheiro estranho?
+t01856 Diferenças no filtro em relação a outras marcas Se você recentemente trocou o purificador de água de outra marca por um produto LG, a água pode ter um gosto diferente porque os materiais do filtro variam conforme o fabricante.
+t01857 A água do purificador tem um gosto bom, mas tem um gosto estranho quando despejada em um copo.
+t01858 Entre em contato com o Suporte ao Cliente da LG para mais assistência.
+t01859 Se a água da torneira estiver boa, vá para o Passo 2.
+
+페이지 정보: 국가=BR, URL=https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001754-20155060947893
+문장:
+t01860 - Se você está usando uma régua de energia, confira isso primeiro.
+t01861 ※ Nota: Modelos de 2021 e mais recentes exigem conexões de energia separadas para a unidade externa, unidade interna no piso e unidade interna montada na parede.
+t01862 (Não use água mais quente que 40°C.) ➔ Seque completamente o filtro em uma área bem ventilada e sombreada.
+t01863 Limpe o filtro com água morna (abaixo de 104°F / 40°C) ou substitua por um novo, se necessário.
+t01864 O ar-condicionado pode não esfriar adequadamente quando a temperatura externa estiver abaixo de 18°C (64°F) ou acima de 48°C (118°F).
+t01865 Pressione e segure os botões [Energia] e [Temperatura Reduzida] simultaneamente por 3 segundos.
+t01866 Pressione e mantenha o interruptor [Operação Forçada] no lado direito da unidade por 3 a 6 segundos.
+t01867 Pressione e mantenha os botões [Power] e [Temperatura Down] simultaneamente por 3 segundos.
+t01868 Pressione o botão [Set/Cancelar] no controle remoto da unidade montada na parede 3 vezes em até 5 segundos.
+t01869 Close Faça uma rápida autoavaliação para resolver questões simples enquanto economiza tempo e dinheiro.
+t01870 Verificar sua unidade antes do calor do verão também pode ajudar a evitar grandes paneadas.
+t01871 Verifique a fonte de alimentação e o controle remoto Verificando a fonte de alimentação - Verifique a conexão da tomada.
+t01872 ➔ Se você desligou a unidade depois do verão passado, conecte-a novamente antes de fazer uma autoverificação.
+t01873 ➔ Não use régua de energia ou extensão de luz.
+t01874 Conecte o cabo de energia diretamente em uma tomada de parede.
+t01875 ➔ Se usar uma régua de energia for inevitável, utilize uma régua para aparelhos de ar-condicionado.
+t01876 Em seguida, o progresso necessário do teste será exibido de [1 a 99] por aproximadamente 4 minutos.
+t01877 ※ Nota: Garanta que a capacidade máxima da régua atenda às especificações do produto listadas no manual do proprietário.
+
+페이지 정보: 국가=BR, URL=https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001753-20155103100764
+문장:
+t01878 Close Sua lava-louças exibe um [IE] (Erro de entrada de água) enquanto está ligado?
+t01879 Você ouve um alarme 'dingdong' enquanto não há água para a banheira?
+t01880 Causas e sintomas A água é cortada ou a mangueira de abastecimento é comprimida.
+t01881 A válvula d'água está fechada.
+t01882 Sua lava-louças borrifa e esvazia água forte repetidamente enquanto lava a louça.
+t01883 Se uma quantidade especificada de água não for fornecida à lava-louças, um erro [IE] será exibido.
+t01884 Experimente isso A água está cortada?
+t01885 Ou a mangueira de abastecimento de água está comprimida ou quebrada?
+t01886 ➔ Verifique se a água sai pela torneira da pia ou pela torneira do banheiro.
+t01887 Abrir a válvula de abastecimento de água conectada à lava-louças ① Abra a porta da pia embaixo da torneira d'água.
+t01888 Você comprou ou realocou a lava-louças recentemente?
+
+페이지 정보: 국가=BR, URL=https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001753-20155295256524
+문장:
+t01889 A geladeira continua apitando mesmo quando a porta está fechada.
+t01890 O que devo fazer?
+t01891 Close Quando a porta da geladeira fica aberta, um alarme apita para impedir que a temperatura interna suba.
+t01892 Se o alarme continuar mesmo depois que você fecha a porta, verifique o seguinte.
+t01893 Verifique a disposição dos alimentos e as prateleiras Certifique-se de que a geladeira não está sobrecarregada e que prateleiras e gavetas estejam devidamente instaladas.
+t01894 Remova quaisquer obstruções ao redor da porta Verifique se sacolas plásticas, capas ou outros itens estão presos na porta.
+t01895 Amacie qualquer resíduo com uma toalha quente e úmida, depois limpe delicadamente com uma escova de dentes ou esponja e sabonete suave.
+t01896 Posso desligar o alarme de abertura da porta?
+t01897 A vedação da porta está rasgada.
+
+페이지 정보: 국가=BR, URL=https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001755-20155311249316
+문장:
+t01898 Close Se não houver som vindo da sua TV, primeiro verifique se [Sound Out] está configurado para [Alto-falante Interno da TV] ou seu dispositivo externo conectado.
+t01899 Solucionar problemas de som de TV usando o Autodiagnóstico de Som TVs OLED de 2024 ou posteriores [TVs OLED com webOS 24 ou posterior]: Pressione o botão [Configurações] no controle remoto, [Todas as Configurações], [Suporte], [Autodiagnóstico de Som] TVs OLED de 2021 a 2023 [TVs OLED com webOS 6.0 a 23]: Pressione o botão [Configurações] no controle remoto, [Todas as Configurações], [Gerais], [OLED Care], [Autocuidado do Dispositivo], [Autodiagnóstico de Som] TVs de 2021 ou posteriores [TVs com webOS 6.0 ou posterior]: Pressione o botão [Configurações] no controle remoto, [Todas as Configurações], [Suporte], [Autodiagnóstico de Som] TVs de 2020 [webOS 5.0]: Pressione o botão [Configurações] no controle remoto, [Todas as Configurações], [Suporte], [Configurações Adicionais], [Teste de Som] TVs de 2019 ou anteriores [webOS 4.5 ou anteriores]: Pressione o botão [Configurações] no controle remoto, [Todas as Configurações], [Som], [Teste de Som] Passo 4.
+t01900 Se não houver som vindo da sua TV, primeiro verifique se [Sound Out] está configurado para [Alto-falante Interno da TV] ou seu dispositivo externo conectado.
+t01901 Se você estiver usando um set-top box, também tente aumentar o volume usando o controle remoto do set-top box.
+t01902 Se as configurações estiverem corretas, execute [Autodiagnóstico de Som] na sua TV.
+t01903 Isso vai te ajudar a verificar se as caixas de som da TV estão funcionando corretamente.
+t01904 Por que não tem som vindo da minha TV?
+t01905 Problemas de configuração de saída de áudio Se você desconectou recentemente um alto-falante externo, como uma soundbar, pode não ouvir o som porque sua TV ainda está configurada para tocar pelo alto-falante externo.
+t01906 Problemas de Volume e Mute do Dispositivo Conectado Mesmo que o volume da TV esteja no máximo, você não vai ouvir nada se seu set-top box ou dispositivo externo estiver silenciado ou configurado para 0.
+t01907 Se ainda não houver som, entre em contato com seu provedor de serviço.
+t01908 Desconecte as duas extremidades do cabo HDMI que conecta a TV ao dispositivo externo (como um set-top box ou console de videogames), e então conecte-os novamente.
+
+페이지 정보: 국가=BR, URL=https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001755-20155113393089
+문장:
+t01909 Com o laptop desligado, pressione o botão [Power] uma vez e imediatamente pressione a tecla [F2] repetidamente (cerca de 10 vezes) o mais rápido possível.
+t01910 Close Se a data e hora do seu laptop estiverem erradas, você pode facilmente corrigir isso ajustando diretamente as configurações da BIOS ou ativando [Definir hora automaticamente] no Windows.
+t01911 Pressione a tecla [F2] imediatamente ao ligar o laptop para entrar na BIOS, ou abra as [configurações de data e hora] do Windows para ajustar o horário.
+t01912 Por que a data e hora do meu laptop estão erradas?
+t01913 Isso pode acontecer se o recurso [Definir horário automaticamente] no Windows estiver desativado ou se o fuso horário estiver configurado incorretamente.
+t01914 Também pode ocorrer se o laptop não for usado por muito tempo, fazendo com que as configurações do sistema sejam reiniciadas, ou se a data e hora foram definidas manualmente e se tornarem imprecisas.
+t01915 Como Mudar a Data e a Hora Alterando a Data e a Hora na BIOS 1.
+t01916 * Nota: Laptops com SSDs inicializam muito rápido.
+t01917 Pressione [F2] repetidamente assim que a energia for ligada para acessar a BIOS.
+t01918 Após atualizar as configurações, pressione [F10] para salvar as alterações e sair.
+
+페이지 정보: 국가=BR, URL=https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001753-20155004255324
+문장:
+t01919 6 lb / 2,7 kg).
+t01920 [Lavadora de Carga Frontal LG] Como faço para rodar um ciclo de teste após a instalação?
+t01921 Close Como faço para rodar um ciclo de teste após a instalação?
+t01922 Após a instalação, execute um ciclo de teste para garantir que a máquina de lavar está funcionando corretamente.
+t01923 Isso ajuda a confirmar as conexões das entradas de água, nivelamento e instalação da mangueira de drenagem.
+t01924 Carregando a Arruela Carregue a máquina de lavar com 6 toalhas grossas (aprox.
+t01925 Para um teste mais preciso, faça o ciclo com roupa suja em vez de com o tambor vazio.
+t01926 Seleção do Ciclo Pressione o botão [Power] para ligar a máquina.
+t01927 Gire o botão para selecionar Lavagem RápidaEnxágue+Centrifugação ou .
+t01928 Reconecte corretamente as mangueiras de entrada de água.
+t01929 Modelos com botão padrão: Select Enxágue+Centrifugação Certifique-se de que a máquina de lavar encha corretamente, não balançe ou vibre excessivamente e drene bem durante o ciclo de centrifugação.
+t01930 Selecione um ciclo mais curto para um teste mais rápido.
+
+페이지 정보: 국가=BR, URL=https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001755-20155311406810
+문장:
+t01931 Como resetar sua TV TVs de 2021 ou mais recentes [webOS 6.0 ou posterior]: Pressione o botão [Configurações] no controle remoto, [Todas as Configurações], [Geral], [Sistema], [Resetar para as Configurações Iniciais] TVs 2020 [webOS 5.0]: Pressione o botão [Configurações] no controle remoto, [Todas as Configurações], [Suporte], [Restaurar para as Configurações Iniciais] TVs de 2019 ou mais antigas [webOS 4.5 ou anterior]: Pressione o botão [Configurações] no controle remoto, [Todas as Configurações], [Geral], [Restaurar para as Configurações Iniciais] Passo 2.
+t01932 Em alguns modelos lançados em 2024 ou posteriores, você pode selecionar [Redefinir todas as configurações exceto as de rede] no menu de reset para resetar o sistema e resolver erros mantendo a conexão Wi-Fi atual.
+t01933 Como faço um reset de fábrica da minha TV LG se ela continua travando ou mostrando erros?
+t01934 Close Se você tiver problemas com o controle remoto ou erros no aplicativo da sua TV LG, o recurso [Resetar para as Configurações Iniciais (Reset de Fábrica)] pode ajudar a resolver o problema.
+t01935 Por favor, note que realizar um reset completo removerá todos os aplicativos instalados e configurações pessoais.
+t01936 Cuidado Se o recurso de trava da TV estiver ativado, você precisará digitar sua senha para resetar a TV.
+t01937 (Você pode encontrar a senha padrão no manual do proprietário no site da LG.
+t01938 Se você esquecer sua senha após alterá-la, por favor, entre em contato com o Suporte ao Cliente da LG para obter assistência.) Não desconecte o cabo de energia nem desligue a TV durante o reset.
+t01939 Quando devo resetar minha TV?
+t01940 Problemas com o Magic Remote O ponteiro não aparece na tela, ou a TV não responde quando botões são pressionados.
+t01941 Como faço para resetar minha TV LG para as configurações de fábrica?
+
+페이지 정보: 국가=BR, URL=https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001753-20155101730332
+문장:
+t01942 [Secadora LG] O que é o Ciclo Seco da IA?
+t01943 O que é o ciclo de secagem da IA?
+t01944 Carregue 5 kg ou menos de roupa mista.
+t01945 ➔ Se a carga exceder 5 kg ou consistir em um único tipo de tecido, a secagem pode demorar mais em comparação com os ciclos normais ou dedicados, ou as roupas podem não secar completamente.
+t01946 Verifique os ciclos dedicados e capacidades máximas, lista de ciclos dedicados Verifique os ciclos dedicados e as capacidades máximas Ciclo dedicado Roupa de cama (3,5kg) Cama Roupas de lã ou mistura de lã (1kg) Lã/Delicados Toalhas (5kg) Toalhas Camisetas (3,5kg) Camisetas Roupas esportivas (2kg) Roupas esportivas Roupas de bebê/Roupas leves (1,5kg) Cuidados com o Bebê Roupas esportivas (2kg) Roupas esportivas Deslize para a esquerda ou direita para verificar o conteúdo.
+t01947 Close Vamos descobrir mais.
+t01948 O ciclo AI Dry seca automaticamente suas roupas em condições ideais, com base nas características do tecido.
+t01949 Ele detecta o peso, o material e a umidade da lavanderia para definir automaticamente a temperatura e o tempo de secagem adequados.
+t01950 Ele ajusta automaticamente o tempo de secagem com base nas características detectadas da lavanderia.
+t01951 Como funciona o Ciclo Seco da IA?
+t01952 ➔ O ciclo de secagem da IA opera na seguinte ordem: Detectar o peso da carga → Monitorar a condição do tecido durante a secagem → Analisar o tipo de tecido → Ajustar automaticamente o tempo de secagem → Fim do ciclo.
+t01953 O estado da roupa durante a secagem é detectado por sensores infravermelhos e de umidade.
+t01954 Se a água tiver acumulado, desconecte a mangueira de drenagem do ralo e mantenha-a baixa para que a água possa escoar.
+t01955 Com base nos valores detectados, o peso, o material e o estado de secagem da roupa são determinados.
+t01956 Nota: O sensor infravermelho está localizado no topo do tambor, e o sensor de umidade fica atrás da carcaça do filtro de fiapo.
+
+페이지 정보: 국가=BR, URL=https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001753-20155105958098
+문장:
+t01957 ④ Pressione o botão [Iniciar/Pausar] (O display mostra o tempo restante) ⑤ Quando o buzzer toca indicando que a limpeza terminou, a energia é automaticamente Desliga depois de cerca de 10 segundos.
+t01958 ➔ Informe que o tempo de lavagem para o cliente daquela prata é muito curto (lavagem rápida 3 min, Delicada 6 min).
+t01959 ➔ Depois de ligar, segure o botão de processo por 3 segundos, o display mostrará "3", o que significa que o WM fará o enxágue 3 vezes.
+t01960 Você pode aumentar mais conforme você preferir, segurando o "botão de processar" (o máximo de enxágue é 5 vezes) ➔ Informe o cliente adicionando mais enxágue Será útil para remover a mancha.
+t01961 (Máximo 5 vezes) 6 Verifique o tipo de pano que o cliente lava: Se o cliente lavar com pano flutuante ➔ Recomende ao cliente que pressione o botão Pausar após encher a água, depois abra a porta para mergulhar a roupa na água.
+t01962 Close [Guia de solução de problemas para a ICC] Verifique quanto tempo o cliente usou o WM antes do problema acontecer?
+t01963 (Menos de um mês) 1 Verifique como o cliente usar a máquina - O cliente escolheu a água LV sozinho ou não?
+t01964 1 Sim - O cliente escolheu a água LV sozinho ➔ Recomendo que o cliente use a detecção automática WM, não selecione WL sozinho.
+t01965 Porque vai parecer uma lavagem fraca, o cliente escolheu água demais (o pano flutuante faz parecer uma lavagem fraca).
+t01966 ➔ Se o cliente quiser selecionar, por favor informe a WL adequada para a foto seguinte do cliente no lado direito.
+t01967 Nível recomendado de água com base na carga da roupa 1.
+t01968 2 Não - Detecção automática de uso do cliente.
+t01969 ➔ O cliente usou pano úmido?
+t01970 Movimento de equilíbrio - propósito para desembaraçar o tecido para evitar que o tecido se embaralhe e desequilibre, de modo que fique com a aparência Lavagem fraca, mas não afeta o desempenho da lavagem, então por favor, confie em usar o WM.
+t01971 Movimento pul - propósito para lavar pano, ele vai parecer forte durante o movimento de lavagem 2.
+t01972 3 Verifique se o cliente já usa banheira limpa: Se eles nunca usarem, por favor sugiram como fazer e monitorem o resultado ➔ Como operar Modelos VBT limpos de banheira ① Pressione o botão [Power] ② Pressione o botão [Programar] e então selecione [Limpeza da banheira] ③ Distribua o limpador de banheiras de forma uniforme na banheira.
+
+페이지 정보: 국가=BR, URL=https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001753-20155265324069
+문장:
+t01973 Se o recurso 'Lock' estiver ativado, pressione e segure o botão 'Lock' por 3 segundos para desbloquear.
+t01974 ➔ Desbloqueie o painel de controle e pressione longamente o botão Ice On, Off por três segundos para desligar a máquina de gelo.
+t01975 Espere um ou dois segundos antes de tirar o copo do dispensador para evitar que água residual pinge para a bandeja.
+t01976 Se o indicador de LED estiver desligado, pressione longamente o botão Craft Ice por três segundos para ativar o recurso.
+t01977 Após cinco segundos de tempo lento, o modo muda e o indicador de LED é aceso.
+t01978 Quando a caixa de gelo está cheia, com uma camada completa de esferas de gelo e parte de uma segunda camada, a máquina de gelo para de produzir mais gelo.
+t01979 Normalmente, leva cerca de 3 horas para congelar a água a 20°C (68°F), mas no caso da instalação inicial, pode levar até dois dias para a geladeira começar a produzir gelo.
+t01980 Close Experimente isso Nenhum gelo está sendo feito A máquina de gelo está desligada?
+t01981 ➔ Causa O gelo não será feito se a máquina de gelo estiver desligada.
+t01982 ➔ Experimente isso Ligue a máquina de gelo para que ela funcione.
+t01983 Uma vez desbloqueado o painel de controle, o botão Ice On, Off pode ser pressionado para ligar e desligar a operação da máquina de gelo.
+t01984 A máquina de gelo não está produzindo gelo, mesmo já tendo se passado 3-4 dias desde a instalação?
+t01985 Leva entre 12 horas e dois dias para que os primeiros cubos de gelo sejam feitos.
+t01986 A duração depende da temperatura dos alimentos armazenados dentro do freezer.
+t01987 Leva de dois a três dias para a caixa de gelo encher.
+t01988 Algumas gotas de água caem depois de usar o dispensador de gelo?
+t01989 Se você usar água subterrânea, pode perceber um cheiro na água devido a substâncias presentes no lençol.
+t01990 O gelo será feito depois de algum tempo.
+t01991 Se você usou anteriormente um purificador de outra empresa, pode notar uma diferença no sabor da água em relação ao seu purificador atual.
+
+페이지 정보: 국가=BR, URL=https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001755-20155412191893
+문장:
+t01992 Selecione a tela inicial se quiser navegar por conteúdo inteligente primeiro.
+t01993 TVs de 2026 e posteriores (webOS 26 e posteriores): Pressione [Configurações] no controle remoto, selecione [Todas as Configurações], [Sistema], [Configurações Adicionais], [Configurações Iniciais] e selecione [Ligar a Tela].
+t01994 TVs 2023–2025 (webOS 23–25): Pressione [Configurações] no controle remoto, selecione [Todas as Configurações], [Geral], [Sistema], [Configurações Adicionais], [Configurações Iniciais] e selecione [Tela de Ligar Ligação].
+t01995 TVs 2021–2022 (webOS 6.0–22): Pressione [Configurações] no controle remoto, selecione [Todas as Configurações], [Geral], [Sistema], [Configurações Adicionais], [Configurações Iniciais] e selecione [Lançamento Home Auto].
+t01996 TVs 2020 (webOS 5.0): Pressione [Configurações] no controle remoto, selecione [Todas as Configurações], [Geral], [Configurações Casa] e selecione [Lançamento Home Auto].
+t01997 TVs 2019 (webOS 4.5): Pressione [Configurações] no controle remoto, selecione [Todas as Configurações], [Geral], [Configurações Adicionais], [Configurações Iniciais] e selecione [Lançamento Home Auto].
+t01998 TVs de 2026 e versões posteriores (webOS 26 e posteriores): Pressione [Configurações] no controle remoto, selecione [Todas as Configurações], [Sistema], [Configurações Adicionais] e selecione [Início Rápido+].
+t01999 TVs 2023–2025 (webOS 23–25): Pressione [Configurações] no controle remoto, selecione [Todas as Configurações], [Geral], [Sistema], [Configurações Adicionais] e selecione [Início Rápido+].

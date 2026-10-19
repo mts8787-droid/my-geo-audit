@@ -1,0 +1,302 @@
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008386-20155051180443/
+문장:
+t00400 The [Fn Key Lock] feature is enabled in the LG Smart Assistant app (Models released in 2022 or later).
+t00401 The [Hotkey mode setting] is enabled in the LG Control Center app (Models released before 2022).
+t00402 Close If the Fn keys (hotkeys) on your LG laptop are not working, or if you cannot adjust the screen brightness or volume, it is likely because the [Fn Key Lock] is enabled in the settings app, or the essential LG On Screen Display3 (OSD3) driver is not installed.
+t00403 The LG On Screen Display3 (OSD3) app is missing or not installed.
+t00404 The [HotKeyManager] app is set to [Disabled] in Windows startup apps.
+t00405 How do I fix Fn key (Hotkey) errors?
+t00406 2.Select the [Startup apps] or [Startup] tab.
+t00407 What should I do if the steps above don’t fix the issue?
+t00408 2.Select the [Keyboard Settings] menu.
+t00409 2.Under [Installed apps], check whether [LG On Screen Display3] is listed.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008386-20155141427618
+문장:
+t00410 For Universal Control to work reliably, keep the soundbar within
+about 35 inches (90 cm) of the TV and make sure the soundbar’s IR
+receiver is not blocked.
+t00411 Keep the
+soundbar within about 35 inches (90 cm) of the TV.
+t00412 Close Please Note Before changing cables or ports, turn off the TV and soundbar.
+t00413 If you use HDMI ARC, use a High-Speed HDMI cable that supports CEC.
+t00414 After pressing a remote button during testing, wait a few seconds
+because response time can vary by device.
+t00415 Low or no sound from a soundbar can happen in these situations.
+t00416 This issue is usually caused by an incorrect TV sound output
+selection, an incomplete device connection (HDMI
+ARC Optical Bluetooth), blocked remote control signals during
+Universal Control setup, or HDMI-CEC settings that prevent
+power volume synchronization.
+t00417 The TV is not set to output audio to the soundbar If the TV is still outputting sound to its internal speakers (or
+to a different audio device), the soundbar may be silent or very
+quiet.
+t00418 Turn on SIMPLINK (HDMI-CEC) to sync power and HDMI control
+(HDMI connection only) Setting: Settings > General > External Devices
+> HDMI Settings > SIMPLINK (HDMI-CEC) > On 1) If your soundbar is connected via HDMI ARC, open HDMI
+Settings.
+t00419 Set up Universal Control so one LG remote can control the
+soundbar (if supported) Setting: Settings > General > External Devices
+> Universal Control Settings 1) Turn on the soundbar.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008333-20155146915740
+문장:
+t00420 Close Please Note To prevent sudden loud sound, lower the TV volume before adjusting the Bluetooth device volume.
+t00421 If you are using a headset or earbuds, increase volume gradually to protect your hearing.
+t00422 Some Bluetooth devices have separate volume controls for media and calls; make sure you are adjusting the media volume.
+t00423 Low or missing Bluetooth sound can happen in these situations Bluetooth audio volume can be controlled independently by the TV and the connected Bluetooth device.
+t00424 If the Bluetooth device volume is low (or muted), sound may remain quiet even when you raise the TV volume.
+t00425 The Bluetooth device volume is set too low or muted Many Bluetooth speakers, soundbars, and headphones keep their own volume level.
+t00426 When that device volume is low, the TV volume increase may have little or no effect.
+t00427 Adjust the Bluetooth device volume to restore normal sound on your LG TV Step 1.
+t00428 Adjust the volume directly on the Bluetooth device using its remote control or the physical volume buttons on the device.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008333-20155179485106
+문장:
+t00429 USB storage devices must have at least 4 GB capacity with at least 1 GB of available space.
+t00430 Recordings of less than 10 seconds in duration will be automatically discarded.
+t00431 Up to 600 recordings can be stored in a single partition.
+t00432 The Time Machine function is only supported by models released in
+2021 or earlier.
+t00433 Try this Models released in 2022 (webOS 22) and later do not support the Time Machine feature.
+t00434 Some 2021 models (webOS 6.0) also do not support the Time Machine feature.
+t00435 How to record and playback in 2021 WebOS 6.0 (instant recording) 1.
+t00436 Recording time is set to 3 hours by default.
+t00437 → The recording time can be scheduled to up to 5 hours.
+t00438 → Up to 30 recording schedules can be added to the [Schedule List].
+t00439 [LG TV Time Machine] How can I use the Time Machine Recording feature?
+t00440 Close ➔ Please check the following before using Time Machine Recording.
+t00441 Time Machine Recording is only available with digital channels being streamed via the antenna input.
+t00442 If your TV is connected to multiple USB storage devices, the one used lately for recording is selected
+as the storage device by default.
+t00443 Depending on the storage capacity, the maximum recording time may vary.
+t00444 All recordings are protected with contents protection techniques to prevent playback in PCs or other
+TVs.
+t00445 Also, recordings are not available anymore once any imaging circuit components of the TV are
+replaced.
+t00446 Do not change the channel or the external input source while recording is in progress.
+t00447 ③ More → Sort: Changes the sort order.
+t00448 How to schedule recording 1.
+t00449 ① You can set a new recording schedule.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008362-20151317958963DRC
+문장:
+t00450 Door lock during a power cut If there is a power cut during a wash programme, the door may remain
+locked for safety.
+t00451 Close This video explains why the door on your LG front load washing machine
+may stay locked.
+t00452 For your safety, the door of your LG washing machine is designed to lock
+automatically during operation or when the internal temperature is high.
+t00453 Why won’t my washing machine door open?
+t00454 Safety lock sensor For safety reasons, the door will not open while the washing machine
+is running, when there is water inside the drum, or when the water level sensor
+is active.
+t00455 High temperature and cooling time After using high-temperature functions such as a boil wash or
+drying, the door stays locked until the internal temperature drops
+to a safe level.
+t00456 This feature is specifically designed to
+prevent scalding from hot water or steam.
+t00457 Caution Do not force the door open when the [Lock] icon is displayed.
+t00458 : For safety, the door stays
+locked if the internal temperature is still high or if the machine
+detects water inside the drum.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008386-20155269142532/
+문장:
+t00459 4) At the top of the pop-up window, select [Last hour], and then choose the time range you want, such as [Last 24 hours] or [All time].
+t00460 Close To clear your browsing history in Microsoft Edge, select [Settings and more] in the upper-right corner, and then select [Settings].
+t00461 Go to [Privacy, search, and services], then select [Choose what to clear] under [Clear browsing data] to delete the items you want.
+t00462 Why should I clear browsing data, and what gets deleted?
+t00463 Clearing browsing data can help when you use a shared PC, want to protect your privacy, or experience slow browsing speeds or webpage errors.
+t00464 The main types of data that can be deleted include: 1.
+t00465 rowsing history The URLs of websites you visited, along with the date and time of each visit.
+t00466 Download history A list of files downloaded from the web.
+t00467 3) Under [Clear browsing data], select [Choose what to clear].
+t00468 Please review your selections carefully before selecting [Clear now].
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008333-20155143127535
+문장:
+t00469 Use only a wall bracket that is compatible with your LG TV model and VESA mounting pattern.
+t00470 With assistance, lift the TV and mount it onto the wall bracket according to the bracket manufacturer’s instructions.
+t00471 Close Please Note To reduce the risk of injury or product damage, have the TV wall-mounted by a qualified professional.
+t00472 Do not mount on wall materials that cannot safely support the TV and bracket (for example, certain tile, marble, or hollow/weak surfaces).
+t00473 Always use the correct screws, anchors, and tools for your wall type; incorrect hardware can cause the bracket to loosen or fail.
+t00474 Before drilling, confirm there are no electrical wires, plumbing, or other hazards behind the wall.
+t00475 Do not overtighten screws; overtightening can strip anchors or crack wall surfaces.
+t00476 Two or more people may be required to lift and hang the TV safely.
+t00477 Wall mount installation issues can occur in these situations.
+t00478 The wall bracket is not compatible with the TV Bracket compatibility depends on the TV model and mounting specifications.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008333-20155132464690
+문장:
+t00479 Close Please Note Before checking or reconnecting cables, turn off the TV and any connected devices.
+t00480 Do not bend, crush, or sharply kink the antenna/cable line, as this can damage the cable and worsen signal issues.
+t00481 If you use a third-party set-top box, splitter, amplifier, or wall outlet, their condition and settings can affect the signal.
+t00482 For exact usage and settings of third-party devices, please check the manufacturer's customer service or user manual.
+t00483 Settings and menu names may differ on older models.
+t00484 Refer to your product user manual if the menu layout does not match.
+t00485 Why the picture flickers or the TV shows No Signal on some channels A damaged antenna/cable line or a weak connection can cause screen abnormalities.
+t00486 If the broadcast signal is unstable, some channels may flash, flicker, show a blank screen, or display No Signal.
+t00487 Why do only some cable channels flicker while others look normal?
+t00488 If the values are low or unstable, recheck the cable connection and any intermediate devices (wall outlet, splitter, amplifier, set-top box).
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT41000011-20155048193085/
+문장:
+t00489 Close Causes and Symptoms Is the exterior surface of the outdoor unit severely contaminated by foreign materials or dusts?
+t00490 Try this Unplug the power cord before cleaning the outdoor unit.
+t00491 (There may be live power remained when you cleaning the outdoor unit with the power not turned off.) Identify the position of the outdoor unit, and clean the unit only at a safe place.
+t00492 Care should be exercised to prevent flow of water into the motor when you clean the outdoor unit with
+water.
+t00493 (Cleaning with water is allowed; however, should be performed in such a way that water normally flows out of
+the unit as rainwater does.) If the outdoor unit is installed beyond the handrail, do not attempt cleaning, since there is risk of
+fall.
+t00494 (If safety equipment is required for cleaning, it needs to be handled by an LG Electronics service
+technician.) This guide was created for all models, so the images or content may be different from your
+product.
+t00495 Causes and Symptoms Is the exterior surface of the outdoor unit severely contaminated by foreign materials or dusts?
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008362-20155379392203/
+문장:
+t00496 Why won't my LG front-load washer door open?
+t00497 Close For your safety, the washer door locks automatically when the inside of the washer is hot, when water remains in the drum, or when the drum is spinning.
+t00498 If the washer is hot inside, wait 2–3 minutes for it to cool down.
+t00499 If water remains inside, run a Spin Only cycle or clean the drain filter to fully drain the water, and the door will unlock.
+t00500 Caution Do not force the door open if the inside of the washer is hot.
+t00501 Hot water or steam may cause burns.
+t00502 Wait until the washer has fully cooled down.
+t00503 Do not pull on the locked door with excessive force.
+t00504 Open the drain hose cap and let the water drain into a container.
+t00505 Rinse the filter with water to remove debris, then screw the cap back on tightly.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008386-20155268094107/
+문장:
+t00506 What is a MAC address, and when do I need it?
+t00507 A MAC (Media Access Control) address is a unique identifier assigned to a network device, such as a computer's network adapter or a smartphone's Wi-Fi module.
+t00508 Close To find your laptop’s MAC address, press the [Windows] + [R] keys on your keyboard, type cmd in the Run window, and press [Enter].
+t00509 When the Command Prompt window opens, type ipconfig /all and press [Enter].
+t00510 In the displayed information, the value next to Physical Address is your device's MAC address.
+t00511 Unlike an IP address, it is tied to the physical hardware and does not change unless the component is replaced.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008386-20155132484936/
+문장:
+t00512 Mount the TV onto the wall bracket according to the bracket design.
+t00513 Close Please Note Wall-mounting requires expertise and an understanding of the wall type and installation environment.
+t00514 Some wall types may not be suitable for mounting.
+t00515 Using an incorrect bracket or improper installation can cause product damage or the TV to fall.
+t00516 To avoid potential damage, professional installation by a qualified technician is strongly recommended.
+t00517 This guide was created for all models, so images or content may differ from your product.
+t00518 Why wall type and installation method matter for wall-mounting The correct wall bracket and installation method depend on the TV type and the wall material.
+t00519 If the wall type or environment is unsuitable, anchors and screws may not hold securely and the TV may be damaged.
+t00520 When to stop and request professional installation If the wall type (such as marble, wood, or tile) or the installation environment restricts mounting, do not proceed.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008333-20155052625265/
+문장:
+t00521 How to Change Language Settings Language Settings by Model Year 2021 or later TVs (webOS 6.0 or later): Press [Settings] on the remote, then select [All Settings] → [General] → [System] → [Language].
+t00522 2020 or earlier TVs (webOS 5.0 or earlier): Press [Settings] on the remote, then select [All Settings] → [General] → [Language].
+t00523 How to change language settings on 2025 or later TVs (webOS 25 or later) 1.
+t00524 [LG TV] How do I change the language on my TV?
+t00525 Close Language Settings let you change the on-screen menu language, the audio language for digital broadcasts, and the on-screen keyboard language.
+t00526 Available languages vary by region, and you can select only the languages listed.
+t00527 The settings path may vary depending on your webOS version.
+t00528 Available Language Settings Menu Language You can select the language displayed on the screen.
+t00529 The voice recognition language is automatically set to match the menu language you select.
+t00530 Voice recognition is available only on certain models.
+t00531 Audio Language You can select your preferred language when watching digital broadcasts that contain multiple audio languages.
+t00532 If the program has only one audio language available, the audio plays in the program’s default language, regardless of your [Audio Language] setting.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008333-20155120620672
+문장:
+t00533 Close Please Note Dolby Atmos works only with Atmos-supported content and a compatible sound output setting.
+t00534 Why Dolby Atmos Is Missing or Won’t Turn On Dolby Atmos availability can be limited depending on the selected sound output method and whether the connected audio device supports the required features.
+t00535 Also, if the app, video, or the selected audio track does not include Dolby Atmos, you won’t be able to use it.
+t00536 The TV sound settings are not configured for Dolby Atmos output If Dolby Atmos is turned off in the TV sound settings, or if the selected sound output does not support Atmos in your current configuration, Atmos may be unavailable.
+t00537 How to Turn On Dolby Atmos and Confirm It’s Working Turn on Dolby Atmos in the TV sound settings.
+t00538 Why can’t I select the Dolby Atmos option on my LG TV?
+t00539 Can I use Dolby Atmos by connecting a soundbar to my LG TV?
+t00540 Please Note Dolby Atmos works only with Atmos-supported content and a compatible sound output setting.
+t00541 If you are using an external audio device, whether Atmos is available can vary depending on the connected device and connection method.
+t00542 Menu names and options may vary by model and region.
+t00543 Some older models may use a different setup method, so please check your product user manual for the exact menu layout.
+t00544 For exact usage and settings of third-party devices, please check the manufacturer’s customer service or user manual.
+t00545 For detailed specifications and the full list of compatible devices, please check the LG Electronics website or your product user manual.
+t00546 This can make the option appear greyed out or missing.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00001871-20155140653532
+문장:
+t00547 We recommend using an HDMI 2.0 or DP cable that supports 4K at 60 Hz.
+t00548 Please refer to the manufacturer’s support guide for detailed instructions.
+t00549 Close If there’s no sound coming from your monitor, first check the product specifications to see if it has built-in speakers.
+t00550 If your monitor has built-in speakers but you still hear no sound, check the signal cable connections (HDMI, DP, USB-C) and your Windows sound output settings.
+t00551 Why Is There No Sound from the Monitor?
+t00552 The monitor may not have built-in speakers, or the volume may be muted.
+t00553 The HDMI, DP, or USB-C signal cable connecting the PC and monitor may be damaged or not securely connected.
+t00554 The Windows sound output device may be set to a device other than the monitor.
+t00555 Audio may not work due to cable version or compatibility issues between the monitor and the connected device (such as a PC).
+t00556 After restarting, install the correct sound driver for your PC.
+t00557 Reinstall the Sound Driver 1.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008362-20151318093726DRC
+문장:
+t00558 What is the most important
+factor when choosing a wash programme?
+t00559 The most important factors are
+the fabric type and the level of soiling.
+t00560 Close This video explains the different wash programmes(cycles) and features
+of the LG SIGNATURE Washer/Dryer.
+t00561 With its intuitive touchscreen and smart features, the LG SIGNATURE
+Washer/Dryer helps you care for a wide range of fabrics efficiently.
+t00562 How do I select and use wash programmes on the LG SIGNATURE
+Washer/Dryer?
+t00563 Navigating the touchscreen display • Use the touchscreen LCD on the front of the machine to select your
+preferred wash or dry option from five categories.
+t00564 Selecting and setting a programme • Check the care label on your garments before washing, select the
+most suitable option from standard, special, or drying programmes,
+then start the programme.
+t00565 Using downloaded programmes • If you need a specific programme that is not pre-installed, open the
+LG ThinQ app on your smartphone and use the 'Download Cycle' feature
+to add new programmes to your machine.
+t00566 Caution Before using a drying programme, always check the garment care label
+to ensure tumble drying is suitable.
+t00567 This helps prevent
+heat-related shrinkage or damage to your clothes.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008333-20155146895817
+문장:
+t00568 The TV turns off automatically after a timer-based power on On some models, when the TV turns on using a Power On Timer, it may turn off automatically after a period of inactivity (for example, 2 or 4 hours) if there is no remote control input.
+t00569 Close Please Note If the TV is unplugged or loses power, timer features may be unavailable or may not run as expected.
+t00570 If you use a set-top box, the TV may turn on at the scheduled time but the set-top box may stay off.
+t00571 Menu names and locations can vary by model and webOS version.
+t00572 An LG TV that turns on and off repeatedly can happen when timer or auto power settings are enabled.
+t00573 This symptom is often caused by scheduled Power On/Off timers or automatic power-off behavior after the TV turns on by timer and no one uses the remote for a set period.
+t00574 Incorrect time settings can also make timers trigger at unexpected times.
+t00575 Power On Timer or Power Off Timer is enabled If a Power On Timer or Power Off Timer is set, the TV can turn on or off at the scheduled time.
+t00576 Turn off the Power Off Timer Setting: Settings > General > System > Time & Timer > Timers > Power Off Timer 1.
+t00577 Press the Settings button on the remote and open All Settings.
+t00578 Select Power Off Timer.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008362-20155370311750
+문장:
+t00579 For burnt pots or stubborn residue like baked-on eggs, soak them for 1 hour, then pre-rinse before loading.
+t00580 Fill the detergent dispenser with citric acid (40 g), press and hold the Intensive button for 3 seconds, and run the Tub Clean cycle (54 minutes).
+t00581 Soak them for about 1 hour, then pre-rinse before loading.
+t00582 Close Poor washing performance in your LG DIOS dishwasher is usually caused by large food scraps, incorrect loading, ineffective detergent, or a dirty filter.
+t00583 To resolve this, rinse your dishes before loading, make sure they do not overlap, use a recommended dishwasher detergent, and clean the filter and spray arms regularly.
+t00584 Important For items that water cannot easily reach, such as deep pots or large frying pans, always pre-rinse and load them as flat as possible.
+t00585 Liquid detergent is not recommended, as it may reduce cleaning performance.
+t00586 Why Isn't My Dishwasher Cleaning Well?
+t00587 Large food scraps remain on the dishes, or burnt-on food (such as scorched pots) was loaded without pre-cleaning.
+t00588 Use the Right Detergent and Cycle Use a high-performance dishwasher detergent, and select a wash cycle and options that match how dirty your dishes are.
+
+페이지 정보: 국가=UK, URL=https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008333-20155145284137/
+문장:
+t00589 On webOS 25 TVs or later versions manufactured from 2025 onwards, usage time cannot be checked.
+t00590 Your TV is a 2025 model with webOS 25 or later On webOS 25 TVs or later versions manufactured from 2025 onwards, the usage time cannot be checked in Settings.
+t00591 webOS 6.0 (2021) or later: Check Total Power On Time Setting: Settings → All Settings → General → Manage TV and Devices → Manage TV → TV Information 1) Turn on the TV.
+t00592 webOS 5.0 (2020): Check TV Usage Time Setting: Settings → All Settings → Customer Support → TV Information → TV Usage Time 1) Turn on the TV.
+t00593 I have a 2025 LG TV and cannot find TV Usage Time.
+t00594 On webOS 25 TVs or later versions manufactured from 2025 onwards, usage time cannot be checked in Settings.
+t00595 Close Please Note The usage time feature may not be available on some models.
+t00596 Menu names and locations may vary slightly by model and region.
+t00597 Not being able to find TV usage time can happen for these reasons.
+t00598 Depending on your TV’s webOS version, model year, and region, the TV Usage Time (Total Power On Time) item may be located in a different menu or may not be provided.
+t00599 You can chat with our virtual assistant or schedule a service repair for further assistance.

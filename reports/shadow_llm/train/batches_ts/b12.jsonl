@@ -1,0 +1,200 @@
+{"id": "t02400", "cc": "mx", "pt": "support_troubleshoot", "text": "¿Por qué el ventilador empieza a hacer más ruido de repente cuando el indicador luminoso muestra «Good» (azul)?"}
+{"id": "t02401", "cc": "mx", "pt": "support_troubleshoot", "text": "En el modo Automático, si la calidad del aire se mantiene buena (verde o azul) durante 50 minutos, el purificador de aire funciona a velocidad media durante 10 minutos para hacer circular el aire."}
+{"id": "t02402", "cc": "mx", "pt": "support_troubleshoot", "text": "Esto forma parte del proceso de circulación automática del aire del purificador."}
+{"id": "t02403", "cc": "mx", "pt": "support_troubleshoot", "text": "Ayuda a detectar los contaminantes ocultos que se han depositado en el suelo y mantiene limpio el aire del interior."}
+{"id": "t02404", "cc": "mx", "pt": "support_troubleshoot", "text": "(Nota: En los modelos duales, esto también puede ocurrir durante el funcionamiento en modo único.) Paso 2."}
+{"id": "t02405", "cc": "mx", "pt": "support_troubleshoot", "text": "¿Por qué se enciende el indicador rojo aunque el nivel de polvo sea bajo?"}
+{"id": "t02406", "cc": "mx", "pt": "support_troubleshoot", "text": "¿Cómo se muestra el nivel general de calidad del aire?"}
+{"id": "t02407", "cc": "in", "pt": "support_troubleshoot", "text": "Close Q6 (LGM700DSK) - Face Unlock not working when LCD in off : Face recognition although has been set to work in screen off mode by default, but user have set the option to \"off\" un-knowingly due to which this option may not work in screen off mode."}
+{"id": "t02408", "cc": "in", "pt": "support_troubleshoot", "text": "To rectify the same, plz turn on the setting as explained below Settings > Display > Lock Screen >  Face Recognition In \"Face Recognition\" screen, set the \"Allow when screen is off\" option to ON Q6 (LGM700DSK) - Face Unlock not working when LCD in off : Face recognition although has been set to work in screen off mode by default, but user have set the option to \"off\" un-knowingly due to which this option may not work in screen off mode."}
+{"id": "t02409", "cc": "in", "pt": "support_troubleshoot", "text": "To rectify the same, plz turn on the setting as explained below Settings > Display > Lock Screen >  Face Recognition In \"Face Recognition\" screen, set the \"Allow when screen is off\" option to ON Article feedback * Required Fields 1."}
+{"id": "t02410", "cc": "in", "pt": "support_troubleshoot", "text": "How to Fill the Water Tank on the LG CordZero A9 Mop Nozzle 1."}
+{"id": "t02411", "cc": "in", "pt": "support_troubleshoot", "text": "Before using the nozzle, press the PUSH button to separate the water tank from the nozzle."}
+{"id": "t02412", "cc": "in", "pt": "support_troubleshoot", "text": "Open only one of the caps on either side of the water tank and use the provided water measuring cup to fill\r\n"}
+{"id": "t02413", "cc": "in", "pt": "support_troubleshoot", "text": "the tank up to the MAX line."}
+{"id": "t02414", "cc": "in", "pt": "support_troubleshoot", "text": "If you fill it above the MAX line, the water may overflow."}
+{"id": "t02415", "cc": "in", "pt": "support_troubleshoot", "text": "Align the two tabs on the water tank with the grooves on the mop nozzle, and press it down until you hear a click."}
+{"id": "t02416", "cc": "in", "pt": "support_troubleshoot", "text": "If your specific model does not have a digital display screen, it will instead communicate errors through the blinking behavior of its LED power or timer lights; for example, if the power light flashes 5 times consecutively, pauses, and repeats, it indicates an error code 05."}
+{"id": "t02417", "cc": "in", "pt": "support_troubleshoot", "text": "- (Example: If the first LED blinks 5 times steadily, it means error code\r\nCH05.) How to Read Error Codes on Floor-Standing ACs The display panel shows an error."}
+{"id": "t02418", "cc": "in", "pt": "support_troubleshoot", "text": "Display Panel \"CH\" and the error code alternate on the display every 0.5 seconds."}
+{"id": "t02419", "cc": "in", "pt": "support_troubleshoot", "text": "Close LG air conditioner error codes differ depending on the model."}
+{"id": "t02420", "cc": "in", "pt": "support_troubleshoot", "text": "For\r\nwall-mounted units, check the LED on the remote, while stand-type models\r\ndisplay them on the panel or LED."}
+{"id": "t02421", "cc": "in", "pt": "support_troubleshoot", "text": "See the examples and\r\ninstructions for reading the codes."}
+{"id": "t02422", "cc": "in", "pt": "support_troubleshoot", "text": "How to Check for Errors in LG Air Conditioners To check for errors on your LG Air Conditioner , you need to observe the blinking patterns, numeric displays, or diagnostic tools built into your system."}
+{"id": "t02423", "cc": "in", "pt": "support_troubleshoot", "text": "Most modern LG wall-mounted or split air conditioners will communicate a system fault by flashing a specific numeric error code (such as CH01 or CH05) directly on the indoor unit's digital LED screen."}
+{"id": "t02424", "cc": "in", "pt": "support_troubleshoot", "text": "For a more advanced and immediate diagnosis, you can use LG’s Smart Diagnosis feature by opening the LG ThinQ mobile app on your smartphone, navigating to the tools menu, and placing your phone near the designated \"Smart Diagnosis\" icon on the indoor unit to let the app audibly or digitally scan your system for internal faults."}
+{"id": "t02425", "cc": "in", "pt": "support_troubleshoot", "text": "How to Read Error Codes on Wall-Mounted or Floor-Standing ACs - The first LED indicates the ones digit of the error code."}
+{"id": "t02426", "cc": "in", "pt": "support_troubleshoot", "text": "- The second LED indicates the tens digit."}
+{"id": "t02427", "cc": "in", "pt": "support_troubleshoot", "text": "Review the diagnostic results to check your product's detailed\r\nstatus and get troubleshooting guidance."}
+{"id": "t02428", "cc": "in", "pt": "support_troubleshoot", "text": "➔ 1-Way Models (1 air outlet) with 1 LED indicator ➔ 2-Way / 4-Way Models (2 or 4 air outlets) with 1 LED\r\nindicator ➔ 1-Way / 2-Way / 4-Way Models with 4 LED indicators ➔ 1-Way Models with no LED indicator (Display panel\r\nonly) How to Check Errors in the ThinQ App 1."}
+{"id": "t02429", "cc": "in", "pt": "support_troubleshoot", "text": "time for 3 seconds to reset the scale to zero."}
+{"id": "t02430", "cc": "in", "pt": "support_troubleshoot", "text": "Calibrate the Scale Press and hold the Power, Fan Speed, and Heating buttons at the same time for 3 seconds."}
+{"id": "t02431", "cc": "in", "pt": "support_troubleshoot", "text": "LG ThinQ app and confirm that the weight is reset to 0 kg (0 lb)."}
+{"id": "t02432", "cc": "in", "pt": "support_troubleshoot", "text": "When a weight of 350 g\r\n"}
+{"id": "t02433", "cc": "in", "pt": "support_troubleshoot", "text": "(0.77 lb) or more is detected on the cat dome, the AeroCat Tower\r\n"}
+{"id": "t02434", "cc": "in", "pt": "support_troubleshoot", "text": "Placing a weight of 15 kg\r\n"}
+{"id": "t02435", "cc": "in", "pt": "support_troubleshoot", "text": "(33 lb) or more may damage the product and the weight sensor."}
+{"id": "t02436", "cc": "in", "pt": "support_troubleshoot", "text": "Close If your cat’s weight is inaccurate on the LG AeroCat Tower, calibrate\r\n"}
+{"id": "t02437", "cc": "in", "pt": "support_troubleshoot", "text": "the scale before your cat gets on the cat dome."}
+{"id": "t02438", "cc": "in", "pt": "support_troubleshoot", "text": "Press and hold the Power, Fan Speed, and Heating buttons at the same\r\n"}
+{"id": "t02439", "cc": "in", "pt": "support_troubleshoot", "text": "Once complete, you can check your cat’s accurate weight in the LG ThinQ\r\n"}
+{"id": "t02440", "cc": "in", "pt": "support_troubleshoot", "text": "How to Calibrate the Weight Sensor and Measure Your Cat’s Weight Make sure the product is powered on, then follow the steps below: 1."}
+{"id": "t02441", "cc": "in", "pt": "support_troubleshoot", "text": "Empty the Cat Dome Ensure the cat dome is\r\n"}
+{"id": "t02442", "cc": "in", "pt": "support_troubleshoot", "text": "completely empty."}
+{"id": "t02443", "cc": "in", "pt": "support_troubleshoot", "text": "can view the result in the LG ThinQ app."}
+{"id": "t02444", "cc": "in", "pt": "support_troubleshoot", "text": "Other objects: Toys or other items are on the\r\n"}
+{"id": "t02445", "cc": "in", "pt": "support_troubleshoot", "text": "Additionally, verify that the water faucets connected to the washer are\r\n"}
+{"id": "t02446", "cc": "in", "pt": "support_troubleshoot", "text": "hose is not pinched against the wall or under the washer."}
+{"id": "t02447", "cc": "in", "pt": "support_troubleshoot", "text": "runs for appproximately 3 minutes and automatically checks the status of\r\n"}
+{"id": "t02448", "cc": "in", "pt": "support_troubleshoot", "text": "If you are unable to connect magic remote controller with TV after following above steps, deregister the Magic Remote by PRESSING and HOLDING the HOME and BACK button together for 5 seconds."}
+{"id": "t02449", "cc": "in", "pt": "support_troubleshoot", "text": "Turn On The TV Turn on the TV and wait for 10 seconds."}
+{"id": "t02450", "cc": "in", "pt": "support_troubleshoot", "text": "On the TV, go to Settings > Remote & Accessories > Add Accessory, then press and hold the Back and Home buttons on the remote for 3–5 seconds to enter pairing mode, and select the remote on the TV screen to pair."}
+{"id": "t02451", "cc": "in", "pt": "support_troubleshoot", "text": "Close To pair your LG Magic Remote with your LG TV, first switch on the TV and wait until it fully powers up."}
+{"id": "t02452", "cc": "in", "pt": "support_troubleshoot", "text": "Then, point the remote at the TV and press the central Wheel (OK) button."}
+{"id": "t02453", "cc": "in", "pt": "support_troubleshoot", "text": "Within a few seconds, the TV will display a confirmation message indicating successful pairing."}
+{"id": "t02454", "cc": "in", "pt": "support_troubleshoot", "text": "If the remote does not connect, remove the batteries, reinsert them, and repeat the pairing process."}
+{"id": "t02455", "cc": "in", "pt": "support_troubleshoot", "text": "How to Pair the Magic Remote."}
+{"id": "t02456", "cc": "in", "pt": "support_troubleshoot", "text": "Follow below steps Important Note If Magic remote is not used for a certain period of time, the cursor will disappear on the screen, move/shake the remote right to left to make the cursor to appear again."}
+{"id": "t02457", "cc": "in", "pt": "support_troubleshoot", "text": "Only one remote can be paired with TV at one time."}
+{"id": "t02458", "cc": "in", "pt": "support_troubleshoot", "text": "LG Magic Remote needs to be paired with TV before use."}
+{"id": "t02459", "cc": "in", "pt": "support_troubleshoot", "text": "Face the remote toward the TV and press wheel button."}
+{"id": "t02460", "cc": "in", "pt": "support_troubleshoot", "text": "Why is the TV screen dark or dim?"}
+{"id": "t02461", "cc": "in", "pt": "support_troubleshoot", "text": "Changing the picture mode 2021 and newer TVs [webOS 6.0 or later]: Press the [Settings] button on the remote, [All Settings], [Picture], [Select Mode], [Standard] or [Vivid] 2020 and older TVs [webOS 5.0]: Press the [Settings] button on the remote, [All Settings], [Picture], [Picture Mode Settings], [Picture Mode] Step 2."}
+{"id": "t02462", "cc": "in", "pt": "support_troubleshoot", "text": "Turn off Energy Saving Step 2026 and newer TVs (webOS 26 or later): Press the [Settings] button on the remote, [All Settings], [System], [Energy Saving], [Energy Saving Step], [Off] 2022 and newer TVs (webOS 22 or later): Press the [Settings] button on the remote, [All Settings], [General], [Energy Saving], [Energy Saving Step], [Off] 2021 TVs (webOS 6.0): Press the [Settings] button on the remote, [Support], [Energy Saving], [Energy Saving Step], [Off] 2020 and older TVs (webOS 5.0 or earlier): Press the [Settings] button on the remote, [All Settings], [Picture], [Energy Saving], [Off] Step 3."}
+{"id": "t02463", "cc": "in", "pt": "support_troubleshoot", "text": "Resetting the picture settings 2021 and newer TVs (webOS 6.0 or later): Press the [Settings] button on the remote, [All Settings], [Picture], [Advanced Settings], [Reset] 2020 and older TVs (webOS 5.0 or earlier): Press the [Settings] button on the remote, [All Settings], [Picture], [Picture Mode Settings], [Reset] Step 4."}
+{"id": "t02464", "cc": "in", "pt": "support_troubleshoot", "text": "Resetting the picture and sound settings using the remote 2025 and newer TVs (webOS 25 or later): Press the [Settings] button on the remote 3 times in a row."}
+{"id": "t02465", "cc": "in", "pt": "support_troubleshoot", "text": "2024 and older TVs (webOS 24 or earlier): Press the [Mute] button on the remote 3 times in a row."}
+{"id": "t02466", "cc": "in", "pt": "support_troubleshoot", "text": "Why is the screen blurry for the first few minutes after I turn on the TV, then becomes clearer?"}
+{"id": "t02467", "cc": "in", "pt": "support_troubleshoot", "text": "Close If the screen on your LG TV looks dark or dim, it is usually because [Energy Saving] is turned on or [Picture Mode] is not set correctly."}
+{"id": "t02468", "cc": "in", "pt": "support_troubleshoot", "text": "Use the remote to set [Energy Saving Step] to [Off], then change [Picture Mode] to [Standard] to resolve this."}
+{"id": "t02469", "cc": "in", "pt": "support_troubleshoot", "text": "If changing these settings does not resolve the issue, try resetting the picture settings."}
+{"id": "t02470", "cc": "in", "pt": "support_troubleshoot", "text": "Power saving is turned on [Picture Mode] is set to [Eco] or [Auto Power Save]."}
+{"id": "t02471", "cc": "in", "pt": "support_troubleshoot", "text": "Energy Saving is enabled [Energy Saving Step] is set to [Auto] or [Maximum]."}
+{"id": "t02472", "cc": "in", "pt": "support_troubleshoot", "text": "Loose external cable connection The HDMI cable or antenna connection is loose."}
+{"id": "t02473", "cc": "in", "pt": "support_troubleshoot", "text": "If these settings are grayed out or the screen remains blindingly bright, it is highly likely that HDR (High Dynamic Range) or Smart Energy Saving modes are enabled; turning off HDR in your Windows or macOS display settings will unlock full manual control over your luminance."}
+{"id": "t02474", "cc": "in", "pt": "support_troubleshoot", "text": "Close To fix an LG monitor screen that appears too bright, you need to adjust its hardware settings and check your operating system's display configuration."}
+{"id": "t02475", "cc": "in", "pt": "support_troubleshoot", "text": "First, use the joystick button located at the bottom of the monitor to open the On-Screen Display (OSD) menu, navigate to Picture, and manually lower the Brightness and Contrast levels."}
+{"id": "t02476", "cc": "in", "pt": "support_troubleshoot", "text": "Additionally, ensure that features like Black Stabilizer (which artificially brightens dark areas in games) or presets like Vivid mode are turned down or switched to Reader Mode or Custom to instantly reduce eye strain."}
+{"id": "t02477", "cc": "in", "pt": "support_troubleshoot", "text": "Causes and Symptoms Screen brightness or contrast is set too high."}
+{"id": "t02478", "cc": "in", "pt": "support_troubleshoot", "text": "The PC graphic card setting is changed."}
+{"id": "t02479", "cc": "in", "pt": "support_troubleshoot", "text": "Try the below troubleshooting steps : Did you reset the monitor settings?"}
+{"id": "t02480", "cc": "in", "pt": "support_troubleshoot", "text": "➔ It can occur due to monitor power saving or auto off errors, thus reset the monitor to the factory setting."}
+{"id": "t02481", "cc": "in", "pt": "support_troubleshoot", "text": "(※ Menus may differ by model, so please refer to the user guide for details.) 1."}
+{"id": "t02482", "cc": "in", "pt": "support_troubleshoot", "text": "If possible(activation), run [Restore Default] in [Color Settings]."}
+{"id": "t02483", "cc": "in", "pt": "support_troubleshoot", "text": "Rest assured, your wash\r\n"}
+{"id": "t02484", "cc": "in", "pt": "support_troubleshoot", "text": "If heating takes too long, the machine will automatically proceed to the next phase of the\r\n"}
+{"id": "t02485", "cc": "in", "pt": "support_troubleshoot", "text": "performance won't be affected."}
+{"id": "t02486", "cc": "in", "pt": "support_troubleshoot", "text": "How to Change the Date and Time Changing the Date and Time in BIOS 1.With the laptop powered off, press the [Power] button once, then immediately press the [F2] key repeatedly (about 10 times) as quickly as possible."}
+{"id": "t02487", "cc": "in", "pt": "support_troubleshoot", "text": "Close If the date and time on your laptop are incorrect, you can easily fix this by adjusting the BIOS settings directly or turning on [Set time automatically] in Windows."}
+{"id": "t02488", "cc": "in", "pt": "support_troubleshoot", "text": "Press the [F2] key immediately when turning on the laptop to enter the BIOS, or open Windows [Date & time settings] to adjust the time."}
+{"id": "t02489", "cc": "in", "pt": "support_troubleshoot", "text": "Why is my laptop's date and time incorrect?"}
+{"id": "t02490", "cc": "in", "pt": "support_troubleshoot", "text": "This can happen if the [Set time automatically] feature in Windows is turned off or if the time zone is set incorrectly."}
+{"id": "t02491", "cc": "in", "pt": "support_troubleshoot", "text": "It may also occur if the laptop has not been used for a long time, causing system settings to reset, or if the date and time were set manually and become inaccurate."}
+{"id": "t02492", "cc": "in", "pt": "support_troubleshoot", "text": "* Note: Laptops with SSDs boot very quickly."}
+{"id": "t02493", "cc": "in", "pt": "support_troubleshoot", "text": "Press [F2] repeatedly as soon as the power turns on to access BIOS."}
+{"id": "t02494", "cc": "in", "pt": "support_troubleshoot", "text": "2.In the BIOS screen, go to [Main] and set [System Date] and [System Time]."}
+{"id": "t02495", "cc": "in", "pt": "support_troubleshoot", "text": "3.After updating the settings, press [F10] to save the changes and exit."}
+{"id": "t02496", "cc": "in", "pt": "support_troubleshoot", "text": "[LG Wireless Earbuds] How do I use the touch controls?"}
+{"id": "t02497", "cc": "in", "pt": "support_troubleshoot", "text": "Close On LG wireless earbuds, touchpad functions vary depending on whether you tap once, tap\r\n"}
+{"id": "t02498", "cc": "in", "pt": "support_troubleshoot", "text": "twice, or touch and hold."}
+{"id": "t02499", "cc": "in", "pt": "support_troubleshoot", "text": "For example, tap once to play or pause music, tap twice to skip to the next track, or touch\r\n"}
+{"id": "t02500", "cc": "in", "pt": "support_troubleshoot", "text": "and hold to switch to call controls."}
+{"id": "t02501", "cc": "in", "pt": "support_troubleshoot", "text": "LG Wireless Earbuds Touch Controls Controlling Music Playback Tap once: Play or pause music Double-tap the left earbud: Decrease volume Double-tap the right earbud: Increase volume Triple-tap the left earbud: Play the previous track Triple-tap the right earbud: Play the next track Managing Calls Tap once: Answer a call Double-tap: End a call Touch and hold: Reject a call When you make a call on your smartphone, the call audio automatically switches to the\r\n"}
+{"id": "t02502", "cc": "in", "pt": "support_troubleshoot", "text": "If you receive another call during a conversation, tap the left or right earbud once."}
+{"id": "t02503", "cc": "in", "pt": "support_troubleshoot", "text": "than standard mode."}
+{"id": "t02504", "cc": "in", "pt": "support_troubleshoot", "text": "To end a call while another is on hold, use the controls on your smartphone."}
+{"id": "t02505", "cc": "in", "pt": "support_troubleshoot", "text": "Note: You must wear both earbuds for Noise Cancellation to work properly."}
+{"id": "t02506", "cc": "in", "pt": "support_troubleshoot", "text": "Also check your network connection."}
+{"id": "t02507", "cc": "in", "pt": "support_troubleshoot", "text": "Close The information in this content is applicable for Monitor Models that Support \"LG On Screen Control\" Software The same can be checked from the  specs given on www.lg.co m/in PC display setting - When using the mirror(duplication) mode, the message is displayed if it is not supported."}
+{"id": "t02508", "cc": "in", "pt": "support_troubleshoot", "text": "Causes and Symptoms When using the on screen control function of the monitor, it says [There is no monitor connected]."}
+{"id": "t02509", "cc": "in", "pt": "support_troubleshoot", "text": "(※ On Screen Control applied model only) Try out these steps to fix the issue 1."}
+{"id": "t02510", "cc": "in", "pt": "support_troubleshoot", "text": "PC display setting for dual monitor configuration - Instead of the mirror(duplication) mode, set it to expansion mode."}
+{"id": "t02511", "cc": "in", "pt": "support_troubleshoot", "text": "Connect the cable in the product package to both the PC and the monitor one more time."}
+{"id": "t02512", "cc": "in", "pt": "support_troubleshoot", "text": "If the same problem persists, then update the PC graphic card driver to the latest version."}
+{"id": "t02513", "cc": "in", "pt": "support_troubleshoot", "text": "If you make a connection with a non standard cable or gender changer apart from the cable in the product package such as RGB to HDMI gender changers, DVI to HDMI gender changer and so on, the On Screen Control program and the monitor fail to perform normal DDCCI communication, thus it might not be supported."}
+{"id": "t02514", "cc": "in", "pt": "support_troubleshoot", "text": "Doing so may damage the internal parts."}
+{"id": "t02515", "cc": "in", "pt": "support_troubleshoot", "text": "To prevent leaks, make sure both caps are securely tightened."}
+{"id": "t02516", "cc": "in", "pt": "support_troubleshoot", "text": "Once the water has drained, unscrew the larger cap next to it."}
+{"id": "t02517", "cc": "in", "pt": "support_troubleshoot", "text": "[LG Smart TV Monitor] How do I watch LG Channels?"}
+{"id": "t02518", "cc": "in", "pt": "support_troubleshoot", "text": "Network: A wired or wireless Internet connection is required."}
+{"id": "t02519", "cc": "in", "pt": "support_troubleshoot", "text": "This message may also appear due to network conditions or if a VPN (virtual IP service)\r\nis in use."}
+{"id": "t02520", "cc": "in", "pt": "support_troubleshoot", "text": "Browse and watch live channels and on‑demand (VOD) content by genre."}
+{"id": "t02521", "cc": "in", "pt": "support_troubleshoot", "text": "Actual screens may vary by region and the availability of LG Channels."}
+{"id": "t02522", "cc": "in", "pt": "support_troubleshoot", "text": "It simply indicates that the current indoor temperature is unusually high (above 35.5℃ / 96℉)."}
+{"id": "t02523", "cc": "in", "pt": "support_troubleshoot", "text": "Why \"HI\" appears on the display High indoor temperature: If the air conditioner detects that the room temperature is above 35.5℃ (96℉), \"HI\" will appear on the display to indicate a \"High\" temperature."}
+{"id": "t02524", "cc": "in", "pt": "support_troubleshoot", "text": "Check the display Once the room temperature drops below 35℃ (95℉), the \"HI\" message will disappear and the current temperature will be displayed."}
+{"id": "t02525", "cc": "in", "pt": "support_troubleshoot", "text": "Why does my LG ceiling air conditioner show \"HI\" on the display?"}
+{"id": "t02526", "cc": "in", "pt": "support_troubleshoot", "text": "Close The \"HI\" on your LG wired remote is not an error code."}
+{"id": "t02527", "cc": "in", "pt": "support_troubleshoot", "text": "This message will disappear once you run the air conditioner in cooling mode and the room temperature drops."}
+{"id": "t02528", "cc": "in", "pt": "support_troubleshoot", "text": "Please Note If your room is not hot, but the remote still displays \"HI\", there may be an issue with the temperature sensor."}
+{"id": "t02529", "cc": "in", "pt": "support_troubleshoot", "text": "In this case, contact LG Support for assistance."}
+{"id": "t02530", "cc": "in", "pt": "support_troubleshoot", "text": "What to do when you see \"HI\" This is not a malfunction."}
+{"id": "t02531", "cc": "in", "pt": "support_troubleshoot", "text": "Simply follow these steps: Step 1."}
+{"id": "t02532", "cc": "in", "pt": "support_troubleshoot", "text": "\"LO\" appears when the room temperature is unusually low."}
+{"id": "t02533", "cc": "in", "pt": "support_troubleshoot", "text": "Why does \"LO\" appear on the display?"}
+{"id": "t02534", "cc": "in", "pt": "support_troubleshoot", "text": "• This content was partially edited using AI for clarity."}
+{"id": "t02535", "cc": "in", "pt": "support_troubleshoot", "text": "Note: AVL (Auto Volume Leveler) Adjusts sound of various channels of STB/Cable program only."}
+{"id": "t02536", "cc": "in", "pt": "support_troubleshoot", "text": "Regarding OTT app contents - Audio level is based on Content and Codec (PCM Dolby/DD+/DTS etc.,) - Volume Level is managed by OTT operator so LG TV does not have any control on OTT content volume level."}
+{"id": "t02537", "cc": "in", "pt": "support_troubleshoot", "text": "Close (Note: Setting menu of TV may vary from model to model, kindly refer user guide of your TV for detail.) If you experience any of the problems below while using the product, please check the following: There may be no problem with the product."}
+{"id": "t02538", "cc": "in", "pt": "support_troubleshoot", "text": "First of all, perform a ► ► ► Sound ► Sound Test for check any abnormalities in the TV."}
+{"id": "t02539", "cc": "in", "pt": "support_troubleshoot", "text": "The screen is fine, but it does not play any sound."}
+{"id": "t02540", "cc": "in", "pt": "support_troubleshoot", "text": "Try another program or play another content ."}
+{"id": "t02541", "cc": "in", "pt": "support_troubleshoot", "text": "► ► ► Sound ► Sound out Check whether the Sound Out is set to Internal TV Speaker + Audio Out (Optical) or Internal TV Speaker ."}
+{"id": "t02542", "cc": "in", "pt": "support_troubleshoot", "text": "The stereo sound is not clear on an analog program , or there is no sound from one of the speakers."}
+{"id": "t02543", "cc": "in", "pt": "support_troubleshoot", "text": "[Applies only in countries where sound multiplex broadcasting is available.] ► ► ► Channels/Programs ► Multi Audio Select MONO in Multi Audio if you are out of range or sound multiplex broadcasting is not stable."}
+{"id": "t02544", "cc": "in", "pt": "support_troubleshoot", "text": "► ► ► Sound ► Sound Effects ► Balance Adjust the balance as necessary with the Navigation button in Balance."}
+{"id": "t02545", "cc": "in", "pt": "support_troubleshoot", "text": "The TV sound is not synchronized with the picture, o r the sound sometimes breaks up."}
+{"id": "t02546", "cc": "in", "pt": "support_troubleshoot", "text": "The volume of different broadcasting stations' transmission output may vary."}
+{"id": "t02547", "cc": "in", "pt": "support_troubleshoot", "text": "[LG Steam Cleaner] Why Does My New Steam Cleanr Smell Like Burning?"}
+{"id": "t02548", "cc": "in", "pt": "support_troubleshoot", "text": "A slight odor may come from the rubber components around the motor when the product is new."}
+{"id": "t02549", "cc": "in", "pt": "support_troubleshoot", "text": "The odor will gradually dissipate on its own."}
+{"id": "t02550", "cc": "in", "pt": "support_troubleshoot", "text": "This is similar to the odor of new furniture or a new car."}
+{"id": "t02551", "cc": "in", "pt": "support_troubleshoot", "text": "If the odor is unpleasant, spray a small amount of deodorizer on the motor filter to reduce it."}
+{"id": "t02552", "cc": "in", "pt": "support_troubleshoot", "text": "Press the [External Input] or [Home Hub] button on your TV remote, then select the connected port (e.g., HDMI 1)."}
+{"id": "t02553", "cc": "in", "pt": "support_troubleshoot", "text": "If you need audio, connect a 3.5 mm stereo cable between the audio ports on your PC and TV.) Case 2."}
+{"id": "t02554", "cc": "in", "pt": "support_troubleshoot", "text": "Why is the sound playing only from my PC, not the TV, after connecting with an HDMI cable?"}
+{"id": "t02555", "cc": "in", "pt": "support_troubleshoot", "text": "Close Connect your PC or laptop to your LG TV to enjoy your computer screen on a bigger, more immersive display."}
+{"id": "t02556", "cc": "in", "pt": "support_troubleshoot", "text": "Choose the setup that works best for you."}
+{"id": "t02557", "cc": "in", "pt": "support_troubleshoot", "text": "You can choose a stable wired HDMI connection, or a wireless screen share (mirroring) from your Windows PC or Mac."}
+{"id": "t02558", "cc": "in", "pt": "support_troubleshoot", "text": "Connection steps vary depending on your operating system."}
+{"id": "t02559", "cc": "in", "pt": "support_troubleshoot", "text": "Follow the instructions below to start sharing your screen."}
+{"id": "t02560", "cc": "in", "pt": "support_troubleshoot", "text": "Things to know before connecting your PC to your TV 1."}
+{"id": "t02561", "cc": "in", "pt": "support_troubleshoot", "text": "Different connection methods There are two ways to share your screen: a wired connection using an HDMI cable, or a wireless connection using Wi-Fi."}
+{"id": "t02562", "cc": "in", "pt": "support_troubleshoot", "text": "Choose the method that works best for your setup."}
+{"id": "t02563", "cc": "in", "pt": "support_troubleshoot", "text": "Enter the 4-digit code shown on the TV screen on your Mac."}
+{"id": "t02564", "cc": "in", "pt": "support_troubleshoot", "text": "If the issue persists after following the steps above, you can get further support through LG Chatbot on our website or by requesting a technician visit."}
+{"id": "t02565", "cc": "in", "pt": "support_troubleshoot", "text": "Connect with an HDMI cable Connect an HDMI cable to the HDMI ports on the back of your PC and TV."}
+{"id": "t02566", "cc": "in", "pt": "support_troubleshoot", "text": "What Is the Individual Control Feature on LG Air Conditioners?"}
+{"id": "t02567", "cc": "in", "pt": "support_troubleshoot", "text": "November 2017 Multi V Ceiling-Mounted Cassette (Single Type) Unit 1-Way/2-Way/4-Way Ceiling-Mounted Cassette: Units manufactured\r\n"}
+{"id": "t02568", "cc": "in", "pt": "support_troubleshoot", "text": "after July 2017 How to Set Individual Control for LG Air Conditioners Type A/Type B Remote Control 1."}
+{"id": "t02569", "cc": "in", "pt": "support_troubleshoot", "text": "Press the [Start/Stop] button within 10 cm of the air\r\n"}
+{"id": "t02570", "cc": "in", "pt": "support_troubleshoot", "text": "button within 10 cm of the unit to send the signal."}
+{"id": "t02571", "cc": "in", "pt": "support_troubleshoot", "text": "keep the remote within 10 cm of the unit."}
+{"id": "t02572", "cc": "in", "pt": "support_troubleshoot", "text": "[LG Ceiling-mounted AC] How Do I Control Units Separately When They Turn On Together?"}
+{"id": "t02573", "cc": "in", "pt": "support_troubleshoot", "text": "Close If multiple ceiling mounted LG air conditioners turn on simultaneously,\r\n"}
+{"id": "t02574", "cc": "in", "pt": "support_troubleshoot", "text": "you can use the individual control feature to operate each indoor unit\r\n"}
+{"id": "t02575", "cc": "in", "pt": "support_troubleshoot", "text": "To use this feature, you need indoor units and a remote control that\r\n"}
+{"id": "t02576", "cc": "in", "pt": "support_troubleshoot", "text": "support Individual Control, and setting the indoor unit number on the\r\n"}
+{"id": "t02577", "cc": "in", "pt": "support_troubleshoot", "text": "remote control allows you to operate only the selected unit."}
+{"id": "t02578", "cc": "in", "pt": "support_troubleshoot", "text": "This feature allows you to assign a number to multiple indoor units in\r\n"}
+{"id": "t02579", "cc": "in", "pt": "support_troubleshoot", "text": "control that supports indoor unit selection."}
+{"id": "t02580", "cc": "in", "pt": "support_troubleshoot", "text": "※ Note: This feature may not be supported depending on the model."}
+{"id": "t02581", "cc": "in", "pt": "support_troubleshoot", "text": "If you have not set an individual control address, use 'All' mode."}
+{"id": "t02582", "cc": "in", "pt": "support_troubleshoot", "text": "AirPlay turned off on the TV Even when your iPhone is set up correctly, it can't connect if AirPlay is turned off on the TV."}
+{"id": "t02583", "cc": "in", "pt": "support_troubleshoot", "text": "Check if the monitor terminal such as HDMI 2.0, DisplayPort 1.2 and so on are existing in the graphic card and check if the graphics card’s vertical frequency output spec for each terminal meets the 240Hz requirement."}
+{"id": "t02584", "cc": "in", "pt": "support_troubleshoot", "text": "Connect it to a graphics card that supports HDMI 2.0."}
+{"id": "t02585", "cc": "in", "pt": "support_troubleshoot", "text": "※ Some older graphics cards do not support HDMI 2.0,but you can select HDMI 2.0 resolution in the control panel of window."}
+{"id": "t02586", "cc": "in", "pt": "support_troubleshoot", "text": "※ When HDMI Compatibility Mode is on, 1920 x 1080 @ 144/240Hz resolution is not supported."}
+{"id": "t02587", "cc": "in", "pt": "support_troubleshoot", "text": "In the Windows display property menu and the graphics card control panel, set the vertical frequency of 240Hz."}
+{"id": "t02588", "cc": "in", "pt": "support_troubleshoot", "text": "Close Check if the graphics card supports the spec by referring to the homepage of the graphics card maker."}
+{"id": "t02589", "cc": "in", "pt": "support_troubleshoot", "text": "Try this Check if the model in use is 27GK750F."}
+{"id": "t02590", "cc": "in", "pt": "support_troubleshoot", "text": "Check if the graphics card supports the spec by referring to the homepage of the graphics card maker."}
+{"id": "t02591", "cc": "in", "pt": "support_troubleshoot", "text": "In case of HDMI connection 1."}
+{"id": "t02592", "cc": "in", "pt": "support_troubleshoot", "text": "Set Monitor OSD → General → HDMI Compatibility Mode → Off."}
+{"id": "t02593", "cc": "in", "pt": "support_troubleshoot", "text": "Plastic containers can be used if they are heat-resistant up to 120℃."}
+{"id": "t02594", "cc": "in", "pt": "support_troubleshoot", "text": "[LG Electronics Range] What types of dishes (containers) should not be used?"}
+{"id": "t02595", "cc": "in", "pt": "support_troubleshoot", "text": "Do not use metal containers, stainless steel containers, earthen pots, or aluminum foil in microwave mode."}
+{"id": "t02596", "cc": "in", "pt": "support_troubleshoot", "text": "Metal materials reflect microwaves, which prevents food from heating and causes sparks."}
+{"id": "t02597", "cc": "in", "pt": "support_troubleshoot", "text": "Containers with gold or silver patterns may change color or cause sparks when used."}
+{"id": "t02598", "cc": "in", "pt": "support_troubleshoot", "text": "Use standard ceramic bowls."}
+{"id": "t02599", "cc": "in", "pt": "support_troubleshoot", "text": "If using glass containers, use heat-resistant glass that can be used on a gas stove."}

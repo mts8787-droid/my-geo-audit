@@ -1,0 +1,317 @@
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001893-20155118502551
+문장:
+t01600 Press and hold the “Lock” button on the control
+panel for 3 seconds.
+t01601 2017 - 2019 Models 1.
+t01602 2013 - 2017 Models 1.
+t01603 Press and hold the Humidity Up (▲) and High Fan Speed buttons
+simultaneously for 3 seconds.
+t01604 Important Notes Models manufactured before 2012 do not support Child Lock.
+t01605 What if Child Lock won't
+disable even after holding the button for 3 seconds?
+t01606 Close The [CL] message on your LG dehumidifier indicates that Child Lock is
+enabled.
+t01607 Why Does “CL” Appear on My LG Dehumidifier?
+t01608 Rest assured, “CL” is not an error code.
+t01609 It simply indicates that the
+Child Lock feature is active.
+t01610 When active, only the Power button
+will respond.
+t01611 To use the other functions, simply turn off Child Lock.
+t01612 How to Turn Off Child Lock (CL) To unlock your dehumidifier, check its manufacturing year or model
+series, then follow the steps below.
+t01613 You will hear a beep and the "CL" indicator will disappear,
+confirming that Child Lock is disabled.
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001894-20155019542509/
+문장:
+t01614 This feature is available only if the soundbar connected via HDMI (ARC/eARC) supports TV Sound Mode Share or Sound Bar Mode Control.
+t01615 Setup by TV Model Year 2021 models or later (webOS 6.0 or later): Press the [Settings] button on your remote > [All Settings] > [Sound] > [Advanced Settings] > [TV Sound Mode Share].
+t01616 2020 models or earlier (webOS 5.0 and earlier): This feature is not supported.
+t01617 How to turn on TV Sound Mode Share on 2025 or later TVs [webOS 25 or later].
+t01618 What is the difference between Soundbar Sound Effect and TV Sound Mode?
+t01619 Close You can apply the TV's sound mode to the soundbar or select the soundbar's sound mode via the TV settings.
+t01620 Why is TV Sound Mode Share not working?
+t01621 TV Sound Mode Share may not work if: The soundbar is connected to a standard HDMI port, instead of the HDMI (ARC) port.
+t01622 The soundbar does not support TV Sound Mode Share.
+t01623 The TV’s webOS version does not support TV Sound Mode Share.
+t01624 How do I set up TV Sound Mode Share?
+t01625 Select [Sound] > [Advanced Settings].
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001892-20155102945124
+문장:
+t01626 Products with a Button Sound or Notification Sound button on the display ➔ Press and hold the Button Sound or Notification Sound button for 3 seconds.
+t01627 Products with a *Notification Sound button under the Rinse button ➔ Press and hold the *Notification Sound button under the Rinse button for more than 3 seconds, and it will be set with a "ding" sound.
+t01628 For models without a Notification Sound or Button Sound indicator Applicable model: F1925 After turning on the power and operating, press and hold the Delay End button for 3 seconds to enable or disable the function.
+t01629 Applicable model: FR1003WC After turning on the power and operating, press and hold the Rinse+Spin button for 3 seconds to enable or disable the function.
+t01630 [LG Front Load Washer] I'd like to know how to set the button sounds.
+t01631 Close When you press the cycle selection button or turn the dial on the front display, you will hear a "ding-ding" button sound.
+t01632 You can turn the sound heard when pressing buttons on or off.
+t01633 (Not applicable to some models) - The notification sound cannot be set if you select the notification sound button immediately after turning on the product.
+t01634 You can set the notification sound after turning on the product and selecting a cycle or operating the product.
+t01635 You can enable or disable the function.
+t01636 Chat with us now!
+t01637 Press Settings on the touch control panel to enter the Washer Other Settings menu.
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001891-20153215184746/
+문장:
+t01638 turn off after 5 seconds.
+t01639 Close Press the [Home] key on the TV remote and then press the [Music Player] button located at the top of the
+
+t01640 If the music player appears as an overlay on the screen and plays music, you can enjoy the music after
+
+t01641 stopping the currently playing broadcast sound.
+t01642 You can freely browse through the music selection, enabling you to choose and play the desired music on the
+
+t01643 Using the drag-and-drop function, you can move the music player anywhere you prefer.
+t01644 It offers features such
+
+t01645 access to relevant content.
+t01646 WebOS 3.0 User Guide Features Select the [Search] button in the [User Guide] menu.
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001894-20155115712563/
+문장:
+t01647 Close If your laptop doesn't connect to a Bluetooth device, first make sure Bluetooth is turned on in Windows Settings.
+t01648 If Bluetooth is already on but the device still won’t connect, set the Bluetooth Support Service to [Automatic] in Windows Services, or remove the driver showing an error in Device Manager and reinstall it using the LG Update program.
+t01649 Why Is Bluetooth Not Connecting?
+t01650 Bluetooth is turned off in Windows Settings.
+t01651 The Bluetooth Support Service is stopped.
+t01652 The Bluetooth driver is missing or damaged, causing the device to appear as an [Unknown device] How to Fix Bluetooth Connection Issues Turn On Bluetooth and Add a Device in Windows Settings 1.Press the Windows logo key + I on the keyboard to open Settings.
+t01653 2.Select [Bluetooth & devices].
+t01654 3.Make sure the Bluetooth switch is set to On.
+t01655 This may happen if Bluetooth is turned off in Windows Settings or if the Bluetooth device is not recognized in Device Manager.
+t01656 3.Right-click the device with the error and select [Uninstall device].
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001891-20153130464833OLT/
+문장:
+t01657 [LG TV Channel] How do I set My Channel?
+t01658 Close Try this How to set My Channel Press the Home button on the Magic Remote.
+t01659 Select My Channel at the bottom left of the screen.
+t01660 Select Add Channel at the bottom right of the screen.
+t01661 The channel list appears.
+t01662 Choose a channel you wish to add from the list.
+t01663 You can select more channels on the My Channel list in the same way.
+t01664 After selecting a channel, press Exit on the top left of the screen.
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001892-20154982198421/
+문장:
+t01665 good, while “1N sE” means the previous test ended with an error.
+t01666 check, please contact LG Electronics Support for service.
+t01667 1N sE: Previous test ended with an error.
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001892-20155130213807
+문장:
+t01668 wash cycle to save energy, even if the exact target temperature hasn't
+
+t01669 feature designed to save energy, so you can continue using your
+
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001891-20153123661970OLT/
+문장:
+t01670 Try this Changing to [Home Mode] in the Settings menu ➔ 2022 WebOS 22 Press the button on the TV remote and select [All Settings] → [General] → [Devices] → [Tv Management] → [Home/Store Mode] → [Home Mode].
+t01671 ➔ 2020 WebOS 5.0 Press the button on the TV remote and select [All Settings] → [General] → [Additional Settings] → [Home/Store Mode] → [Home Mode].
+t01672 Smart TV (WEB OS 15 or later) Select [Menu] → [Settings] → [Advanced Settings] → [General] → [Home/Store Mode] → [Home Mode] Smart TV (NETCAST) Select [Menu] → [Settings] → [General] → [Preferences] and select [Home Mode] General TV Select [Menu] → [General] → [Preferences] and select [Home Mode] This guide was created for all models, so the images or content may be different from your product.
+t01673 Close If the Preference is set to [Store Mode], the features of the product are repeatedly displayed in a specific location.
+t01674 Change the usage environment to [Home Mode].
+t01675 ※ The method for adjusting the setting may vary depending on the product.
+t01676 Select [General] and then [Devices].
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001891-20153096002080OLT/
+문장:
+t01677 A set-top box is an external device that allows users to enjoy various content, such as broadcasting, movies, shopping, and games, through the Internet on TV by subscribing to the IPTV (Internet Protocol Television) service.
+t01678 [LG OLED TV Connect HDMI] How can I connect my TV to a set-top box?
+t01679 Close Do you wish to connect a set-top box to enjoy various content?
+t01680 To use the service with a set-top box, connect your TV to a set-top box with an HDMI cable and enable the set-top box as an active external input source in the TV.
+t01681 Try this Connect a set-top box to your TV with an HDMI cable.
+t01682 ➔ Locate the HDMI ports on the back of the TV and the set-top box and connect them with an HDMI cable.
+t01683 Set the input mode to HDMI ➔ Press the [External Input] button on the TV remote and select the HDMI port to which your set-top box is connected.
+t01684 Do you wish to connect a set-top box to enjoy various content?
+t01685 If you specified the name of the HDMI port to which the set-top box is connected when setting the input mode for the first time, the port name is displayed as [Set-top Box].
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001891-20155062553752/
+문장:
+t01686 Close LG Channels is an exclusive, free service from LG that streams live TV—including news, TV shows, and entertainment—via the internet without additional equipment.
+t01687 Before You Start Supported Devices: LG Smart TVs or Smart Monitors manufactured in 2016 or later.
+t01688 For TVs released in 2021 or later (webOS 6.0 and later), the app cannot be deleted.
+t01689 TVs released in 2021 or later (webOS 6.0+): Open the LG Channels app → Select
+[MY] in the menu → [Settings] → [Disable LG Channels] TVs released in 2020 or earlier (webOS 5.0-): Press the [Home] button on the
+remote → Select the [Edit] icon (pencil) at the bottom right → Select the [X] button above the app you
+want to delete → Select [Done] Q.
+t01690 TVs released in 2021 or later (webOS 6.0+): [Settings] → [All Settings] →
+[General] → [System] → [Location] TVs released in 2020 or earlier (webOS 5.0-): [Settings] → [All Settings] →
+[General] → [Location] Q.
+t01691 LG Channels is an exclusive, free service from LG that streams live TV—including news, TV shows, and entertainment—via the internet without additional equipment.
+t01692 [LG TV] How do I watch LG Channels?
+t01693 You can easily access the service by pressing the [Home] button or using the channel buttons on your remote.
+t01694 Note: The number of channels is subject to change depending on the service provider.
+t01695 The service may not be supported on certain models or in some countries.
+t01696 How do I use LG Channels?
+t01697 Note: The LG Channels web service is currently available only in the United States.
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001892-20155102806626
+문장:
+t01698 [LG CordZero A7] What Do the LG CordZero A7 LED Indicators (Solid, Flashing, Off) Mean?
+t01699 Close The LED indicators on the LG CordZero A7 cordless vacuum display the vacuum's current status and alert you when it requires attention.
+t01700 These lights typically indicate debris blockages, dirty filters, or battery issues (such as low power, use of a non-genuine battery, or end of battery life).
+t01701 Depending on the LED status, you can resolve most issues by clearing blockages, cleaning the filters, or charging/replacing the battery.
+t01702 What Do the LG CordZero A7 LED Indicators Mean and How Can I Resolve Issues?
+t01703 Check what each A7 LED status means What does each A7 LED status mean?
+t01704 Clog Indicator (LED blinking) If dust or debris builds up in the extension pipe, nozzle, or filters, the LED will blink to alert you.
+t01705 If the blockage remains, the vacuum will shut off and an alarm will sound.
+t01706 What does it mean when the battery LED is red?
+t01707 Buildup over time can reduce suction power and cause the motor to overheat.
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT32004806-20155130672793
+문장:
+t01708 Close To keep your LG PuriCare™ AeroCat Tower clean and operating at its
+
+t01709 best, regularly clean the fine dust filter, dust sensor, and exterior
+
+t01710 (cat dome and cushion).
+t01711 Lightly vacuum the filter and exterior surfaces, and wipe the dust
+
+t01712 sensor with a slightly damp cotton swab.
+t01713 For the cushion, we
+
+t01714 recommend removing the cover and hand-washing it with a mild detergent.
+t01715 How to Clean the LG AeroCat Tower Filter Dust buildup on the filter can reduce air purification performance.
+t01716 Wash only the removable outer cover.
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001892-20155102780837/
+문장:
+t01717 Preheating takes about 40 seconds Cleaning in Normal Mop Mode → When operating in Normal Mop Mode, the LED on the battery pack is turned off.
+t01718 [LG CordZero A9, A9S] How do I use the Steam Mop Nozzle?
+t01719 Only use the steam-exclusive mop pads provided at the time of purchase.
+t01720 * Only use the dedicated steam mop pad included in the package.
+t01721 Preparing for use before cleaning Press the PUSH button (ⓛ) to remove the water tank, open the cap (②), and fill the tank with water using the measuring cup (③) 2.
+t01722 Wet both sides of the mop pads, wring them out thoroughly, and attach them to the center of each mop plate.
+t01723 If you press the steam button on the battery pack while using Steam Mode, it switches to Normal Mop Mode.
+t01724 ※ For notification sounds by situation, LEDs, smart safety features, and precautions,
+please note.
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001894-20153143600647/
+문장:
+t01725 Close video subtitles If you use Sync On Mobile app, you can send photos or videos on a mobile device to PC easily.
+t01726 If there is no Sync On Mobile app on a mobile device, use the camera app of the mobile device and scan the [Downloading Sync On Mobile app] QR code.
+t01727 Use the [Connecting PC and mobile device] function on the Sync On Mobile app of the mobile device.
+t01728 When you scan the [Connecting PC and mobile device] QR code of the PC with this function, PC and mobile device are connected.
+t01729 If you use the [Send photos immediately] function on the Sync On Mobile app of the mobile device, you can send photos or videos on a mobile device to PC easily.
+t01730 You can send photos or videos on a mobile device to PC easily through the [Share] function in Gallery of mobile device or on browser app.
+t01731 If you use the [Auto Sync after running Sync On Mobile] function of the PC, photos and videos of the mobile device are synchronized to the PC automatically.
+t01732 If you use the [Sync immediately] function on the Sync On Mobile app of the mobile device, photos and videos on a mobile device are synchronized to the PC immediately.
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001891-20153215469176LST/
+문장:
+t01733 Close If the remote receiver is blocked, the signal from the remote control cannot be received.
+t01734 Try this Is the battery of your AI remote control depleted?
+t01735 ➔ Once the battery is depleted, the AI remote control will no longer function.
+t01736 Check if the LED on the front of the AI remote control turns on when any button is pressed.
+t01737 If the LED does not turn on, replace all (two) batteries of the remote control at once.
+t01738 Is any of the left/right remote receivers at the bottom of the product blocked by an object?
+t01739 ➔ Remove the object blocking the receiver at the bottom of the TV.
+t01740 If the remote receiver is blocked, the signal from the remote control cannot be received.
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT32004806-20155131934269
+문장:
+t01741 Close If you don’t hear a button sound from your LG PuriCare™ AeroCat Tower,
+it may be because the sound automatically turns off when a weight of 0.4
+kg (0.9 lbs) or more is detected on the cat dome.
+t01742 For safety reasons, the button sound automatically turns off when a
+weight of 0.4 kg (0.9 lbs) or more is detected on the cat dome.
+t01743 If a weight of 0.4 kg (0.9 lbs) or more is detected, the button
+sound turns off.
+t01744 If you don’t hear a button sound from your LG PuriCare™ AeroCat Tower,
+it may be because the sound automatically turns off when a weight of 0.4
+kg (0.9 lbs) or more is detected on the cat dome.
+t01745 Remove the weight and press the button again to see if the sound
+returns.
+t01746 Why Is There No Button Sound from the AeroCat Tower?
+t01747 This is normal behavior.
+t01748 Once the weight is removed, the sound will
+return.
+t01749 How to fix the button sound on the AeroCat Tower 1.
+t01750 Check if a cat or any object is on the cat dome.
+t01751 Is there a setting to manually
+turn the button sound back on?
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001892-20155028318440
+문장:
+t01752 If the water supply is behind the washer Allow at least 1 inch (2.5 cm) on each side and 0.2 inches (0.5 cm) above the washer.
+t01753 Ensure a clearance of at least 4 inches (10 cm) between the back of the unit and the water supply.
+t01754 The front requires a clearance of 19.6 to 23.6 inches (50 to 60 cm), considering the door opening.
+t01755 If the water supply is next to the washer Allow 4 inches (10 cm) between the water supply and the side of the washer, 1 inch (2.5 cm) on the opposite
+side, and 0.19 inches (0.5 cm) above the washer.
+t01756 A clearance of at least 4 inches (10 cm) is required between the back of the unit and wall, and the front
+requires 19.6 to 23.6 inches (50 to 60 cm) of additional space, considering the door opening.
+t01757 The actual product dimensions and packaging size may vary depending on the product model.
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001894-20155268087480/
+문장:
+t01758 Using the getmac /v command 1) Open Command Prompt by typing cmd in the Run window, as described above.
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001892-20155048208360
+문장:
+t01759 [LG refrigerator leakage] There is water dripping near the ice maker.
+t01760 Water is dripping near the ice maker.
+t01761 Close If the refrigerator is powered off, ice and food from the freezer or ice maker may thaw.
+t01762 If the ice maker door is open or not fully closed, warm air from outside may enter and cause the ice to melt or create condensation.
+t01763 If the ice maker is turned off, cold air from the freezer cannot flow into the ice maker, resulting in the ice melting.
+t01764 Due to this, water may accumulate on the floor of the refrigerator, or water droplets may drip from the bottom of the freezer door.
+t01765 Try this Check if the refrigerator is powered off.
+t01766 ➔ Plug in the power cord if it is disconnected.
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT32010282-20151536625692/
+문장:
+t01767 Close [Video] 32UL950F Monitor Installation & Base Stand Assembly [Video] 32UL950F Monitor Installation & Base Stand Assembly Article feedback * Required Fields 1.
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001894-20155113403267/
+문장:
+t01768 Close Quick Machine Recovery is a Windows recovery feature that automatically connects to the Microsoft cloud to find and apply a solution when Windows fails to start.
+t01769 Quick Machine Recovery is a Windows recovery feature that automatically connects to the Microsoft cloud to find and apply a solution when Windows fails to start.
+t01770 This feature is enabled by default in Windows Home and does not require any additional installation.
+t01771 To use it, you need an active internet connection (wired or Wi-Fi).
+t01772 When Is Quick Machine Recovery Used?
+t01773 You can use Quick Machine Recovery if your PC fails to boot normally and displays any of the following symptoms or messages: The system freezes on a black screen during startup An error message appears stating “Your device ran into a problem and couldn’t be repaired” A message appears stating “Unable to connect to a network” The system does not progress past the Windows logo or remains stuck on the network connection screen Checking Quick Machine Recovery Settings Quick Machine Recovery is turned on by default in Windows Home.
+t01774 The [Automatically check for solutions] option is set to run once by default.
+t01775 Go to [Settings] → [System] → [Recovery] → [Quick Machine Recovery] What Happens During Quick Machine Recovery?
+t01776 If your PC repeatedly fails to start, Windows automatically launches Startup Repair and then enters the Quick Machine Recovery environment.
+t01777 What to Do If Recovery Fails If Quick Machine Recovery does not resolve the issue, a black screen may appear.
+t01778 How to back up data: Go to [Troubleshoot] > [Advanced options] > [Command Prompt] to copy files to an external storage device.
+t01779 * Note: Resetting the PC may delete your stored data.
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001891-20153215656522OLT/
+문장:
+t01780 Try this Press the [Mute] button on the TV remote 3 times repeatedly.
+t01781 Checking the model name with a hotkey on the TV remote Press the button on the TV remote 3 times repeatedly.
+t01782 [2020] Navigating to [Support] in the Settings menu Turn on the TV and press the [Settings] button on your TV remote.
+t01783 [LG TV] How can I identify my TV model name?
+t01784 Close You can display the TV model name on the screen using a hotkey.
+t01785 You can also find it on the right rear label (left side from the watching direction).
+t01786 This hotkey moves you to the model name screen.
+t01787 Smart TV (WebOS) Checking the model name on the rear label Right rear side from the watching direction / left rear side Left rear side from the watching direction / right rear side Try this How to check the model name using the TV menu.
+t01788 ➔ Open the TV Settings menu and select the menu items as instructed below.
+t01789 Please consult the user manual.
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001893-20155048180878/
+문장:
+t01790 After 2022: The product turns off after AI drying (the drying time is set automatically according to the
+operating time) Status: The product [power] indication lamp lights and it does not turn off during the operating time of the
+automatic drying function.
+
+페이지 정보: 국가=AU, URL=https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001892-20155103111147
+문장:
+t01791 Close Causes and Symptoms What are the differences between the induction and highlight burners?
+t01792 Please note that the dual function of the highlight burners can only be used on 3-burner products with
+the model name [BER3G*].
+t01793 Use an exclusive induction container with an IH or coil shaped mark on its base or an appropriate container
+according to the following information.
+t01794 Causes and Symptoms What are the differences between the induction and highlight burners?
+t01795 The highlight burner turns on and off repeatedly.
+t01796 I place an induction pot on the burner, but it won't be heated.
+t01797 Try this Differences between the induction and highlight burners ➔ Due to a difference in the heating method, the actual heating power of the highlight
+burner is weaker than that of the induction burner, with the heating power varying across models.
+t01798 The induction burner uses a magnetic field to directly heat the container with high efficiency, and the
+burner size is large, so the fire power is strong.
+t01799 However, the highlight heats up the container at a low efficiency by maintaining the top plate at a constant
+temperature, and its burner size is also smaller than that of the induction, so its heating power is
+weaker.

@@ -1,0 +1,200 @@
+{"id": "t02000", "cc": "br", "pt": "support_troubleshoot", "text": "TVs 2021–2022 (webOS 6.0–22): Pressione [Configurações] no controle remoto, selecione [Todas as Configurações], [Geral], [Dispositivos], [Gerenciamento de TV] e selecione [Início Rápido+]."}
+{"id": "t02001", "cc": "br", "pt": "support_troubleshoot", "text": "TVs 2019–2020 (webOS 4.5–5.0): Pressione [Configurações] no controle remoto, selecione [Todas as Configurações], [Geral], [Configurações Adicionais] e selecione [Q Start+]."}
+{"id": "t02002", "cc": "br", "pt": "support_troubleshoot", "text": "TVs de 2018 e anteriores (webOS 4.0 e anteriores): Pressione [Configurações] no controle remoto, selecione [Todas as Configurações], [Geral] e selecione [Q Iniciar+]."}
+{"id": "t02003", "cc": "br", "pt": "support_troubleshoot", "text": "Close Você pode escolher se sua Smart TV LG começa na tela inicial ou na última entrada usada ao ligá-la."}
+{"id": "t02004", "cc": "br", "pt": "support_troubleshoot", "text": "Selecione a última entrada usada se quiser assistir a um dispositivo conectado imediatamente."}
+{"id": "t02005", "cc": "br", "pt": "support_troubleshoot", "text": "Você pode facilmente configurar sua tela de inicialização preferida com base no ano de lançamento da sua TV e na versão do webOS."}
+{"id": "t02006", "cc": "br", "pt": "support_troubleshoot", "text": "Como configurar a tela de inicialização da sua TV Como verificar a versão webOS da sua TV Pressione o botão [Configurações] (ícone de engrenagem) ou [Mutar] no controle remoto, três vezes seguidas para visualizar as informações do sistema da sua TV."}
+{"id": "t02007", "cc": "br", "pt": "support_troubleshoot", "text": "Escolha a Tela de Ligar Siga o caminho do menu para o ano de modelo da sua TV e a versão do webOS."}
+{"id": "t02008", "cc": "br", "pt": "support_troubleshoot", "text": "Depois, selecione a tela inicial ou a entrada externa mais recente como tela de ligar."}
+{"id": "t02009", "cc": "br", "pt": "support_troubleshoot", "text": "Se você pressionar o botão de energia diretamente na TV, pode aparecer uma tela diferente."}
+{"id": "t02010", "cc": "br", "pt": "support_troubleshoot", "text": "Minha geladeira LG faz um barulho alto quando o gelo cai na lixeira."}
+{"id": "t02011", "cc": "br", "pt": "support_troubleshoot", "text": "Como posso reduzir isso?"}
+{"id": "t02012", "cc": "br", "pt": "support_troubleshoot", "text": "Close O barulho da máquina de gelo na sua geladeira LG geralmente é normal."}
+{"id": "t02013", "cc": "br", "pt": "support_troubleshoot", "text": "Você pode ouvir sons quando o gelo cai na caixa de gelo ou quando a água é fornecida para formar gelo."}
+{"id": "t02014", "cc": "br", "pt": "support_troubleshoot", "text": "Se o som de gelo caindo à noite (como um baque ou chocalho) for incômodo, use o recurso [Modo Silêncio Noturno] no app LG ThinQ para evitar que gelo caia durante os horários selecionados."}
+{"id": "t02015", "cc": "br", "pt": "support_troubleshoot", "text": "Notas importantes Se você ouvir batidas ou batidas incomumente altas quando a água é fornecida, a mangueira pode não estar bem fixada."}
+{"id": "t02016", "cc": "br", "pt": "support_troubleshoot", "text": "Recomendamos entrar em contato com o Suporte ao Cliente da LG para obter assistência."}
+{"id": "t02017", "cc": "br", "pt": "support_troubleshoot", "text": "Para usar o [Modo Silêncio Noturno], sua geladeira deve estar registrada no aplicativo LG ThinQ do seu smartphone."}
+{"id": "t02018", "cc": "br", "pt": "support_troubleshoot", "text": "Modelos que não suportam o aplicativo LG ThinQ não podem usar o recurso [Modo Silêncio Noturno]."}
+{"id": "t02019", "cc": "br", "pt": "support_troubleshoot", "text": "Meu modelo não suporta o app LG ThinQ."}
+{"id": "t02020", "cc": "br", "pt": "support_troubleshoot", "text": "Close Se seu laptop ou PC não conseguir se conectar à internet, ou se aparecer uma mensagem de [conflito de IP], você pode mudar suas configurações de IP para [Automático (DHCP)] ou [Manual] através de [Configurações de rede e internet] na barra de tarefas ou no [Painel de Controle]."}
+{"id": "t02021", "cc": "br", "pt": "support_troubleshoot", "text": "Para a maioria das redes domésticas, selecione [Automático]."}
+{"id": "t02022", "cc": "br", "pt": "support_troubleshoot", "text": "Para locais de trabalho, escolas ou outras redes gerenciadas, selecione [Manual] apenas se o administrador de rede tiver fornecido as configurações de IP exigidas."}
+{"id": "t02023", "cc": "br", "pt": "support_troubleshoot", "text": "Por que preciso mudar minhas configurações de IP?"}
+{"id": "t02024", "cc": "br", "pt": "support_troubleshoot", "text": "Uma mensagem de conflito de endereço IP aparece no canto inferior direito da sua tela."}
+{"id": "t02025", "cc": "br", "pt": "support_troubleshoot", "text": "Seu dispositivo está conectado a um roteador ou rede Wi-Fi, mas você não pode acessar a internet."}
+{"id": "t02026", "cc": "br", "pt": "support_troubleshoot", "text": "Se essas medidas não resolverem o problema, visite o site da LG para mais assistência."}
+{"id": "t02027", "cc": "br", "pt": "support_troubleshoot", "text": "Para locais de trabalho, dormitórios ou outras redes seguras, selecione [Manual] apenas se o administrador de rede tiver fornecido um endereço IP específico."}
+{"id": "t02028", "cc": "br", "pt": "support_troubleshoot", "text": "2) No menu à esquerda, clique em [Alterar configurações do adaptador]."}
+{"id": "t02029", "cc": "br", "pt": "support_troubleshoot", "text": "Close Para alterar as configurações de temperatura, desbloqueie a tela pressionando e segurando o botão [Lock] por pelo menos 3 segundos."}
+{"id": "t02030", "cc": "br", "pt": "support_troubleshoot", "text": "Você pode ajustar a temperatura da geladeira entre 1°C e 7°C (34°F e 45°F), e a temperatura do congelador entre -15°C e -23°C (5°F e -9°F)."}
+{"id": "t02031", "cc": "br", "pt": "support_troubleshoot", "text": "Pressione e segure o [Fechar] botão no painel de controle por pelo menos 3 segundos para liberar a trava."}
+{"id": "t02032", "cc": "br", "pt": "support_troubleshoot", "text": "Após ajustar a temperatura, pressione e segure o botão [Lock] por pelo menos 3 segundos para travar as configurações do painel de controle."}
+{"id": "t02033", "cc": "br", "pt": "support_troubleshoot", "text": "Pressione e segure o botão [Lock] no painel de controle por pelo menos 3 segundos para desbloquear os controles."}
+{"id": "t02034", "cc": "br", "pt": "support_troubleshoot", "text": "Para alterar as configurações de temperatura, desbloqueie a tela pressionando e segurando o botão [Lock] por pelo menos 3 segundos."}
+{"id": "t02035", "cc": "br", "pt": "support_troubleshoot", "text": "[Temperatura da geladeira LG] Como faço para ajustar a temperatura da geladeira e do freezer?"}
+{"id": "t02036", "cc": "br", "pt": "support_troubleshoot", "text": "Depois, use os botões [Geladeira] ou [Freezer] para ajustar a temperatura desejada."}
+{"id": "t02037", "cc": "br", "pt": "support_troubleshoot", "text": "Como Desbloquear o Painel de Controle 1."}
+{"id": "t02038", "cc": "br", "pt": "support_troubleshoot", "text": "Quando o ícone de Tranca muda para o ícone desbloqueado, você pode usar outros botões."}
+{"id": "t02039", "cc": "br", "pt": "support_troubleshoot", "text": "Como Ajustar a Temperatura da Geladeira e do Freezer 1."}
+{"id": "t02040", "cc": "br", "pt": "support_troubleshoot", "text": "Nota A temperatura exibida no painel de controle é a temperatura alvo, não a temperatura interna atual."}
+{"id": "t02041", "cc": "br", "pt": "support_troubleshoot", "text": "A temperatura real pode variar dependendo do quão cheio está a unidade e do ambiente ao redor."}
+{"id": "t02042", "cc": "br", "pt": "support_troubleshoot", "text": "Close Se o áudio da TV estiver fora de sincronia, primeiro, verifique se o problema ocorre apenas em um canal específico."}
+{"id": "t02043", "cc": "br", "pt": "support_troubleshoot", "text": "TVs de 2021 em diante (webOS 6.0 e posteriores): Pressione Configurações no controle remoto, selecione Todas as Configurações, Som, Configurações Avançadas, Combinar Tela e Som, e ative o Bypass."}
+{"id": "t02044", "cc": "br", "pt": "support_troubleshoot", "text": "TVs de 2020 e anteriores (webOS 5.0 e anteriores): Pressione Configurações no controle remoto, selecione Todas as Configurações, Som, Configurações Adicionais, Ajuste de Sincronização AV e ative o Bypass."}
+{"id": "t02045", "cc": "br", "pt": "support_troubleshoot", "text": "Se o áudio da TV estiver fora de sincronia, primeiro, verifique se o problema ocorre apenas em um canal específico."}
+{"id": "t02046", "cc": "br", "pt": "support_troubleshoot", "text": "Se o áudio estiver fora de sincronia em todos os canais, vá em [Match Screen and Sound] e ative [Bypass]."}
+{"id": "t02047", "cc": "br", "pt": "support_troubleshoot", "text": "Se o problema continuar, desligue [Bypass] e ajuste a configuração de atraso do alto-falante."}
+{"id": "t02048", "cc": "br", "pt": "support_troubleshoot", "text": "Por que a imagem e o som estão fora de sincronia?"}
+{"id": "t02049", "cc": "br", "pt": "support_troubleshoot", "text": "Se o problema ocorrer em apenas um canal Se o problema ocorrer em todos os canais Como Sincronizar Imagem e Som Passo 1."}
+{"id": "t02050", "cc": "br", "pt": "support_troubleshoot", "text": "Desvio de Ligar Como verificar a versão webOS da sua TV No controle remoto da sua TV, pressione o botão [Configurações] (ícone de engrenagem) ou [Mutar] três vezes seguidas."}
+{"id": "t02051", "cc": "br", "pt": "support_troubleshoot", "text": "Selecione Delay do Alto-falante da TV e ajuste o valor até que o som coincida com os movimentos dos lábios na tela."}
+{"id": "t02052", "cc": "br", "pt": "support_troubleshoot", "text": "Entre em contato com seu provedor de TV ou decodificador para verificar o sinal."}
+{"id": "t02053", "cc": "br", "pt": "support_troubleshoot", "text": "O sinal de transmissão desse canal pode estar temporariamente fora de sincronia."}
+{"id": "t02054", "cc": "br", "pt": "support_troubleshoot", "text": "[Alto-falante sem fio LG] Por que meu pen drive não é reconhecido?"}
+{"id": "t02055", "cc": "br", "pt": "support_troubleshoot", "text": "Close O alto-falante suporta drives USB formatados apenas como FAT16 ou FAT32."}
+{"id": "t02056", "cc": "br", "pt": "support_troubleshoot", "text": "Se seu pen USB não for reconhecido, verifique o formato e as extensões do arquivo."}
+{"id": "t02057", "cc": "br", "pt": "support_troubleshoot", "text": "Se tudo parecer correto, conecte o pen drive em outro dispositivo para garantir que está funcionando."}
+{"id": "t02058", "cc": "br", "pt": "support_troubleshoot", "text": "Note que algumas portas USB-C são apenas para carregamento."}
+{"id": "t02059", "cc": "br", "pt": "support_troubleshoot", "text": "Para mais detalhes, consulte o Manual do Usuário."}
+{"id": "t02060", "cc": "br", "pt": "support_troubleshoot", "text": "USB não reconhecido?"}
+{"id": "t02061", "cc": "br", "pt": "support_troubleshoot", "text": "Tente Estes Passos Verifique o formato: O alto-falante suporta drives USB formatados apenas como FAT16 ou FAT32."}
+{"id": "t02062", "cc": "br", "pt": "support_troubleshoot", "text": "Outros formatos (por exemplo, NTFS, exFAT) não são suportados."}
+{"id": "t02063", "cc": "br", "pt": "support_troubleshoot", "text": "Pressione o botão Função na unidade para selecionar o modo USB."}
+{"id": "t02064", "cc": "br", "pt": "support_troubleshoot", "text": "Quais formatos de arquivo de áudio são suportados?"}
+{"id": "t02065", "cc": "br", "pt": "support_troubleshoot", "text": "O alto-falante começará a ler o dispositivo assim que o display ou o indicador de LED mudar para o modo USB."}
+{"id": "t02066", "cc": "br", "pt": "support_troubleshoot", "text": "Se o processo de acordo falhar, primeiro verifique a conexão de internet da sua TV e certifique-se de que a configuração de país/região está correta."}
+{"id": "t02067", "cc": "br", "pt": "support_troubleshoot", "text": "TVs de 2021 e posteriores (webOS 6.0 ou posterior): Pressione [Configurações] no controle remoto → selecione [Todas as Configurações] na tela da TV → [Geral] → [Rede] → [Conexão Wi-Fi] TVs 2020 (webOS 5.0): Pressione [Configurações] no controle remoto → selecione [Todas as Configurações] na tela da TV → [Conexão] → [Configurações de Conexão de Rede] → [Conexão Wi-Fi] TVs 2019 (webOS 4.5): Pressione [Configurações] no controle remoto → selecione [Todas as Configurações] na tela da TV → [Conexão] → [Conexão Wi-Fi] TVs de 2018 e anteriores (webOS 4.0 ou anterior): Pressione [Configurações] no controle remoto → selecione [Todas as Configurações] na tela da TV → [Rede] → [Conexão Wi-Fi] Q."}
+{"id": "t02068", "cc": "br", "pt": "support_troubleshoot", "text": "TVs de 2021 e posteriores (webOS 6.0 ou posterior): Pressione [Configurações] no controle remoto → selecione [Todas as Configurações] na tela da TV → [Geral] → [Sistema] → [Localização] → [País dos Serviços LG] TVs de 2020 e anteriores (webOS 5.0 ou anterior): Pressione [Configurações] no controle remoto → selecione [Todas as Configurações] na tela da TV → [Geral] → [Localização] → [País dos Serviços LG] Q."}
+{"id": "t02069", "cc": "br", "pt": "support_troubleshoot", "text": "Close Para acessar diversos conteúdos e serviços na sua TV, conecte-se à internet e concorde com os Acordos de Usuário."}
+{"id": "t02070", "cc": "br", "pt": "support_troubleshoot", "text": "O serviço pode ser limitado se o produto for usado fora do país onde foi originalmente comprado ou se foi adquirido no exterior."}
+{"id": "t02071", "cc": "br", "pt": "support_troubleshoot", "text": "Se você estiver tendo problemas de rede, tente conectar ao hotspot móvel do seu celular para testar a rede."}
+{"id": "t02072", "cc": "br", "pt": "support_troubleshoot", "text": "Por que não consigo concordar com os acordos de usuário?"}
+{"id": "t02073", "cc": "br", "pt": "support_troubleshoot", "text": "As Smart TVs LG precisam de conexão com a internet para fornecer conteúdo e serviços."}
+{"id": "t02074", "cc": "br", "pt": "support_troubleshoot", "text": "Para garantir que esses serviços funcionem corretamente e proteger suas informações pessoais, é necessário uma conexão ativa na rede e um acordo com os Acordos de Usuário."}
+{"id": "t02075", "cc": "br", "pt": "support_troubleshoot", "text": "Os Acordos de Usuário não podem carregar sem conexão com a internet porque as Smart TVs são dispositivos baseados em rede."}
+{"id": "t02076", "cc": "br", "pt": "support_troubleshoot", "text": "Se a configuração de País/Região na TV não corresponder à sua localização atual, a tela do acordo pode não ser exibida corretamente ou o processo pode falhar."}
+{"id": "t02077", "cc": "br", "pt": "support_troubleshoot", "text": "Se você tiver dificuldade para se conectar ao roteador, ative o hotspot móvel do seu smartphone para testar a conexão."}
+{"id": "t02078", "cc": "br", "pt": "support_troubleshoot", "text": "Estou tentando concordar com os Acordos de Usuário, mas a TV diz que não há conexão com a internet."}
+{"id": "t02079", "cc": "br", "pt": "support_troubleshoot", "text": "Close Se sua TV não ligar, verifique a conexão de energia e a luz de espera na borda inferior da TV."}
+{"id": "t02080", "cc": "br", "pt": "support_troubleshoot", "text": "Desconecte o cabo de energia, reconecte com segurança e então pressione o botão de energia da TV."}
+{"id": "t02081", "cc": "br", "pt": "support_troubleshoot", "text": "Se a TV ligar com o botão de energia, substitua as pilhas do controle remoto."}
+{"id": "t02082", "cc": "br", "pt": "support_troubleshoot", "text": "Se a TV ainda não ligar, verifique a tomada e o disjuntor."}
+{"id": "t02083", "cc": "br", "pt": "support_troubleshoot", "text": "Por que a TV não liga?"}
+{"id": "t02084", "cc": "br", "pt": "support_troubleshoot", "text": "Conexão de Energia Solta Baterias remotas descarregadas ou interferência de sinal Problema com tomada ou disjuntor Problema de hardware Etapas de Solução de Problemas Passo 1."}
+{"id": "t02085", "cc": "br", "pt": "support_troubleshoot", "text": "Verifique a luz de espera No modo de espera, a luz na parte inferior da TV deve estar acesa."}
+{"id": "t02086", "cc": "br", "pt": "support_troubleshoot", "text": "Se a luz de espera estiver apagada, verifique o cabo de energia."}
+{"id": "t02087", "cc": "br", "pt": "support_troubleshoot", "text": "Por que minha TV tem som mas nenhuma imagem?"}
+{"id": "t02088", "cc": "br", "pt": "support_troubleshoot", "text": "Se você ver a barra de volume ou um menu, a tela da sua TV está funcionando corretamente."}
+{"id": "t02089", "cc": "br", "pt": "support_troubleshoot", "text": "Teste o controle remoto Se sua TV ligar usando o botão de energia embutido, substitua as baterias do controle por novas."}
+{"id": "t02090", "cc": "br", "pt": "support_troubleshoot", "text": "Close Primeiro, faça um teste simples para verificar se o vazamento é devido a uma falha na máquina de lavar."}
+{"id": "t02091", "cc": "br", "pt": "support_troubleshoot", "text": "※ Para detergente em pó, o nível de enchimento adequado é 5mm abaixo do topo do dispensador de detergente."}
+{"id": "t02092", "cc": "br", "pt": "support_troubleshoot", "text": "Para detergente em pó, o nível de enchimento adequado fica 5mm abaixo do topo do dispensador de detergente."}
+{"id": "t02093", "cc": "br", "pt": "support_troubleshoot", "text": "Primeiro, faça um teste simples para verificar se o vazamento é devido a uma falha na máquina de lavar."}
+{"id": "t02094", "cc": "br", "pt": "support_troubleshoot", "text": "Se a causa não estiver relacionada a uma falha, podem ser aplicadas taxas de serviço — mesmo durante o período de garantia."}
+{"id": "t02095", "cc": "br", "pt": "support_troubleshoot", "text": "Teste para verificar se a máquina de arruela está com defeito Como conduzir o teste 1."}
+{"id": "t02096", "cc": "br", "pt": "support_troubleshoot", "text": "Realize um ciclo de enxágue (uma vez) com a tina vazia."}
+{"id": "t02097", "cc": "br", "pt": "support_troubleshoot", "text": "Se vazar água da máquina durante essa operação, solicite o serviço."}
+{"id": "t02098", "cc": "br", "pt": "support_troubleshoot", "text": "Nota: Se a água vazar pela parte de trás enquanto a banheira está drenando, o orifício de drenagem pode estar entupido."}
+{"id": "t02099", "cc": "br", "pt": "support_troubleshoot", "text": "Por favor, consulte a seção intitulada \"Vazamentos Somente quando a máquina de lavar está drenando\" neste guia."}
+{"id": "t02100", "cc": "br", "pt": "support_troubleshoot", "text": "A dosagem recomendada é suficiente para lavar sua roupa limpa."}
+{"id": "t02101", "cc": "br", "pt": "support_troubleshoot", "text": "Prenda a mangueira para evitar que ela entre na máquina ao drenar o restante da água."}
+{"id": "t02102", "cc": "br", "pt": "support_troubleshoot", "text": "Limpe o dispensador de detergente e o compartimento para onde ele vai usando uma escova de dentes macia."}
+{"id": "t02103", "cc": "br", "pt": "support_troubleshoot", "text": "Para detergente líquido, por favor, não enche além da linha MAX."}
+{"id": "t02104", "cc": "br", "pt": "support_troubleshoot", "text": "Verificando a Conexão de Rede Se um app não abrir ou carregar, primeiro verifique a conexão de internet da sua TV."}
+{"id": "t02105", "cc": "br", "pt": "support_troubleshoot", "text": "Verificando por ano de modelo da TV/versão do webOS Modelos de 2021 e posteriores [webOS 6.0 ou posterior]: Pressione as Configurações [ ] no controle remoto → [Todas as Configurações] → [Geral] → [Rede] → Selecione Conexão com Fio (Ethernet) ou Wi-Fi."}
+{"id": "t02106", "cc": "br", "pt": "support_troubleshoot", "text": "Modelos de 2020 [webOS 5.0]: Pressione as Configurações [ ]no controle remoto → [Todas as Configurações] → [Conexão] → [Configurações de Conexão de Rede] → Selecionar Conexão Com Cabo Modelos de 2019 [webOS 4.5]: Pressione as Configurações [ ]no controle → [Todas as Configurações] → [Conexão] → selecione Conexão com fio (Ethernet) ou Wi-Fi."}
+{"id": "t02107", "cc": "br", "pt": "support_troubleshoot", "text": "Modelos de 2018 e anteriores [webOS 4.0 ou anterior]: Pressione as Configurações [ ]no controle remoto → [Todas as Configurações] → [Rede] → selecione Conexão com Fio (Ethernet) ou Conexão Wi-Fi."}
+{"id": "t02108", "cc": "br", "pt": "support_troubleshoot", "text": "➔ Conectando Modelos 2025 [webOS 25] 1."}
+{"id": "t02109", "cc": "br", "pt": "support_troubleshoot", "text": "Entre em contato com o provedor do app primeiro."}
+{"id": "t02110", "cc": "br", "pt": "support_troubleshoot", "text": "Resetar a TV por ano do modelo (versão webOS) TVs de 2021 ou posteriores [webOS 6.0 ou posterior]: Pressione as Configurações[ ]no controle → [Todas as Configurações] → [Geral] → [Sistema] → [Resetar para as Configurações Iniciais] TVs 2020 [webOS 5.0]: Pressione as Configurações[ [botão no controle remoto → [Todas as Configurações] → [Suporte] → Reset para as Configurações Iniciais] TVs de 2019 e anteriores [(webOS 4.5 ou anterior): Pressione as Configurações[ ]no controle remoto → [Todas as Configurações] → [Geral] → [Resetar para as Configurações Iniciais] ➔ Resetando TVs 2025 [webOS 25] para as configurações iniciais 1."}
+{"id": "t02111", "cc": "br", "pt": "support_troubleshoot", "text": "Close Se os aplicativos da sua TV LG travam ou não abrirem, o problema geralmente está relacionado à conexão de rede instável."}
+{"id": "t02112", "cc": "br", "pt": "support_troubleshoot", "text": "Verifique as conexões de cabo entre a TV e seu roteador, depois verifique o status da rede no menu [Configurações] da TV."}
+{"id": "t02113", "cc": "br", "pt": "support_troubleshoot", "text": "Tente conectar a outra rede (por exemplo, hotspot móvel) para ver se o problema persiste."}
+{"id": "t02114", "cc": "br", "pt": "support_troubleshoot", "text": "Se o problema acontecer apenas em um app específico, atualize ou reinstale o app."}
+{"id": "t02115", "cc": "br", "pt": "support_troubleshoot", "text": "Se o problema continuar, entre em contato com o provedor do app para obter suporte."}
+{"id": "t02116", "cc": "br", "pt": "support_troubleshoot", "text": "Se o app não funcionar nem mesmo no hotspot: a TV pode precisar de inspeção, entre em contato com o Suporte de Eletrônicos da LG para mais assistência Atualização ou Reinstalação de Aplicativos (Se ocorrer um erro em um app específico) Se o problema ocorre apenas em um app específico, provavelmente é um problema do próprio app."}
+{"id": "t02117", "cc": "br", "pt": "support_troubleshoot", "text": "Aperte as Configurações [ ] no controle remoto → [Todas as Configurações] ( ) → [General] → [Rede] 2."}
+{"id": "t02118", "cc": "br", "pt": "support_troubleshoot", "text": "Se os cabos estiverem conectados corretamente, reinicie e reinicie o modem de cabo e o roteador Wi-Fi."}
+{"id": "t02119", "cc": "br", "pt": "support_troubleshoot", "text": "Por que não posso instalar um app específico?"}
+{"id": "t02120", "cc": "br", "pt": "support_troubleshoot", "text": "Por que o purificador de ar LG fica de repente mais alto mesmo quando o indicador está azul (Bom)?"}
+{"id": "t02121", "cc": "br", "pt": "support_troubleshoot", "text": "Close Quando o purificador de ar circula automaticamente o ar interno, a velocidade do ventilador pode aumentar repentinamente, e você pode perceber um aumento no ruído."}
+{"id": "t02122", "cc": "br", "pt": "support_troubleshoot", "text": "Isso não é uma falha."}
+{"id": "t02123", "cc": "br", "pt": "support_troubleshoot", "text": "É uma operação normal causada por uma função automática projetada para melhorar a circulação do ar."}
+{"id": "t02124", "cc": "br", "pt": "support_troubleshoot", "text": "Por que o ventilador fica de repente mais alto quando a luz indicadora mostra \"Bom\" (azul)?"}
+{"id": "t02125", "cc": "br", "pt": "support_troubleshoot", "text": "No modo Automático, se a qualidade do ar permanecer limpa (verde ou azul) por 50 minutos, o purificador de ar funciona a uma velocidade média do ventilador por 10 minutos para circular o ar."}
+{"id": "t02126", "cc": "br", "pt": "support_troubleshoot", "text": "Isso faz parte do processo automático de circulação de ar do purificador de ar."}
+{"id": "t02127", "cc": "br", "pt": "support_troubleshoot", "text": "Ele ajuda a detectar poluentes ocultos que se acumularam no chão e mantém o ar interno limpo."}
+{"id": "t02128", "cc": "br", "pt": "support_troubleshoot", "text": "O que verificar se o ventilador ficar mais alto ou se a cor do indicador não corresponder à qualidade real do ar Se o ventilador ficar repentinamente mais alto ou o indicador de qualidade do ar mostrar \"Ruim\" mesmo com o nível de poeira baixo, siga os passos abaixo."}
+{"id": "t02129", "cc": "br", "pt": "support_troubleshoot", "text": "Por favor, note O ruído do ventilador pode aumentar quando o purificador de ar circula o ar automaticamente, mas nenhuma mensagem ou indicador aparece no display."}
+{"id": "t02130", "cc": "br", "pt": "support_troubleshoot", "text": "O indicador de qualidade do ar mostra quatro níveis baseados em poeira e odor (gás): Bom (azul) → Moderado (verde) → Ruim (laranja) → Muito Ruim (vermelho)."}
+{"id": "t02131", "cc": "br", "pt": "support_troubleshoot", "text": "Como Alterar as Configurações de Localização Configurações de localização por ano-modelo TVs de 2021 ou posteriores (webOS 6.0 ou posterior): Pressione [Configurações] no controle remoto → selecione [Todas as Configurações] → [Geral] → [Sistema] → [Localização] → [País dos Serviços LG] TVs de 2020 ou anteriores (webOS 5.0 ou anterior): Pressione [Configurações] no controle remoto → selecione [Todas as Configurações] → [Geral] → [Localização] → [País dos Serviços LG] Como alterar as configurações de localização em TVs de 2025 ou posteriores (webOS 25 ou posterior) 1."}
+{"id": "t02132", "cc": "br", "pt": "support_troubleshoot", "text": "Close Para mudar as configurações de localização na sua TV LG, pressione [Configurações] no controle remoto e vá para [Todas as Configurações] → [Geral] → [Sistema] ou [Localização]."}
+{"id": "t02133", "cc": "br", "pt": "support_troubleshoot", "text": "O caminho do menu pode variar dependendo da versão do seu webOS."}
+{"id": "t02134", "cc": "br", "pt": "support_troubleshoot", "text": "As configurações do set-top box podem ser restritas para modelos comprados no exterior."}
+{"id": "t02135", "cc": "br", "pt": "support_troubleshoot", "text": "Por que preciso mudar as configurações de localização?"}
+{"id": "t02136", "cc": "br", "pt": "support_troubleshoot", "text": "Se você mudou ou mudou de provedor de Internet (ISP), deve atualizar as configurações de localização/região da sua TV para receber serviços personalizados."}
+{"id": "t02137", "cc": "br", "pt": "support_troubleshoot", "text": "Se você comprou sua TV no exterior ou está usando em outro país, precisa mudar as configurações de localização para acessar aplicativos e serviços disponíveis naquele país."}
+{"id": "t02138", "cc": "br", "pt": "support_troubleshoot", "text": "Pressione [Configurações] no controle remoto e depois selecione [Todas as Configurações] no canto superior esquerdo da tela da TV."}
+{"id": "t02139", "cc": "br", "pt": "support_troubleshoot", "text": "Isso não é um defeito de produto, mas uma especificação de hardware/software única para modelos estrangeiros."}
+{"id": "t02140", "cc": "br", "pt": "support_troubleshoot", "text": "Portanto, mesmo que a TV suporte as [Configurações de Controle Universal], pode não conter o banco de dados dos set-top boxes do provedor local no país/região onde você está usando a TV."}
+{"id": "t02141", "cc": "br", "pt": "support_troubleshoot", "text": "Como resultado, a TV pode não detectar seu set-top box, ou a configuração Universal Control pode não ser possível."}
+{"id": "t02142", "cc": "br", "pt": "support_troubleshoot", "text": "A mangueira deve ter no máximo 3,6 m (12 pés) de comprimento, e sua extremidade deve estar entre 30 e 100 cm (12–40 polegadas) acima do piso."}
+{"id": "t02143", "cc": "br", "pt": "support_troubleshoot", "text": "Close Drenagem ruim ou um código de erro original na sua lava-louças LG geralmente são causados por detritos de comida entupidos dentro da lava-louças, ou por um problema de instalação, como uma mangueira de drenagem dobrada."}
+{"id": "t02144", "cc": "br", "pt": "support_troubleshoot", "text": "Antes de agendar o serviço, você geralmente pode resolver o problema sozinho com alguns passos simples: limpar o filtro, endireitar a mangueira de drenagem e verificar a folga de ar e o triturador de lixo."}
+{"id": "t02145", "cc": "br", "pt": "support_troubleshoot", "text": "Cuidado Antes de limpar o espaço de ar ou as partes internas, certifique-se de que a lava-louças esteja desligada para evitar choques elétricos ou falhas."}
+{"id": "t02146", "cc": "br", "pt": "support_troubleshoot", "text": "Ao remover o filtro, manuse-o com cuidado para evitar ferimentos causados por bordas afiadas em peças como o filtro de aço inoxidável."}
+{"id": "t02147", "cc": "br", "pt": "support_troubleshoot", "text": "Por que minha lava-louças não está drenando?"}
+{"id": "t02148", "cc": "br", "pt": "support_troubleshoot", "text": "Entupimentos internos causados por detritos de comida Detritos de comida ou objetos estranhos na banheira ou filtro da lava-louças, ou uma folga de ar entupida na pia, podem impedir que a lava-louças escoe corretamente."}
+{"id": "t02149", "cc": "br", "pt": "support_troubleshoot", "text": "Mangueira de drenagem dobrada ou triturada Se objetos pesados pressionarem a mangueira de drenagem sob a pia, que geralmente é branca ou cinza, podem esmagar ou dobrar a mangueira e impedir que a lava-louças escoe corretamente."}
+{"id": "t02150", "cc": "br", "pt": "support_troubleshoot", "text": "Reinseri-o e gire no sentido horário até encaixar no lugar."}
+{"id": "t02151", "cc": "br", "pt": "support_troubleshoot", "text": "Por favor, verifique o filtro interno para entupimento e inspecione a mangueira de drenagem."}
+{"id": "t02152", "cc": "br", "pt": "support_troubleshoot", "text": "Verifique a mangueira de drenagem Abra o armário embaixo da pia e verifique se a mangueira de drenagem não está esmagada ou dobrada por objetos pesados."}
+{"id": "t02153", "cc": "br", "pt": "support_troubleshoot", "text": "Close Se seu laptop não se conecta a um dispositivo Bluetooth, primeiro certifique-se de que o Bluetooth está ativado nas Configurações do Windows."}
+{"id": "t02154", "cc": "br", "pt": "support_troubleshoot", "text": "Se seu laptop não se conecta a um dispositivo Bluetooth, primeiro certifique-se de que o Bluetooth está ativado nas Configurações do Windows."}
+{"id": "t02155", "cc": "br", "pt": "support_troubleshoot", "text": "Se o Bluetooth já estiver ligado, mas o dispositivo ainda não conseguir se conectar, configure o Serviço de Suporte Bluetooth para [Automático] nos Serviços do Windows, ou remova o driver que mostra erro no Gerenciador de Dispositivos e reinstale-o usando o programa de atualizações do LG."}
+{"id": "t02156", "cc": "br", "pt": "support_troubleshoot", "text": "Por que o Bluetooth não está conectando?"}
+{"id": "t02157", "cc": "br", "pt": "support_troubleshoot", "text": "O Bluetooth está desligado nas Configurações do Windows."}
+{"id": "t02158", "cc": "br", "pt": "support_troubleshoot", "text": "O Serviço de Suporte Bluetooth foi interrompido."}
+{"id": "t02159", "cc": "br", "pt": "support_troubleshoot", "text": "O driver Bluetooth está ausente ou danificado, fazendo com que o dispositivo apareça como [Dispositivo desconhecido] Como Resolver Problemas de Conexão Bluetooth Ligue o Bluetooth e adicione um dispositivo nas configurações do Windows 1."}
+{"id": "t02160", "cc": "br", "pt": "support_troubleshoot", "text": "Pressione a tecla do logo do Windows + I no teclado para abrir as Configurações."}
+{"id": "t02161", "cc": "br", "pt": "support_troubleshoot", "text": "Selecione [Bluetooth & dispositivos]."}
+{"id": "t02162", "cc": "br", "pt": "support_troubleshoot", "text": "Digite [Services] na caixa de busca da barra de tarefas e abra o app."}
+{"id": "t02163", "cc": "br", "pt": "support_troubleshoot", "text": "Depois de desinstalar, reinicie seu PC."}
+{"id": "t02164", "cc": "mx", "pt": "support_troubleshoot", "text": "Close Conecta tu barra de sonido LG, el subwoofer inalámbrico y los altavoces traseros."}
+{"id": "t02165", "cc": "mx", "pt": "support_troubleshoot", "text": "Se emparejarán automáticamente para que puedas utilizarlos de inmediato."}
+{"id": "t02166", "cc": "mx", "pt": "support_troubleshoot", "text": "Cuando los dispositivos estén correctamente conectados, el LED situado en la parte trasera del altavoz se iluminará en verde."}
+{"id": "t02167", "cc": "mx", "pt": "support_troubleshoot", "text": "Si el LED se ilumina en rojo o se pierde la conexión, pulsa el botón [Emparejamiento] situado en la parte trasera del dispositivo para volver a conectarlo manualmente."}
+{"id": "t02168", "cc": "mx", "pt": "support_troubleshoot", "text": "Para ayudar a mantener una conexión inalámbrica estable y una buena calidad de sonido, mantén los dispositivos cerca unos de otros y evita las interferencias inalámbricas en las proximidades."}
+{"id": "t02169", "cc": "mx", "pt": "support_troubleshoot", "text": "Nota Instala la barra de sonido y el subwoofer inalámbrico lo más cerca posible uno del otro."}
+{"id": "t02170", "cc": "mx", "pt": "support_troubleshoot", "text": "Cuanto más cerca estén, mejor será la calidad del sonido."}
+{"id": "t02171", "cc": "mx", "pt": "support_troubleshoot", "text": "Asegúrate de que no haya obstáculos entre los dispositivos."}
+{"id": "t02172", "cc": "mx", "pt": "support_troubleshoot", "text": "Pulsa el botón [Emparejamiento] situado en la parte trasera del subwoofer inalámbrico o de los altavoces traseros."}
+{"id": "t02173", "cc": "mx", "pt": "support_troubleshoot", "text": "Señal inalámbrica débil Es posible que la señal inalámbrica entre la barra de sonido y los altavoces no se esté transmitiendo o recibiendo correctamente."}
+{"id": "t02174", "cc": "mx", "pt": "support_troubleshoot", "text": "El uso de un adaptador con especificaciones diferentes puede provocar un mal funcionamiento del dispositivo."}
+{"id": "t02175", "cc": "mx", "pt": "support_troubleshoot", "text": "¿Puedo usar cualquier adaptador que tenga en casa si encaja en el puerto de la barra de sonido?"}
+{"id": "t02176", "cc": "mx", "pt": "support_troubleshoot", "text": "Close Alinee la torre LG AeroCat utilizando el logotipo de LG de la parte delantera como guía."}
+{"id": "t02177", "cc": "mx", "pt": "support_troubleshoot", "text": "Asegúrate de que el lado del Cat Dome donde se encuentra el panel de estado quede orientado hacia delante (en la misma dirección que el logotipo de LG)."}
+{"id": "t02178", "cc": "mx", "pt": "support_troubleshoot", "text": "Oirás un clic cuando quede bien encajado."}
+{"id": "t02179", "cc": "mx", "pt": "support_troubleshoot", "text": "El cepillo giratorio de la boquilla para ropa de cama no está motorizado; está diseñado para girar manualmente."}
+{"id": "t02180", "cc": "mx", "pt": "support_troubleshoot", "text": "Cuando pasas la aspiradora por la ropa de cama con la mano, el cepillo gira gracias a la fuerza que ejerces."}
+{"id": "t02181", "cc": "mx", "pt": "support_troubleshoot", "text": "Para evitar daños en la ropa de cama (enredamiento de las fibras) y problemas de seguridad, se gira manualmente."}
+{"id": "t02182", "cc": "mx", "pt": "support_troubleshoot", "text": "Cuando el aparato está encendido, la placa vibratoria de la parte inferior vibra, y es normal que el cepillo no gire."}
+{"id": "t02183", "cc": "mx", "pt": "support_troubleshoot", "text": "¿Hay pelo, hilo u otros restos enredados en el cepillo giratorio?"}
+{"id": "t02184", "cc": "mx", "pt": "support_troubleshoot", "text": "➔ ¿Hay pelo, hilo u otros restos enredados en el cepillo giratorio?"}
+{"id": "t02185", "cc": "mx", "pt": "support_troubleshoot", "text": "Sujeta el cepillo giratorio y levántalo para retirarlo."}
+{"id": "t02186", "cc": "mx", "pt": "support_troubleshoot", "text": "Introduce una moneda en la cerradura con ranura situada en la parte inferior, gírala 90º en el sentido de las agujas del reloj y tira de ella para retirar la tapa inferior."}
+{"id": "t02187", "cc": "mx", "pt": "support_troubleshoot", "text": "Close Comentarios sobre el artículo * Campos obligatorios 1."}
+{"id": "t02188", "cc": "mx", "pt": "support_troubleshoot", "text": "Close LG Channels es un servicio exclusivo y gratuito de LG que transmite televisión en directo, incluyendo noticias, programas de televisión y entretenimiento, a través de Internet sin necesidad de equipos adicionales."}
+{"id": "t02189", "cc": "mx", "pt": "support_troubleshoot", "text": "Verify right now Verify later ¿En qué te puedo ayudar?"}
+{"id": "t02190", "cc": "mx", "pt": "support_troubleshoot", "text": "Diferentes métodos de conexión según el tipo de teléfono Android y el iPhone (iOS) utilizan métodos diferentes para enviar la pantalla del dispositivo al televisor."}
+{"id": "t02191", "cc": "mx", "pt": "support_troubleshoot", "text": "Métodos de conexión según el tipo de smartphone Caso 1."}
+{"id": "t02192", "cc": "mx", "pt": "support_troubleshoot", "text": "Close Con la función de compartir pantalla de tu smartphone, puedes duplicar de forma inalámbrica la pantalla y el audio de tu teléfono en tu televisor LG."}
+{"id": "t02193", "cc": "mx", "pt": "support_troubleshoot", "text": "No se necesitan cables."}
+{"id": "t02194", "cc": "mx", "pt": "support_troubleshoot", "text": "En Android, desliza el dedo hacia abajo desde la parte superior de la pantalla para abrir el panel de ajustes rápidos y selecciona tu televisor LG de la lista de dispositivos disponibles."}
+{"id": "t02195", "cc": "mx", "pt": "support_troubleshoot", "text": "En el iPhone, asegúrate de que el teléfono y el televisor estén conectados a la misma red Wi-Fi; a continuación, abre el Centro de control y utiliza la función «Duplicar pantalla» (AirPlay) para seleccionar tu televisor."}
+{"id": "t02196", "cc": "mx", "pt": "support_troubleshoot", "text": "Si tu iPhone no se conecta, abre el [Panel de control de inicio] en tu televisor y comprueba que AirPlay esté activado."}
+{"id": "t02197", "cc": "mx", "pt": "support_troubleshoot", "text": "¿Por qué mi móvil no se conecta a la tele?"}
+{"id": "t02198", "cc": "mx", "pt": "support_troubleshoot", "text": "Con la función de compartir pantalla de tu smartphone, puedes duplicar de forma inalámbrica la pantalla y el audio de tu teléfono en tu televisor LG."}
+{"id": "t02199", "cc": "mx", "pt": "support_troubleshoot", "text": "Para conectarte correctamente, utiliza la función de compartir pantalla que se adapte al modelo de tu teléfono."}

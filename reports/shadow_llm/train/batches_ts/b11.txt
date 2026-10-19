@@ -1,0 +1,265 @@
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001175-20155052624070/
+문장:
+t02200 Los idiomas disponibles varían según la región, y solo se pueden seleccionar los idiomas que aparecen en la lista.
+t02201 Cómo cambiar la configuración del idioma Configuración de idioma por año del modelo Televisores de 2021 o posteriores (webOS 6.0 o posterior): pulse [Configuración] en el mando a distancia y, a continuación, seleccione [Todas las configuraciones] → [General] → [Sistema] → [Idioma].
+t02202 Televisores de 2020 o anteriores (webOS 5.0 o anterior): pulse [Configuración] en el mando a distancia y, a continuación, seleccione [Todas las configuraciones] → [General] → [Idioma].
+t02203 Cómo cambiar la configuración de idioma en televisores 2025 o posteriores (webOS 25 o posterior) 1.
+t02204 [LG TV] ¿Cómo cambio el idioma de mi televisor?
+t02205 Close La configuración de idioma le permite cambiar el idioma del menú en pantalla, el idioma del audio para las transmisiones digitales y el idioma del teclado en pantalla.
+t02206 La ruta de configuración puede variar en función de la versión de webOS.
+t02207 Configuración de idioma disponible Idioma del menú Puede seleccionar el idioma que se muestra en la pantalla.
+t02208 El idioma del reconocimiento de voz se configura automáticamente para que coincida con el idioma del menú que seleccione.
+t02209 El reconocimiento de voz solo está disponible en determinados modelos.
+t02210 Idioma del audio Puede seleccionar su idioma preferido cuando vea emisiones digitales que contengan varios idiomas de audio.
+t02211 Esta configuración solo se aplica a las emisiones digitales.
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001176-20155102610583/
+문장:
+t02212 Si no traes las piezas necesarias de la aspiradora, es posible que no podamos ofrecerte el servicio de reparación.
+t02213 Product Register Product Registration Failed Enviar Volver a los resultados Tu correo electrónico se ha registrado correctamente.
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001176-20155268065571/
+문장:
+t02214 La puerta izquierda se puede ajustar hasta 2 mm.
+t02215 Cada clip eleva la puerta 1 mm, y puedes utilizar hasta dos clips.
+t02216 Close Si las puertas de tu frigorífico LG están desiguales, puedes nivelarlo girando las patas de nivelación o los tornillos de ajuste de altura de la parte inferior con una llave inglesa.
+t02217 No obstante, si las puertas están desalineadas en sentido longitudinal, te recomendamos que te pongas en contacto con el servicio de atención al cliente de LG para que te ayuden, ya que ajustarlas tú mismo podría dañar el suelo.
+t02218 ¿Por qué las puertas del frigorífico están desiguales?
+t02219 Si el suelo debajo del frigorífico está irregular o no es firme, es posible que el frigorífico no quede nivelado.
+t02220 Esto puede provocar que las puertas queden desalineadas.
+t02221 Cómo alinear las puertas desiguales de la nevera Paso 1.
+t02222 Alinea las puertas que tengan alturas desiguales Puedes ajustar la altura de la puerta mediante el tornillo de ajuste de altura situado en la bisagra inferior.
+t02223 Sigue estos pasos: 1.
+t02224 Importante Si las puertas del frigorífico están desalineadas de delante hacia atrás y es necesario alinearlas, mover el aparato podría dañar el suelo.
+t02225 Si las puertas de tu frigorífico LG están desiguales, puedes nivelarlo girando las patas de nivelación o los tornillos de ajuste de altura de la parte inferior con una llave inglesa.
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001176-20155101724174
+문장:
+t02226 [Aspiradora LG] ¿Por qué no se cierra la tapa de la bolsa de polvo?
+t02227 Close Modelos compatibles: V-C412T, V-C413T, V-C414T, V-C415T, V-C416T, V-C419N Averigüémoslo.
+t02228 Es posible que la tapa no se cierre si utiliza una bolsa para el polvo que no esté diseñada para su modelo o que no sea una bolsa para el polvo original de LG.
+t02229 Utiliza una bolsa para el polvo original de LG diseñada para tu modelo.
+t02230 Instala la bolsa para el polvo ➔ Asegúrate de desconectar el cable de alimentación de la toma de corriente.
+t02231 Desconecta la manguera flexible del cuerpo principal.
+t02232 Abre la tapa, suelta el gancho de la bolsa para el polvo y retira la bolsa.
+t02233 Asegúrate de que la bolsa para el polvo esté orientada en la dirección correcta y, a continuación, colócala en el soporte con la flecha apuntando hacia abajo.
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001178-20155006054500
+문장:
+t02234 La disponibilidad del servicio y el contenido compatible pueden variar según el país.
+t02235 LG Gallery+ está disponible en televisores LG lanzados en 2025 o posteriores que funcionan con [webOS25] o posterior.
+t02236 [LG TV] ¿Cómo se utiliza LG Gallery+?
+t02237 Close LG Gallery+ es un servicio integrado que combina Always Ready y la aplicación LG Gallery.
+t02238 Ofrece una gran variedad de contenido visual, incluyendo pinturas famosas, paisajes naturales e imágenes generadas por IA.
+t02239 Además del contenido gratuito, una suscripción de pago te da acceso a una selección más amplia para una experiencia visual más rica.
+t02240 Este servicio es compatible con los modelos que ejecutan webOS 25 o posterior.
+t02241 Al integrar la anterior aplicación Gallery con Always Ready, LG Gallery+ ofrece una experiencia visual más inmersiva con funciones adicionales.
+t02242 Consulte el manual del usuario de su producto para obtener detalles específicos.
+t02243 Mientras se reproduce el contenido, utilice el mando Magic Remote para seleccionar [V] en la pantalla y abrir el menú de opciones.
+t02244 Fotos: Establece fotos de dispositivos externos conectados, dispositivos móviles conectados a través de LG ThinQ o Google Fotos como fondo de pantalla.
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001177-20155117733591/
+문장:
+t02245 Close Los códigos de error de los aires acondicionados LG varían según el modelo.
+t02246 Cómo comprobar si hay errores en los aires acondicionados LG Cómo comprobar si hay fallos en los aparatos de aire acondicionado de pared o de suelo Cómo leer los códigos de error en los aparatos de aire acondicionado de pared o de suelo El primer LED indica el dígito de las unidades del código de error.
+t02247 El segundo LED indica la decena.
+t02248 (Ejemplo: si el primer LED parpadea 5 veces seguidas, significa que se trata del código de error CH05.) Cómo interpretar los códigos de error de los aires acondicionados de suelo La pantalla muestra un error.
+t02249 Modelos LED: El código de error se muestra en la siguiente secuencia: CH → 02 → CH → 02 (se repite) Cómo leer los códigos de error en los aparatos de aire acondicionado de casete de techo Indicador LED El color del indicador es verde o rojo, según el modelo.
+t02250 Panel de visualización Las letras «CH» y el código de error se alternan en la pantalla cada 0,5 segundos.
+t02251 Los códigos de error de los aires acondicionados LG varían según el modelo.
+t02252 En el caso de las unidades de pared, comprueba el LED del mando a distancia, mientras que los modelos de pie los muestran en el panel o en el LED.
+t02253 Consulte los ejemplos y las instrucciones para leer los códigos.
+t02254 (Ejemplo: si la pantalla muestra CH → 2 → 37 en ese orden, significa que el código de error es CH237.) Cómo interpretar los códigos de error en los aparatos de aire acondicionado portátiles o de ventana Modelos con pantalla LCD: El código de error se muestra directamente en la pantalla.
+t02255 ※ Nota: Si se produce un error durante el funcionamiento y no se puede resolver reiniciando el producto, aparecerá en la aplicación ThinQ.
+t02256 El número de parpadeos indica el número (1, 2, 3, etc.), y el intervalo entre parpadeos indica el dígito: Intervalo largo : Cifra de cientos Intervalo medio : Dígito de las decenas Intervalo corto : La unidad Los códigos de error pueden resultar difíciles de interpretar en tiempo real.
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001176-20155103098227/
+문장:
+t02257 Si no se trata de un corte de agua en la vivienda, comprueba que la manguera de suministro de agua no esté aplastada ni rota.
+t02258 Close ¿Aparece el mensaje [IE] (error de entrada de agua) en el panel de control del lavavajillas mientras está en funcionamiento?
+t02259 ¿Oyes una alarma que suena como «ding-dong» mientras no llega agua a la cuba?
+t02260 Causas y síntomas No hay suministro de agua o la manguera de suministro está oprimida.
+t02261 La válvula de agua está cerrada.
+t02262 Tu lavavajillas expulsa y vacía agua con fuerza y de forma repetida en el interior de la máquina mientras lava los platos.
+t02263 Si no se suministra la cantidad de agua indicada al lavavajillas, aparecerá el error [IE].
+t02264 Prueba esto ¿Se ha cortado el suministro de agua?
+t02265 ¿O se ha aplastado o roto la manguera de suministro de agua?
+t02266 Es posible que la manguera se haya aplastado o roto al colocar un objeto pesado sobre ella.
+t02267 Si es así, endereza la manguera para garantizar un flujo de agua fluido.
+t02268 Si no sale agua de los grifos del fregadero o del baño, es posible que toda la casa se haya quedado sin suministro de agua.
+t02269 Para evitar fugas de agua, es posible que el técnico haya cerrado la válvula de suministro de agua al instalar el lavavajillas.
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001176-20154978949801/
+문장:
+t02270 Pulse los botones [Turbo] y [Mode] al mismo tiempo durante más de 3 segundos.
+t02271 [Aspiradora robot LG] El mando a distancia no funciona.
+t02272 Close Durante la carga, el botón [Repetir limpieza] del mando a distancia no funciona.
+t02273 ※ El diagnóstico inteligente y el botón de configuración de tiempo solo funcionan durante la carga.
+t02274 ¿Ha pasado demasiado tiempo desde la última vez que utilizó el mando a distancia?
+t02275 ➔ Reemplace la pila del mando a distancia.
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001177-20155297256775/
+문장:
+t02276 ¿Por qué se pone en rojo («Deficiente») el indicador de mi purificador de aire LG cuando enciendo el aire acondicionado?
+t02277 Close Al encender el aire acondicionado, se genera una corriente de aire en la habitación, lo que puede hacer que el purificador de aire detecte polvo o gases.
+t02278 Esto es normal y no indica ningún fallo de funcionamiento.
+t02279 Ten en cuenta que El aire acondicionado no emite polvo ni gases.
+t02280 La corriente de aire puede hacer que el polvo se desplace, lo que hace que el purificador de aire lo detecte.
+t02281 Si el indicador sigue mostrando «Deficiente» tras un uso prolongado, te recomendamos que compruebes el filtro.
+t02282 ¿Por qué cambia el indicador de tu purificador de aire cuando el aire acondicionado está encendido?
+t02283 Tu aire acondicionado aspira repetidamente el aire interior, lo enfría y lo devuelve a la habitación.
+t02284 ¿Tengo que revisar el purificador de aire si su indicador sigue encendido en rojo?
+t02285 Si observa el mismo cambio en la calidad del aire, el producto está funcionando con normalidad.
+t02286 Cuando solo está en funcionamiento tu purificador de aire y el aire circundante está limpio, este reduce automáticamente el caudal de aire.
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001176-20155103112024
+문장:
+t02287 Close Si no se puede añadir el suavizante Si la viscosidad del suavizante es demasiado alta, es posible que no se dosifique correctamente.
+t02288 Si el suavizante se ha dejado demasiado tiempo en el compartimento del detergente, es posible que se haya endurecido y no se pueda añadir.
+t02289 Cuando se añade en una fase temprana Si se ha añadido suavizante por encima de la línea «MAX», si la presión del agua es demasiado fuerte o si se cierra el compartimento del detergente a la fuerza, es posible que el suavizante se dosifique antes de tiempo.
+t02290 Prueba esto Si no se puede añadir el suavizante ➔ Si añades suavizante y lo dejas más de dos días, puede volverse más espeso o endurecerse.
+t02291 No dejes suavizante en el compartimento del detergente durante más de dos días.
+t02292 ➔ Limpia el compartimento del detergente periódicamente.
+t02293 Es posible que el agua no llegue correctamente al dosificador de detergente debido a residuos de detergente u otros factores, por lo que se recomienda desmontar y limpiar cada pieza periódicamente.
+t02294 De lo contrario, podría producirse una fuga de agua.
+t02295 Cómo limpiar el dosificador de detergente 1.
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001177-20155130680953/
+문장:
+t02296 Close Para mantener tu LG PuriCare™ AeroCat Tower limpio y en óptimas condiciones de funcionamiento, limpia con regularidad el filtro de polvo fino, el sensor de polvo y el exterior (la cúpula para gatos y el cojín).
+t02297 Aspira ligeramente el filtro y las superficies exteriores, y limpia el sensor de polvo con un bastoncillo de algodón ligeramente humedecido.
+t02298 En cuanto al cojín, recomendamos quitar la funda y lavarla a mano con un detergente suave.
+t02299 Cómo limpiar el filtro de la torre LG AeroCat La acumulación de polvo en el filtro puede reducir la eficacia de la purificación del aire.
+t02300 Siga estos pasos para limpiar el filtro de partículas finas.
+t02301 Retira la cubierta frontal Mirando hacia la parte frontal del producto (el lado con el logotipo de LG), tira con cuidado de los bordes superior izquierdo y derecho de la entrada de aire (tapa).
+t02302 Lávalo a mano y déjalo secar al aire a la sombra, o llévalo a la tintorería.
+t02303 ¿Qué debo hacer?
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001176-20155027710418/
+문장:
+t02304 Close Para cambiar los ajustes de temperatura, desbloquee la pantalla manteniendo pulsado el botón [Lock] durante al menos 3 segundos.
+t02305 Puede ajustar la temperatura del frigorífico entre 1 °C y 7 °C (34 °F y 45 °F) y la temperatura del congelador entre -15 °C y -23 °C (5 °F y -9 °F).
+t02306 Mantenga pulsado el botón Botón [Bloquear] en el panel de control durante al menos 3 segundos para liberar el bloqueo.
+t02307 Después de ajustar la temperatura, mantenga pulsado el botón [Lock] durante al menos 3 segundos para bloquear los ajustes del panel de control.
+t02308 Mantenga pulsado el botón [Bloquear] del panel de control durante al menos 3 segundos para desbloquear los controles.
+t02309 Para cambiar los ajustes de temperatura, desbloquee la pantalla manteniendo pulsado el botón [Lock] durante al menos 3 segundos.
+t02310 [Temperatura del frigorífico LG] ¿Cómo se ajusta la temperatura del frigorífico y del congelador?
+t02311 A continuación, utilice los botones [Refrigerator] o [Freezer] para ajustar la temperatura deseada.
+t02312 Cómo desbloquear el panel de control 1.
+t02313 Una vez que el icono de bloqueo cambie al icono de desbloqueo, podrá utilizar otros botones.
+t02314 Utilice esta función para congelar grandes cantidades de alimentos a la vez o para bajar rápidamente la temperatura del congelador.
+t02315 ¿Cuándo debo utilizar la función Ice Plus?
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001175-20154988830601
+문장:
+t02316 [Altavoz inalámbrico LG] ¿Por qué no se reconoce mi unidad USB?
+t02317 Close El altavoz solo admite unidades USB formateadas como FAT16 o FAT32.
+t02318 Si no se reconoce tu USB, comprueba el formato y las extensiones de los archivos.
+t02319 Si todo parece correcto, conecta la unidad USB a otro dispositivo para asegurarte de que funciona.
+t02320 Tenga en cuenta que algunos puertos USB-C son solo para cargar.
+t02321 Para obtener más información, consulte el Manual del usuario.
+t02322 ¿No reconoce el USB?
+t02323 Prueba estos pasos Comprueba el formato: el altavoz solo admite unidades USB con formato FAT16 o FAT32.
+t02324 Prueba la unidad USB: conéctala a otro dispositivo para confirmar que funciona correctamente.
+t02325 ¿Qué sistemas de archivos son compatibles con las unidades USB?
+t02326 No se admiten otros formatos (por ejemplo, NTFS, exFAT).
+t02327 Comprueba el tipo de archivo: es posible que los formatos de audio no compatibles no se reproduzcan en el altavoz.
+t02328 El altavoz solo admite unidades USB formateadas como FAT16 o FAT32.
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001177-20155060988637/
+문장:
+t02329 Función Pantalla El nombre de la función y su apariencia en la pantalla pueden variar según el modelo.
+t02330 [Código de error del aire acondicionado LG] La pantalla muestra SP, CP y PO.
+t02331 Close De un vistazo Los códigos SP, CP y PO aparecen cuando Power Cooling está habilitado.
+t02332 Dependiendo del modelo, puede aparecer con el nombre de Modo Jet, Refrigeración potente, Potencia de refrigeración por hielo, Potencia de refrigeración súper potente, Turbo Z, etc.
+t02333 Función de refrigeración eléctrica Esta función enfría rápidamente el espacio interior emitiendo aire más frío que el modo de refrigeración estándar.
+t02334 La refrigeración eléctrica solo está disponible durante el funcionamiento en modo refrigeración.
+t02335 No funciona durante los modos de deshumidificación o purificación de aire independiente.
+t02336 La velocidad del ventilador y la temperatura establecida se ajustan automáticamente.
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001178-20155311462655/
+문장:
+t02337 Close Conecta tu PC o portátil al televisor LG para disfrutar de la pantalla de tu ordenador en una pantalla más grande y envolvente.
+t02338 Sigue las instrucciones que se indican a continuación para empezar a compartir tu pantalla.
+t02339 Lo que debes saber antes de conectar tu ordenador al televisor 1.
+t02340 (Nota: Es posible que se aplique una tarifa de servicio si tu producto ya no está en garantía.) FAQ P.
+t02341 Para obtener más información, visita el sitio web de Soporte de Apple.) Caso 5.
+t02342 Para saltarte este paso la próxima vez que te conectes, selecciona [Establecer como predeterminado] en la pantalla.
+t02343 Diferentes especificaciones de los cables que afectan al audio y al vídeo Dependiendo del tipo o del fabricante del cable, es posible que las señales de audio o vídeo no se transmitan correctamente.
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001176-20155092738758
+문장:
+t02344 Close En primer lugar, haz una prueba sencilla para comprobar si la fuga se debe a un fallo de la lavadora.
+t02345 En el caso del detergente en polvo, el nivel adecuado de llenado es 5 mm por debajo del borde superior del compartimento del detergente.
+t02346 Vamos a identificar la causa de la fuga.
+t02347 ➔ Un charco cerca del desagüe puede indicar que la manguera de desagüe se ha desconectado o que el desagüe está obstruido, lo que provoca un reflujo.
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001176-20155027807109/
+문장:
+t02348 A continuación, se ofrece una breve descripción general y cómo utilizar cada opción según el tipo de modelo.
+t02349 Cómo utilizar las funciones [Remojo] y [Prelavado] según el tipo de modelo Modelos con un ciclo específico [Stain Care/Soak] (Cuidado de manchas/Remojo) o [Pre Wash] (Prelavado) en el dial.
+t02350 [Guía para lavadoras de carga frontal LG] Quiero usar la opción Remojo o Prelavado.
+t02351 Close [Pre Wash] es un ciclo de lavado corto que utiliza detergente para eliminar la suciedad más resistente antes de que comience el ciclo de lavado principal.
+t02352 [Remojar] ayuda a aflojar la suciedad incrustada remojando la ropa en agua y detergente durante un tiempo prolongado.
+t02353 ¿Te preguntas qué hacen las funciones [Remojo] y [Prelavado] en tu lavadora LG?
+t02354 Ambas opciones desempeñan un papel importante en el proceso de lavado.
+t02355 [Remojo]: Gire el dial para seleccionar el ciclo [Cuidado de manchas/Remojo].
+t02356 (Nota: Es posible que las opciones de [Prelavado] no estén disponibles en determinados ciclos).
+t02357 [Remojar][Prelavado].
+t02358 [Prelavado]: Gire el dial para seleccionar un ciclo de lavado y, a continuación, pulse el botón Lavar para seleccionar [Prelavado] (Nota: es posible que las opciones de [Prelavado] no estén disponibles en determinados ciclos).
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001177-20155048197233/
+문장:
+t02359 ※ El encendido de las lámparas durante el precalentamiento/descongelación puede variar según el modelo.
+t02360 [Climatizador LG] No proporciona calefacción y el precalentamiento tarda mucho tiempo.
+t02361 Close Si el precalentamiento tarda mucho y se produce con frecuencia, instale una guía de aire para evitar que la unidad exterior se enfríe, o retire los obstáculos o limpie el polvo para reducir el tiempo de precalentamiento y facilitar el rendimiento de la calefacción.
+t02362 Aire tibio soplando todo el día.
+t02363 Si la tubería no se precalienta lo suficiente debido a una caída repentina de la temperatura, el aire sale más lento de lo normal o sale aire tibio durante un período prolongado, lo que impide que suba la temperatura interior.
+t02364 El aire caliente se vuelve más ligero y asciende hacia el techo, mientras que el aire frío se vuelve más pesado y desciende.
+t02365 El aire solo está caliente en las proximidades de la salida de aire, y es posible que el resto del espacio interior se sienta frío.
+t02366 La lámpara de descongelación y la lámpara de precalentamiento se encienden con frecuencia.
+t02367 El refrigerante caliente del aire acondicionado circula por el interior, y el refrigerante frío lo hace por el exterior durante el modo de calefacción.
+t02368 Si el precalentamiento tarda mucho y se produce con frecuencia, instale una guía de aire para evitar que la unidad exterior se enfríe, o retire los obstáculos o limpie el polvo para reducir el tiempo de precalentamiento y facilitar el rendimiento de la calefacción.
+t02369 La unidad exterior se detiene temporalmente durante el desescarche y el sector de aire caliente se acorta, lo que provoca un calentamiento débil.
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001178-20155333776299/
+문장:
+t02370 Comprueba la pantalla del televisor (prueba de volumen) En primer lugar, comprueba si el problema está en el propio televisor o en un dispositivo externo.
+t02371 Close Si oyes el sonido del televisor pero la pantalla está en blanco, pulsa el botón [Volumen] del mando a distancia del televisor.
+t02372 Si el indicador de volumen aparece en la pantalla, es probable que la pantalla de tu televisor funcione correctamente.
+t02373 El problema puede deberse a un fallo en la señal procedente de un dispositivo externo, a una conexión suelta o a un cable HDMI defectuoso.
+t02374 Prueba a apagar y volver a encender el dispositivo externo, o a desconectar y volver a conectar el cable HDMI.
+t02375 ¿Por qué mi televisor tiene sonido pero no se ve nada?
+t02376 El dispositivo externo se ha bloqueado temporalmente o no está enviando señal de vídeo.
+t02377 El cable HDMI que conecta el televisor y el dispositivo externo está suelto o dañado.
+t02378 Hay un problema con el propio televisor.
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001178-20155379629056/
+문장:
+t02379 Close Si no oyes ningún sonido tras conectar tu ordenador al televisor LG con un cable HDMI, es posible que el ordenador esté utilizando un dispositivo de salida de audio incorrecto o que el cable esté suelto.
+t02380 Conexión suelta del cable HDMI: Es posible que el cable no esté bien conectado o que el cableado interno esté dañado, lo que impide que transmita correctamente la señal de audio.
+t02381 Ve a «Sistema», luego a «Sonido» y selecciona «Todos los dispositivos de sonido».
+t02382 Despliega la opción «Controladores de sonido, vídeo y juegos», haz clic con el botón derecho del ratón en el dispositivo de audio y selecciona «Actualizar controlador».
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001177-20155183806774
+문장:
+t02383 Remoja el filtro en una solución de detergente suave Mezcla un detergente suave con agua tibia (35 °C–40 °C / 95 °F–104 °F).
+t02384 La frecuencia de limpieza puede variar en función de las condiciones de uso, pero recomendamos limpiar el filtro cada 1 o 2 meses para mantener un rendimiento óptimo y ayudar a evitar el error E15.
+t02385 ¿Cuáles son las causas y las soluciones del código de error E15?
+t02386 Close El código de error E15 aparece en la pantalla de tu purificador de aire LG SIGNATURE cuando se ha acumulado polvo o suciedad en el filtro negro para partículas ultrafinas.
+t02387 Retira el filtro, lávalo con agua tibia y un detergente suave, déjalo secar completamente a la sombra y, a continuación, vuelve a colocarlo para solucionar el error.
+t02388 ¿Por qué aparece el código de error E15?
+t02389 El código de error E15 aparece cuando el filtro negro para partículas ultrafinas se ensucia y obstaculiza el flujo de aire.
+t02390 Esta alerta ayuda a proteger tu purificador de aire y a mantener su rendimiento.
+t02391 Basta con limpiar bien el filtro para que tu purificador de aire vuelva a funcionar con normalidad.
+t02392 Cómo limpiar el filtro negro de partículas ultrafinas para solucionar el error E15 Paso 1.
+t02393 Retira el filtro negro para partículas ultrafinas Retira con cuidado el filtro sucio de la bandeja.
+t02394 Abre la bandeja del filtro Pulsa el botón de liberación de la bandeja del filtro y tira de ella hacia delante.
+t02395 Vuelve a colocar la bandeja del filtro Comprueba que el filtro negro desodorizante fotocatalítico esté correctamente instalado y, a continuación, empuja la bandeja hasta el fondo del purificador de aire hasta que quede completamente cerrada.
+
+페이지 정보: 국가=MX, URL=https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001177-20155198570581/
+문장:
+t02396 No se trata de un fallo.
+t02397 ¿Por qué el purificador de aire LG empieza a hacer más ruido de repente, incluso cuando el indicador está en azul (buen estado)?
+t02398 Close Cuando el purificador de aire hace circular automáticamente el aire interior, es posible que la velocidad del ventilador aumente de repente y que se perciba un aumento del ruido.
+t02399 Es un funcionamiento normal provocado por una función automática diseñada para mejorar la circulación del aire.

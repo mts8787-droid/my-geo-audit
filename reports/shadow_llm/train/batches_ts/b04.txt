@@ -1,0 +1,262 @@
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20155297567656/
+문장:
+t00800 Zieh den Kühlschrank ab, warte 5 Minuten und stecke ihn wieder ein, um das System zurückzusetzen.
+t00801 Wenn das Problem weiterhin besteht, wenden Sie sich bitte an den LG-Kundensupport für Unterstützung.
+t00802 Warum flackert das Bedienfeld meines Kühlschranks?
+t00803 Es gibt zwei Hauptgründe, warum das Bedienfeld Ihres LG-Kühlschranks flackern kann.
+t00804 (Bitte beachten Sie, dass das Design und der Standort der Präsentation je nach Modell variieren können.) Externe Faktoren: Vorübergehende Systemfehler, verursacht durch Stromschwankungen (wie Blitz, Stromausfälle oder eine lose Steckdosenverbindung).
+t00805 Hohe Luftfeuchtigkeit oder Schmutz in der Nähe des Displays können ebenfalls die Funktion beeinträchtigen.
+t00806 Verdirbt mein Essen, wenn ich den Kühlschrank für 5 Minuten ausstecke?
+t00807 Wie man ein flackerndes Display repariert Schritt 1.
+t00808 Warte 10 Sekunden, dann schalte es wieder ein.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20150105147433/
+문장:
+t00809 Lieferung und Installation Installation Haushalts- geräte 11/10/2015 Drucken Teilen Diesen Inhalt teilen.
+t00810 Close Lieferung und Installation Lieferung und Installation Lieferung und Installation Artikel-Feedback * Pflichtfelder 1.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20154978945901
+문장:
+t00811 [LG Roboter-Staubsauger] Die Fernbedienung funktioniert nicht Repair Haushalts- geräte 01/13/2026 Drucken Teilen Diesen Inhalt teilen.
+t00812 Drücken Sie die [Turbo]- und [Mode]-Tasten gleichzeitig für mehr als 3 Sekunden.
+t00813 Close Während des Ladens funktioniert der [Wiederholte Reinigung]-Knopf an der Fernbedienung nicht.
+t00814 ※ Intelligente Diagnose- und Zeiteinstellungstaste funktionieren nur während des Ladens.
+t00815 Probier das mal Ist es zu lange her, seit du die Fernbedienung zuletzt benutzt hast?
+t00816 ➔ Batterie in der Fernbedienung wechseln.
+t00817 Erfahren Sie mehr.
+t00818 Wie man die Batterien in einer Fernbedienung montiert 1.
+t00819 Auf der Rückseite der Fernbedienung drücken Sie den Haken, um die Batterieabdeckung zu öffnen.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20155299038489/
+문장:
+t00820 Brandgeruch oder -geräusch der neuen LG-Mikrowelle: Ursachen und Lösungen Troubleshooting Haushalts- geräte 07/08/2026 Drucken Teilen Diesen Inhalt teilen.
+t00821 Close Wenn Sie Ihre LG-Mikrowelle oder Ihren Ofen zum ersten Mal benutzen, können Sie einen leichten Brandgeruch wahrnehmen oder ein Geräusch hören, wenn die Innenteile sich erhitzen.
+t00822 Warum riecht es beim ersten Gebrauch leicht brennend?
+t00823 Innenteile heißen sich auf Wenn du das Produkt zum ersten Mal verwendest, erhitzen sich neue Innenteile.
+t00824 Die Herstellungsrückstände verdampfen Kleine Mengen harmloser Rückstände aus dem Herstellungsprozess können bei hohen Temperaturen verdunsten und bei den ersten Anwendungen einen Geruch verursachen.
+t00825 Anmerkung Der Geruch bei der ersten Anwendung ist vorübergehend und völlig sicher.
+t00826 Wenn Sie Ihre LG-Mikrowelle oder Ihren Ofen zum ersten Mal benutzen, können Sie einen leichten Brandgeruch wahrnehmen oder ein Geräusch hören, wenn die Innenteile sich erhitzen.
+t00827 Das ist völlig normal.
+t00828 Das ist vorübergehend und völlig sicher, daher besteht kein Grund zur Sorge.
+t00829 Der Geruch verschwindet nach ein paar Anwendungen von selbst, oder du kannst die Deodorisier-Funktion nutzen, um ihn schneller zu entfernen.
+t00830 Lass den Geruch natürlich verblassen Verwenden Sie das Produkt einfach ein paar Mal.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20155092733360/
+문장:
+t00831 [LG Frontlader-Waschmaschine] Fehlerbehebung von Lecks Troubleshooting Haushalts- geräte 03/24/2026 Drucken Teilen Diesen Inhalt teilen.
+t00832 ※ Für Pulverreiniger liegt die passende Füllstufe 5 mm unter dem oberen Rand des Waschmittelspenders.
+t00833 Für Pulverreiniger liegt die entsprechende Füllstufe 5 mm unterhalb der Oberseite des Waschmittelspenders.
+t00834 Close Führen Sie zunächst einen einfachen Test durch, um zu prüfen, ob das Leck auf eine Waschmaschinenstörung zurückzuführen ist.
+t00835 Wenn die Ursache nicht mit einer Fehlfunktion zusammenhängt, können Servicegebühren anfallen – auch während der Garantiezeit.
+t00836 Testen Sie, ob die Waschmaschine defekt ist Wie man den Test durchführt 1.
+t00837 Führen Sie einmal einen Spülgang mit leerem Behälter durch.
+t00838 Wenn während dieses Vorgangs Wasser aus der Waschmaschine austritt, fordern Sie bitte einen Service an.
+t00839 Hinweis: Wenn während des Ablassen der Wanne Wasser von hinten austritt, kann das Abflussloch verstopft sein.
+t00840 Halten Sie sich immer an die Dosierung auf dem Waschmitteletikett.
+t00841 Für Flüssigwaschmittel bitte nicht über die MAX-Linie hinaus füllen.
+t00842 Leckt nur, wenn die Waschmaschine abläuft.
+t00843 Wenn sich der Abfluss und die Wasserhähne hinter der Waschmaschine befinden, könnten sie die Ursache des Lecks von hinten sein.
+t00844 Bitte reinigen Sie die Gummidichtung.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000816-20155198565199/
+문장:
+t00845 Warum wird der LG-Luftreiniger plötzlich lauter, selbst wenn der Indikator blau ist (gut)?
+t00846 Troubleshooting Klima 05/22/2026 Drucken Teilen Diesen Inhalt teilen.
+t00847 Warum wird der Lüfter plötzlich lauter, wenn die Kontrollleuchte "Gut" (blau) anzeigt?
+t00848 Was sollte man überprüfen, wenn der Lüfter lauter wird oder die Anzeigefarbe nicht zur tatsächlichen Luftqualität passt Wenn der Ventilator plötzlich lauter wird oder der Luftqualitätsindikator "Schlecht" anzeigt, selbst wenn der Staubstand niedrig ist, befolgen Sie die untenstehenden Schritte.
+t00849 Close Wenn der Luftreiniger die Innenraumluft automatisch zirkuliert, kann die Lüftergeschwindigkeit plötzlich steigen, und Sie können eine Zunahme des Lärms bemerken.
+t00850 Das ist keine Fehlfunktion.
+t00851 Der normale Betrieb wird durch eine automatische Funktion verursacht, die die Luftzirkulation verbessern soll.
+t00852 Im Auto-Modus läuft der Luftreiniger, wenn die Luftqualität 50 Minuten lang sauber bleibt (grün oder blau), mit mittlerer Lüftergeschwindigkeit für 10 Minuten, um die Luft zirkulieren zu lassen.
+t00853 Dies ist Teil des automatischen Luftzirkulationsprozesses des Luftreinigers.
+t00854 Dieser Leitfaden wurde für alle Modelle erstellt, daher können die Bilder oder Inhalte sich von Ihrem Produkt unterscheiden.
+t00855 Das ist normal.
+t00856 Belüfte den Raum Abgestandene Innenraumluft kann den Sensor auslösen, wenn der Raum schon längere Zeit nicht belüftet wurde.
+t00857 Warte und überprüfe den Status Wenn der Luftreiniger die Luft automatisch zirkuliert, kann der Lüfterlärm für etwa 10 Minuten zunehmen.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20153409126567
+문장:
+t00858 Troubleshooting Haushalts- geräte 07/07/2026 Drucken Teilen Diesen Inhalt teilen.
+t00859 ➔ Wenn die Temperatur des Gefrierschranks auf [niedrig] oder [-16 °C bis -17 °C] eingestellt ist, ist der Gefrierschrank möglicherweise nicht kalt genug und die Lebensmittel können auftauen oder schmelzen.
+t00860 Stellen Sie die Temperatur auf [hoch] oder [-22 °C bis -24 °C] ein und lagern Sie die Lebensmittel, die leicht schmelzen können, wie z.
+t00861 Oberer Kühlschrank, unterer Gefrierschrank Die Temperatur des Gefrierschranks kann zwischen -15°C und -23°C eingestellt werden.
+t00862 Wenn Sie das Gefühl haben, dass die Temperatur des Gefrierschranks nicht kalt genug ist, stellen Sie sie zwischen -21°C und -23°C ein.
+t00863 ➔ Stellen Sie den Kühlschrank an einem Ort auf, an dem die Umgebungstemperatur zwischen 5 °C und 43 °C liegt.
+t00864 ➔ Beim ersten Stromanschluss tritt die kühle Luft nach ca.
+t00865 [LG Kühlschrank einfrieren] Eiscreme schmilzt oder gehackter Knoblauch taut auf.
+t00866 Close Ursachen und Symptome Die Temperatur ist auf Hoch eingestellt.
+t00867 Die Temperatur am Aufstellungsort ist hoch.
+t00868 Das Kaltluftzirkulationsloch ist verstopft.
+t00869 Die Rückseite des Produkts ist mit Staub verstopft.
+t00870 Wenn die Temperatur im Inneren zu hoch eingestellt ist oder verändert wird, können gelagerte Lebensmittel auftauen oder schmelzen.
+t00871 Wenn Sie die Kühlschranktür im Sommer häufig öffnen und schließen, kann die Temperatur im Inneren steigen und die Lebensmittel können auftauen oder schmelzen.
+t00872 Gibt es eine Heizung [Heiz-/Kochgerät] in der Nähe?
+t00873 Entfernen Sie mit einem Staubsauger nur den Staub von der Abdeckung des Technikraums.
+t00874 Steht der Kühlschrank auf einem Balkon oder an einem Ort mit direkter Sonneneinstrahlung?
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000814-20151261850160/
+문장:
+t00875 Troubleshooting Home Entertainment 04/28/2021 Drucken Teilen Diesen Inhalt teilen.
+t00876 [Video]Bei Verwendung einer Set-Top-Box hat der Fernseher kein Bild oder Ton.
+t00877 Close [Video]Bei Verwendung einer Set-Top-Box hat der Fernseher kein Bild oder Ton.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000816-20155183802650/
+문장:
+t00878 Troubleshooting Klima 05/14/2026 Drucken Teilen Diesen Inhalt teilen.
+t00879 Weiche den Filter in einer milden Reinigungslösung ein Mischen Sie ein mildes Waschmittel mit warmem Wasser (35 °C–40 °C / 95 °F–104 °F).
+t00880 Die Reinigungsfrequenz kann je nach Nutzungsbedingungen variieren, aber wir empfehlen, den Filter alle 1–2 Monate zu reinigen, um optimale Leistung zu erhalten und den E15-Fehler zu vermeiden.
+t00881 Was sind die Ursachen und Lösungen für den E15-Fehlercode?
+t00882 Close Der E15-Fehlercode erscheint auf dem Display Ihres LG SIGNATURE Luftreinigers, wenn sich Staub oder Schmutz am Ultra Fine Dust Black Filter angesammelt hat.
+t00883 Nimm den Filter ab, wasche ihn in warmem Wasser mit einem milden Waschmittel, lass ihn vollständig in einem schattigen Bereich trocknen und setze ihn dann wieder ein, um den Fehler zu beheben.
+t00884 Warum erscheint der E15-Fehlercode?
+t00885 Der E15-Fehlercode erscheint, wenn der Ultra Fine Dust Black Filter verschmutzt wird und den Luftstrom einschränkt.
+t00886 Dieser Alarm schützt Ihren Luftreiniger und erhält seine Leistung aufrecht.
+t00887 Eine gründliche Reinigung des Filters ermöglicht es, dass Ihr Luftreiniger normal funktioniert.
+t00888 Setze den Filter wieder in die Wanne ein Sobald der Filter vollständig trocken ist, setze ihn wieder ein und achte darauf, dass er in die richtige Richtung zeigt.
+t00889 Der E15-Fehler tritt auch nach Reinigen und vollständigem Trocknen des Filters weiterhin auf.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20155102927381/
+문장:
+t00890 [LG CordZero A9S] (Modell 2025) Wird die Saugkraft schwächer, oder schaltet sich der Staubsauger während der Nutzung plötzlich aus?
+t00891 Troubleshooting Haushalts- geräte 03/31/2026 Drucken Teilen Diesen Inhalt teilen.
+t00892 Close Finden wir mehr heraus.
+t00893 Bitte reinigen Sie das Produkt.
+t00894 Wenn das Produkt mit Fremdkörpern verstopft ist, macht der Motor ein Brummgeräusch, und eine Blockadebenachrichtigung erscheint im Statusdisplay.
+t00895 Wenn die Verstopfung weiterhin besteht, wird der Strom abgeschaltet, um das Produkt zu schützen, und ein Alarm ertönt.
+t00896 Probier das mal.
+t00897 Wenn die Düse oder das Verlängerungsrohr mit Fremdkörpern verstopft ist, kann das Produkt zum Schutz ausgeschaltet werden.
+t00898 • Setze immer den Abluftfilter und Vorfilter vor der Benutzung zusammen.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT00001737-20155199000059
+문장:
+t00899 Was zu tun, wenn Wasser in die Außeneinheit gelangt Troubleshooting Klima 05/21/2026 Drucken Teilen Diesen Inhalt teilen.
+t00900 Close Wenn Wasser in die Außeneinheit Ihrer LG-Klimaanlage gelangt, schalten Sie den Strom nicht sofort ein.
+t00901 Die nächsten Schritte hängen vom Wasserstand ab.
+t00902 Wenn das Wasser unter den Rohranschlüssen geblieben ist, lassen Sie das Gerät zwei bis drei Tage natürlich trocknen, bevor Sie es verwenden.
+t00903 Wenn das Wasser jedoch die Rohrverbindungen erreicht oder darüber hinausgestiegen ist, schalten Sie sofort den Leistungsschalter aus und fordern Sie eine professionelle Inspektion an.
+t00904 Warnung • Risiko eines elektrischen Stromschlags: Berühren Sie das Außengerät, das Stromkabel oder den Sicherungsautomaten nicht mit nassen Händen oder während Sie im Wasser stehen.
+t00905 • Nicht zerlegen: Öffnen oder zerlegen Sie eine überflutete Außeneinheit nicht selbst.
+t00906 Warum kommt ein schlechter Geruch von meiner LG-Klimaanlage?
+t00907 •Service anfordern: Kontaktieren Sie den LG-Kundensupport und fordern Sie einen Besuch von einem qualifizierten Servicetechniker für eine vollständige Sicherheitsinspektion an.
+t00908 Wenn das Wasser unterhalb der Rohrverbindungen blieb Am Boden der Außeneinheit befinden sich keine elektrischen Bauteile.
+t00909 Kann ich einen Föhn benutzen, um das Außengerät schneller zu trocknen?
+t00910 Wenn diese Schritte das Problem nicht lösen, besuchen Sie die LG-Kundensupport-Website für weitere Unterstützung.
+t00911 • Das Gerät trocknen: Lassen Sie es zwei bis drei Tage lang in einem gut belüfteten Bereich natürlich trocknen.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000816-20155135968516/
+문장:
+t00912 Troubleshooting Klima 04/17/2026 Drucken Teilen Diesen Inhalt teilen.
+t00913 [LG AeroCat Turm] Wie ersetze ich die Katzendome?
+t00914 Close Um die Cat Dome an deinem LG AeroCat Tower zu ersetzen, drücke gleichzeitig die Cat Dome Base Separation Buttons an beiden Seiten am unteren Rand des Cat Dome und hebe dann die aktuelle Kuppel ab.
+t00915 Als Nächstes richten Sie die Vorderseite der neuen Cat Dome (Statuspanel) mit der Vorderseite des Hauptkörpers (LG-Logo) aus und drücken Sie sie so lange an, bis Sie ein Klicken hören.
+t00916 Wenn die Kattenkuppel nicht korrekt montiert ist, schaltet sich der Hauptkörper aus Sicherheitsgründen nicht ein.
+t00917 Bitte stellen Sie sicher, dass die Kuppel richtig ausgerichtet und sicher verriegelt ist.
+t00918 Wie entferne und installiere ich die Katzenkuppel?
+t00919 Entfernung der aktuellen Katzenkuppel 1.
+t00920 Ich habe die Katzenkuppel installiert, aber der Strom lässt sich nicht einschalten.
+t00921 Beide Knöpfe gleichzeitig drücken und die Katzenkuppel nach oben ziehen, um sie vom Hauptkörper zu trennen.
+t00922 Entferne die Cat Dome und befestige sie wieder, sodass das LG-Logo am Hauptgehäuse und das Statuspanel an der Cat Dome in dieselbe Richtung zeigen, und drücke sie dann wieder hinein, bis du ein Klicken hörst.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20155102791515
+문장:
+t00923 [LG CordZero A9] Der Turbo-Modus funktioniert nicht Troubleshooting Haushalts- geräte 03/31/2026 Drucken Teilen Diesen Inhalt teilen.
+t00924 Die Saugkraft besteht aus 3 Stufen: Normal, Stark und Turbo.
+t00925 Verbrauchszeit und Saugkraft nach Modus (basierend auf voller Ladung) Normalmodus: 40 Minuten (25W) Starker Modus: 9 Minuten (80W) Turbo-Modus: 6 Minuten (140W) Dieser Leitfaden wurde für alle Modelle erstellt, daher können die Bilder oder Inhalte sich von Ihrem Produkt unterscheiden.
+t00926 Close Ursachen und Symptome Der Turbo-Modus funktioniert nicht.
+t00927 Zeigt der Batteriestandsanzeiger einen Balken oder weniger?
+t00928 → Bitte ersetze sie durch eine voll aufgeladene Batterie.
+t00929 Wenn die Batterie fast entladen ist, funktioniert der Turbo-Modus möglicherweise nicht.
+t00930 Wenn der Akku auf einen Balken oder weniger sinkt, ist der Akku leer.
+t00931 Batteriestandanzeiger Welchen Modus hast du benutzt, als du versucht hast, den Turbo-Modus zu aktivieren?
+t00932 Obwohl "Turbo (3 sec)" über der (+)-Taste aufgedruckt ist, Der Turbo-Modus wird aktiviert, wenn du die (+)-Taste im Strong-Modus länger als 3 Sekunden gedrückt hältst und gedrückt hältst.
+t00933 ※ Der Modus, der sofort aktiviert wird, wenn man den Power-Knopf drückt, ist der Normalmodus.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20150137222427/
+문장:
+t00934 Video] Kühlung nicht ausreichend Product Usage Haushalts- geräte 05/04/2016 Drucken Teilen Diesen Inhalt teilen.
+t00935 Close Video] Kühlung nicht ausreichend Video] Kühlung nicht ausreichend Video] Kühlung nicht ausreichend Artikel-Feedback * Pflichtfelder 1.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20155101720734
+문장:
+t00936 [LG Dampfreiniger] Warum riecht mein neuer Dampfreiniger nach Verbrannung?
+t00937 Ein leichter Geruch kann von den Gummiteilen rund um den Motor ausgehen, wenn das Produkt neu ist.
+t00938 Der Geruch verschwindet allmählich von selbst.
+t00939 Das ähnelt dem Geruch von neuen Möbeln oder einem neuen Auto.
+t00940 Wenn der Geruch unangenehm ist, sprühen Sie eine kleine Menge Geruchsreiniger auf den Motorfilter, um ihn zu reduzieren.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000816-20155366418381
+문장:
+t00941 Troubleshooting Klima 08/05/2026 Drucken Teilen Diesen Inhalt teilen.
+t00942 Kann ich meinen LG-Luftreiniger beim Kochen benutzen?
+t00943 Close Wir empfehlen, Ihren Luftreiniger während des Kochens auszuschalten.
+t00944 Fett und Feuchtigkeit beim Kochen können sich auf dem Filter ansammeln, seine Lebensdauer verkürzen und unangenehme Gerüche verursachen.
+t00945 Nach dem Kochen öffnen Sie die Fenster, um den Raum zu lüften, bevor Sie den Luftreiniger wieder einschalten.
+t00946 Vorsicht Stellen Sie den Luftreiniger nicht direkt neben eine Kochfläche oder einen Gasherd oder einen Induktionskoch.
+t00947 Warum sollte ich den Luftreiniger beim Kochen vermeiden?
+t00948 Verkürzt die Lebensdauer des Filters und verursacht Gerüche Geruchspartikel, feiner Staub, Fett und Feuchtigkeit, die beim Kochen entstehen, können sich auf dem Filter ansammeln.
+t00949 Schließen Sie die Fenster und schalten Sie den Luftreiniger ein Nachdem der Raum gründlich belüftet ist, schließen Sie die Fenster und schalten Sie den Luftreiniger ein, um verbliebene Gerüche und Feinstaub zu entfernen.
+t00950 Verursacht hohe Feinstaubwerte Das Grillen oder Braten von Speisen erzeugt eine große Menge Feinstaub, wodurch der auf dem Luftreiniger angezeigte Staubpegel schnell ansteigt.
+t00951 Wenn man den Luftreiniger allein betreibt, entstehen in dieser Situation übermäßige Schadstoffe im Filter.
+t00952 Auch wenn wenig Geruch vorhanden ist, empfehlen wir, den Luftreiniger auszuschalten und den Küchenabluftventilator oder die Dunstabzugshaube zu verwenden.
+
+페이지 정보: 국가=DE, URL=https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20155263922148/
+문장:
+t00953 [LG-Kühlschranktür] [Unterschrift] Die Auto-Tür öffnet sich nicht Troubleshooting Haushalts- geräte 06/22/2026 Drucken Teilen Diesen Inhalt teilen.
+t00954 Close Was ist Auto Door Open?
+t00955 Was ist Auto Door Open?
+t00956 Wenn Sie Ihren Fuß auf den Boden des Produkts setzen, öffnet sich die Tür auf der rechten Seite des Kühlschrankfachs automatisch, was die Handhabung auch mit beiden Händen erleichtert.
+t00957 Probier das mal Auto-Türöffne-Einstellung Wenn der Auto-Türöffne-Knopf gedrückt wird, erscheint im Bedienfeld das Auto-Tür-Öffnen-Symbol und die Funktion wird aktiviert.
+t00958 Jedes Mal, wenn der Knopf gedrückt wird, wechselt die Funktion Auto Door Open in der Reihenfolge AN → Ton Aus → AUS.
+t00959 Wenn die Tür auf der rechten Seite des Kühlschrankfachs etwa 20º geöffnet ist und nicht vollständig geöffnet ist, schließt sie automatisch 3 Sekunden später.
+t00960 Nutzung von Auto Door Open 1.
+t00961 Wenn Sie vor dem Produkt stehen, wird eine Nachricht mit der Aufschrift "TÜR ÖFFNEN" angezeigt.
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002101-20155101726333/
+문장:
+t00962 Cerrar Averigüémoslo.
+t00963 Si las ruedas faltan o están desgastadas, la boquilla puede pegarse más fácilmente a los suelos de vinilo.
+t00964 Sustituya la boquilla o póngase en contacto con el servicio de atención al cliente de LG.
+t00965 Comprueba la parte inferior de la boquilla para esquinas, la boquilla protectora para muebles o la boquilla de bajo ruido para localizar las ruedas, tal y como se muestra en la imagen siguiente.
+t00966 * Nota: Si falta alguna rueda, ponte en contacto con un centro de servicio técnico de LG para obtener ayuda.
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002103-20155311401807/
+문장:
+t00967 Cómo restablecer tu televisor Televisores de 2021 o posteriores [webOS 6.0 o posterior]: pulsa el botón [Configuración] del mando a distancia, [Todas las configuraciones], [General], [Sistema], [Restablecer a la configuración inicial] Televisores de 2020 [webOS 5.0]: Pulsa el botón [Configuración] del mando a distancia, [Todas las configuraciones], [Asistencia técnica], [Restablecer a la configuración inicial] Televisores de 2019 o anteriores [webOS 4.5 o anterior]: Pulsa el botón [Configuración] del mando a distancia, [Todas las configuraciones], [General], [Restablecer a la configuración inicial] Paso 2.
+t00968 En algunos modelos lanzados en 2024 o posteriormente, puedes seleccionar [Restablecer todo excepto la configuración de red] en el menú de restablecimiento para restablecer el sistema y resolver los errores, manteniendo al mismo tiempo la conexión Wi-Fi actual.
+t00969 El menú de configuración puede variar según el modelo.
+t00970 ¿Cómo puedo restablecer los ajustes de fábrica de mi televisor LG si se bloquea constantemente o muestra mensajes de error?
+t00971 Cerrar Si tienes problemas con el mando a distancia o se producen errores en las aplicaciones de tu televisor LG, la función [Restablecer a la configuración inicial (restablecimiento de fábrica)] puede ayudarte a resolver el problema.
+t00972 Ten en cuenta que al realizar un restablecimiento completo se eliminarán todas las aplicaciones instaladas y la configuración personal.
+t00973 Precaución Si la función de bloqueo del televisor está activada, tendrás que introducir tu contraseña para restablecer el televisor.
+t00974 (Puedes encontrar la contraseña predeterminada en el manual del usuario, disponible en la página web de LG.
+t00975 Si olvidas tu contraseña después de cambiarla, ponte en contacto con el servicio de atención al cliente de LG para que te ayuden.) No desconectes el cable de alimentación ni apagues el televisor durante el proceso de reinicio.
+t00976 ¿Cuándo debo reiniciar mi televisor?
+t00977 ¿Sigues necesitando ayuda?
+t00978 ¿Cómo puedo restablecer mi televisor LG a los ajustes de fábrica?
+t00979 Si tienes problemas con el mando a distancia o se producen errores en las aplicaciones de tu televisor LG, la función [Restablecer a la configuración inicial (restablecimiento de fábrica)] puede ayudarte a resolver el problema.
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002103-20155154189557/
+문장:
+t00980 Si el proceso de configuración falla, comprueba primero la conexión a Internet de tu televisor y asegúrate de que la configuración de País/Región sea la correcta.
+t00981 Conéctate a una red inalámbrica (Wi-Fi) siguiendo las instrucciones que se indican a continuación, según el año de fabricación de tu televisor.
+t00982 Televisores de 2021 en adelante (webOS 6.0 o posterior): pulsa [Configuración] en el mando a distancia → selecciona [Todas las configuraciones] en la pantalla del televisor → [General] → [Red] → [Conexión Wi-Fi] Televisores de 2020 (webOS 5.0): pulsa [Configuración] en el mando a distancia → selecciona [Todas las configuraciones] en la pantalla del televisor → [Conexión] → [Configuración de conexión de red] → [Conexión Wi-Fi] Televisores de 2019 (webOS 4.5): pulsa [Configuración] en el mando a distancia → selecciona [Todas las configuraciones] en la pantalla del televisor → [Conexión] → [Conexión Wi-Fi] Televisores de 2018 y anteriores (webOS 4.0 o anterior): pulsa [Configuración] en el mando a distancia → selecciona [Todas las configuraciones] en la pantalla del televisor → [Red] → [Conexión Wi-Fi] P.
+t00983 Televisores de 2021 en adelante (webOS 6.0 o posterior): pulsa [Configuración] en el mando a distancia → selecciona [Todas las configuraciones] en la pantalla del televisor → [General] → [Sistema] → [Ubicación] → [País de los servicios de LG] Televisores de 2020 y anteriores (webOS 5.0 o anterior): pulsa [Configuración] en el mando a distancia → selecciona [Todas las configuraciones] en la pantalla del televisor → [General] → [Ubicación] → [País de los servicios de LG] P.
+t00984 Cerrar Para acceder a diversos contenidos y servicios en tu televisor, conéctate a Internet y acepta los acuerdos de usuario.
+t00985 El servicio técnico puede verse limitado si el producto se utiliza fuera del país en el que se adquirió originalmente o si se compró en el extranjero.
+t00986 Si tienes problemas con la red, prueba a conectarte al punto de acceso móvil de tu teléfono para comprobar la conexión.
+t00987 ¿Por qué no puedo aceptar los acuerdos de usuario?
+t00988 Los televisores inteligentes de LG necesitan una conexión a Internet para ofrecer contenidos y servicios.
+t00989 Para garantizar el correcto funcionamiento de estos servicios y proteger sus datos personales, es necesario disponer de una conexión de red activa y aceptar las condiciones de uso.
+t00990 Los acuerdos de usuario no se pueden cargar sin conexión a Internet, ya que los televisores inteligentes son dispositivos que funcionan en red.
+t00991 Ponte en contacto con el servicio de atención al cliente de LG para obtener ayuda.
+t00992 Para obtener más información, consulta el manual de usuario de tu televisor.
+t00993 ¿Cómo me conecto a la red Wi-Fi?
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002103-20155069777915/
+문장:
+t00994 Cómo restablecer la configuración según el tipo de navegador Cómo restablecer la configuración de Microsoft Edge 1.
+t00995 Sin embargo, esto puede variar según el tipo y la versión del navegador, por lo que recomendamos hacer una copia de seguridad de cualquier dato importante con antelación.
+t00996 [PC LG] ¿Cómo restablezco la configuración de mi navegador web?
+t00997 Restablecer la configuración del navegador es una de las formas más eficaces de solucionar estos problemas.
+t00998 Elimina los archivos y datos temporales, restaura la configuración predeterminada del navegador, mejora el rendimiento y refuerza la seguridad.
+t00999 ¿Cuándo debo restablecer el navegador web?

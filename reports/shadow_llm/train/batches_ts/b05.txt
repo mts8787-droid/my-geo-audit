@@ -1,0 +1,256 @@
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002103-20155069777915/
+문장:
+t01000 Problemas con la reproducción de vídeos: la pantalla aparece distorsionada, pixelada o con un retraso significativo al reproducir vídeos.
+t01001 Inestabilidad del navegador: el navegador se bloquea inesperadamente, se congela o deja de responder debido a errores.
+t01002 Preocupaciones sobre la privacidad: desea mejorar la seguridad borrando las contraseñas guardadas y la información de inicio de sesión para proteger su privacidad personal.
+t01003 Haga clic en [Más] / [ ] en la esquina superior derecha y, a continuación, selecciona [Configuración].
+t01004 Abre Google Chrome.
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002101-20155028312043
+문장:
+t01005 Mantenga una separación mínima de 2 cm entre la parte superior de la puerta del frigorífico y el armario de cocina.
+t01006 Instale la unidad en un lugar donde la temperatura ambiente sea superior a 5 ℃ e inferior a 43 ℃, y evite instalarla cerca de fuentes de calor.
+t01007 ※ Para mover el producto de forma segura, asegúrese de dejar un espacio de entre 5 y 10 cm (1,9 y 3,9 pulgadas) entre el producto embalado y la ruta de entrega (pasillo, escaleras, etc.).
+t01008 Cerrar Comprueba la ubicación de la instalación.
+t01009 Compruebe si el espacio de instalación es suficiente para el tamaño del producto que se va a comprar o instalar.
+t01010 Al instalar el frigorífico, asegúrese de mantener un espacio libre entre el aparato y las paredes laterales, así como la pared trasera.
+t01011 Asegúrese de que el suelo sea firme y esté nivelado.
+t01012 Además, elija un lugar con poca humedad y buena ventilación.
+t01013 Comprueba los requisitos de espacio para la apertura de la puerta.
+t01014 El espacio lateral necesario para abrir la puerta del frigorífico al máximo ángulo varía en función del tipo de frigorífico.
+t01015 Compruebe la ruta de entrega hasta el lugar de instalación para garantizar la entrega segura del producto.
+t01016 Nevera para kimchi (El ejemplo se basa en una unidad de 400 litros).
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002101-20155102947848/
+문장:
+t01017 Productos con un botón de sonido de pulsación o de notificación en la pantalla ➔ Mantén pulsado el botón «Sonido de botón» o «Sonido de notificación» durante 3 segundos.
+t01018 Productos que cuentan con un botón de «Sonido de notificación» situado debajo del botón de enjuague ➔ Mantén pulsado el botón *Sonido de notificación, situado debajo del botón de enjuague, durante más de 3 segundos y se activará con un pitido.
+t01019 Para modelos sin indicador de sonido de notificación o de botón Modelo compatible: F1925 Después de encender el dispositivo y ponerlo en marcha, mantenga pulsado el botón «Delay End» durante 3 segundos para activar o desactivar la función.
+t01020 Modelo compatible: FR1003WC Después de encender la lavadora y ponerla en marcha, mantenga pulsado el botón «Aclarado + Centrifugado» durante 3 segundos para activar o desactivar la función.
+t01021 [Lavadora de carga frontal LG] Me gustaría saber cómo configurar los sonidos de los botones.
+t01022 Cerrar Al pulsar el botón de selección de ciclo o girar el dial de la pantalla frontal, oirás un pitido.
+t01023 Puedes activar o desactivar el sonido que se oye al pulsar los botones.
+t01024 (No aplicable a algunos modelos) - No es posible configurar el sonido de notificación si se pulsa el botón correspondiente inmediatamente después de encender el producto.
+t01025 Puede configurar el sonido de notificación después de encender el producto y seleccionar un ciclo o ponerlo en marcha.
+t01026 Puedes activar o desactivar la función.
+t01027 Modelos con pantalla LCD 1.
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002103-20155268985936/
+문장:
+t01028 3) Desplázate hacia abajo hasta la sección [Zoom], haz clic en el menú desplegable situado junto a [Zoom de página] y selecciona el nivel de zoom predeterminado que prefieras (por ejemplo, 125 %).
+t01029 ¿Cómo puedo restablecer al instante el nivel de zoom al 100 %?
+t01030 De este modo, el nivel de zoom se restablecerá inmediatamente al 100 %, independientemente de la configuración actual.
+t01031 Microsoft Edge admite niveles de zoom del 25 % al 500 %.
+t01032 El menú de ajustes puede variar según el modelo.
+t01033 Cerrar Para ampliar o reducir una página web en Microsoft Edge, mantén pulsada la tecla [Ctrl] y, a continuación, pulsa la tecla [+] o [-].
+t01034 También puedes ajustar el nivel de zoom desde el menú [Configuración y más], que aparece como el icono de tres puntos en la esquina superior derecha del navegador.
+t01035 ¿Por qué tengo que ampliar o reducir una página web?
+t01036 Si utilizas un monitor de alta resolución, o si el tamaño de letra predeterminado de una página web es demasiado pequeño, el texto puede resultar difícil de leer y provocar fatiga visual.
+t01037 Si una imagen o una página web es demasiado grande para caber en la pantalla, ajustar el nivel de zoom te ayuda a ver la página completa.
+t01038 Cómo ampliar o reducir la imagen en Microsoft Edge Paso 1.
+t01039 2) Mantén pulsada la tecla [Ctrl] y, a continuación, pulsa la tecla [+] para ampliar la imagen.
+t01040 ¿Puedo ampliar la imagen sin límites?
+t01041 • Esta guía se basa en modelos estándar.
+t01042 Cómo ampliar o reducir la imagen desde el menú de Edge 1) Haz clic en el menú [Configuración y más], que aparece como un icono con tres puntos en la esquina superior derecha de Microsoft Edge.
+t01043 3) Haz clic en el botón [-] o [+] para ajustar el nivel de zoom.
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002101-20155048216831
+문장:
+t01044 [Exterior del frigorífico LG] Hay una abolladura en la carcasa interior y exterior del frigorífico.
+t01045 Cerrar En el frigorífico, se inserta un aislamiento entre la carcasa interior y la carcasa exterior para aumentar la eficiencia del aislamiento.
+t01046 El aislamiento y la carcasa interior se unen entre sí durante el proceso de expansión, lo que puede provocar una pequeña abolladura.
+t01047 Dependiendo del ángulo de la luz, la abolladura puede verse diferente, pero no afecta al rendimiento del producto.
+t01048 ※ Si la curvatura interna o externa es grave, se recomienda que la revise un técnico de servicio de LG.
+t01049 En el frigorífico, se inserta un aislamiento entre la carcasa interior y la carcasa exterior para aumentar la eficiencia del aislamiento.
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002102-20155130415604/
+문장:
+t01050 Cerrar Alinee la torre LG AeroCat utilizando el logotipo de LG de la parte delantera como guía.
+t01051 Al acoplar la cúpula Cat Dome a la unidad principal, empújela hacia abajo hasta que oiga un clic.
+t01052 Si el Cat Dome no está montado correctamente, el producto no se encenderá aunque esté enchufado.
+t01053 Cómo montar la torre LG AeroCat paso a paso Coloque el producto frente a usted y siga los pasos que se indican a continuación para montarlo.
+t01054 Busca el logotipo de LG en la unidad principal para identificar la parte frontal.
+t01055 Asegúrate de que el lado del Cat Dome que tiene el panel de estado quede hacia delante (en la misma dirección que el logotipo de LG).
+t01056 Esto podría provocar un mal funcionamiento o dañar el producto.
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002101-20155102608518/
+문장:
+t01057 [LG CordZero A9S] ¿Qué piezas debo llevar cuando acuda a un centro de servicio técnico de LG?
+t01058 Antes de acudir a un centro de servicio técnico de LG Electronics, traiga los componentes de la aspiradora necesarios para la reparación.
+t01059 Si no trae los componentes necesarios de la aspiradora, es posible que no podamos ofrecerle el servicio de reparación.
+t01060 ¿Tiene pensado acudir a un centro de servicio técnico de LG Electronics?
+t01061 Cuando vaya, traiga consigo los componentes relacionados con el problema.
+t01062 ➔ Aunque el síntoma sea el mismo, la causa puede variar.
+t01063 Problemas de succión/ruido Cuerpo del aparato, tubo extensible, batería y boquilla para suelos duros 3.
+t01064 Problemas de alimentación o carga Cuerpo del producto, tubo extensible, estación de carga, adaptador de CA, batería y boquilla para suelos duros 2.
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002100-20155115739938/
+문장:
+t01065 Cómo solucionar la falta del indicador de volumen Cambia la configuración de [Salida de sonido] al altavoz integrado del televisor Configuración de [Sound Out] por año de fabricación Televisores de 2021 en adelante (webOS 6.0 y versiones posteriores): pulsa [Configuración] en el mando a distancia → selecciona [Todas las configuraciones] en la pantalla del televisor → [Sonido] → [Salida de sonido] → [Usar altavoz del televisor] Televisores de 2020 y anteriores (webOS 5.0 y versiones anteriores): pulsa [Configuración] en el mando a distancia → selecciona [Todas las configuraciones] en la pantalla del televisor → [Sonido] → [Salida de sonido] → [Altavoz interno del televisor] Cómo activar la opción [Usar altavoz del televisor] en televisores del 2025 en adelante (webOS 25 y versiones posteriores) 1.
+t01066 Cómo restablecer según el año de fabricación Televisores de 2025 en adelante (webOS 25 y versiones posteriores): pulsa tres veces el botón [Configuración] para restablecer los ajustes de AV.
+t01067 Televisores de 2024 y anteriores (webOS 24 y versiones anteriores): pulsa tres veces el botón [Silenciar] para restablecer la configuración de audio y vídeo.
+t01068 Cómo restablecer la configuración de audio y vídeo en televisores de 2025 y posteriores (webOS 25 y posteriores) 1.
+t01069 [Televisor LG] ¿Por qué no aparece el indicador de volumen en la pantalla?
+t01070 Cerrar Si el nivel de volumen no aparece en la pantalla del televisor al ajustar el sonido, es posible que se haya modificado la configuración de salida de audio.
+t01071 Puedes solucionar esto fácilmente volviendo a cambiar la opción [Salida de sonido] a [Usar altavoz del televisor] a través del menú de configuración del televisor o mediante los botones [Configuración] o [Silenciar] del mando a distancia.
+t01072 ¿Por qué no se muestra el indicador de volumen?
+t01073 Cuando se conecta un dispositivo de audio externo, como una barra de sonido o unos auriculares Bluetooth, es posible que cambie la configuración de los altavoces del televisor.
+t01074 En este caso, es posible que no aparezca el indicador de volumen en pantalla.
+t01075 Pulsa el botón [Configuración] del mando a distancia y selecciona [Todas las configuraciones] en la parte superior izquierda de la pantalla del televisor.
+t01076 Restablecer la configuración de audio y vídeo con el mando a distancia Si tienes dificultades para acceder al menú, puedes restablecer rápidamente la configuración de los altavoces reiniciándola con el mando a distancia.
+t01077 Selecciona [Sonido] y, a continuación, [Salida de sonido].
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002101-20155333892227/
+문장:
+t01078 (La ubicación y el diseño de la pantalla pueden variar según el modelo.) Factores externos: Errores temporales del sistema provocados por fluctuaciones en el suministro eléctrico, como rayos, un corte de corriente o una conexión suelta en la toma de corriente.
+t01079 Desenchufa y vuelve a enchufar el cable de alimentación En primer lugar, reinicia el frigorífico para borrar cualquier error temporal del sistema.
+t01080 Desconecta el interruptor automático conectado al frigorífico, espera unos 10 segundos y, a continuación, vuelve a conectarlo.
+t01081 Cerrar Si la pantalla de tu frigorífico LG parpadea o no funciona correctamente, suele deberse a un problema temporal de alimentación eléctrica o a un fallo en el componente de la pantalla.
+t01082 Desenchufa el cable de alimentación, espera unos 5 minutos y, a continuación, vuelve a enchufarlo para reiniciar el sistema.
+t01083 Si el problema persiste, es posible que la pantalla necesite una reparación.
+t01084 ¿Por qué parpadea la pantalla del frigorífico?
+t01085 Tanto en los frigoríficos de dos puertas como en los frigoríficos estándar, la pantalla puede parpadear por dos motivos principales.
+t01086 La pantalla también puede presentar fallos de funcionamiento debido a una elevada humedad o a la presencia de sustancias extrañas.
+t01087 Product Register Product Registration Failed Enviar Volver a los resultados Tu dirección de correo electrónico se ha registrado correctamente.
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT40007081-20155219498771
+문장:
+t01088 Comprobación de la conexión de red Si una aplicación no se abre o no se carga, comprueba primero la conexión a Internet de tu ordenador.
+t01089 Comprobación según el año de fabricación del televisor y la versión de webOS Modelos de 2021 y posteriores [webOS 6.0 o posterior]: Pulsa el icono de Ajustes [ Pulse el botón ] del mando a distancia → [Todos los ajustes] → [General] → [Red] → Seleccione «Conexión por cable (Ethernet)» o «Conexión Wi-Fi».
+t01090 Modelos de 2020 [webOS 5.0]: Pulsa en Ajustes [ ]botón del mando a distancia → [Todos los ajustes] → [Conexión] → [Ajustes de conexión de red] → Seleccionar conexión por cable Modelos de 2019 [webOS 4.5]: Pulsa en Ajustes [ ] del mando a distancia → [Todos los ajustes] → [Conexión] → Selecciona «Conexión por cable (Ethernet)» o «Conexión Wi-Fi».
+t01091 Modelos de 2018 y anteriores [webOS 4.0 o anterior]: Pulsa el icono de Ajustes [ ] del mando a distancia → [Todos los ajustes] → [Red] → Selecciona «Conexión por cable (Ethernet)» o «Conexión Wi-Fi».
+t01092 ➔ Modelos Connecting 2025 [webOS 25] 1.
+t01093 Ponte en contacto primero con el proveedor de la aplicación.
+t01094 Restablecer el monitor según el año de fabricación (versión de webOS) Monitores de 2021 en adelante [webOS 6.0 o posterior]: Pulsa en Ajustes[ ] del mando a distancia → [Todos los ajustes] → [General] → [Sistema] → [Restablecer a los ajustes iniciales] Monitor 2020 [webOS 5.0]: Pulsa en Ajustes[ ]botón del mando a distancia → [Todas las configuraciones] → [Asistencia técnica] → [Restablecer configuración inicial] Monitores de 2019 y anteriores [(webOS 4.5 o anterior): Pulsa en Ajustes[ ] del mando a distancia → [Todos los ajustes] → [General] → [Restablecer a los ajustes iniciales] ➔ Restablecimiento de la configuración inicial del monitor 2025 [webOS 25] 1.
+t01095 Las aplicaciones compatibles pueden variar según el país y el modelo de monitor.
+t01096 Cerrar Si las aplicaciones de tu LG Monitor se bloquean o no se abren, el problema suele estar relacionado con una conexión de red inestable.
+t01097 Comprueba las conexiones por cable entre el Monitor y tu router y, a continuación, comprueba el estado de la red en el menú [Configuración] del Monitor.
+t01098 Prueba a conectarte a otra red (por ejemplo, un punto de acceso móvil) para ver si el problema persiste.
+t01099 Si el problema se produce solo en una aplicación concreta, actualízala o reinstálala.
+t01100 Si el problema persiste, ponte en contacto con el proveedor de la aplicación para solicitar asistencia.
+t01101 Tras el restablecimiento, reinicie el monitor y vuelva a configurar los ajustes de red.
+t01102 Si la aplicación funciona en el punto de acceso: el Monitor funciona con normalidad.
+t01103 Restablecimiento de la configuración inicial del monitor Si sigues sin poder instalar la aplicación después de seguir los pasos anteriores, restablece el Monitor a su configuración inicial.
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002101-20155177652066/
+문장:
+t01104 Cerrar Para ajustar la temperatura de tu frigorífico, comprueba primero dónde se encuentra el regulador de temperatura (en el panel de control exterior o en el interior del electrodoméstico).
+t01105 En los modelos con panel de control externo, mantenga pulsado el botón [Bloquear/Desbloquear] durante 3 segundos para desbloquearlo y, a continuación, ajuste la temperatura.
+t01106 Temperaturas recomendadas: Nevera 3 °C (37 °F), Congelador -18 °C (0 °F) Cómo ajustar la temperatura cuando los controles están en la puerta del frigorífico 1.
+t01107 Si la función de bloqueo está activada, mantén pulsado el botón [Bloquear/Desbloquear] durante 3 segundos para desbloquearlo.
+t01108 ※ Nota: El aspecto y la pantalla pueden variar según el modelo.
+t01109 La temperatura del frigorífico se puede ajustar entre 0 °C (32 °F) y 6 °C (43 °F).
+t01110 El aspecto del control de temperatura y los ajustes de temperatura disponibles pueden variar según el modelo.
+t01111 Nota: El aspecto del control de temperatura y los ajustes recomendados pueden variar según el modelo.
+t01112 Cómo ajustar la temperatura según el tipo de frigorífico [Modelos Modern Edge (con congelador inferior)] 1.
+t01113 Los ajustes de temperatura se alternan en el siguiente orden: Frigorífico: 3 °C → 2 °C → 1 °C → 7 °C → 6 °C → 5 °C → 4 °C → 3 °C Congelador: -20 °C → -21 °C → -22 °C → -23 °C → -15 °C → -16 °C → -17 °C → -18 °C → -19 °C → -20 °C ※ Nota: El aspecto del control de temperatura, los ajustes predeterminados y el rango de temperatura pueden variar según el modelo.
+t01114 Los rangos de temperatura son los siguientes: Frigorífico: el nivel 5 (máximo) es de 0 °C (32 °F) y el nivel 1 (mínimo) es de 6 °C (43 °F).
+t01115 Congelador: el nivel 5 (máximo) es de -23 °C (-9 °F) y el nivel 1 (mínimo) es de -15 °C (5 °F).
+t01116 En los modelos con controles internos, utilice los botones o el dial para ajustar la temperatura deseada.
+t01117 Pulsa el botón de temperatura del frigorífico para ajustar la temperatura deseada.
+t01118 Cómo ajustar la temperatura cuando los controles se encuentran dentro del frigorífico [Modelos con controles de botones] Pulsa el botón para ajustar la temperatura que desees.
+t01119 A medida que el congelador se enfría, es posible que el frigorífico se caliente.
+t01120 Utilice los ajustes recomendados para obtener el mejor rendimiento.
+t01121 El control de temperatura se puede ajustar entre 1 (mín.) y 5 (máx.).
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002103-20155311457130/
+문장:
+t01122 Diferentes estándares inalámbricos según el sistema operativo Los ordenadores con Windows y los Mac utilizan métodos diferentes para compartir la pantalla de forma inalámbrica.
+t01123 Pulsa el botón [Entrada externa] o [Home Hub] del mando a distancia del televisor y, a continuación, selecciona el puerto conectado (por ejemplo, HDMI 1).
+t01124 Si necesitas audio, conecta un cable estéreo de 3,5 mm entre los puertos de audio del ordenador y el televisor.) Caso 2.
+t01125 Cerrar Conecta tu PC o portátil al televisor LG para disfrutar de la pantalla de tu ordenador en una pantalla más grande y envolvente.
+t01126 Elige la configuración que mejor se adapte a tus necesidades.
+t01127 Puedes optar por una conexión HDMI por cable estable o por compartir la pantalla de forma inalámbrica (duplicación) desde tu ordenador con Windows o tu Mac.
+t01128 Los pasos para conectarse varían en función de tu sistema operativo.
+t01129 Sigue las instrucciones que aparecen a continuación para empezar a compartir tu pantalla.
+t01130 Lo que debes saber antes de conectar el ordenador al televisor 1.
+t01131 Diferentes métodos de conexión Hay dos formas de compartir la pantalla: una conexión por cable mediante un cable HDMI o una conexión inalámbrica a través de Wi-Fi.
+t01132 Elige el método que mejor se adapte a tu configuración.
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002103-20155331401064/
+문장:
+t01133 Ten en cuenta que es posible que algunas aplicaciones no estén disponibles en tu zona, ya que la disponibilidad de las aplicaciones puede variar según la región y el modelo de televisor.
+t01134 Televisores de 2026 y posteriores (webOS 26 o posterior): pulsa el botón [Configuración] del mando a distancia, [Todas las configuraciones], [Sistema], [Ubicación], [País de los servicios de LG] Televisores de 2021 y posteriores (webOS 6.0 o posterior): pulsa el botón [Configuración] del mando a distancia, [Todas las configuraciones], [General], [Sistema], [Ubicación], [País de los servicios de LG] Televisores de 2020 y anteriores (webOS 5.0 o versiones anteriores): pulsa el botón [Configuración] del mando a distancia, [Todas las configuraciones], [General], [Ubicación], [País de los servicios de LG] Paso 2.
+t01135 Televisores de 2026 en adelante (webOS 26 o posterior): pulsa el botón [Configuración] del mando a distancia, [Todas las configuraciones], [Sistema], [Red], [Conexión Wi-Fi] Televisores de 2021 y posteriores (webOS 6.0 o posterior): pulsa el botón [Configuración] del mando a distancia, [Todas las configuraciones], [General], [Red], [Conexión Wi-Fi] Televisores de 2020 (webOS 5.0): Pulsa el botón [Configuración] del mando a distancia, [Todas las configuraciones], [General], [Configuración de conexión de red], [Conexión Wi-Fi] Televisores de 2019 (webOS 4.5): Pulsa el botón [Configuración] del mando a distancia, [Todas las configuraciones], [General], [Conexión Wi-Fi] Televisores de 2018 y anteriores (webOS 4.0 o versiones anteriores): pulsa el botón [Configuración] del mando a distancia, [Todas las configuraciones], [Red], [Conexión Wi-Fi] Paso 3.
+t01136 Televisores de 2021 o posteriores (webOS 6.0 o posterior): pulsa [Configuración] en el mando a distancia, [Todas las configuraciones], [Asistencia técnica], [Privacidad y condiciones], [Acuerdos de usuario] Televisores de 2020 (webOS 5.0): pulsa [Configuración] en el mando a distancia, [Todas las configuraciones], [Asistencia técnica], [Configuraciones adicionales], [Acuerdos de usuario] Televisores de 2019 o anteriores (webOS 4.5 o anterior): pulsa [Configuración] en el mando a distancia, [Todas las configuraciones], [General], [Acuerdos de usuario] Paso 4.
+t01137 Televisores de 2026 en adelante (webOS 26 o posterior): pulsa el botón [Configuración] del mando a distancia, [Todas las configuraciones], [Sistema], [Restablecer a la configuración inicial] Televisores de 2021 y posteriores (webOS 6.0 o posterior): pulsa el botón [Configuración] del mando a distancia, [Todas las configuraciones], [General], [Sistema], [Restablecer a la configuración inicial] Televisores de 2020 (webOS 5.0): Pulsa el botón [Configuración] del mando a distancia, [Todas las configuraciones], [Asistencia técnica], [Restablecer a la configuración inicial] Televisores de 2019 y anteriores (webOS 4.5 o anterior): pulsa el botón [Configuración] del mando a distancia, [Todas las configuraciones], [General], [Restablecer a la configuración inicial] Paso 8.
+t01138 Cerrar Puedes instalar diversas aplicaciones desde LG Apps y eliminar aquellas que ya no necesites.
+t01139 Si no puedes instalar una aplicación, asegúrate de haber iniciado sesión en tu cuenta de LG, de que tu televisor esté conectado a Internet, de que la configuración de «País» de los Servicios de LG coincida con tu región y de que tu televisor disponga de suficiente espacio de almacenamiento.
+t01140 Si sigues teniendo problemas después de comprobar estos ajustes, es posible que tengas que restablecer el televisor.
+t01141 ¿Por qué no puedo instalar o encontrar una aplicación?
+t01142 No has iniciado sesión en tu cuenta de LG Si no has iniciado sesión en tu cuenta de LG, es posible que no puedas instalar o utilizar algunas aplicaciones.
+t01143 Conexión a Internet y configuración de país de los servicios de LG Una conexión a Internet inestable puede impedir que se descarguen las aplicaciones.
+t01144 ¿Por qué me dice mi televisor que no hay suficiente espacio de almacenamiento para instalar una aplicación?
+t01145 Selecciona la aplicación en los resultados de búsqueda y, a continuación, pulsa [Instalar] en la pantalla de detalles de la aplicación.
+t01146 Comprueba la configuración de país de LG Services Cómo comprobar la versión de webOS de tu televisor En el mando a distancia del televisor, pulsa tres veces seguidas el botón [Configuración] (icono de engranaje) o [Silenciar].
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002101-20155102819508/
+문장:
+t01147 Cerrar Prueba esto.
+t01148 Cómo llenar el depósito de agua de la boquilla de la mopa LG CordZero A9 1.
+t01149 Antes de utilizar la boquilla, pulsa el botón PUSH para separar el depósito de agua de la boquilla.
+t01150 Abre solo una de las tapas situadas a cada lado del depósito de agua y utiliza el vaso medidor incluido para llenar el depósito hasta la línea «MAX».
+t01151 Si lo llenas por encima de la línea MAX, el agua podría desbordarse.
+t01152 Cierra la tapa.
+t01153 Alinea las dos lengüetas del depósito de agua con las ranuras de la boquilla de la mopa y presiona hacia abajo hasta que oigas un clic.
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002101-20155102824121/
+문장:
+t01154 Puedes ajustar la cantidad de agua suministrada mediante el botón de regulación de agua.
+t01155 Cómo ajustar el nivel de agua de la boquilla de la mopa CordZero A9 Para reducir el consumo de agua Desliza el botón de ajuste de agua hacia la izquierda, en dirección al icono de la gota de agua.
+t01156 Para suministrar más agua Desliza el botón de ajuste de agua hacia la derecha, en dirección al icono de las dos gotas de agua.
+t01157 Para cerrar el grifo o pasar la fregona en seco Desliza el botón de ajuste de agua hasta la posición central.
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002101-20155255023307
+문장:
+t01158 En primer lugar, comprueba si hay algún alimento o estante que impida que la puerta se cierre y asegúrate de que la junta de la puerta selle correctamente.
+t01159 A continuación, mantén pulsados los botones «Congelador» y «Wi-Fi» (o «Filtro de agua») durante 3 segundos.
+t01160 Los pasos para activar o desactivar el modo Shabat varían según el modelo.
+t01161 La configuración y los menús reales pueden variar según el modelo y la región.
+t01162 Frigorífico LG: ¿Por qué el frigorífico sigue emitiendo pitidos aunque la puerta esté cerrada?
+t01163 Cerrar Si la alarma del frigorífico sigue sonando incluso después de cerrar la puerta, suele significar que hay algo que bloquea la puerta, que la junta de la puerta está suelta o que hay un problema con el sensor de la puerta.
+t01164 Si la puerta está completamente cerrada pero la alarma sigue sonando, es posible que haya un problema con el sensor de la puerta.
+t01165 ¿Por qué mi frigorífico no deja de pitar aunque la puerta esté cerrada?
+t01166 El frigorífico emite un pitido cuando detecta que la puerta está abierta.
+t01167 Es posible que el frigorífico siga detectando que la puerta está abierta si no está bien cerrada o si la junta no sella correctamente.
+t01168 Esto también puede ocurrir si el interruptor de la puerta no detecta que la puerta está cerrada, o si el conector que va a la unidad principal está desconectado.
+t01169 Ponte en contacto con un técnico de servicio autorizado para que te ayude.
+t01170 Límpiala con un paño húmedo y tibio y, a continuación, límpiala con un detergente suave utilizando un cepillo de dientes o una esponja.
+t01171 Resolución Paso 1.
+t01172 Comprobar el interruptor de la puerta (sensor) Si la luz interior permanece encendida o la alarma emite un pitido incluso cuando la puerta está cerrada, es posible que el frigorífico no esté detectando que la puerta está cerrada.
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002101-20155101726477
+문장:
+t01173 [Limpiador a vapor LG] ¿Cómo guardo el limpiador a vapor cuando no lo utilizo?
+t01174 ¿Cómo debo guardar el producto para un almacenamiento prolongado?
+t01175 ➔ Para evitar la aparición de moho, vacía por completo el agua que quede en el depósito y en la boquilla.
+t01176 ➔ Espera a que el agua del interior de la boquilla se enfríe por completo antes de vaciarla.
+t01177 Vaciar el agua inmediatamente después de la limpieza o cuando el agua esté caliente puede provocar daños en el producto o quemaduras.
+t01178 ¿Cómo se guarda el producto después de usarlo?
+t01179 Lava la mopa de microfibra inmediatamente después de usarla.
+t01180 Apaga el interruptor de encendido y desenchufa el cable de alimentación.
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002101-20155386343357
+문장:
+t01181 Para garantizar una instalación segura, desenchufa primero el frigorífico y conecta una tubería de suministro de agua compatible.
+t01182 Si utilizas tubos de cobre, instálalos en el interior, donde la temperatura se mantenga por encima de los 0 °C (32 °F), para evitar que se congelen y revienten.
+t01183 La ubicación puede variar según el modelo.
+t01184 Purgar el sistema de agua del frigorífico Deja correr y desecha al menos 7,5 L (2 gal) de agua para limpiar las tuberías de agua del interior de tu frigorífico.
+t01185 La producción del primer lote de hielo puede tardar hasta 24 horas.
+t01186 No bebas el primer agua que salga tras la instalación.
+t01187 Deja correr y desecha al menos 7,5 L (2 gal) de agua para eliminar el polvo y los residuos de la nueva tubería de suministro de agua y de las tuberías internas de tu frigorífico.
+t01188 Cerrar Para utilizar la máquina de hielo automática y el dispensador de agua, debes conectar tu frigorífico LG al suministro de agua fría de tu vivienda.
+t01189 Una vez conectada, comprueba que no haya fugas en ninguna de las conexiones y asegúrate de purgar la tubería de agua antes de utilizar el agua o el hielo.
+t01190 Antes de empezar Desenchufa el frigorífico antes de conectar o manipular la tubería de suministro de agua.
+t01191 Tras la instalación, comprueba que no haya fugas en las conexiones del frigorífico y en la válvula de cierre de agua para evitar daños por agua.
+t01192 Conecta la máquina de hielo automática a una toma de agua fría con una presión de entre 20 y 120 psi.
+t01193 Es posible que necesites un adaptador aparte, dependiendo de la instalación de fontanería de tu casa.
+t01194 Si la tubería de agua no está conectada, el frigorífico no podrá dispensar agua ni fabricar hielo.
+t01195 Si necesitas utilizar el frigorífico antes de conectar la toma de agua, desactiva la máquina de hielo automática.
+t01196 Si necesitas más ayuda tras completar los pasos anteriores, ponte en contacto con nosotros a través del chatbot de LG en la página web de LG o solicita la visita de un técnico.
+t01197 Esta guía se basa en modelos estándar.
+t01198 ¿Qué ocurre si la presión del agua es demasiado baja?
+
+페이지 정보: 국가=ES, URL=https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002103-20155379626120/
+문장:
+t01199 Cerrar Si no oyes ningún sonido tras conectar tu ordenador al televisor LG con un cable HDMI, es posible que el ordenador esté utilizando un dispositivo de salida de audio incorrecto o que el cable esté suelto.

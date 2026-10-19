@@ -1,0 +1,200 @@
+{"id": "t00400", "cc": "uk", "pt": "support_troubleshoot", "text": "The [Fn Key Lock] feature is enabled in the LG Smart Assistant app (Models released in 2022 or later)."}
+{"id": "t00401", "cc": "uk", "pt": "support_troubleshoot", "text": "The [Hotkey mode setting] is enabled in the LG Control Center app (Models released before 2022)."}
+{"id": "t00402", "cc": "uk", "pt": "support_troubleshoot", "text": "Close If the Fn keys (hotkeys) on your LG laptop are not working, or if you cannot adjust the screen brightness or volume, it is likely because the [Fn Key Lock] is enabled in the settings app, or the essential LG On Screen Display3 (OSD3) driver is not installed."}
+{"id": "t00403", "cc": "uk", "pt": "support_troubleshoot", "text": "The LG On Screen Display3 (OSD3) app is missing or not installed."}
+{"id": "t00404", "cc": "uk", "pt": "support_troubleshoot", "text": "The [HotKeyManager] app is set to [Disabled] in Windows startup apps."}
+{"id": "t00405", "cc": "uk", "pt": "support_troubleshoot", "text": "How do I fix Fn key (Hotkey) errors?"}
+{"id": "t00406", "cc": "uk", "pt": "support_troubleshoot", "text": "2.Select the [Startup apps] or [Startup] tab."}
+{"id": "t00407", "cc": "uk", "pt": "support_troubleshoot", "text": "What should I do if the steps above don’t fix the issue?"}
+{"id": "t00408", "cc": "uk", "pt": "support_troubleshoot", "text": "2.Select the [Keyboard Settings] menu."}
+{"id": "t00409", "cc": "uk", "pt": "support_troubleshoot", "text": "2.Under [Installed apps], check whether [LG On Screen Display3] is listed."}
+{"id": "t00410", "cc": "uk", "pt": "support_troubleshoot", "text": "For Universal Control to work reliably, keep the soundbar within\r\nabout 35 inches (90 cm) of the TV and make sure the soundbar’s IR\r\nreceiver is not blocked."}
+{"id": "t00411", "cc": "uk", "pt": "support_troubleshoot", "text": "Keep the\r\nsoundbar within about 35 inches (90 cm) of the TV."}
+{"id": "t00412", "cc": "uk", "pt": "support_troubleshoot", "text": "Close Please Note Before changing cables or ports, turn off the TV and soundbar."}
+{"id": "t00413", "cc": "uk", "pt": "support_troubleshoot", "text": "If you use HDMI ARC, use a High-Speed HDMI cable that supports CEC."}
+{"id": "t00414", "cc": "uk", "pt": "support_troubleshoot", "text": "After pressing a remote button during testing, wait a few seconds\r\nbecause response time can vary by device."}
+{"id": "t00415", "cc": "uk", "pt": "support_troubleshoot", "text": "Low or no sound from a soundbar can happen in these situations."}
+{"id": "t00416", "cc": "uk", "pt": "support_troubleshoot", "text": "This issue is usually caused by an incorrect TV sound output\r\nselection, an incomplete device connection (HDMI\r\nARC Optical Bluetooth), blocked remote control signals during\r\nUniversal Control setup, or HDMI-CEC settings that prevent\r\npower volume synchronization."}
+{"id": "t00417", "cc": "uk", "pt": "support_troubleshoot", "text": "The TV is not set to output audio to the soundbar If the TV is still outputting sound to its internal speakers (or\r\nto a different audio device), the soundbar may be silent or very\r\nquiet."}
+{"id": "t00418", "cc": "uk", "pt": "support_troubleshoot", "text": "Turn on SIMPLINK (HDMI-CEC) to sync power and HDMI control\r\n(HDMI connection only) Setting: Settings > General > External Devices\r\n> HDMI Settings > SIMPLINK (HDMI-CEC) > On 1) If your soundbar is connected via HDMI ARC, open HDMI\r\nSettings."}
+{"id": "t00419", "cc": "uk", "pt": "support_troubleshoot", "text": "Set up Universal Control so one LG remote can control the\r\nsoundbar (if supported) Setting: Settings > General > External Devices\r\n> Universal Control Settings 1) Turn on the soundbar."}
+{"id": "t00420", "cc": "uk", "pt": "support_troubleshoot", "text": "Close Please Note To prevent sudden loud sound, lower the TV volume before adjusting the Bluetooth device volume."}
+{"id": "t00421", "cc": "uk", "pt": "support_troubleshoot", "text": "If you are using a headset or earbuds, increase volume gradually to protect your hearing."}
+{"id": "t00422", "cc": "uk", "pt": "support_troubleshoot", "text": "Some Bluetooth devices have separate volume controls for media and calls; make sure you are adjusting the media volume."}
+{"id": "t00423", "cc": "uk", "pt": "support_troubleshoot", "text": "Low or missing Bluetooth sound can happen in these situations Bluetooth audio volume can be controlled independently by the TV and the connected Bluetooth device."}
+{"id": "t00424", "cc": "uk", "pt": "support_troubleshoot", "text": "If the Bluetooth device volume is low (or muted), sound may remain quiet even when you raise the TV volume."}
+{"id": "t00425", "cc": "uk", "pt": "support_troubleshoot", "text": "The Bluetooth device volume is set too low or muted Many Bluetooth speakers, soundbars, and headphones keep their own volume level."}
+{"id": "t00426", "cc": "uk", "pt": "support_troubleshoot", "text": "When that device volume is low, the TV volume increase may have little or no effect."}
+{"id": "t00427", "cc": "uk", "pt": "support_troubleshoot", "text": "Adjust the Bluetooth device volume to restore normal sound on your LG TV Step 1."}
+{"id": "t00428", "cc": "uk", "pt": "support_troubleshoot", "text": "Adjust the volume directly on the Bluetooth device using its remote control or the physical volume buttons on the device."}
+{"id": "t00429", "cc": "uk", "pt": "support_troubleshoot", "text": "USB storage devices must have at least 4 GB capacity with at least 1 GB of available space."}
+{"id": "t00430", "cc": "uk", "pt": "support_troubleshoot", "text": "Recordings of less than 10 seconds in duration will be automatically discarded."}
+{"id": "t00431", "cc": "uk", "pt": "support_troubleshoot", "text": "Up to 600 recordings can be stored in a single partition."}
+{"id": "t00432", "cc": "uk", "pt": "support_troubleshoot", "text": "The Time Machine function is only supported by models released in\r\n2021 or earlier."}
+{"id": "t00433", "cc": "uk", "pt": "support_troubleshoot", "text": "Try this Models released in 2022 (webOS 22) and later do not support the Time Machine feature."}
+{"id": "t00434", "cc": "uk", "pt": "support_troubleshoot", "text": "Some 2021 models (webOS 6.0) also do not support the Time Machine feature."}
+{"id": "t00435", "cc": "uk", "pt": "support_troubleshoot", "text": "How to record and playback in 2021 WebOS 6.0 (instant recording) 1."}
+{"id": "t00436", "cc": "uk", "pt": "support_troubleshoot", "text": "Recording time is set to 3 hours by default."}
+{"id": "t00437", "cc": "uk", "pt": "support_troubleshoot", "text": "→ The recording time can be scheduled to up to 5 hours."}
+{"id": "t00438", "cc": "uk", "pt": "support_troubleshoot", "text": "→ Up to 30 recording schedules can be added to the [Schedule List]."}
+{"id": "t00439", "cc": "uk", "pt": "support_troubleshoot", "text": "[LG TV Time Machine] How can I use the Time Machine Recording feature?"}
+{"id": "t00440", "cc": "uk", "pt": "support_troubleshoot", "text": "Close ➔ Please check the following before using Time Machine Recording."}
+{"id": "t00441", "cc": "uk", "pt": "support_troubleshoot", "text": "Time Machine Recording is only available with digital channels being streamed via the antenna input."}
+{"id": "t00442", "cc": "uk", "pt": "support_troubleshoot", "text": "If your TV is connected to multiple USB storage devices, the one used lately for recording is selected\r\nas the storage device by default."}
+{"id": "t00443", "cc": "uk", "pt": "support_troubleshoot", "text": "Depending on the storage capacity, the maximum recording time may vary."}
+{"id": "t00444", "cc": "uk", "pt": "support_troubleshoot", "text": "All recordings are protected with contents protection techniques to prevent playback in PCs or other\r\nTVs."}
+{"id": "t00445", "cc": "uk", "pt": "support_troubleshoot", "text": "Also, recordings are not available anymore once any imaging circuit components of the TV are\r\nreplaced."}
+{"id": "t00446", "cc": "uk", "pt": "support_troubleshoot", "text": "Do not change the channel or the external input source while recording is in progress."}
+{"id": "t00447", "cc": "uk", "pt": "support_troubleshoot", "text": "③ More → Sort: Changes the sort order."}
+{"id": "t00448", "cc": "uk", "pt": "support_troubleshoot", "text": "How to schedule recording 1."}
+{"id": "t00449", "cc": "uk", "pt": "support_troubleshoot", "text": "① You can set a new recording schedule."}
+{"id": "t00450", "cc": "uk", "pt": "support_troubleshoot", "text": "Door lock during a power cut If there is a power cut during a wash programme, the door may remain\r\nlocked for safety."}
+{"id": "t00451", "cc": "uk", "pt": "support_troubleshoot", "text": "Close This video explains why the door on your LG front load washing machine\r\nmay stay locked."}
+{"id": "t00452", "cc": "uk", "pt": "support_troubleshoot", "text": "For your safety, the door of your LG washing machine is designed to lock\r\nautomatically during operation or when the internal temperature is high."}
+{"id": "t00453", "cc": "uk", "pt": "support_troubleshoot", "text": "Why won’t my washing machine door open?"}
+{"id": "t00454", "cc": "uk", "pt": "support_troubleshoot", "text": "Safety lock sensor For safety reasons, the door will not open while the washing machine\r\nis running, when there is water inside the drum, or when the water level sensor\r\nis active."}
+{"id": "t00455", "cc": "uk", "pt": "support_troubleshoot", "text": "High temperature and cooling time After using high-temperature functions such as a boil wash or\r\ndrying, the door stays locked until the internal temperature drops\r\nto a safe level."}
+{"id": "t00456", "cc": "uk", "pt": "support_troubleshoot", "text": "This feature is specifically designed to\r\nprevent scalding from hot water or steam."}
+{"id": "t00457", "cc": "uk", "pt": "support_troubleshoot", "text": "Caution Do not force the door open when the [Lock] icon is displayed."}
+{"id": "t00458", "cc": "uk", "pt": "support_troubleshoot", "text": ": For safety, the door stays\r\nlocked if the internal temperature is still high or if the machine\r\ndetects water inside the drum."}
+{"id": "t00459", "cc": "uk", "pt": "support_troubleshoot", "text": "4) At the top of the pop-up window, select [Last hour], and then choose the time range you want, such as [Last 24 hours] or [All time]."}
+{"id": "t00460", "cc": "uk", "pt": "support_troubleshoot", "text": "Close To clear your browsing history in Microsoft Edge, select [Settings and more] in the upper-right corner, and then select [Settings]."}
+{"id": "t00461", "cc": "uk", "pt": "support_troubleshoot", "text": "Go to [Privacy, search, and services], then select [Choose what to clear] under [Clear browsing data] to delete the items you want."}
+{"id": "t00462", "cc": "uk", "pt": "support_troubleshoot", "text": "Why should I clear browsing data, and what gets deleted?"}
+{"id": "t00463", "cc": "uk", "pt": "support_troubleshoot", "text": "Clearing browsing data can help when you use a shared PC, want to protect your privacy, or experience slow browsing speeds or webpage errors."}
+{"id": "t00464", "cc": "uk", "pt": "support_troubleshoot", "text": "The main types of data that can be deleted include: 1."}
+{"id": "t00465", "cc": "uk", "pt": "support_troubleshoot", "text": "rowsing history The URLs of websites you visited, along with the date and time of each visit."}
+{"id": "t00466", "cc": "uk", "pt": "support_troubleshoot", "text": "Download history A list of files downloaded from the web."}
+{"id": "t00467", "cc": "uk", "pt": "support_troubleshoot", "text": "3) Under [Clear browsing data], select [Choose what to clear]."}
+{"id": "t00468", "cc": "uk", "pt": "support_troubleshoot", "text": "Please review your selections carefully before selecting [Clear now]."}
+{"id": "t00469", "cc": "uk", "pt": "support_troubleshoot", "text": "Use only a wall bracket that is compatible with your LG TV model and VESA mounting pattern."}
+{"id": "t00470", "cc": "uk", "pt": "support_troubleshoot", "text": "With assistance, lift the TV and mount it onto the wall bracket according to the bracket manufacturer’s instructions."}
+{"id": "t00471", "cc": "uk", "pt": "support_troubleshoot", "text": "Close Please Note To reduce the risk of injury or product damage, have the TV wall-mounted by a qualified professional."}
+{"id": "t00472", "cc": "uk", "pt": "support_troubleshoot", "text": "Do not mount on wall materials that cannot safely support the TV and bracket (for example, certain tile, marble, or hollow/weak surfaces)."}
+{"id": "t00473", "cc": "uk", "pt": "support_troubleshoot", "text": "Always use the correct screws, anchors, and tools for your wall type; incorrect hardware can cause the bracket to loosen or fail."}
+{"id": "t00474", "cc": "uk", "pt": "support_troubleshoot", "text": "Before drilling, confirm there are no electrical wires, plumbing, or other hazards behind the wall."}
+{"id": "t00475", "cc": "uk", "pt": "support_troubleshoot", "text": "Do not overtighten screws; overtightening can strip anchors or crack wall surfaces."}
+{"id": "t00476", "cc": "uk", "pt": "support_troubleshoot", "text": "Two or more people may be required to lift and hang the TV safely."}
+{"id": "t00477", "cc": "uk", "pt": "support_troubleshoot", "text": "Wall mount installation issues can occur in these situations."}
+{"id": "t00478", "cc": "uk", "pt": "support_troubleshoot", "text": "The wall bracket is not compatible with the TV Bracket compatibility depends on the TV model and mounting specifications."}
+{"id": "t00479", "cc": "uk", "pt": "support_troubleshoot", "text": "Close Please Note Before checking or reconnecting cables, turn off the TV and any connected devices."}
+{"id": "t00480", "cc": "uk", "pt": "support_troubleshoot", "text": "Do not bend, crush, or sharply kink the antenna/cable line, as this can damage the cable and worsen signal issues."}
+{"id": "t00481", "cc": "uk", "pt": "support_troubleshoot", "text": "If you use a third-party set-top box, splitter, amplifier, or wall outlet, their condition and settings can affect the signal."}
+{"id": "t00482", "cc": "uk", "pt": "support_troubleshoot", "text": "For exact usage and settings of third-party devices, please check the manufacturer's customer service or user manual."}
+{"id": "t00483", "cc": "uk", "pt": "support_troubleshoot", "text": "Settings and menu names may differ on older models."}
+{"id": "t00484", "cc": "uk", "pt": "support_troubleshoot", "text": "Refer to your product user manual if the menu layout does not match."}
+{"id": "t00485", "cc": "uk", "pt": "support_troubleshoot", "text": "Why the picture flickers or the TV shows No Signal on some channels A damaged antenna/cable line or a weak connection can cause screen abnormalities."}
+{"id": "t00486", "cc": "uk", "pt": "support_troubleshoot", "text": "If the broadcast signal is unstable, some channels may flash, flicker, show a blank screen, or display No Signal."}
+{"id": "t00487", "cc": "uk", "pt": "support_troubleshoot", "text": "Why do only some cable channels flicker while others look normal?"}
+{"id": "t00488", "cc": "uk", "pt": "support_troubleshoot", "text": "If the values are low or unstable, recheck the cable connection and any intermediate devices (wall outlet, splitter, amplifier, set-top box)."}
+{"id": "t00489", "cc": "uk", "pt": "support_troubleshoot", "text": "Close Causes and Symptoms Is the exterior surface of the outdoor unit severely contaminated by foreign materials or dusts?"}
+{"id": "t00490", "cc": "uk", "pt": "support_troubleshoot", "text": "Try this Unplug the power cord before cleaning the outdoor unit."}
+{"id": "t00491", "cc": "uk", "pt": "support_troubleshoot", "text": "(There may be live power remained when you cleaning the outdoor unit with the power not turned off.) Identify the position of the outdoor unit, and clean the unit only at a safe place."}
+{"id": "t00492", "cc": "uk", "pt": "support_troubleshoot", "text": "Care should be exercised to prevent flow of water into the motor when you clean the outdoor unit with\r\nwater."}
+{"id": "t00493", "cc": "uk", "pt": "support_troubleshoot", "text": "(Cleaning with water is allowed; however, should be performed in such a way that water normally flows out of\r\nthe unit as rainwater does.) If the outdoor unit is installed beyond the handrail, do not attempt cleaning, since there is risk of\r\nfall."}
+{"id": "t00494", "cc": "uk", "pt": "support_troubleshoot", "text": "(If safety equipment is required for cleaning, it needs to be handled by an LG Electronics service\r\ntechnician.) This guide was created for all models, so the images or content may be different from your\r\nproduct."}
+{"id": "t00495", "cc": "uk", "pt": "support_troubleshoot", "text": "Causes and Symptoms Is the exterior surface of the outdoor unit severely contaminated by foreign materials or dusts?"}
+{"id": "t00496", "cc": "uk", "pt": "support_troubleshoot", "text": "Why won't my LG front-load washer door open?"}
+{"id": "t00497", "cc": "uk", "pt": "support_troubleshoot", "text": "Close For your safety, the washer door locks automatically when the inside of the washer is hot, when water remains in the drum, or when the drum is spinning."}
+{"id": "t00498", "cc": "uk", "pt": "support_troubleshoot", "text": "If the washer is hot inside, wait 2–3 minutes for it to cool down."}
+{"id": "t00499", "cc": "uk", "pt": "support_troubleshoot", "text": "If water remains inside, run a Spin Only cycle or clean the drain filter to fully drain the water, and the door will unlock."}
+{"id": "t00500", "cc": "uk", "pt": "support_troubleshoot", "text": "Caution Do not force the door open if the inside of the washer is hot."}
+{"id": "t00501", "cc": "uk", "pt": "support_troubleshoot", "text": "Hot water or steam may cause burns."}
+{"id": "t00502", "cc": "uk", "pt": "support_troubleshoot", "text": "Wait until the washer has fully cooled down."}
+{"id": "t00503", "cc": "uk", "pt": "support_troubleshoot", "text": "Do not pull on the locked door with excessive force."}
+{"id": "t00504", "cc": "uk", "pt": "support_troubleshoot", "text": "Open the drain hose cap and let the water drain into a container."}
+{"id": "t00505", "cc": "uk", "pt": "support_troubleshoot", "text": "Rinse the filter with water to remove debris, then screw the cap back on tightly."}
+{"id": "t00506", "cc": "uk", "pt": "support_troubleshoot", "text": "What is a MAC address, and when do I need it?"}
+{"id": "t00507", "cc": "uk", "pt": "support_troubleshoot", "text": "A MAC (Media Access Control) address is a unique identifier assigned to a network device, such as a computer's network adapter or a smartphone's Wi-Fi module."}
+{"id": "t00508", "cc": "uk", "pt": "support_troubleshoot", "text": "Close To find your laptop’s MAC address, press the [Windows] + [R] keys on your keyboard, type cmd in the Run window, and press [Enter]."}
+{"id": "t00509", "cc": "uk", "pt": "support_troubleshoot", "text": "When the Command Prompt window opens, type ipconfig /all and press [Enter]."}
+{"id": "t00510", "cc": "uk", "pt": "support_troubleshoot", "text": "In the displayed information, the value next to Physical Address is your device's MAC address."}
+{"id": "t00511", "cc": "uk", "pt": "support_troubleshoot", "text": "Unlike an IP address, it is tied to the physical hardware and does not change unless the component is replaced."}
+{"id": "t00512", "cc": "uk", "pt": "support_troubleshoot", "text": "Mount the TV onto the wall bracket according to the bracket design."}
+{"id": "t00513", "cc": "uk", "pt": "support_troubleshoot", "text": "Close Please Note Wall-mounting requires expertise and an understanding of the wall type and installation environment."}
+{"id": "t00514", "cc": "uk", "pt": "support_troubleshoot", "text": "Some wall types may not be suitable for mounting."}
+{"id": "t00515", "cc": "uk", "pt": "support_troubleshoot", "text": "Using an incorrect bracket or improper installation can cause product damage or the TV to fall."}
+{"id": "t00516", "cc": "uk", "pt": "support_troubleshoot", "text": "To avoid potential damage, professional installation by a qualified technician is strongly recommended."}
+{"id": "t00517", "cc": "uk", "pt": "support_troubleshoot", "text": "This guide was created for all models, so images or content may differ from your product."}
+{"id": "t00518", "cc": "uk", "pt": "support_troubleshoot", "text": "Why wall type and installation method matter for wall-mounting The correct wall bracket and installation method depend on the TV type and the wall material."}
+{"id": "t00519", "cc": "uk", "pt": "support_troubleshoot", "text": "If the wall type or environment is unsuitable, anchors and screws may not hold securely and the TV may be damaged."}
+{"id": "t00520", "cc": "uk", "pt": "support_troubleshoot", "text": "When to stop and request professional installation If the wall type (such as marble, wood, or tile) or the installation environment restricts mounting, do not proceed."}
+{"id": "t00521", "cc": "uk", "pt": "support_troubleshoot", "text": "How to Change Language Settings Language Settings by Model Year 2021 or later TVs (webOS 6.0 or later): Press [Settings] on the remote, then select [All Settings] → [General] → [System] → [Language]."}
+{"id": "t00522", "cc": "uk", "pt": "support_troubleshoot", "text": "2020 or earlier TVs (webOS 5.0 or earlier): Press [Settings] on the remote, then select [All Settings] → [General] → [Language]."}
+{"id": "t00523", "cc": "uk", "pt": "support_troubleshoot", "text": "How to change language settings on 2025 or later TVs (webOS 25 or later) 1."}
+{"id": "t00524", "cc": "uk", "pt": "support_troubleshoot", "text": "[LG TV] How do I change the language on my TV?"}
+{"id": "t00525", "cc": "uk", "pt": "support_troubleshoot", "text": "Close Language Settings let you change the on-screen menu language, the audio language for digital broadcasts, and the on-screen keyboard language."}
+{"id": "t00526", "cc": "uk", "pt": "support_troubleshoot", "text": "Available languages vary by region, and you can select only the languages listed."}
+{"id": "t00527", "cc": "uk", "pt": "support_troubleshoot", "text": "The settings path may vary depending on your webOS version."}
+{"id": "t00528", "cc": "uk", "pt": "support_troubleshoot", "text": "Available Language Settings Menu Language You can select the language displayed on the screen."}
+{"id": "t00529", "cc": "uk", "pt": "support_troubleshoot", "text": "The voice recognition language is automatically set to match the menu language you select."}
+{"id": "t00530", "cc": "uk", "pt": "support_troubleshoot", "text": "Voice recognition is available only on certain models."}
+{"id": "t00531", "cc": "uk", "pt": "support_troubleshoot", "text": "Audio Language You can select your preferred language when watching digital broadcasts that contain multiple audio languages."}
+{"id": "t00532", "cc": "uk", "pt": "support_troubleshoot", "text": "If the program has only one audio language available, the audio plays in the program’s default language, regardless of your [Audio Language] setting."}
+{"id": "t00533", "cc": "uk", "pt": "support_troubleshoot", "text": "Close Please Note Dolby Atmos works only with Atmos-supported content and a compatible sound output setting."}
+{"id": "t00534", "cc": "uk", "pt": "support_troubleshoot", "text": "Why Dolby Atmos Is Missing or Won’t Turn On Dolby Atmos availability can be limited depending on the selected sound output method and whether the connected audio device supports the required features."}
+{"id": "t00535", "cc": "uk", "pt": "support_troubleshoot", "text": "Also, if the app, video, or the selected audio track does not include Dolby Atmos, you won’t be able to use it."}
+{"id": "t00536", "cc": "uk", "pt": "support_troubleshoot", "text": "The TV sound settings are not configured for Dolby Atmos output If Dolby Atmos is turned off in the TV sound settings, or if the selected sound output does not support Atmos in your current configuration, Atmos may be unavailable."}
+{"id": "t00537", "cc": "uk", "pt": "support_troubleshoot", "text": "How to Turn On Dolby Atmos and Confirm It’s Working Turn on Dolby Atmos in the TV sound settings."}
+{"id": "t00538", "cc": "uk", "pt": "support_troubleshoot", "text": "Why can’t I select the Dolby Atmos option on my LG TV?"}
+{"id": "t00539", "cc": "uk", "pt": "support_troubleshoot", "text": "Can I use Dolby Atmos by connecting a soundbar to my LG TV?"}
+{"id": "t00540", "cc": "uk", "pt": "support_troubleshoot", "text": "Please Note Dolby Atmos works only with Atmos-supported content and a compatible sound output setting."}
+{"id": "t00541", "cc": "uk", "pt": "support_troubleshoot", "text": "If you are using an external audio device, whether Atmos is available can vary depending on the connected device and connection method."}
+{"id": "t00542", "cc": "uk", "pt": "support_troubleshoot", "text": "Menu names and options may vary by model and region."}
+{"id": "t00543", "cc": "uk", "pt": "support_troubleshoot", "text": "Some older models may use a different setup method, so please check your product user manual for the exact menu layout."}
+{"id": "t00544", "cc": "uk", "pt": "support_troubleshoot", "text": "For exact usage and settings of third-party devices, please check the manufacturer’s customer service or user manual."}
+{"id": "t00545", "cc": "uk", "pt": "support_troubleshoot", "text": "For detailed specifications and the full list of compatible devices, please check the LG Electronics website or your product user manual."}
+{"id": "t00546", "cc": "uk", "pt": "support_troubleshoot", "text": "This can make the option appear greyed out or missing."}
+{"id": "t00547", "cc": "uk", "pt": "support_troubleshoot", "text": "We recommend using an HDMI 2.0 or DP cable that supports 4K at 60 Hz."}
+{"id": "t00548", "cc": "uk", "pt": "support_troubleshoot", "text": "Please refer to the manufacturer’s support guide for detailed instructions."}
+{"id": "t00549", "cc": "uk", "pt": "support_troubleshoot", "text": "Close If there’s no sound coming from your monitor, first check the product specifications to see if it has built-in speakers."}
+{"id": "t00550", "cc": "uk", "pt": "support_troubleshoot", "text": "If your monitor has built-in speakers but you still hear no sound, check the signal cable connections (HDMI, DP, USB-C) and your Windows sound output settings."}
+{"id": "t00551", "cc": "uk", "pt": "support_troubleshoot", "text": "Why Is There No Sound from the Monitor?"}
+{"id": "t00552", "cc": "uk", "pt": "support_troubleshoot", "text": "The monitor may not have built-in speakers, or the volume may be muted."}
+{"id": "t00553", "cc": "uk", "pt": "support_troubleshoot", "text": "The HDMI, DP, or USB-C signal cable connecting the PC and monitor may be damaged or not securely connected."}
+{"id": "t00554", "cc": "uk", "pt": "support_troubleshoot", "text": "The Windows sound output device may be set to a device other than the monitor."}
+{"id": "t00555", "cc": "uk", "pt": "support_troubleshoot", "text": "Audio may not work due to cable version or compatibility issues between the monitor and the connected device (such as a PC)."}
+{"id": "t00556", "cc": "uk", "pt": "support_troubleshoot", "text": "After restarting, install the correct sound driver for your PC."}
+{"id": "t00557", "cc": "uk", "pt": "support_troubleshoot", "text": "Reinstall the Sound Driver 1."}
+{"id": "t00558", "cc": "uk", "pt": "support_troubleshoot", "text": "What is the most important\r\nfactor when choosing a wash programme?"}
+{"id": "t00559", "cc": "uk", "pt": "support_troubleshoot", "text": "The most important factors are\r\nthe fabric type and the level of soiling."}
+{"id": "t00560", "cc": "uk", "pt": "support_troubleshoot", "text": "Close This video explains the different wash programmes(cycles) and features\r\nof the LG SIGNATURE Washer/Dryer."}
+{"id": "t00561", "cc": "uk", "pt": "support_troubleshoot", "text": "With its intuitive touchscreen and smart features, the LG SIGNATURE\r\nWasher/Dryer helps you care for a wide range of fabrics efficiently."}
+{"id": "t00562", "cc": "uk", "pt": "support_troubleshoot", "text": "How do I select and use wash programmes on the LG SIGNATURE\r\nWasher/Dryer?"}
+{"id": "t00563", "cc": "uk", "pt": "support_troubleshoot", "text": "Navigating the touchscreen display • Use the touchscreen LCD on the front of the machine to select your\r\npreferred wash or dry option from five categories."}
+{"id": "t00564", "cc": "uk", "pt": "support_troubleshoot", "text": "Selecting and setting a programme • Check the care label on your garments before washing, select the\r\nmost suitable option from standard, special, or drying programmes,\r\nthen start the programme."}
+{"id": "t00565", "cc": "uk", "pt": "support_troubleshoot", "text": "Using downloaded programmes • If you need a specific programme that is not pre-installed, open the\r\nLG ThinQ app on your smartphone and use the 'Download Cycle' feature\r\nto add new programmes to your machine."}
+{"id": "t00566", "cc": "uk", "pt": "support_troubleshoot", "text": "Caution Before using a drying programme, always check the garment care label\r\nto ensure tumble drying is suitable."}
+{"id": "t00567", "cc": "uk", "pt": "support_troubleshoot", "text": "This helps prevent\r\nheat-related shrinkage or damage to your clothes."}
+{"id": "t00568", "cc": "uk", "pt": "support_troubleshoot", "text": "The TV turns off automatically after a timer-based power on On some models, when the TV turns on using a Power On Timer, it may turn off automatically after a period of inactivity (for example, 2 or 4 hours) if there is no remote control input."}
+{"id": "t00569", "cc": "uk", "pt": "support_troubleshoot", "text": "Close Please Note If the TV is unplugged or loses power, timer features may be unavailable or may not run as expected."}
+{"id": "t00570", "cc": "uk", "pt": "support_troubleshoot", "text": "If you use a set-top box, the TV may turn on at the scheduled time but the set-top box may stay off."}
+{"id": "t00571", "cc": "uk", "pt": "support_troubleshoot", "text": "Menu names and locations can vary by model and webOS version."}
+{"id": "t00572", "cc": "uk", "pt": "support_troubleshoot", "text": "An LG TV that turns on and off repeatedly can happen when timer or auto power settings are enabled."}
+{"id": "t00573", "cc": "uk", "pt": "support_troubleshoot", "text": "This symptom is often caused by scheduled Power On/Off timers or automatic power-off behavior after the TV turns on by timer and no one uses the remote for a set period."}
+{"id": "t00574", "cc": "uk", "pt": "support_troubleshoot", "text": "Incorrect time settings can also make timers trigger at unexpected times."}
+{"id": "t00575", "cc": "uk", "pt": "support_troubleshoot", "text": "Power On Timer or Power Off Timer is enabled If a Power On Timer or Power Off Timer is set, the TV can turn on or off at the scheduled time."}
+{"id": "t00576", "cc": "uk", "pt": "support_troubleshoot", "text": "Turn off the Power Off Timer Setting: Settings > General > System > Time & Timer > Timers > Power Off Timer 1."}
+{"id": "t00577", "cc": "uk", "pt": "support_troubleshoot", "text": "Press the Settings button on the remote and open All Settings."}
+{"id": "t00578", "cc": "uk", "pt": "support_troubleshoot", "text": "Select Power Off Timer."}
+{"id": "t00579", "cc": "uk", "pt": "support_troubleshoot", "text": "For burnt pots or stubborn residue like baked-on eggs, soak them for 1 hour, then pre-rinse before loading."}
+{"id": "t00580", "cc": "uk", "pt": "support_troubleshoot", "text": "Fill the detergent dispenser with citric acid (40 g), press and hold the Intensive button for 3 seconds, and run the Tub Clean cycle (54 minutes)."}
+{"id": "t00581", "cc": "uk", "pt": "support_troubleshoot", "text": "Soak them for about 1 hour, then pre-rinse before loading."}
+{"id": "t00582", "cc": "uk", "pt": "support_troubleshoot", "text": "Close Poor washing performance in your LG DIOS dishwasher is usually caused by large food scraps, incorrect loading, ineffective detergent, or a dirty filter."}
+{"id": "t00583", "cc": "uk", "pt": "support_troubleshoot", "text": "To resolve this, rinse your dishes before loading, make sure they do not overlap, use a recommended dishwasher detergent, and clean the filter and spray arms regularly."}
+{"id": "t00584", "cc": "uk", "pt": "support_troubleshoot", "text": "Important For items that water cannot easily reach, such as deep pots or large frying pans, always pre-rinse and load them as flat as possible."}
+{"id": "t00585", "cc": "uk", "pt": "support_troubleshoot", "text": "Liquid detergent is not recommended, as it may reduce cleaning performance."}
+{"id": "t00586", "cc": "uk", "pt": "support_troubleshoot", "text": "Why Isn't My Dishwasher Cleaning Well?"}
+{"id": "t00587", "cc": "uk", "pt": "support_troubleshoot", "text": "Large food scraps remain on the dishes, or burnt-on food (such as scorched pots) was loaded without pre-cleaning."}
+{"id": "t00588", "cc": "uk", "pt": "support_troubleshoot", "text": "Use the Right Detergent and Cycle Use a high-performance dishwasher detergent, and select a wash cycle and options that match how dirty your dishes are."}
+{"id": "t00589", "cc": "uk", "pt": "support_troubleshoot", "text": "On webOS 25 TVs or later versions manufactured from 2025 onwards, usage time cannot be checked."}
+{"id": "t00590", "cc": "uk", "pt": "support_troubleshoot", "text": "Your TV is a 2025 model with webOS 25 or later On webOS 25 TVs or later versions manufactured from 2025 onwards, the usage time cannot be checked in Settings."}
+{"id": "t00591", "cc": "uk", "pt": "support_troubleshoot", "text": "webOS 6.0 (2021) or later: Check Total Power On Time Setting: Settings → All Settings → General → Manage TV and Devices → Manage TV → TV Information 1) Turn on the TV."}
+{"id": "t00592", "cc": "uk", "pt": "support_troubleshoot", "text": "webOS 5.0 (2020): Check TV Usage Time Setting: Settings → All Settings → Customer Support → TV Information → TV Usage Time 1) Turn on the TV."}
+{"id": "t00593", "cc": "uk", "pt": "support_troubleshoot", "text": "I have a 2025 LG TV and cannot find TV Usage Time."}
+{"id": "t00594", "cc": "uk", "pt": "support_troubleshoot", "text": "On webOS 25 TVs or later versions manufactured from 2025 onwards, usage time cannot be checked in Settings."}
+{"id": "t00595", "cc": "uk", "pt": "support_troubleshoot", "text": "Close Please Note The usage time feature may not be available on some models."}
+{"id": "t00596", "cc": "uk", "pt": "support_troubleshoot", "text": "Menu names and locations may vary slightly by model and region."}
+{"id": "t00597", "cc": "uk", "pt": "support_troubleshoot", "text": "Not being able to find TV usage time can happen for these reasons."}
+{"id": "t00598", "cc": "uk", "pt": "support_troubleshoot", "text": "Depending on your TV’s webOS version, model year, and region, the TV Usage Time (Total Power On Time) item may be located in a different menu or may not be provided."}
+{"id": "t00599", "cc": "uk", "pt": "support_troubleshoot", "text": "You can chat with our virtual assistant or schedule a service repair for further assistance."}

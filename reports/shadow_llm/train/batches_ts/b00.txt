@@ -1,0 +1,250 @@
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/lg-tv-how-do-i-reset-my-set-top-box-CT10000030-20153122639228
+문장:
+t00000 Troubleshooting Monitors 07/12/2026 Print Email Copy Link Share At a Glance When a problem occurs with the set-top box or the communication lines, screen images may break up or freeze.
+t00001 If the set-top box does not have a power switch, pull out the power cord, wait for 5 seconds, and put it back on.
+t00002 These symptom can be addressed by initializing the set-top box.
+t00003 ※ If the problem persists even after initialization, please contact your communications carrier for troubleshooting.
+t00004 Try This How to initialize a set-top box 1.
+t00005 Turn off your TV using the TV remote.
+t00006 Select [More] at the upper right corner of the Internet browser you are using.
+t00007 If the power indicator on the set-top box flickers and then lights up, it indicates it has been initialized.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/lg-tv-how-to-connect-a-camcorder-or-camera-CT10000030-20153219091483
+문장:
+t00008 Then, select the external input by using the TV remote or the corresponding button on the TV.
+t00009 Try This How to connect an external input device Connect the device to your TV using an A/V (yellow/red) cable.
+t00010 Be sure to connect the video (yellow) and audio left (white)/right (red) ports on the back of the device to the mating video and audio input ports (IN) on the back of the TV.
+t00011 Press the External Input button on your TV remote and select [External Input].
+t00012 Using HDMI connection for models with HDMI ports Connecting a camcorder Small camcorders commonly used at home are equipped with a mini HDMI port, allowing you to connect them to a TV.
+t00013 This feature proves particularly useful when using the TV screen in place of the viewfinder during shooting or when viewing previously recorded images.
+t00014 By connecting a camcorder with a mini HDMI port to an HD TV, you can enjoy the recordings on your TV in HD picture quality.
+t00015 Connecting a DSLR camera If your DSLR camera supports HD recording, you can also enjoy the recordings on your TV in HD picture quality.
+t00016 Note Since small-sized devices like camcorders and digital cameras are typically equipped with a mini HDMI port, a regular HDMI cable cannot be used for connectivity.
+t00017 Instead, you will need an HDMI-to-mini HDMI cable to connect these devices to your TV.
+t00018 Print Email Copy Link Share * Required question Content Feedback Content Feedback 1.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/lg-range-troubleshooting-buttons-not-working-properly-CT00000303-20153105420192
+문장:
+t00019 [E] or [E1] is displayed on the display and the buttons do not work because there is a foreign object on the button or the button has been pressed for more than 9 seconds.
+t00020 ➔ Press and hold down the [Lock] button or the [Child Lock] button for 3 seconds to unlock.
+t00021 In such cases, press and hold down the [Lock] button or the [Child Lock] button for 3 seconds.
+t00022 Is a ringing sound not heard and the range doesn't operate when you press the [Select] button?
+t00023 Do only the [Power] button and the [Lock] button work?
+t00024 [Lock] or [Child Lock] is a safety feature that stops the functions and locks the control panel of the electric range to prevent an accident or a failure due to inappropriate operations by children.
+t00025 When the lock function is set, even if you press the touch button, it will not be recognized so that the surface of the electric range will not heat up.
+t00026 The electric range operates properly only if you press the [Select] button when the number [0] blinks on the display after pressing the [Element Size] button.
+t00027 In such cases, the electric range operates normally if you wipe off the touch button, press the [Power] button and use the electric range.
+t00028 Try This Does  the number [0] not blink on the display and the product not respond when you press the [Element Size] button?
+t00029 When the [Element Size] button is pressed correctly, a ringing sound will be heard.
+t00030 Before selecting the heating power, you must first select the burner to be used for cooking in order to operate the [Element Size] button.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/lg-tv-purchasing-paid-content-CT10000030-20153218982284
+문장:
+t00031 You can complete this registration process using your PC.
+t00032 You can register your payment information in the [My Page Payment Info] menu on the [LG Apps TV] website.
+t00033 For paid applications, you must purchase them to install and access them.
+t00034 Please note that only registered users who have provided their payment details are able to make a purchase.
+t00035 Try This How to purchase apps 1.
+t00036 Move to the application (“app”) page.
+t00037 Select the [Purchase] button.
+t00038 Enter your password again.
+t00039 Once the purchase process is completed, select the [Install] button.
+t00040 Check if the app you purchased has been added to the list.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/lg-tv-how-to-connect-a-usb-storage-device-to-your-tv-CT10000030-20153123667931
+문장:
+t00041 Use a USB memory of 32 GB or less or an external storage device of 2 TB or less.
+t00042 In the case of an external hard disk, use one with a rated voltage of 5 V and a rated current of 500 mA or less.
+t00043 How to eject a USB device from products released in 2019 and onwards (webOS 4.5 or later) 1.
+t00044 Connect the USB storage device to the [USB Input] port on the back of the TV and set the input mode to USB Storage Device.
+t00045 Try This Connect the USB storage to the TV.
+t00046 ➔ Connect the USB storage device to the [USB input] port on the back of the TV.
+t00047 Storage devices with too much capacity may not work smoothly.
+t00048 Note To ensure proper functioning, format the USB storage device into either the FAT32 or NTFS file system supported by Windows.
+t00049 Otherwise, the USB storage device may not work properly, or the operation may not be smooth.
+t00050 Set the input mode to USB.
+t00051 ➔ Press the [External Input] button on the TV remote and select [USB Flash Drive] on the TV screen.
+t00052 Press the External Input button on the TV remote and select [ThinQ Home Dashboard].
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/lg-tv-troubleshooting-sound-out-settings-on-my-lg-tv-CT10000030-20153095965157
+문장:
+t00053 ➔ [2022 WebOS22], [2021 WebOS6.0] Press the button on the TV remote and select [All Settings] → [Sound] → [Sound Out] → [Use TV Speaker] 1.
+t00054 ➔ [2020 WebOS5.0] or earlier Press the button on the TV remote and select [All Settings] → [Sound] → [Sound Out] → [internal TV Speaker] 1.
+t00055 Check if there is a [Mute] button on the standard remote or a Mute UI on the Magic Remote.
+t00056 ① Press the [Mute] button on the standard remote or Magic Remote 3 times repeatedly.
+t00057 Please check if it is set as the output speaker.
+t00058 Causes and Symptoms Changes in the speaker settings can prevent the TV sound control indicator from being displayed.
+t00059 Try this Does the volume indicator not appear on all channels?
+t00060 ➔ Make sure [Use TV Speaker] is selected in Sound Out in the Sound menu.
+t00061 Changing the [Sound Out] option in Settings.
+t00062 Turn on the TV and press the [Settings] button on your TV remote.
+t00063 Select [Settings] and then [All Settings].
+t00064 Select [Sound] → [Sound Out].
+t00065 Select [Use TV Speaker].
+t00066 Select [Internal TV Speaker].
+t00067 ② Select AV Reset.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/lg-washer-dryer-combo-troubleshooting-poor-drying-performance-CT10000010-20153781923566
+문장:
+t00068 If the formation of a U-trap is unavoidable, make sure it does not exceed a height of 6cm/2.36in.
+t00069 This water-free drying system involves discharging steam through the drain hose and into the sewer system.
+t00070 If some amount of water remains in the drain hose due to incomplete water drainage, steam cannot be expelled.
+t00071 This may result in tapping or grinding noises as well as poor drying performance.
+t00072 For effective drying performance, an uninterrupted flow of steam through the drain hose needs to be ensured, and water must not accumulate inside the hose.
+t00073 This can be achieved by gently lowering the drain hose, ensuring it does not form a U-shape (U-trap).
+t00074 Note The water-free drying system uses a small amount of water to prevent accumulation of dust in the internal components, so please leave the faucet open.
+t00075 General drying system Washer/dryer combos use a small amount of water for drying.
+t00076 Overloading the unit may result in degraded drying performance.
+t00077 When drying thick clothes, folded parts may not dry well.
+t00078 Try this Water-free drying system Make sure the drain hose descends smoothly to the floor without any bends.
+t00079 The drying capacity is smaller than the washing capacity.
+t00080 When connecting the drain hose to the drain hole, the hose should lie flat on the ground so that a U-trap does not form.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/lg-electronics-range-does-it-have-a-deodorizing-function-CT00000303-20155094141977
+문장:
+t00081 Troubleshooting Cooking Appliances 07/16/2026 Print Email Copy Link Share If food odors remain inside your LG microwave, you can use the deodorization function to keep the 'inside the microwave fresh.
+t00082 When is the best time to use the deodorization function?
+t00083 How to use the deodorization function to remove odors inside the microwave Causes of odors inside the microwave 1.
+t00084 After cooking food with strong odors, the smell may linger inside the oven cavity.
+t00085 Food scraps or spills during cooking can cause persistent odors.
+t00086 How to use the deodorization function 1.
+t00087 Before running the deodorization function, empty the microwave completely, removing all food and dishes.
+t00088 For models with a [Deodorize] button on the control panel, press the button to automatically run the function for 5 minutes.
+t00089 We recommend wiping the interior walls and ceiling clean with a damp dishcloth or soft sponge, then running the deodorization function again.
+t00090 RETURN TO RESULTS Related Help Library See more See more Request a Repair Setup a repair request for your appliance or other electronic device START SERVICE REQUEST Register a Product Get the most out of your LG product by registering!
+t00091 It is most effective for removing odors when used immediately after cooking strong-smelling food like fish or stew.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/what-to-check-if-your-lg-tv-has-no-sound-CT10000030-20155311239786
+문장:
+t00092 Troubleshoot TV sound issues using Sound Self-Diagnosis OLED TVs from 2024 or later [OLED TVs with webOS 24 or later]: Press the [Settings] button on the remote control, [All Settings], [Support], [Sound Self-Diagnosis] OLED TVs from 2021 to 2023 [OLED TVs with webOS 6.0 to 23]: Press the [Settings] button on the remote control, [All Settings], [General], [OLED Care], [Device Self-Care], [Sound Self-Diagnosis] TVs from 2021 or later [TVs with webOS 6.0 or later]: Press the [Settings] button on the remote control, [All Settings], [Support], [Sound Self-Diagnosis] 2020 TVs [webOS 5.0 TVs]: Press the [Settings] button on the remote control, [All Settings], [Support], [Additional Settings], [Sound Test] 2019 or earlier TVs [webOS 4.5 or earlier TVs]: Press the [Settings] button on the remote control, [All Settings], [Sound], [Sound Test] Step 4.
+t00093 If you are using a set-top box, also try turning up the volume using the set-top box remote.
+t00094 If the settings are correct, run [Sound Self-Diagnosis] on your TV.
+t00095 This will help you check if the TV speakers are working properly.
+t00096 Why is there no sound from my TV?
+t00097 Audio Output Setting Issues If you recently disconnected an external speaker, such as a soundbar, you may not hear sound because your TV is still set to play sound through the external speaker.
+t00098 Connected Device Volume and Mute Issues Even if the TV volume is turned up, you won't hear anything if your set-top box or external device is muted or set to 0.
+t00099 TV Hardware Issues You may not hear sound if there is an issue with the TV itself.
+t00100 The settings menu may vary by model.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/lg-tv-how-to-set-the-default-input-CT10000030-20153711388714
+문장:
+t00101 LG Electronics smart TVs released in 2023 and 2024 offer the option to set the initial screen to either [Home screen] or [Recent external input].
+t00102 TVs released before 2023 can also set the home menu as the initial screen by selecting [Auto-start home menu].
+t00103 Please refer to the user manual for more details.
+t00104 How to configure the setting by year of release and platform (webOS) webOS24 TV released in 2024 [All settings ] → [General] → [System] → [Additional settings] → [Home settings] → [Power on screen] webOS23 TV released in 2023 [All settings ] → [General] → [System] → [Additional settings] → [Home settings] → [Power on screen] webOS22 TV released in 2022 [All settings ] → [General] → [System] → [Additional settings] → [Home settings] → [Home Auto Launch] webOS 6.0 TV released in 2021 [All settings ] → [General] → [System] → [Additional settings] → [Home settings] → [Home Auto Launch] webOS 5.0 TV released in 2020 [All Settings ] → [General] → [Home Settings] → [Home Auto Launch] webOS 4.5 TV released in 2019 [All Settings ] → [General] → [Additional Settings] → [Home Settings] → [Home Auto Launch] Details on how to configure the settings on webOS24 [2024 TV] 1.
+t00105 How to enable [Q Start +] webOS24 TV released in 2024 [All Settings ] → [General] → [System] → [Additional Settings] → [Q Start +] webOS23 TV released in 2023 [All Settings ] → [General] → [System] → [Additional Settings] → [Q Start +] webOS22 TV released in 2022 [All Settings ] → [General] → [Devices] → [TV management] → [Q Start +] webOS 6.0 TV released in 2021: [All Settings ] → [General] → [Devices] → [TV management] → [Q Start +] webOS 5.0 TV released in 2020: [All Settings ] → [General] → [Additional Settings] → [Q Start +] webOS 4.5 TV released in 2019 [All Settings ] → [General] → [Additional Settings] → [Q Start +] This guide was created for all models, so the images or content may be different from your product.
+t00106 This functionality is exclusive to remote control activation of the TV upon power-on; using the TV's power button may display a different external input screen.
+t00107 This feature may not be applied if [TV Quick Turn On] or [Q- Start] is disabled, so please ensure Quick Start is enabled.
+t00108 Note that this feature may not be applicable to certain models, as some models have their own predefined initial screen.
+t00109 Press the Settings button on the remote control.
+t00110 On the menu that appears, select [All Settings ] by using the pointer [ ] of the AI remote control or the directional keys of the remote control.
+t00111 Select [General] in the same way using the remote control.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/lg-top-load-washing-machine-why-is-no-water-supplied-to-my-washing-machine-CT10000010-20153067542295
+문장:
+t00112 Troubleshooting Laundry Accessories, Washers 06/04/2026 Print Email Copy Link Share Causes and Symptoms When the Start button is pressed, water is supplied after detecting the laundry weight.
+t00113 Try this If water is not supplied, select the Fast course and check if water is supplied within 20 seconds after selection.
+t00114 When you turn on the power and press the Start button, the washing machine operates for approximately 40 seconds without water supply in order to detect the laundry weight.
+t00115 It is in outage status or the faucet is turned off.
+t00116 The water supply hose is pressed, bent or the water supply filter is clogged by a foreign object.
+t00117 Water in the washing machine or the water supply hose is frozen in winter.
+t00118 Even if you press the Start button, water is not supplied and washing is not done.
+t00119 ➔ If water is supplied normally, the water supply operation and the product are normal.
+t00120 If water is not supplied normally, check the faucet and the water supply filter.
+t00121 Is water not supplied immediately after operating the machine and does the tub spin slowly?
+t00122 ➔ The washing machine is detecting the laundry weight.
+t00123 If the water supply hose to the washing machine or the faucet is frozen, water cannot enter into the tub.
+t00124 Find the filter, take it out using your fingers or pliers and remove any foreign objects such as rust, sand or grit using a toothbrush.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/how-to-troubleshoot-error-codes-ch03-and-ch04-on-your-lg-ceiling-mounted-air-conditioner-CT10000014-20155396626868
+문장:
+t00125 Reset your air conditioner to clear the error.
+t00126 If the error code persists, contact LG Support for service.
+t00127 Warning Do not disassemble the air conditioner or replace internal parts yourself.
+t00128 Doing so may cause fire, electric shock, serious injury, or death.
+t00129 If the error code persists, stop using the air conditioner and contact LG Support.
+t00130 Why Does Error Code CH03 or CH04 Appear?
+t00131 Your air conditioner displays an error code when its self-diagnostic system detects a problem.
+t00132 Error code CH03 indicates a wired remote control problem caused by a faulty remote, wiring issues, or a main circuit board error.
+t00133 Error code CH04 indicates a drainage problem caused by a malfunctioning drain pump, a blocked or upward-sloping drain hose, or a dirty filter.
+t00134 How to Troubleshoot the Error Codes Step 1.
+t00135 To help prevent a CH04 error, clean the filter every two weeks and ensure the drainage path is not blocked.
+t00136 You can continue using your air conditioner.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/how-to-fix-the-magic-remote-pointer-not-appearing-on-your-lg-tv-CT10000030-20155394402958
+문장:
+t00137 For 2021 and later models (webOS 6.0 or later): Press the Settings button on the remote, go to All Settings, select General, choose Accessibility, and turn off Audio Guidance.
+t00138 For 2020 and earlier models (webOS 5.0 or earlier): Press the Settings button on the remote, go to All Settings, select Accessibility, and turn off Audio Guidance.
+t00139 To prevent wireless interference, make sure your Wi-Fi router is at least 8 inches (20 cm) away from the TV.
+t00140 For 2021 and Later Models (webOS 6.0 or Later): Press the Settings button on the remote, go to All Settings, select General, choose System, and select Reset to Initial Settings.
+t00141 For 2020 Models (webOS 5.0): Press the Settings button on the remote, go to All Settings, select Support, and choose Reset to Initial Settings.
+t00142 For 2019 and Earlier Models (webOS 4.5 or Earlier): Press the Settings button on the remote, go to All Settings, select General, and choose Reset to Initial Settings.
+t00143 The on-screen pointer is a specialized feature available only on the Magic Remote.
+t00144 First, try replacing the batteries with new ones.
+t00145 If the pointer still doesn't appear, make sure Audio Guidance (Accessibility) is turned off in your TV settings, and then pair the remote with your TV again.
+t00146 If these steps don't work, you can reset your TV as a last resort, but please note that this will erase all your custom settings and saved data.
+t00147 Why Does the Magic Remote Pointer Disappear?
+t00148 Low batteries or unsupported remote Audio Guidance (Accessibility) is turned on Disconnected remote or wireless interference Temporary system glitch Hardware issue How to Restore the Magic Remote Pointer Step 1.
+t00149 Check the Remote and Replace the Batteries Check if any buttons on the remote work.
+t00150 If none of the buttons work, replace the batteries with new ones.
+t00151 (Note: If you are using a standard remote, the pointer won't appear because standard remotes do not support this feature.) Step 2.
+t00152 Turn off Audio Guidance How to check your TV's webOS version Press the Settings (gear icon) or Mute button on your remote three times in a row.
+t00153 If the remote buttons work but the pointer is missing, the Audio Guidance feature might be turned on.
+t00154 What Should I Do If None of the Remote Buttons Work?
+t00155 Point the remote at the TV and press the Wheel (OK) button.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/lg-tv-how-to-use-gallery-mode-webos-4-5-CT10000030-20153265980635
+문장:
+t00156 ➔ [2017 WebOS3.5, 2018 WebOS4.0] 1.
+t00157 Turn on the TV and press the [Home] button on your TV remote.
+t00158 Select [Gallery] in [Home].
+t00159 Select the theme you want.
+t00160 Press the OK button on the TV remote and use the direction buttons to change [Speed] and [Theme Sound].
+t00161 In My Themes, you can either select Delete Mode or Select and Play Mode.
+t00162 • Delete Mode: Select the theme you want to delete and delete it.
+t00163 • Select and Play Mode: Select and play the themes you want.
+t00164 Select the desired image and press the Add button at the upper right corner to add it to the My Photos list, or press the Complete button to save the changes.
+t00165 Press the [X] button at the upper right corner of the [My Photos] menu screen to exit the gallery.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/if-your-lg-dishwasher-feels-hot-during-operation-CT10000009-20155416960018
+문장:
+t00166 It is normal for the surrounding countertop to reach up to 50°C (122°F) due to heat transferring from inside the dishwasher, which can reach 80°C (176°F).
+t00167 This occurs because the unit uses high-temperature water during heated rinse and sanitizing cycles.
+t00168 This is normal, and you can continue to use your dishwasher.
+t00169 Why Does the Dishwasher Feel Hot?
+t00170 The dishwasher uses high-temperature water during a heated rinse or sanitizing cycle.
+t00171 Heat from inside the dishwasher may transfer to the cabinet and surrounding countertop during operation.
+t00172 How to Resolve the Issue A Warm Dishwasher Is Normal and Does Not Require Service If you are concerned about the heat, contact LG Customer Support or request a service visit for an inspection.
+t00173 Note: A service fee may apply if your product is out of warranty.
+t00174 Is There a Fire Risk If the Countertop Around the Dishwasher Gets Hot?
+t00175 This guide is based on standard models.
+t00176 This heat transfer is safe and a normal part of operation.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/if-detergent-does-not-dispense-or-remains-in-your-lg-front-load-washer-CT10000010-20155394392174
+문장:
+t00177 Why Does Detergent Remain in the Dispenser?
+t00178 Using too much detergent Low water flow Hardened powdered detergent or detergent residue buildup How to Help the Detergent Dispense Correctly Step 1.
+t00179 Use the Recommended Amount of Detergent Use only the amount of detergent recommended for a single wash load.
+t00180 If your powdered detergent has hardened or formed clumps, dissolve it in lukewarm water before use.
+t00181 Clean the Detergent Dispenser Remove the detergent dispenser from your washer.
+t00182 Use a soft brush or toothbrush and lukewarm water to clean the dispenser and its compartment.
+t00183 Remove all detergent residue, and then reinstall the dispenser securely.
+t00184 Still Need Help?
+t00185 To resolve this, remove and clean the detergent dispenser, and then use only the recommended amount of detergent.
+t00186 This routine maintenance helps prevent detergent buildup, poor dispensing, and leaks.
+t00187 If water leaks from the front of your detergent dispenser, it is typically caused by using too much detergent or detergent residue blocking the water path.
+
+페이지 정보: 국가=US, URL=https://www.lg.com/us/support/help-library/lg-washing-machine-why-isn-t-the-water-heating-up-during-a-wash-CT10000010-20155130213566
+문장:
+t00188 Troubleshooting Laundry Accessories, Washers 04/14/2026 Print Email Copy Link Share If the water doesn't seem to reach the selected temperature during a wash, don't worry—your machine is operating normally.
+t00189 Cold Water Supply If the incoming tap water is colder than average room temperature (around 20–25°C / 68–77°F), the machine naturally requires more time to heat the water.
+t00190 If your model features a Normal 40°C or Normal 60°C cycle, selecting one of these can help optimize the water temperature.
+t00191 LG washers are designed to optimize energy efficiency and prevent high electricity bills.
+t00192 Why the water may not reach the set temperature Common Reasons 1.
+t00193 Energy Saving System To prevent unusually high energy consumption from prolonged heating, your washer features a built-in timer.
+t00194 If heating takes too long, the machine will automatically proceed to the next phase of the wash cycle to save energy, even if the exact target temperature hasn't been fully reached.
+t00195 Helpful Tips 1.
+t00196 Rest assured, your washer is operating normally.
+t00197 This is a built-in feature designed to save energy, so you can continue using your machine without any worries.
+t00198 However, keep in mind that heating the water will take longer, and the machine may proceed to the next phase of the wash cycle before fully reaching your selected temperature.
+t00199 To speed up the wash cycle, make sure the hot water hose is properly connected to a hot water tap and the valve is fully open.
