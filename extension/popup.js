@@ -1,5 +1,5 @@
 // ──────────────────────────────────────────────────────────────────────────
-// Hiro — Chrome Extension popup (GEO Audit for LGE)
+// Hiro — Dotcom Readability Checker, Chrome Extension popup
 // Single-page mode: analyze the active tab via the backend /analyze endpoint
 // (Render IP is on Akamai whitelist, so LG sites work without bot blocks)
 // ──────────────────────────────────────────────────────────────────────────
@@ -9,7 +9,7 @@ const API_BASE = 'https://my-geo-89ft.onrender.com';
 // ── i18n ─────────────────────────────────────────────────────────────────
 const STR = {
   ko: {
-    brand_sub:       'AI Readability · SSR / 스키마',
+    brand_sub:       'Dotcom Readability Checker',
     open_web:        '웹앱',
     intro:           '현재 활성 탭을 분석합니다.',
     analyze_btn:     '이 페이지 분석',
@@ -50,7 +50,7 @@ const STR = {
     cat_ai_readiness:     'AI Readiness',
   },
   en: {
-    brand_sub:       'AI Readability · SSR / Schema',
+    brand_sub:       'Dotcom Readability Checker',
     open_web:        'Open app',
     intro:           'Analyze the page currently open in your active tab.',
     analyze_btn:     'Analyze this page',

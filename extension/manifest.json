@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Hiro — GEO Audit for LGE",
-  "version": "2.4.1",
-  "description": "Hiro: analyze the current page — AI Readability score, SSR/CSR baseline reference, and JSON-LD schema integrity. Bilingual UI (KO / EN).",
+  "name": "Hiro — Dotcom Readability Checker",
+  "version": "2.4.2",
+  "description": "Hiro (Dotcom Readability Checker): analyze the current page — AI Readability score, SSR/CSR baseline reference, and JSON-LD schema integrity. Bilingual UI (KO / EN).",
   "permissions": [
     "activeTab",
     "tabs"

@@ -4,7 +4,7 @@
 
 LG.com 콘텐츠의 **AI Readability / GEO(Generative Engine Optimization) 점수**를 산정하는 Audit 도구.
 
-- **제품명: 히로(Hiro)** — 웹 검사기·어드민·크롬 확장·API 서버·문장 판정 모델(올라마 `hiro`) 모두 이 이름을 쓴다 (2026-10-20 사용자 결정, 구 이름 My GEO Audit for LGE / geo-audit-3b).
+- **제품명: 히로(Hiro), 부제 Dotcom Readability Checker** — 화면·탭 제목·확장 이름에는 "Hiro — Dotcom Readability Checker" 형태로 부제를 함께 쓴다. 웹 검사기·어드민·크롬 확장·API 서버·문장 판정 모델(올라마 `hiro`) 모두 이 이름을 쓴다 (2026-10-20 사용자 결정, 구 이름 My GEO Audit for LGE / geo-audit-3b).
 
 - **백엔드**: FastAPI (`main.py`) + httpx · BeautifulSoup4 · Playwright (CSR)
 - **점수 산정**: 룰 엔진(`rule_engine.py`) + 설정 파일(`scoring_config.json`)

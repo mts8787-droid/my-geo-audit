@@ -1,4 +1,4 @@
-# Hiro — GEO Audit for LGE
+# Hiro — Dotcom Readability Checker
 
 **Generative Engine Optimization(생성 엔진 최적화) 감사 도구**
 
