@@ -1,0 +1,64 @@
+== v2 general n= 1052 missing= 0
+  citable    P  68.1 R  85.2 F1  75.7 (gold y 128, pred y 160)
+  definition P  82.1 R  71.4 F1  76.4 (gold y 77, pred y 67)
+== v2 ts n= 500 missing= 0
+  citable    P  76.7 R  53.5 F1  63.0 (gold y 43, pred y 30)
+  definition P  92.3 R  66.7 F1  77.4 (gold y 18, pred y 13)
+== v3 general n= 1052 missing= 0
+  citable    P  69.0 R  68.0 F1  68.5 (gold y 128, pred y 126)
+  definition P  68.8 R  57.1 F1  62.4 (gold y 77, pred y 64)
+== v3 ts n= 500 missing= 0
+  citable    P  66.7 R  14.0 F1  23.1 (gold y 43, pred y 9)
+  definition P  77.8 R  38.9 F1  51.9 (gold y 18, pred y 9)
+== v3b general n= 1052 missing= 0
+  citable    P  50.7 R  89.8 F1  64.8 (gold y 128, pred y 227)
+  definition P  40.7 R  93.5 F1  56.7 (gold y 77, pred y 177)
+== v3b ts n= 500 missing= 0
+  citable    P  61.1 R  51.2 F1  55.7 (gold y 43, pred y 36)
+  definition P  57.7 R  83.3 F1  68.2 (gold y 18, pred y 26)
+
+######## SLICES
+
+#### general: human_reviewed 268
+== v2 n= 268 missing= 0
+  citable    P  59.6 R  77.6 F1  67.4 (gold y 76, pred y 99)
+  definition P  67.6 R  54.3 F1  60.2 (gold y 46, pred y 37)
+== v3 n= 268 missing= 0
+  citable    P  60.3 R  57.9 F1  59.1 (gold y 76, pred y 73)
+  definition P  51.4 R  41.3 F1  45.8 (gold y 46, pred y 37)
+== v3b n= 268 missing= 0
+  citable    P  47.1 R  86.8 F1  61.1 (gold y 76, pred y 140)
+  definition P  35.7 R  89.1 F1  50.9 (gold y 46, pred y 115)
+
+#### general: decision-tagged 200
+== v2 n= 200 missing= 0
+  citable    P  57.9 R  78.6 F1  66.7 (gold y 56, pred y 76)
+  definition P  88.6 R  63.3 F1  73.8 (gold y 49, pred y 35)
+== v3 n= 200 missing= 0
+  citable    P  67.2 R  73.2 F1  70.1 (gold y 56, pred y 61)
+  definition P  85.7 R  61.2 F1  71.4 (gold y 49, pred y 35)
+== v3b n= 200 missing= 0
+  citable    P  60.2 R  89.3 F1  71.9 (gold y 56, pred y 83)
+  definition P  71.4 R  91.8 F1  80.4 (gold y 49, pred y 63)
+
+#### general: rest 676
+== v2 n= 676 missing= 0
+  citable    P 100.0 R  96.7 F1  98.3 (gold y 30, pred y 29)
+  definition P 100.0 R 100.0 F1 100.0 (gold y 10, pred y 10)
+== v3 n= 676 missing= 0
+  citable    P  85.7 R  80.0 F1  82.8 (gold y 30, pred y 28)
+  definition P  77.8 R  70.0 F1  73.7 (gold y 10, pred y 9)
+== v3b n= 676 missing= 0
+  citable    P  51.9 R  93.3 F1  66.7 (gold y 30, pred y 54)
+  definition P  26.3 R 100.0 F1  41.7 (gold y 10, pred y 38)
+
+#### ts: human_reviewed 99
+== v2 n= 99 missing= 0
+  citable    P  76.7 R  53.5 F1  63.0 (gold y 43, pred y 30)
+  definition P  92.3 R  66.7 F1  77.4 (gold y 18, pred y 13)
+== v3 n= 99 missing= 0
+  citable    P  66.7 R  14.0 F1  23.1 (gold y 43, pred y 9)
+  definition P  77.8 R  38.9 F1  51.9 (gold y 18, pred y 9)
+== v3b n= 99 missing= 0
+  citable    P  78.6 R  51.2 F1  62.0 (gold y 43, pred y 28)
+  definition P  65.2 R  83.3 F1  73.2 (gold y 18, pred y 23)
