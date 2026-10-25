@@ -267,5 +267,6 @@ POST /analyze { "url": "...", "scope": "all" }
 - **factory default 동기화**: `scoring_config.json` 변경 시, 의도한 변경이 새 기본값이라면 `scoring_config.default.json`도 함께 업데이트.
 - **룰/핸들러 일치**: 새 룰 추가 시 `RULE_TYPES`와 `_HANDLERS`/`_ASYNC_HANDLERS` 양쪽에 등록. `tests/test_rule_engine.py::TestRegistryConsistency`가 일치를 검증.
 - **카테고리 추가 시**: `_calculate_score`의 `new_cat_keys`, 프론트의 `CATEGORY_META`/`renderCategoryCards`/`SCOPE_TO_CATS` 모두 업데이트.
+- **기존 감사 결과 재사용 금지(묻고 쓰기)**: 정기·재감사는 항상 전부 새로 측정한다. 이전 run 결과를 가져다 쓰는 것(`run_render_audit.py --reuse`, 예전 결과 복사·병합 등)은 사용자에게 먼저 묻고 승인받은 경우에만 한다. 2026-10-22 재사용이 기본값으로 켜진 채 10월 정기 감사가 돌아 97%가 9월 결과 복사로 끝난 사고 이후 규칙(2026-10-23 사용자 결정).
 - **릴리즈 노트**: 채점·감사 결과·화면·확장에 영향이 있는 변경을 커밋할 때 `docs/release-notes.md`의 해당 작업 단위에 한 줄 추가(새 큰 작업이면 맨 위에 단위 신설)하고 "진행 중 · 미결"도 갱신한다 (내부용, 지속 업데이트).
 - **민감정보**: `ADMIN_PASSWORD`는 환경변수만. `audit_data.json`은 git에 커밋해도 무방하나 운영 환경에서는 별도 영속 스토리지 권장.

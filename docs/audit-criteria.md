@@ -101,14 +101,19 @@
 | #21 | BreadcrumbList | itemListElement, item, name, position | `ai_schema_breadcrumb` |
 | #23 | FAQPage | mainEntity | `ai_schema_faq` |
 | #24 | CollectionPage | itemList, ListItem | `ai_schema_collection` |
-| #25 | Product 풀세트 | name, description, sku, brand, offers.price, offers.availability, aggregateRating.ratingValue, Review | `ai_schema_product`, `ai_schema_offer` |
-| #26 | ImageObject | url, name, description, uploadDate | `ai_schema_image` |
-| #27 | VideoObject | url, name, description, thumbnailUrl | `ai_schema_video` |
+| #25 | Product 풀세트 | name, description, **sku 또는 mpn/gtin13/gtin**, brand, offers.price, offers.availability (ProductGroup+hasVariant 인정) | `ai_schema_product`, `ai_schema_offer` |
+| #26 | ImageObject | **url 또는 contentUrl**, **name 또는 caption**, description (uploadDate 요구 삭제 — 이미지에 업로드일은 비표준) | `ai_schema_image` |
+| #27 | VideoObject | **url 또는 contentUrl/embedUrl**, name, description, thumbnailUrl | `ai_schema_video` |
 | #28 | HowTo | HowToSupply / HowToStep | `ai_schema_howto` |
-| #29 | Article | headline, author, publisher, articleBody | `ai_schema_article` |
+| #29 | Article | headline, author, publisher, articleBody — `support_troubleshoot` 에도 적용(2026-10-24) | `ai_schema_article` |
+| #44 | AggregateRating 또는 Review (PDP) | 둘 중 하나라도 JSON-LD 에 존재 — 2026-10-24 활성(사용자 결정, LG PDP 3,147건에 Review 추가됨) | `ai_schema_rating_or_review` |
 | #49 | WebSite | — (체크리스트 문서에 대응 행 없음) | `ai_schema_website` |
 
 > #25는 Product와 Offer 2개 항목으로 채점되어 스키마마크업 카테고리는 총 10개.
+>
+> **대체 필드(2026-10-24)**: 필수 필드는 `sku|mpn|gtin13` 처럼 `|` 로 묶으면 하나만 있어도 충족. schema.org·Google 모두 식별자(sku/mpn/gtin)와
+> 영상 주소(url/contentUrl/embedUrl)를 동등하게 보는데, 한 이름만 요구해 LG 가 10월에 추가한 Product 4,045건(mpn 96%)·VideoObject 2,721건(contentUrl 100%)이
+> 전부 누락 판정됐다. 사용자 승인으로 4개 룰(#25·#26·#27·#29) 보정.
 
 ### 게이트 (2026-09 적용) — 해당 콘텐츠가 없는 페이지는 N/A로 분모 제외
 
@@ -121,7 +126,7 @@
 | #26 ImageObject | 본문 콘텐츠 이미지(figure·article·gallery 등 selector) 존재 — 페이지타입 제한 없음 |
 | #27 VideoObject | video 태그 또는 youtube/vimeo iframe 존재 |
 | #28 HowTo | 절차(순서 목록·단계 블록 3개 이상) 존재 + `support_troubleshoot` 타입만 |
-| #29 Article | 기사 본문 구조(article 등) 존재 + `experience`·`buying_guide`·`microsite` 타입만 |
+| #29 Article | 기사 본문 구조(article 등) 존재 + `experience`·`buying_guide`·`microsite`·`support_troubleshoot` 타입 (트러블슈팅은 2026-10-24 추가 — LG 가 help-library 1,908건에 Article 을 넣음) |
 
 > 게이트 적용 후에도 #26·#27·#28·#29는 통과율 0% — 측정 문제가 아니라 실제로 4종
 > 스키마를 전혀 쓰지 않는 것이며, LG 전달 리포트의 핵심 개선 항목이다.
@@ -136,7 +141,7 @@
 | #33 | Definition Paragraph | 1개 이상 | 정의문 패턴 15종(6개 언어), `dfn`, `abbr` — [패턴 목록](#매칭-패턴-기준). 모델 연결 시 패턴 매칭 문장을 모델이 확인하고, 0건이면 본문 40문장을 모델로 탐색 — [문장 판정 모델](#문장-판정-모델-33-36) | `ai_definition` |
 | #34 | Author/Source | 저자 또는 (출처+날짜) | **JSON-LD** `author` 또는 (`datePublished` + `publisher`/`sourceOrganization`/`source`) | `ai_author_source` |
 | #35 | Summary Box | 1개 이상 | TL;DR, Key Takeaways, Highlights, Abstract | `ai_summary_box` |
-| #36 | Citable Sentences | **5개 이상** | 인용 가능 패턴 22종에 걸리는 문장 수 — [패턴 목록](#매칭-패턴-기준). 모델 연결 시 패턴 후보를 모델이 확인한 문장만 센다 — [문장 판정 모델](#문장-판정-모델-33-36) | `ai_citable` |
+| #36 | Citable Sentences | **5개 이상** · 트러블슈팅·PLP 는 **3개 이상** | 인용 가능 패턴 22종에 걸리는 문장 수 — [패턴 목록](#매칭-패턴-기준). 모델 연결 시 패턴 후보를 모델이 확인한 문장만 센다 — [문장 판정 모델](#문장-판정-모델-33-36). 타입별 기준은 [아래](#36-citable-sentences--인용-가능-문장-22패턴) | `ai_citable` |
 
 > **#34 주의**: HTML `meta author`·본문 byline은 판정에 **사용하지 않는다**. AI가 파싱 가능한
 > 구조화 데이터를 요구하는 기준이다. 따라서 통과율 0%는 "저자 표기가 없다"가 아니라
@@ -153,7 +158,7 @@
 
 | # | 항목 | PASS | 측정방법 | check id |
 | :-: | :-- | :-- | :-- | :-- |
-| #37 | (JS) HTML Text Ratio | 밀도 ≥ 60% | JS 렌더링 후 텍스트 대비 HTML Text 비중. **Shadow DOM SSR(`<template shadowrootmode>`)은 분자에서 제외** — 비JS 파서 다수(BS·DOMParser·trafilatura)가 본문으로 안 치며(CNX 실측, html5lib만 인식) ChatGPT·Claude류 해석은 비공개라 보수 기준 유지 (2026-10-05 결정) | `ai_ssr_ratio` |
+| #37 | (JS) HTML Text Ratio | 밀도 ≥ 60% | JS 렌더링 후 텍스트 대비 HTML Text 비중. **Shadow DOM SSR(`<template shadowrootmode>`)은 분자에서 제외** — 비JS 파서 다수(BS·DOMParser·trafilatura)가 본문으로 안 치며(CNX 실측, html5lib만 인식) ChatGPT·Claude류 해석은 비공개라 보수 기준 유지 (2026-10-05 결정). 경량 감사에서는 국가×페이지타입 baseline(`data/csr_baseline.json`)을 넣는다 — 트러블슈팅 baseline 은 2026-10-24 기사 페이지 15건(허브 제외)으로 재측정 | `ai_ssr_ratio` |
 | #38 | (JS) HTML Resource | PDP 썸네일 1-3번째 이미지가 HTML에 존재 | PDP HTML 파싱 후 SSR 확인 | `ai_pdp_thumbnails` |
 | #39 | (JS) 핵심 element | PDP 핵심 element가 HTML로 존재 | PDP HTML 파싱 후 SSR 확인 | `ai_core_element` |
 | #40 | Image File Name | 브랜드·제품 키워드 포함 이미지 ≥ 30% | 파일명 키워드 검증 — logo·icon·sprite 등 장식 파일 제외 | `ai_image_filename` |
@@ -177,7 +182,16 @@
 
 ### #36 Citable Sentences — 인용 가능 문장 (22패턴)
 
-문장 단위로 아래 중 **하나라도** 걸리면 인용 가능으로 센다. 5개 이상이면 통과.
+문장 단위로 아래 중 **하나라도** 걸리면 인용 가능으로 센다. 5개 이상이면 통과. **트러블슈팅(`support_troubleshoot`)과
+PLP(`plp`)는 3개 이상이면 통과**(룰 파라미터 `min_count_by_type`, 2026-10-26 사용자 결정, 10월 감사부터 적용).
+
+> **트러블슈팅·PLP 를 3개로 두는 이유** — 5개 기준은 PDP 와 에디토리얼 아티클(익스피어리언스·바잉가이드·뉴스룸)처럼
+> 본문이 길고 사실·수치·근거가 여러 단락에 걸쳐 나오는 콘텐츠를 전제로 잡은 값이다. 트러블슈팅은 **증상 → 원인 → 해결책**
+> 세 요소를 설명하면 끝나는 짧은 콘텐츠이고, 나머지 본문은 조작 안내("버튼을 누르세요")라 인용 대상이 아니다. PLP 는 본문이
+> 카테고리 설명문 몇 줄과 상품 목록이라 역시 설명문이 적은 구성이다. 이 두 타입에 5개를 대면 설명문이 제대로 있는 페이지도
+> 떨어져, "설명문이 있는 페이지"와 "UI 텍스트만 있는 페이지"를 구분하지 못한다. 3개는 트러블슈팅에서 증상·원인·해결책 각
+> 1문장, PLP 에서 카테고리 정의·특징·용도 각 1문장에 해당한다. 10월 재측정(트러블슈팅 7국 2,014페이지) 기준으로 3개 통과율은
+> 32~61% 로 다른 타입(56~71%)을 넘지 않는다. AI 답변 엔진이 트러블슈팅·카테고리 페이지를 인용할 때도 2~3문장 스니펫이 보통이다.
 
 | 분류 | 잡는 것 | 예 |
 | :-- | :-- | :-- |
@@ -281,13 +295,15 @@
 
 | 항목 | 모델 연결 시 | 모델 미연결 시 |
 | :-- | :-- | :-- |
-| #36 | 정규식 후보 문장을 모델이 확인해 y 인 것만 센다. `min_count` 를 채우면 즉시 중단. 실패 시 hint 에 모델 제외 사유 표시 | 정규식 판정 그대로, value 에 `정규식(모델 미연결)` 표시 |
+| #36 | 정규식 후보 문장을 모델이 먼저 확인하고, `min_count` 를 못 채우면 나머지 본문 앞 `model_scan_max`(40)문장도 모델로 훑는다(2026-10-24 — 숫자 없는 원인·증상 설명문이 후보에 안 걸려 모델에 보이지도 않던 문제). y 인 것만 세고 채우면 즉시 중단. 실패 시 hint 에 모델 제외 사유 표시 | 정규식 판정 그대로, value 에 `정규식(모델 미연결)` 표시 |
 | #33 | 정규식 매칭 문장을 모델이 확인. 매칭 0건이면 본문 앞 `model_scan_max`(40)문장을 모델로 훑어 정의문 탐색(정규식 OR 모델). `dfn`/`abbr` 이 기준을 채우면 모델 호출 없음 | 정규식 판정 그대로 |
 
 - 활성 조건: 환경변수 `AUDIT_MODEL_URL`(예 `http://127.0.0.1:11434`) + 룰 파라미터 `model: yes`(기본). 모델명 `AUDIT_MODEL_NAME`(기본 `hiro`). 2026-10-19 부터 월간·비정기 감사 모두 이 Mac 로컬에서 모델과 함께 실행한다(Render 미사용).
 - 평가셋 1,052문장(사람 검수 268 포함, 엄격 기준) F1: 인용 88.7 · 정의 89.9. 올라마 q8_0 은 mlx 와 1,047/1,052 일치.
-- 비용: 문장당 약 1.5초, `OLLAMA_NUM_PARALLEL=8` 로 초당 1.1문장. 트러블슈팅 페이지는 평균 25회 호출(정규식 0건 → 40문장 탐색). 정의문이 있으면 5문장 안에 발견된다.
-- 모델이 전 문장을 훑지 않으므로 #36 재현율은 정규식 후보에 묶인다. 정규식이 못 잡는 인용 문장은 여전히 놓친다.
+- 비용: 문장당 약 1.5초, `OLLAMA_NUM_PARALLEL=8` 로 초당 1.1문장(16 으로 늘려도 동일 — GPU 포화, 2026-10-24 실측). 트러블슈팅 페이지는 평균 25회 호출(정규식 0건 → 40문장 탐색). 정의문이 있으면 5문장 안에 발견된다.
+- #36 본문 탐색은 #33 과 같은 앞 40문장이라 메모(같은 문장 재판정 생략)로 추가 비용이 대부분 상쇄된다. 40문장 뒤의 인용문은 여전히 놓친다.
+- 같은 문장이 Shadow DOM 과 일반 DOM 양쪽에서 추출되면 한 번만 센다(2026-10-24).
+- **트러블슈팅 인용 기준(2026-10-24 사용자 결정)**: 증상의 원인 설명문·증상(동작) 설명문은 인용 y. 버튼·메뉴 지시문은 그대로 n. `GUIDELINE_TS.md` 끝 절.
 - 본문 문장 추출에서 nav/header/footer·쿠키·프로모 배너·숨은 모달(`modal`/`dialog`)을 제외한다. US help-library 의 브라우저 안내 모달 문장이 #33 을 67/100 허위 통과시킨 사례(2026-10-19).
 
 ### 클래스·선택자 매칭 항목
@@ -392,6 +408,8 @@ LG CS 는 트러블슈팅 본문 SSR 을 Declarative Shadow DOM 방식으로 전
   FAIL 처리했음. `max-age` 디렉티브가 설정돼 있으면(0 포함) 통과로 완화
 - **#34 Author 또는 출처+날짜** — `newsroom`·`press_media` page_type에만 적용,
   그 외는 N/A (분모 제외)
+- **#36 Citable Sentences 트러블슈팅·PLP 3개**(2026-10-26, 10월 감사부터) — 증상·원인·해결책으로 끝나는 트러블슈팅과
+  카테고리 설명문 몇 줄이 전부인 PLP 는 PDP·에디토리얼 아티클(5개)과 콘텐츠 분량이 다르다. 사유 상세는 #36 섹션.
 - **2026-09 오탐 수정 12건** — #10(main 필수 해제)·#11(역순만 실패)·#15(host 완화)·
   #19(국가별 sitemap 캐시 키)·#23/#26/#27/#28/#29(콘텐츠 게이트)·#32(피드백 위젯 제외)·
   #33(계사 제거)·#34(page_type 게이트)·#35(class 매칭 제거)·#36(개수 기준)·
@@ -401,6 +419,100 @@ LG CS 는 트러블슈팅 본문 SSR 을 Declarative Shadow DOM 방식으로 전
 - **#17 Robots** — `seo_robots`(meta) + `seo_robots_hdr`(X-Robots-Tag), 두 개로 채점
 - **#25 Product 풀세트** — `ai_schema_product` + `ai_schema_offer`, 두 개로 채점
 - **#49 Schema: WebSite · #40 Summary Content SSR** — 채점은 되지만 체크리스트 문서에 대응 행 없음
+
+---
+
+## 대시보드 집계 기준 (하류 공유용)
+
+> 월간 감사 결과가 `reports/dashboard_data.json` 의 숫자가 되기까지의 규칙. 하류 대시보드·리포트는
+> 이 섹션을 기준으로 숫자를 해석한다. 구현: 표본은 `run_render_audit.py`, 집계는 `gen_dashboard_data.py`.
+
+### 1. 표본 (감사 단계)
+- 국가별 URL 목록(`reports/lg_urls_<cc>.csv`, 사이트맵 수집)을 URL 패턴으로 page_type 사전 분류한 뒤
+  **타입별 최대 100페이지**를 감사한다. PDP 만 최대 500 — 핵심 제품군 10종(TV·오디오·모니터·냉장고·
+  세탁·식기세척기·공조·공기청정·조리·청소기)에 각 50 이상을 먼저 배정하고 남는 자리를 라운드로빈으로 채운다.
+  PLP 도 카테고리 균등 배분.
+- 트러블슈팅·뉴스룸·프레스는 발행일 내림차순(최신 문서 우선). 날짜를 모르는 URL 은 뒤로 보낸다.
+- 사업부 지정 필수 URL(`reports/must_audit/<cc>.csv`)은 타입 정원 안에서 먼저 자리를 차지하고, 정원을
+  넘는 분량은 정원 밖에 덧붙여 **전부 감사**한다(트러블슈팅은 국가당 128~432건). 2026-10-25 사용자 결정:
+  집계 대상인 트러블슈팅은 줄이지 않는다.
+- 감사 자체를 하지 않는 타입: 분류불가(unknown)·회사소개(about)·서포트-일반(support), 그리고 2026-10-25 부터
+  대시보드 집계 제외 타입인 B2B(business)·프로모션(promotion)·홈(home). 단종/비활성·악세사리 PDP 는 표본에서 제외
+  ("집계 대상에서 빠지는 페이지" 참조).
+- 매월 전부 새로 측정한다. 이전 run 결과 재사용 없음(2026-10-23 사용자 규칙).
+- **HS(가전) 콘텐츠 시트**(사업부 관리 구글 시트 'Appendix.HS Contents URL' → `build_hs_contents.py` →
+  `reports/hs_contents.csv`)의 URL 은 감사 국가 분량 전부를 필수 감사로 편입한다(2026-10-25 사용자 지시).
+  타입 정원(100)은 필수 URL 이 먼저 차지하므로 그만큼 기존 표본 URL 이 밀려난다. 분류는 아래 "HS 콘텐츠 분류".
+
+### 2. 페이지 점수
+- 활성 채점 항목(현재 39개) 중 그 페이지에 **적용되는 항목**만 분모로 쓴다. 콘텐츠 게이트·page_type 게이트로
+  N/A 가 된 항목은 분모에서 빠진다.
+- 페이지 점수 = 통과 항목 / 적용 항목 × 100 (정수 반올림). 카테고리 가중치 없음.
+- 임계값이 page_type 에 따라 다른 항목: **#36 인용 가능 문장**은 기본 5개, 트러블슈팅·PLP 는 3개(짧은 콘텐츠 — 사유는
+  [#36 섹션](#36-citable-sentences--인용-가능-문장-22패턴)). 10월 감사부터 적용.
+- 등급: Good ≥ 90 · Need Improvement ≥ 70 · Poor < 70 (`scoring_config.json` grade).
+- 카테고리 점수 = 그 카테고리 안에서 통과 / 적용 × 100.
+
+### 3. 집계 대상 페이지 (대시보드 단계, `counted_results`)
+1. **제외**: business · promotion · unknown · home · about · support 타입, 단종/비활성 PDP(Coveo 활성 목록 밖),
+   악세사리 PDP, 비-200 페이지(fetch 실패·404·500, #41 실패). 세부는 "집계 대상에서 빠지는 페이지".
+2. **리다이렉트 중복 제거**: 여러 구 URL 이 같은 도착지로 모이면 도착지 기준 1건만 남긴다.
+3. **타입별 상한 100** (PDP 는 상한 없음, 감사 단계 500): 국가마다 타입 비중이 다르면(US 트러블슈팅 34% vs DE 13%)
+   국가 점수가 표본 구성을 반영하게 되므로 같은 구성으로 맞춘다. 100건 선별은 **URL sha1 해시 순** —
+   무작위지만 매 실행 같은 결과(멱등). 상위 점수 선별은 채택하지 않았다(개선해도 점수가 안 움직임).
+   그래서 `sample_size` 는 국가당 약 750~950, 제외 사유별 건수는 `excluded` 에 남는다.
+
+### 4. 국가 점수와 전체 점수
+- 국가 점수(`total_avg`) = 집계 대상 페이지의 페이지 점수 **단순 평균**. 카테고리 `points_avg` 는 페이지별
+  카테고리 점수 평균, 항목 `pass_rate` = 통과 페이지 / 적용 페이지(`applicable_n`).
+- 전체(`overall.total_avg_weighted`) = Σ(국가 점수 × sample_size) / Σ sample_size. 대상 13개 사이트:
+  US · UK · DE · ES · CA · AU · BR · MX · IN · VN · BE · NL · Global-Site (BE·NL 은 월간 자동 감사 대상이 아니라
+  마지막 측정분이 유지됨). **HS-Others**(`hs`, 감사 국가 밖 HS 콘텐츠 URL 595건 묶음, 2026-10-25 신설)는 행으로는
+  보이지만 모집단이 달라 전체 가중평균에는 넣지 않는다.
+- 국가별로 **가장 최신의 완료된 run 1개**만 쓴다(`status: ok`). 진행 중·중단된 run 은 집계하지 않으며,
+  같은 날짜에 완료본이 여럿이면 성공 건수가 많은 쪽. 날짜 키는 UTC(`AUDIT_RUN_DATE`).
+
+### 5. 저장 run 의 재채점
+저장된 run 을 그대로 합산하지 않고 `scoring_config.json` 의 **현재 기준**으로 다시 채점한다. 과거 run 을 다시 돌리지
+않고도 기준 변경이 대시보드에 반영되게 하기 위함이다(그래서 9월·10월 값도 현재 기준으로 다시 계산된 숫자다).
+- 비활성 항목(#5·#8 등)은 분모에서 제외. 항목 ID 로 현재 6개 카테고리에 재매핑.
+- `applies_to_page_types` 가 있는 항목(#34 등)은 해당 타입에서만 평가.
+- #1 TTFB 는 PSI 캐시(`data/psi_cache.json`)의 **감사 날짜 이후 측정값**만 쓴다. 미측정 URL 은 같은 page_type
+  실측 중앙값으로 추정 보정(`psi_coverage` 에 실측/추정 건수).
+- 임계값만 바뀐 항목(#4 등)은 저장된 value 문자열로 재판정. #17 은 meta·헤더 판정을 OR 로 합성.
+- #36 은 저장된 인용 문장 개수로 현재 임계값에 다시 판정한다. 모델 판정값("모델 확인 N/…")도 N 이 실측 개수다(단, 측정 당시
+  임계를 채우면 중단하므로 N 은 그 임계에서 잘린다 → 임계를 **낮출** 때만 재판정, 높일 때는 저장 pass 사용). 트러블슈팅·PLP
+  3개 기준(2026-10-26)은 이 경로로 10월 run 전체에 적용됐다.
+- 그 외는 저장된 pass 를 그대로 쓴다. #33 모델 판정도 저장값 사용(재감사 없이는 바뀌지 않음).
+
+### 5-1. HS(가전) 콘텐츠 분류 (2026-10-25)
+사업부 시트에 올라온 HS 콘텐츠 URL 은 시트의 분류가 URL 패턴 분류보다 우선한다(`page_type.detect_page_type`,
+`matched_by: hs_contents`). 결과의 `page_type.hs` 에 아래 두 분류가 붙고, 대시보드 `countries[cc].hs` 에 집계된다.
+
+| 시트 '컨텐츠 타입 1' | page_type | 비고 |
+| :-- | :-- | :-- |
+| Award Banner · 뱃지적용 Gallery | `pdp` | 제품 상세에 어워드/뱃지가 노출된 페이지. HS 지정 PDP 는 단종·악세사리 제외를 적용하지 않는다 |
+| Microsite | `microsite` | |
+| Experience Article | `experience` | |
+| buying guide | `buying_guide` | |
+| installation guide | `installation_guide` | **신설 타입** "설치 가이드". URL 패턴 `installation-guide` · `pruvodce-instalaci` · `huong-dan-lap-dat` 도 보조 매칭 |
+
+- **콘텐츠 2뎁스**(`hs.content_type2`, 시트 I열, HS 콘텐츠에만 존재): Experience Article · FAQ · buying guide · LG AI ·
+  Award Banner · installation guide · category page · 신뢰성 · ice solution · 뱃지적용 Gallery · fitmax.
+- **제품**(`hs.product`, 시트 F열 통일): WM(F/L·T/L 포함) · REF · DW · VCC · Cooking · Dryer · MWO · Common. 원문은 `product_raw`.
+- 2026-10-25 기준 시트 1,029행 → 유효 1,015건(중복 12·URL 아닌 행 2). 감사 국가 분량 420건(AU 103 · IN 85 · UK 78 ·
+  VN 34 · MX 33 · CA 24 · BR 17 · ES 16 · DE 14 · BE 11 · NL 4 · US 1), 그 외 국가(SA·CZ·IT·TW·CO·CL·TH·PH·EG·HK 등 40여 곳) 595건은
+  별도 감사 그룹 `hs`(HS-Others, `reports/lg_urls_hs.csv` · `must_audit/hs.csv`, 전부 필수 감사)로 측정한다(사용자 결정 2026-10-25).
+  이 국가들은 PLP 활성 목록·CSR baseline 이 없어 단종 판정은 하지 않고 #37 baseline 은 다른 국가 같은 타입 평균으로 추정한다.
+
+### 6. 산출물
+- `reports/dashboard_data.json`: `countries[cc]` → `total_avg` · `sample_size` · `excluded{사유:건수}` · `grade_dist` ·
+  `breakdown[카테고리]{points_avg, pass_rate, items_n}` · `items[항목id]{label, category, pass_rate, applicable_n}` ·
+  `psi_coverage` · `hs{n, total_avg, by_content_type2, by_product, by_page_type}` · `date` · `run_file`; `overall` → `total_avg_weighted` · `sample_total` · `excluded_breakdown` · `missing`;
+  `criteria` → 카테고리별 항목 수.
+- 월간 감사가 끝나면 자동 생성·커밋·푸시된다(`run_monthly_audit.sh`). 하류는 git 의 이 파일 또는
+  MCP `geo-audit-dashboard` 도구(get_overall · get_scorecard · get_item_passrates · get_raw · list_countries)로 읽는다.
+- 원시 결과(`data/run_results/<cc>_<date>_run_*.json`, 페이지별 항목 pass/value/hint)는 git 에 올리지 않는다.
 
 ---
 
