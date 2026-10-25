@@ -1,5 +1,4 @@
 https://www.lg.com/
-https://www.lg.com/vn/bluetooth-speakers/xboom-bluetooth-speakers/gr-xm/
 https://www.lg.com/vn/business/giai-phap-dieu-hoa-khong-khi/cac-san-pham/dieu-hoa-cuc-bo/zpnq30gr5e0/
 https://www.lg.com/vn/business/giai-phap-dieu-hoa-khong-khi/cac-san-pham/dieu-hoa-cuc-bo/zpnq36gr5a0/
 https://www.lg.com/vn/business/giai-phap-dieu-hoa-khong-khi/cac-san-pham/dieu-hoa-cuc-bo/zpnq36lr5a0/
@@ -209,14 +208,11 @@ https://www.lg.com/vn/cham-soc-khong-khi/may-loc-khong-khi/as10gdwh0/
 https://www.lg.com/vn/cham-soc-khong-khi/may-loc-khong-khi/as20gpbk0/
 https://www.lg.com/vn/cham-soc-khong-khi/may-loc-khong-khi/as20gpru0/
 https://www.lg.com/vn/cham-soc-khong-khi/may-loc-khong-khi/as20gpwu0/
-https://www.lg.com/vn/cham-soc-khong-khi/may-loc-khong-khi/as20gpyu0/
 https://www.lg.com/vn/cham-soc-khong-khi/may-loc-khong-khi/as20gshu0/
 https://www.lg.com/vn/cham-soc-khong-khi/may-loc-khong-khi/as30ggg1a/
 https://www.lg.com/vn/cham-soc-khong-khi/may-loc-khong-khi/as30ggw1a/
 https://www.lg.com/vn/cham-soc-khong-khi/may-loc-khong-khi/as35ggw10/
 https://www.lg.com/vn/cham-soc-khong-khi/may-loc-khong-khi/as55ggsy0/
-https://www.lg.com/vn/cham-soc-khong-khi/may-loc-khong-khi/as60ghbg0/
-https://www.lg.com/vn/cham-soc-khong-khi/may-loc-khong-khi/as60ghcg0/
 https://www.lg.com/vn/cham-soc-khong-khi/may-loc-khong-khi/as60ghhg0/
 https://www.lg.com/vn/cham-soc-khong-khi/may-loc-khong-khi/as60ghwg0/
 https://www.lg.com/vn/cham-soc-khong-khi/may-loc-khong-khi/as65gdby0/
@@ -239,6 +235,7 @@ https://www.lg.com/vn/dan-am-thanh/loa-thanh/s65tr/
 https://www.lg.com/vn/dan-am-thanh/loa-thanh/s70ty/
 https://www.lg.com/vn/dan-am-thanh/loa-thanh/sc9s/
 https://www.lg.com/vn/dan-am-thanh/loa-thanh/sg10ty/
+https://www.lg.com/vn/dan-am-thanh/xboom-bluetooth-speakers/gr-xm/
 https://www.lg.com/vn/dan-am-thanh/xboom-bluetooth-speakers/xboom-mini/
 https://www.lg.com/vn/dan-am-thanh/xboom/buds/
 https://www.lg.com/vn/dieu-hoa-dan-dung/may-dieu-hoa/b10end1/
@@ -309,7 +306,6 @@ https://www.lg.com/vn/giai-phap-khong-khi/phu-kien-khau-trang-loc-khi/adq7579770
 https://www.lg.com/vn/giai-phap-khong-khi/phu-kien-khau-trang-loc-khi/mdj63904902/
 https://www.lg.com/vn/giai-phap-khong-khi/phu-kien-khau-trang-loc-khi/mdj64424304/
 https://www.lg.com/vn/giai-phap-khong-khi/phu-kien-khau-trang-loc-khi/mdj64424406/
-https://www.lg.com/vn/giai-phap-khong-khi/phu-kien-may-loc-khong-khi/aaa77724705/
 https://www.lg.com/vn/giai-phap-khong-khi/phu-kien-may-loc-khong-khi/adq74834380/
 https://www.lg.com/vn/giat-say/fv1413h3ba/
 https://www.lg.com/vn/giat-say/fv1413s3wa/
@@ -321,6 +317,7 @@ https://www.lg.com/vn/giat-say/may-giat-long-dung/t2314dx5g/
 https://www.lg.com/vn/giat-say/may-giat-long-dung/t2315dx5g/
 https://www.lg.com/vn/giat-say/may-giat-long-dung/t2350vsab/
 https://www.lg.com/vn/giat-say/may-giat-long-dung/t2511vbtb/
+https://www.lg.com/vn/giat-say/may-giat-long-dung/t2512vbtb/
 https://www.lg.com/vn/giat-say/may-giat-long-dung/t2515vbtb/
 https://www.lg.com/vn/giat-say/may-giat-long-dung/t2516dx5g/
 https://www.lg.com/vn/giat-say/may-giat-long-dung/t2519sx5g/
@@ -369,6 +366,7 @@ https://www.lg.com/vn/giat-say/may-giat-long-ngang/fv1414s3p/
 https://www.lg.com/vn/giat-say/may-giat-long-ngang/fv1450s3w2/
 https://www.lg.com/vn/giat-say/may-giat-long-ngang/fx1410n5g/
 https://www.lg.com/vn/giat-say/may-giat-long-ngang/fx1410n5w/
+https://www.lg.com/vn/giat-say/may-giat-long-ngang/fx1410n5wb/
 https://www.lg.com/vn/giat-say/may-giat-long-ngang/fx1411n5g/
 https://www.lg.com/vn/giat-say/may-giat-long-ngang/fx1411n5s/
 https://www.lg.com/vn/giat-say/may-giat-long-ngang/fx1411n5w/
@@ -405,6 +403,7 @@ https://www.lg.com/vn/giat-say/may-say-quan-ao/rx11vhp5w/
 https://www.lg.com/vn/giat-say/may-say-quan-ao/rx12vhp3k/
 https://www.lg.com/vn/giat-say/may-say-quan-ao/rx12vhp5g/
 https://www.lg.com/vn/giat-say/may-say-quan-ao/rx12vhp5s1/
+https://www.lg.com/vn/giat-say/may-say-quan-ao/rx12vhp5w1/
 https://www.lg.com/vn/giat-say/may-say-quan-ao/rx12vhp5wb/
 https://www.lg.com/vn/giat-say/may-say/dvhp09b/
 https://www.lg.com/vn/giat-say/may-say/dvhp09w/
@@ -420,9 +419,12 @@ https://www.lg.com/vn/giat-say/thap-giat-say-washtower/wt2517nheg/
 https://www.lg.com/vn/giat-say/tu-cham-soc-quan-ao-thong-minh-styler/s3mfc/
 https://www.lg.com/vn/giat-say/tu-cham-soc-quan-ao-thong-minh-styler/s5boc/
 https://www.lg.com/vn/giat-say/tu-cham-soc-quan-ao-thong-minh-styler/sc5gmr80h/
+https://www.lg.com/vn/giat-say/tu-cham-soc-quan-ao-thong-minh-styler/sc5gmr80s/
 https://www.lg.com/vn/giat-say/tu-cham-soc-quan-ao-thong-minh-styler/sc5gmr8gh/
 https://www.lg.com/vn/giat-say/tu-cham-soc-quan-ao-thong-minh-styler/sc5mbr80h/
+https://www.lg.com/vn/giat-say/tu-cham-soc-quan-ao-thong-minh-styler/sc5mbr80s/
 https://www.lg.com/vn/giat-say/tu-cham-soc-quan-ao-thong-minh-styler/sc5mnr4g/
+https://www.lg.com/vn/giat-say/tu-cham-soc-quan-ao-thong-minh-styler/sc5mnr80s/
 https://www.lg.com/vn/laptop-lg-gram/14t90s-g-ah55a5/
 https://www.lg.com/vn/laptop-lg-gram/14z90s-g-ah55a5/
 https://www.lg.com/vn/laptop-lg-gram/14z90s-g-ah75a5/
@@ -626,6 +628,7 @@ https://www.lg.com/vn/phu-kien/may-giat/bo-loc/adq74273401/
 https://www.lg.com/vn/phu-kien/may-giat/bo-loc/adq74533405/
 https://www.lg.com/vn/phu-kien/may-giat/bo-loc/adq75798001/
 https://www.lg.com/vn/phu-kien/may-giat/bo-loc/agm75471427/
+https://www.lg.com/vn/phu-kien/may-giat/duong-ong-va-dau-noi-ong-mem/5214fa1609x/
 https://www.lg.com/vn/phu-kien/may-giat/duong-ong-va-dau-noi-ong-mem/5215er2002k/
 https://www.lg.com/vn/phu-kien/may-giat/duong-ong-va-dau-noi-ong-mem/adq72912806/
 https://www.lg.com/vn/phu-kien/may-giat/duong-ong-va-dau-noi-ong-mem/aem75293103/
@@ -671,6 +674,7 @@ https://www.lg.com/vn/phu-kien/may-loc-khong-khi/khac/akb76036413/
 https://www.lg.com/vn/phu-kien/may-loc-khong-khi/khac/akb76036421/
 https://www.lg.com/vn/phu-kien/may-loc-khong-khi/khac/cov30041601/
 https://www.lg.com/vn/phu-kien/may-loc-khong-khi/khac/cov30235301/
+https://www.lg.com/vn/phu-kien/may-loc-khong-khi/khac/cov30264001/
 https://www.lg.com/vn/phu-kien/may-loc-khong-khi/khac/cov31483702/
 https://www.lg.com/vn/phu-kien/may-loc-khong-khi/khac/cov31483703/
 https://www.lg.com/vn/phu-kien/may-loc-khong-khi/khac/cov31483704/
@@ -693,6 +697,8 @@ https://www.lg.com/vn/phu-kien/may-rua-bat/khac/cls32164302/
 https://www.lg.com/vn/phu-kien/may-rua-bat/khac/cls32164902/
 https://www.lg.com/vn/phu-kien/may-rua-bat/khac/mdj64544303/
 https://www.lg.com/vn/phu-kien/may-rua-bat/khac/mjs65359001/
+https://www.lg.com/vn/phu-kien/may-say/bo-loc/adq55998601/
+https://www.lg.com/vn/phu-kien/may-say/bo-loc/adq73373201/
 https://www.lg.com/vn/phu-kien/may-say/bo-loc/adq74514606/
 https://www.lg.com/vn/phu-kien/may-say/bo-loc/adq74514711/
 https://www.lg.com/vn/phu-kien/may-say/bo-loc/adq75373205/
@@ -724,6 +730,7 @@ https://www.lg.com/vn/phu-kien/tu-cham-soc-quan-ao/khac/adq75806101/
 https://www.lg.com/vn/phu-kien/tu-cham-soc-quan-ao/khac/adq75811901/
 https://www.lg.com/vn/phu-kien/tu-cham-soc-quan-ao/khac/aej74219501/
 https://www.lg.com/vn/phu-kien/tu-cham-soc-quan-ao/khac/ajl74011901/
+https://www.lg.com/vn/phu-kien/tu-cham-soc-quan-ao/khac/ajl74011902/
 https://www.lg.com/vn/phu-kien/tu-cham-soc-quan-ao/khac/ajl74012001/
 https://www.lg.com/vn/phu-kien/tu-cham-soc-quan-ao/khac/ajl75320101/
 https://www.lg.com/vn/phu-kien/tu-cham-soc-quan-ao/khac/ajl75320201/
@@ -738,7 +745,11 @@ https://www.lg.com/vn/phu-kien/tu-lanh/bo-loc-nuoc-bo-loc/adq72910911/
 https://www.lg.com/vn/phu-kien/tu-lanh/bo-loc-nuoc-bo-loc/adq73693903/
 https://www.lg.com/vn/phu-kien/tu-lanh/hop-dung-homebar-hoc-dung-da/ajp32924910/
 https://www.lg.com/vn/phu-kien/tu-lanh/hop-dung-homebar-hoc-dung-da/akc73349802/
+https://www.lg.com/vn/phu-kien/tu-lanh/hop-dung-homebar-hoc-dung-da/mkk62342301/
+https://www.lg.com/vn/phu-kien/tu-lanh/ke/aht74413805/
+https://www.lg.com/vn/phu-kien/tu-lanh/ke/aht75335006/
 https://www.lg.com/vn/phu-kien/tu-lanh/khay-gio/ajp74894405/
+https://www.lg.com/vn/phu-kien/tu-lanh/khay-gio/ajp74894505/
 https://www.lg.com/vn/phu-kien/tv/chan-de-gia-treo-tuong/mec61904919/
 https://www.lg.com/vn/phu-kien/tv/chan-de-gia-treo-tuong/mec61924915/
 https://www.lg.com/vn/phu-kien/tv/chan-de-gia-treo-tuong/mec61925021/
@@ -755,6 +766,7 @@ https://www.lg.com/vn/phu-kien/tv/dieu-khien/akb76045006/
 https://www.lg.com/vn/phu-kien/tv/dieu-khien/akb76046407/
 https://www.lg.com/vn/phu-kien/tv/dieu-khien/ebx30147105/
 https://www.lg.com/vn/phu-kien/tv/dieu-khien/ebx64329217/
+https://www.lg.com/vn/refrigerators/others/ajl74372102/
 https://www.lg.com/vn/residential-air-conditioners/iec24g1n/
 https://www.lg.com/vn/service/cleaning-service/vheac12c251000001/
 https://www.lg.com/vn/service/cleaning-service/vhehc12c251000001/
@@ -768,7 +780,6 @@ https://www.lg.com/vn/service/cleaning-service/vherf12c251000007/
 https://www.lg.com/vn/service/cleaning-service/vherf12c251100009/
 https://www.lg.com/vn/service/cleaning-service/vherf12c251100010/
 https://www.lg.com/vn/service/cleaning-service/vherf12c251100012/
-https://www.lg.com/vn/service/cleaning-service/vherf12c251200029/
 https://www.lg.com/vn/service/cleaning-service/vherf12c251200032/
 https://www.lg.com/vn/service/cleaning-service/vherf12c251200034/
 https://www.lg.com/vn/service/cleaning-service/vherf12c251200035/
@@ -786,15 +797,16 @@ https://www.lg.com/vn/tro-giup/lg-best-care/bao-duong/may-chieu/
 https://www.lg.com/vn/tro-giup/lg-best-care/bao-duong/may-giat-long-dung/
 https://www.lg.com/vn/tro-giup/lg-best-care/bao-duong/may-giat-long-ngang/
 https://www.lg.com/vn/tro-giup/lg-best-care/bao-duong/may-loc-khong-khi-1-tang/
-https://www.lg.com/vn/tro-giup/lg-best-care/bao-duong/may-loc-khong-khi-2-tang/
 https://www.lg.com/vn/tro-giup/lg-best-care/bao-duong/may-rua-bat/
 https://www.lg.com/vn/tro-giup/lg-best-care/bao-duong/may-say/
 https://www.lg.com/vn/tro-giup/lg-best-care/bao-duong/styler/
-https://www.lg.com/vn/tro-giup/lg-best-care/bao-duong/thap-giat-say/
 https://www.lg.com/vn/tro-giup/lg-best-care/bao-duong/tu-lanh-french-door/
 https://www.lg.com/vn/tro-giup/lg-best-care/bao-duong/tu-lanh-hai-canh/
 https://www.lg.com/vn/tro-giup/lg-best-care/bao-duong/tu-lanh-ngan-da-duoi/
 https://www.lg.com/vn/tro-giup/lg-best-care/bao-duong/tu-lanh-side-by-side/
+https://www.lg.com/vn/tro-giup/lg-best-care/bao-duong/vhehc12c251100004/
+https://www.lg.com/vn/tro-giup/lg-best-care/bao-duong/vherf12c251100008/
+https://www.lg.com/vn/tro-giup/lg-best-care/bao-duong/vhewm12c251100009/
 https://www.lg.com/vn/tu-lanh/tu-dong/c30wh/
 https://www.lg.com/vn/tu-lanh/tu-dong/lof16bgm/
 https://www.lg.com/vn/tu-lanh/tu-lanh-french-door/f40bg/
@@ -882,6 +894,8 @@ https://www.lg.com/vn/tu-lanh/tu-lanh-ngan-da-tren/t21bg/
 https://www.lg.com/vn/tu-lanh/tu-lanh-ngan-da-tren/t26bg/
 https://www.lg.com/vn/tu-lanh/tu-lanh-ngan-da-tren/t30sv/
 https://www.lg.com/vn/tu-lanh/tu-lanh-ngan-da-tren/t33sv/
+https://www.lg.com/vn/tu-lanh/tu-lanh-ngan-da-tren/t33sv2/
+https://www.lg.com/vn/tu-lanh/tu-lanh-ngan-da-tren/t39sv/
 https://www.lg.com/vn/tu-lanh/tu-lanh-side-by-side/gr-b256bl/
 https://www.lg.com/vn/tu-lanh/tu-lanh-side-by-side/gr-b256jds/
 https://www.lg.com/vn/tu-lanh/tu-lanh-side-by-side/gr-d257js/
@@ -1129,3 +1143,5 @@ https://www.lg.com/vn/tv-va-loa-thanh/tv-uhd-4k/70uq9100psd/
 https://www.lg.com/vn/tv-va-loa-thanh/tv-uhd-4k/75ua8450psa/
 https://www.lg.com/vn/tv-va-loa-thanh/tv-uhd-4k/75ut9050psb/
 https://www.lg.com/vn/tv-va-loa-thanh/tv-uhd-4k/86ua8450psa/
+https://www.lg.com/vn/washer-dryers/front-loading-washing-machines/fx1411n5wb/
+https://www.lg.com/vn/washer-dryers/washer-dryers/f2520rntk/

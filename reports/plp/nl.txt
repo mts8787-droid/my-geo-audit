@@ -1,5 +1,6 @@
 https://www.lg.com/
-https://www.lg.com/nl/27lb70006la-bulk2
+https://www.lg.com/nl/24lb70006la-bulk0
+https://www.lg.com/nl/27g64na-b-bulk1
 https://www.lg.com/nl/aa12sb/
 https://www.lg.com/nl/aa18sb/
 https://www.lg.com/nl/air-to-water-heat-pumps/r290-monobloc/lg-premtw200-encxleu-bedrade-bediening-wit-/
@@ -13,6 +14,7 @@ https://www.lg.com/nl/audio/soundbars/ds95tr/
 https://www.lg.com/nl/audio/soundbars/dsc9s/
 https://www.lg.com/nl/audio/soundbars/dsg10ty/
 https://www.lg.com/nl/audio/soundbars/spt8-s/
+https://www.lg.com/nl/audio/xboom/grab-aeuslbk/
 https://www.lg.com/nl/business/airco-solutions/ARUN50GS2A-Multi-V-Mini-vrf
 https://www.lg.com/nl/business/airco-solutions/ARUN60LL2-R2-Multi-V-Space-II-vrf
 https://www.lg.com/nl/business/airco-solutions/ARWN140LAS4-Multi-V-Water-IV-vrf
@@ -139,7 +141,6 @@ https://www.lg.com/nl/koelkasten/french-door/gmg860epbe/
 https://www.lg.com/nl/koelkasten/french-door/gmg960evee/
 https://www.lg.com/nl/koelkasten/koel-vries-combinaties/gbbs312aev/
 https://www.lg.com/nl/koelkasten/koel-vries-combinaties/gbbs312apy/
-https://www.lg.com/nl/koelkasten/koel-vries-combinaties/gbbs312bev/
 https://www.lg.com/nl/koelkasten/koel-vries-combinaties/gbbs312cev/
 https://www.lg.com/nl/koelkasten/koel-vries-combinaties/gbbs312cpy/
 https://www.lg.com/nl/koelkasten/koel-vries-combinaties/gbbs322aev/
@@ -147,7 +148,6 @@ https://www.lg.com/nl/koelkasten/koel-vries-combinaties/gbbs322apy/
 https://www.lg.com/nl/koelkasten/koel-vries-combinaties/gbbs322bev/
 https://www.lg.com/nl/koelkasten/koel-vries-combinaties/gbbs322bpy/
 https://www.lg.com/nl/koelkasten/koel-vries-combinaties/gbbs322cev/
-https://www.lg.com/nl/koelkasten/koel-vries-combinaties/gbbs322cpy/
 https://www.lg.com/nl/koelkasten/koel-vries-combinaties/gbbs514amb/
 https://www.lg.com/nl/koelkasten/koel-vries-combinaties/gbbs514cpy/
 https://www.lg.com/nl/koelkasten/koel-vries-combinaties/gbbs524aev/
@@ -165,7 +165,6 @@ https://www.lg.com/nl/koelkasten/koel-vries-combinaties/gbbsj1ccep/
 https://www.lg.com/nl/koelkasten/koel-vries-combinaties/gbbsj1ccsw/
 https://www.lg.com/nl/koelkasten/koel-vries-combinaties/gbbsj20dsw/
 https://www.lg.com/nl/koelkasten/koel-vries-combinaties/gbbw322aev/
-https://www.lg.com/nl/koelkasten/koel-vries-combinaties/gbg5160cev/
 https://www.lg.com/nl/koelkasten/koel-vries-combinaties/gbgs514cev/
 https://www.lg.com/nl/koelkasten/koelkast-aanbiendingen/gbbs312aev/
 https://www.lg.com/nl/koelkasten/koelkast-aanbiendingen/gbbs322apy/
@@ -337,17 +336,17 @@ https://www.lg.com/nl/monitoren/ultrafine-uhd-4k-5k-monitoren/32u720a-b/
 https://www.lg.com/nl/monitoren/ultrafine-uhd-4k-5k-monitoren/32un880k-b/
 https://www.lg.com/nl/monitoren/ultrafine-uhd-4k-5k-monitoren/32uq850v-w/
 https://www.lg.com/nl/monitoren/ultrafine-uhd-4k-5k-monitoren/40U990A-W/
+https://www.lg.com/nl/monitoren/ultragear-gaming-monitoren/25g590b-b/
+https://www.lg.com/nl/monitoren/ultragear-gaming-monitoren/27g523b-b/
 https://www.lg.com/nl/monitoren/ultragear-gaming-monitoren/27g610a-b/
 https://www.lg.com/nl/monitoren/ultragear-gaming-monitoren/27g810a-b/
 https://www.lg.com/nl/monitoren/ultragear-gaming-monitoren/27g850a-b/
 https://www.lg.com/nl/monitoren/ultragear-gaming-monitoren/27gm950b-b/
 https://www.lg.com/nl/monitoren/ultragear-gaming-monitoren/27gr83q-b/
 https://www.lg.com/nl/monitoren/ultragear-gaming-monitoren/27gx704a-b/
-https://www.lg.com/nl/monitoren/ultragear-gaming-monitoren/32gx850a-b/
 https://www.lg.com/nl/monitoren/ultragear-gaming-monitoren/32gx870a-b/
 https://www.lg.com/nl/monitoren/ultragear-gaming-monitoren/34g600a-b/
 https://www.lg.com/nl/monitoren/ultragear-gaming-monitoren/34gx900a-b/
-https://www.lg.com/nl/monitoren/ultragear-gaming-monitoren/37g800a-b/
 https://www.lg.com/nl/monitoren/ultragear-gaming-monitoren/39gx900a-b/
 https://www.lg.com/nl/monitoren/ultragear-gaming-monitoren/39gx950b-b/
 https://www.lg.com/nl/monitoren/ultragear-gaming-monitoren/45gx900a-b/
@@ -417,6 +416,10 @@ https://www.lg.com/nl/residentiele-airconditioners/pc09st/
 https://www.lg.com/nl/residentiele-airconditioners/pc12st/
 https://www.lg.com/nl/residentiele-airconditioners/pc18st/
 https://www.lg.com/nl/residentiele-airconditioners/pc24st/
+https://www.lg.com/nl/residentiele-airconditioners/tf09tws/
+https://www.lg.com/nl/rt90x9-bulk0
+https://www.lg.com/nl/soundsuite/fs-m51/
+https://www.lg.com/nl/soundsuite/fs-m71/
 https://www.lg.com/nl/soundsuite/h7-m7m7w7001/
 https://www.lg.com/nl/soundsuite/h7-w7001/
 https://www.lg.com/nl/soundsuite/h7/
@@ -432,6 +435,7 @@ https://www.lg.com/nl/soundsuite/stereo-suite-7/
 https://www.lg.com/nl/soundsuite/w7/
 https://www.lg.com/nl/speakers/soundbars/h7-m7w7/
 https://www.lg.com/nl/speakers/soundbars/h7m7w7/
+https://www.lg.com/nl/televisies-soundbars/gallery-tv-with-frame/55lx7b6la/
 https://www.lg.com/nl/televisies-soundbars/gallery-tv-with-frame/65lx7b6la/
 https://www.lg.com/nl/televisies-soundbars/micro-rgb-evo/100mrgb96b9/
 https://www.lg.com/nl/televisies-soundbars/micro-rgb-evo/75mrgb96b9b/
@@ -474,7 +478,6 @@ https://www.lg.com/nl/televisies-soundbars/nanocell-tv/55nano82t6b/
 https://www.lg.com/nl/televisies-soundbars/nanocell-tv/65nano82t6b/
 https://www.lg.com/nl/televisies-soundbars/nanocell-tv/65nu850b6la/
 https://www.lg.com/nl/televisies-soundbars/nanocell-tv/75nano82t6b/
-https://www.lg.com/nl/televisies-soundbars/oled-evo/oled42c54la-ds40t/
 https://www.lg.com/nl/televisies-soundbars/oled-evo/oled42c54la/
 https://www.lg.com/nl/televisies-soundbars/oled-evo/oled42c55la/
 https://www.lg.com/nl/televisies-soundbars/oled-evo/oled42c5elb/
@@ -496,11 +499,12 @@ https://www.lg.com/nl/televisies-soundbars/oled-evo/oled55c68la-dsc9s/
 https://www.lg.com/nl/televisies-soundbars/oled-evo/oled55c68la/
 https://www.lg.com/nl/televisies-soundbars/oled-evo/oled55c69lb/
 https://www.lg.com/nl/televisies-soundbars/oled-evo/oled55g55lw/
-https://www.lg.com/nl/televisies-soundbars/oled-evo/oled55g56ls/
 https://www.lg.com/nl/televisies-soundbars/oled-evo/oled55g67lw/
+https://www.lg.com/nl/televisies-soundbars/oled-evo/oled55g68lw-ds80tr/
 https://www.lg.com/nl/televisies-soundbars/oled-evo/oled55g68lw/
 https://www.lg.com/nl/televisies-soundbars/oled-evo/oled55g69ls-ds80tr/
 https://www.lg.com/nl/televisies-soundbars/oled-evo/oled55g69ls/
+https://www.lg.com/nl/televisies-soundbars/oled-evo/oled65c54la/
 https://www.lg.com/nl/televisies-soundbars/oled-evo/oled65c55la/
 https://www.lg.com/nl/televisies-soundbars/oled-evo/oled65c56lb/
 https://www.lg.com/nl/televisies-soundbars/oled-evo/oled65c5elb/
@@ -563,6 +567,7 @@ https://www.lg.com/nl/televisies-soundbars/oled/oled65b6elc/
 https://www.lg.com/nl/televisies-soundbars/oled/oled65m59la/
 https://www.lg.com/nl/televisies-soundbars/oled/oled77b42la/
 https://www.lg.com/nl/televisies-soundbars/oled/oled77b46la/
+https://www.lg.com/nl/televisies-soundbars/oled/oled77b56la/
 https://www.lg.com/nl/televisies-soundbars/oled/oled77b68la/
 https://www.lg.com/nl/televisies-soundbars/oled/oled77m59la/
 https://www.lg.com/nl/televisies-soundbars/oled/oled83b56la/
@@ -588,11 +593,11 @@ https://www.lg.com/nl/televisies-soundbars/qned-evo/65qned82b6b/
 https://www.lg.com/nl/televisies-soundbars/qned-evo/65qned85b6b/
 https://www.lg.com/nl/televisies-soundbars/qned-evo/65qned86a6a/
 https://www.lg.com/nl/televisies-soundbars/qned-evo/65qned86b6b/
+https://www.lg.com/nl/televisies-soundbars/qned-evo/65qned8mb6c/
 https://www.lg.com/nl/televisies-soundbars/qned-evo/65qned93a6a/
 https://www.lg.com/nl/televisies-soundbars/qned-evo/65qned93b6a/
 https://www.lg.com/nl/televisies-soundbars/qned-evo/75qned82b6a/
 https://www.lg.com/nl/televisies-soundbars/qned-evo/75qned85b6b/
-https://www.lg.com/nl/televisies-soundbars/qned-evo/75qned86a6a-ds70tr/
 https://www.lg.com/nl/televisies-soundbars/qned-evo/75qned86a6a/
 https://www.lg.com/nl/televisies-soundbars/qned-evo/75qned86b6b-ds70tr/
 https://www.lg.com/nl/televisies-soundbars/qned-evo/75qned86b6b/
@@ -616,6 +621,7 @@ https://www.lg.com/nl/televisies-soundbars/qned/43qned82a6b/
 https://www.lg.com/nl/televisies-soundbars/qned/43qned84a6c/
 https://www.lg.com/nl/televisies-soundbars/qned/43qned86a6c/
 https://www.lg.com/nl/televisies-soundbars/qned/50qned70a6a/
+https://www.lg.com/nl/televisies-soundbars/qned/50qned71b6b/
 https://www.lg.com/nl/televisies-soundbars/qned/50qned72b6b/
 https://www.lg.com/nl/televisies-soundbars/qned/50qned80a6a/
 https://www.lg.com/nl/televisies-soundbars/qned/50qned82a6b/
@@ -628,6 +634,7 @@ https://www.lg.com/nl/televisies-soundbars/qned/55qned82a6b/
 https://www.lg.com/nl/televisies-soundbars/qned/55qned84a6c/
 https://www.lg.com/nl/televisies-soundbars/qned/65qned70a6a/
 https://www.lg.com/nl/televisies-soundbars/qned/65qned70b6c/
+https://www.lg.com/nl/televisies-soundbars/qned/65qned71b6b/
 https://www.lg.com/nl/televisies-soundbars/qned/65qned72b6b/
 https://www.lg.com/nl/televisies-soundbars/qned/65qned80a6a/
 https://www.lg.com/nl/televisies-soundbars/qned/65qned82a6b/
@@ -644,13 +651,13 @@ https://www.lg.com/nl/televisies-soundbars/qned/86qned80a6a/
 https://www.lg.com/nl/televisies-soundbars/qned/86qned82a6b/
 https://www.lg.com/nl/televisies-soundbars/qned/86qned916pa/
 https://www.lg.com/nl/televisies-soundbars/qned/98qned89t6a/
+https://www.lg.com/nl/televisies-soundbars/smart-tvs/27lb70006la/
 https://www.lg.com/nl/televisies-soundbars/smart-tvs/32lq63006la/
 https://www.lg.com/nl/televisies-soundbars/smart-tvs/32lr60006la/
 https://www.lg.com/nl/televisies-soundbars/smart-tvs/43lb65006la/
 https://www.lg.com/nl/televisies-soundbars/smart-tvs/43lr60006la/
 https://www.lg.com/nl/televisies-soundbars/tv-accessoires/fc25xa/
 https://www.lg.com/nl/televisies-soundbars/tv-accessoires/hs25xa/
-https://www.lg.com/nl/televisies-soundbars/tv-accessoires/mr25gb/
 https://www.lg.com/nl/televisies-soundbars/tv-accessoires/ws25xa/
 https://www.lg.com/nl/televisies-soundbars/uhd-4k-tvs/43ua73006la/
 https://www.lg.com/nl/televisies-soundbars/uhd-4k-tvs/43ua74006lb/
@@ -666,8 +673,8 @@ https://www.lg.com/nl/televisies-soundbars/uhd-4k-tvs/75ua74006lb/
 https://www.lg.com/nl/televisies-soundbars/uhd-4k-tvs/75ua75006la/
 https://www.lg.com/nl/televisies-soundbars/uhd-4k-tvs/86ua75006la/
 https://www.lg.com/nl/televisies-soundbars/uhd-4k-tvs/98ut91006la/
-https://www.lg.com/nl/tv-soundbars/qned/50qned71b6b/
-https://www.lg.com/nl/tv-soundbars/qned/65qned71b6b/
+https://www.lg.com/nl/tv-soundbars/tv-accessories/mr26ga/
+https://www.lg.com/nl/tv-soundbars/tv-accessories/mr26gb/
 https://www.lg.com/nl/tv-soundbars/tv-bundels/oled65b68la-tf09tws/
 https://www.lg.com/nl/tvs-soundbars/oled-evo/oled42c5elb-ds60t/
 https://www.lg.com/nl/tvs-soundbars/oled-evo/oled55c5elb-dsc9s/
@@ -719,7 +726,6 @@ https://www.lg.com/nl/wasmachines-en-drogers/wasmachines-en-drogers-aanbiedingen
 https://www.lg.com/nl/wasmachines-en-drogers/wasmachines-en-drogers-aanbiedingen/f4x1009nwk-rhxnwk/
 https://www.lg.com/nl/wasmachines-en-drogers/wasmachines-en-drogers-aanbiedingen/f4x5009twb-rhxtwb/
 https://www.lg.com/nl/wasmachines-en-drogers/wasmachines-en-drogers-aanbiedingen/f4x5511thb-RH5008/
-https://www.lg.com/nl/wasmachines-en-drogers/wasmachines-en-drogers-aanbiedingen/f4x5511thb-rh5010/
 https://www.lg.com/nl/wasmachines-en-drogers/wasmachines/f4a1009nwk/
 https://www.lg.com/nl/wasmachines-en-drogers/wasmachines/f4wr7011syb-rh9zven/
 https://www.lg.com/nl/wasmachines-en-drogers/wasmachines/f4wr7011syb/
