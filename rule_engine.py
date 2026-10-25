@@ -292,10 +292,10 @@ RULE_TYPES = {
     # ── AI Readiness / 콘텐츠 ──────────────────────────────────────────────────
     "schema_required_fields": {
         "label": "JSON-LD 필수 필드 검증",
-        "description": "특정 @type의 JSON-LD 노드가 필수 필드를 모두 가지는지 확인 (점 표기법 지원: offers.price)",
+        "description": "특정 @type의 JSON-LD 노드가 필수 필드를 모두 가지는지 확인 (점 표기법 지원: offers.price, 대체 필드는 | 로: sku|mpn|gtin)",
         "params": {
             "type":   {"label": "@type", "type": "text", "placeholder": "Product"},
-            "fields": {"label": "필수 필드 (쉼표 구분, dot path)", "type": "text", "placeholder": "name,description,sku,brand,offers.price"},
+            "fields": {"label": "필수 필드 (쉼표 구분, dot path, 대체 필드는 |)", "type": "text", "placeholder": "name,description,sku|mpn,brand,offers.price"},
         },
     },
     "definition_pattern_min": {
@@ -313,9 +313,11 @@ RULE_TYPES = {
                        "min_count 를 주면 절대 개수로, 비우면 min_ratio 비율로 판정한다.",
         "params": {
             "min_count": {"label": "최소 개수", "type": "number", "placeholder": "10"},
+            "min_count_by_type": {"label": "페이지 타입별 최소 개수 (예: support_troubleshoot:3,plp:3)", "type": "text", "placeholder": "support_troubleshoot:3,plp:3"},
             "min_ratio": {"label": "최소 비율 (0.0~1.0, min_count 미지정 시)", "type": "number", "placeholder": "0.1"},
             "skip_noise": {"label": "약관·결제 문구 제외", "type": "select", "options": ["yes", "no"]},
             "model": {"label": "판정 모델 사용 (AUDIT_MODEL_URL 설정 시)", "type": "select", "options": ["yes", "no"]},
+            "model_scan_max": {"label": "정규식 후보로 못 채우면 본문에서 모델로 훑을 최대 문장 수", "type": "number", "placeholder": "40"},
         },
     },
     "image_filename_keyword": {
@@ -1353,8 +1355,18 @@ def _has_dotted_path(node: dict, path: str) -> bool:
     return cur is not None and cur != ""
 
 
+def _has_any_path(node: dict, spec: str) -> bool:
+    """'sku|mpn|gtin13' 처럼 | 로 묶인 대체 필드 중 하나라도 있으면 충족.
+
+    schema.org 는 식별자(sku/mpn/gtin)·영상 주소(url/contentUrl/embedUrl)를 동등하게
+    인정하는데 한 이름만 요구하면 표준 마크업을 누락으로 오판한다 (LG PDP 는 mpn 96%
+    sku 0%, VideoObject 는 contentUrl 100% url 0% — 2026-10 감사 실측).
+    """
+    return any(_has_dotted_path(node, p.strip()) for p in spec.split("|") if p.strip())
+
+
 def _eval_schema_required_fields(params: dict, ctx: dict) -> dict:
-    """@type 노드에서 필수 필드 존재를 확인.
+    """@type 노드에서 필수 필드 존재를 확인. 필드는 | 로 대체 이름을 묶을 수 있다.
 
     alt_types: 동등하게 인정할 대체 타입(쉼표 구분). 예) Product ↔ ProductGroup.
       ProductGroup 은 색상/용량 변형이 있는 제품에 쓰는 schema.org 표준 타입으로,
@@ -1399,7 +1411,7 @@ def _eval_schema_required_fields(params: dict, ctx: dict) -> dict:
 
     last_missing = fields
     for node in candidates:
-        missing = [f for f in fields if not _has_dotted_path(node, f)]
+        missing = [f for f in fields if not _has_any_path(node, f)]
         if not missing:
             src = type_name if node in nodes else "/".join(alt_types)
             return {"pass": True, "value": f"@type={src} 필수 필드 OK", "hint": None}
@@ -1523,7 +1535,8 @@ def _eval_definition_pattern_min(params: dict, ctx: dict) -> dict:
     text = _visible_text(soup, strip_boilerplate=True)
     # 문장 단위로 보고 약관·결제·상표 고지 문장은 뺀다. 'PayPal Credit is a regulated
     # credit agreement' 같은 고지문이 정의문 패턴에 걸려 #33 오탐의 대부분을 차지했다.
-    sentences = [x for x in re.split(r"(?<=[.!?。\n])\s+", text) if not _CITABLE_NOISE.search(x)]
+    # 같은 문장이 Shadow DOM 과 일반 DOM 양쪽에서 추출돼 두 번 세어지는 일이 있어 중복을 걷어낸다.
+    sentences = list(dict.fromkeys(x for x in re.split(r"(?<=[.!?。\n])\s+", text) if not _CITABLE_NOISE.search(x)))
     matched = [x for x in sentences if any(m.group(0).split()[0].lower() not in _DEF_DEMONSTRATIVES
                                            for p in _DEF_PATTERNS_MULTI for m in p.finditer(x))]
     pattern_count = sum(1 for x in sentences for p in _DEF_PATTERNS_MULTI for m in p.finditer(x)
@@ -1727,6 +1740,26 @@ _CITABLE_NOISE = re.compile(
     r"약관|개인정보|저작권"
     r")", re.I)
 
+def _citable_min_count(params: dict, ctx: dict):
+    """#36 최소 개수. 페이지 타입별 예외(min_count_by_type)가 있으면 그 값을 쓴다.
+
+    기본 5개는 PDP·에디토리얼 아티클처럼 긴 본문을 전제로 한 값이다. 트러블슈팅은
+    증상·원인·해결책 세 요소로 끝나는 짧은 콘텐츠고, PLP 는 카테고리 설명문 몇 줄이
+    전부라 같은 잣대를 대면 콘텐츠가 있어도 떨어진다 → 둘은 3개(사용자 결정 2026-10-26,
+    10월 감사부터 적용). 형식 "support_troubleshoot:3,plp:3". 없으면 min_count.
+    """
+    mc = params.get("min_count")
+    pt = ((ctx.get("page_type") or {}).get("id") if isinstance(ctx.get("page_type"), dict) else ctx.get("page_type"))
+    by_type = str(params.get("min_count_by_type") or "").strip()
+    if pt and by_type:
+        for part in by_type.split(","):
+            if ":" in part:
+                k, v = part.split(":", 1)
+                if k.strip() == pt and v.strip().isdigit():
+                    return int(v.strip())
+    return mc
+
+
 def _eval_citable_density_min(params: dict, ctx: dict) -> dict:
     """인용 가능 문장을 센다.
 
@@ -1741,7 +1774,7 @@ def _eval_citable_density_min(params: dict, ctx: dict) -> dict:
 
     # GNB/푸터가 분모를 부풀려 밀도를 낮추므로 보일러플레이트를 제외한다
     text = _visible_text(soup, strip_boilerplate=True)
-    sentences = [s for s in re.split(r"(?<=[.!?。\n])\s+", text) if len(s.strip()) > 5]
+    sentences = list(dict.fromkeys(s for s in re.split(r"(?<=[.!?。\n])\s+", text) if len(s.strip()) > 5))
     if not sentences:
         return {"pass": False, "value": "문장 없음", "hint": "분석할 문장이 없습니다."}
     if str(params.get("skip_noise", "yes")).lower() not in ("no", "false", "0"):
@@ -1755,7 +1788,7 @@ def _eval_citable_density_min(params: dict, ctx: dict) -> dict:
     ratio = citable / len(sentences)
     value = f"{citable}/{len(sentences)} ({ratio*100:.1f}%)"
 
-    min_count = params.get("min_count")
+    min_count = _citable_min_count(params, ctx)
     if min_count not in (None, "", 0):
         min_count = int(min_count)
         passed = citable >= min_count
@@ -2144,31 +2177,40 @@ def _model_on(params: dict) -> bool:
 
 async def _eval_citable_density_min_async(params: dict, ctx: dict) -> dict:
     regex = _eval_citable_density_min(params, ctx)
-    min_count = params.get("min_count")
+    min_count = _citable_min_count(params, ctx)
     if not _model_on(params) or min_count in (None, "", 0):
         return regex
     cand = _eval_citable_density_min({**params, "_return_sentences": 1}, ctx)
     if "candidates" not in cand:
         return regex
     min_count = int(min_count)
-    confirmed, checked, whys = 0, 0, []
+    # 정규식 후보(숫자·단위 문장)를 먼저 확인하고, 그래도 못 채우면 본문 앞 model_scan_max 문장을
+    # 모델로 훑는다. 트러블슈팅 본문(원인·증상 설명)은 숫자가 없어 정규식 후보가 중앙값 1개라
+    # 모델에 보이지도 않았다 (2026-10-24 사용자 결정으로 #33 과 같이 본문 탐색 추가).
+    scan_max = int(params.get("model_scan_max", 40) or 40)
+    cand_set = set(cand["candidates"])
+    body = [x for x in cand["sentences"] if x not in cand_set and len(x.strip()) > 20][:scan_max]
+    confirmed, checked, whys, scanned = 0, 0, [], 0
     try:
         async with httpx.AsyncClient() as client:
-            for s in cand["candidates"]:
+            for s in cand["candidates"] + body:
+                if confirmed >= min_count:
+                    break
                 lab = await _am.label_sentence(s, client)
                 checked += 1
+                if s not in cand_set:
+                    scanned += 1
                 if lab.get("citable") == "y":
                     confirmed += 1
                 elif lab.get("why"):
                     whys.append(lab["why"])
-                if confirmed >= min_count:
-                    break
     except _am.ModelUnavailable:
         regex["value"] = f"{regex['value']} · 정규식(모델 미연결)"
         return regex
     n_cand = len(cand["candidates"])
     passed = confirmed >= min_count
-    value = f"모델 확인 {confirmed}/{checked} (정규식 후보 {n_cand}/{len(cand['sentences'])}문장)"
+    value = f"모델 확인 {confirmed}/{checked} (정규식 후보 {n_cand}/{len(cand['sentences'])}문장"
+    value += f", 본문 {scanned}문장 추가 탐색)" if scanned else ")"
     hint = None
     if not passed:
         hint = f"인용 가능 문장 {confirmed}개 — {min_count}개 이상 필요"

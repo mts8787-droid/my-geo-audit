@@ -422,7 +422,7 @@
           "type": "schema_required_fields",
           "params": {
             "type": "Product",
-            "fields": "name,description,sku,brand,offers.price,offers.availability",
+            "fields": "name,description,sku|mpn|gtin13|gtin,brand,offers.price,offers.availability",
             "alt_types": "ProductGroup"
           }
         },
@@ -460,7 +460,7 @@
           "type": "schema_required_fields",
           "params": {
             "type": "ImageObject",
-            "fields": "url,name,description,uploadDate"
+            "fields": "url|contentUrl,name|caption,description"
           }
         },
         "applies_when": {
@@ -478,7 +478,7 @@
           "type": "schema_required_fields",
           "params": {
             "type": "VideoObject",
-            "fields": "url,name,description,thumbnailUrl"
+            "fields": "url|contentUrl|embedUrl,name,description,thumbnailUrl"
           }
         },
         "applies_when": {
@@ -535,7 +535,8 @@
         "applies_to_page_types": [
           "experience",
           "buying_guide",
-          "microsite"
+          "microsite",
+          "support_troubleshoot"
         ],
         "applies_when": {
           "rule": {
@@ -716,7 +717,7 @@
         "name": "#44 Schema: AggregateRating OR Review",
         "spec_id": "#44",
         "points": 1,
-        "enabled": false,
+        "enabled": true,
         "applies_to_page_types": [
           "pdp"
         ],
@@ -802,7 +803,7 @@
       },
       {
         "id": "ai_citable",
-        "name": "#36 Citable Sentence ≥ 5개",
+        "name": "#36 Citable Sentence ≥ 5개 (트러블슈팅·PLP 3개)",
         "spec_id": "#36",
         "points": 1,
         "enabled": true,
@@ -810,7 +811,9 @@
           "type": "citable_density_min",
           "params": {
             "min_count": 5,
-            "model": "yes"
+            "min_count_by_type": "support_troubleshoot:3,plp:3",
+            "model": "yes",
+            "model_scan_max": 40
           }
         }
       }

@@ -19,14 +19,26 @@ class ModelUnavailable(Exception):
     pass
 
 
+# 같은 프로세스(=한 국가 감사) 안에서 똑같은 문장은 한 번만 판정한다. temperature 0 이라
+# 같은 입력은 같은 출력이고, 공통 안내문·템플릿 문장·#33/#36 이 함께 보는 문장이 많다.
+# 이번 실행 안에서만 쓰는 메모이고 파일로 남기지 않는다 — 지난 감사 결과 재사용이 아니다.
+_memo: dict = {}
+stats = {"calls": 0, "hits": 0}
+
+
 def enabled() -> bool:
     return bool(MODEL_URL)
 
 
 async def label_sentence(sentence: str, client: httpx.AsyncClient) -> dict:
     """한 문장을 판정한다. 연결 실패·HTTP 오류는 ModelUnavailable, 파싱 실패는 빈 dict."""
+    text = sentence[:MAX_CHARS]
+    if text in _memo:
+        stats["hits"] += 1
+        return dict(_memo[text])
+    stats["calls"] += 1
     body = {"model": MODEL_NAME, "stream": False, "format": "json",
-            "messages": [{"role": "user", "content": sentence[:MAX_CHARS]}],
+            "messages": [{"role": "user", "content": text}],
             "options": {"temperature": 0, "num_predict": 80}}
     try:
         r = await client.post(f"{MODEL_URL}/api/chat", json=body, timeout=60)
@@ -38,4 +50,6 @@ async def label_sentence(sentence: str, client: httpx.AsyncClient) -> dict:
         out = json.loads(txt[txt.index("{"): txt.rindex("}") + 1])
     except Exception:
         return {}
-    return {k: out.get(k) for k in ("citable", "definition", "summary", "why")}
+    lab = {k: out.get(k) for k in ("citable", "definition", "summary", "why")}
+    _memo[text] = lab
+    return dict(lab)

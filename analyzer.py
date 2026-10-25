@@ -264,6 +264,11 @@ async def analyze_url(url: str, lightweight: bool = False, scope: str = "all") -
     jsonld    = _extract_json_ld(page_data)
     from page_type import detect_page_type
     page_type = detect_page_type(page_data.get("soup"), page_data.get("final_url") or url)
+    # HS 콘텐츠 시트는 원본 URL 기준 — 리다이렉트 도착지가 시트와 다르면 원본으로 다시 본다.
+    if page_type.get("matched_by") != "hs_contents" and page_data.get("final_url") and page_data["final_url"] != url:
+        alt = detect_page_type(page_data.get("soup"), url)
+        if alt.get("matched_by") == "hs_contents":
+            page_type = alt
 
     # SSR 글자수: Playwright(JS off, CSS-aware) 결과 우선. 없으면 httpx soup 기반 폴백.
     # 둘 다 보일러플레이트(GNB/Footer/쿠키 배너) 제외 후 측정 — ratio 왜곡 방지.

@@ -329,6 +329,28 @@ class TestSchemaRules(unittest.TestCase):
                   self._ctx_with_jsonld(data))
         self.assertTrue(r["pass"])
 
+    def test_schema_alternative_fields(self):
+        # sku|mpn|gtin13 — LG PDP 는 sku 대신 mpn 을 쓴다. 하나만 있어도 충족.
+        data = {"@type": "Product", "name": "OLED65C4", "mpn": "OLED65C4PUA",
+                "offers": {"@type": "Offer", "price": "1999", "availability": "InStock"}}
+        r = _eval("schema_required_fields",
+                  {"type": "Product", "fields": "name,sku|mpn|gtin13,offers.price"},
+                  self._ctx_with_jsonld(data))
+        self.assertTrue(r["pass"])
+        # 대체 필드가 전부 없으면 누락으로 보고 그룹 전체를 hint 에 남긴다
+        r = _eval("schema_required_fields",
+                  {"type": "Product", "fields": "name,sku|gtin13"},
+                  self._ctx_with_jsonld(data))
+        self.assertFalse(r["pass"])
+        self.assertIn("sku|gtin13", r["hint"])
+        # VideoObject: url 대신 contentUrl (schema.org 표준)
+        video = {"@type": "VideoObject", "name": "v", "description": "d", "thumbnailUrl": "t.jpg",
+                 "contentUrl": "https://example.com/v.mp4"}
+        r = _eval("schema_required_fields",
+                  {"type": "VideoObject", "fields": "url|contentUrl|embedUrl,name,description,thumbnailUrl"},
+                  self._ctx_with_jsonld(video))
+        self.assertTrue(r["pass"])
+
     def test_schema_no_match_type(self):
         data = {"@type": "Article", "headline": "..."}
         r = _eval("schema_required_fields",
@@ -369,6 +391,19 @@ class TestContentRules(unittest.TestCase):
                 'See more on a large 34" curved ultrawide smart display.</p>')
         r = _eval("citable_density_min", {"min_count": 2}, _ctx(html))
         self.assertTrue(r["pass"])
+
+    def test_citable_min_count_by_type(self):
+        # 트러블슈팅·PLP 는 짧은 콘텐츠라 3개 (2026-10-26). 다른 타입은 min_count 그대로.
+        html = "<p>매출이 30% 증가했다. 2024년 보고서에 따르면 좋다. 무게는 12kg 이다. 그냥 일반 문장.</p>"
+        params = {"min_count": 5, "min_count_by_type": "support_troubleshoot:3,plp:3"}
+        ctx = _ctx(html); ctx["page_type"] = {"id": "support_troubleshoot"}
+        self.assertTrue(_eval("citable_density_min", params, ctx)["pass"])
+        ctx["page_type"] = {"id": "plp"}
+        self.assertTrue(_eval("citable_density_min", params, ctx)["pass"])
+        ctx["page_type"] = {"id": "pdp"}
+        r = _eval("citable_density_min", params, ctx)
+        self.assertFalse(r["pass"])
+        self.assertIn("5개 이상", r["hint"])
 
     def test_summary_label_tag_pass(self):
         # US PDP(MUI)의 <p>Key features</p> 라벨 — label_tags: p 로 잡는다
@@ -865,11 +900,37 @@ class TestModelBackedRules(unittest.TestCase):
         # 정규식 후보 4문장 중 모델이 2문장만 y → min_count 3 FAIL, 제외 사유가 hint 에 남는다
         calls = self._fake(lambda s: {"citable": "y" if "grew" in s or "report" in s else "n",
                                       "why": "단순 치수"})
+        # 후보로 못 채우면 나머지 본문("Just a plain sentence.")도 모델로 훑는다 → 5회 호출
         r = self._run("citable_density_min", {"min_count": 3}, _ctx(self.CITABLE_HTML))
         self.assertFalse(r["pass"])
-        self.assertTrue(r["value"].startswith("모델 확인 2/4"))
+        self.assertTrue(r["value"].startswith("모델 확인 2/5"))
+        self.assertIn("본문 1문장 추가 탐색", r["value"])
         self.assertIn("단순 치수", r["hint"])
-        self.assertEqual(len(calls), 4)
+        self.assertEqual(len(calls), 5)
+
+    def test_citable_body_scan_counts_non_regex_sentences(self):
+        # 숫자 없는 원인 설명문(트러블슈팅)이 정규식 후보가 아니어도 모델이 y 면 센다
+        html = ("<p>The LAN cable may be loose, disconnected, or damaged. "
+                "Dust buildup on the filter can reduce air purification performance. "
+                "Sales grew 30% in 2024.</p>")
+        calls = self._fake(lambda s: {"citable": "y"})
+        r = self._run("citable_density_min", {"min_count": 3}, _ctx(html))
+        self.assertTrue(r["pass"])
+        self.assertEqual(len(calls), 3)
+        self.assertIn("본문 2문장 추가 탐색", r["value"])
+        # model_scan_max 로 본문 탐색 범위를 제한할 수 있다
+        calls = self._fake(lambda s: {"citable": "y" if "%" in s else "n"})
+        r = self._run("citable_density_min", {"min_count": 3, "model_scan_max": 1}, _ctx(html))
+        self.assertFalse(r["pass"])
+        self.assertEqual(len(calls), 2)
+
+    def test_citable_dedupes_repeated_sentences(self):
+        # Shadow DOM + 일반 DOM 중복 추출 문장은 한 번만 센다
+        html = "<p>Sales grew 30% in 2024.</p><div><p>Sales grew 30% in 2024.</p></div>"
+        calls = self._fake(lambda s: {"citable": "y"})
+        r = self._run("citable_density_min", {"min_count": 2}, _ctx(html))
+        self.assertFalse(r["pass"])
+        self.assertEqual(len(calls), 1)
 
     def test_citable_model_early_stop(self):
         calls = self._fake(lambda s: {"citable": "y"})
