@@ -4,14 +4,20 @@ v3b 학습 데이터 (2026-10-20): dataset_v3(4개 유형 결정 적용 + 옛 �
   - 트러블슈팅 홀드아웃은 v3 와 같은 test_ts(lora_data_v3/test_ts_ids.json)
   - v2·v3·v3b 를 모두 이 정답으로 채점해야 비교가 공정하다.
   /usr/bin/python3 build_lora_v3b.py
+v3c: /usr/bin/python3 build_lora_v3b.py c → dataset_v3c 로 lora_data_v3c (평가는 lora_data_v3b 의 test 로 해야 같은 정답)
+v3d (2026-10-24): 일반은 dataset_v3c 그대로, 트러블슈팅은 dataset_ts_v2(원인·증상 설명문 = 인용 y, 사용자 결정) → lora_data_v3d.
+  test_ts 정답이 바뀌므로 트러블슈팅 비교는 lora_data_v3d/test_ts 로 v2·v3c 를 다시 채점해야 공정하다.
+  /usr/bin/python3 build_lora_v3b.py d
 """
-import json, os, random
-T = "reports/shadow_llm/train"; OUT = f"{T}/lora_data_v3b"; os.makedirs(OUT, exist_ok=True)
+import json, os, random, sys
+VAR = sys.argv[1] if len(sys.argv) > 1 else "b"
+T = "reports/shadow_llm/train"; OUT = f"{T}/lora_data_v3{VAR}"; os.makedirs(OUT, exist_ok=True)
 random.seed(13)
 SYSTEM = json.loads(open(f"{T}/lora_data_v2/train.jsonl").readline())["messages"][0]["content"]
 cl = {r["id"]: r for r in json.load(open(f"{T}/claude_labels.json"))}
-gen = [json.loads(l) for l in open(f"{T}/dataset_v3.jsonl")]
-ts = [json.loads(l) for l in open(f"{T}/dataset_ts_v1.jsonl")]
+GEN_VAR = {"b": "", "d": "c"}.get(VAR, VAR)
+gen = [json.loads(l) for l in open(f"{T}/dataset_v3{GEN_VAR}.jsonl")]
+ts = [json.loads(l) for l in open(f"{T}/dataset_ts_{'v2' if VAR == 'd' else 'v1'}.jsonl")]
 test_ids = set(json.load(open(f"{T}/lora_data/test_ids.json")))
 ts_test_ids = set(json.load(open(f"{T}/lora_data_v3/test_ts_ids.json")))
 

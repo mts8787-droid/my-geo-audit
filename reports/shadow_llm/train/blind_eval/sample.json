@@ -1,0 +1,3002 @@
+[
+ {
+  "src": "s12482",
+  "text": "*Durante el funcionamiento, el aire se emite simultáneamente en 3 vías a través de las salidas situadas a la izquierda, derecha e inferior del producto.",
+  "cc": "es",
+  "page_type": "pdp",
+  "ko": "*작동 중 제품 좌·우·하단 토출구를 통해 3방향으로 동시에 바람이 나옵니다.",
+  "url": "",
+  "set": "general",
+  "id": "b001"
+ },
+ {
+  "src": "s11760",
+  "text": "¿Te ha resultado útil esta información?",
+  "cc": "mx",
+  "page_type": "support_troubleshoot",
+  "ko": "이 정보가 도움이 되었나요?",
+  "url": "",
+  "set": "general",
+  "id": "b002"
+ },
+ {
+  "src": "new077",
+  "text": "Retira la batería del cuerpo de la aspiradora.",
+  "cc": "mx",
+  "page_type": "support_troubleshoot",
+  "ko": "청소기 본체에서 배터리를 분리하세요.",
+  "url": "https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001176-20155102970927/",
+  "set": "ts_new",
+  "id": "b003"
+ },
+ {
+  "src": "s12263",
+  "text": "For models with ThinQ functionality, you can also use the LG ThinQ App to change the temperature setting remotely via your smartphone for supported models.",
+  "cc": "au",
+  "page_type": "buying_guide",
+  "ko": "ThinQ 기능이 있는 모델은 LG ThinQ 앱으로 스마트폰에서 원격으로 온도 설정을 변경할 수도 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b004"
+ },
+ {
+  "src": "s10198",
+  "text": "En pocas palabras, elegir un microondas del tamaño adecuado puede ayudar a minimizar el desperdicio de energía y mejorar el rendimiento al cocinar.",
+  "cc": "mx",
+  "page_type": "experience",
+  "ko": "요컨대, 적절한 크기의 전자레인지를 선택하면 에너지 낭비를 줄이고 조리 성능을 높일 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b005"
+ },
+ {
+  "src": "new009",
+  "text": "Desconecte o cabo de energia do roteador, espere cerca de 10 segundos e depois conecte novamente.",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "공유기 전원 케이블을 뽑고 약 10초 기다린 뒤 다시 연결하세요.",
+  "url": "https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001755-20155140885484",
+  "set": "ts_new",
+  "id": "b006"
+ },
+ {
+  "src": "s00634",
+  "text": "*Máy nâng không gỉ (Chống vi khuẩn 99%): Được thử nghiệm bởi Intertek vào tháng 7 năm 2013.",
+  "cc": "vn",
+  "page_type": "pdp",
+  "ko": "*스테인리스 리프터(항균 99%): 2013년 7월 Intertek에서 테스트됨.",
+  "url": "",
+  "set": "general",
+  "id": "b007"
+ },
+ {
+  "src": "s01655",
+  "text": "El formato 21:9 ultrapanorámico logra el equilibrio perfecto entre una escala inmersiva y un uso práctico del espacio en tu escritorio.",
+  "cc": "es",
+  "page_type": "buying_guide",
+  "ko": "21:9 울트라와이드 포맷은 몰입감 있는 규모와 실용적인 데스크 공간 활용 사이의 완벽한 균형을 이룹니다.",
+  "url": "",
+  "set": "general",
+  "id": "b008"
+ },
+ {
+  "src": "s10654",
+  "text": "Tips Insider tips to maximize the full potential of your product.",
+  "cc": "us",
+  "page_type": "home",
+  "ko": "팁 제품의 잠재력을 최대로 끌어내는 인사이더 팁.",
+  "url": "",
+  "set": "general",
+  "id": "b009"
+ },
+ {
+  "src": "s10457",
+  "text": "By analyzing how you watch, AI can also optimize picture and sound settings automatically, creating a more personalized viewing experience over time.",
+  "cc": "ca",
+  "page_type": "buying_guide",
+  "ko": "AI는 시청 방식을 분석해 화질과 음질 설정을 자동으로 최적화하여 시간이 지날수록 더 개인화된 시청 경험을 만듭니다.",
+  "url": "",
+  "set": "general",
+  "id": "b010"
+ },
+ {
+  "src": "s01105",
+  "text": "LG generally recommends maintaining a refrigerator temperature around 3°C (37°F) and a freezer temperature around -18°C (0°F) for optimal performance.",
+  "cc": "ca",
+  "page_type": "pdp",
+  "ko": "LG는 최적 성능을 위해 냉장실 약 3°C(37°F), 냉동실 약 -18°C(0°F) 유지를 일반적으로 권장합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b011"
+ },
+ {
+  "src": "s00339",
+  "text": "Besseres Bilderlebnis in Premium-Qualität Der hochentwickelte Micro-LED-Display in der All-in-One Lösung von LG kombiniert tiefe Schwarztöne und lebendige Farben.",
+  "cc": "de",
+  "page_type": "press_media",
+  "ko": "프리미엄 화질 LG 올인원 솔루션의 첨단 Micro-LED 디스플레이는 깊은 블랙과 생동감 있는 색을 결합한다.",
+  "url": "",
+  "set": "general",
+  "id": "b012"
+ },
+ {
+  "src": "new054",
+  "text": "may suddenly increase, and you may notice an increase in noise.",
+  "cc": "au",
+  "page_type": "support_troubleshoot",
+  "ko": "(문장 조각) …갑자기 커질 수 있으며, 소음이 커진 것을 느낄 수 있습니다.",
+  "url": "https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT32004806-20155198562423",
+  "set": "ts_new",
+  "id": "b013"
+ },
+ {
+  "src": "s12007",
+  "text": "DoorCooling+™: Provides faster and more even cooling, including areas around the door shelves.",
+  "cc": "in",
+  "page_type": "plp",
+  "ko": "DoorCooling+™: 도어 선반 주변까지 더 빠르고 균일한 냉각을 제공합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b014"
+ },
+ {
+  "src": "s12126",
+  "text": "If the triangular buttons located above the other buttons are not lit, it means that the auto up/down feature is turned off.",
+  "cc": "au",
+  "page_type": "support_troubleshoot",
+  "ko": "다른 버튼 위에 있는 삼각형 버튼이 켜져 있지 않으면 자동 올림/내림 기능이 꺼져 있다는 의미입니다.",
+  "url": "",
+  "set": "general",
+  "id": "b015"
+ },
+ {
+  "src": "new011",
+  "text": "Đầu tiên, khởi động lại hộp giải mã tín hiệu.",
+  "cc": "vn",
+  "page_type": "support_troubleshoot",
+  "ko": "먼저 셋톱박스를 다시 시작하세요.",
+  "url": "https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001453-20155105903304/",
+  "set": "ts_new",
+  "id": "b016"
+ },
+ {
+  "src": "s13174",
+  "text": "Beyond screen sharing and streaming, manage your IoT devices from Google Home, Apple Home, and more, all from one intuitive platform.",
+  "cc": "ca",
+  "page_type": "buying_guide",
+  "ko": "화면 공유와 스트리밍을 넘어 Google Home, Apple Home 등의 IoT 기기를 하나의 직관적 플랫폼에서 관리하세요.",
+  "url": "",
+  "set": "general",
+  "id": "b017"
+ },
+ {
+  "src": "s10056",
+  "text": "*Las características mostradas son relevantes para el portafolio global de productos y algunas pueden no ser relevantes para el mercado de México.",
+  "cc": "mx",
+  "page_type": "pdp",
+  "ko": "*표시된 기능은 글로벌 제품군 기준이며 일부는 멕시코 시장에 해당하지 않을 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b018"
+ },
+ {
+  "src": "s11014",
+  "text": "Dazu gehört auch die Unterstützung der neuesten DisplayPort-2.1-Technologie mit deutlich höheren Bandbreiten für unkomprimierte Auflösungen und ultraschnelle Bildwiederholraten.",
+  "cc": "de",
+  "page_type": "buying_guide",
+  "ko": "여기에는 비압축 해상도와 초고속 주사율을 위한 훨씬 높은 대역폭의 최신 DisplayPort 2.1 기술 지원도 포함됩니다.",
+  "url": "",
+  "set": "general",
+  "id": "b019"
+ },
+ {
+  "src": "new099",
+  "text": "Der Abflussschlauch kann eingebogen oder falsch installiert sein.",
+  "cc": "de",
+  "page_type": "support_troubleshoot",
+  "ko": "배수 호스가 꺾였거나 잘못 설치됐을 수 있습니다.",
+  "url": "https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20155004250964/",
+  "set": "ts_new",
+  "id": "b020"
+ },
+ {
+  "src": "s10231",
+  "text": "Fan Coil El Fan Coil de LG es una solución de refrigeración y calefacción oculta que proporciona un control óptimo de la temperatura sin afectar a la estética interior.",
+  "cc": "mx",
+  "page_type": "business",
+  "ko": "팬코일 LG 팬코일은 실내 미관을 해치지 않으면서 최적의 온도 제어를 제공하는 매립형 냉난방 솔루션입니다.",
+  "url": "",
+  "set": "general",
+  "id": "b021"
+ },
+ {
+  "src": "s01490",
+  "text": "The versatile wedge design and carry handle transforms any environment into a stage.",
+  "cc": "au",
+  "page_type": "press_media",
+  "ko": "다재다능한 웨지 디자인과 손잡이가 어떤 환경도 무대로 바꿉니다.",
+  "url": "",
+  "set": "general",
+  "id": "b022"
+ },
+ {
+  "src": "new032",
+  "text": "Para modelos sem indicador de som de notificação ou de som de botão Modelo aplicável: F1925 Depois de ligar a energia e operar, pressione e segure o botão de Atraso no Fim por 3 segundos para ativar ou desativar a função.",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "알림음·버튼음 표시가 없는 모델 · 해당 모델: F1925 · 전원을 켜고 작동시킨 뒤 예약 종료 버튼을 3초간 누르면 기능이 켜지거나 꺼집니다.",
+  "url": "https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001753-20155102954050",
+  "set": "ts_new",
+  "id": "b023"
+ },
+ {
+  "src": "s00815",
+  "text": "The latest refrigerator technology focuses on AI-powered cooling, energy efficiency, freshness, smart connectivity, and flexible storage.",
+  "cc": "in",
+  "page_type": "plp",
+  "ko": "최신 냉장고 기술은 AI 냉각, 에너지 효율, 신선도, 스마트 연결성, 유연한 수납에 초점을 둔다.",
+  "url": "",
+  "set": "general",
+  "id": "b024"
+ },
+ {
+  "src": "s10547",
+  "text": "El rendimiento del dispositivo de almacenamiento influye en el rendimiento de la grabación.",
+  "cc": "es",
+  "page_type": "support_troubleshoot",
+  "ko": "저장 장치의 성능은 녹화 성능에 영향을 줍니다.",
+  "url": "",
+  "set": "general",
+  "id": "b025"
+ },
+ {
+  "src": "s00780",
+  "text": "Este honor reconoce el compromiso ejemplar de LG en la lucha contra el cambio climático y la protección del medio ambiente a través del liderazgo en productos y promociones con certificación ENERGY STAR.",
+  "cc": "mx",
+  "page_type": "press_media",
+  "ko": "이 영예는 ENERGY STAR 인증 제품과 홍보 리더십을 통한 기후변화 대응·환경 보호에 대한 LG의 모범적 헌신을 인정하는 것입니다.",
+  "url": "",
+  "set": "general",
+  "id": "b026"
+ },
+ {
+  "src": "new036",
+  "text": "Close Para ajustar la temperatura de tu frigorífico, comprueba primero dónde se encuentra el regulador de temperatura (en el panel de control exterior o en el interior del electrodoméstico).",
+  "cc": "mx",
+  "page_type": "support_troubleshoot",
+  "ko": "냉장고 온도를 조절하려면 먼저 온도 조절기가 어디 있는지(외부 조작부 또는 제품 내부) 확인하세요.",
+  "url": "https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001176-20155177656196",
+  "set": "ts_new",
+  "id": "b027"
+ },
+ {
+  "src": "s00106",
+  "text": "*El televisor OLED M5 cuenta con NVIDIA G-Sync, FreeSync Premium, GeForce NOW, Game Portal, VRR, ALLM, eARC y HGiG.",
+  "cc": "es",
+  "page_type": "microsite",
+  "ko": "*OLED M5 TV는 NVIDIA G-Sync, FreeSync Premium, GeForce NOW, Game Portal, VRR, ALLM, eARC, HGiG를 지원합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b028"
+ },
+ {
+  "src": "s01930",
+  "text": "Pro Installation Canada-wide .",
+  "cc": "ca",
+  "page_type": "home",
+  "ko": "캐나다 전역 전문 설치 .",
+  "url": "",
+  "set": "general",
+  "id": "b029"
+ },
+ {
+  "src": "s12535",
+  "text": "7 The app also provides control over audio modes and lighting preferences for a personalised listening experience.",
+  "cc": "au",
+  "page_type": "press_media",
+  "ko": "7 앱은 개인화된 청취 경험을 위해 오디오 모드와 조명 설정도 제어할 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b030"
+ },
+ {
+  "src": "new091",
+  "text": "* Nota: A disponibilidade do serviço pode variar conforme o país.",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "* 참고: 서비스 제공 여부는 국가마다 다를 수 있습니다.",
+  "url": "https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001755-20155316511573",
+  "set": "ts_new",
+  "id": "b031"
+ },
+ {
+  "src": "new086",
+  "text": "Drehen Sie diesen Regler langsam, um das Bild perfekt auf Ihrem Bildschirm zu zentrieren.",
+  "cc": "de",
+  "page_type": "support_troubleshoot",
+  "ko": "이 다이얼을 천천히 돌려 화면에 이미지를 정확히 맞추세요.",
+  "url": "https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000814-20155381402636",
+  "set": "ts_new",
+  "id": "b032"
+ },
+ {
+  "src": "new066",
+  "text": "use a dry cotton swab to completely remove any moisture.",
+  "cc": "in",
+  "page_type": "support_troubleshoot",
+  "ko": "(문장 조각) 마른 면봉으로 물기를 완전히 닦아 내세요.",
+  "url": "https://www.lg.com/in/support/product-support/troubleshoot/help-library/cs-CT52006833-20155130677351/",
+  "set": "ts_new",
+  "id": "b033"
+ },
+ {
+  "src": "new002",
+  "text": "Por que há um leve cheiro de queimado no primeiro uso?",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "처음 사용할 때 약간 타는 냄새가 나는 이유는 무엇인가요?",
+  "url": "https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001753-20155299041485",
+  "set": "ts_new",
+  "id": "b034"
+ },
+ {
+  "src": "s11734",
+  "text": "Espaço de armazenamento insuficiente Se o espaço de armazenamento da sua TV estiver cheio, talvez seja necessário deletar aplicativos que não precisa antes de instalar novos.",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "저장 공간 부족 TV 저장 공간이 가득 찼다면 새 앱을 설치하기 전에 필요 없는 앱을 삭제해야 할 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b035"
+ },
+ {
+  "src": "new095",
+  "text": "Si tu frigorífico tiene botones físicos, la suciedad o la humedad alrededor de los botones pueden provocar que el panel de control parpadee.",
+  "cc": "mx",
+  "page_type": "support_troubleshoot",
+  "ko": "냉장고에 물리 버튼이 있으면 버튼 주변의 먼지나 습기 때문에 조작부가 깜박일 수 있습니다.",
+  "url": "https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT52001176-20155297571159",
+  "set": "ts_new",
+  "id": "b036"
+ },
+ {
+  "src": "new078",
+  "text": "Touch once to display the current setting.",
+  "cc": "in",
+  "page_type": "support_troubleshoot",
+  "ko": "한 번 터치하면 현재 설정이 표시됩니다.",
+  "url": "https://www.lg.com/in/support/product-support/troubleshoot/help-library/cs-CT52006627-20155200207794",
+  "set": "ts_new",
+  "id": "b037"
+ },
+ {
+  "src": "s12733",
+  "text": "Todas las lavadoras LG tienen una altura y un ancho estándar.",
+  "cc": "mx",
+  "page_type": "pdp",
+  "ko": "모든 LG 세탁기는 표준 높이와 너비를 갖추고 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b038"
+ },
+ {
+  "src": "s01245",
+  "text": "Para quem busca modernidade e performance, a linha LG DUAL Inverter AI [LNERPT-S3.1]— com versões de diferentes potências, entre elas a de 12.000 BTUs — se destaca como uma das soluções mais completas, inteligentes e inovadoras do mercado.",
+  "cc": "br",
+  "page_type": "press_media",
+  "ko": "현대적이고 성능 좋은 제품을 찾는 이들에게 LG DUAL Inverter AI 라인(12,000 BTU 포함 다양한 출력)은 시장에서 가장 완성도 높고 혁신적인 솔루션 중 하나로 돋보인다.",
+  "url": "",
+  "set": "general",
+  "id": "b039"
+ },
+ {
+  "src": "new079",
+  "text": "Warum gibt es keinen Ton von meinem Fernseher?",
+  "cc": "de",
+  "page_type": "support_troubleshoot",
+  "ko": "TV에서 소리가 나지 않는 이유는 무엇인가요?",
+  "url": "https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000817-20155311242601/",
+  "set": "ts_new",
+  "id": "b040"
+ },
+ {
+  "src": "new053",
+  "text": "➔ Mögliche Symptome Ohrhörer laden möglicherweise nicht richtig.",
+  "cc": "de",
+  "page_type": "support_troubleshoot",
+  "ko": "➔ 나타날 수 있는 증상: 이어폰이 제대로 충전되지 않을 수 있습니다.",
+  "url": "https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000819-20155063961514/",
+  "set": "ts_new",
+  "id": "b041"
+ },
+ {
+  "src": "s10806",
+  "text": "The Charcoal Lighting Heater™ refers to a specially designed heating element in LG's Convertible Microwave Ovens that generates deep, intense heat — the kind that replicates what charcoal cooking does to food.",
+  "cc": "in",
+  "page_type": "microsite",
+  "ko": "차콜 라이팅 히터™는 LG 컨버터블 전자레인지의 특수 설계 발열체로, 숯불 조리가 음식에 주는 것과 같은 깊고 강한 열을 발생시킵니다.",
+  "url": "",
+  "set": "general",
+  "id": "b042"
+ },
+ {
+  "src": "s12719",
+  "text": "Não obrigado(a), Agora não CONTINUE A ENTRAR Adicione itens à sua lista de desejos do MY LG Remover item Continuar para MINHA lista de desejos LG OTP authentication failed.",
+  "cc": "br",
+  "page_type": "pdp",
+  "ko": "아니요 괜찮습니다, 지금은 아님 계속 로그인 MY LG 위시리스트에 항목 추가 항목 제거 내 위시리스트로 계속 LG OTP 인증 실패.",
+  "url": "",
+  "set": "general",
+  "id": "b043"
+ },
+ {
+  "src": "new090",
+  "text": "How to Adjust the Image Position Use the lens shift dials to move the projected image vertically or horizontally without moving the projector Step 1.",
+  "cc": "uk",
+  "page_type": "support_troubleshoot",
+  "ko": "(페이지 머리말) 이미지 위치 조정 방법: 렌즈 시프트 다이얼로 프로젝터를 움직이지 않고 투사 이미지를 상하좌우로 옮기세요 · 1단계.",
+  "url": "https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008333-20155381409557",
+  "set": "ts_new",
+  "id": "b044"
+ },
+ {
+  "src": "s01289",
+  "text": "Explore laptops Laser projectors With brightness options up to 7,000 lumens and up to 20,000 hours of laser life, LG projectors are an incredible addition to conference rooms, offices, huddle rooms, and other professional spaces.",
+  "cc": "au",
+  "page_type": "business",
+  "ko": "노트북 보기 레이저 프로젝터 최대 7,000루멘 밝기와 최대 20,000시간 레이저 수명으로 LG 프로젝터는 회의실·사무실 등에 훌륭한 추가 장비다.",
+  "url": "",
+  "set": "general",
+  "id": "b045"
+ },
+ {
+  "src": "s10585",
+  "text": "3)*Some of these features may not be supported in certain regions or models.",
+  "cc": "in",
+  "page_type": "buying_guide",
+  "ko": "3)*일부 기능은 특정 지역이나 모델에서 지원되지 않을 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b046"
+ },
+ {
+  "src": "new072",
+  "text": "Se o LED ficar vermelho ou a conexão for perdida, pressione o botão [Emparelhamento] na parte de trás do dispositivo para reconectá-lo manualmente.",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "LED가 빨간색이 되거나 연결이 끊기면 기기 뒷면의 [페어링] 버튼을 눌러 수동으로 다시 연결하세요.",
+  "url": "https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001752-20155311283379",
+  "set": "ts_new",
+  "id": "b047"
+ },
+ {
+  "src": "new076",
+  "text": "Điều này cũng có thể xảy ra nếu phích cắm knockout không được tháo ra khỏi kết nối máy nghiền rác.",
+  "cc": "vn",
+  "page_type": "support_troubleshoot",
+  "ko": "음식물 분쇄기 연결부에서 녹아웃 플러그를 제거하지 않은 경우에도 이런 일이 생길 수 있습니다.",
+  "url": "https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001451-20155352262364/",
+  "set": "ts_new",
+  "id": "b048"
+ },
+ {
+  "src": "s01491",
+  "text": "The capacity of WW156RTTB is 8.0 L.",
+  "cc": "in",
+  "page_type": "pdp",
+  "ko": "WW156RTTB의 용량은 8.0L이다.",
+  "url": "",
+  "set": "general",
+  "id": "b049"
+ },
+ {
+  "src": "s00642",
+  "text": "ThinQ ® WiFi Stay Connected With the ThinQ ® app,  you check on dishes from the comfort of your couch by monitoring cooking mode and time remaining.",
+  "cc": "ca",
+  "page_type": "pdp",
+  "ko": "ThinQ® WiFi 연결 유지 ThinQ® 앱으로 소파에서 조리 모드와 남은 시간을 확인해 요리를 체크할 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b050"
+ },
+ {
+  "src": "new043",
+  "text": "Select the correct HDMI input on the LG TV Press the Input button on the remote control and select the HDMI port you used (for example, HDMI 1).",
+  "cc": "uk",
+  "page_type": "support_troubleshoot",
+  "ko": "LG TV에서 올바른 HDMI 입력 선택: 리모컨의 입력 버튼을 누르고 사용한 HDMI 포트(예: HDMI 1)를 선택하세요.",
+  "url": "https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008333-20155146780081",
+  "set": "ts_new",
+  "id": "b051"
+ },
+ {
+  "src": "s01095",
+  "text": "3.Según un estudio interno en el que se compararon los modelos OLED evo con 33 millones de puntos de luz con los modelos QNED evo Mini LED que cuenta con 6 zonas de retroiluminación.",
+  "cc": "es",
+  "page_type": "pdp",
+  "ko": "3. 3,300만 개의 발광점을 가진 OLED evo 모델과 6개 백라이트 존을 가진 QNED evo Mini LED 모델을 비교한 내부 연구에 따름.",
+  "url": "",
+  "set": "general",
+  "id": "b052"
+ },
+ {
+  "src": "s00285",
+  "text": "Bạn cần máy sấy kích thước nào?",
+  "cc": "vn",
+  "page_type": "experience",
+  "ko": "어떤 크기의 건조기가 필요하신가요?",
+  "url": "",
+  "set": "general",
+  "id": "b053"
+ },
+ {
+  "src": "s01210",
+  "text": "TVs de 2021 ou versões posteriores (webOS 6.0 ou posterior): Pressione [Configurações] no seu controle remoto, [Todas as Configurações], [Suporte], [Privacidade e Termos], [Acordos de Usuário] TVs 2020 (webOS 5.0): Pressione [Configurações] no seu controle remoto, [Todas as Configurações], [Suporte], [Configurações Adicionais], [Acordos de Usuário] TVs de 2019 ou anteriores (webOS 4.5 ou anterior): Pressione [Configurações] no seu controle remoto, [Todas as Configurações], [Geral], [Acordos de U",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "2021년 이후 TV(webOS 6.0 이상): 리모컨 [설정] → [모든 설정] → [지원] → [개인정보 및 약관] → [사용자 계약] … 2019년 이전 TV …",
+  "url": "",
+  "set": "general",
+  "id": "b054"
+ },
+ {
+  "src": "s10684",
+  "text": "▪          Com o Wi-Fi ativado, toque no botão “Concluído” do aplicativo.",
+  "cc": "br",
+  "page_type": "experience",
+  "ko": "▪ Wi-Fi가 켜진 상태에서 앱의 \"완료\" 버튼을 누르세요.",
+  "url": "",
+  "set": "general",
+  "id": "b055"
+ },
+ {
+  "src": "new012",
+  "text": "Außerdem wird es schwierig, Luft einzusaugen, wenn sich Staub oder Fremdkörper in der Düse oder dem Filter befinden, wodurch der Motor überarbeitet und lauter wird.",
+  "cc": "de",
+  "page_type": "support_troubleshoot",
+  "ko": "또한 노즐이나 필터에 먼지·이물질이 있으면 공기를 빨아들이기 어려워 모터가 과부하되고 소음이 커집니다.",
+  "url": "https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20155102922548",
+  "set": "ts_new",
+  "id": "b056"
+ },
+ {
+  "src": "s12098",
+  "text": "An R290 unit will have to match the R32 price point and, in the mid-term, be even cheaper to put on the market.",
+  "cc": "uk",
+  "page_type": "business",
+  "ko": "R290 제품은 R32 가격대에 맞춰야 하고 중기적으로는 더 저렴하게 출시되어야 합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b057"
+ },
+ {
+  "src": "s10197",
+  "text": "2 W7 can be used in the ThinQ App after registering H7 and accessing it from the H7 menu.",
+  "cc": "us",
+  "page_type": "pdp",
+  "ko": "2 W7은 H7을 등록하고 H7 메뉴에서 접근한 후 ThinQ 앱에서 사용할 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b058"
+ },
+ {
+  "src": "s00699",
+  "text": "24, 2019 — LG Electronics (LG) is capturing the imaginations of consumers the world over at Mobile World Congress 2019 with the simultaneous unveiling of its newest G and V series flagship smartphones.",
+  "cc": "uk",
+  "page_type": "press_media",
+  "ko": "2019년 (2월) 24일 — LG전자는 MWC 2019에서 최신 G·V 시리즈 플래그십 스마트폰을 동시 공개하며 전 세계 소비자의 상상력을 사로잡고 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b059"
+ },
+ {
+  "src": "s11930",
+  "text": "* 0 / 500 Characters Please fill out the required field.",
+  "cc": "uk",
+  "page_type": "support_troubleshoot",
+  "ko": "* 0 / 500자 필수 항목을 입력해 주세요.",
+  "url": "",
+  "set": "general",
+  "id": "b060"
+ },
+ {
+  "src": "new067",
+  "text": "Basta seguir estes passos: Passo 1.",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "다음 단계를 따르세요: 1단계.",
+  "url": "https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT00001143-20155198998500",
+  "set": "ts_new",
+  "id": "b061"
+ },
+ {
+  "src": "s12164",
+  "text": "A partir da ativação da função de IA no controle remoto ou no aplicativo LG ThinQ, o ar-condicionado passa a operar de forma autônoma, configurando automaticamente: • Temperatura ideal • Velocidade do ar • Direção do fluxo • Ajustes inteligentes para maior economia Quanto mais o aparelho é utilizado, mais preciso se torna o seu funcionamento, criando uma experiência que evolui conforme a rotina do usuário.",
+  "cc": "br",
+  "page_type": "press_media",
+  "ko": "리모컨이나 LG ThinQ 앱에서 AI 기능을 활성화하면 에어컨은 최적 온도·풍속·풍향·절전 스마트 조정을 자동 설정하며 자율 작동하고, 사용할수록 더 정밀해집니다.",
+  "url": "",
+  "set": "general",
+  "id": "b062"
+ },
+ {
+  "src": "s13256",
+  "text": "※ Introduce el paquete de baterías y la batería hasta el fondo hasta que oigas un clic.",
+  "cc": "mx",
+  "page_type": "support_troubleshoot",
+  "ko": "※ 배터리 팩과 배터리를 딸깍 소리가 날 때까지 끝까지 밀어 넣으세요.",
+  "url": "",
+  "set": "general",
+  "id": "b063"
+ },
+ {
+  "src": "s10190",
+  "text": "La válvula debe girarse de manera que quede alineada con la tubería conectada.",
+  "cc": "es",
+  "page_type": "support_troubleshoot",
+  "ko": "밸브는 연결된 배관과 일직선이 되도록 돌려야 합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b064"
+ },
+ {
+  "src": "new052",
+  "text": "Simultaneous Output (Echo): When [TV Speaker + External Speaker] is enabled, the sound may echo due to the distance between the speakers or differences in speaker performance.",
+  "cc": "ca",
+  "page_type": "support_troubleshoot",
+  "ko": "동시 출력(에코): [TV 스피커 + 외부 스피커]를 켜면 스피커 간 거리나 성능 차이 때문에 소리가 울릴 수 있습니다.",
+  "url": "https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT52001646-20155062024742",
+  "set": "ts_new",
+  "id": "b065"
+ },
+ {
+  "src": "s11091",
+  "text": "Um novo padrão de climatização inteligente Combinando inteligência artificial, conectividade, eficiência e foco no bem-estar, o ar-condicionado LG Dual Inverter AI deixa de ser apenas um refrigerador de ambiente e passa a atuar como um aliado do dia a dia, antecipando necessidades e ajustando o clima para garantir conforto constante.",
+  "cc": "br",
+  "page_type": "press_media",
+  "ko": "스마트 공조의 새 기준 AI, 연결성, 효율, 웰빙을 결합한 LG 듀얼 인버터 AI 에어컨은 단순 냉방기를 넘어 필요를 예측하고 기후를 조절하는 일상의 동반자가 됩니다.",
+  "url": "",
+  "set": "general",
+  "id": "b066"
+ },
+ {
+  "src": "s12351",
+  "text": "Does DoorCooling+™help keep drinks and frequently accessed items cooler and more consistent in temperature?",
+  "cc": "uk",
+  "page_type": "microsite",
+  "ko": "DoorCooling+™는 음료와 자주 꺼내는 식품을 더 차갑고 일정한 온도로 유지하는 데 도움이 되나요?",
+  "url": "",
+  "set": "general",
+  "id": "b067"
+ },
+ {
+  "src": "new068",
+  "text": "Essa mensagem desaparece assim que você aciona o ar-condicionado no modo de resfriamento e a temperatura ambiente cair.",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "에어컨을 냉방 모드로 작동해 실내 온도가 내려가면 이 메시지는 사라집니다.",
+  "url": "https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT00001143-20155198998500",
+  "set": "ts_new",
+  "id": "b068"
+ },
+ {
+  "src": "s13237",
+  "text": "Pour obtenir des résultats optimaux en cuisine et en pâtisserie, il est recommandé de préchauffer le four pour la plupart des recettes.",
+  "cc": "ca",
+  "page_type": "pdp",
+  "ko": "최적의 요리·베이킹 결과를 위해 대부분의 레시피에서 오븐 예열을 권장합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b069"
+ },
+ {
+  "src": "new055",
+  "text": "If its status is [Disabled], change it to [Enabled].",
+  "cc": "au",
+  "page_type": "support_troubleshoot",
+  "ko": "상태가 [사용 안 함]이면 [사용]으로 바꾸세요.",
+  "url": "https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001894-20155051173388/",
+  "set": "ts_new",
+  "id": "b070"
+ },
+ {
+  "src": "new014",
+  "text": "Sử dụng LG Content Store với webOS 6.0 Product Usage Thiết bị điện gia dụng 05/22/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.",
+  "cc": "vn",
+  "page_type": "support_troubleshoot",
+  "ko": "(페이지 머리말) webOS 6.0에서 LG 콘텐츠 스토어 사용 · 제품 사용 · 가전 · 2026-05-22 · 인쇄/이메일/공유",
+  "url": "https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001450-20152940974120/",
+  "set": "ts_new",
+  "id": "b071"
+ },
+ {
+  "src": "new049",
+  "text": "Monitor nach Modelljahr zurücksetzen (webOS-Version) Monitor ab 2021 [webOS 6.0 oder neuer]: Drücken Sie die Einstellungen[ ]Knopf auf der Fernbedienung → [Alle Einstellungen] → [Allgemein] → [System] → [Auf Anfangseinstellungen zurücksetzen] 2020 Monitor [webOS 5.0]: Drücke die Einstellungen[ ]Taste auf der Fernbedienung → [Alle Einstellungen] → [Support] → auf die Anfangseinstellungen zurücksetzen] Monitor ab 2019 und früher [(webOS 4.5 oder früher): Druck auf die Einstellungen[ ]Knopf auf der Fernbedienung → [Alle Einstellungen] → [Allgemein] → [Auf Anfangseinstellungen zurücksetzen] ➔ Zurücksetzung des 2025er Monitors [webOS 25] auf die Anfangseinstellungen 1.",
+  "cc": "de",
+  "page_type": "support_troubleshoot",
+  "ko": "연식별(webOS 버전) 모니터 초기화: 2021년 이후 모니터 [webOS 6.0 이상]: 리모컨 설정 버튼 → [전체 설정] → [일반] → [시스템] → [초기 설정으로 재설정] / 2020년 모니터 [webOS 5.0]: 설정 버튼…",
+  "url": "https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000819-20155219496900/",
+  "set": "ts_new",
+  "id": "b072"
+ },
+ {
+  "src": "s11707",
+  "text": "▪          Aproxime-se da máquina e siga as instruções na tela.",
+  "cc": "br",
+  "page_type": "experience",
+  "ko": "▪ 기기에 가까이 가서 화면의 안내를 따르세요.",
+  "url": "",
+  "set": "general",
+  "id": "b073"
+ },
+ {
+  "src": "s11283",
+  "text": "O Vilarejo LG marca um avanço significativo na forma como os instaladores de HVAC podem interagir e entender os produtos da LG por meio de uma experiência digital imersiva.",
+  "cc": "br",
+  "page_type": "business",
+  "ko": "LG 빌리지는 HVAC 설치자들이 몰입형 디지털 경험을 통해 LG 제품과 상호작용하고 이해하는 방식의 큰 진전을 의미합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b074"
+ },
+ {
+  "src": "s12016",
+  "text": "The LG Motorised Rotisserie eliminates that entirely.",
+  "cc": "in",
+  "page_type": "microsite",
+  "ko": "LG 모터라이즈드 로티세리는 그것을 완전히 없애줍니다.",
+  "url": "",
+  "set": "general",
+  "id": "b075"
+ },
+ {
+  "src": "new030",
+  "text": "Open User Agreements (webOS 24 and later, including\r\n2024–2025 models) Setting: Settings > All Settings > Support >\r\nPrivacy & Terms > User Agreements 1.",
+  "cc": "uk",
+  "page_type": "support_troubleshoot",
+  "ko": "사용자 약관 열기(webOS 24 이상, 2024~2025년 모델 포함) 설정: 설정 > 전체 설정 > 고객 지원 > 개인정보 및 약관 > 사용자 약관 1.",
+  "url": "https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008333-20155142857269",
+  "set": "ts_new",
+  "id": "b076"
+ },
+ {
+  "src": "s11501",
+  "text": "Part& Accessory Discover accessories for LG products.",
+  "cc": "uk",
+  "page_type": "pdp",
+  "ko": "부품 & 액세서리 LG 제품용 액세서리를 만나보세요.",
+  "url": "",
+  "set": "general",
+  "id": "b077"
+ },
+ {
+  "src": "new006",
+  "text": "[TV treo tường] Đảm bảo có ít nhất 10cm (3.93 inch) khoảng trống giữa TV và trần, sàn và tường bên.",
+  "cc": "vn",
+  "page_type": "support_troubleshoot",
+  "ko": "[벽걸이 TV] TV와 천장·바닥·옆 벽 사이에 최소 10cm(3.93인치)의 공간을 확보하세요.",
+  "url": "https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001453-20155028298643/",
+  "set": "ts_new",
+  "id": "b078"
+ },
+ {
+  "src": "new097",
+  "text": "Measured Fill only applies to water.",
+  "cc": "in",
+  "page_type": "support_troubleshoot",
+  "ko": "정량 출수는 물에만 적용됩니다.",
+  "url": "https://www.lg.com/in/support/product-support/troubleshoot/help-library/cs-CT52006627-20155200207794",
+  "set": "ts_new",
+  "id": "b079"
+ },
+ {
+  "src": "s01722",
+  "text": "LG Smart Inverter™ Save up to 15%* select Microwave Ovens *T&C's apply Successfully added to your cart Continue shopping View cart The restocking notification has already been updated.",
+  "cc": "au",
+  "page_type": "promotion",
+  "ko": "LG Smart Inverter™ 일부 전자레인지 최대 15%* 절약 *약관 적용 장바구니에 추가됨 쇼핑 계속 장바구니 보기 재입고 알림이 이미 업데이트되었습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b080"
+ },
+ {
+  "src": "new031",
+  "text": "Press and hold for 3 seconds to toggle the ice maker on or off.",
+  "cc": "in",
+  "page_type": "support_troubleshoot",
+  "ko": "3초간 길게 누르면 제빙기가 켜지거나 꺼집니다.",
+  "url": "https://www.lg.com/in/support/product-support/troubleshoot/help-library/cs-CT52006627-20155200207794",
+  "set": "ts_new",
+  "id": "b081"
+ },
+ {
+  "src": "new013",
+  "text": "wash 3 min, Delicate 6 min).Recommend customer to use normal\r\n",
+  "cc": "in",
+  "page_type": "support_troubleshoot",
+  "ko": "(문장 조각) …세탁 3분, 섬세 6분). 고객에게 표준 코스 사용을 권장…",
+  "url": "https://www.lg.com/in/support/product-support/troubleshoot/help-library/cs-CT52006627-20155105955615",
+  "set": "ts_new",
+  "id": "b082"
+ },
+ {
+  "src": "s12831",
+  "text": "Ver Secadoras de ropa Comparar productos Compara las características principales de la gama LG para elegir el producto que mejor se adapte a tu hogar y estilo de vida.",
+  "cc": "mx",
+  "page_type": "buying_guide",
+  "ko": "의류 건조기 보기 제품 비교 LG 라인업의 주요 특징을 비교해 집과 스타일에 가장 맞는 제품을 고르세요.",
+  "url": "",
+  "set": "general",
+  "id": "b083"
+ },
+ {
+  "src": "new062",
+  "text": "How to Turn Off Your TV Power Sound How to check your TV's webOS version On your TV remote, press the [Settings] (gear icon) or [Mute] button three times in a row.",
+  "cc": "ca",
+  "page_type": "support_troubleshoot",
+  "ko": "(페이지 머리말) TV 전원음 끄는 방법 · TV webOS 버전 확인 방법: TV 리모컨의 [설정](톱니바퀴) 또는 [음소거] 버튼을 연속 세 번 누르세요.",
+  "url": "https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT52001643-20155412212632",
+  "set": "ts_new",
+  "id": "b084"
+ },
+ {
+  "src": "s00606",
+  "text": "Part & Accessory Discover accessories for your product.",
+  "cc": "au",
+  "page_type": "pdp",
+  "ko": "부품 및 액세서리 제품용 액세서리를 찾아보세요.",
+  "url": "",
+  "set": "general",
+  "id": "b085"
+ },
+ {
+  "src": "new027",
+  "text": "[Máy chiếu LG] Thông báo lỗi hoặc \"Không có tín hiệu\" xuất hiện khi sử dụng hộp giải mã tín hiệu số Troubleshooting Thiết bị nghe nhìn 04/02/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.",
+  "cc": "vn",
+  "page_type": "support_troubleshoot",
+  "ko": "(페이지 머리말) [LG 프로젝터] 디지털 셋톱박스 사용 시 오류 메시지 또는 '신호 없음' 표시 · 문제 해결 · AV · 2026-04-02 · 인쇄/이메일/공유",
+  "url": "https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001453-20155105903304/",
+  "set": "ts_new",
+  "id": "b086"
+ },
+ {
+  "src": "s11294",
+  "text": "Các.iảm thời gian của chu kỳ mà không ảnh hưởng đến hiệu suất.",
+  "cc": "vn",
+  "page_type": "experience",
+  "ko": "각.성능에 영향을 주지 않으면서 사이클 시간을 단축합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b087"
+ },
+ {
+  "src": "s13019",
+  "text": "At the core of the xboom Grab’s sound profile is a high-quality dome tweeter, manufactured by Peerless, a brand with nearly a century of expertise in high-end audio components.",
+  "cc": "au",
+  "page_type": "press_media",
+  "ko": "xboom Grab 사운드의 핵심은 약 1세기 하이엔드 오디오 부품 전문 브랜드 Peerless가 제조한 고품질 돔 트위터다.",
+  "url": "",
+  "set": "general",
+  "id": "b088"
+ },
+ {
+  "src": "new069",
+  "text": "Close Ursachen und Symptome In der Vakuumdüse befindet sich ein Fremdkörper.",
+  "cc": "de",
+  "page_type": "support_troubleshoot",
+  "ko": "(페이지 머리말) 닫기 · 원인과 증상: 진공 노즐에 이물질이 있습니다.",
+  "url": "https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20155102922548",
+  "set": "ts_new",
+  "id": "b089"
+ },
+ {
+  "src": "new084",
+  "text": "The TV’s default setting may be set to [Auto].",
+  "cc": "ca",
+  "page_type": "support_troubleshoot",
+  "ko": "TV 기본 설정이 [자동]으로 되어 있을 수 있습니다.",
+  "url": "https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT52001646-20155062024742",
+  "set": "ts_new",
+  "id": "b090"
+ },
+ {
+  "src": "s12240",
+  "text": "Algunas lavadoras LG cuentan con clasificaciones Triple A* en cuanto a energía, centrifugado y niveles de ruido.",
+  "cc": "mx",
+  "page_type": "pdp",
+  "ko": "일부 LG 세탁기는 에너지, 탈수, 소음 수준에서 트리플 A* 등급을 보유하고 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b091"
+ },
+ {
+  "src": "new056",
+  "text": "Descripción del producto Tubo de prolongación Boquilla 2.",
+  "cc": "es",
+  "page_type": "support_troubleshoot",
+  "ko": "(목록 조각) 제품 구성: 연장관 · 노즐 2.",
+  "url": "https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002101-20155102797396",
+  "set": "ts_new",
+  "id": "b092"
+ },
+ {
+  "src": "s12748",
+  "text": "✓  Smart Inverter Compressor™ : Adjusts motor speed based on demand, running quietly and efficiently.",
+  "cc": "uk",
+  "page_type": "experience",
+  "ko": "✓ Smart Inverter Compressor™: 수요에 따라 모터 속도를 조절해 조용하고 효율적으로 작동합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b093"
+ },
+ {
+  "src": "s00605",
+  "text": "According to a recent BBC report , electricity prices have more than doubled in just a few years, with a graph revealing little relief in sight.",
+  "cc": "uk",
+  "page_type": "experience",
+  "ko": "최근 BBC 보도에 따르면 전기요금이 몇 년 만에 두 배 이상 올랐고 그래프상 완화 조짐은 거의 없다.",
+  "url": "",
+  "set": "general",
+  "id": "b094"
+ },
+ {
+  "src": "s12430",
+  "text": "Similar Product Steam Absorption Chiller An Steam Type Absorption Chiller is an eco-friendly alternative to other air and temperature regulation units, using nearby power-plant heat sources instead of electricity.",
+  "cc": "in",
+  "page_type": "business",
+  "ko": "유사 제품 증기식 흡수 냉동기 — 증기식 흡수 냉동기는 전기 대신 인근 발전소 열원을 이용하는, 다른 공조·온도 조절 장치의 친환경 대안입니다.",
+  "url": "",
+  "set": "general",
+  "id": "b095"
+ },
+ {
+  "src": "s01267",
+  "text": "Con LG ThinQ™ puedes: Iniciar y monitorear ciclos de forma remota Recibe alertas al final del ciclo Utiliza Diagnóstico Smart™ para solucionar problemas rápidamente Descarga ciclos adaptados a tus necesidades.Las funciones y la compatibilidad con el asistente de voz pueden variar según el modelo y la región.",
+  "cc": "mx",
+  "page_type": "buying_guide",
+  "ko": "LG ThinQ로 할 수 있는 것: 원격 코스 시작·모니터링, 코스 종료 알림, Smart Diagnosis로 빠른 문제 해결, 맞춤 코스 다운로드. 기능·음성비서 호환성은 모델·지역별 상이.",
+  "url": "",
+  "set": "general",
+  "id": "b096"
+ },
+ {
+  "src": "new071",
+  "text": "Also, check if the refrigerator temperature is set too low, causing the\r\nwater in the tank to freeze, or if the ice bin is already full, which\r\npauses ice production.",
+  "cc": "in",
+  "page_type": "support_troubleshoot",
+  "ko": "또한 냉장고 온도가 너무 낮게 설정돼 물탱크의 물이 얼었는지, 또는 얼음통이 이미 가득 차 제빙이 멈춘 것은 아닌지 확인하세요.",
+  "url": "https://www.lg.com/in/support/product-support/troubleshoot/help-library/cs-CT52006627-20155380010857",
+  "set": "ts_new",
+  "id": "b097"
+ },
+ {
+  "src": "new028",
+  "text": "Retirar objetos extraños de la boquilla y el tubo ① En primer lugar, por motivos de seguridad, retira la batería de la aspiradora.",
+  "cc": "es",
+  "page_type": "support_troubleshoot",
+  "ko": "노즐과 관에서 이물질 제거 ① 먼저 안전을 위해 청소기에서 배터리를 분리하세요.",
+  "url": "https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002101-20155102922975",
+  "set": "ts_new",
+  "id": "b098"
+ },
+ {
+  "src": "s01563",
+  "text": "5.Estudio interno realizado a fecha de 1/03/2026.",
+  "cc": "es",
+  "page_type": "pdp",
+  "ko": "5. 2026년 3월 1일 기준 내부 연구.",
+  "url": "",
+  "set": "general",
+  "id": "b099"
+ },
+ {
+  "src": "s00886",
+  "text": "**DCI-P3 Thông thường 98,5%, Tối thiểu 90%.",
+  "cc": "vn",
+  "page_type": "pdp",
+  "ko": "**DCI-P3 일반 98.5%, 최소 90%.",
+  "url": "",
+  "set": "general",
+  "id": "b100"
+ },
+ {
+  "src": "s11129",
+  "text": "O Compressor Linear Inverter™ é o coração da geladeira LG InstaView Door-in-Door.",
+  "cc": "br",
+  "page_type": "press_media",
+  "ko": "리니어 인버터 컴프레서™는 LG InstaView Door-in-Door 냉장고의 심장입니다.",
+  "url": "",
+  "set": "general",
+  "id": "b101"
+ },
+ {
+  "src": "s11016",
+  "text": "Auto Smart Connect Automatically links your water purifier to your home's inverter,ensuring uninterrupted operation during power outages-no manual effort required.",
+  "cc": "in",
+  "page_type": "pdp",
+  "ko": "오토 스마트 커넥트 정수기를 가정용 인버터에 자동 연결해 정전 시에도 수동 조작 없이 중단 없는 작동을 보장합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b102"
+ },
+ {
+  "src": "new060",
+  "text": "Digital Signal Processing Delay: When the audio output is set to [Auto], a slight delay may occur while the device processes the digital signal.",
+  "cc": "ca",
+  "page_type": "support_troubleshoot",
+  "ko": "디지털 신호 처리 지연: 오디오 출력이 [자동]이면 기기가 디지털 신호를 처리하는 동안 약간의 지연이 생길 수 있습니다.",
+  "url": "https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT52001646-20155062024742",
+  "set": "ts_new",
+  "id": "b103"
+ },
+ {
+  "src": "new003",
+  "text": "En algunos modelos, debe ejecutar este modo después de la instalación inicial y antes del primer uso.",
+  "cc": "es",
+  "page_type": "support_troubleshoot",
+  "ko": "일부 모델은 처음 설치한 뒤 첫 사용 전에 이 모드를 실행해야 합니다.",
+  "url": "https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002101-20154982201268/",
+  "set": "ts_new",
+  "id": "b104"
+ },
+ {
+  "src": "new023",
+  "text": "If the pointer still does not appear, re-register the Magic\r\nRemote: point it at the TV and press and hold the Back and Home\r\nbuttons at the same time for more than 5 seconds, then follow\r\nthe on-screen instructions.",
+  "cc": "uk",
+  "page_type": "support_troubleshoot",
+  "ko": "포인터가 여전히 나타나지 않으면 매직 리모컨을 다시 등록하세요: TV를 향한 채 뒤로 버튼과 홈 버튼을 동시에 5초 이상 누른 뒤 화면 안내를 따르세요.",
+  "url": "https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008333-20155142857269",
+  "set": "ts_new",
+  "id": "b105"
+ },
+ {
+  "src": "s01389",
+  "text": "Testado por ASTM F1977-04 (2017) sobre la eficiencia de filtración de un sistema de aspiradora (tamaño de partículas de hasta 0,3 micras), en modo Turbo (Max).",
+  "cc": "es",
+  "page_type": "home",
+  "ko": "진공청소기 시스템 필터 효율(최대 0.3미크론 입자)에 대해 터보(Max) 모드로 ASTM F1977-04(2017) 시험.",
+  "url": "",
+  "set": "general",
+  "id": "b106"
+ },
+ {
+  "src": "s00691",
+  "text": "For example, the 97″ OLED and 100″ QNED evo models run LG’s latest webOS with LG ThinQ® AI and support hands-free voice control via Google Assistant and Amazon Alexa.",
+  "cc": "us",
+  "page_type": "plp",
+  "ko": "예를 들어 97″ OLED와 100″ QNED evo 모델은 LG ThinQ® AI 탑재 최신 webOS로 구동되며 Google Assistant·Amazon Alexa 핸즈프리 음성 제어를 지원합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b107"
+ },
+ {
+  "src": "s12731",
+  "text": "Control de ESP La función de control de la presión estática externa (ESP) puede hacer que el caudal de aire se controle fácilmente con el mando a distancia.",
+  "cc": "mx",
+  "page_type": "business",
+  "ko": "ESP 제어 외부 정압(ESP) 제어 기능으로 리모컨에서 풍량을 쉽게 제어할 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b108"
+ },
+ {
+  "src": "new018",
+  "text": "Por que \"HI\" aparece na tela Temperatura interna alta: Se o ar-condicionado detectar que a temperatura do ambiente está acima de 35,5°C (96°F), \"HI\" aparecerá no display para indicar uma temperatura \"Alta\".",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "'HI'가 표시되는 이유 · 실내 고온: 에어컨이 실내 온도가 35.5°C(96°F)를 넘는 것을 감지하면 디스플레이에 'HI'가 표시되어 '높음' 온도임을 알립니다.",
+  "url": "https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT00001143-20155198998500",
+  "set": "ts_new",
+  "id": "b109"
+ },
+ {
+  "src": "s11765",
+  "text": "AI Sound Wizard Individueller Klang Das Fernsehgerät passt den Ton an deine Hörvorlieben an und optimiert die Gesamtklangqualität, um ein individuell abgestimmtes Klangprofil zu erstellen.",
+  "cc": "de",
+  "page_type": "pdp",
+  "ko": "AI 사운드 위자드 개인 맞춤 사운드 TV가 청취 취향에 맞춰 소리를 조정하고 전체 음질을 최적화해 개인 맞춤 사운드 프로필을 만듭니다.",
+  "url": "",
+  "set": "general",
+  "id": "b110"
+ },
+ {
+  "src": "new092",
+  "text": "4.Restart your laptop after changing the settings.",
+  "cc": "au",
+  "page_type": "support_troubleshoot",
+  "ko": "4. 설정을 바꾼 뒤 노트북을 다시 시작하세요.",
+  "url": "https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001894-20155051173388/",
+  "set": "ts_new",
+  "id": "b111"
+ },
+ {
+  "src": "s00327",
+  "text": "[TV de stand] Certifique-se de que haja pelo menos 10 cm (3,93 polegadas) de espaço entre a TV e o teto e as paredes laterais.",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "[스탠드 TV] TV와 천장·측면 벽 사이에 최소 10cm(3.93인치) 공간을 확보하세요.",
+  "url": "",
+  "set": "general",
+  "id": "b112"
+ },
+ {
+  "src": "s12782",
+  "text": "2) TruMotion's motion smoothing technology for sports and fast action AI Genre Selection identifies content and TruMotion adjusts judder levels to apply the right amount of smoothing for a natural viewing experience, perfect for high-speed football or racing.",
+  "cc": "in",
+  "page_type": "buying_guide",
+  "ko": "2) 스포츠·빠른 동작을 위한 TruMotion 모션 스무딩 AI Genre Selection이 콘텐츠를 식별하고 TruMotion이 저더 수준을 조정해 적절한 스무딩을 적용합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b113"
+ },
+ {
+  "src": "new039",
+  "text": "[LG-Monitor] Wie man Apps behebt, die ständig einfrieren, abstürzen oder nicht laden Troubleshooting Mobile & Tablets 06/01/2026 Drucken Teilen Diesen Inhalt teilen.",
+  "cc": "de",
+  "page_type": "support_troubleshoot",
+  "ko": "(페이지 머리말) [LG 모니터] 앱이 계속 멈추거나 종료되거나 로딩되지 않을 때 해결 방법 · 문제 해결 · 모바일·태블릿 · 2026-06-01 · 인쇄/공유",
+  "url": "https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000819-20155219496900/",
+  "set": "ts_new",
+  "id": "b114"
+ },
+ {
+  "src": "s01874",
+  "text": "100% Colour Volume independently tested in accordance with Intertek Test Specification to the DCI-P3 colour space with D65 white point.",
+  "cc": "au",
+  "page_type": "home",
+  "ko": "100% 컬러 볼륨은 Intertek 시험 규격에 따라 DCI-P3 색공간, D65 백색점 기준으로 독립 시험됨.",
+  "url": "",
+  "set": "general",
+  "id": "b115"
+ },
+ {
+  "src": "new064",
+  "text": "Wenn elektromagnetische Wellen sich bewegen, bewegen sie sich unregelmäßig, sodass bei der Erhitzung entstehende Temperaturunterschiede reduziert werden können, wenn eine Rotationsplatte vorhanden ist, aber bei Produkten mit quadratischer Struktur und rechteckiger Platte darin kann ein signifikanter Temperaturunterschied zwischen der linken und rechten Seite auftreten, abhängig vom Status oder Ort des Lebensmittels.",
+  "cc": "de",
+  "page_type": "support_troubleshoot",
+  "ko": "전자파는 움직일 때 불규칙하게 이동하므로 회전 접시가 있으면 가열 중 생기는 온도 차이를 줄일 수 있지만, 사각 구조에 직사각 접시가 들어간 제품은 음식 상태나 위치에 따라 좌우 온도 차이가 크게 날 수 있습니다.",
+  "url": "https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20154971230563/",
+  "set": "ts_new",
+  "id": "b116"
+ },
+ {
+  "src": "new044",
+  "text": "If you dispense a large amount at once, it will take approximately 24 hours to refill.",
+  "cc": "in",
+  "page_type": "support_troubleshoot",
+  "ko": "한 번에 많은 양을 출수하면 다시 채워지는 데 약 24시간이 걸립니다.",
+  "url": "https://www.lg.com/in/support/product-support/troubleshoot/help-library/cs-CT52006627-20155200207794",
+  "set": "ts_new",
+  "id": "b117"
+ },
+ {
+  "src": "s00390",
+  "text": "AI Sensor Dry® detects moisture levels and automatically adjusts drying time for loads of all sizes—no more damp clothes, no more overdrying.",
+  "cc": "ca",
+  "page_type": "pdp",
+  "ko": "AI Sensor Dry는 습도를 감지해 모든 세탁량에 맞게 건조 시간을 자동 조절한다 — 축축함도 과건조도 없다.",
+  "url": "",
+  "set": "general",
+  "id": "b118"
+ },
+ {
+  "src": "s10147",
+  "text": "Com conectividade por Wi-Fi, você obtém sem esforços a capacidade de interação e acesso às mais recentes inovações.",
+  "cc": "br",
+  "page_type": "experience",
+  "ko": "Wi-Fi 연결로 손쉽게 상호작용 기능과 최신 혁신 기능을 이용할 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b119"
+ },
+ {
+  "src": "new008",
+  "text": "Notas importantes Precaución: Cuando envíe la señal para asignar un número, mantenga el mando a distancia a menos de 10 cm de la unidad.",
+  "cc": "es",
+  "page_type": "support_troubleshoot",
+  "ko": "중요 참고 · 주의: 번호 지정 신호를 보낼 때는 리모컨을 실내기에서 10cm 이내로 유지하세요.",
+  "url": "https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT40007085-20155115748210",
+  "set": "ts_new",
+  "id": "b120"
+ },
+ {
+  "src": "s01102",
+  "text": "2 Models 17Z90R and 16Z90R are equipped with a 90Wh battery.",
+  "cc": "us",
+  "page_type": "press_media",
+  "ko": "2 17Z90R 및 16Z90R 모델에는 90Wh 배터리가 장착되어 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b121"
+ },
+ {
+  "src": "s11296",
+  "text": "Para una frescura aún mayor, considera refrigeradores con las tecnologías LINEARCooling™ y DoorCooling+™ de LG, que ayudan a mantener tus alimentos frescos, por más tiempo y con una refrigeración uniforme.[ Descubre los refrigeradores LG con refrigeración avanzada ].",
+  "cc": "mx",
+  "page_type": "experience",
+  "ko": "더 뛰어난 신선도를 원하면 식품을 더 오래 균일하게 냉장 보관하는 LG LINEARCooling™·DoorCooling+™ 기술 냉장고를 고려하세요.[ 첨단 냉각 LG 냉장고 알아보기 ].",
+  "url": "",
+  "set": "general",
+  "id": "b122"
+ },
+ {
+  "src": "new024",
+  "text": "2021 and later TVs (webOS 6.0 or later): Press [Settings] on the remote → select [All Settings] on the TV screen → [General] → [System] → [Location] → [LG Services Country] 2020 and earlier TVs (webOS 5.0 or earlier): Press [Settings] on the remote → select [All Settings] on the TV screen → [General] → [Location] → [LG Services Country] Q.",
+  "cc": "us",
+  "page_type": "support_troubleshoot",
+  "ko": "2021년 이후 TV(webOS 6.0 이상): 리모컨 [설정] → 화면의 [전체 설정] → [일반] → [시스템] → [위치] → [LG 서비스 국가] / 2020년 이전 TV(webOS 5.0 이하): 리모컨 [설정] → [전체 설정] → [일반]…",
+  "url": "https://www.lg.com/us/support/help-library/lg-tv-how-to-agree-to-the-user-agreements-CT10000030-20155154186594",
+  "set": "ts_new",
+  "id": "b123"
+ },
+ {
+  "src": "new082",
+  "text": "Can I install region-specific apps on a TV I bought in another country?",
+  "cc": "us",
+  "page_type": "support_troubleshoot",
+  "ko": "다른 나라에서 산 TV에 그 지역 전용 앱을 설치할 수 있나요?",
+  "url": "https://www.lg.com/us/support/help-library/how-to-install-and-delete-apps-on-your-lg-tv-CT10000030-20155331395481",
+  "set": "ts_new",
+  "id": "b124"
+ },
+ {
+  "src": "s12708",
+  "text": "Menos abertura da porta significa menos variação térmica, menos gasto de energia e mais preservação do sabor e da textura dos alimentos.",
+  "cc": "br",
+  "page_type": "press_media",
+  "ko": "문을 덜 열면 온도 변화가 적고 에너지 소비가 줄며 음식의 맛과 식감이 더 잘 보존됩니다.",
+  "url": "",
+  "set": "general",
+  "id": "b125"
+ },
+ {
+  "src": "s00716",
+  "text": "*Die Angabe zur Reaktionszeit von 0,03 ms (GtG) bezieht sich auf LG UlraGear-Modelle mit OLED.",
+  "cc": "de",
+  "page_type": "buying_guide",
+  "ko": "*0,03 ms(GtG) 응답 속도 표기는 OLED 탑재 LG UltraGear 모델에 해당합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b126"
+ },
+ {
+  "src": "new005",
+  "text": "Running [Auto Tuning] on your LG TV 2021 or later TVs [webOS 6.0 or later]: Press the [Settings] button on the remote, [All Settings] on the TV screen, [General], [Channels], [Channel Tuning], [Auto Tuning], [Start], [Done] 2020 or earlier TVs [webOS 5.0 or earlier]: Press the [Settings] button on the remote, [All Settings] on the TV screen, [Channels], [Channel Tuning], [Auto Tuning], [Start], [Done] (Note: If no channels are found, check the antenna cable connection.",
+  "cc": "in",
+  "page_type": "support_troubleshoot",
+  "ko": "LG TV에서 [자동 채널 검색] 실행: 2021년 이후 TV [webOS 6.0 이상]: 리모컨 [설정] → 화면의 [전체 설정] → [일반] → [채널] → [채널 튜닝] → [자동 튜닝] → [시작] → [완료] / 2020년 이전 TV [webOS 5.0 이하]: 리모컨 [설정]…",
+  "url": "https://www.lg.com/in/support/product-support/troubleshoot/help-library/cs-CT52006899-20155311296371",
+  "set": "ts_new",
+  "id": "b127"
+ },
+ {
+  "src": "new088",
+  "text": "If you are using detergent capsules, place them directly into the\r\ndrum.",
+  "cc": "uk",
+  "page_type": "support_troubleshoot",
+  "ko": "세제 캡슐을 쓰는 경우 드럼 안에 직접 넣으세요.",
+  "url": "https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008362-20152500915219DRC",
+  "set": "ts_new",
+  "id": "b128"
+ },
+ {
+  "src": "s01748",
+  "text": "Experience the epic dark fantasy world of Crimson Desert with breakthrough 5K2K OLED precision and perfect blacks.",
+  "cc": "uk",
+  "page_type": "home",
+  "ko": "획기적인 5K2K OLED 정밀도와 완벽한 블랙으로 Crimson Desert의 장대한 다크 판타지 세계를 경험하세요.",
+  "url": "",
+  "set": "general",
+  "id": "b129"
+ },
+ {
+  "src": "s10709",
+  "text": "By LG AU Nowadays, as we all look for stylish and sleek gadgets, the demand for more modern and lightweight TV designs has really taken off.",
+  "cc": "au",
+  "page_type": "experience",
+  "ko": "LG AU 작성 요즘 모두가 세련되고 슬림한 기기를 찾으면서 더 현대적이고 가벼운 TV 디자인에 대한 수요가 크게 늘었습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b130"
+ },
+ {
+  "src": "new025",
+  "text": "[LG DIOS Lichtwellenofen] Bei Verwendung der Reichweitenfunktion gibt es einen Temperaturunterschied zwischen der linken und rechten Seite Troubleshooting Haushalts- geräte 01/08/2026 Drucken Teilen Diesen Inhalt teilen.",
+  "cc": "de",
+  "page_type": "support_troubleshoot",
+  "ko": "(페이지 머리말) [LG 디오스 광파오븐] 레인지 기능 사용 시 좌우 온도 차이가 있음 · 문제 해결 · 가전 · 2026-01-08 · 인쇄/공유",
+  "url": "https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20154971230563/",
+  "set": "ts_new",
+  "id": "b131"
+ },
+ {
+  "src": "s12686",
+  "text": "You Can Share The Items You Like With Your Friends The URL has been copied to the clipboard.",
+  "cc": "ca",
+  "page_type": "support_troubleshoot",
+  "ko": "마음에 드는 항목을 친구와 공유할 수 있습니다 URL이 클립보드에 복사되었습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b132"
+ },
+ {
+  "src": "s12180",
+  "text": "Can I disable Child Lock while a wash cycle is running?",
+  "cc": "us",
+  "page_type": "support_troubleshoot",
+  "ko": "세탁 중에 어린이 잠금을 해제할 수 있나요?",
+  "url": "",
+  "set": "general",
+  "id": "b133"
+ },
+ {
+  "src": "s00178",
+  "text": "9) ALLM und eine zertifizierte Reaktionszeit von 0,1 ms ermöglichen Gaming mit geringer Latenz und niedrigem Input-Lag Mit einer Reaktionszeit von nur 0,1 ms verwandelt OLED jeden Befehl in pure Geschwindigkeit und überbrückt so die Lücke zwischen Instinkt und Aktion.",
+  "cc": "de",
+  "page_type": "microsite",
+  "ko": "9) ALLM과 인증된 0.1ms 응답속도로 낮은 지연·입력랙 게이밍 가능 단 0.1ms 응답속도로 OLED는 모든 명령을 순수한 속도로 바꿔 본능과 행동의 간극을 메웁니다.",
+  "url": "",
+  "set": "general",
+  "id": "b134"
+ },
+ {
+  "src": "s12069",
+  "text": "*Eine Internetverbindung und ein Abonnement des jeweiligen Streaming-Dienstes sind erforderlich.",
+  "cc": "de",
+  "page_type": "pdp",
+  "ko": "*인터넷 연결과 해당 스트리밍 서비스 구독이 필요합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b135"
+ },
+ {
+  "src": "s00771",
+  "text": "Verwendung von Spotify Connect Spotify unterstützt Lossless-Musik bis zu 24 bit / 44,1 kHz.",
+  "cc": "de",
+  "page_type": "plp",
+  "ko": "Spotify Connect 사용 Spotify는 최대 24bit/44,1kHz 무손실 음원을 지원합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b136"
+ },
+ {
+  "src": "s01870",
+  "text": "Aproveite uma ampla variedade de conteúdos em 4K de plataformas OTT populares, como Netflix, Disney+, Amazon Prime, YouTube e muito mais.",
+  "cc": "br",
+  "page_type": "buying_guide",
+  "ko": "Netflix, Disney+, Amazon Prime, YouTube 등 인기 OTT 플랫폼의 다양한 4K 콘텐츠를 즐기세요.",
+  "url": "",
+  "set": "general",
+  "id": "b137"
+ },
+ {
+  "src": "new051",
+  "text": "Problemas con el volumen y el modo silencioso de los dispositivos conectados Aunque subas el volumen de la televisión, no oirás nada si el decodificador o el dispositivo externo están en silencio o con el volumen a 0.",
+  "cc": "es",
+  "page_type": "support_troubleshoot",
+  "ko": "연결된 기기의 볼륨·음소거 문제: TV 볼륨을 올려도 셋톱박스나 외부 기기가 음소거이거나 볼륨이 0이면 소리가 나지 않습니다.",
+  "url": "https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002103-20155311243479/",
+  "set": "ts_new",
+  "id": "b138"
+ },
+ {
+  "src": "new058",
+  "text": "Cerrar ¿Está buscando registrar su producto ThinQ?",
+  "cc": "es",
+  "page_type": "support_troubleshoot",
+  "ko": "(팝업 문구) 닫기 · ThinQ 제품을 등록하시겠어요?",
+  "url": "https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002100-20154381244316/",
+  "set": "ts_new",
+  "id": "b139"
+ },
+ {
+  "src": "s00395",
+  "text": "Mehr erfahren Bewahrt die natürliche Frische Mehr erfahren InstaView® Zweimal klopfen, reinschauen!",
+  "cc": "de",
+  "page_type": "experience",
+  "ko": "더 알아보기 자연 신선함 유지 더 알아보기 InstaView 두 번 노크하면 들여다보기!",
+  "url": "",
+  "set": "general",
+  "id": "b140"
+ },
+ {
+  "src": "s01877",
+  "text": "Flüssiges, ruckelfreies Gameplay Mit G-Sync und AMD FreeSync-Kompatibilität in 4K 165 Hz spielen Bis zu 165 Hz (VRR) sorgen für schärfere, flüssigere Action bei jedem Spiel.",
+  "cc": "de",
+  "page_type": "pdp",
+  "ko": "부드럽고 끊김 없는 게임플레이 G-Sync·AMD FreeSync 호환 4K 165Hz로 플레이 최대 165Hz(VRR)로 모든 게임에서 더 선명하고 부드러운 액션.",
+  "url": "",
+  "set": "general",
+  "id": "b141"
+ },
+ {
+  "src": "new045",
+  "text": "Instale o driver de rede primeiro para entrar online.",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "온라인에 연결하려면 네트워크 드라이버를 먼저 설치하세요.",
+  "url": "https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001755-20155410263463",
+  "set": "ts_new",
+  "id": "b142"
+ },
+ {
+  "src": "s01996",
+  "text": "Multi Display Set-up LG 24CR670IK6P supports up to two UHD 4K resolution displays.² With the high flexibility for multi-monitor set-up options, you can get more done in less time.",
+  "cc": "us",
+  "page_type": "business",
+  "ko": "멀티 디스플레이 구성 LG 24CR670IK6P는 최대 2대의 UHD 4K 디스플레이를 지원합니다.² 유연한 멀티 모니터 구성으로 더 짧은 시간에 더 많은 일을 할 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b143"
+ },
+ {
+  "src": "s11862",
+  "text": "Veja sua lavadora: a lava e seca agora aparece na tela inicial do aplicativo LG ThinQ, permitindo a você monitorá-la e controlá-la remotamente com facilidade.",
+  "cc": "br",
+  "page_type": "experience",
+  "ko": "세탁기 보기: 이제 세탁건조기가 LG ThinQ 앱 홈 화면에 표시되어 원격으로 쉽게 모니터링하고 제어할 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b144"
+ },
+ {
+  "src": "new034",
+  "text": "Changing [Digital Sound Output] to [PCM] by model year (webOS version) 2021 and later [webOS 6.0 and later]: Press [Settings] on the remote → Select [All Settings] → [Sound] → [Advanced Settings] → [Digital Sound Output] → [PCM] 2020 and earlier [webOS 5.0 and earlier]: Press [Settings] on the remote → Select [All Settings] → [Sound] → [Advanced Settings] → [Digital Sound Out] → [PCM] ➔ Changing [Digital Sound Output] to [PCM] on 2025 and later TVs (webOS 25 or later) 1.",
+  "cc": "ca",
+  "page_type": "support_troubleshoot",
+  "ko": "연식별(webOS 버전) [디지털 사운드 출력]을 [PCM]으로 변경: 2021년 이후 [webOS 6.0 이상]: 리모컨 [설정] → [전체 설정] → [사운드] → [고급 설정] → [디지털 사운드 출력] → [PCM] / 2020년 이전 [webOS 5.0 이하]: 리모컨 [설정]…",
+  "url": "https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT52001646-20155062024742",
+  "set": "ts_new",
+  "id": "b145"
+ },
+ {
+  "src": "new040",
+  "text": "Para desativar o Travamento Infantil, certifique-se de que a lava-louças esteja ligada, depois pressione e segure o botão Trava Criança por 3 segundos.",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "차일드 잠금을 해제하려면 식기세척기가 켜져 있는지 확인한 뒤 차일드 잠금 버튼을 3초간 누르세요.",
+  "url": "https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001753-20155118242869",
+  "set": "ts_new",
+  "id": "b146"
+ },
+ {
+  "src": "s01451",
+  "text": "The gram's versatility doesn't stop there; it also comes with a Wacom Active 2.0 x LG Stylus Pen, great for taking notes, sketching landscapes, or working on creative projects during long transit days.",
+  "cc": "au",
+  "page_type": "experience",
+  "ko": "gram의 다재다능함은 여기서 끝나지 않는다. Wacom Active 2.0 x LG 스타일러스 펜이 함께 제공되어 메모, 스케치, 창작 작업에 좋다.",
+  "url": "",
+  "set": "general",
+  "id": "b147"
+ },
+ {
+  "src": "s01841",
+  "text": "Se agregó correctamente a tu carrito Seguir comprando Ver carrito Ya se ha actualizado la notificación de reabastecimiento.",
+  "cc": "mx",
+  "page_type": "promotion",
+  "ko": "장바구니에 추가되었습니다 쇼핑 계속하기 장바구니 보기 재입고 알림이 업데이트되었습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b148"
+ },
+ {
+  "src": "s12047",
+  "text": "With built-in smart home integration and IoT connectivity, users can manage and control compatible devices directly from the TV for a more connected home experience.",
+  "cc": "ca",
+  "page_type": "buying_guide",
+  "ko": "내장 스마트홈 통합과 IoT 연결로 사용자는 호환 기기를 TV에서 직접 관리·제어할 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b149"
+ },
+ {
+  "src": "new081",
+  "text": "If\r\nrequired agreements are not accepted, the TV may restrict access\r\nto Smart features until acceptance is completed.",
+  "cc": "uk",
+  "page_type": "support_troubleshoot",
+  "ko": "필수 약관에 동의하지 않으면 동의를 마칠 때까지 TV가 스마트 기능 사용을 제한할 수 있습니다.",
+  "url": "https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008333-20155142857269",
+  "set": "ts_new",
+  "id": "b150"
+ },
+ {
+  "src": "s11379",
+  "text": "Request a repair Please fill out the required field.",
+  "cc": "au",
+  "page_type": "support_troubleshoot",
+  "ko": "수리 요청 필수 항목을 입력해 주세요.",
+  "url": "",
+  "set": "general",
+  "id": "b151"
+ },
+ {
+  "src": "s12997",
+  "text": "※ Note: Depending on the model, [Instant Booting] may be",
+  "cc": "ca",
+  "page_type": "support_troubleshoot",
+  "ko": "※ 참고: 모델에 따라 [즉시 부팅]은 …",
+  "url": "",
+  "set": "general",
+  "id": "b152"
+ },
+ {
+  "src": "s01321",
+  "text": "Ver todos los microondas Tecnología Smart Inverter para el calentamiento La tecnología Smart Inverter es el sistema avanzado de control de potencia de LG que ofrece un calentamiento preciso y uniforme en todos los niveles de potencia.",
+  "cc": "mx",
+  "page_type": "experience",
+  "ko": "전자레인지 모두 보기 가열용 Smart Inverter 기술 Smart Inverter 기술은 모든 출력 단계에서 정밀하고 균일한 가열을 제공하는 LG의 첨단 출력 제어 시스템이다.",
+  "url": "",
+  "set": "general",
+  "id": "b153"
+ },
+ {
+  "src": "s01323",
+  "text": "Go to homepage Your email has been successfully registered.",
+  "cc": "in",
+  "page_type": "promotion",
+  "ko": "홈페이지로 이동 이메일이 성공적으로 등록되었습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b154"
+ },
+ {
+  "src": "s01078",
+  "text": "What is the benefit of a Door-in-Door refrigerator?",
+  "cc": "au",
+  "page_type": "buying_guide",
+  "ko": "Door-in-Door 냉장고의 이점은 무엇인가요?",
+  "url": "",
+  "set": "general",
+  "id": "b155"
+ },
+ {
+  "src": "s01969",
+  "text": "At the Center de Convencions Internacional de Barcelona (CCIB) in Barcelona, Spain, LG introduced its first 5G phone, LG V50 ThinQ 5G, alongside the new LG G8s ThinQ for a double dose of excitement.",
+  "cc": "uk",
+  "page_type": "press_media",
+  "ko": "스페인 바르셀로나 CCIB에서 LG는 첫 5G 폰 LG V50 ThinQ 5G를 새 LG G8s ThinQ와 함께 공개했습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b156"
+ },
+ {
+  "src": "s00359",
+  "text": "The LG XBOOM Go XG2T portable speaker also boasts military-grade strength and durability, meaning you can worry less about it getting damaged in your suitcase or backpack along the way.",
+  "cc": "au",
+  "page_type": "experience",
+  "ko": "LG XBOOM Go XG2T 포터블 스피커는 군용 등급 내구성을 자랑해 가방 속 파손 걱정을 줄여준다.",
+  "url": "",
+  "set": "general",
+  "id": "b157"
+ },
+ {
+  "src": "s11142",
+  "text": "Advanced upscaling enhances lower-resolution feeds in real time, sharpening detail so matches look cleaner on large screens.",
+  "cc": "in",
+  "page_type": "buying_guide",
+  "ko": "고급 업스케일링은 저해상도 영상을 실시간으로 향상시키고 디테일을 선명하게 해 대형 화면에서 경기가 더 깨끗하게 보이게 합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b158"
+ },
+ {
+  "src": "s11632",
+  "text": "[Ambientes onde a montagem na parede é difícil] Verifique se o produto pode ser transportado com segurança para dentro da sua casa medindo a rota.",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "[벽 설치가 어려운 환경] 이동 경로를 측정해 제품을 집 안으로 안전하게 운반할 수 있는지 확인하세요.",
+  "url": "",
+  "set": "general",
+  "id": "b159"
+ },
+ {
+  "src": "s10028",
+  "text": "Save time and effort with an LG smart pairing ™ dryer that syncs and auto-selects drying programs.",
+  "cc": "uk",
+  "page_type": "buying_guide",
+  "ko": "세탁기와 연동해 건조 코스를 자동 선택하는 LG 스마트 페어링 건조기로 시간과 수고를 아끼세요.",
+  "url": "",
+  "set": "general",
+  "id": "b160"
+ },
+ {
+  "src": "new094",
+  "text": "Nếu các thông báo như \"Lỗi kết nối mạng\", \"Không có tín hiệu\" hoặc \"Xác thực không thành công\" xuất hiện trên màn hình Tivi, điều này thường do sự cố tín hiệu hộp giải mã tín hiệu hoặc kết nối cáp lỏng lẻo chứ không phải do sự cố với chính TV.",
+  "cc": "vn",
+  "page_type": "support_troubleshoot",
+  "ko": "TV 화면에 '네트워크 연결 오류', '신호 없음', '인증 실패' 같은 메시지가 나타나면 보통 TV 자체가 아니라 셋톱박스 신호 문제나 케이블 접속 불량 때문입니다.",
+  "url": "https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001453-20155105903304/",
+  "set": "ts_new",
+  "id": "b161"
+ },
+ {
+  "src": "new001",
+  "text": "Troubleshooting Dehumidifiers 04/13/2026 Print Email Copy Link Share If your LG dehumidifier's \"Bucket Full\" light does not turn off even after you have emptied the water bucket, the float inside the bucket is likely stuck.",
+  "cc": "us",
+  "page_type": "support_troubleshoot",
+  "ko": "(페이지 머리말: 문제 해결 · 제습기 · 2026-04-13 · 인쇄/이메일/링크 복사/공유) 물통을 비웠는데도 LG 제습기의 '물통 가득 참' 표시등이 꺼지지 않으면, 물통 안의 플로트(부표)가 걸려 있을 가능성이 높습니다.",
+  "url": "https://www.lg.com/us/support/help-library/lg-dehumidifier-why-does-the-bucket-full-light-stay-on-after-emptying-the-bucket-CT10000015-20155128297661",
+  "set": "ts_new",
+  "id": "b162"
+ },
+ {
+  "src": "s12207",
+  "text": "Download Cycle available through the LG ThinQ® app <sup>2</sup>Google and Google Home are trademarks of Google LLC.",
+  "cc": "au",
+  "page_type": "microsite",
+  "ko": "LG ThinQ® 앱으로 다운로드 코스 이용 가능 2 Google 및 Google Home은 Google LLC의 상표입니다.",
+  "url": "",
+  "set": "general",
+  "id": "b163"
+ },
+ {
+  "src": "new022",
+  "text": "Then, press and hold the Freezer and Wi-Fi (or Water Filter) buttons for 3 seconds.",
+  "cc": "in",
+  "page_type": "support_troubleshoot",
+  "ko": "그런 다음 냉동실 버튼과 Wi-Fi(또는 정수 필터) 버튼을 3초간 함께 누르세요.",
+  "url": "https://www.lg.com/in/support/product-support/troubleshoot/help-library/cs-CT52006627-20155255024186",
+  "set": "ts_new",
+  "id": "b164"
+ },
+ {
+  "src": "s12539",
+  "text": "Reflection Free Premium garantiert dir eine makellose Bildqualität – selbst in hellen Räumen.",
+  "cc": "de",
+  "page_type": "microsite",
+  "ko": "Reflection Free Premium은 밝은 공간에서도 완벽한 화질을 보장합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b165"
+ },
+ {
+  "src": "s11239",
+  "text": "*Support for HGiG may vary by country.",
+  "cc": "in",
+  "page_type": "buying_guide",
+  "ko": "*HGiG 지원은 국가에 따라 다를 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b166"
+ },
+ {
+  "src": "new074",
+  "text": "Do you want to connect Blue-Ray player to Smart TV?",
+  "cc": "au",
+  "page_type": "support_troubleshoot",
+  "ko": "블루레이 플레이어를 스마트 TV에 연결하시겠어요?",
+  "url": "https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001891-20150117258142/",
+  "set": "ts_new",
+  "id": "b167"
+ },
+ {
+  "src": "s12009",
+  "text": "Projetada para quem procura uma experiência de visualização flexível, a StanbyME é uma tela inteligente sem fios e com uma bateria embutida que pode ser movida facilmente pela casa.",
+  "cc": "br",
+  "page_type": "experience",
+  "ko": "유연한 시청 경험을 원하는 이들을 위해 설계된 StanbyME는 내장 배터리로 집안 어디든 쉽게 옮길 수 있는 무선 스마트 스크린입니다.",
+  "url": "",
+  "set": "general",
+  "id": "b168"
+ },
+ {
+  "src": "s01016",
+  "text": "8) Aumenta la emoción cada vez que juegues Máxima experiencia en videojuegos La primera tecnología BT de Latencia Ultra baja del mundo Portal Gaming LG Una jugabilidad rápida y fluida de hasta 330Hz que te sumerge de lleno en la acción Diseñado para juegos de alta velocidad, su rendimiento de 165Hz con AMD FreeSync Premium y VRR garantiza una experiencia de juego fluida, mientras que Motion Booster mejora la nitidez en las escenas de acción rápida.",
+  "cc": "mx",
+  "page_type": "microsite",
+  "ko": "8) 플레이할 때마다 흥분 고조 최고의 게임 경험 세계 최초 초저지연 BT 기술 LG 게이밍 포털 최대 330Hz의 빠르고 부드러운 게임플레이… 165Hz AMD FreeSync Premium·VRR…",
+  "url": "",
+  "set": "general",
+  "id": "b169"
+ },
+ {
+  "src": "s12214",
+  "text": "✓  Learn and smartly adjust : The Smart Learner™ system tracks your patterns (like when you’re most likely to open the fridge) and pre-adjusts settings to avoid energy or cooling loss.",
+  "cc": "uk",
+  "page_type": "experience",
+  "ko": "✓ 학습 및 스마트 조정: Smart Learner™ 시스템은 사용 패턴(냉장고를 자주 여는 시간 등)을 추적해 에너지·냉기 손실을 막도록 설정을 미리 조정합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b170"
+ },
+ {
+  "src": "new050",
+  "text": "Press the [Settings] button on your TV remote and select [All Settings].",
+  "cc": "au",
+  "page_type": "support_troubleshoot",
+  "ko": "TV 리모컨의 [설정] 버튼을 누르고 [전체 설정]을 선택하세요.",
+  "url": "https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001891-20153217242233OLT/",
+  "set": "ts_new",
+  "id": "b171"
+ },
+ {
+  "src": "s11127",
+  "text": "Ir a la página de inicio Tu correo electrónico se ha registrado correctamente.",
+  "cc": "mx",
+  "page_type": "microsite",
+  "ko": "홈페이지로 이동 이메일이 성공적으로 등록되었습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b172"
+ },
+ {
+  "src": "s10926",
+  "text": "2 Free delivery On all orders purchased on LG.com³ Need help?",
+  "cc": "au",
+  "page_type": "plp",
+  "ko": "2 무료 배송 LG.com에서 구매한 모든 주문³ 도움이 필요하세요?",
+  "url": "",
+  "set": "general",
+  "id": "b173"
+ },
+ {
+  "src": "s13106",
+  "text": "AI Inverter: Intelligently manages compressor operation to support efficient and consistent cooling.",
+  "cc": "in",
+  "page_type": "plp",
+  "ko": "AI 인버터: 압축기 작동을 지능적으로 관리해 효율적이고 일관된 냉각을 지원합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b174"
+ },
+ {
+  "src": "s01384",
+  "text": "A long-lasting internal battery provides up to 30 hours of playback on a single charge.10 This extended battery life supports day-to-night listening without frequent recharging.",
+  "cc": "au",
+  "page_type": "press_media",
+  "ko": "오래가는 내장 배터리는 1회 충전으로 최대 30시간 재생을 제공한다.10 이 긴 배터리 수명은 잦은 충전 없이 종일 청취를 지원한다.",
+  "url": "",
+  "set": "general",
+  "id": "b175"
+ },
+ {
+  "src": "s00924",
+  "text": "Bước 3 Sau khi thanh toán thành công hệ thống sẽ gửi email xác nhận về địa chỉ email của quý khách.",
+  "cc": "vn",
+  "page_type": "pdp",
+  "ko": "3단계 결제 성공 후 시스템이 고객 이메일로 확인 메일을 보냅니다.",
+  "url": "",
+  "set": "general",
+  "id": "b176"
+ },
+ {
+  "src": "new038",
+  "text": "[2017 WebOS4.0] Press the button on the TV remote and select [All Settings] → [General] → [SimpLink (HDMI-CEC)] → [Auto Power] → [On] → [Off].",
+  "cc": "uk",
+  "page_type": "support_troubleshoot",
+  "ko": "[2017 webOS 4.0] TV 리모컨 버튼을 누르고 [전체 설정] → [일반] → [SimpLink(HDMI-CEC)] → [자동 전원] → [켜짐] → [꺼짐]을 선택하세요.",
+  "url": "https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008333-20154967824349/",
+  "set": "ts_new",
+  "id": "b177"
+ },
+ {
+  "src": "s00406",
+  "text": "El microondas LG con ventilador de convección puede reemplazar varios electrodomésticos, lo que simplifica la preparación de las comidas.",
+  "cc": "mx",
+  "page_type": "experience",
+  "ko": "컨벡션 팬이 있는 LG 전자레인지는 여러 가전을 대체할 수 있어 식사 준비를 간편하게 해줍니다.",
+  "url": "",
+  "set": "general",
+  "id": "b178"
+ },
+ {
+  "src": "s13027",
+  "text": "Instalação e Eliminação de Aplicativos e Verificação de Configurações Passo 1.",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "앱 설치·삭제 및 설정 확인 1단계.",
+  "url": "",
+  "set": "general",
+  "id": "b179"
+ },
+ {
+  "src": "s11671",
+  "text": "Giải pháp LG Laundry Crew Ứng dụng LG Laundry Crew là giải pháp thông minh kết nối doanh nghiệp và máy giặt với ngýời dùng, từ chủ doanh nghiệp đến khách hàng.",
+  "cc": "vn",
+  "page_type": "plp",
+  "ko": "LG Laundry Crew 솔루션 LG Laundry Crew 앱은 사업주부터 고객까지, 사업체와 세탁기를 사용자와 연결하는 스마트 솔루션입니다.",
+  "url": "",
+  "set": "general",
+  "id": "b180"
+ },
+ {
+  "src": "new083",
+  "text": "You can explore available support options, such as chat support or a technician visit, depending on your region.",
+  "cc": "us",
+  "page_type": "support_troubleshoot",
+  "ko": "지역에 따라 채팅 상담이나 기사 방문 같은 지원 방법을 확인할 수 있습니다.",
+  "url": "https://www.lg.com/us/support/help-library/what-to-do-if-water-gets-into-the-outdoor-unit-CT10000014-20155198999366",
+  "set": "ts_new",
+  "id": "b181"
+ },
+ {
+  "src": "s00598",
+  "text": "This small but mighty laptop also has a high-capacity battery that can last up to 18.5 hours, making it an essential gadget for travellers.",
+  "cc": "au",
+  "page_type": "experience",
+  "ko": "이 작지만 강력한 노트북은 최대 18.5시간 지속되는 대용량 배터리를 갖춰 여행자에게 필수적인 기기입니다.",
+  "url": "",
+  "set": "general",
+  "id": "b182"
+ },
+ {
+  "src": "s11357",
+  "text": "Câu hỏi thường gặp Q.",
+  "cc": "vn",
+  "page_type": "pdp",
+  "ko": "자주 묻는 질문 Q.",
+  "url": "",
+  "set": "general",
+  "id": "b183"
+ },
+ {
+  "src": "s10674",
+  "text": "Technology that is proven and used in countries with far more challenging climates than the UK – Norway, Sweden, Denmark, Germany and Canada to mention a few… Click onto https://app.frame.io/presentations/c6523e79-20b6-4eb1-a3cb-c32961f1fdc4 Hear from the European Heat Pump Association's (EHPA) Secretary General, Thomas Nowak talking recently, after participation at an LG Virtual Conference, on the innovation behind today's air to water heat pump technology and how you can ensure your customers ",
+  "cc": "uk",
+  "page_type": "microsite",
+  "ko": "노르웨이·스웨덴·덴마크·독일·캐나다 등 영국보다 훨씬 혹독한 기후의 국가에서 검증·사용되는 기술… 링크를 클릭해 EHPA 사무총장 Thomas Nowak의 이야기를 들어보세요…",
+  "url": "",
+  "set": "general",
+  "id": "b184"
+ },
+ {
+  "src": "s11303",
+  "text": "Es necesario aceptar la política de privacidad y los términos del servicio.",
+  "cc": "mx",
+  "page_type": "microsite",
+  "ko": "개인정보 처리방침과 서비스 약관에 동의해야 합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b185"
+ },
+ {
+  "src": "s00518",
+  "text": "A c onectividade Smart transforma a geladeira em uma assistente doméstica inteligente.",
+  "cc": "br",
+  "page_type": "press_media",
+  "ko": "스마트 연결성은 냉장고를 지능형 홈 어시스턴트로 변신시킵니다.",
+  "url": "",
+  "set": "general",
+  "id": "b186"
+ },
+ {
+  "src": "s01407",
+  "text": "The phone is also equipped with a 4,000mAh battery, 20 percent larger than in the V40 ThinQ , and a new Vapour Chamber heat-dissipation system which is more effective than conventional heat pipes to keep internal temperatures low and support sustained apps processing performance even when multitasking.",
+  "cc": "uk",
+  "page_type": "press_media",
+  "ko": "V40 ThinQ보다 20% 큰 4,000mAh 배터리와 기존 히트파이프보다 효과적인 베이퍼 챔버 방열 시스템을 탑재해 멀티태스킹 시에도 온도를 낮게 유지한다.",
+  "url": "",
+  "set": "general",
+  "id": "b187"
+ },
+ {
+  "src": "s10294",
+  "text": "How long does it take for my LG refrigerator to get cold after installation?",
+  "cc": "ca",
+  "page_type": "pdp",
+  "ko": "설치 후 LG 냉장고가 차가워지는 데 얼마나 걸리나요?",
+  "url": "",
+  "set": "general",
+  "id": "b188"
+ },
+ {
+  "src": "s12515",
+  "text": "Allow cooked food to cool properly before refrigeration, and use clean, food-safe utensils or containers to maintain hygiene and freshness.",
+  "cc": "in",
+  "page_type": "plp",
+  "ko": "조리한 음식은 충분히 식힌 후 냉장 보관하고, 위생과 신선도를 위해 깨끗한 식품용 용기를 사용하세요.",
+  "url": "",
+  "set": "general",
+  "id": "b189"
+ },
+ {
+  "src": "new059",
+  "text": "Turning on Audio Guidance automatically turns on Device Power Sound.",
+  "cc": "ca",
+  "page_type": "support_troubleshoot",
+  "ko": "음성 안내를 켜면 기기 전원음이 자동으로 켜집니다.",
+  "url": "https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT52001643-20155412212632",
+  "set": "ts_new",
+  "id": "b190"
+ },
+ {
+  "src": "s00124",
+  "text": "Sản phẩm cho phép game thủ tận hưởng trọn vẹn độ phân giải QHD và 240 Hz bằng DisplayPort hoặc HDMI.",
+  "cc": "vn",
+  "page_type": "pdp",
+  "ko": "이 제품은 게이머가 DisplayPort 또는 HDMI로 QHD 해상도와 240Hz를 온전히 즐길 수 있게 합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b191"
+ },
+ {
+  "src": "s00970",
+  "text": "5) AI Picture Wizard analyzes your preferences to tailor picture to your taste Simply select the images you prefer, and Al will analyze your choices using a database of billions of data points, precisely tailoring your picture settings to deliver visuals customized to your unique taste.",
+  "cc": "ca",
+  "page_type": "buying_guide",
+  "ko": "5) AI Picture Wizard는 선호도를 분석해 취향에 맞게 화질을 조정 선호 이미지를 고르면 AI가 수십억 데이터 포인트 DB로 선택을 분석해 화질 설정을 정밀하게 맞춘다.",
+  "url": "",
+  "set": "general",
+  "id": "b192"
+ },
+ {
+  "src": "s10439",
+  "text": "Waschflüssigkeit oder Spülmittel verwenden Diese Mittel helfen, Schimmel und Mehltau schnell zu beseitigen und können eine spätere Tiefenreinigung verhindern.",
+  "cc": "de",
+  "page_type": "microsite",
+  "ko": "세탁 세제 또는 주방 세제 사용 이 세제들은 곰팡이와 흰곰팡이를 빠르게 제거하고 추후 심층 청소를 예방할 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b193"
+ },
+ {
+  "src": "s00784",
+  "text": "High efficiency sensor drying and low-heat settings save energy and money by using about 20% less energy than conventional models without sacrificing features or performance.",
+  "cc": "ca",
+  "page_type": "pdp",
+  "ko": "고효율 센서 건조와 저온 설정은 기존 모델보다 약 20% 적은 에너지를 사용해 기능·성능 저하 없이 에너지와 비용을 절약합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b194"
+ },
+ {
+  "src": "new048",
+  "text": "Verifique o display Quando a temperatura da sala cair abaixo de 35°C (95°F), a mensagem \"HI\" desaparecerá e a temperatura atual será exibida.",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "디스플레이 확인: 실내 온도가 35°C(95°F) 아래로 내려가면 'HI' 메시지가 사라지고 현재 온도가 표시됩니다.",
+  "url": "https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT00001143-20155198998500",
+  "set": "ts_new",
+  "id": "b195"
+ },
+ {
+  "src": "s01855",
+  "text": "UVnano™: pureza e cuidado na água que você bebe A tecnologia UVnano™ utiliza luz ultravioleta para eliminar até 99,99% das bactéria s na saída de água.",
+  "cc": "br",
+  "page_type": "press_media",
+  "ko": "UVnano: 마시는 물의 순수함과 관리 UVnano 기술은 자외선을 이용해 출수구의 박테리아를 최대 99.99% 제거합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b196"
+ },
+ {
+  "src": "new087",
+  "text": "If the issue persists after you have checked and unstuck the float, there may be an issue with the internal components.",
+  "cc": "us",
+  "page_type": "support_troubleshoot",
+  "ko": "플로트를 확인하고 걸린 것을 풀었는데도 문제가 계속되면 내부 부품에 이상이 있을 수 있습니다.",
+  "url": "https://www.lg.com/us/support/help-library/lg-dehumidifier-why-does-the-bucket-full-light-stay-on-after-emptying-the-bucket-CT10000015-20155128297661",
+  "set": "ts_new",
+  "id": "b197"
+ },
+ {
+  "src": "s00893",
+  "text": "Close Artikel-Feedback * Pflichtfelder 1.",
+  "cc": "de",
+  "page_type": "support_troubleshoot",
+  "ko": "닫기 글 피드백 * 필수 항목 1.",
+  "url": "",
+  "set": "general",
+  "id": "b198"
+ },
+ {
+  "src": "s10404",
+  "text": "For our most advanced TVs to date, explore LG OLED evo TVs.",
+  "cc": "au",
+  "page_type": "plp",
+  "ko": "가장 진보된 TV를 원한다면 LG OLED evo TV를 살펴보세요.",
+  "url": "",
+  "set": "general",
+  "id": "b199"
+ },
+ {
+  "src": "new096",
+  "text": "Velocidades para rebobinar.",
+  "cc": "es",
+  "page_type": "support_troubleshoot",
+  "ko": "(문장 조각) 되감기 속도.",
+  "url": "https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002103-20155179477232/",
+  "set": "ts_new",
+  "id": "b200"
+ },
+ {
+  "src": "s00434",
+  "text": "You must engage a qualified service personnel to complete the installation of your plumbed Side by Side fridge freezer, in accordance with the Owner Manual.Incorrect installation by a non qualified service personnel may result in product not working properly or failure.",
+  "cc": "au",
+  "page_type": "buying_guide",
+  "ko": "배관형 양문형 냉장고 설치는 사용설명서에 따라 자격 있는 서비스 인력이 수행해야 합니다. 비자격자가 잘못 설치하면 제품이 제대로 작동하지 않거나 고장 날 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b201"
+ },
+ {
+  "src": "new020",
+  "text": "Localiza las piezas de la bisagra incluidas: El diseño de las bisagras varía según el modelo.",
+  "cc": "es",
+  "page_type": "support_troubleshoot",
+  "ko": "동봉된 힌지 부품을 찾으세요: 힌지 디자인은 모델마다 다릅니다.",
+  "url": "https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002101-20155114216041",
+  "set": "ts_new",
+  "id": "b202"
+ },
+ {
+  "src": "s13153",
+  "text": "[Potencia del aire acondicionado LG] El aire acondicionado no se enciende inmediatamente.",
+  "cc": "mx",
+  "page_type": "support_troubleshoot",
+  "ko": "[LG 에어컨 전원] 에어컨이 즉시 켜지지 않습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b203"
+ },
+ {
+  "src": "new070",
+  "text": "Ist die Düse oder das Rohr durch Fremdkörper wie Gewebe, Strümpfe oder Plastiktüten blockiert?",
+  "cc": "de",
+  "page_type": "support_troubleshoot",
+  "ko": "노즐이나 관이 천, 스타킹, 비닐봉지 같은 이물질로 막혀 있나요?",
+  "url": "https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20155102922548",
+  "set": "ts_new",
+  "id": "b204"
+ },
+ {
+  "src": "s01286",
+  "text": "Who Genuinely Benefits From This Range Health-conscious families who want the texture of fried food without the oil Busy households cooking Indian meals daily who want automation without compromising flavour Home entertainers who want BBQ and tandoori results without an outdoor setup Small kitchen owners who can't accommodate both a microwave and a standalone air fryer Anyone who's been manually flipping food in an oven and wondering if there's a better way Microwave vs.",
+  "cc": "in",
+  "page_type": "microsite",
+  "ko": "이 제품군의 실제 수혜자 기름 없이 튀김 식감을 원하는 건강 중시 가족 매일 인도 요리를 하는 바쁜 가정 … 작은 주방 … 전자레인지 vs.",
+  "url": "",
+  "set": "general",
+  "id": "b205"
+ },
+ {
+  "src": "new019",
+  "text": "[Máy rửa chén] Nguồn điện sẽ tắt sau khi bắt đầu hoạt động Repair Thiết bị điện gia dụng 08/12/2026 In Gửi Email Chia sẻ hỗ trợ Chia sẻ nội dung này.",
+  "cc": "vn",
+  "page_type": "support_troubleshoot",
+  "ko": "(페이지 머리말) [식기세척기] 작동 시작 후 전원이 꺼짐 · 수리 · 가전 · 2026-08-12 · 인쇄/이메일/공유",
+  "url": "https://www.lg.com/vn/tro-giup/ho-tro-san-pham/khac-phuc-su-co/help-library/cs-CT52001451-20155379440644/",
+  "set": "ts_new",
+  "id": "b206"
+ },
+ {
+  "src": "s12040",
+  "text": "Obtener asistencia Manual y Software Descarga los manuales del producto y el software más reciente para tu producto.",
+  "cc": "mx",
+  "page_type": "pdp",
+  "ko": "지원 받기 매뉴얼 및 소프트웨어 제품 매뉴얼과 최신 소프트웨어를 다운로드하세요.",
+  "url": "",
+  "set": "general",
+  "id": "b207"
+ },
+ {
+  "src": "s01738",
+  "text": "8)*La disponibilidad de determinados canales de LG varía según la región.",
+  "cc": "mx",
+  "page_type": "microsite",
+  "ko": "8)*일부 LG 채널의 제공 여부는 지역에 따라 다릅니다.",
+  "url": "",
+  "set": "general",
+  "id": "b208"
+ },
+ {
+  "src": "s11721",
+  "text": "La fonction d’autonettoyage utilise des températures élevées pour éliminer les résidus incrustés les plus tenaces; elle est recommandée pour un nettoyage plus en profondeur.",
+  "cc": "ca",
+  "page_type": "pdp",
+  "ko": "자가 세척 기능은 고온을 이용해 가장 완고한 눌어붙은 잔여물을 제거하며, 더 깊은 청소에 권장됩니다.",
+  "url": "",
+  "set": "general",
+  "id": "b209"
+ },
+ {
+  "src": "s13011",
+  "text": "Whether you like your speakers small and discrete, or design classics that look great in your home, you’ll find the perfect sound system here.",
+  "cc": "es",
+  "page_type": "plp",
+  "ko": "작고 눈에 띄지 않는 스피커를 원하든 집에 어울리는 디자인 클래식을 원하든, 여기서 완벽한 사운드 시스템을 찾을 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b210"
+ },
+ {
+  "src": "s10546",
+  "text": "Some of LG’s most innovative TV designs include the OLED Flex, StanbyME , as well as the Easel and Posé from the LG Objet Collection, all crafted with a focus on sleek aesthetics and cutting-edge features.",
+  "cc": "au",
+  "page_type": "experience",
+  "ko": "LG의 가장 혁신적인 TV 디자인에는 OLED Flex, StanbyME, LG Objet Collection의 Easel과 Posé가 포함되며 모두 세련된 미학과 첨단 기능에 중점을 두고 제작되었습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b211"
+ },
+ {
+  "src": "s01526",
+  "text": "Una bomba de calor es una de las formas más eficaces de reducir los gases de efecto invernadero en un hogar o una empresa.",
+  "cc": "es",
+  "page_type": "plp",
+  "ko": "히트펌프는 가정이나 기업에서 온실가스를 줄이는 가장 효과적인 방법 중 하나다.",
+  "url": "",
+  "set": "general",
+  "id": "b212"
+ },
+ {
+  "src": "s13087",
+  "text": "No thanks, not now CONTINUE TO SIGN IN Add items to your MY LG wishlist Remove item Continue to MY LG wishlist OTP authentication failed.",
+  "cc": "au",
+  "page_type": "pdp",
+  "ko": "아니요, 지금은 괜찮습니다. 로그인 계속. MY LG 위시리스트에 항목 추가. 항목 제거. 위시리스트로 계속. OTP 인증 실패.",
+  "url": "",
+  "set": "general",
+  "id": "b213"
+ },
+ {
+  "src": "s13076",
+  "text": "Recipient of the New York Film Critics Circle Award and the Kodak Vision Award.",
+  "cc": "us",
+  "page_type": "buying_guide",
+  "ko": "뉴욕 영화비평가협회상 및 코닥 비전 어워드 수상자.",
+  "url": "",
+  "set": "general",
+  "id": "b214"
+ },
+ {
+  "src": "s01979",
+  "text": "Considere un modelo más grande de 11 a 13 kg para una familia numerosa o si genera cargas de ropa particularmente grandes.",
+  "cc": "mx",
+  "page_type": "pdp",
+  "ko": "대가족이거나 세탁량이 특히 많다면 11~13kg의 더 큰 모델을 고려하세요.",
+  "url": "",
+  "set": "general",
+  "id": "b215"
+ },
+ {
+  "src": "new026",
+  "text": "Puedes solucionarlo fácilmente bajando la temperatura por debajo de los 20 ℃ (68 ℉), activando el modo Ventilador para secar el interior y lavando el filtro de aire.",
+  "cc": "mx",
+  "page_type": "support_troubleshoot",
+  "ko": "온도를 20℃(68℉) 아래로 낮추고 송풍 모드로 내부를 말린 뒤 공기 필터를 세척하면 쉽게 해결할 수 있습니다.",
+  "url": "https://www.lg.com/mx/soporte/soporte-de-producto/solucion-de-problemas/help-library/cs-CT32013022-20155198991499",
+  "set": "ts_new",
+  "id": "b216"
+ },
+ {
+  "src": "s01542",
+  "text": "4.Basado en un estudio interno de LG realizado el 01/03/2026, en el que se analizó la efectividad del sistema antirreflejos en diferentes paneles OLED en comparación con superficies reflectantes.",
+  "cc": "es",
+  "page_type": "pdp",
+  "ko": "4. 2026년 3월 1일 LG 내부 연구 기준, 반사 표면 대비 다양한 OLED 패널의 반사 방지 효과를 분석.",
+  "url": "",
+  "set": "general",
+  "id": "b217"
+ },
+ {
+  "src": "s11334",
+  "text": "*‘Generative AI’ card is available in certain regions or models.",
+  "cc": "in",
+  "page_type": "buying_guide",
+  "ko": "*'생성형 AI' 카드는 일부 지역이나 모델에서만 제공됩니다.",
+  "url": "",
+  "set": "general",
+  "id": "b218"
+ },
+ {
+  "src": "s12642",
+  "text": "El exceso de agua puede deberse a orificios de drenaje bloqueados o configuraciones de temperatura inadecuadas.",
+  "cc": "mx",
+  "page_type": "experience",
+  "ko": "물이 과다한 것은 배수구 막힘이나 부적절한 온도 설정 때문일 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b219"
+ },
+ {
+  "src": "s00627",
+  "text": "User-Friendly Gaming Interface: The LG OLED Flex offers a customisable interface tailored specifically for gamers.",
+  "cc": "au",
+  "page_type": "experience",
+  "ko": "사용자 친화적 게이밍 인터페이스: LG OLED Flex는 게이머에 맞춘 커스터마이즈 가능한 인터페이스를 제공합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b220"
+ },
+ {
+  "src": "s10123",
+  "text": "LG’s range of slim lifestyle screens and TVs, including the OLED Flex , StanbyME , and other OLED models like the Easel and Posé from the LG Objet Collection, have gained popularity among tech-savvy and design-conscious consumers.",
+  "cc": "au",
+  "page_type": "experience",
+  "ko": "OLED Flex, StanbyME, Objet Collection의 Easel·Posé 등 LG의 슬림 라이프스타일 스크린·TV는 기술과 디자인에 민감한 소비자에게 인기를 얻고 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b221"
+ },
+ {
+  "src": "s11616",
+  "text": "Biến phòng ngủ của bạn thành nơi trốn tránh tuyệt vời nhất vào mùa hè Chúng ta sẽ làm gì nếu không có máy điều hòa treo tường đáng tin cậy cứu chúng ta khỏi những đêm nóng nực, mất ngủ vào mùa hè?",
+  "cc": "vn",
+  "page_type": "microsite",
+  "ko": "침실을 여름 최고의 피난처로 믿을 수 있는 벽걸이 에어컨이 없다면 덥고 잠 못 드는 여름밤을 어떻게 견딜까요?",
+  "url": "",
+  "set": "general",
+  "id": "b222"
+ },
+ {
+  "src": "new057",
+  "text": "Remove the filter, wash it in warm water with a mild detergent, let it dry completely in a shaded area, and then reinstall it to clear the error.",
+  "cc": "us",
+  "page_type": "support_troubleshoot",
+  "ko": "필터를 빼서 중성세제를 푼 따뜻한 물로 씻고 그늘에서 완전히 말린 뒤 다시 끼우면 오류가 해제됩니다.",
+  "url": "https://www.lg.com/us/support/help-library/what-are-the-causes-and-solutions-for-the-e15-error-code-CT32001601-20155183800048",
+  "set": "ts_new",
+  "id": "b223"
+ },
+ {
+  "src": "s01450",
+  "text": "“A leading brand in the ultra-lightweight laptop market for the last decade, LG gram will continue to introduce new form factors to meet the changing needs and tastes of consumers worldwide.” Visitors to CES 2023 in Las Vegas from January 5-8 can experience the latest LG gram products at LG’s booth (#15501, Las Vegas Convention Center).",
+  "cc": "us",
+  "page_type": "press_media",
+  "ko": "지난 10년간 초경량 노트북 시장 선도 브랜드로서 LG gram은 새 폼팩터를 계속 선보일 것이다. 1월 5~8일 CES 2023 방문객은 LG 부스(#15501)에서 최신 gram을 체험할 수 있다.",
+  "url": "",
+  "set": "general",
+  "id": "b224"
+ },
+ {
+  "src": "s11892",
+  "text": "Garantía Consulta la información sobre la garantía de tu producto aquí.",
+  "cc": "es",
+  "page_type": "business",
+  "ko": "보증 제품 보증 정보를 여기서 확인하세요.",
+  "url": "",
+  "set": "general",
+  "id": "b225"
+ },
+ {
+  "src": "new037",
+  "text": "Produtos com um botão *Notification Sound sob o botão Enxaguar ➔ Pressione e segure o botão *Notification Sound sob o botão Enxaguar por mais de 3 segundos, e ele será configurado com um som de \"ding\".",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "헹굼 버튼 아래에 *알림음 버튼이 있는 제품 ➔ 헹굼 버튼 아래의 *알림음 버튼을 3초 넘게 누르면 '딩' 소리로 설정됩니다.",
+  "url": "https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001753-20155102954050",
+  "set": "ts_new",
+  "id": "b226"
+ },
+ {
+  "src": "s11190",
+  "text": "Reinigungszyklus verwenden Viele Waschmaschinen verfügen über spezielle Reinigungsprogramme – nutze diese, wenn sie verfügbar sind, um die Reinigung zu erleichtern.",
+  "cc": "de",
+  "page_type": "microsite",
+  "ko": "세척 코스 사용 많은 세탁기에 전용 세척 프로그램이 있으니 가능하면 활용해 청소를 쉽게 하세요.",
+  "url": "",
+  "set": "general",
+  "id": "b227"
+ },
+ {
+  "src": "new029",
+  "text": "We recommend letting the unit air-dry for 2–3 days.",
+  "cc": "us",
+  "page_type": "support_troubleshoot",
+  "ko": "제품을 2~3일간 자연 건조하는 것을 권장합니다.",
+  "url": "https://www.lg.com/us/support/help-library/what-to-do-if-water-gets-into-the-outdoor-unit-CT10000014-20155198999366",
+  "set": "ts_new",
+  "id": "b228"
+ },
+ {
+  "src": "s13262",
+  "text": "Explora las lavadoras de carga frontal Lavasecadoras Todo en uno, comodidad compacta Ahorra espacio lavando y secando en un solo producto, limpieza a profundidad, cuidado inteligente con más de protección con tamaño óptimo para tu hogar.",
+  "cc": "mx",
+  "page_type": "buying_guide",
+  "ko": "드럼세탁기 탐색. 세탁건조기. 올인원, 콤팩트한 편리함. 한 제품으로 세탁·건조해 공간 절약, 깊은 세척, 스마트 케어… 최적 크기.",
+  "url": "",
+  "set": "general",
+  "id": "b229"
+ },
+ {
+  "src": "s01356",
+  "text": "Adicionado com sucesso ao seu carrinho Continuar Comprando Ver carrinho A notificação de reabastecimento já foi atualizada.",
+  "cc": "br",
+  "page_type": "promotion",
+  "ko": "장바구니에 추가되었습니다 쇼핑 계속 장바구니 보기 재입고 알림이 이미 업데이트되었습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b230"
+ },
+ {
+  "src": "new089",
+  "text": "Se você não tiver limão, pode colocar cascas de tangerina ou laranja com água em um recipiente seguro para micro-ondas e ligar o micro-ondas.",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "레몬이 없으면 귤이나 오렌지 껍질을 물과 함께 전자레인지용 용기에 넣고 전자레인지를 돌려도 됩니다.",
+  "url": "https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001753-20155299041485",
+  "set": "ts_new",
+  "id": "b231"
+ },
+ {
+  "src": "new004",
+  "text": "Use the Water Mode button to select Measured Fill (120ml, 500ml, 1L) or Continuous Dispensing (water flows continuously while the lever is pressed).",
+  "cc": "in",
+  "page_type": "support_troubleshoot",
+  "ko": "물 모드 버튼으로 정량 출수(120ml, 500ml, 1L) 또는 연속 출수(레버를 누르는 동안 계속 나옴)를 선택하세요.",
+  "url": "https://www.lg.com/in/support/product-support/troubleshoot/help-library/cs-CT52006627-20155200207794",
+  "set": "ts_new",
+  "id": "b232"
+ },
+ {
+  "src": "s10991",
+  "text": "A Página Solicitada Não Está Disponível.",
+  "cc": "br",
+  "page_type": "pdp",
+  "ko": "요청하신 페이지를 사용할 수 없습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b233"
+ },
+ {
+  "src": "s11242",
+  "text": "We reserve the right to cancel or modify the Coupon at any time without notice.",
+  "cc": "in",
+  "page_type": "promotion",
+  "ko": "당사는 사전 통지 없이 언제든 쿠폰을 취소하거나 변경할 권리가 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b234"
+ },
+ {
+  "src": "s12485",
+  "text": "O recurso pode ser ativado de qualquer lugar da casa, pois está disponível tanto no painel do refrigerador como no aplicativo LG ThinQ.",
+  "cc": "br",
+  "page_type": "microsite",
+  "ko": "이 기능은 냉장고 패널과 LG ThinQ 앱 모두에서 사용할 수 있으므로 집 안 어디서나 활성화할 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b235"
+ },
+ {
+  "src": "s00233",
+  "text": "Bạn có thể chia sẻ nội dung bạn thích với bạn bè của mình Đã sao chép URL vào bảng nhớ tạm Đóng Nếu hình ảnh chiếu bị mờ, hãy từ từ xoay núm lấy nét khi nhìn vào trung tâm trên màn hình.",
+  "cc": "vn",
+  "page_type": "support_troubleshoot",
+  "ko": "좋아하는 콘텐츠를 친구와 공유하세요 URL 복사됨 닫기 투사 이미지가 흐리면 화면 중앙을 보며 포커스 노브를 천천히 돌리세요.",
+  "url": "",
+  "set": "general",
+  "id": "b236"
+ },
+ {
+  "src": "s00246",
+  "text": "The dishwasher operates at a low noise level of approximately 39 dB, supporting a quieter kitchen environment that allows it to run comfortably at any time of day, including in open-concept spaces.",
+  "cc": "ca",
+  "page_type": "press_media",
+  "ko": "이 식기세척기는 약 39dB의 저소음으로 작동해 개방형 공간을 포함해 하루 중 언제든 편안하게 사용할 수 있다.",
+  "url": "",
+  "set": "general",
+  "id": "b237"
+ },
+ {
+  "src": "s00609",
+  "text": "The margin of error is ±2.5%, 19 times out of 20.",
+  "cc": "ca",
+  "page_type": "press_media",
+  "ko": "오차 범위는 ±2.5%이며 20회 중 19회 수준입니다.",
+  "url": "",
+  "set": "general",
+  "id": "b238"
+ },
+ {
+  "src": "s01986",
+  "text": "Visuais mais brilhantes com o Intensificador de brilho O Preto Perfeito é verificado pela UL e oferece níveis de preto verdadeiros para aprimorar o brilho e o contraste percebidos, seja em ambientes claros ou escuros ao seu redor.",
+  "cc": "br",
+  "page_type": "promotion",
+  "ko": "밝기 향상으로 더 밝은 화면 퍼펙트 블랙은 UL 검증을 받았으며 밝거나 어두운 환경에서도 진정한 블랙으로 체감 밝기와 명암을 높입니다.",
+  "url": "",
+  "set": "general",
+  "id": "b239"
+ },
+ {
+  "src": "s01973",
+  "text": "Real-time operation control, remote monitoring and detailed scheduling give facility administrators an edge when streamlining system operation and energy management.",
+  "cc": "ca",
+  "page_type": "business",
+  "ko": "실시간 운전 제어, 원격 모니터링, 상세 스케줄링은 시설 관리자가 시스템 운영과 에너지 관리를 효율화하는 데 우위를 줍니다.",
+  "url": "",
+  "set": "general",
+  "id": "b240"
+ },
+ {
+  "src": "s11769",
+  "text": "Auto Cleaning An Internal Clean that's Automatic Automatically dries any moisture inside the air conditioner to ensure it's always clean.",
+  "cc": "in",
+  "page_type": "pdp",
+  "ko": "자동 청소 자동으로 이뤄지는 내부 청소 에어컨 내부의 습기를 자동으로 건조시켜 항상 청결하게 유지합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b241"
+ },
+ {
+  "src": "s13097",
+  "text": "AI Fresh uses usage patterns to help manage cooling, while AI ThinQ™ enables compatible refrigerators to be monitored and controlled through the LG ThinQ™ app.",
+  "cc": "in",
+  "page_type": "plp",
+  "ko": "AI Fresh는 사용 패턴을 활용해 냉각을 관리하고, AI ThinQ™는 호환 냉장고를 LG ThinQ™ 앱으로 모니터링·제어할 수 있게 합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b242"
+ },
+ {
+  "src": "s10927",
+  "text": "Mais do que um eletrodoméstico, ela é um centro de inovação que transforma o dia a dia, mantendo alimentos frescos, economizando energia e trazendo mais estilo ao ambiente.",
+  "cc": "br",
+  "page_type": "press_media",
+  "ko": "가전제품 이상으로, 이 냉장고는 식품을 신선하게 유지하고 에너지를 절약하며 공간에 스타일을 더해 일상을 바꾸는 혁신의 중심입니다.",
+  "url": "",
+  "set": "general",
+  "id": "b243"
+ },
+ {
+  "src": "s00305",
+  "text": "● Duração da bateria: a bateria de longa duração permite usar a TV por até 3 horas de visualização contínua, para você ver um filme inteiro ou vários episódios de sua série favorita sem a necessidade de recarga.",
+  "cc": "br",
+  "page_type": "experience",
+  "ko": "● 배터리 지속시간: 장수명 배터리로 최대 3시간 연속 시청이 가능해 재충전 없이 영화 한 편이나 여러 에피소드를 볼 수 있다.",
+  "url": "",
+  "set": "general",
+  "id": "b244"
+ },
+ {
+  "src": "new017",
+  "text": "(Less than one month) 1 Check customer how to operate Machine -\r\n",
+  "cc": "in",
+  "page_type": "support_troubleshoot",
+  "ko": "(상담 스크립트 조각) (1개월 미만) 1 고객에게 기기 작동 방법 확인 -",
+  "url": "https://www.lg.com/in/support/product-support/troubleshoot/help-library/cs-CT52006627-20155105955615",
+  "set": "ts_new",
+  "id": "b245"
+ },
+ {
+  "src": "s11286",
+  "text": "Most LG refrigerators are equipped with an automatic defrost system , which helps prevent frost buildup and maintains efficient operation.",
+  "cc": "ca",
+  "page_type": "pdp",
+  "ko": "대부분의 LG 냉장고에는 자동 제상 시스템이 탑재되어 성에 생성을 막고 효율적인 작동을 유지합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b246"
+ },
+ {
+  "src": "new033",
+  "text": "2,7 kg / 6 lb).",
+  "cc": "de",
+  "page_type": "support_troubleshoot",
+  "ko": "(문장 조각) 2.7kg / 6lb).",
+  "url": "https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000815-20155004250964/",
+  "set": "ts_new",
+  "id": "b247"
+ },
+ {
+  "src": "new093",
+  "text": "Trava para crianças permanece ligada após desligar a energia O Travamento para Crianças permanece ativo mesmo após o término do ciclo de lavagem ou após a lava-louças ser desligada.",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "전원을 꺼도 차일드 잠금이 유지됨: 차일드 잠금은 세척 코스가 끝나거나 식기세척기 전원을 꺼도 계속 켜져 있습니다.",
+  "url": "https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001753-20155118242869",
+  "set": "ts_new",
+  "id": "b248"
+ },
+ {
+  "src": "new007",
+  "text": "Fehlerbehebung bei Amazon Prime Video auf einem LG-Fernseher Product Usage IT Produkte 06/04/2026 Drucken Teilen Diesen Inhalt teilen.",
+  "cc": "de",
+  "page_type": "support_troubleshoot",
+  "ko": "(페이지 머리말) LG TV에서 Amazon Prime Video 문제 해결 · 제품 사용 · IT 제품 · 2026-06-04 · 인쇄/공유",
+  "url": "https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000814-20153065522023/",
+  "set": "ts_new",
+  "id": "b249"
+ },
+ {
+  "src": "s00371",
+  "text": "With Dolby Vision™, Dolby Atmos®, and ultra-slim design, it transforms any space into an immersive cinematic environment.",
+  "cc": "us",
+  "page_type": "plp",
+  "ko": "Dolby Vision, Dolby Atmos, 초슬림 디자인으로 어떤 공간도 몰입형 영화 환경으로 바꿔준다.",
+  "url": "",
+  "set": "general",
+  "id": "b250"
+ },
+ {
+  "src": "new098",
+  "text": "The power sound can only be turned on or off, and you cannot adjust the volume.",
+  "cc": "ca",
+  "page_type": "support_troubleshoot",
+  "ko": "전원음은 켜거나 끄기만 할 수 있고 볼륨은 조절할 수 없습니다.",
+  "url": "https://www.lg.com/ca_en/support/product-support/troubleshoot/help-library/cs-CT52001643-20155412212632",
+  "set": "ts_new",
+  "id": "b251"
+ },
+ {
+  "src": "new021",
+  "text": "Wie man ein verschwommenes oder falsch ausgerichtetes Projektorbild behebt Troubleshooting Home Entertainment 08/12/2026 Drucken Teilen Diesen Inhalt teilen.",
+  "cc": "de",
+  "page_type": "support_troubleshoot",
+  "ko": "(페이지 머리말) 흐리거나 어긋난 프로젝터 화면 해결 방법 · 문제 해결 · 홈 엔터테인먼트 · 2026-08-12 · 인쇄/공유",
+  "url": "https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000814-20155381402636",
+  "set": "ts_new",
+  "id": "b252"
+ },
+ {
+  "src": "s13163",
+  "text": "La innovadora tecnología del motor LG DirectDrive™ reduce la cantidad de piezas móviles dentro de su electrodoméstico, lo que reduce el ruido generado (además de extender su vida útil debido a un menor desgaste).",
+  "cc": "mx",
+  "page_type": "pdp",
+  "ko": "혁신적인 LG DirectDrive™ 모터 기술은 내부 가동 부품 수를 줄여 소음을 낮추고(마모 감소로 수명도 연장).",
+  "url": "",
+  "set": "general",
+  "id": "b253"
+ },
+ {
+  "src": "s11408",
+  "text": "● Exclusiva tecnologia 6 Motion 3 : diferente das lavadoras convencionais, que só têm 1 movimento, a lava e seca LG tem 6 movimentos de lavagem para limpar e conservar melhor suas peças.",
+  "cc": "br",
+  "page_type": "experience",
+  "ko": "● 독자적인 6 Motion 기술: 1가지 동작만 있는 일반 세탁기와 달리 LG 세탁건조기는 6가지 세탁 동작으로 옷감을 더 깨끗하게 세탁·보호합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b254"
+ },
+ {
+  "src": "s01737",
+  "text": "This versatility allows the Objet Easel to serve both as a functional display and a stylish decorative piece, effortlessly blending into your home as a statement object.",
+  "cc": "au",
+  "page_type": "experience",
+  "ko": "이 다재다능함 덕분에 Objet Easel은 기능적 디스플레이이자 세련된 장식품으로 집 안에 자연스럽게 어우러집니다.",
+  "url": "",
+  "set": "general",
+  "id": "b255"
+ },
+ {
+  "src": "s10175",
+  "text": "Why Is \"CL\" Appearing on My Dishwasher?",
+  "cc": "us",
+  "page_type": "support_troubleshoot",
+  "ko": "식기세척기에 왜 CL이 표시되나요?",
+  "url": "",
+  "set": "general",
+  "id": "b256"
+ },
+ {
+  "src": "s10601",
+  "text": "If the buttons remain unresponsive after disabling Child Lock, check the control panel surface for moisture or debris and wipe it clean with a soft cloth.",
+  "cc": "us",
+  "page_type": "support_troubleshoot",
+  "ko": "차일드 락 해제 후에도 버튼이 반응하지 않으면 조작부 표면의 습기나 이물질을 확인하고 부드러운 천으로 닦아 주세요.",
+  "url": "",
+  "set": "general",
+  "id": "b257"
+ },
+ {
+  "src": "new016",
+  "text": "How is the overall air quality\r\n",
+  "cc": "au",
+  "page_type": "support_troubleshoot",
+  "ko": "(문장 조각) 전체 공기질은 어떤가요",
+  "url": "https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT32004806-20155198562423",
+  "set": "ts_new",
+  "id": "b258"
+ },
+ {
+  "src": "new046",
+  "text": "Was ist der Unterschied zwischen Lens Shift und Keystone?",
+  "cc": "de",
+  "page_type": "support_troubleshoot",
+  "ko": "렌즈 시프트와 키스톤의 차이는 무엇인가요?",
+  "url": "https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000814-20155381402636",
+  "set": "ts_new",
+  "id": "b259"
+ },
+ {
+  "src": "new065",
+  "text": "If the Smart Diagnosis provides one of the following voice message,\r\n",
+  "cc": "uk",
+  "page_type": "support_troubleshoot",
+  "ko": "(문장 조각) 스마트 진단이 다음 음성 메시지 중 하나를 안내하면,",
+  "url": "https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008355-20155049074934",
+  "set": "ts_new",
+  "id": "b260"
+ },
+ {
+  "src": "s10476",
+  "text": "TV bundles that include wireless Bluetooth soundbars support ensure minimal cable management while offering maximum flexibility.",
+  "cc": "us",
+  "page_type": "promotion",
+  "ko": "무선 블루투스 사운드바가 포함된 TV 번들은 케이블 관리를 최소화하면서 최대의 유연성을 제공합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b261"
+ },
+ {
+  "src": "s00573",
+  "text": "With a TV with Dolby Vision™ support, you can enjoy content mastered in Dolby Vision™ from Netflix, Apple TV, and more.",
+  "cc": "us",
+  "page_type": "buying_guide",
+  "ko": "Dolby Vision 지원 TV가 있으면 Netflix, Apple TV 등에서 Dolby Vision으로 마스터링된 콘텐츠를 즐길 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b262"
+ },
+ {
+  "src": "s10172",
+  "text": "DoorCooling+™ DoorCooling+™ directs cool air right to the inside of the door, tackling a common weakness—door shelves that warm up faster from frequent opening.",
+  "cc": "uk",
+  "page_type": "experience",
+  "ko": "DoorCooling+™ DoorCooling+™는 도어 안쪽으로 냉기를 직접 보내, 잦은 개폐로 빨리 따뜻해지는 도어 선반의 약점을 해결합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b263"
+ },
+ {
+  "src": "s10803",
+  "text": "Com a função inteligente de monitoramento energético do aplicativo LG ThinQ, você tem acesso instantâneo a informações de uso mensal de cada aparelho LG conectado, o que ajuda a manter sob controle o consumo de energia para você poder sentar, relaxar e aproveitar o frescor do lar.",
+  "cc": "br",
+  "page_type": "microsite",
+  "ko": "LG ThinQ 앱의 스마트 에너지 모니터링 기능으로 연결된 각 LG 기기의 월간 사용량 정보를 즉시 확인할 수 있어 에너지 소비를 관리하며 편안히 시원함을 즐길 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b264"
+ },
+ {
+  "src": "s12145",
+  "text": "¿Qué es la función Quick Wash de LG?",
+  "cc": "mx",
+  "page_type": "pdp",
+  "ko": "LG의 Quick Wash 기능이란 무엇인가요?",
+  "url": "",
+  "set": "general",
+  "id": "b265"
+ },
+ {
+  "src": "s12283",
+  "text": "genommen, abrufbar über folgenden",
+  "cc": "de",
+  "page_type": "experience",
+  "ko": "…했으며, 다음 링크에서 확인 가능",
+  "url": "",
+  "set": "general",
+  "id": "b266"
+ },
+ {
+  "src": "s10947",
+  "text": "In the [System Information] window, check the [Secure Boot State].",
+  "cc": "uk",
+  "page_type": "support_troubleshoot",
+  "ko": "[시스템 정보] 창에서 [보안 부팅 상태]를 확인하세요.",
+  "url": "",
+  "set": "general",
+  "id": "b267"
+ },
+ {
+  "src": "new015",
+  "text": "What is the difference between Lens Shift and Keystone?",
+  "cc": "uk",
+  "page_type": "support_troubleshoot",
+  "ko": "렌즈 시프트와 키스톤의 차이는 무엇인가요?",
+  "url": "https://www.lg.com/uk/support/product-support/troubleshoot/help-library/cs-CT00008333-20155381409557",
+  "set": "ts_new",
+  "id": "b268"
+ },
+ {
+  "src": "new047",
+  "text": "2021 and later TVs (webOS 6.0 or later): Press [Settings] on the remote → select [All Settings] on the TV screen → [General] → [Network] → [Wi Fi Connection] 2020 TVs (webOS 5.0): Press [Settings] on the remote → select [All Settings] on the TV screen → [Connection] → [Network Connection Settings] → [Wi Fi Connection] 2019 TVs (webOS 4.5): Press [Settings] on the remote → select [All Settings] on the TV screen → [Connection] → [Wi Fi Connection] 2018 and earlier TVs (webOS 4.0 or earlier): Press [Settings] on the remote → select [All Settings] on the TV screen → [Network] → [Wi Fi Connection] Q.",
+  "cc": "us",
+  "page_type": "support_troubleshoot",
+  "ko": "2021년 이후 TV(webOS 6.0 이상): 리모컨 [설정] → 화면의 [전체 설정] → [일반] → [네트워크] → [Wi-Fi 연결] / 2020년 TV(webOS 5.0): [설정] → [전체 설정] → [연결] → [네트워크 연결 설정]…",
+  "url": "https://www.lg.com/us/support/help-library/lg-tv-how-to-agree-to-the-user-agreements-CT10000030-20155154186594",
+  "set": "ts_new",
+  "id": "b269"
+ },
+ {
+  "src": "s13056",
+  "text": "alto desempeño y limpieza profunda Optimiza tu forma de lavado con un proceso de lavado más potente y cuidadoso con tus prendas, controlando de manera eficiente el consumo de energía.",
+  "cc": "mx",
+  "page_type": "buying_guide",
+  "ko": "고성능과 깊은 세정 — 더 강력하고 옷감에 부드러운 세탁으로 에너지 소비를 효율적으로 제어하며 세탁 방식을 최적화하세요.",
+  "url": "",
+  "set": "general",
+  "id": "b270"
+ },
+ {
+  "src": "s10150",
+  "text": "It combines high-temp settings with optimal dry times to ensure items come out clean and smelling fresh.",
+  "cc": "ca",
+  "page_type": "pdp",
+  "ko": "고온 설정과 최적 건조 시간을 결합해 세탁물이 깨끗하고 상쾌한 향으로 나오도록 합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b271"
+ },
+ {
+  "src": "s13226",
+  "text": "Zum Test Area DVD \"In praktisch allen Belangen überzeugender OLED-Fernseher\" Der LG OLED evo TV C6 wurde im Test von Area DVD als \"Preisklassen-Referenz\" ausgezeichnet.",
+  "cc": "de",
+  "page_type": "pdp",
+  "ko": "Area DVD 테스트 보기. \"거의 모든 면에서 설득력 있는 OLED TV\" LG OLED evo TV C6는 Area DVD 테스트에서 \"가격대 레퍼런스\"로 선정되었습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b272"
+ },
+ {
+  "src": "s01550",
+  "text": "Service Plan Lowest price for LG Premium Care to extend your manufacturer’s warranty.",
+  "cc": "us",
+  "page_type": "home",
+  "ko": "서비스 플랜 제조사 보증을 연장하는 LG 프리미엄 케어 최저가.",
+  "url": "",
+  "set": "general",
+  "id": "b273"
+ },
+ {
+  "src": "new042",
+  "text": "Wenn du eine Set-Top-Box benutzt, versuche auch, die Lautstärke mit der Fernbedienung der Set-Top-Box aufzudrehen.",
+  "cc": "de",
+  "page_type": "support_troubleshoot",
+  "ko": "셋톱박스를 쓰고 있다면 셋톱박스 리모컨으로도 볼륨을 올려 보세요.",
+  "url": "https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000817-20155311242601/",
+  "set": "ts_new",
+  "id": "b274"
+ },
+ {
+  "src": "new080",
+  "text": "If the bin is full, empty it and check if ice production resumes.",
+  "cc": "in",
+  "page_type": "support_troubleshoot",
+  "ko": "얼음통이 가득 찼다면 비운 뒤 제빙이 다시 시작되는지 확인하세요.",
+  "url": "https://www.lg.com/in/support/product-support/troubleshoot/help-library/cs-CT52006627-20155380010857",
+  "set": "ts_new",
+  "id": "b275"
+ },
+ {
+  "src": "new063",
+  "text": "Efeito de Som da Barra de Som oferece som surround otimizado para alto-falantes externos, enquanto o Modo Som da TV oferece áudio mais equilibrado, ajustado para conteúdo na tela.",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "사운드바 음향 효과는 외부 스피커에 최적화된 서라운드 사운드를, TV 사운드 모드는 화면 콘텐츠에 맞춘 균형 잡힌 소리를 제공합니다.",
+  "url": "https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001752-20155019546528",
+  "set": "ts_new",
+  "id": "b276"
+ },
+ {
+  "src": "s00719",
+  "text": "Los resultados pueden variar en función de las condiciones de uso y del entorno.",
+  "cc": "es",
+  "page_type": "pdp",
+  "ko": "결과는 사용 조건과 환경에 따라 다를 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b277"
+ },
+ {
+  "src": "new041",
+  "text": "➔ How to set [Quick Help] in [2022 WebOS22][2021 WebOS6.0] 1.",
+  "cc": "au",
+  "page_type": "support_troubleshoot",
+  "ko": "➔ [2022 webOS22][2021 webOS6.0]에서 [빠른 도움말] 설정 방법 1.",
+  "url": "https://www.lg.com/au/support/product-support/troubleshoot/help-library/cs-CT52001891-20153217242233OLT/",
+  "set": "ts_new",
+  "id": "b278"
+ },
+ {
+  "src": "s10699",
+  "text": "Los resultados pueden variar en función del tipo de bomba de calor y de los precios de la energía en su región.",
+  "cc": "es",
+  "page_type": "plp",
+  "ko": "결과는 히트펌프 유형과 지역 에너지 가격에 따라 다를 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b279"
+ },
+ {
+  "src": "new035",
+  "text": "2026 and newer TVs (webOS 26 or later): Press the [Settings] button on your remote, [All Settings], [System], [Network], [Wi-Fi Connection] 2021 and newer TVs (webOS 6.0 or later): Press the [Settings] button on your remote, [All Settings], [General], [Network], [Wi-Fi Connection] 2020 TVs (webOS 5.0): Press the [Settings] button on your remote, [All Settings], [General], [Network Connection Settings], [Wi-Fi Connection] 2019 TVs (webOS 4.5): Press the [Settings] button on your remote, [All Settings], [General], [Wi-Fi Connection] 2018 and older TVs (webOS 4.0 or earlier): Press the [Settings] button on your remote, [All Settings], [Network], [Wi-Fi Connection] Step 3.",
+  "cc": "us",
+  "page_type": "support_troubleshoot",
+  "ko": "2026년 이후 TV(webOS 26 이상): 리모컨 [설정] → [전체 설정] → [시스템] → [네트워크] → [Wi-Fi 연결] / 2021년 이후 TV(webOS 6.0 이상): [설정] → [전체 설정] → [일반] → [네트워크] → [Wi-Fi 연결] / 2020년 TV(webOS 5.0)…",
+  "url": "https://www.lg.com/us/support/help-library/how-to-install-and-delete-apps-on-your-lg-tv-CT10000030-20155331395481",
+  "set": "ts_new",
+  "id": "b280"
+ },
+ {
+  "src": "s10084",
+  "text": "Q: Is a 100-inch TV too big for home use?",
+  "cc": "us",
+  "page_type": "plp",
+  "ko": "Q: 100인치 TV는 가정용으로 너무 큰가요?",
+  "url": "",
+  "set": "general",
+  "id": "b281"
+ },
+ {
+  "src": "s11578",
+  "text": "The new Regal range is stylish with a beautiful and sophisticated design.",
+  "cc": "in",
+  "page_type": "press_media",
+  "ko": "새 Regal 라인은 아름답고 세련된 디자인으로 스타일리시합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b282"
+ },
+ {
+  "src": "s13151",
+  "text": "Os ciclos capacitados por IA usam algoritmos avançados para analisar o peso, o material e a umidade das roupas, oferecendo uma configuração de lavagem customizada de acordo com as características de cada peça.",
+  "cc": "br",
+  "page_type": "experience",
+  "ko": "AI 세탁 코스는 고급 알고리즘으로 의류의 무게, 소재, 습도를 분석해 각 의류 특성에 맞는 맞춤 세탁 설정을 제공합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b283"
+ },
+ {
+  "src": "s00490",
+  "text": "With balanced Mini LED light control and screen sizes reaching up to 115 inches, QNED evo Mini LED brings immersive big‑screen viewing into the living space, combining stable performance, comfortable clarity, and confidence across every kind of content.",
+  "cc": "us",
+  "page_type": "buying_guide",
+  "ko": "균형 잡힌 미니LED 광 제어와 최대 115인치 화면으로 QNED evo 미니LED는 안정적 성능과 편안한 선명도로 몰입감 있는 대화면 시청을 제공합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b284"
+ },
+ {
+  "src": "new061",
+  "text": "No intentes desmontar ni modificar ninguna pieza por tu cuenta.",
+  "cc": "es",
+  "page_type": "support_troubleshoot",
+  "ko": "부품을 임의로 분해하거나 개조하지 마세요.",
+  "url": "https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002101-20155348058270",
+  "set": "ts_new",
+  "id": "b285"
+ },
+ {
+  "src": "new073",
+  "text": "Remove the Front Cover Gently pull the top left and right edges of the front cover.",
+  "cc": "us",
+  "page_type": "support_troubleshoot",
+  "ko": "앞 커버 분리: 앞 커버의 왼쪽·오른쪽 위 모서리를 살살 당기세요.",
+  "url": "https://www.lg.com/us/support/help-library/lg-aerocat-tower-how-to-clean-your-aerocat-tower-CT32001601-20155130672575",
+  "set": "ts_new",
+  "id": "b286"
+ },
+ {
+  "src": "s12871",
+  "text": "*Errors or delays may occur depending on the network connection.",
+  "cc": "uk",
+  "page_type": "pdp",
+  "ko": "*네트워크 연결에 따라 오류나 지연이 발생할 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b287"
+ },
+ {
+  "src": "s00840",
+  "text": "Tamaño compacto y peso ligero El tamaño de los equipos se ha reducido, lo que supone un ahorro en el valor de la compra, además de en el coste de instalación y mantenimiento.",
+  "cc": "es",
+  "page_type": "business",
+  "ko": "컴팩트한 크기와 가벼운 무게 장비 크기가 줄어 구매 비용은 물론 설치·유지비도 절감된다.",
+  "url": "",
+  "set": "general",
+  "id": "b288"
+ },
+ {
+  "src": "new075",
+  "text": "Por que instalar drivers de dispositivo e usar o LG Update Drivers Ausentes após uma Redefinição do Windows Erros Inesperados de Driver Os Benefícios da Atualização LG Como instalar o aplicativo de atualizações LG para o seu laptop Caso 1.",
+  "cc": "br",
+  "page_type": "support_troubleshoot",
+  "ko": "(목차 나열) 장치 드라이버를 설치하고 LG Update를 써야 하는 이유 · Windows 초기화 후 드라이버 누락 · 예기치 않은 드라이버 오류 · LG Update의 장점 · 노트북용 LG 업데이트 앱 설치 방법 · 사례 1.",
+  "url": "https://www.lg.com/br/suporte/suporte-ao-producto/solucionar-problemas/help-library/cs-CT52001755-20155410263463",
+  "set": "ts_new",
+  "id": "b289"
+ },
+ {
+  "src": "new000",
+  "text": "Montaje del filtro de escape ① En primer lugar, por motivos de seguridad, retira la batería de la aspiradora.",
+  "cc": "es",
+  "page_type": "support_troubleshoot",
+  "ko": "배기 필터 조립 ① 먼저 안전을 위해 청소기에서 배터리를 분리하세요.",
+  "url": "https://www.lg.com/es/soporte/soporte-producto/resolucion-problemas/help-library/cs-CT52002101-20155102922975",
+  "set": "ts_new",
+  "id": "b290"
+ },
+ {
+  "src": "s00111",
+  "text": "Consejos útiles Cómo configurar un proyector 4K Tech Hub Guía para elegir el sistema de ventilación, calefacción y aire acondicionado adecuado Descubre cómo elegir el sistema de climatización adecuado para apartamentos y casas, y conoce a fondo las bombas de calor, los sistemas inverter y mucho más.",
+  "cc": "es",
+  "page_type": "experience",
+  "ko": "유용한 팁 4K 프로젝터 설정 방법 Tech Hub 적합한 냉난방·공조 시스템 선택 가이드 아파트·주택용 공조 시스템 선택법과 히트펌프, 인버터 시스템 등을 알아보세요.",
+  "url": "",
+  "set": "general",
+  "id": "b291"
+ },
+ {
+  "src": "s10412",
+  "text": "Shop Now Make the Right Choice Upgrade your laundry routine with our washers and dryers.",
+  "cc": "us",
+  "page_type": "experience",
+  "ko": "지금 쇼핑하기 올바른 선택 LG 세탁기와 건조기로 세탁 루틴을 업그레이드하세요.",
+  "url": "",
+  "set": "general",
+  "id": "b292"
+ },
+ {
+  "src": "new085",
+  "text": "※ On Screen Control supports will differ by model.",
+  "cc": "in",
+  "page_type": "support_troubleshoot",
+  "ko": "※ On Screen Control 지원 여부는 모델마다 다릅니다.",
+  "url": "https://www.lg.com/in/support/product-support/troubleshoot/help-library/cs-CT40018301-20153192700829/",
+  "set": "ts_new",
+  "id": "b293"
+ },
+ {
+  "src": "s10511",
+  "text": "Over ten years, a highly efficient fridge freezer can save you several hundred pounds, compared to older, inefficient ones.",
+  "cc": "uk",
+  "page_type": "experience",
+  "ko": "10년 동안 고효율 냉장고는 오래된 비효율 모델에 비해 수백 파운드를 절약할 수 있습니다.",
+  "url": "",
+  "set": "general",
+  "id": "b294"
+ },
+ {
+  "src": "new010",
+  "text": "Modelle von 2018 und früheren [webOS 4.0 oder früher]: Druck auf die Einstellungen [ ]Button auf der Fernbedienung → [Alle Einstellungen] → [Netzwerk] → Kabelverbindung (Ethernet) oder WLAN-Verbindung auswählen.",
+  "cc": "de",
+  "page_type": "support_troubleshoot",
+  "ko": "2018년 이전 모델 [webOS 4.0 이하]: 리모컨 설정 버튼 → [전체 설정] → [네트워크] → 유선(이더넷) 또는 Wi-Fi 연결 선택.",
+  "url": "https://www.lg.com/de/support/produkt-hilfe/fehlerbehebung/help-library/cs-CT52000819-20155219496900/",
+  "set": "ts_new",
+  "id": "b295"
+ },
+ {
+  "src": "s01052",
+  "text": "2 During the LG Labor Day retail promotion period, shoppers can save purchase a new WM3900 front-load washer for $849 (saving $250).",
+  "cc": "us",
+  "page_type": "press_media",
+  "ko": "2 LG 노동절 소매 프로모션 기간 동안 구매자는 새 WM3900 드럼세탁기를 $849에 구매할 수 있습니다($250 절약).",
+  "url": "",
+  "set": "general",
+  "id": "b296"
+ },
+ {
+  "src": "s10750",
+  "text": "While the primary factors listed above should guide your decision-making process, you may also want to consider some additional features that can enhance your overall experience: ● HDR (High Dynamic Range) — HDR technology provides a broader range of colours and improved contrast, resulting in more lifelike images.",
+  "cc": "au",
+  "page_type": "plp",
+  "ko": "위 주요 요소 외에 경험을 향상하는 추가 기능도 고려할 수 있습니다: ● HDR(하이 다이내믹 레인지) — HDR 기술은 더 넓은 색 범위와 개선된 대비로 더 생생한 이미지를 제공합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b297"
+ },
+ {
+  "src": "s10398",
+  "text": "LG's Motorised Rotisserie eliminates that entirely as the food rotates continuously through the heat, cooking from every angle simultaneously (360°), delivering consistent and even browning with no manual flipping required.",
+  "cc": "in",
+  "page_type": "microsite",
+  "ko": "LG 모터식 로티세리는 음식이 열 속에서 계속 회전하며 모든 각도(360°)에서 동시에 조리되므로 뒤집을 필요 없이 균일한 갈변을 제공합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b298"
+ },
+ {
+  "src": "s11302",
+  "text": "LG Knows Big Screens.",
+  "cc": "us",
+  "page_type": "home",
+  "ko": "LG는 대화면을 압니다.",
+  "url": "",
+  "set": "general",
+  "id": "b299"
+ },
+ {
+  "src": "s10744",
+  "text": "The damage and destruction is huge and we want to help people get back to normal life as soon as they can.",
+  "cc": "in",
+  "page_type": "press_media",
+  "ko": "피해와 파괴가 막대하며 우리는 사람들이 최대한 빨리 정상 생활로 돌아가도록 돕고자 합니다.",
+  "url": "",
+  "set": "general",
+  "id": "b300"
+ }
+]

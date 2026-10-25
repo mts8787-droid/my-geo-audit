@@ -10,10 +10,11 @@ ap.add_argument("--model", default="hiro")
 ap.add_argument("--data", default="reports/shadow_llm/train/lora_data_v2/test.jsonl")
 ap.add_argument("--out", required=True); ap.add_argument("--limit", type=int, default=0)
 ap.add_argument("--host", default="http://127.0.0.1:11434")
+ap.add_argument("--ids", default="reports/shadow_llm/train/lora_data/test_ids.json")
 a = ap.parse_args()
 
 rows = [json.loads(l) for l in open(a.data) if l.strip()]
-ids = json.load(open("reports/shadow_llm/train/lora_data/test_ids.json"))
+ids = json.load(open(a.ids))
 if a.limit: rows, ids = rows[:a.limit], ids[:a.limit]
 LAB = ("citable", "definition", "summary")
 stats = {k: [0, 0, 0, 0] for k in LAB}

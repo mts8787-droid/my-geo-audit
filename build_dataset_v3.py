@@ -6,8 +6,11 @@ v3b 라벨 데이터 구성 (2026-10-20).
 (out_v3_rejected/ 의 TS 문장 + out_v3/ts_rest.jsonl).
 사람 검수 문장도 태그가 있으면 결정대로 맞춘다(검수자 본인의 결정이 개별 판정보다 우선).
   /usr/bin/python3 build_dataset_v3.py  → reports/shadow_llm/train/dataset_v3.jsonl
+v3c (2026-10-21): v3b 가 작동 설명=정의 y 를 일반 기능 소개문까지 넓혀 배워 정의문 과잉 판정 → mechanism 은 인용 y 만, 정의는 기존 라벨 유지.
+  /usr/bin/python3 build_dataset_v3.py c  → reports/shadow_llm/train/dataset_v3c.jsonl
 """
-import json, glob, collections
+import json, glob, collections, sys
+VAR = sys.argv[1] if len(sys.argv) > 1 else ""
 T = "reports/shadow_llm/train"
 rows = [json.loads(l) for l in open(f"{T}/dataset_v1.jsonl")]
 tags = {}
@@ -25,6 +28,7 @@ RULE = {"footnote": {"citable": "n", "definition": "n", "summary": "n"},
         "kf_list": {"citable": "n", "definition": "n", "summary": "n"},
         "mechanism": {"citable": "y", "definition": "y"},
         "capacity": {"citable": "y"}}
+if VAR == "c": RULE["mechanism"] = {"citable": "y"}
 stat = collections.Counter(); out = []
 for r in rows:
     r = dict(r); r["label_source"] = "v1"
@@ -49,7 +53,7 @@ for r in rows:
         elif not t:
             stat["untagged"] += 1
     out.append(r)
-with open(f"{T}/dataset_v3.jsonl", "w") as f:
+with open(f"{T}/dataset_v3{VAR}.jsonl", "w") as f:
     for r in out: f.write(json.dumps(r, ensure_ascii=False) + "\n")
 c = sum(r["citable"] == "y" for r in out); d = sum(r["definition"] == "y" for r in out)
-print(dict(stat)); print(f"dataset_v3: {len(out)}문장, 인용 y {c} ({c/len(out):.1%}), 정의 y {d} ({d/len(out):.1%})")
+print(dict(stat)); print(f"dataset_v3{VAR}: {len(out)}문장, 인용 y {c} ({c/len(out):.1%}), 정의 y {d} ({d/len(out):.1%})")

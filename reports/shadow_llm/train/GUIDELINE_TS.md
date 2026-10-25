@@ -217,3 +217,20 @@ E26 LG AI TV recognizes your voice and guides you to My Page.10)
 ## 요지
 트러블슈팅 문장에서 인용 y 는 전체의 약 4%(2,931 중 120), 정의 y 는 약 2%(54)다. 라벨러는 위 본문 기준을 글자대로 적용하면
 너무 많이 y 를 주게 되므로, **"AI 가 LG 제품의 사양·조건·오류코드에 대한 사실로 그대로 옮겨 적을 문장인가"** 를 먼저 묻고 조금이라도 아니면 n 으로 둔다.
+
+---
+
+# 사용자 결정 (2026-10-24) — 원인·증상 설명문은 인용 y. 위 "검수자 보정"의 C1 절보다 우선
+
+10월 정기 감사에서 트러블슈팅 #36 이 9월 대비 크게 떨어진 원인을 분석한 결과, 잘 정리된 트러블슈팅 본문(원인·증상 설명)이
+모두 n 으로 판정되고 있었다. 사용자 결정: **"트러블슈팅 원인·증상 설명문을 인용 가능(y)으로 해"**.
+
+- **C1(증상의 원인 설명) = citable y.** 완곡 표현("~일 수 있습니다", "보통 ~때문")·제품명 없음·지시어 시작이어도 원인 내용이 구체적이면 y.
+  y: "Cable Issue: The LAN cable may be loose, disconnected, or damaged.", "Bluetooth is turned off in Windows Settings.",
+     "If the water supply hose is frozen, water cannot enter into the tub.", "This may result in tapping or grinding noises as well as poor drying performance."
+- **증상·동작 설명문 = citable y.** 증상 서술("The refrigerator keeps beeping even when the door is closed."), 정상 동작의 이유("The lightwave oven is designed to
+  exhaust air from the bottom.", "Lower numbers mean a colder refrigerator temperature."), 조건별 동작("The smell will naturally fade within 1–2 weeks.").
+- 여전히 n: 해결 지시문("These symptom can be addressed by initializing the set-top box."), 메타 문장("~can happen in these situations", "two main reasons"),
+  내용 없는 판정("This is normal.", "There is an issue with the TV itself.", "temporary malfunction"), 공유·인쇄 버튼 텍스트가 길게 섞인 문장, 목록 조각·제목.
+- 지시형(I-A~I-I)·C2·D1·D2 기준은 바뀌지 않는다.
+- 적용: `dataset_ts_v2.jsonl` (C1 341 + N1 92 + C3 28 = 461문장 y 로 전환, 인용 y 106 → 567 = 19.3%), 학습 `lora_data_v3d`, 모델 v3d.
