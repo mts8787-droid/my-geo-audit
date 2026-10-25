@@ -39,6 +39,34 @@ def load_page_types(force: bool = False) -> dict:
 # 다른 국가는 전부 /{cc}/business/ 아래라 이 오버라이드가 걸리지 않는다.
 _B2B_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "b2b")
 _PLP_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "plp")
+
+# ── HS(가전) 콘텐츠 시트 오버라이드 (2026-10-25 사용자 지시) ─────────────────────
+# 사업부 시트(build_hs_contents.py → reports/hs_contents.csv)에 있는 URL 은 시트의
+# 분류가 URL 패턴보다 우선한다. 결과에 hs={content_type2, product, live_date} 를 붙인다.
+_HS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "hs_contents.csv")
+_hs_cache: Optional[dict] = None
+
+
+def _hs_key(url: str) -> str:
+    u = re.sub(r"^https?://(?:www\.)?lg\.com", "https://www.lg.com", url.strip(), flags=re.I)
+    u = u.split("#", 1)[0].split("?", 1)[0]
+    return u.rstrip("/").lower()
+
+
+def hs_lookup(url: str) -> Optional[dict]:
+    """HS 콘텐츠 시트에 있는 URL 이면 그 행(page_type·content_type2·product·live_date)."""
+    global _hs_cache
+    if _hs_cache is None:
+        _hs_cache = {}
+        try:
+            import csv
+            with open(_HS_PATH, encoding="utf-8") as f:
+                for r in csv.DictReader(f):
+                    _hs_cache[r["key"]] = r
+        except FileNotFoundError:
+            pass
+    return _hs_cache.get(_hs_key(url)) if url else None
+
 _b2b_cache: dict = {}
 _plp_cache: dict = {}
 
@@ -111,6 +139,16 @@ def detect_page_type(soup, url: str = "") -> dict:
     """
     cfg = load_page_types()
     page_types = cfg.get("page_types", [])
+
+    # -1) HS 콘텐츠 시트 등재 URL 은 시트 분류가 최우선 (사업부 지정, 2026-10-25)
+    hs = hs_lookup(url) if url else None
+    if hs:
+        pt = next((p for p in page_types if p.get("id") == hs.get("page_type")), None)
+        if pt:
+            out = _build(pt, matched_by="hs_contents")
+            out["hs"] = {"content_type2": hs.get("content_type2"), "product": hs.get("product"),
+                         "live_date": hs.get("live_date")}
+            return out
 
     # 0) business/sitemap.xml 등재 URL 은 무조건 B2B
     if url and is_b2b_url(url):

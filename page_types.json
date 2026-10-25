@@ -243,6 +243,29 @@
       "recommended_schemas": []
     },
     {
+      "id": "installation_guide",
+      "label": "설치 가이드",
+      "_comment": "HS(가전) 설치 가이드. 2026-10-25 사용자 지시로 신설 — HS 콘텐츠 시트(reports/hs_contents.csv)가 우선이고 URL 패턴은 보조. buying_guide 보다 앞에 둔다(hk 는 buying-guide/.../installation-guide 경로).",
+      "detection": {
+        "url_pattern": [
+          "install+ation-guides?(/|$)",
+          "pruvodce-instalaci",
+          "huong-dan-lap-dat(/|$)",
+          "/buying-guide/[a-z-]+/installation(/|$)"
+        ]
+      },
+      "expected_schemas": [
+        "Organization",
+        "BreadcrumbList",
+        "HowTo",
+        "FAQPage",
+        "Article",
+        "ImageObject",
+        "VideoObject"
+      ],
+      "recommended_schemas": []
+    },
+    {
       "id": "buying_guide",
       "label": "구매 가이드",
       "detection": {

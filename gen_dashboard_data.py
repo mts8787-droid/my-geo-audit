@@ -38,10 +38,12 @@ CONFIG = os.path.join(HERE, "scoring_config.json")
 PSI_CACHE = os.path.join(HERE, "data", "psi_cache.json")
 OUT = os.path.join(HERE, "reports", "dashboard_data.json")
 
-STRATEGIC = ["us", "uk", "de", "es", "ca", "au", "br", "mx", "in", "vn", "be", "nl", "global"]
+STRATEGIC = ["us", "uk", "de", "es", "ca", "au", "br", "mx", "in", "vn", "be", "nl", "global", "hs"]
+# hs = 감사 국가 밖 HS(가전) 콘텐츠 URL 묶음(HS-Others, 40여 사이트). 모집단이 달라 전체 가중평균에는 넣지 않는다.
+NON_WEIGHTED = {"hs"}
 
 # 표시명. 코드와 다르게 부르는 곳만 적는다.
-COUNTRY_LABELS = {"global": "Global-Site"}
+COUNTRY_LABELS = {"global": "Global-Site", "hs": "HS-Others"}
 
 # 집계 제외 page_type
 # support(서포트-일반)는 아웃데이트된 URL이 많아 집계·감사 모두 제외 (사용자 결정 2026-09-20).
@@ -131,6 +133,7 @@ TYPE_CAP = 100
 TYPE_CAP_EXEMPT = {"pdp"}
 
 _CITABLE_N = re.compile(r"^\s*(\d+)\s*/")
+_MODEL_N = re.compile(r"^모델 확인\s*(\d+)\s*/")
 _MAXAGE = re.compile(r"max-age\s*=\s*(\d+)")
 
 
@@ -145,6 +148,7 @@ class Criteria:
         self.category = {}    # item_id → 카테고리 키
         self.applies = {}     # item_id → 평가 대상 page_type 집합
         self.min_count = {}   # item_id → 개수 임계 (#36 citable)
+        self.min_count_by_type = {}  # item_id → {page_type: 개수} (#36 트러블슈팅·PLP 3개)
         self.psi_rules = {}   # item_id → (metric, max_value)
         self.maxage = {}      # item_id → min_seconds
         self.cat_label = {c: cfg[c].get("label", c) for c in self.cats}
@@ -166,6 +170,14 @@ class Criteria:
                 mc = (rule.get("params") or {}).get("min_count")
                 if rule.get("type") == "citable_density_min" and mc not in (None, "", 0):
                     self.min_count[iid] = int(mc)
+                    bt = {}
+                    for part in str(params.get("min_count_by_type") or "").split(","):
+                        if ":" in part:
+                            k, v = part.split(":", 1)
+                            if v.strip().isdigit():
+                                bt[k.strip()] = int(v.strip())
+                    if bt:
+                        self.min_count_by_type[iid] = bt
                 if rule.get("type") == "psi_metric":
                     self.psi_rules[iid] = (params.get("metric"), float(params.get("max_value", 0)))
                 elif rule.get("type") == "header_max_age_min":
@@ -229,12 +241,32 @@ def item_pass(iid, it, url, page_type, cr, psi, psi_med=None):
         # #36 은 2026-09-17 에 비율 → 개수 기준으로 바뀌었다. 저장된 value
         # ("6/42 (14.3%)")의 앞 숫자가 실측 개수라 재감사 없이 다시 판정한다.
         # 판정이 아니라 원측정값에서 계산하므로 몇 번 돌려도 결과가 같다.
-        m = _CITABLE_N.match(str(it.get("value") or ""))
+        # 모델 판정값("모델 확인 3/7 (정규식 후보 …)")은 정규식 개수로 다시 재면 모델
+        # 판정을 덮어쓰게 되므로 저장된 pass 를 그대로 쓴다.
+        need = cr.min_count_by_type.get(iid, {}).get(page_type, cr.min_count[iid])
+        val = str(it.get("value") or "")
+        if val.startswith("모델 확인"):
+            # 모델 확인 개수("모델 확인 3/46 …")는 min_count 를 채우면 조기 중단하므로
+            # 측정 당시 임계(5) 이상은 5 로 잘려 있다. 임계를 낮출 때(트러블슈팅·PLP 3개,
+            # 2026-10-26)는 저장 개수로 정확히 재판정되고, 높일 때는 저장 pass 를 믿는다.
+            m = _MODEL_N.match(val)
+            if m and need < cr.min_count[iid]:
+                return int(m.group(1)) >= need
+            return bool(it.get("pass"))
+        m = _CITABLE_N.match(val)
         if m:
-            return int(m.group(1)) >= cr.min_count[iid]
+            return int(m.group(1)) >= need
         return None
 
     return it.get("pass")
+
+
+def _hs_lookup(url):
+    try:
+        from page_type import hs_lookup
+        return hs_lookup(url)
+    except Exception:
+        return None
 
 
 def current_page_type(r):
@@ -259,9 +291,12 @@ def is_excluded(r):
     pt = current_page_type(r)
     if pt in EXCLUDED_PAGE_TYPES:
         return pt
-    if pt == "pdp" and is_inactive_pdp_url(r.get("url") or ""):
+    # HS 콘텐츠 시트(사업부 지정, 어워드 배너·뱃지 PDP)는 단종/악세사리 판정을 적용하지 않는다.
+    # Coveo 활성 목록이 늦게 반영되는 경우가 있어(AU 10건) 지정 페이지가 집계에서 빠지는 것을 막는다.
+    hs_listed = bool(_hs_lookup(r.get("url") or ""))
+    if pt == "pdp" and not hs_listed and is_inactive_pdp_url(r.get("url") or ""):
         return "pdp_inactive"
-    if pt == "pdp" and is_accessory_pdp_url(r.get("url") or ""):
+    if pt == "pdp" and not hs_listed and is_accessory_pdp_url(r.get("url") or ""):
         return "pdp_accessory"
     if r.get("page_error"):
         return "non_200"
@@ -344,6 +379,7 @@ def aggregate_country(doc, cr, psi):
     cat_pass = defaultdict(int)
     cat_total = defaultdict(int)
     items_agg = {}
+    hs_pages = []            # HS(가전) 콘텐츠 시트 페이지: (content_type2, product, page_type, 점수)
 
     for r in results:
         pt = current_page_type(r)
@@ -394,6 +430,9 @@ def aggregate_country(doc, cr, psi):
 
         total = round(r_passed / r_total * 100) if r_total else 0
         total_sum += total
+        hs = _hs_lookup(url)
+        if hs:
+            hs_pages.append((hs.get("content_type2") or "", hs.get("product") or "", pt, total))
         grade_dist[
             "Good" if total >= cr.grade.get("good", 90) else
             "Need Improvement" if total >= cr.grade.get("need_improvement", 70) else
@@ -419,9 +458,23 @@ def aggregate_country(doc, cr, psi):
         for iid, a in items_agg.items()
     }
 
+    def _hs_group(idx):
+        g = defaultdict(list)
+        for row in hs_pages:
+            g[row[idx]].append(row[3])
+        return {k: {"n": len(v), "total_avg": round(sum(v) / len(v), 2)} for k, v in sorted(g.items())}
+    hs_block = {
+        "n": len(hs_pages),
+        "total_avg": round(sum(x[3] for x in hs_pages) / len(hs_pages), 2) if hs_pages else None,
+        "by_content_type2": _hs_group(0),
+        "by_product": _hs_group(1),
+        "by_page_type": _hs_group(2),
+    }
+
     return {
         "sample_size": n,
         "excluded": dict(excluded),
+        "hs": hs_block,
         "excluded_count": sum(excluded.values()),
         "total_avg": round(total_sum / n, 2),
         "max": 100,
@@ -499,7 +552,9 @@ def main():
             missing.append(c)
             continue
         date, fn = latest[c]
-        agg = aggregate_country(json.load(open(os.path.join(RUNS, fn))), cr, psi)
+        # 감사 날짜 이전에 잰 PSI 값은 쓰지 않는다 — 지난 측정 재사용 금지(2026-10-23 사용자 규칙).
+        psi_c = {u: v for u, v in psi.items() if (v.get("fetched_at") or "")[:10] >= date}
+        agg = aggregate_country(json.load(open(os.path.join(RUNS, fn))), cr, psi_c)
         if agg is None:
             missing.append(c)
             continue
@@ -507,8 +562,9 @@ def main():
         agg["label"] = COUNTRY_LABELS.get(c, c.upper())
         countries[c] = agg
 
-    sample_total = sum(v["sample_size"] for v in countries.values())
-    weighted = sum(v["total_avg"] * v["sample_size"] for v in countries.values())
+    wc = {c: v for c, v in countries.items() if c not in NON_WEIGHTED}
+    sample_total = sum(v["sample_size"] for v in wc.values())
+    weighted = sum(v["total_avg"] * v["sample_size"] for v in wc.values())
     excl = defaultdict(int)
     for v in countries.values():
         for k, num in v["excluded"].items():
