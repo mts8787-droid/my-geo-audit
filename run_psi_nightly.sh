@@ -12,6 +12,12 @@
 # 강제하고 연속 실패 시 전체를 멈춘다.
 set -u
 cd /Users/dubaba/my-geo-project/my-geo-audit || exit 1
+# 월간 감사가 도는 중이면 쉰다 — 월간이 국가별로 PSI 를 직접 수집하고, 같이 돌면 호출 속도가
+# 합쳐져 Google 차단 위험이 있다.
+if [ -f data/.monthly_audit.pid ] && kill -0 "$(cat data/.monthly_audit.pid)" 2>/dev/null; then
+  echo "[psi-nightly] $(date +%Y%m%d_%H%M%S) 월간 감사 실행 중 — 건너뜀" >> data/psi_nightly_skipped.log
+  exit 0
+fi
 
 PY=/usr/bin/python3
 BUDGET_MIN=${PSI_BUDGET_MIN:-360}     # 1회 실행 시간 예산(분)

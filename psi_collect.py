@@ -20,7 +20,12 @@ rule_engine 의 psi_* 룰이 호출 없이 캐시만 읽어 판정한다.
   → 기본 동시성 20. 쿼터는 25,000건/일.
 
 resume: 캐시에 성공 기록이 있는 URL만 건너뛴다. 중단 후 재실행하면 이어서 수집하고,
-        이전 실행에서 실패한 URL 은 다시 시도한다 (PSI 500 은 대개 일시적).
+        이전 실행에서 실패한 URL 은 다시 시도한다 (PSI 502·네트워크 오류는 대개 일시적).
+since:  --run 을 주면 감사 날짜(파일명) 이전에 잰 값은 '지난 측정'으로 보고 다시 잰다.
+        예전 측정값을 이번 감사에 재사용하지 않기 위해서다(2026-10-23 사용자 규칙).
+LH 오류: PSI 가 "Lighthouse returned error"(PAGE_HUNG 등)를 주면 페이지 자체가 측정
+        불가인 것이라 같은 날짜 주기 안에서는 다시 시도하지 않는다. 2026-10-23 실측에서
+        LG 트러블슈팅 페이지는 매번 같은 오류였고, 재시도가 수집 시간을 10시간으로 늘렸다.
 
 사용:
   PSI_API_KEY=... python3 psi_collect.py --run data/run_results/us_2026-08-26_run_*.json
@@ -29,9 +34,11 @@ resume: 캐시에 성공 기록이 있는 URL만 건너뛴다. 중단 후 재실
 """
 import argparse
 import collections
+import fcntl
 import glob
 import json
 import os
+import re
 import sys
 import threading
 import time
@@ -80,10 +87,20 @@ def load_cache() -> dict:
 
 
 def save_cache(cache: dict) -> None:
-    tmp = CACHE + ".tmp"
-    with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(cache, f, ensure_ascii=False)
-    os.replace(tmp, CACHE)
+    # 여러 수집 프로세스(월간 국가별·야간)가 같은 캐시를 쓴다. 통째로 덮으면 서로의
+    # 수집분을 지우므로, 잠근 채 디스크 내용과 합친다(같은 URL 은 나중에 잰 쪽).
+    with open(CACHE + ".lock", "w") as lk:
+        fcntl.flock(lk, fcntl.LOCK_EX)
+        disk = load_cache()
+        for u, rec in cache.items():
+            old = disk.get(u)
+            if old is None or (rec.get("fetched_at") or "") >= (old.get("fetched_at") or ""):
+                disk[u] = rec
+        cache.update(disk)
+        tmp = CACHE + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as f:
+            json.dump(disk, f, ensure_ascii=False)
+        os.replace(tmp, CACHE)
 
 
 # ── PSI 호출 ──────────────────────────────────────────────────────────────────
@@ -186,8 +203,33 @@ class Gate:
 
 # ── 수집 ──────────────────────────────────────────────────────────────────────
 
+def _needs(rec, since):
+    """이 URL 을 (다시) 재야 하나. since(YYYY-MM-DD) 이전 측정은 지난 값으로 본다."""
+    if rec is None:
+        return True
+    err = rec.get("error")
+    fetched = (rec.get("fetched_at") or "")[:10]
+    if since and fetched < since:
+        # Lighthouse 가 못 재는 페이지(PAGE_HUNG 등, LG 트러블슈팅·일부 PDP)는 30일 안에는 다시 안 두드린다.
+        # 호출마다 60~120초 걸리고 차단기를 끊어 다른 수집까지 늦춘다 (2026-10-23 10시간 사고).
+        if err and err.startswith("LH ") and fetched and _days_apart(fetched, since) <= 30:
+            return False
+        return True
+    if not err:
+        return False
+    return not (since and err.startswith("LH "))   # 측정 불가 페이지는 이번 주기에 재시도 안 함
+
+
+def _days_apart(a, b):
+    from datetime import date
+    try:
+        return abs((date.fromisoformat(b) - date.fromisoformat(a)).days)
+    except ValueError:
+        return 10**6
+
+
 def collect(urls, key, strategy="mobile", concurrency=20, sweeps=4,
-            rate_per_min=6.0, max_minutes=0, save_every=25):
+            rate_per_min=6.0, max_minutes=0, save_every=25, since=None):
     """수집. 실패는 인라인 재시도 대신 '스윕 반복'으로 회수한다.
 
     인라인 재시도(worker 안에서 sleep)는 워커 슬롯을 붙잡아 풀을 굶긴다 —
@@ -203,10 +245,15 @@ def collect(urls, key, strategy="mobile", concurrency=20, sweeps=4,
     rate = min(rates[min(rates, key=lambda k: abs(k - concurrency))], rate_per_min)
 
     for sweep in range(1, sweeps + 1):
-        todo = [u for u in urls if u not in cache or cache[u].get("error")]
+        todo = [u for u in urls if _needs(cache.get(u), since)]
         if not todo:
             break
         retry_n = sum(1 for u in todo if u in cache)
+        if since and sweep == 1:
+            stale = sum(1 for u in todo if u in cache and (cache[u].get("fetched_at") or "")[:10] < since)
+            lh = sum(1 for u in urls if ((cache.get(u) or {}).get("error") or "").startswith("LH ")
+                     and not _needs(cache.get(u), since))
+            print(f"[psi] 기준일 {since}: 지난 측정 {stale}건 재측정 · 측정 불가(LH) {lh}건 건너뜀", flush=True)
         eta = len(todo) / rate
         print(f"[psi] 스윕 {sweep}/{sweeps} — 대상 {len(urls)} / 수집 {len(todo)}"
               f"{f' (이전 실패 재시도 {retry_n})' if retry_n else ''}  동시성={concurrency}"
@@ -226,6 +273,13 @@ def collect(urls, key, strategy="mobile", concurrency=20, sweeps=4,
                 err = None
             except urllib.error.HTTPError as e:
                 rec, err = None, f"HTTP {e.code}"
+                try:
+                    msg = json.loads(e.read())["error"]["message"]
+                except Exception:
+                    msg = ""
+                if "Lighthouse returned error" in msg:
+                    m = re.search(r"error: ([A-Z_]{4,})", msg)
+                    err = f"LH {m.group(1) if m else 'ERROR'} (HTTP {e.code})"
             except Exception as e:
                 rec, err = None, f"{type(e).__name__}: {e}"
             if gate.report(err is None):
@@ -316,15 +370,16 @@ def urls_from_run(pattern: str, exclude_page_types=frozenset(), per_group=0, see
         # 나머지 URL 은 gen_dashboard_data 가 그룹 중앙값으로 추정 보정한다.
         # 그룹 내 편차보다 그룹 간 편차가 커서(같은 국가에서 타입별 55~391ms)
         # 그룹 대표값으로 근사하는 편이 전수 대비 비용 대비 효과가 크다.
+        # 그룹마다 시드를 따로 둬서 국가별로 나눠 돌려도(월간 병렬) 전체를 한 번에 돌린
+        # 것과 같은 표본이 뽑힌다.
         import random
-        rnd = random.Random(seed)
         buckets = collections.defaultdict(list)
         for u in uniq:
             buckets[meta.get(u, ("?", "?"))].append(u)
         picked = []
         for key in sorted(buckets):
             g = buckets[key][:]
-            rnd.shuffle(g)
+            random.Random(f"{seed}:{key[0]}:{key[1]}").shuffle(g)
             picked.extend(g[:per_group])
         print(f"[psi] 그룹 샘플링: {len(buckets)}개 그룹 × 최대 {per_group}개 "
               f"→ {len(picked)}건 (전수 {len(uniq)})")
@@ -337,6 +392,9 @@ def main():
     ap.add_argument("--run", help="run_results 파일 glob (예: 'data/run_results/us_2026-08-26_run_*.json')")
     ap.add_argument("--country", help="국가 코드 (--date 와 함께 사용)")
     ap.add_argument("--date", help="감사 날짜 YYYY-MM-DD")
+    ap.add_argument("--since", default="",
+                    help="이 날짜(YYYY-MM-DD) 이전에 잰 값은 다시 잰다. 미지정 시 --run/--date 의 "
+                         "감사 날짜를 쓴다(예전 측정 재사용 방지). --url 단독이면 기존 동작")
     ap.add_argument("--url", action="append", help="단일 URL (반복 지정 가능)")
     ap.add_argument("--strategy", default="mobile", choices=["mobile", "desktop"])
     ap.add_argument("--concurrency", type=int, default=20)
@@ -374,8 +432,12 @@ def main():
     if not urls:
         sys.exit("수집할 URL이 없습니다.")
 
+    since = args.since or args.date or ""
+    if not since and args.run:
+        dates = sorted(re.findall(r"_(\d{4}-\d{2}-\d{2})_run_", " ".join(glob.glob(args.run))))
+        since = dates[0] if dates else ""
     collect(urls, key, args.strategy, args.concurrency,
-            rate_per_min=args.rate, max_minutes=args.max_minutes)
+            rate_per_min=args.rate, max_minutes=args.max_minutes, since=since or None)
     return 0
 
 

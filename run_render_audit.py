@@ -79,6 +79,10 @@ PER_TYPE_OVERRIDE = {"pdp": 500}
 # 'support'(서포트-일반)는 아웃데이트된 URL이 많아 제외(2026-09-20).
 # support_troubleshoot(트러블슈팅)은 별개 타입으로 계속 감사한다.
 SKIP_TYPES = {"unknown", "about", "support"}
+# AUDIT_SKIP_TYPES=business,promotion 처럼 실행별로 감사 제외 타입을 추가한다.
+# 대시보드(gen_dashboard_data)가 집계에서 빼는 타입을 시간이 급할 때 건너뛰는 용도(2026-10-25).
+_ENV_SKIP_TYPES = {t.strip() for t in os.environ.get("AUDIT_SKIP_TYPES", "").split(",") if t.strip()}
+SKIP_TYPES |= _ENV_SKIP_TYPES
 
 
 
@@ -289,6 +293,9 @@ def _sample_by_page_type(urls, base_per_type, must=()):
 def _apply_must_audit(sample, urls, code):
     """필수 감사 URL 을 표본에 강제 편입. 이미 있으면 그대로 둔다."""
     must = _load_must_audit(code)
+    if must and _ENV_SKIP_TYPES:
+        from page_type import detect_page_type
+        must = [u for u in must if detect_page_type(None, u).get("id") not in _ENV_SKIP_TYPES]
     if not must:
         return sample
     have = set(sample)
@@ -378,8 +385,11 @@ def main():
                     help="page_type별 최대 감사 수 (다른 국가와 동일한 샘플 방식, 기본 100)")
     ap.add_argument("--full", action="store_true",
                     help="전수 감사(비권장). 미지정 시 반드시 page_type별 샘플만 감사.")
+    ap.add_argument("--reuse", action="store_true",
+                    help="이전 run 결과를 URL 단위로 재사용(측정 생략). 기본은 전부 새로 측정 — "
+                         "재사용은 사용자에게 먼저 묻고 승인받은 경우에만 켠다(2026-10-23 사용자 규칙).")
     ap.add_argument("--no-reuse", action="store_true",
-                    help="이전 run 결과 재사용 없이 전부 새로 측정")
+                    help="(호환용) 기본 동작과 같음 — 전부 새로 측정")
     ap.add_argument("--types", default="",
                     help="지정 page_type 만 감사 (쉼표 구분, 예: support_troubleshoot). "
                          "타깃 재검수용 — 샘플·must_audit 모두 해당 타입으로 제한된다.")
@@ -445,8 +455,8 @@ def main():
             except Exception:
                 pass
 
-    # 이전 run 에서 이미 측정한 URL 은 재사용 (같은 날짜 resume 과는 별개)
-    if not args.no_reuse:
+    # 이전 run 에서 이미 측정한 URL 은 재사용 (같은 날짜 resume 과는 별개). --reuse 로만 켠다.
+    if args.reuse and not args.no_reuse:
         prior = _load_prior_results(run_code, date)
         reused = 0
         for u in urls:
@@ -498,6 +508,11 @@ def main():
     _save("ok")
     ok = sum(1 for it in summary if (it.get('result') or {}).get('score'))
     print(f"[render-audit] 완료: {len(summary)}건 (성공 {ok}) → {out_path}")
+    am = sys.modules.get("audit_model")
+    if am and (am.stats["calls"] or am.stats["hits"]):
+        tot = am.stats["calls"] + am.stats["hits"]
+        print(f"[render-audit] 판정 모델 호출 {am.stats['calls']}회 · 같은 문장 재판정 생략 "
+              f"{am.stats['hits']}회 ({am.stats['hits']/tot*100:.0f}%)")
     _refresh_report()
     return 0
 
