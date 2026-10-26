@@ -244,6 +244,14 @@ def item_pass(iid, it, url, page_type, cr, psi, psi_med=None, jsonld_raw=None):
         if h:
             return bool(h(rparams, {"jsonld_raw": jsonld_raw}).get("pass"))
 
+    if iid == "ai_soft_404" and it.get("pass") is False:
+        # 문구로 걸린 FAIL 은 저장된 문구를 현재 패턴으로 다시 본다(패턴 축소 반영,
+        # 2026-10-26 DE 'nicht gefunden werden' 오탐). 본문 길이 FAIL 은 저장값 그대로.
+        m = re.match(r"HTTP 200 · '(.*)'$", str(it.get("value") or ""))
+        if m:
+            import rule_engine as _re
+            return not _re._SOFT404_PHRASES.search(m.group(1))
+
     if iid in cr.maxage:
         # max-age 디렉티브가 있으면(0 포함) 통과. no-cache/no-store 동반은 무관.
         m = _MAXAGE.search(str(it.get("value") or ""))
@@ -300,6 +308,10 @@ def current_page_type(r):
 
 def is_excluded(r):
     """집계 대상에서 빼야 할 페이지면 사유 문자열, 아니면 None."""
+    # 사업부 삭제 요청 URL(시트 'Appendix.Delet URL', delete_urls.py) — 타입과 무관하게 뺀다.
+    from delete_urls import is_deleted
+    if is_deleted(r.get("url")):
+        return "delete_request"
     pt = current_page_type(r)
     if pt in EXCLUDED_PAGE_TYPES:
         return pt

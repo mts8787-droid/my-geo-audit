@@ -169,7 +169,7 @@
 | #39 | (JS) 핵심 element | PDP 핵심 element가 HTML로 존재 | PDP HTML 파싱 후 SSR 확인 | `ai_core_element` |
 | #40 | Image File Name | 브랜드·제품 키워드 포함 이미지 ≥ 30% | 파일명 키워드 검증 — logo·icon·sprite 등 장식 파일 제외 | `ai_image_filename` |
 | #41 | Status Code (200) | 200 반환 | Status Code | `ai_status_200` |
-| #42 | Status Code (Soft 404) | 200 응답 본문에 404 안내 문구 없음 | 문구 판정 (2026-09-17 전환 — LG 404 본문이 2,400~3,200자라 길이로는 판별 불가). 본문 200자 미만은 보조 신호 | `ai_soft_404` |
+| #42 | Status Code (Soft 404) | 200 응답 본문에 404 안내 문구 없음 | 문구 판정 (2026-09-17 전환 — LG 404 본문이 2,400~3,200자라 길이로는 판별 불가). 본문 200자 미만은 보조 신호. 독일어 'nicht gefunden werden' 은 'Seite' 와 함께일 때만(2026-10-26 — 트러블슈팅 본문 '채널을 찾지 못할 수 있음' 오탐) | `ai_soft_404` |
 | #43 | llms.txt | 존재 | 각 국가별 llms.txt 검증 | `ai_llms_txt` |
 | #40* | Summary Content SSR | — (체크리스트 문서에 대응 행 없음) | | `ai_summary_ssr` |
 
@@ -446,6 +446,9 @@ LG CS 는 트러블슈팅 본문 SSR 을 Declarative Shadow DOM 방식으로 전
   대시보드 집계 제외 타입인 B2B(business)·프로모션(promotion)·홈(home). 단종/비활성·악세사리 PDP 는 표본에서 제외
   ("집계 대상에서 빠지는 페이지" 참조).
 - 매월 전부 새로 측정한다. 이전 run 결과 재사용 없음(2026-10-23 사용자 규칙).
+- **사업부 삭제 요청 URL**(구글 시트 'Appendix.Delet URL' → `delete_urls.py` → `reports/delete_urls.csv`)은
+  감사하지 않고(샘플·필수 감사 모두) 집계에서도 뺀다(제외 사유 `delete_request`, 2026-10-26 사용자 지시).
+  월간 감사 시작 때 시트를 다시 받는다. 첫 요청 71건은 전부 트러블슈팅(9개국)이라 타입 정원 100 이 다른 페이지로 채워졌다.
 - **HS(가전) 콘텐츠 시트**(사업부 관리 구글 시트 'Appendix.HS Contents URL' → `build_hs_contents.py` →
   `reports/hs_contents.csv`)의 URL 은 감사 국가 분량 전부를 필수 감사로 편입한다(2026-10-25 사용자 지시).
   타입 정원(100)은 필수 URL 이 먼저 차지하므로 그만큼 기존 표본 URL 이 밀려난다. 분류는 아래 "HS 콘텐츠 분류".

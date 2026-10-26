@@ -1057,13 +1057,15 @@ def _eval_status_code_eq(params: dict, ctx: dict) -> dict:
 # 본문 길이로는 못 잡는다: LG 404 페이지는 추천 제품·검색창을 붙여 보일러플레이트를
 # 걷어내도 본문이 2,400~3,200자다(2026-09-17 실측). 길이 임계값을 아무리 올려도
 # 짧은 정상 페이지가 같이 걸린다. 문구를 직접 본다.
+# 'nicht gefunden werden' 은 'Seite' 와 함께일 때만 — 단독으로는 트러블슈팅 본문
+# ("einige Kanäle nicht gefunden werden", DE 2026-10-26)까지 잡는 오탐이었다.
 _SOFT404_PHRASES = re.compile(
     r"(?:"
     r"page not found|page you(?:'re| are) looking for|page (?:does ?n[o']t|cannot be) (?:exist|found)|"
     r"we can(?:'t|not) find|sorry,? (?:the|this) page|404 error|error 404|"
     r"페이지를 찾을 수 없|찾으시는 페이지|존재하지 않는 페이지|"
     r"p[áa]gina no (?:encontrada|existe)|no se (?:encontr[óo]|ha encontrado) la p[áa]gina|"
-    r"seite (?:nicht gefunden|wurde nicht gefunden)|nicht gefunden werden|"
+    r"seite (?:nicht gefunden|wurde nicht gefunden)|seite[^.]{0,60}nicht gefunden werden|"
     r"p[áa]gina n[ãa]o (?:encontrada|existe|foi encontrada)|"
     r"kh[ôo]ng t[ìi]m th[ấa]y trang|trang kh[ôo]ng t[ồo]n t[ạa]i|"
     r"pagina niet gevonden|pagina (?:kan niet worden|is niet) gevonden|bestaat niet(?: meer)?"

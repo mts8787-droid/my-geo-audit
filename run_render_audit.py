@@ -206,10 +206,12 @@ def _load_must_audit(code):
     무작위/균등 배분만으로는 특정 모델·마이크로사이트가 빠지고, unknown 으로
     분류되는 페이지(예: /us/webos/about)는 아예 표본에 들어오지 못한다.
     """
+    from delete_urls import is_deleted
     path = os.path.join(HERE, "reports", "must_audit", f"{code}.csv")
     try:
         with open(path, encoding="utf-8") as f:
-            return [r["url"].strip() for r in csv.DictReader(f) if r.get("url", "").strip()]
+            return [r["url"].strip() for r in csv.DictReader(f)
+                    if r.get("url", "").strip() and not is_deleted(r["url"])]
     except Exception:
         return []
 
@@ -420,6 +422,12 @@ def main():
     if bad:
         print(f"[render-audit] invalid URL {len(bad)}건 제외 (공백/형식 오류). 예: {bad[0]}")
         urls = [u for u in urls if u not in set(bad)]
+    # 사업부 삭제 요청 URL(delete_urls.py)은 어떤 경로로도 감사하지 않는다.
+    from delete_urls import is_deleted
+    dropped = [u for u in urls if is_deleted(u)]
+    if dropped:
+        print(f"[render-audit] 삭제 요청 URL {len(dropped)}건 제외")
+        urls = [u for u in urls if not is_deleted(u)]
     if not args.full and not args.urls_file:
         must = _load_must_audit(code)
         only_types = {t.strip() for t in args.types.split(",") if t.strip()}

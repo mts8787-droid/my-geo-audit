@@ -146,6 +146,15 @@ class TestPerformanceRules(unittest.TestCase):
         r = _eval("soft_404_check", {"min_text_length": 200}, ctx)
         self.assertFalse(r["pass"])
 
+    def test_soft_404_german_phrase_needs_seite(self):
+        filler = "Inhalt " * 60
+        ok = f"<html><body>{filler} Einige Kanäle könnten nicht gefunden werden.</body></html>"
+        r = _eval("soft_404_check", {"min_text_length": 200}, _ctx(html=ok, http_status=200))
+        self.assertTrue(r["pass"])
+        bad = f"<html><body>{filler} Die Seite konnte leider nicht gefunden werden.</body></html>"
+        r = _eval("soft_404_check", {"min_text_length": 200}, _ctx(html=bad, http_status=200))
+        self.assertFalse(r["pass"])
+
     def test_soft_404_skip_when_not_200(self):
         ctx = _ctx(http_status=404)
         r = _eval("soft_404_check", {"min_text_length": 200}, ctx)

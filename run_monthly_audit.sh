@@ -137,6 +137,9 @@ fi
 # 이어서 돌릴 때(SKIP_PLP_DISCOVER=1)는 건너뛴다 — 중간에 URL 목록이 바뀌면 이미 감사한
 # 국가의 표본이 달라진다.
 if [ -z "${SKIP_PLP_DISCOVER:-}" ]; then
+  echo "===== delete_urls (사업부 삭제 요청 시트) $(date +%H:%M:%S) =====" >> "$LOG"
+  "$PY" delete_urls.py >> "$LOG" 2>&1 \
+    || echo "[monthly-audit] WARN delete_urls 갱신 실패 — 기존 목록으로 진행" >> "$LOG"
   echo "===== plp_discover (10국) $(date +%H:%M:%S) =====" >> "$LOG"
   "$PY" plp_discover.py --all --merge --quiet >> "$LOG" 2>&1 \
     || echo "[monthly-audit] WARN plp_discover 실패 — 기존 URL 목록으로 진행" >> "$LOG"
