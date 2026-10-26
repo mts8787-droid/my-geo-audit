@@ -296,6 +296,7 @@ RULE_TYPES = {
         "params": {
             "type":   {"label": "@type", "type": "text", "placeholder": "Product"},
             "fields": {"label": "필수 필드 (쉼표 구분, dot path, 대체 필드는 |)", "type": "text", "placeholder": "name,description,sku|mpn,brand,offers.price"},
+            "exclude_within": {"label": "이 타입 노드 안의 것은 제외 (쉼표 구분)", "type": "text", "placeholder": "Review,Comment"},
         },
     },
     "definition_pattern_min": {
@@ -355,6 +356,7 @@ RULE_TYPES = {
         "description": "콤마 구분 타입 목록 중 하나라도 JSON-LD에 있으면 PASS (예: PDP의 AggregateRating OR Review)",
         "params": {
             "types": {"label": "schema 타입들 (콤마 구분)", "type": "text", "placeholder": "AggregateRating,Review"},
+            "attached_to": {"label": "이 타입 노드에 연결된 것만 인정 (쉼표 구분, 비우면 페이지 어디든)", "type": "text", "placeholder": "Product,ProductGroup"},
         },
     },
 }
@@ -1326,18 +1328,26 @@ def _eval_og_required_pairs(params: dict, ctx: dict) -> dict:
 
 # ── 신규 핸들러: AI Readiness ─────────────────────────────────────────────
 
-def _walk_jsonld(data, type_lower: str, results: list):
-    """JSON-LD 트리에서 @type 일치 노드 수집."""
+def _walk_jsonld(data, type_lower: str, results: list, skip_within: frozenset = frozenset()):
+    """JSON-LD 트리에서 @type 일치 노드 수집.
+
+    skip_within: 이 타입(소문자) 노드의 하위는 훑지 않는다. 리뷰 위젯(Bazaarvoice)이 넣는
+    Review 안의 고객 사진(ImageObject)·영상(VideoObject)을 페이지 콘텐츠의 이미지·영상
+    스키마로 세지 않기 위함 (2026-10-26 — #26 통과 PDP 전부가 리뷰 사진이었음).
+    """
     if isinstance(data, dict):
         t = data.get("@type")
         types = [t] if isinstance(t, str) else (t if isinstance(t, list) else [])
-        if any(str(x).lower() == type_lower for x in types):
+        tl = [str(x).lower() for x in types]
+        if type_lower in tl:
             results.append(data)
+        if skip_within and any(x in skip_within for x in tl):
+            return
         for v in data.values():
-            _walk_jsonld(v, type_lower, results)
+            _walk_jsonld(v, type_lower, results, skip_within)
     elif isinstance(data, list):
         for item in data:
-            _walk_jsonld(item, type_lower, results)
+            _walk_jsonld(item, type_lower, results, skip_within)
 
 
 def _has_dotted_path(node: dict, path: str) -> bool:
@@ -1382,17 +1392,18 @@ def _eval_schema_required_fields(params: dict, ctx: dict) -> dict:
 
     alt_types = [t.strip() for t in (params.get("alt_types") or "").split(",") if t.strip()]
     variant_field = params.get("variant_field") or "hasVariant"
+    skip = frozenset(t.strip().lower() for t in (params.get("exclude_within") or "").split(",") if t.strip())
 
     nodes: list = []
     for d in raw:
-        _walk_jsonld(d, type_name.lower(), nodes)
+        _walk_jsonld(d, type_name.lower(), nodes, skip)
 
     # 대체 타입 노드는 자신 + 변형(variant)을 합쳐 후보로 만든다.
     alt_hit = []
     for at in alt_types:
         found: list = []
         for d in raw:
-            _walk_jsonld(d, at.lower(), found)
+            _walk_jsonld(d, at.lower(), found, skip)
         for node in found:
             variants = node.get(variant_field)
             if isinstance(variants, dict):
@@ -2038,12 +2049,66 @@ async def _eval_sitemap_recent(params: dict, ctx: dict) -> dict:
 
 # ── 핸들러 레지스트리 ─────────────────────────────────────────────────────────
 
+def _schema_attached(types: list, owners: list, raw: list) -> dict:
+    """types(예: AggregateRating, Review)가 owners(예: Product) 노드에 연결돼 있는지.
+
+    연결 = owner 노드의 속성 값으로 들어 있음(product.review / product.aggregateRating),
+    또는 해당 노드가 itemReviewed 로 owner 를 가리킴. 페이지에 @type 없는 별도 블록으로
+    리뷰만 떠 있으면(LG Bazaarvoice 블록) 검색엔진·AI 가 어느 제품의 리뷰인지 알 수 없어
+    인정하지 않는다 (2026-10-26 사용자 결정).
+    """
+    tl = {t.lower(): t for t in types}
+    found = set()
+    owner_nodes: list = []
+    for o in owners:
+        for d in raw:
+            _walk_jsonld(d, o.lower(), owner_nodes)
+    for node in owner_nodes:
+        for v in node.values():
+            for x in (v if isinstance(v, list) else [v]):
+                if isinstance(x, dict):
+                    t = x.get("@type")
+                    for tt in ([t] if isinstance(t, str) else (t or [])):
+                        if str(tt).lower() in tl:
+                            found.add(tl[str(tt).lower()])
+    for lo, orig in tl.items():
+        hits: list = []
+        for d in raw:
+            _walk_jsonld(d, lo, hits)
+        for h in hits:
+            ir = h.get("itemReviewed")
+            irt = ir.get("@type") if isinstance(ir, dict) else None
+            if irt and any(str(irt).lower() == o.lower() for o in owners):
+                found.add(orig)
+    found = [t for t in types if t in found]
+    if found:
+        return {"pass": True, "value": f"{'/'.join(owners)} 에 연결: {found}", "hint": None}
+    loose = [t for t in types if t.lower() in {str(x).lower() for d in raw for x in _all_types(d)}]
+    hint = (f"{loose} 는 있으나 {'/'.join(owners)} 노드에 연결되지 않음 (별도 블록)" if loose
+            else f"types {types} 중 하나도 JSON-LD에 없음")
+    return {"pass": False, "value": f"연결 없음 (페이지 내 {loose})" if loose else f"{types} 모두 없음", "hint": hint}
+
+
+def _all_types(data):
+    if isinstance(data, dict):
+        t = data.get("@type")
+        yield from ([t] if isinstance(t, str) else (t or []))
+        for v in data.values():
+            yield from _all_types(v)
+    elif isinstance(data, list):
+        for v in data:
+            yield from _all_types(v)
+
+
 def _eval_schema_any_of(params: dict, ctx: dict) -> dict:
     """jsonld_types 중 하나라도 매칭되면 PASS (OR 관계)."""
     types_raw = params.get("types", "") or ""
     types = [t.strip() for t in types_raw.split(",") if t.strip()]
     if not types:
         return {"pass": False, "value": None, "hint": "types 파라미터 비어있음"}
+    attached = [t.strip() for t in (params.get("attached_to") or "").split(",") if t.strip()]
+    if attached:
+        return _schema_attached(types, attached, ctx.get("jsonld_raw") or [])
     jsonld_types = ctx.get("jsonld_types", set())
     types_lower = [t.lower() for t in types]
     found = [orig for orig, lo in zip(types, types_lower) if lo in jsonld_types]

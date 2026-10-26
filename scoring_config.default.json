@@ -460,7 +460,8 @@
           "type": "schema_required_fields",
           "params": {
             "type": "ImageObject",
-            "fields": "url|contentUrl,name|caption,description"
+            "fields": "url|contentUrl,name|caption,description",
+            "exclude_within": "Review,Comment"
           }
         },
         "applies_when": {
@@ -478,7 +479,8 @@
           "type": "schema_required_fields",
           "params": {
             "type": "VideoObject",
-            "fields": "url|contentUrl|embedUrl,name,description,thumbnailUrl"
+            "fields": "url|contentUrl|embedUrl,name,description,thumbnailUrl",
+            "exclude_within": "Review,Comment"
           }
         },
         "applies_when": {
@@ -724,7 +726,8 @@
         "rule": {
           "type": "schema_any_of",
           "params": {
-            "types": "AggregateRating,Review"
+            "types": "AggregateRating,Review",
+            "attached_to": "Product,ProductGroup"
           }
         }
       }

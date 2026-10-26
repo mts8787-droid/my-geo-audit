@@ -149,6 +149,7 @@ class Criteria:
         self.applies = {}     # item_id → 평가 대상 page_type 집합
         self.min_count = {}   # item_id → 개수 임계 (#36 citable)
         self.min_count_by_type = {}  # item_id → {page_type: 개수} (#36 트러블슈팅·PLP 3개)
+        self.jsonld_rules = {}  # item_id → (rule type, params): 저장된 JSON-LD 로 재판정 (#26·#27·#44)
         self.psi_rules = {}   # item_id → (metric, max_value)
         self.maxage = {}      # item_id → min_seconds
         self.cat_label = {c: cfg[c].get("label", c) for c in self.cats}
@@ -178,6 +179,10 @@ class Criteria:
                                 bt[k.strip()] = int(v.strip())
                     if bt:
                         self.min_count_by_type[iid] = bt
+                # 리뷰 안 미디어 제외(#26·#27)·Product 연결 리뷰(#44)는 저장된 JSON-LD 원본으로
+                # 다시 판정한다 (2026-10-26 — 재감사 없이 10월 run 에 적용).
+                if params.get("exclude_within") or params.get("attached_to"):
+                    self.jsonld_rules[iid] = (rule.get("type"), params)
                 if rule.get("type") == "psi_metric":
                     self.psi_rules[iid] = (params.get("metric"), float(params.get("max_value", 0)))
                 elif rule.get("type") == "header_max_age_min":
@@ -211,7 +216,7 @@ def psi_group_medians(results, psi, metric):
     return med
 
 
-def item_pass(iid, it, url, page_type, cr, psi, psi_med=None):
+def item_pass(iid, it, url, page_type, cr, psi, psi_med=None, jsonld_raw=None):
     """항목 pass 판정. None 이면 N/A — 집계 분모에서 빠진다."""
     applies = cr.applies.get(iid)
     if applies and page_type not in applies:
@@ -231,6 +236,13 @@ def item_pass(iid, it, url, page_type, cr, psi, psi_med=None):
             if est is not None:
                 return float(est) < max_v
         return None
+
+    if iid in cr.jsonld_rules and jsonld_raw is not None:
+        import rule_engine as _re
+        rtype, rparams = cr.jsonld_rules[iid]
+        h = _re._HANDLERS.get(rtype)
+        if h:
+            return bool(h(rparams, {"jsonld_raw": jsonld_raw}).get("pass"))
 
     if iid in cr.maxage:
         # max-age 디렉티브가 있으면(0 포함) 통과. no-cache/no-store 동반은 무관.
@@ -410,7 +422,8 @@ def aggregate_country(doc, cr, psi):
                 continue
             if it.get("pass") is None and iid not in cr.psi_rules:
                 continue             # 저장 시점에 이미 N/A
-            p = item_pass(iid, it, url, pt, cr, psi, psi_med)
+            p = item_pass(iid, it, url, pt, cr, psi, psi_med,
+                          jsonld_raw=(r.get("json_ld") or {}).get("raw"))
             if p is None:
                 continue
             a = items_agg.setdefault(iid, {
