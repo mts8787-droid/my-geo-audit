@@ -442,11 +442,11 @@
         }
       },
       "excluded_count": 681,
-      "total_avg": 83.31,
+      "total_avg": 84.44,
       "max": 100,
       "grade_dist": {
-        "Good": 705,
-        "Need Improvement": 246
+        "Good": 734,
+        "Need Improvement": 217
       },
       "breakdown": {
         "performance": {
@@ -472,9 +472,9 @@
         },
         "schema_markup": {
           "label": "스키마마크업",
-          "points_avg": 48.02,
+          "points_avg": 53.92,
           "max": 100,
-          "pass_rate": 0.4668,
+          "pass_rate": 0.5508,
           "items_n": 10
         },
         "citable_content": {
@@ -634,7 +634,7 @@
         "ai_schema_rating_or_review": {
           "label": "#44 Schema: AggregateRating OR Review",
           "category": "schema_markup",
-          "pass_rate": 0.0,
+          "pass_rate": 0.8565,
           "applicable_n": 446
         },
         "ai_faq_block": {
@@ -828,11 +828,11 @@
         }
       },
       "excluded_count": 364,
-      "total_avg": 85.17,
+      "total_avg": 86.45,
       "max": 100,
       "grade_dist": {
-        "Good": 639,
-        "Need Improvement": 118
+        "Good": 648,
+        "Need Improvement": 109
       },
       "breakdown": {
         "performance": {
@@ -858,9 +858,9 @@
         },
         "schema_markup": {
           "label": "스키마마크업",
-          "points_avg": 49.8,
+          "points_avg": 56.61,
           "max": 100,
-          "pass_rate": 0.4881,
+          "pass_rate": 0.5782,
           "items_n": 10
         },
         "citable_content": {
@@ -1020,7 +1020,7 @@
         "ai_schema_rating_or_review": {
           "label": "#44 Schema: AggregateRating OR Review",
           "category": "schema_markup",
-          "pass_rate": 0.0,
+          "pass_rate": 0.8208,
           "applicable_n": 424
         },
         "ai_faq_block": {
@@ -1562,11 +1562,11 @@
         }
       },
       "excluded_count": 181,
-      "total_avg": 82.51,
+      "total_avg": 83.89,
       "max": 100,
       "grade_dist": {
-        "Good": 564,
-        "Need Improvement": 216,
+        "Good": 588,
+        "Need Improvement": 192,
         "Poor": 2
       },
       "breakdown": {
@@ -1593,9 +1593,9 @@
         },
         "schema_markup": {
           "label": "스키마마크업",
-          "points_avg": 53.88,
+          "points_avg": 61.1,
           "max": 100,
-          "pass_rate": 0.5524,
+          "pass_rate": 0.647,
           "items_n": 10
         },
         "citable_content": {
@@ -1755,7 +1755,7 @@
         "ai_schema_rating_or_review": {
           "label": "#44 Schema: AggregateRating OR Review",
           "category": "schema_markup",
-          "pass_rate": 0.0,
+          "pass_rate": 0.884,
           "applicable_n": 431
         },
         "ai_faq_block": {
@@ -1885,11 +1885,11 @@
       },
       "hs": {
         "n": 99,
-        "total_avg": 84.91,
+        "total_avg": 85.99,
         "by_content_type2": {
           "Award Banner": {
             "n": 36,
-            "total_avg": 84.56
+            "total_avg": 87.44
           },
           "Experience Article": {
             "n": 6,
@@ -1921,7 +1921,7 @@
           },
           "뱃지적용 Gallery": {
             "n": 1,
-            "total_avg": 91.0
+            "total_avg": 94.0
           }
         },
         "by_product": {
@@ -1939,7 +1939,7 @@
           },
           "Dryer": {
             "n": 9,
-            "total_avg": 87.11
+            "total_avg": 90.11
           },
           "REF": {
             "n": 15,
@@ -1947,11 +1947,11 @@
           },
           "VCC": {
             "n": 29,
-            "total_avg": 84.14
+            "total_avg": 85.93
           },
           "WM": {
             "n": 28,
-            "total_avg": 86.07
+            "total_avg": 87.07
           }
         },
         "by_page_type": {
@@ -1973,16 +1973,16 @@
           },
           "pdp": {
             "n": 37,
-            "total_avg": 84.73
+            "total_avg": 87.62
           }
         }
       },
       "excluded_count": 125,
-      "total_avg": 84.93,
+      "total_avg": 85.95,
       "max": 100,
       "grade_dist": {
-        "Good": 848,
-        "Need Improvement": 109
+        "Good": 870,
+        "Need Improvement": 87
       },
       "breakdown": {
         "performance": {
@@ -2008,9 +2008,9 @@
         },
         "schema_markup": {
           "label": "스키마마크업",
-          "points_avg": 46.95,
+          "points_avg": 52.3,
           "max": 100,
-          "pass_rate": 0.4646,
+          "pass_rate": 0.5397,
           "items_n": 10
         },
         "citable_content": {
@@ -2164,7 +2164,7 @@
         "ai_schema_rating_or_review": {
           "label": "#44 Schema: AggregateRating OR Review",
           "category": "schema_markup",
-          "pass_rate": 0.0,
+          "pass_rate": 0.7728,
           "applicable_n": 449
         },
         "ai_faq_block": {
@@ -2365,11 +2365,11 @@
         }
       },
       "excluded_count": 213,
-      "total_avg": 83.86,
+      "total_avg": 85.02,
       "max": 100,
       "grade_dist": {
-        "Need Improvement": 224,
-        "Good": 649,
+        "Need Improvement": 186,
+        "Good": 687,
         "Poor": 2
       },
       "breakdown": {
@@ -2396,9 +2396,9 @@
         },
         "schema_markup": {
           "label": "스키마마크업",
-          "points_avg": 48.59,
+          "points_avg": 54.81,
           "max": 100,
-          "pass_rate": 0.481,
+          "pass_rate": 0.5665,
           "items_n": 10
         },
         "citable_content": {
@@ -2552,7 +2552,7 @@
         "ai_schema_rating_or_review": {
           "label": "#44 Schema: AggregateRating OR Review",
           "category": "schema_markup",
-          "pass_rate": 0.0,
+          "pass_rate": 0.7639,
           "applicable_n": 466
         },
         "ai_faq_block": {
@@ -2763,11 +2763,11 @@
         }
       },
       "excluded_count": 204,
-      "total_avg": 85.92,
+      "total_avg": 87.05,
       "max": 100,
       "grade_dist": {
-        "Good": 736,
-        "Need Improvement": 93
+        "Good": 745,
+        "Need Improvement": 84
       },
       "breakdown": {
         "performance": {
@@ -2793,9 +2793,9 @@
         },
         "schema_markup": {
           "label": "스키마마크업",
-          "points_avg": 52.97,
+          "points_avg": 58.91,
           "max": 100,
-          "pass_rate": 0.5243,
+          "pass_rate": 0.6034,
           "items_n": 10
         },
         "citable_content": {
@@ -2955,7 +2955,7 @@
         "ai_schema_rating_or_review": {
           "label": "#44 Schema: AggregateRating OR Review",
           "category": "schema_markup",
-          "pass_rate": 0.0,
+          "pass_rate": 0.7231,
           "applicable_n": 455
         },
         "ai_faq_block": {
@@ -3138,11 +3138,11 @@
         }
       },
       "excluded_count": 248,
-      "total_avg": 85.03,
+      "total_avg": 86.15,
       "max": 100,
       "grade_dist": {
-        "Good": 707,
-        "Need Improvement": 154,
+        "Good": 745,
+        "Need Improvement": 116,
         "Poor": 2
       },
       "breakdown": {
@@ -3169,9 +3169,9 @@
         },
         "schema_markup": {
           "label": "스키마마크업",
-          "points_avg": 49.48,
+          "points_avg": 55.44,
           "max": 100,
-          "pass_rate": 0.485,
+          "pass_rate": 0.5701,
           "items_n": 10
         },
         "citable_content": {
@@ -3331,7 +3331,7 @@
         "ai_schema_rating_or_review": {
           "label": "#44 Schema: AggregateRating OR Review",
           "category": "schema_markup",
-          "pass_rate": 0.0,
+          "pass_rate": 0.83,
           "applicable_n": 406
         },
         "ai_faq_block": {
@@ -3534,11 +3534,11 @@
         }
       },
       "excluded_count": 90,
-      "total_avg": 84.59,
+      "total_avg": 85.87,
       "max": 100,
       "grade_dist": {
-        "Good": 634,
-        "Need Improvement": 116
+        "Good": 640,
+        "Need Improvement": 110
       },
       "breakdown": {
         "performance": {
@@ -3564,9 +3564,9 @@
         },
         "schema_markup": {
           "label": "스키마마크업",
-          "points_avg": 49.38,
+          "points_avg": 56.21,
           "max": 100,
-          "pass_rate": 0.4962,
+          "pass_rate": 0.581,
           "items_n": 10
         },
         "citable_content": {
@@ -3726,7 +3726,7 @@
         "ai_schema_rating_or_review": {
           "label": "#44 Schema: AggregateRating OR Review",
           "category": "schema_markup",
-          "pass_rate": 0.0,
+          "pass_rate": 0.73,
           "applicable_n": 474
         },
         "ai_faq_block": {
@@ -4806,7 +4806,7 @@
       "type_cap": 1547,
       "support": 4
     },
-    "total_avg_weighted": 83.77,
+    "total_avg_weighted": 84.58,
     "missing": [
       "hs"
     ]

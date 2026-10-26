@@ -149,7 +149,7 @@ class Criteria:
         self.applies = {}     # item_id → 평가 대상 page_type 집합
         self.min_count = {}   # item_id → 개수 임계 (#36 citable)
         self.min_count_by_type = {}  # item_id → {page_type: 개수} (#36 트러블슈팅·PLP 3개)
-        self.jsonld_rules = {}  # item_id → (rule type, params): 저장된 JSON-LD 로 재판정 (#26·#27·#44)
+        self.jsonld_rules = {}  # item_id → (rule type, params): 저장된 JSON-LD 로 재판정 (#26·#27)
         self.psi_rules = {}   # item_id → (metric, max_value)
         self.maxage = {}      # item_id → min_seconds
         self.cat_label = {c: cfg[c].get("label", c) for c in self.cats}
@@ -179,9 +179,9 @@ class Criteria:
                                 bt[k.strip()] = int(v.strip())
                     if bt:
                         self.min_count_by_type[iid] = bt
-                # 리뷰 안 미디어 제외(#26·#27)·Product 연결 리뷰(#44)는 저장된 JSON-LD 원본으로
+                # 리뷰 안 미디어 제외(#26·#27)는 저장된 JSON-LD 원본으로
                 # 다시 판정한다 (2026-10-26 — 재감사 없이 10월 run 에 적용).
-                if params.get("exclude_within") or params.get("attached_to"):
+                if params.get("exclude_within"):
                     self.jsonld_rules[iid] = (rule.get("type"), params)
                 if rule.get("type") == "psi_metric":
                     self.psi_rules[iid] = (params.get("metric"), float(params.get("max_value", 0)))

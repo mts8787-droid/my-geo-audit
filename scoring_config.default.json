@@ -726,8 +726,7 @@
         "rule": {
           "type": "schema_any_of",
           "params": {
-            "types": "AggregateRating,Review",
-            "attached_to": "Product,ProductGroup"
+            "types": "AggregateRating,Review"
           }
         }
       }

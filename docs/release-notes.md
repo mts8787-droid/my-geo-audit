@@ -18,15 +18,15 @@ Hiro(Dotcom Readability Checker)의 내부 변경 이력. 큰 작업 단위로 �
 
 ---
 
-## 1. 스키마 리뷰 위젯 오탐 수정 — #26 ImageObject · #27 VideoObject · #44 Rating/Review (2026-10-26)
+## 1. 스키마 리뷰 위젯 오탐 수정 — #26 ImageObject · #27 VideoObject (2026-10-26)
 
 LG PDP 의 Bazaarvoice 리뷰가 `@type` 없는 별도 JSON-LD 블록으로 들어가는데, 룰이 페이지 전체를 훑어 리뷰 안 고객 사진·영상과 Product 에 연결 안 된 리뷰를 인정하고 있었다(사용자 지적).
 
 - **#26**: 통과 PDP 전부(9개국 2,473건)가 고객 리뷰 사진이었다 → Review·Comment 하위 제외(`exclude_within`). 10월 통과율 전 국가 0%.
 - **#27**: 94건이 리뷰 영상만으로 통과(9개국 NU85·OLED B6 등 TV, 같은 리뷰 영상이 국가 간 공유) → 같은 제외. 나머지는 LG 제품 영상(lg.com·Brightcove·YouTube)으로 정상.
-- **#44**: Review/AggregateRating 이 Product(ProductGroup) 에 연결돼야 인정(`attached_to`). ES 만 Product 안 `aggregateRating` 으로 유지, 나머지 국가는 0%.
-- **재채점**: 대시보드가 저장된 JSON-LD 로 세 항목을 다시 판정(재감사 없음). 단위 테스트 2건 추가.
-- **LG 전달 포인트**: 리뷰를 Product 노드의 `review`·`aggregateRating` 으로 연결, 제품 이미지를 ImageObject 로, 리뷰 영상만 있는 TV PDP 에 제품 영상 VideoObject 추가.
+- **#44**: 처음엔 Product 연결 리뷰만 인정하도록 바꿨다가(`2d1974e`) 사용자 확인으로 되돌림 — 별도 블록의 Review 도 인정.
+- **재채점**: 대시보드가 저장된 JSON-LD 로 #26·#27 을 다시 판정(재감사 없음). 단위 테스트 1건 추가.
+- **LG 전달 포인트**: 제품 이미지를 ImageObject 로, 리뷰 영상만 있는 TV PDP 에 제품 영상 VideoObject 추가.
 - 커밋: `2d1974e`
 
 ## 2. #36 인용 가능 문장 — 트러블슈팅·PLP 는 3개 기준 (2026-10-26)

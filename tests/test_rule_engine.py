@@ -403,16 +403,6 @@ class TestContentRules(unittest.TestCase):
         raw.append({"@type": "ImageObject", "contentUrl": "https://x/b.jpg", "name": "n", "description": "d"})
         self.assertTrue(_eval("schema_required_fields", params, {"jsonld_raw": raw})["pass"])
 
-    def test_rating_review_must_attach_to_product(self):
-        params = {"types": "AggregateRating,Review", "attached_to": "Product,ProductGroup"}
-        loose = [{"review": [{"@type": "Review", "name": "r"}]}, {"@type": "Product", "name": "p"}]
-        r = _eval("schema_any_of", params, {"jsonld_raw": loose})
-        self.assertFalse(r["pass"])
-        self.assertIn("연결되지 않음", r["hint"])
-        ok = [{"@type": "Product", "name": "p",
-               "aggregateRating": {"@type": "AggregateRating", "ratingValue": 5, "reviewCount": 3}}]
-        self.assertTrue(_eval("schema_any_of", params, {"jsonld_raw": ok})["pass"])
-
     def test_citable_min_count_by_type(self):
         # 트러블슈팅·PLP 는 짧은 콘텐츠라 3개 (2026-10-26). 다른 타입은 min_count 그대로.
         html = "<p>매출이 30% 증가했다. 2024년 보고서에 따르면 좋다. 무게는 12kg 이다. 그냥 일반 문장.</p>"

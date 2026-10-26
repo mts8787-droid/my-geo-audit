@@ -356,7 +356,6 @@ RULE_TYPES = {
         "description": "콤마 구분 타입 목록 중 하나라도 JSON-LD에 있으면 PASS (예: PDP의 AggregateRating OR Review)",
         "params": {
             "types": {"label": "schema 타입들 (콤마 구분)", "type": "text", "placeholder": "AggregateRating,Review"},
-            "attached_to": {"label": "이 타입 노드에 연결된 것만 인정 (쉼표 구분, 비우면 페이지 어디든)", "type": "text", "placeholder": "Product,ProductGroup"},
         },
     },
 }
@@ -2049,66 +2048,12 @@ async def _eval_sitemap_recent(params: dict, ctx: dict) -> dict:
 
 # ── 핸들러 레지스트리 ─────────────────────────────────────────────────────────
 
-def _schema_attached(types: list, owners: list, raw: list) -> dict:
-    """types(예: AggregateRating, Review)가 owners(예: Product) 노드에 연결돼 있는지.
-
-    연결 = owner 노드의 속성 값으로 들어 있음(product.review / product.aggregateRating),
-    또는 해당 노드가 itemReviewed 로 owner 를 가리킴. 페이지에 @type 없는 별도 블록으로
-    리뷰만 떠 있으면(LG Bazaarvoice 블록) 검색엔진·AI 가 어느 제품의 리뷰인지 알 수 없어
-    인정하지 않는다 (2026-10-26 사용자 결정).
-    """
-    tl = {t.lower(): t for t in types}
-    found = set()
-    owner_nodes: list = []
-    for o in owners:
-        for d in raw:
-            _walk_jsonld(d, o.lower(), owner_nodes)
-    for node in owner_nodes:
-        for v in node.values():
-            for x in (v if isinstance(v, list) else [v]):
-                if isinstance(x, dict):
-                    t = x.get("@type")
-                    for tt in ([t] if isinstance(t, str) else (t or [])):
-                        if str(tt).lower() in tl:
-                            found.add(tl[str(tt).lower()])
-    for lo, orig in tl.items():
-        hits: list = []
-        for d in raw:
-            _walk_jsonld(d, lo, hits)
-        for h in hits:
-            ir = h.get("itemReviewed")
-            irt = ir.get("@type") if isinstance(ir, dict) else None
-            if irt and any(str(irt).lower() == o.lower() for o in owners):
-                found.add(orig)
-    found = [t for t in types if t in found]
-    if found:
-        return {"pass": True, "value": f"{'/'.join(owners)} 에 연결: {found}", "hint": None}
-    loose = [t for t in types if t.lower() in {str(x).lower() for d in raw for x in _all_types(d)}]
-    hint = (f"{loose} 는 있으나 {'/'.join(owners)} 노드에 연결되지 않음 (별도 블록)" if loose
-            else f"types {types} 중 하나도 JSON-LD에 없음")
-    return {"pass": False, "value": f"연결 없음 (페이지 내 {loose})" if loose else f"{types} 모두 없음", "hint": hint}
-
-
-def _all_types(data):
-    if isinstance(data, dict):
-        t = data.get("@type")
-        yield from ([t] if isinstance(t, str) else (t or []))
-        for v in data.values():
-            yield from _all_types(v)
-    elif isinstance(data, list):
-        for v in data:
-            yield from _all_types(v)
-
-
 def _eval_schema_any_of(params: dict, ctx: dict) -> dict:
     """jsonld_types 중 하나라도 매칭되면 PASS (OR 관계)."""
     types_raw = params.get("types", "") or ""
     types = [t.strip() for t in types_raw.split(",") if t.strip()]
     if not types:
         return {"pass": False, "value": None, "hint": "types 파라미터 비어있음"}
-    attached = [t.strip() for t in (params.get("attached_to") or "").split(",") if t.strip()]
-    if attached:
-        return _schema_attached(types, attached, ctx.get("jsonld_raw") or [])
     jsonld_types = ctx.get("jsonld_types", set())
     types_lower = [t.lower() for t in types]
     found = [orig for orig, lo in zip(types, types_lower) if lo in jsonld_types]

@@ -106,7 +106,7 @@
 | #27 | VideoObject | **url 또는 contentUrl/embedUrl**, name, description, thumbnailUrl. **Review·Comment 안의 영상은 제외** | `ai_schema_video` |
 | #28 | HowTo | HowToSupply / HowToStep | `ai_schema_howto` |
 | #29 | Article | headline, author, publisher, articleBody — `support_troubleshoot` 에도 적용(2026-10-24) | `ai_schema_article` |
-| #44 | AggregateRating 또는 Review (PDP) | 둘 중 하나가 **Product(또는 ProductGroup) 노드에 연결**돼 있어야 함 — `product.aggregateRating`·`product.review`, 또는 `itemReviewed` 가 Product. 2026-10-24 활성, 10-26 연결 조건 추가 | `ai_schema_rating_or_review` |
+| #44 | AggregateRating 또는 Review (PDP) | 둘 중 하나라도 JSON-LD 에 존재 — Product 에 연결되지 않은 별도 블록이어도 인정(2026-10-26 사용자 확인). 2026-10-24 활성(사용자 결정, LG PDP 3,147건에 Review 추가됨) | `ai_schema_rating_or_review` |
 | #49 | WebSite | — (체크리스트 문서에 대응 행 없음) | `ai_schema_website` |
 
 > #25는 Product와 Offer 2개 항목으로 채점되어 스키마마크업 카테고리는 총 10개.
@@ -117,10 +117,9 @@
 >
 > **리뷰 위젯 오탐 수정(2026-10-26)**: LG PDP 의 Bazaarvoice 리뷰는 `@type` 없는 별도 JSON-LD 블록(`{"review": [...]}`)으로 들어가고,
 > 리뷰마다 고객 사진(ImageObject)·영상(VideoObject)이 붙어 있다. 룰이 페이지 전체에서 노드를 찾다 보니 ① #26 통과 PDP **전부**(9개국 2,473건)가
-> 고객 리뷰 사진으로 통과했고(Product 의 `image` 는 URL 문자열), ② #27 은 94건이 리뷰 영상만으로 통과했으며(나머지는 LG 제품 영상으로 정상),
-> ③ #44 는 Product 에 연결되지 않은 이 블록의 Review 를 인정했다(ES 만 Product 안에 `aggregateRating` 이 있어 정상). 검색엔진·AI 는 Product 와
-> 연결되지 않은 리뷰를 어느 제품의 것인지 알 수 없다. → #26·#27 은 Review·Comment 하위 노드 제외(`exclude_within`), #44 는 Product 연결 필수
-> (`attached_to`). 10월 run 은 저장된 JSON-LD 로 재채점(대시보드 §5).
+> 고객 리뷰 사진으로 통과했고(Product 의 `image` 는 URL 문자열), ② #27 은 94건이 리뷰 영상만으로 통과했다(나머지는 LG 제품 영상으로 정상).
+> → #26·#27 은 Review·Comment 하위 노드 제외(`exclude_within`). 리뷰 자체를 보는 #44 는 별도 블록이어도 인정(사용자 확인).
+> 10월 run 은 저장된 JSON-LD 로 재채점(대시보드 §5).
 
 ### 게이트 (2026-09 적용) — 해당 콘텐츠가 없는 페이지는 N/A로 분모 제외
 
@@ -490,7 +489,7 @@ LG CS 는 트러블슈팅 본문 SSR 을 Declarative Shadow DOM 방식으로 전
 - #36 은 저장된 인용 문장 개수로 현재 임계값에 다시 판정한다. 모델 판정값("모델 확인 N/…")도 N 이 실측 개수다(단, 측정 당시
   임계를 채우면 중단하므로 N 은 그 임계에서 잘린다 → 임계를 **낮출** 때만 재판정, 높일 때는 저장 pass 사용). 트러블슈팅·PLP
   3개 기준(2026-10-26)은 이 경로로 10월 run 전체에 적용됐다.
-- #26·#27·#44 는 저장된 JSON-LD 원본(`json_ld.raw`)으로 현재 룰을 다시 돌린다(리뷰 위젯 오탐 수정, 2026-10-26).
+- #26·#27 은 저장된 JSON-LD 원본(`json_ld.raw`)으로 현재 룰을 다시 돌린다(리뷰 위젯 오탐 수정, 2026-10-26).
 - 그 외는 저장된 pass 를 그대로 쓴다. #33 모델 판정도 저장값 사용(재감사 없이는 바뀌지 않음).
 
 ### 5-1. HS(가전) 콘텐츠 분류 (2026-10-25)
