@@ -442,11 +442,11 @@
         }
       },
       "excluded_count": 681,
-      "total_avg": 85.49,
+      "total_avg": 83.31,
       "max": 100,
       "grade_dist": {
-        "Good": 743,
-        "Need Improvement": 208
+        "Good": 705,
+        "Need Improvement": 246
       },
       "breakdown": {
         "performance": {
@@ -472,9 +472,9 @@
         },
         "schema_markup": {
           "label": "스키마마크업",
-          "points_avg": 59.51,
+          "points_avg": 48.02,
           "max": 100,
-          "pass_rate": 0.6311,
+          "pass_rate": 0.4668,
           "items_n": 10
         },
         "citable_content": {
@@ -622,19 +622,19 @@
         "ai_schema_image": {
           "label": "#26 Schema: ImageObject",
           "category": "schema_markup",
-          "pass_rate": 0.3722,
+          "pass_rate": 0.0,
           "applicable_n": 951
         },
         "ai_schema_video": {
           "label": "#27 Schema: VideoObject",
           "category": "schema_markup",
-          "pass_rate": 0.6616,
+          "pass_rate": 0.6338,
           "applicable_n": 396
         },
         "ai_schema_rating_or_review": {
           "label": "#44 Schema: AggregateRating OR Review",
           "category": "schema_markup",
-          "pass_rate": 0.8565,
+          "pass_rate": 0.0,
           "applicable_n": 446
         },
         "ai_faq_block": {
@@ -828,11 +828,11 @@
         }
       },
       "excluded_count": 364,
-      "total_avg": 87.6,
+      "total_avg": 85.17,
       "max": 100,
       "grade_dist": {
-        "Good": 651,
-        "Need Improvement": 106
+        "Good": 639,
+        "Need Improvement": 118
       },
       "breakdown": {
         "performance": {
@@ -858,9 +858,9 @@
         },
         "schema_markup": {
           "label": "스키마마크업",
-          "points_avg": 62.62,
+          "points_avg": 49.8,
           "max": 100,
-          "pass_rate": 0.6586,
+          "pass_rate": 0.4881,
           "items_n": 10
         },
         "citable_content": {
@@ -1008,19 +1008,19 @@
         "ai_schema_image": {
           "label": "#26 Schema: ImageObject",
           "category": "schema_markup",
-          "pass_rate": 0.4016,
+          "pass_rate": 0.0,
           "applicable_n": 757
         },
         "ai_schema_video": {
           "label": "#27 Schema: VideoObject",
           "category": "schema_markup",
-          "pass_rate": 0.6822,
+          "pass_rate": 0.663,
           "applicable_n": 365
         },
         "ai_schema_rating_or_review": {
           "label": "#44 Schema: AggregateRating OR Review",
           "category": "schema_markup",
-          "pass_rate": 0.8208,
+          "pass_rate": 0.0,
           "applicable_n": 424
         },
         "ai_faq_block": {
@@ -1187,11 +1187,11 @@
         }
       },
       "excluded_count": 240,
-      "total_avg": 89.19,
+      "total_avg": 87.73,
       "max": 100,
       "grade_dist": {
-        "Good": 563,
-        "Need Improvement": 89,
+        "Good": 562,
+        "Need Improvement": 90,
         "Poor": 1
       },
       "breakdown": {
@@ -1218,9 +1218,9 @@
         },
         "schema_markup": {
           "label": "스키마마크업",
-          "points_avg": 69.34,
+          "points_avg": 61.58,
           "max": 100,
-          "pass_rate": 0.7387,
+          "pass_rate": 0.6436,
           "items_n": 10
         },
         "citable_content": {
@@ -1368,13 +1368,13 @@
         "ai_schema_image": {
           "label": "#26 Schema: ImageObject",
           "category": "schema_markup",
-          "pass_rate": 0.5084,
+          "pass_rate": 0.0,
           "applicable_n": 653
         },
         "ai_schema_video": {
           "label": "#27 Schema: VideoObject",
           "category": "schema_markup",
-          "pass_rate": 0.7016,
+          "pass_rate": 0.6921,
           "applicable_n": 315
         },
         "ai_schema_rating_or_review": {
@@ -1562,11 +1562,11 @@
         }
       },
       "excluded_count": 181,
-      "total_avg": 84.91,
+      "total_avg": 82.51,
       "max": 100,
       "grade_dist": {
-        "Good": 598,
-        "Need Improvement": 182,
+        "Good": 564,
+        "Need Improvement": 216,
         "Poor": 2
       },
       "breakdown": {
@@ -1593,9 +1593,9 @@
         },
         "schema_markup": {
           "label": "스키마마크업",
-          "points_avg": 67.46,
+          "points_avg": 53.88,
           "max": 100,
-          "pass_rate": 0.7222,
+          "pass_rate": 0.5524,
           "items_n": 10
         },
         "citable_content": {
@@ -1743,19 +1743,19 @@
         "ai_schema_image": {
           "label": "#26 Schema: ImageObject",
           "category": "schema_markup",
-          "pass_rate": 0.3645,
+          "pass_rate": 0.0,
           "applicable_n": 782
         },
         "ai_schema_video": {
           "label": "#27 Schema: VideoObject",
           "category": "schema_markup",
-          "pass_rate": 0.803,
+          "pass_rate": 0.7581,
           "applicable_n": 401
         },
         "ai_schema_rating_or_review": {
           "label": "#44 Schema: AggregateRating OR Review",
           "category": "schema_markup",
-          "pass_rate": 0.884,
+          "pass_rate": 0.0,
           "applicable_n": 431
         },
         "ai_faq_block": {
@@ -1885,11 +1885,11 @@
       },
       "hs": {
         "n": 99,
-        "total_avg": 86.87,
+        "total_avg": 84.91,
         "by_content_type2": {
           "Award Banner": {
             "n": 36,
-            "total_avg": 89.78
+            "total_avg": 84.56
           },
           "Experience Article": {
             "n": 6,
@@ -1921,7 +1921,7 @@
           },
           "뱃지적용 Gallery": {
             "n": 1,
-            "total_avg": 97.0
+            "total_avg": 91.0
           }
         },
         "by_product": {
@@ -1939,7 +1939,7 @@
           },
           "Dryer": {
             "n": 9,
-            "total_avg": 92.44
+            "total_avg": 87.11
           },
           "REF": {
             "n": 15,
@@ -1947,11 +1947,11 @@
           },
           "VCC": {
             "n": 29,
-            "total_avg": 87.34
+            "total_avg": 84.14
           },
           "WM": {
             "n": 28,
-            "total_avg": 87.96
+            "total_avg": 86.07
           }
         },
         "by_page_type": {
@@ -1973,16 +1973,16 @@
           },
           "pdp": {
             "n": 37,
-            "total_avg": 89.97
+            "total_avg": 84.73
           }
         }
       },
       "excluded_count": 125,
-      "total_avg": 86.9,
+      "total_avg": 84.93,
       "max": 100,
       "grade_dist": {
-        "Good": 876,
-        "Need Improvement": 81
+        "Good": 848,
+        "Need Improvement": 109
       },
       "breakdown": {
         "performance": {
@@ -2008,9 +2008,9 @@
         },
         "schema_markup": {
           "label": "스키마마크업",
-          "points_avg": 57.41,
+          "points_avg": 46.95,
           "max": 100,
-          "pass_rate": 0.6094,
+          "pass_rate": 0.4646,
           "items_n": 10
         },
         "citable_content": {
@@ -2158,13 +2158,13 @@
         "ai_schema_image": {
           "label": "#26 Schema: ImageObject",
           "category": "schema_markup",
-          "pass_rate": 0.3281,
+          "pass_rate": 0.0,
           "applicable_n": 957
         },
         "ai_schema_rating_or_review": {
           "label": "#44 Schema: AggregateRating OR Review",
           "category": "schema_markup",
-          "pass_rate": 0.7728,
+          "pass_rate": 0.0,
           "applicable_n": 449
         },
         "ai_faq_block": {
@@ -2236,7 +2236,7 @@
         "ai_schema_video": {
           "label": "#27 Schema: VideoObject",
           "category": "schema_markup",
-          "pass_rate": 0.8381,
+          "pass_rate": 0.8153,
           "applicable_n": 352
         },
         "ai_schema_article": {
@@ -2365,11 +2365,11 @@
         }
       },
       "excluded_count": 213,
-      "total_avg": 86.05,
+      "total_avg": 83.86,
       "max": 100,
       "grade_dist": {
-        "Need Improvement": 179,
-        "Good": 694,
+        "Need Improvement": 224,
+        "Good": 649,
         "Poor": 2
       },
       "breakdown": {
@@ -2396,9 +2396,9 @@
         },
         "schema_markup": {
           "label": "스키마마크업",
-          "points_avg": 60.51,
+          "points_avg": 48.59,
           "max": 100,
-          "pass_rate": 0.6431,
+          "pass_rate": 0.481,
           "items_n": 10
         },
         "citable_content": {
@@ -2546,13 +2546,13 @@
         "ai_schema_image": {
           "label": "#26 Schema: ImageObject",
           "category": "schema_markup",
-          "pass_rate": 0.3554,
+          "pass_rate": 0.0,
           "applicable_n": 875
         },
         "ai_schema_rating_or_review": {
           "label": "#44 Schema: AggregateRating OR Review",
           "category": "schema_markup",
-          "pass_rate": 0.7639,
+          "pass_rate": 0.0,
           "applicable_n": 466
         },
         "ai_faq_block": {
@@ -2624,7 +2624,7 @@
         "ai_schema_video": {
           "label": "#27 Schema: VideoObject",
           "category": "schema_markup",
-          "pass_rate": 0.7342,
+          "pass_rate": 0.6982,
           "applicable_n": 222
         },
         "ai_schema_article": {
@@ -2763,11 +2763,11 @@
         }
       },
       "excluded_count": 204,
-      "total_avg": 87.83,
+      "total_avg": 85.92,
       "max": 100,
       "grade_dist": {
-        "Good": 746,
-        "Need Improvement": 83
+        "Good": 736,
+        "Need Improvement": 93
       },
       "breakdown": {
         "performance": {
@@ -2793,9 +2793,9 @@
         },
         "schema_markup": {
           "label": "스키마마크업",
-          "points_avg": 63.18,
+          "points_avg": 52.97,
           "max": 100,
-          "pass_rate": 0.6602,
+          "pass_rate": 0.5243,
           "items_n": 10
         },
         "citable_content": {
@@ -2943,19 +2943,19 @@
         "ai_schema_image": {
           "label": "#26 Schema: ImageObject",
           "category": "schema_markup",
-          "pass_rate": 0.2593,
+          "pass_rate": 0.0,
           "applicable_n": 829
         },
         "ai_schema_video": {
           "label": "#27 Schema: VideoObject",
           "category": "schema_markup",
-          "pass_rate": 0.7357,
+          "pass_rate": 0.6727,
           "applicable_n": 333
         },
         "ai_schema_rating_or_review": {
           "label": "#44 Schema: AggregateRating OR Review",
           "category": "schema_markup",
-          "pass_rate": 0.7231,
+          "pass_rate": 0.0,
           "applicable_n": 455
         },
         "ai_faq_block": {
@@ -3138,11 +3138,11 @@
         }
       },
       "excluded_count": 248,
-      "total_avg": 86.76,
+      "total_avg": 85.03,
       "max": 100,
       "grade_dist": {
-        "Good": 747,
-        "Need Improvement": 114,
+        "Good": 707,
+        "Need Improvement": 154,
         "Poor": 2
       },
       "breakdown": {
@@ -3169,9 +3169,9 @@
         },
         "schema_markup": {
           "label": "스키마마크업",
-          "points_avg": 58.75,
+          "points_avg": 49.48,
           "max": 100,
-          "pass_rate": 0.6165,
+          "pass_rate": 0.485,
           "items_n": 10
         },
         "citable_content": {
@@ -3319,19 +3319,19 @@
         "ai_schema_image": {
           "label": "#26 Schema: ImageObject",
           "category": "schema_markup",
-          "pass_rate": 0.2005,
+          "pass_rate": 0.0,
           "applicable_n": 863
         },
         "ai_schema_video": {
           "label": "#27 Schema: VideoObject",
           "category": "schema_markup",
-          "pass_rate": 0.7427,
+          "pass_rate": 0.6971,
           "applicable_n": 241
         },
         "ai_schema_rating_or_review": {
           "label": "#44 Schema: AggregateRating OR Review",
           "category": "schema_markup",
-          "pass_rate": 0.83,
+          "pass_rate": 0.0,
           "applicable_n": 406
         },
         "ai_faq_block": {
@@ -3534,11 +3534,11 @@
         }
       },
       "excluded_count": 90,
-      "total_avg": 86.59,
+      "total_avg": 84.59,
       "max": 100,
       "grade_dist": {
-        "Good": 640,
-        "Need Improvement": 110
+        "Good": 634,
+        "Need Improvement": 116
       },
       "breakdown": {
         "performance": {
@@ -3564,9 +3564,9 @@
         },
         "schema_markup": {
           "label": "스키마마크업",
-          "points_avg": 60.01,
+          "points_avg": 49.38,
           "max": 100,
-          "pass_rate": 0.6281,
+          "pass_rate": 0.4962,
           "items_n": 10
         },
         "citable_content": {
@@ -3714,19 +3714,19 @@
         "ai_schema_image": {
           "label": "#26 Schema: ImageObject",
           "category": "schema_markup",
-          "pass_rate": 0.2467,
+          "pass_rate": 0.0,
           "applicable_n": 750
         },
         "ai_schema_video": {
           "label": "#27 Schema: VideoObject",
           "category": "schema_markup",
-          "pass_rate": 0.8302,
+          "pass_rate": 0.8113,
           "applicable_n": 371
         },
         "ai_schema_rating_or_review": {
           "label": "#44 Schema: AggregateRating OR Review",
           "category": "schema_markup",
-          "pass_rate": 0.73,
+          "pass_rate": 0.0,
           "applicable_n": 474
         },
         "ai_faq_block": {
@@ -3873,11 +3873,11 @@
         }
       },
       "excluded_count": 325,
-      "total_avg": 80.18,
+      "total_avg": 81.45,
       "max": 100,
       "grade_dist": {
-        "Need Improvement": 307,
-        "Good": 385,
+        "Good": 438,
+        "Need Improvement": 254,
         "Poor": 2
       },
       "breakdown": {
@@ -3904,9 +3904,9 @@
         },
         "schema_markup": {
           "label": "스키마마크업",
-          "points_avg": 33.57,
+          "points_avg": 41.06,
           "max": 100,
-          "pass_rate": 0.3205,
+          "pass_rate": 0.4153,
           "items_n": 10
         },
         "citable_content": {
@@ -4060,7 +4060,7 @@
         "ai_schema_video": {
           "label": "#27 Schema: VideoObject",
           "category": "schema_markup",
-          "pass_rate": 0.0,
+          "pass_rate": 0.8089,
           "applicable_n": 361
         },
         "ai_faq_block": {
@@ -4193,11 +4193,11 @@
         "by_page_type": {}
       },
       "excluded_count": 251,
-      "total_avg": 80.31,
+      "total_avg": 81.31,
       "max": 100,
       "grade_dist": {
-        "Good": 445,
-        "Need Improvement": 351,
+        "Good": 478,
+        "Need Improvement": 318,
         "Poor": 1
       },
       "breakdown": {
@@ -4224,9 +4224,9 @@
         },
         "schema_markup": {
           "label": "스키마마크업",
-          "points_avg": 35.88,
+          "points_avg": 41.66,
           "max": 100,
-          "pass_rate": 0.3508,
+          "pass_rate": 0.4247,
           "items_n": 10
         },
         "citable_content": {
@@ -4380,7 +4380,7 @@
         "ai_schema_video": {
           "label": "#27 Schema: VideoObject",
           "category": "schema_markup",
-          "pass_rate": 0.0,
+          "pass_rate": 0.6891,
           "applicable_n": 386
         },
         "ai_faq_block": {
@@ -4806,7 +4806,7 @@
       "type_cap": 1547,
       "support": 4
     },
-    "total_avg_weighted": 85.14,
+    "total_avg_weighted": 83.77,
     "missing": [
       "hs"
     ]
