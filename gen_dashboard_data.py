@@ -281,6 +281,20 @@ def item_pass(iid, it, url, page_type, cr, psi, psi_med=None, jsonld_raw=None):
     return it.get("pass")
 
 
+_ITEM_OVERRIDES = None
+
+
+def _item_overrides():
+    global _ITEM_OVERRIDES
+    if _ITEM_OVERRIDES is None:
+        try:
+            with open(os.path.join(HERE, "data", "item_overrides.json"), encoding="utf-8") as f:
+                _ITEM_OVERRIDES = json.load(f)
+        except FileNotFoundError:
+            _ITEM_OVERRIDES = {}
+    return _ITEM_OVERRIDES
+
+
 def _hs_lookup(url):
     try:
         from page_type import hs_lookup
@@ -335,7 +349,7 @@ def is_excluded(r):
 def counted_results(doc):
     """집계에 실제로 들어가는 페이지 목록과 제외 사유 집계.
 
-    is_excluded → 리다이렉트 도착지 중복 제거 → 타입별 상한(TYPE_CAP) 순으로 거른다.
+    is_excluded → 리다이렉트 도착지 중복 제거 → PLP 필터 URL 중복 제거 → 타입별 상한(TYPE_CAP) 순으로 거른다.
     aggregate_country 가 쓰며, 비정기 재감사(run_support_ts_audit.sh)도 "리포트에 올라간
     페이지"를 이 함수로 뽑아 같은 기준을 공유한다.
     """
@@ -359,6 +373,24 @@ def counted_results(doc):
             continue
         seen_dest[dest] = r["url"]
         results.append(r)
+
+    # PLP 필터 URL(?ec_ft_…=55_inch 등)은 같은 카테고리 페이지의 변형이다. 사이트맵에
+    # 사이즈별로 실려 MX PLP 100건 중 52건이 11개 페이지의 변형이었다(nanocell 9건,
+    # 2026-10-31). 카테고리당 1건만 남긴다 — 쿼리 없는 원본이 있으면 원본을.
+    def _plp_base(r):
+        return r["url"].split("?", 1)[0].rstrip("/").lower()
+    plp_bases = {_plp_base(r) for r in results
+                 if "?" not in r["url"] and current_page_type(r) == "plp"}
+    kept = []
+    for r in results:
+        if "?" in r["url"] and current_page_type(r) == "plp":
+            b = _plp_base(r)
+            if b in plp_bases:
+                excluded["plp_query_dup"] += 1
+                continue
+            plp_bases.add(b)
+        kept.append(r)
+    results = kept
 
     # 페이지타입별 집계 상한. 국가마다 타입 비중이 제각각이면(US 트러블슈팅 34% vs
     # DE 13%) 국가 점수가 콘텐츠 품질이 아니라 표본 구성을 반영하게 된다.
@@ -425,6 +457,12 @@ def aggregate_country(doc, cr, psi):
                     "value": " · ".join(str(x.get("value"))[:24] for x in parts),
                     "hint": None,
                 }
+
+        # 사후 재판정(data/item_overrides.json, run id → url → 항목): 저장값만으로는 다시
+        # 판정할 수 없는 룰 수정을 그 run 에 한해 반영한다. 근거·날짜는 각 항목 note 에.
+        for iid, ov in (_item_overrides().get(doc.get("id"), {}).get(url) or {}).items():
+            if iid in stored:
+                stored[iid] = {**stored[iid], **ov}
 
         c_passed = defaultdict(int)
         c_total = defaultdict(int)

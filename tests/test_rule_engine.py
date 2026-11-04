@@ -372,6 +372,29 @@ class TestSchemaRules(unittest.TestCase):
 # ── AI Readiness — Content ────────────────────────────────────────────────────
 
 class TestContentRules(unittest.TestCase):
+
+    def test_faq_accordion_needs_question(self):
+        params = {"keywords": "faq,accordion", "tags": "div", "match_text": "no",
+                  "class_need_question": "accordion"}
+        menu = '<html><body><div class="MuiAccordion-root">Products My Account</div></body></html>'
+        self.assertFalse(_eval("class_id_contains", params, _ctx(html=menu))["pass"])
+        faq = ('<html><body><div class="MuiAccordion-root">How do I reset my washer?'
+               ' Press and hold Power.</div></body></html>')
+        self.assertTrue(_eval("class_id_contains", params, _ctx(html=faq))["pass"])
+
+    def test_faq_widget_questions_ignored(self):
+        params = {"keywords": "faq", "tags": "div", "match_text": "no", "match_class": "no",
+                  "question_min": 1, "question_keywords": "frequently asked,faq"}
+        for q in ("How would you improve the information?", "Hoe kan ik u van dienst zijn?",
+                  "Hoe zou u de informatie verbeteren?"):
+            html = f"<html><body><p>Frequently asked</p><p>{q}</p></body></html>"
+            self.assertFalse(_eval("class_id_contains", params, _ctx(html=html))["pass"], q)
+
+    def test_page_type_top_product_category_not_microsite(self):
+        from page_type import detect_page_type
+        self.assertNotEqual(detect_page_type(None, "https://www.lg.com/us/top-load-washers")["id"], "microsite")
+        self.assertEqual(detect_page_type(None, "https://www.lg.com/ca_en/dishwashers/top-control/ldp6797bd/")["id"], "pdp")
+        self.assertEqual(detect_page_type(None, "https://www.lg.com/in/magazine/top-lg-washing-machine-models-of-2026/")["id"], "microsite")
     def test_definition_pattern_pass(self):
         html = "<p>GEO는 검색 엔진 최적화를 말한다.</p><dfn>RAG</dfn>"
         r = _eval("definition_pattern_min", {"min_count": 1}, _ctx(html))

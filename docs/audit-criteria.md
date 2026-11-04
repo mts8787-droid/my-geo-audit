@@ -319,7 +319,7 @@ PLP(`plp`)는 3개 이상이면 통과**(룰 파라미터 `min_count_by_type`, 2
 
 | # | 항목 | 매칭 대상 | check id |
 | :-: | :-- | :-- | :-- |
-| #32 | FAQ Block | class/id 에 `faq` · `q&a` · `qna` · `accordion` · `frequently asked` · `자주 묻는` · `질문` · `answer` — 단, 하단 피드백 위젯(`Was this information helpful?` 등 8개 언어 문구)은 FAQ로 치지 않는다 (2026-09 오탐 수정: 1,596건) | `ai_faq_block` |
+| #32 | FAQ Block | class/id 에 `faq` · `q&a` · `qna` · `accordion` · `frequently asked` · `자주 묻는` · `질문` · `answer` — 단, 하단 피드백 위젯(`Was this information helpful?` 등 8개 언어 문구)은 FAQ로 치지 않는다 (2026-09 오탐 수정: 1,596건). `accordion` 은 요소 안에 질문 문장(…?)이 있을 때만 인정 (2026-10-31 — US 푸터 사이트맵 메뉴 `div#footnote` 의 MuiAccordion 으로 US 682건 허위 통과). 같은 날 위젯·모달 질문도 제외 목록에 추가: `How would you improve the information?`(AU·IN·UK 트러블슈팅), `Hoe zou u de informatie verbeteren?`(NL), `Hoe kan ik u van dienst zijn?`(BE 상담 챗), `Wie könnten die bereitgestellten…`(DE), VN 로그인·스펙 모달 | `ai_faq_block` |
 | #35 | Summary Box | 둘 중 하나 — ① 헤딩 텍스트에 `At a Glance` · `요약` · `한눈에` 등 ② 요약 블록 selector `p.info-desc, p.description` (아래 참조). ~~class/id 키워드~~ 경로는 2026-09 제거 — 스펙 테이블에도 `class="summary"`가 붙어 오탐 (48.5% → 15.7%) | `ai_summary_box` |
 | #39 | PDP Thumbnails | `img[src*=PDPGalleryThumbnail]` · `[class*=Product-ImageGrid] img` · 구 AEM `.c-*` fallback | `ai_pdp_thumbnails` |
 | #40 | Core Element | 제품명·가격·이미지 등 선택자 그룹 중 3개 이상 존재 | `ai_core_element` |
@@ -406,6 +406,10 @@ LG CS 는 트러블슈팅 본문 SSR 을 Declarative Shadow DOM 방식으로 전
   URL 에 표가 없는 케이스를, URL 은 CA/US 처럼 Coveo 카테고리가 상위 계층뿐인
   케이스를 잡는다.
 
+- **PLP 필터 URL 중복** — `?ec_ft_…=55_inch` 처럼 같은 카테고리 페이지에 필터만 붙은 URL 은 카테고리당
+  1건만 집계(쿼리 없는 원본 우선, 제외 사유 `plp_query_dup`). 사이트맵에 사이즈별로 실려 MX PLP 표본의 52%가
+  11개 페이지의 변형이었다(2026-10-31). 샘플링도 같은 기준.
+
 ### 측정 기준이 바뀐 항목
 - **#1 TTFB** — 어딧 크롤러 자체 측정값이 동시 크롤 큐잉에 오염돼 실제보다 6~200배 크게 잡혔음
   (UK 크롤러 1,088ms vs PSI 11ms). PageSpeed Insights의 `server-response-time`을 정본으로 교체.
@@ -438,6 +442,9 @@ LG CS 는 트러블슈팅 본문 SSR 을 Declarative Shadow DOM 방식으로 전
   **타입별 최대 100페이지**를 감사한다. PDP 만 최대 500 — 핵심 제품군 10종(TV·오디오·모니터·냉장고·
   세탁·식기세척기·공조·공기청정·조리·청소기)에 각 50 이상을 먼저 배정하고 남는 자리를 라운드로빈으로 채운다.
   PLP 도 카테고리 균등 배분.
+- 마이크로사이트 URL 패턴(`why-`·`what-`·`how-`·`best-`·`top-` …)에서 `top-mount`·`top-control`·`top-load(ing)`·
+  `top-freezer` 는 제외한다 — 제품 카테고리명이라 AU 냉장고·CA 식기세척기 PDP/PLP 97건이 마이크로사이트로
+  집계되고 있었다(2026-10-31).
 - 트러블슈팅·뉴스룸·프레스는 발행일 내림차순(최신 문서 우선). 날짜를 모르는 URL 은 뒤로 보낸다.
 - 사업부 지정 필수 URL(`reports/must_audit/<cc>.csv`)은 타입 정원 안에서 먼저 자리를 차지하고, 정원을
   넘는 분량은 정원 밖에 덧붙여 **전부 감사**한다(트러블슈팅은 국가당 128~432건). 2026-10-25 사용자 결정:

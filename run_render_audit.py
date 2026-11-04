@@ -261,6 +261,17 @@ def _sample_by_page_type(urls, base_per_type, must=()):
                 dropped_accessory += 1
                 continue
         buckets[pt].append(u)
+    # PLP 필터 URL(?ec_ft_…) 은 같은 카테고리 페이지의 변형 — 카테고리당 1건만 (2026-10-31,
+    # MX PLP 표본 52%가 11개 페이지의 변형이었다). 집계(counted_results)도 같은 기준.
+    if buckets.get("plp"):
+        seen_b, plp = set(), []
+        for u in sorted(buckets["plp"], key=lambda x: "?" in x):
+            b = u.split("?", 1)[0].rstrip("/").lower()
+            if b in seen_b and u not in must_set:
+                continue
+            seen_b.add(b)
+            plp.append(u)
+        buckets["plp"] = plp
     if dropped_inactive or dropped_accessory:
         print(f"[render-audit] PDP 제외: 단종/비활성 {dropped_inactive}건 · "
               f"악세사리 {dropped_accessory}건")

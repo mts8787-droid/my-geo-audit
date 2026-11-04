@@ -85,6 +85,7 @@ RULE_TYPES = {
             "question_qword": {"label": "의문사 필수 (#32)", "type": "select", "options": ["yes", "no"]},
             "match_class": {"label": "class/id 매칭 사용", "type": "select", "options": ["yes", "no"]},
             "label_tags": {"label": "라벨 태그 추가 스캔 (쉼표 구분, #35)", "type": "text", "placeholder": "p"},
+            "class_need_question": {"label": "질문 문장이 있어야 인정할 class 키워드 (#32)", "type": "text", "placeholder": "accordion"},
         },
     },
     "text_has_pattern": {
@@ -552,7 +553,12 @@ _FEEDBACK_WIDGET = re.compile(
     r"como voc[êe] melhoraria|(?:isso|este artigo) foi [úu]til|"
     r"thông tin này có hữu ích|"
     r"was deze informatie nuttig|is deze informatie nuttig|hoe kunnen we (?:dit )?verbeteren|"
-    r"도움이 되었|유용했"
+    r"도움이 되었|유용했|"
+    # 2026-10-31 추가 — 질문 1개로 #32 를 통과시키던 위젯·모달 문구(10월 약 800건):
+    # 피드백 위젯 개선 질문, BE 상담 챗 인사, VN 로그인·스펙 모달
+    r"how would you improve|hoe zou u (?:de informatie )?verbeteren|hoe kan ik u van dienst zijn|"
+    r"wie k[öo]nnten die bereitgestellten|c[ảa]i thi[ệe]n th[ôo]ng tin|"
+    r"verify right now|verify later|xem t[ấa]t c[ảa] th[ôo]ng s[ốo]"
     r")", re.I)
 
 def _eval_class_id_contains(params: dict, ctx: dict) -> dict:
@@ -670,12 +676,18 @@ def _eval_class_id_contains(params: dict, ctx: dict) -> dict:
         return {"pass": False, "value": None,
                 "hint": "요약 블록(헤딩 문구·selector)을 찾지 못했습니다."}
 
+    # class_need_question: 범용 UI 클래스는 안에 질문 문장이 있을 때만 인정한다.
+    # US 는 푸터 사이트맵(div#footnote, footer 태그 아님)이 MuiAccordion 이라
+    # 'accordion' 하나로 US 전 페이지 682건이 #32 를 통과했다(2026-10-31).
+    need_q = {k.strip().lower() for k in str(params.get("class_need_question", "")).split(",") if k.strip()}
     for el in soup.find_all(search_tags):
         cls = " ".join(el.get("class", [])).lower()
         el_id = (el.get("id") or "").lower()
         combined = cls + " " + el_id
         for kw in keywords:
             if kw in combined:
+                if kw in need_q and not re.search(r"[^.!?\n]{10,200}\?", el.get_text(" ", strip=True)):
+                    continue
                 return {
                     "pass": True,
                     "value": f"<{el.name}> class/id에서 '{kw}' 발견",
