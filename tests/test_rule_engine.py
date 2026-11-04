@@ -526,6 +526,20 @@ class TestContentRules(unittest.TestCase):
         r = _eval("image_filename_keyword", {"keywords": "lg,oled,gram", "min_ratio": 0.5}, _ctx(html))
         self.assertFalse(r["pass"])
 
+    def test_image_filename_content_only_skips_gnb(self):
+        # GNB 메뉴 배너가 판정을 차지하지 않게 본문 이미지만 본다 (2026-11-05)
+        html = ('<header><div class="gnb"><img src="/gnb/lg-oled-banner.jpg">'
+                '<img src="/gnb/lg-gram-banner.jpg"></div></header>'
+                '<main><img src="/img/IMG_1234.jpg"></main>')
+        p = {"keywords": "lg,oled,gram", "min_ratio": 0.5, "content_only": "yes"}
+        self.assertFalse(_eval("image_filename_keyword", p, _ctx(html))["pass"])
+        self.assertTrue(_eval("image_filename_keyword", {**p, "content_only": "no"}, _ctx(html))["pass"])
+
+    def test_image_filename_content_only_no_body_image_na(self):
+        html = '<footer><img src="/f/lg-oled.jpg"></footer><main><p>text</p></main>'
+        p = {"keywords": "lg,oled", "min_ratio": 0.3, "content_only": "yes"}
+        self.assertIsNone(_eval("image_filename_keyword", p, _ctx(html))["pass"])
+
     def test_author_meta_pass(self):
         html = '<meta name="author" content="홍길동">'
         r = _eval("author_or_source", {}, _ctx(html))

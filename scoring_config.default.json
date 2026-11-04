@@ -947,7 +947,8 @@
           "params": {
             "keywords": "lg,oled,qned,nanocell,uhd,4k,8k,tv,soundbar,speaker,xboom,monitor,ultragear,ultrawide,ultrafine,gram,thinq,refrigerator,fridge,washer,dryer,dishwasher,microwave,oven,cooktop,range,aircon,ac,purifier,styler,cordzero,vacuum,projector,cinebeam,tone,earbud,laptop,objet,standbyme,heatpump",
             "min_ratio": 0.3,
-            "exclude_filename": "logo,icon,ico-,sprite,placeholder,blank,spacer,dummy"
+            "exclude_filename": "logo,icon,ico-,sprite,placeholder,blank,spacer,dummy",
+            "content_only": "yes"
           }
         }
       },

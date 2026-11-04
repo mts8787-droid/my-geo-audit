@@ -152,6 +152,7 @@ class Criteria:
         self.jsonld_rules = {}  # item_id → (rule type, params): 저장된 JSON-LD 로 재판정 (#26·#27)
         self.psi_rules = {}   # item_id → (metric, max_value)
         self.maxage = {}      # item_id → min_seconds
+        self.ssr_min = {}     # item_id → min_ratio (#37, baseline 값으로 재판정)
         self.cat_label = {c: cfg[c].get("label", c) for c in self.cats}
 
         for cat in self.cats:
@@ -187,6 +188,8 @@ class Criteria:
                     self.psi_rules[iid] = (params.get("metric"), float(params.get("max_value", 0)))
                 elif rule.get("type") == "header_max_age_min":
                     self.maxage[iid] = int(params.get("min_seconds", 1))
+                elif rule.get("type") == "ssr_text_ratio_min":
+                    self.ssr_min[iid] = float(params.get("min_ratio", 0.6))
 
 
 def load_psi_cache():
@@ -418,6 +421,20 @@ def counted_results(doc):
     return results, excluded
 
 
+_BASELINE_CACHE = {}
+
+
+def _baseline_ratio(page_type, url):
+    """그 국가 자체 baseline 값만. 다른 국가 평균(fallback)으로 빌린 값은 재판정하지
+    않는다 — BE·NL 처럼 자체 표본이 없는 나라가 남의 재측정으로 바뀌면 안 된다."""
+    import csr_baseline as _cb
+    if not _BASELINE_CACHE:
+        _BASELINE_CACHE.update(_cb.load_baseline_all() or {})
+    gid = _cb._detect_group_id_from_url(url)
+    ent = (_BASELINE_CACHE.get(gid) or {}).get(page_type)
+    return ent.get("avg_ratio") if isinstance(ent, dict) else None
+
+
 def aggregate_country(doc, cr, psi):
     results, excluded = counted_results(doc)
     n = len(results)
@@ -463,6 +480,15 @@ def aggregate_country(doc, cr, psi):
         for iid, ov in (_item_overrides().get(doc.get("id"), {}).get(url) or {}).items():
             if iid in stored:
                 stored[iid] = {**stored[iid], **ov}
+
+        # #37 은 페이지 실측이 아니라 국가×타입 baseline 값이다. 저장값 대신 현재
+        # baseline 으로 다시 판정해 baseline 재측정이 재감사 없이 반영되게 한다 (2026-11-05).
+        if (r.get("csr_ratio") or {}).get("status") == "baseline":
+            ratio = _baseline_ratio(pt, url)
+            for iid, mn in cr.ssr_min.items():
+                if iid in stored and ratio is not None:
+                    stored[iid] = {**stored[iid], "pass": ratio >= mn,
+                                   "value": f"SSR {ratio*100:.0f}%"}
 
         c_passed = defaultdict(int)
         c_total = defaultdict(int)

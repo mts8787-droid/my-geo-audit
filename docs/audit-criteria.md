@@ -164,10 +164,10 @@
 
 | # | 항목 | PASS | 측정방법 | check id |
 | :-: | :-- | :-- | :-- | :-- |
-| #37 | (JS) HTML Text Ratio | 밀도 ≥ 60% | JS 렌더링 후 텍스트 대비 HTML Text 비중. **Shadow DOM SSR(`<template shadowrootmode>`)은 분자에서 제외** — 비JS 파서 다수(BS·DOMParser·trafilatura)가 본문으로 안 치며(CNX 실측, html5lib만 인식) ChatGPT·Claude류 해석은 비공개라 보수 기준 유지 (2026-10-05 결정). 경량 감사에서는 국가×페이지타입 baseline(`data/csr_baseline.json`)을 넣는다 — 트러블슈팅 baseline 은 2026-10-24 기사 페이지 15건(허브 제외)으로 재측정 | `ai_ssr_ratio` |
+| #37 | (JS) HTML Text Ratio | 밀도 ≥ 60% | JS 렌더링 후 텍스트 대비 HTML Text 비중. **Shadow DOM SSR(`<template shadowrootmode>`)은 분자에서 제외** — 비JS 파서 다수(BS·DOMParser·trafilatura)가 본문으로 안 치며(CNX 실측, html5lib만 인식) ChatGPT·Claude류 해석은 비공개라 보수 기준 유지 (2026-10-05 결정). 경량 감사에서는 국가×페이지타입 baseline(`data/csr_baseline.json`)을 넣는다 — 트러블슈팅 baseline 은 2026-10-24 기사 페이지 15건(허브 제외)으로, 나머지 타입은 2026-11 정기 감사 표본 타입당 10건으로 재측정. 대시보드는 저장값이 아니라 현재 baseline 으로 다시 판정한다(그 국가 자체 baseline 이 있을 때만) | `ai_ssr_ratio` |
 | #38 | (JS) HTML Resource | PDP 썸네일 1-3번째 이미지가 HTML에 존재 | PDP HTML 파싱 후 SSR 확인 | `ai_pdp_thumbnails` |
 | #39 | (JS) 핵심 element | PDP 핵심 element가 HTML로 존재 | PDP HTML 파싱 후 SSR 확인 | `ai_core_element` |
-| #40 | Image File Name | 브랜드·제품 키워드 포함 이미지 ≥ 30% | 파일명 키워드 검증 — logo·icon·sprite 등 장식 파일 제외 | `ai_image_filename` |
+| #40 | Image File Name | 브랜드·제품 키워드 포함 이미지 ≥ 30% | 파일명 키워드 검증 — logo·icon·sprite 등 장식 파일 제외. **본문 이미지만**(GNB·LNB·헤더·푸터·모달 안 이미지 제외, `content_only`) — 메뉴 배너가 전 페이지 공통으로 판정을 차지했다(2026-11-05). 본문 이미지가 없으면 N/A | `ai_image_filename` |
 | #41 | Status Code (200) | 200 반환 | Status Code | `ai_status_200` |
 | #42 | Status Code (Soft 404) | 200 응답 본문에 404 안내 문구 없음 | 문구 판정 (2026-09-17 전환 — LG 404 본문이 2,400~3,200자라 길이로는 판별 불가). 본문 200자 미만은 보조 신호. 독일어 'nicht gefunden werden' 은 'Seite' 와 함께일 때만(2026-10-26 — 트러블슈팅 본문 '채널을 찾지 못할 수 있음' 오탐) | `ai_soft_404` |
 | #43 | llms.txt | 존재 | 각 국가별 llms.txt 검증 | `ai_llms_txt` |

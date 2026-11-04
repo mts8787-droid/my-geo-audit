@@ -329,6 +329,7 @@ RULE_TYPES = {
             "keywords":  {"label": "키워드 (쉼표 구분)", "type": "text", "placeholder": "lg,oled,gram"},
             "min_ratio": {"label": "최소 비율 (0.0~1.0, 선택)", "type": "number", "placeholder": "0.5"},
             "exclude_filename": {"label": "제외할 파일명 (로고·아이콘)", "type": "text", "placeholder": "logo,icon,sprite"},
+            "content_only": {"label": "본문 이미지만 (GNB·푸터 제외, 없으면 N/A)", "type": "select", "options": ["yes", "no"]},
         },
     },
     "author_or_source": {
@@ -1843,15 +1844,33 @@ def _eval_image_filename_keyword(params: dict, ctx: dict) -> dict:
     excludes = [k.strip().lower() for k in (ex_raw if isinstance(ex_raw, str)
                                             else ",".join(ex_raw)).split(",") if k.strip()]
 
+    # 본문 이미지만 (content_only=yes) — GNB·LNB 메뉴 배너가 전 페이지에 같은 파일로
+    # 수십 장 들어가 판정을 사실상 차지했다(2026-10-31 실측: CA 트러블슈팅 88장 중 85장,
+    # UK 45장 전부). 본문에 이미지가 없으면 고칠 파일명이 없으니 평가 대상에서 뺀다.
+    content_only = str(params.get("content_only", "no")).lower() in ("yes", "true", "1")
+    skip = set()
+    if content_only:
+        for el in soup.find_all(_BOILERPLATE_TAGS):
+            skip.add(id(el))
+        for el in soup.find_all(attrs={"class": True}):
+            blob = " ".join(el.get("class", [])).lower() + " " + (el.get("id") or "").lower()
+            if any(h in blob for h in _BOILERPLATE_HINTS):
+                skip.add(id(el))
+
     names = []
     for img in soup.find_all("img"):
         src = (img.get("src") or img.get("data-src") or "").lower()
         if not src:
             continue
+        if skip and any(id(a) in skip for a in img.parents):
+            continue
         fname = src.split("?")[0].split("/")[-1]
         if not fname or any(x in fname for x in excludes):
             continue
         names.append(fname)
+    if not names and content_only:
+        return {"pass": None, "value": "본문 이미지 없음",
+                "hint": "GNB·푸터·로고·아이콘을 제외하면 판정할 img 가 없어 평가 대상이 아닙니다."}
     if not names:
         return {"pass": False, "value": "콘텐츠 이미지 없음",
                 "hint": "로고·아이콘을 제외하면 판정할 img 가 없습니다."}
