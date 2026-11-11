@@ -135,9 +135,10 @@ async def fetch_csr_chars(url: str, headless: bool = False) -> dict:
 
     iframe_chars = sum(frame_texts)
 
+    # iframe 은 SSR 정의상 제외 — analyzer._check_csr_chars 와 같은 기준(2026-11-06).
     return {
         "status": "ok",
-        "csr_chars": main_chars + iframe_chars,
+        "csr_chars": main_chars,
         "main_chars": main_chars,
         "iframe_chars": iframe_chars,
         "page_title": title,

@@ -30,14 +30,17 @@ def enabled() -> bool:
     return bool(MODEL_URL)
 
 
-async def label_sentence(sentence: str, client: httpx.AsyncClient) -> dict:
-    """한 문장을 판정한다. 연결 실패·HTTP 오류는 ModelUnavailable, 파싱 실패는 빈 dict."""
+async def label_sentence(sentence: str, client: httpx.AsyncClient, model: str = None) -> dict:
+    """한 문장을 판정한다. 연결 실패·HTTP 오류는 ModelUnavailable, 파싱 실패는 빈 dict.
+    model 을 주면 그 올라마 모델로 판정한다 (페이지 타입별 모델, 2026-11-07)."""
     text = sentence[:MAX_CHARS]
-    if text in _memo:
+    name = model or MODEL_NAME
+    key = (name, text)
+    if key in _memo:
         stats["hits"] += 1
-        return dict(_memo[text])
+        return dict(_memo[key])
     stats["calls"] += 1
-    body = {"model": MODEL_NAME, "stream": False, "format": "json",
+    body = {"model": name, "stream": False, "format": "json",
             "messages": [{"role": "user", "content": text}],
             "options": {"temperature": 0, "num_predict": 80}}
     try:
@@ -51,5 +54,5 @@ async def label_sentence(sentence: str, client: httpx.AsyncClient) -> dict:
     except Exception:
         return {}
     lab = {k: out.get(k) for k in ("citable", "definition", "summary", "why")}
-    _memo[text] = lab
+    _memo[key] = lab
     return dict(lab)

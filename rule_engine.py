@@ -307,6 +307,8 @@ RULE_TYPES = {
             "min_count": {"label": "최소 발견 수", "type": "number", "placeholder": "1"},
             "model": {"label": "판정 모델 사용 (AUDIT_MODEL_URL 설정 시)", "type": "select", "options": ["yes", "no"]},
             "model_scan_max": {"label": "패턴 0건일 때 모델로 훑을 최대 문장 수", "type": "number", "placeholder": "40"},
+            "model_name": {"label": "판정 모델 이름 (비우면 AUDIT_MODEL_NAME)", "type": "text", "placeholder": "hiro-v2"},
+            "model_by_type": {"label": "페이지 타입별 모델 (예: support_troubleshoot:hiro)", "type": "text", "placeholder": "support_troubleshoot:hiro"},
         },
     },
     "citable_density_min": {
@@ -320,6 +322,9 @@ RULE_TYPES = {
             "skip_noise": {"label": "약관·결제 문구 제외", "type": "select", "options": ["yes", "no"]},
             "model": {"label": "판정 모델 사용 (AUDIT_MODEL_URL 설정 시)", "type": "select", "options": ["yes", "no"]},
             "model_scan_max": {"label": "정규식 후보로 못 채우면 본문에서 모델로 훑을 최대 문장 수", "type": "number", "placeholder": "40"},
+            "model_scan_types": {"label": "본문 탐색을 할 페이지 타입 (쉼표, 비우면 전체)", "type": "text", "placeholder": "support_troubleshoot"},
+            "model_name": {"label": "판정 모델 이름 (비우면 AUDIT_MODEL_NAME)", "type": "text", "placeholder": "hiro-v2"},
+            "model_by_type": {"label": "페이지 타입별 모델 (예: support_troubleshoot:hiro)", "type": "text", "placeholder": "support_troubleshoot:hiro"},
         },
     },
     "image_filename_keyword": {
@@ -2218,6 +2223,30 @@ def _model_on(params: dict) -> bool:
     return _am.enabled() and str(params.get("model", "yes")).lower() not in ("no", "false", "0")
 
 
+def _page_type_id(ctx: dict):
+    pt = ctx.get("page_type")
+    return pt.get("id") if isinstance(pt, dict) else pt
+
+
+def _model_name(params: dict, ctx: dict):
+    """페이지 타입별 판정 모델(실험용). "support_troubleshoot:hiro" 형식, 없으면 model_name, 그것도 없으면
+    환경변수. 기본 설정은 비워 둔다 — 2026-11-10 부터 모든 페이지가 단일 모델 hiro(v5c) 를 쓴다(사용자 결정)."""
+    pt = _page_type_id(ctx)
+    for part in str(params.get("model_by_type") or "").split(","):
+        if ":" in part:
+            k, v = part.split(":", 1)
+            if pt and k.strip() == pt and v.strip():
+                return v.strip()
+    return (params.get("model_name") or "").strip() or None
+
+
+def _scan_allowed(params: dict, ctx: dict) -> bool:
+    """#36 본문 탐색 허용 타입(쉼표). 비우면 전 타입 — 기본 설정. 11-09 기준 확장(고유 기술 작동 설명·
+    구체적 사용 편익도 인용 y)으로 일반 페이지도 숫자 없는 인용문이 있어 본문을 훑는다(2026-11-10)."""
+    types = {t.strip() for t in str(params.get("model_scan_types") or "").split(",") if t.strip()}
+    return not types or _page_type_id(ctx) in types
+
+
 async def _eval_citable_density_min_async(params: dict, ctx: dict) -> dict:
     regex = _eval_citable_density_min(params, ctx)
     min_count = _citable_min_count(params, ctx)
@@ -2230,7 +2259,8 @@ async def _eval_citable_density_min_async(params: dict, ctx: dict) -> dict:
     # 정규식 후보(숫자·단위 문장)를 먼저 확인하고, 그래도 못 채우면 본문 앞 model_scan_max 문장을
     # 모델로 훑는다. 트러블슈팅 본문(원인·증상 설명)은 숫자가 없어 정규식 후보가 중앙값 1개라
     # 모델에 보이지도 않았다 (2026-10-24 사용자 결정으로 #33 과 같이 본문 탐색 추가).
-    scan_max = int(params.get("model_scan_max", 40) or 40)
+    scan_max = int(params.get("model_scan_max", 40) or 40) if _scan_allowed(params, ctx) else 0
+    model = _model_name(params, ctx)
     cand_set = set(cand["candidates"])
     body = [x for x in cand["sentences"] if x not in cand_set and len(x.strip()) > 20][:scan_max]
     confirmed, checked, whys, scanned = 0, 0, [], 0
@@ -2239,7 +2269,7 @@ async def _eval_citable_density_min_async(params: dict, ctx: dict) -> dict:
             for s in cand["candidates"] + body:
                 if confirmed >= min_count:
                     break
-                lab = await _am.label_sentence(s, client)
+                lab = await _am.label_sentence(s, client, model)
                 checked += 1
                 if s not in cand_set:
                     scanned += 1
@@ -2279,8 +2309,9 @@ async def _eval_definition_pattern_min_async(params: dict, ctx: dict) -> dict:
     path = "정규식 후보 확인" if info["matched"] else f"패턴 0건 → 본문 {len(pool)}문장 모델 탐색"
     try:
         async with httpx.AsyncClient() as client:
+            model = _model_name(params, ctx)
             for s in pool:
-                lab = await _am.label_sentence(s, client)
+                lab = await _am.label_sentence(s, client, model)
                 checked += 1
                 if lab.get("definition") == "y":
                     confirmed += 1

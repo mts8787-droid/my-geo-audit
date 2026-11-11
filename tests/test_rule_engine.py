@@ -940,7 +940,7 @@ class TestModelBackedRules(unittest.TestCase):
 
     def _fake(self, rule):
         calls = []
-        async def fake(sentence, client):
+        async def fake(sentence, client, model=None):
             calls.append(sentence)
             return rule(sentence)
         self.am.label_sentence = fake
@@ -996,7 +996,7 @@ class TestModelBackedRules(unittest.TestCase):
         self.assertEqual(len(calls), 2)
 
     def test_citable_model_unavailable_falls_back_to_regex(self):
-        async def down(sentence, client):
+        async def down(sentence, client, model=None):
             raise self.am.ModelUnavailable("connection refused")
         self.am.label_sentence = down
         r = self._run("citable_density_min", {"min_count": 3}, _ctx(self.CITABLE_HTML))
@@ -1032,3 +1032,69 @@ class TestModelBackedRules(unittest.TestCase):
         r = self._run("definition_pattern_min", {"min_count": 1}, _ctx(html))
         self.assertTrue(r["pass"])
         self.assertEqual(calls, [])
+
+
+class TestPdpCategoryBaseline(unittest.TestCase):
+    """#37 PDP 카테고리별 baseline — 카테고리 값 우선, 없으면 국가 PDP 평균."""
+
+    def setUp(self):
+        import gen_dashboard_data as G
+        self.G = G
+        self._saved = dict(G._BASELINE_CACHE)
+        G._BASELINE_CACHE.clear()
+        G._BASELINE_CACHE["grp_lg_es"] = {"pdp": {"avg_ratio": 0.65, "by_category": {
+            "audio": {"avg_ratio": 0.4}, "tv": {"avg_ratio": 0.9}}}}
+
+    def tearDown(self):
+        self.G._BASELINE_CACHE.clear()
+        self.G._BASELINE_CACHE.update(self._saved)
+
+    def test_category_value_used(self):
+        self.assertEqual(self.G._baseline_ratio("pdp", "https://www.lg.com/es/barras-de-sonido/S60T/"), 0.4)
+
+    def test_uncategorized_falls_back_to_country(self):
+        self.assertEqual(self.G._baseline_ratio("pdp", "https://www.lg.com/es/portatiles/gram-15/"), 0.65)
+
+    def test_pdp_category_skips_accessory(self):
+        from run_render_audit import pdp_category
+        self.assertEqual(pdp_category("https://www.lg.com/us/tvs/lg-oled65c5/"), "tv")
+        self.assertIsNone(pdp_category("https://www.lg.com/us/tv-audio-video-accessories/x/"))
+
+
+class TestCitableModelRouting(unittest.TestCase):
+    """#36 페이지 타입별 모델·본문 탐색 (2026-11-07). 일반 페이지는 정규식 후보만 hiro-v2 로,
+    트러블슈팅은 본문까지 hiro 로 판정한다."""
+
+    PARAMS = {"min_count": 3, "model": "yes", "model_scan_max": 40,
+              "model_scan_types": "support_troubleshoot",
+              "model_name": "hiro-v2", "model_by_type": "support_troubleshoot:hiro"}
+    HTML = ("<html><body><main><p>The dryer cuts drying time by 30% versus 2020 models. "
+            "The drain hose may be kinked or installed incorrectly and water cannot exit. "
+            "AI Sensor Dry detects humidity and adjusts the drying time automatically.</p></main></body></html>")
+
+    def _run(self, pt):
+        import asyncio
+        from unittest import mock
+        from bs4 import BeautifulSoup
+        import rule_engine as R
+        calls = []
+
+        async def fake(s, client, model=None):
+            calls.append((model, s))
+            return {"citable": "y"}
+        ctx = {"soup": BeautifulSoup(self.HTML, "html.parser"), "page_type": {"id": pt}}
+        with mock.patch.object(R._am, "enabled", return_value=True), \
+             mock.patch.object(R._am, "label_sentence", side_effect=fake):
+            asyncio.run(R._eval_citable_density_min_async(self.PARAMS, ctx))
+        return calls
+
+    def test_general_page_only_regex_candidates_with_v2(self):
+        calls = self._run("pdp")
+        self.assertEqual({m for m, _ in calls}, {"hiro-v2"})
+        self.assertEqual(len(calls), 1)
+        self.assertIn("30%", calls[0][1])
+
+    def test_troubleshoot_scans_body_with_hiro(self):
+        calls = self._run("support_troubleshoot")
+        self.assertEqual({m for m, _ in calls}, {"hiro"})
+        self.assertEqual(len(calls), 3)

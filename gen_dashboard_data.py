@@ -432,7 +432,16 @@ def _baseline_ratio(page_type, url):
         _BASELINE_CACHE.update(_cb.load_baseline_all() or {})
     gid = _cb._detect_group_id_from_url(url)
     ent = (_BASELINE_CACHE.get(gid) or {}).get(page_type)
-    return ent.get("avg_ratio") if isinstance(ent, dict) else None
+    if not isinstance(ent, dict):
+        return None
+    # PDP 는 제품군마다 템플릿이 달라 카테고리별 baseline 이 있으면 그 값을 쓴다
+    # (2026-11-07). 국가 평균 하나로는 10건 표본 운에 국가 PDP 전체가 함께 뒤집혔다.
+    if page_type == "pdp" and ent.get("by_category"):
+        from run_render_audit import pdp_category
+        sub = ent["by_category"].get(pdp_category(url) or "")
+        if isinstance(sub, dict) and sub.get("avg_ratio") is not None:
+            return sub["avg_ratio"]
+    return ent.get("avg_ratio")
 
 
 def aggregate_country(doc, cr, psi):

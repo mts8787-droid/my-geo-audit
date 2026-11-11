@@ -91,7 +91,10 @@ SKIP_TYPES |= _ENV_SKIP_TYPES
 REQUIRED_PDP_CATEGORIES = {
     "tv":           ["tv", "televis", "fernseh", "oled", "qned", "nanocell", "nghe-nhin"],
     "audio":        ["audio", "soundbar", "speaker", "lautsprecher", "altavoz", "colunas",
-                     "som", "xboom", "home-cinema", "home-theater", "loa", "am-thanh"],
+                     "som", "xboom", "home-cinema", "home-theater", "loa", "am-thanh",
+                     # ES·MX·DE·CA 오디오 PDP 가 '기타'로 빠지던 세그먼트 (2026-11-07)
+                     "altavoc", "barras-de-sonido", "sonido", "soundsuite", "sound-suite",
+                     "earbud", "headphone", "auricular", "tai-nghe"],
     "monitor":      ["monitor", "moniteur", "man-hinh"],
     # 어간으로 매칭한다 — 독일어 복수형(kuehlschraenke)이 단수 키워드에 안 걸려
     # DE 냉장고 510건이 표본에서 빠졌었다.
@@ -105,12 +108,13 @@ REQUIRED_PDP_CATEGORIES = {
     "aircon":       ["air-condition", "aircon", "klima", "aire-acondicionado",
                      "ar-condicionado", "dieu-hoa",
                      "heat-pump", "heatpump", "waermepumpe", "wärmepumpe",
-                     "bomba-de-calor", "aerotermia", "bom-nhiet", "heating-solution"],
+                     "bomba-de-calor", "aerotermia", "bom-nhiet", "heating-solution",
+                     "heating-and-cooling"],
     "aircare":      ["air-care", "air-purif", "purificador", "luftreiniger",
                      "cham-soc-khong-khi", "khong-khi", "air-solution", "air-quality"],
     "cooking":      ["cooking", "range", "oven", "cooktop", "microwave", "herd",
                      "backofen", "mikrowellen", "horno", "cocina", "cocción", "forno",
-                     "fogao", "micro-ondas", "lo-vi-song", "lo-nuong", "bep"],
+                     "fogao", "micro-ondas", "microondas", "lo-vi-song", "lo-nuong", "bep"],
     "vacuum":       ["vacuum", "staubsauger", "aspirador", "aspiradora",
                      "may-hut-bui", "hut-bui", "cordzero"],
 }
@@ -137,6 +141,15 @@ ACCESSORY_HINTS = ("accessor", "acessori", "acessorio", "zubehor", "zubehör", "
 
 def _is_accessory(seg):
     return any(w in seg for w in ACCESSORY_HINTS)
+
+
+def pdp_category(url):
+    """PDP URL → 필수 제품군 키(tv·audio·…). 액세서리·미분류는 None.
+    #37 PDP 카테고리별 baseline 조회에도 쓴다 (gen_dashboard_data)."""
+    seg = _category_seg(url)
+    if not seg or _is_accessory(seg):
+        return None
+    return next((k for k, kws in REQUIRED_PDP_CATEGORIES.items() if any(w in seg for w in kws)), None)
 
 
 def _balanced_pick(urls, per_type):
