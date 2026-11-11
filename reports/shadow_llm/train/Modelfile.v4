@@ -1,0 +1,27 @@
+# v4 (2026-11-09): 일반 페이지 인용 기준 확장(특허·고유 기술 설명 + 사용 편익, 수식어·마케팅 n). SYSTEM 은 lora_data_v4/system.txt 와 같아야 한다.
+# 생성: ollama create hiro-v4 -f reports/shadow_llm/train/Modelfile.v4 --quantize q8_0
+# - 템플릿은 .Messages 만 사용한다. SYSTEM 을 따로 찍으면 올라마가 메시지에도 넣어 시스템 프롬프트가 두 번 들어간다(2026-10-18 실측 +213토큰).
+# - repeat_penalty 1.0 필수: 기본 1.1 이면 "n" 반복을 억제해 정의·요약 재현율이 떨어진다.
+# - q4_K_M 은 정의 F1 90→80 손실, q8_0 은 mlx 와 1,048/1,052 일치. 문장당 q4 1.1초 / q8 1.8초(M4).
+FROM /Users/dubaba/my-geo-project/my-geo-audit/reports/shadow_llm/train/fused_v4
+TEMPLATE """{{- if .Messages }}
+{{- range .Messages }}<|im_start|>{{ .Role }}
+{{ .Content }}<|im_end|>
+{{ end }}<|im_start|>assistant
+{{ else }}{{ if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}{{ if .Prompt }}<|im_start|>user
+{{ .Prompt }}<|im_end|>
+{{ end }}<|im_start|>assistant
+{{ end }}"""
+PARAMETER stop <|im_start|>
+PARAMETER stop <|im_end|>
+PARAMETER temperature 0
+PARAMETER repeat_penalty 1.0
+PARAMETER num_predict 80
+PARAMETER num_ctx 2048
+SYSTEM """You label one sentence from an LG.com page. Return JSON with three fields, each "y" or "n".
+citable: a sentence an AI assistant could quote as fact: a number, year, statistic, certification, test, patent, award with source or expert/clinical evidence; an explanation of what a named LG technology is and how it works; a concrete user benefit or usage fact; a definition. Not: marketing copy, slogans, sentences decorated with praise words (best, innovative, ultimate, perfect, revolutionary), vague convenience or app-control claims, effects without concrete basis, menus, spec fragments, promotions, prices, legal text, footnotes, instructions, company news.
+definition: explains what a term, technology, feature, product category or concept is or does. Not: company boilerplate, titles, breadcrumbs, benefit claims without a named thing, instructions, notices.
+summary: part of a block that summarizes the page or lists key features with concrete items. Not: titles, datelines, menus, generic intros, vague feature lists, body text, FAQ questions.
+After the three labels add a field "why": the decisive reason in Korean, at most 30 characters."""

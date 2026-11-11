@@ -1,5 +1,5 @@
 """
-블라인드 정답(검수자가 모델 답 없이 단 y/n)으로 v2·v3·v3b·v3c 채점.
+블라인드 정답(검수자가 모델 답 없이 단 y/n)으로 v2·v3·v3b·v3c·v3d 채점.
   /usr/bin/python3 reports/shadow_llm/train/blind_eval/score_blind.py answers.json
 answers.json = 검수 페이지 '결과 복사' 내용 [{"id":"b001","c":"y","d":"n","u":1?}, ...]
 """
@@ -9,7 +9,7 @@ smp = {x["id"]: x for x in json.load(open(f"{D}/sample.json"))}
 ans = {a["id"]: a for a in json.load(open(sys.argv[1])) if a.get("c") and a.get("d")}
 def jl(p): return {json.loads(l)["id"]: json.loads(l) for l in open(p)}
 M = {"v2 (운영)": (jl(f"{T}/ollama_v2/pred_test.jsonl"), jl(f"{D}/pred_v2.jsonl"))}
-for v in ("v3", "v3b", "v3c"):
+for v in ("v3", "v3b", "v3c", "v3d"):
     M[v] = (jl(f"{T}/lora_q25_3b_{v}/pred_test_newgold.jsonl"), jl(f"{D}/pred_{v}.jsonl"))
 def pred(m, x): return (M[m][1] if x["set"] == "ts_new" else M[m][0]).get(x["src"], {})
 def f1(ids, m, k, gk):
