@@ -11,14 +11,13 @@ Hiro(Dotcom Readability Checker)의 내부 변경 이력. 큰 작업 단위로 �
 ## 진행 중 · 미결
 
 - **문장 모델 v5c 배포됨**(11-10, 올라마 `hiro` = v5c, 백업 `hiro-v3d`·`hiro-v2`). 11월 #33·#36 은 v5c 로 재판정해 `data/item_overrides.json` 으로 반영(단위 1). 12월 정기 감사(12-05)가 v5c 첫 실전.
-- **US #36 0.27** — 다른 국가(0.6~0.8)보다 크게 낮음. CSR 본문이 재수집 HTML 에 적게 담겼을 가능성, 원인 확인 필요.
-- **HS-Others #33** 재판정 전후 통과율이 같음(0.578) — 재판정이 실제로 적용됐는지 확인 필요.
+- **US PDP 기능 소개 SSR**(LG 전달): 기능 소개가 `__NEXT_DATA__` 에만 있고 DOM 에 없음 — JS 미실행 AI 크롤러는 못 읽는다. 감사는 11-12 부터 JSON 에서 읽어 판정(단위 1). US PDP #36 47%로 UK·CA(86~90%)보다 낮은 건 수치 없는 홍보형 문장 탓(실제 상태).
 - **#37 PDP 카테고리 baseline**: 식기세척기·청소기는 표본이 적은 국가가 있음. installation_guide·US microsite·DE experience 는 기존 baseline 값 유지.
 - **크롬 웹스토어**: v2.4.3 ZIP 재업로드 필요(`docs/extension-publish-guide.md`).
 
 ---
 
-## 1. 11월 #33·#36 재판정 — 문장 모델 v5c · 일반 페이지 인용 기준 확장 · #37 PDP 카테고리 baseline (2026-11-07 ~ 11-11)
+## 1. 11월 #33·#36 재판정 — 문장 모델 v5c · 일반 페이지 인용 기준 확장 · #37 PDP 카테고리 baseline · US PDP 기능 소개 (2026-11-07 ~ 11-12)
 
 11월 정기 감사 후 대시보드 갱신(`23e5ca0`) 뒤 #36 기준·모델을 다시 정함.
 
@@ -28,8 +27,10 @@ Hiro(Dotcom Readability Checker)의 내부 변경 이력. 큰 작업 단위로 �
 - **설정**: 페이지 타입별 모델(`model_by_type`·`model_name`)·본문 탐색 타입 제한(`model_scan_types`) 파라미터는 룰 엔진에 실험용으로 남기고 기본 설정에선 비움 — 전 페이지 단일 `hiro`, 전 타입 본문 탐색(10-24 동작과 같음).
 - **재판정**: 11월 run 8,583페이지 HTML 재수집 → v5c 로 #33·#36 판정(실패 6건), `data/item_overrides.json` 반영. 12월 감사부터는 측정 단계에서 바로 적용.
 - **#37 PDP 카테고리별 baseline**: PDP 는 제품군마다 템플릿이 달라 국가 평균 하나로는 10건 표본 운에 국가 PDP 전체가 뒤집힘 → `csr_baseline.json` pdp 에 `by_category`(10개국), 대시보드가 PDP 카테고리(`run_render_audit.pdp_category`)로 조회, 없으면 국가 평균. ES·MX·DE·CA 오디오 등 '기타'로 빠지던 세그먼트 보강.
-- **결과(11-07 재판정 대비)**: #36 대부분 0.6~0.8(US 0.18→0.27, UK 0.42→0.67, CA 0.37→0.70, AU 0.34→0.69, IN 0.33→0.68, Global 0.45→0.83, HS-Others 0.15→0.59). #33 은 국가별 ±4%p(Global 0.72→0.64). 총점 US 77.2 · UK 84.2 · DE 85.7 · ES 86.7 · CA 85.5 · AU 83.9 · BR 85.4 · MX 86.3 · IN 84.9 · VN 85.9 · Global 81.4 · HS-Others 85.1, 가중평균 83.26→83.85(최초 11월 84.05). BE·NL 은 9월분 유지.
+- **결과(11-07 재판정 대비)**: #36 대부분 0.6~0.8(US 0.18→0.27, UK 0.42→0.67, CA 0.37→0.70, AU 0.34→0.69, IN 0.33→0.68, Global 0.45→0.83, HS-Others 0.15→0.59). #33 은 국가별 ±4%p(Global 0.72→0.64). 총점 US 77.2 · UK 84.2 · DE 85.7 · ES 86.7 · CA 85.5 · AU 83.9 · BR 85.4 · MX 86.3 · IN 84.9 · VN 85.9 · Global 81.4 · HS-Others 85.1, 가중평균 83.26→83.85(최초 11월 84.05, US PDP 반영 후 83.97). BE·NL 은 9월분 유지.
 - 기타: `csr_local.py` CSR 글자 수에서 iframe 제외(analyzer 와 같은 기준).
+- **US PDP 기능 소개(11-12)**: US PDP(Next.js)는 기능 소개를 화면 DOM 이 아니라 `__NEXT_DATA__` 의 `cmsProductData.overview_feature_tab`(리치텍스트형·아코디언형 2종)과 번들·세트의 `packageProducts…entries[].overview_feature_tab` 에만 담아 JS 로 그린다 → #33·#36 이 상단 핵심기능·각주만 보고 판정(11월 US PDP #36 30/499). 문장 추출에 이 텍스트를 더함(이미지 메타·CMS 관리명·각주 번호 제외, 다른 국가·페이지는 영향 없음). US PDP 는 2.1MB 안팎이라 2MB 수집 상한에서 JSON 끝이 잘려 `MAX_FETCH_BYTES` 4MB 로. 61건 구조 재점검 후 11월 US PDP 499건 재판정(기능 소개 추출 447건, 절단 0): PDP #36 30→234, US #36 0.27→0.51 · #33 0.26→0.50, US 총점 77.22→78.57, 가중평균 83.85→83.97. **측정 수정이라 외부엔 LG 개선으로 설명하지 않는다.**
+- HS-Others #33 전후 동일(0.578)은 재판정 반영 확인 — 통과↔실패 19건씩 상쇄.
 
 ---
 

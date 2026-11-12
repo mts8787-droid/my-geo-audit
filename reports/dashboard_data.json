@@ -32,11 +32,11 @@
         }
       },
       "excluded_count": 337,
-      "total_avg": 77.22,
+      "total_avg": 78.57,
       "max": 100,
       "grade_dist": {
-        "Need Improvement": 683,
-        "Good": 153,
+        "Good": 264,
+        "Need Improvement": 572,
         "Poor": 1
       },
       "breakdown": {
@@ -70,9 +70,9 @@
         },
         "citable_content": {
           "label": "고인용 콘텐츠",
-          "points_avg": 35.54,
+          "points_avg": 47.52,
           "max": 100,
-          "pass_rate": 0.3562,
+          "pass_rate": 0.4727,
           "items_n": 5
         },
         "ai_crawlability": {
@@ -231,7 +231,7 @@
         "ai_definition": {
           "label": "#33 Definition Paragraph",
           "category": "citable_content",
-          "pass_rate": 0.2628,
+          "pass_rate": 0.4982,
           "applicable_n": 837
         },
         "ai_summary_box": {
@@ -243,7 +243,7 @@
         "ai_citable": {
           "label": "#36 Citable Sentence ≥ 5개 (트러블슈팅·PLP 3개)",
           "category": "citable_content",
-          "pass_rate": 0.2664,
+          "pass_rate": 0.5102,
           "applicable_n": 837
         },
         "ai_ssr_ratio": {
@@ -5208,7 +5208,7 @@
       "home": 4,
       "promotion": 177
     },
-    "total_avg_weighted": 83.85,
+    "total_avg_weighted": 83.97,
     "missing": []
   }
 }

@@ -14,8 +14,9 @@ from rule_engine import evaluate_rule, evaluate_rule_async, RULE_TYPES
 _playwright_sem = asyncio.Semaphore(int(os.environ.get("PLAYWRIGHT_CONCURRENCY", 15)))
 
 # 응답 본문 크기 상한: 거대 응답(압축 폭탄 포함)이 512MB 인스턴스를 OOM시키는 것 방지.
-# 정상 LG 페이지는 대개 <500KB라 2MB면 본문 채점에 충분. 초과분은 절단.
-MAX_FETCH_BYTES = int(os.environ.get("MAX_FETCH_BYTES", 2 * 1024 * 1024))
+# 초과분은 절단. US(Next.js) 페이지는 1.5~2.6MB 라 2MB 에서 끝의 __NEXT_DATA__ 가
+# 잘려 PDP 기능 소개 본문을 못 읽었다 → 4MB (2026-11-12).
+MAX_FETCH_BYTES = int(os.environ.get("MAX_FETCH_BYTES", 4 * 1024 * 1024))
 
 # 벌크 분석 시 동시 요청 제한
 _bulk_sem = asyncio.Semaphore(50)

@@ -1555,6 +1555,84 @@ def _visible_text(soup, strip_boilerplate: bool = False) -> str:
     return " ".join(p.strip() for p in parts if p.strip())
 
 
+def _next_pdp_overview(soup) -> str:
+    """US PDP(Next.js) 기능 소개 본문 — 화면 DOM 에 없고 __NEXT_DATA__ 의
+    cmsProductData.overview_feature_tab 를 JS 가 그린다. DOM 만 보면 US PDP 본문은
+    상단 핵심기능 블록·각주뿐이라 #33·#36 이 기능 소개를 못 봤다
+    (2026-11-12 실측, 11월 US PDP #36 30/499). 템플릿이 둘이다 — feature_tab 의
+    headline + 리치텍스트 body(모니터·TV 등), tab_collection…bynder_accordion 의
+    HTML title·body(냉장고·세탁기 등). 그래서 경로를 고정하지 않고 그 아래 headline·
+    title·body 를 모은다. media(이미지 메타)는 제외, 각주 위첨자는 뺀다. HTML 이 아닌
+    title 은 CMS 관리명("Monitor-25G590B-B-features-…")이라 쓰지 않는다.
+    번들·세트(모니터 컬렉션·사운드 스위트·주방 패키지·세탁 세트)는 구성 제품마다
+    productData.packageProducts.relatedItemOptions[].entries[].overview_feature_tab 에 있다.
+    다른 페이지·국가는 빈 문자열."""
+    import json as _json
+    tag = soup.find("script", id="__NEXT_DATA__")
+    if not tag or not tag.string or "overview_feature_tab" not in tag.string:
+        return ""
+    try:
+        pp = _json.loads(tag.string)["props"]["pageProps"]
+        tabs = list((pp.get("cmsProductData") or {}).get("overview_feature_tab") or [])
+        pkg = (pp.get("productData") or {}).get("packageProducts") or {}
+        for opt in pkg.get("relatedItemOptions") or []:
+            for ent in (opt.get("entries") or []) if isinstance(opt, dict) else []:
+                if isinstance(ent, dict):
+                    tabs += ent.get("overview_feature_tab") or []
+    except (ValueError, KeyError, TypeError, AttributeError):
+        return ""
+
+    def rich(node):
+        if isinstance(node, list):
+            return "".join(rich(c) for c in node)
+        if not isinstance(node, dict):
+            return ""
+        if node.get("superscript"):  # 각주 번호 — 뒤 공백까지 들고 있어 빈칸으로 바꾼다
+            return " "
+        if isinstance(node.get("text"), str):
+            return node["text"]
+        inner = rich(node.get("children") or [])
+        return inner + "\n\n" if node.get("type") in ("p", "li", "h2", "h3", "h4") else inner
+
+    def html(text):
+        frag = BeautifulSoup(text, "html.parser")
+        for sup in frag.find_all("sup"):
+            sup.replace_with(" ")
+        for blk in frag.find_all(["p", "li", "h2", "h3", "h4", "br"]):
+            blk.append("\n\n")
+        return frag.get_text()
+
+    parts = []
+
+    def walk(x):
+        if isinstance(x, list):
+            for v in x:
+                walk(v)
+        elif isinstance(x, dict):
+            for k, v in x.items():
+                if k == "media":
+                    continue
+                if k in ("headline", "title", "body") and isinstance(v, str) and v.strip():
+                    if k == "title" and "<" not in v:
+                        continue
+                    parts.extend(html(v).split("\n\n"))
+                elif k == "body" and isinstance(v, dict):
+                    parts.extend(rich(v).split("\n\n"))
+                else:
+                    walk(v)
+
+    walk(tabs)
+    parts = [re.sub(r"[ \t]{2,}", " ", re.sub(r"[¹²³⁰⁴-⁹]+", "", x)).strip() for x in parts]
+    return "\n\n".join(dict.fromkeys(x for x in parts if x))
+
+
+def _content_text(soup) -> str:
+    """#33·#36 문장 추출용 본문 — 보일러플레이트 뺀 화면 텍스트 + US PDP 기능 소개."""
+    text = _visible_text(soup, strip_boilerplate=True)
+    extra = _next_pdp_overview(soup)
+    return f"{text}\n\n{extra}" if extra else text
+
+
 def _eval_definition_pattern_min(params: dict, ctx: dict) -> dict:
     soup = ctx.get("soup")
     if not soup:
@@ -1562,7 +1640,7 @@ def _eval_definition_pattern_min(params: dict, ctx: dict) -> dict:
     min_count = int(params.get("min_count", 1))
 
     dfn_count = len(soup.find_all(["dfn", "abbr"]))
-    text = _visible_text(soup, strip_boilerplate=True)
+    text = _content_text(soup)
     # 문장 단위로 보고 약관·결제·상표 고지 문장은 뺀다. 'PayPal Credit is a regulated
     # credit agreement' 같은 고지문이 정의문 패턴에 걸려 #33 오탐의 대부분을 차지했다.
     # 같은 문장이 Shadow DOM 과 일반 DOM 양쪽에서 추출돼 두 번 세어지는 일이 있어 중복을 걷어낸다.
@@ -1803,7 +1881,7 @@ def _eval_citable_density_min(params: dict, ctx: dict) -> dict:
         return {"pass": False, "value": None, "hint": "HTML 파싱 실패"}
 
     # GNB/푸터가 분모를 부풀려 밀도를 낮추므로 보일러플레이트를 제외한다
-    text = _visible_text(soup, strip_boilerplate=True)
+    text = _content_text(soup)
     sentences = list(dict.fromkeys(s for s in re.split(r"(?<=[.!?。\n])\s+", text) if len(s.strip()) > 5))
     if not sentences:
         return {"pass": False, "value": "문장 없음", "hint": "분석할 문장이 없습니다."}

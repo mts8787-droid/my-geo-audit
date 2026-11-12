@@ -20,6 +20,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from rule_engine import (  # noqa: E402
     evaluate_rule, evaluate_rule_async, _HANDLERS, _ASYNC_HANDLERS, RULE_TYPES,
     _detect_country_dir, _CITABLE_NOISE, _CITABLE_PATTERNS, _visible_text,
+    _next_pdp_overview, _eval_citable_density_min,
 )
 
 
@@ -920,6 +921,44 @@ class TestJudgedCorpusR1(unittest.TestCase):
 
     def test_definition_keeps_real_definition(self):
         self.assertTrue(self._def("LG is a world-leading producer of TVs, refrigerators and air conditioners."))
+
+
+class TestUsPdpOverview(unittest.TestCase):
+    """US PDP 기능 소개는 __NEXT_DATA__ 에만 있다 — #33·#36 문장에 넣는다 (2026-11-12)."""
+
+    def _soup(self, overview):
+        import json as _j
+        data = {"props": {"pageProps": {"cmsProductData": {"overview_feature_tab": overview}}}}
+        return BeautifulSoup(f'<html><body><p>Top block.</p><script id="__NEXT_DATA__" type="application/json">{_j.dumps(data)}</script></body></html>', "html.parser")
+
+    def test_rich_text_template(self):
+        soup = self._soup([{"feature_tab": [{"title": "Monitor-X-features-a", "headline": "Less Blur<sup>1</sup>",
+                                             "body": {"type": "doc", "children": [{"type": "p", "children": [
+                                                 {"text": "MBR Pro reduces blur by 20"}, {"text": "2 ", "superscript": True}, {"text": "percent."}]}]},
+                                             "media": [{"textMetaproperties": [{"value": "alt text here"}]}]}]}])
+        text = _next_pdp_overview(soup)
+        self.assertEqual(text.split("\n\n"), ["Less Blur", "MBR Pro reduces blur by 20 percent."])
+
+    def test_accordion_html_template(self):
+        soup = self._soup([{"feature_tab": [{"tab_collection": [{"component": [{"accordion_collection": [{"bynder_accordion": {
+            "title": "<p>Twice the ice</p>", "body": "<p>With 31 cu. ft. capacity¹ you get more.</p>"}}]}]}]}]}])
+        self.assertEqual(_next_pdp_overview(soup).split("\n\n"), ["Twice the ice", "With 31 cu. ft. capacity you get more."])
+
+    def test_citable_sees_overview(self):
+        soup = self._soup([{"feature_tab": [{"headline": "<p>Fast</p>", "body": "<p>Delivers 1000Hz refresh for 25% less blur.</p>"}]}])
+        info = _eval_citable_density_min({"_return_sentences": 1}, {"soup": soup})
+        self.assertIn("Delivers 1000Hz refresh for 25% less blur.", info["candidates"])
+
+    def test_package_products_overview(self):
+        import json as _j
+        ent = {"overview_feature_tab": [{"feature_tab": [{"headline": "<p>Swing stand</p>", "body": "<p>Rolls 360 degrees.</p>"}]}]}
+        data = {"props": {"pageProps": {"cmsProductData": {}, "productData": {"packageProducts": {"relatedItemOptions": [{"entries": [ent]}]}}}}}
+        soup = BeautifulSoup(f'<script id="__NEXT_DATA__" type="application/json">{_j.dumps(data)}</script>', "html.parser")
+        self.assertEqual(_next_pdp_overview(soup).split("\n\n"), ["Swing stand", "Rolls 360 degrees."])
+
+    def test_no_next_data_unchanged(self):
+        soup = BeautifulSoup("<html><body><p>Plain page.</p></body></html>", "html.parser")
+        self.assertEqual(_next_pdp_overview(soup), "")
 
 
 if __name__ == "__main__":

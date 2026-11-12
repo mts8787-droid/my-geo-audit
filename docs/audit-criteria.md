@@ -313,6 +313,7 @@ PLP(`plp`)는 3개 이상이면 통과**(룰 파라미터 `min_count_by_type`, 2
 - **모델 v5c(2026-11-10 배포, `hiro`)**: 일반 문장은 v2 라벨, 트러블슈팅은 10-24 기준 라벨, 트러블슈팅 비중 13%·1000 iters. 블라인드(모델 답 비공개) 인용 F1 — 일반 199(새 기준): v5c 79.7 · v2 85.2 · v3d 70.3 · v4 68.6 / 트러블슈팅 100: v5c 68.2 · v3d 54.1 · v2 8.3 / 11월 재판정 142: v5c 57.1 · v2 40.0. 일반 라벨을 Claude 로 재라벨한 v3·v4 와 트러블슈팅 비중 45% 인 v5 는 일반 문장 y 과다·과소로 탈락. 백업 `hiro-v3d`. `reports/shadow_llm/train/blind_eval/`, `build_lora_v5c.py`.
 - **트러블슈팅 인용 기준(2026-10-24 사용자 결정)**: 증상의 원인 설명문·증상(동작) 설명문은 인용 y. 버튼·메뉴 지시문은 그대로 n. `GUIDELINE_TS.md` 끝 절.
 - 본문 문장 추출에서 nav/header/footer·쿠키·프로모 배너·숨은 모달(`modal`/`dialog`)을 제외한다. US help-library 의 브라우저 안내 모달 문장이 #33 을 67/100 허위 통과시킨 사례(2026-10-19).
+- US PDP(Next.js)는 기능 소개를 DOM 이 아니라 `__NEXT_DATA__` 의 `overview_feature_tab`(단품 `cmsProductData`, 번들·세트 `productData.packageProducts…entries[]`)에만 담는다 — #33·#36 은 이 헤드라인·본문도 문장으로 본다(이미지 메타·CMS 관리명·각주 번호 제외, 2026-11-12). 수집 상한 4MB.
 
 ### 클래스·선택자 매칭 항목
 
