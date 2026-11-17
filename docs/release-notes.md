@@ -31,6 +31,7 @@ Hiro(Dotcom Readability Checker)의 내부 변경 이력. 큰 작업 단위로 �
 - 기타: `csr_local.py` CSR 글자 수에서 iframe 제외(analyzer 와 같은 기준).
 - **US PDP 기능 소개(11-12)**: US PDP(Next.js)는 기능 소개를 화면 DOM 이 아니라 `__NEXT_DATA__` 의 `cmsProductData.overview_feature_tab`(리치텍스트형·아코디언형 2종)과 번들·세트의 `packageProducts…entries[].overview_feature_tab` 에만 담아 JS 로 그린다 → #33·#36 이 상단 핵심기능·각주만 보고 판정(11월 US PDP #36 30/499). 문장 추출에 이 텍스트를 더함(이미지 메타·CMS 관리명·각주 번호 제외, 다른 국가·페이지는 영향 없음). US PDP 는 2.1MB 안팎이라 2MB 수집 상한에서 JSON 끝이 잘려 `MAX_FETCH_BYTES` 4MB 로. 61건 구조 재점검 후 11월 US PDP 499건 재판정(기능 소개 추출 447건, 절단 0): PDP #36 30→234, US #36 0.27→0.51 · #33 0.26→0.50, US 총점 77.22→78.57, 가중평균 83.85→83.97. **측정 수정이라 외부엔 LG 개선으로 설명하지 않는다.**
 - HS-Others #33 전후 동일(0.578)은 재판정 반영 확인 — 통과↔실패 19건씩 상쇄.
+- 검사 화면(11-18): 첫 화면 설명 아래에 "매월 5일 정기 검사 · 10일 GEO 대시보드 반영" 안내와 대시보드 Readability·검수 기준 페이지 링크 추가. 채점 영향 없음. 도구 소개 `docs/hiro-소개.md`(JOY Reference 에도 게시).
 
 ---
 
