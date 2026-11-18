@@ -43,6 +43,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .brand-sub { color: #94A3B8; font-size: 13px; font-weight: 600; padding-left: 12px; border-left: 1px solid var(--navy-3); }
     .btn-ghost { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: #E2E8F0; padding: 7px 14px; border-radius: 8px; border: 1px solid var(--navy-3); background: rgba(255,255,255,.04); transition: all .15s; }
     .btn-ghost:hover { border-color: #64748B; color: #fff; }
+    .lang-seg { display: inline-flex; border: 1px solid var(--navy-3); border-radius: 8px; padding: 2px; gap: 2px; }
+    .lang-pill { font-size: 12px; font-weight: 700; color: #94A3B8; padding: 4px 10px; border-radius: 6px; }
+    .lang-pill.active { background: #fff; color: var(--navy); }
 
     /* 히어로 */
     .hero { background: var(--navy); color: #fff; padding: 56px 0 104px; }
@@ -140,6 +143,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .hero-stat-val { font-size: 26px; }
       .brand-sub { display: none; }
       .console-head, .console-body, .console-scope { padding-left: 16px; padding-right: 16px; }
+      .btn-ghost span { display: none; }
     }
   </style>
 </head>
@@ -156,12 +160,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="brand-name">Hiro</span>
       <span class="brand-sub">Dotcom Readability Checker</span>
     </div>
+    <div class="flex items-center gap-2">
+    <div id="langToggle" class="lang-seg" role="group" aria-label="Language">
+      <button type="button" data-lang="ko" class="lang-pill active">KO</button>
+      <button type="button" data-lang="en" class="lang-pill">EN</button>
+    </div>
     <a href="/static/hiro-extension.zip" download="hiro-for-lge-v2.4.3.zip" class="btn-ghost">
       <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
       </svg>
-      확장 프로그램 다운로드
+      <span data-i18n="extDownload">확장 프로그램 다운로드</span>
     </a>
+    </div>
   </div>
 </header>
 
@@ -171,40 +181,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="lg:col-span-7">
       <p class="eyebrow mb-5">AI Readability Audit · LG.com</p>
       <h1 class="hero-title mb-5">
-        이 페이지, AI가 제대로 읽을까요?<br/>
-        <em>히로가 39개 항목으로 검사합니다.</em>
+        <span data-i18n="heroTitle">이 페이지, AI가 제대로 읽을까요?</span><br/>
+        <em data-i18n="heroTitleEm">히로가 39개 항목으로 검사합니다.</em>
       </h1>
-      <p class="hero-desc mb-4 max-w-xl">
+      <p class="hero-desc mb-4 max-w-xl" data-i18n="heroDesc">
         URL을 넣으면 사이트 성능 · 웹접근성 · Basic SEO · 스키마마크업 · 고인용 콘텐츠 · AI&nbsp;Crawlability를 채점하고,
         항목마다 판정 근거를 함께 보여줍니다.
       </p>
       <p class="hero-desc mb-9 max-w-xl">
-        매월 5일 전략 10개국 정기 검사를 시행하고, 매월 10일 결과를 GEO 대시보드에 올립니다.
-        <a href="https://my-geo-newsletter.onrender.com/p/GEO-KPI-Dashboard-KO-readability" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:3px">GEO 대시보드 Readability 보기 ↗</a>
-        · <a href="https://my-geo-newsletter.onrender.com/p/GEO-Readability-Criteria" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:3px">검수 기준 보기 ↗</a>
+        <span data-i18n="heroSchedule">매월 5일 전략 10개국 정기 검사를 시행하고, 매월 10일 결과를 GEO 대시보드에 올립니다.</span>
+        <a href="https://my-geo-newsletter.onrender.com/p/GEO-KPI-Dashboard-KO-readability" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:3px" data-i18n="linkReadability">GEO 대시보드 Readability 보기 ↗</a>
+        · <a href="https://my-geo-newsletter.onrender.com/p/GEO-Readability-Criteria" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:3px" data-i18n="linkCriteria">검수 기준 보기 ↗</a>
       </p>
       <div class="hero-stats max-w-lg">
         <div class="hero-stat">
-          <div><span class="hero-stat-val num">6</span><span class="hero-stat-unit">개</span></div>
-          <p class="hero-stat-label">검사 카테고리</p>
+          <div><span class="hero-stat-val num">6</span><span class="hero-stat-unit" data-i18n="unitCount">개</span></div>
+          <p class="hero-stat-label" data-i18n="statCategories">검사 카테고리</p>
         </div>
         <div class="hero-stat">
-          <div><span class="hero-stat-val num">39</span><span class="hero-stat-unit">개</span></div>
-          <p class="hero-stat-label">채점 항목</p>
+          <div><span class="hero-stat-val num">39</span><span class="hero-stat-unit" data-i18n="unitCount">개</span></div>
+          <p class="hero-stat-label" data-i18n="statItems">채점 항목</p>
         </div>
         <div class="hero-stat">
-          <div><span class="hero-stat-val num">100</span><span class="hero-stat-unit">점</span></div>
-          <p class="hero-stat-label">통과 항목 / 전체 항목</p>
+          <div><span class="hero-stat-val num">100</span><span class="hero-stat-unit" data-i18n="unitPoints">점</span></div>
+          <p class="hero-stat-label" data-i18n="statFormula">통과 항목 / 전체 항목</p>
         </div>
       </div>
     </div>
     <div class="lg:col-span-5">
       <figure class="persona mx-auto">
         <span class="persona-tag">Audit Agent</span>
-        <img src="/static/img/hiro.jpg" alt="히로 — 안경을 쓰고 자와 채점지를 든 회색 고양이" width="880" height="746"/>
+        <img src="/static/img/hiro.jpg" data-i18n-alt="personaAlt" alt="히로 — 안경을 쓰고 자와 채점지를 든 회색 고양이" width="880" height="746"/>
         <figcaption class="persona-cap">
-          <p class="persona-name">Hiro · 히로</p>
-          <p class="persona-role">LG.com 페이지를 AI의 눈으로 읽고 채점하는 검수 에이전트</p>
+          <p class="persona-name" data-i18n="personaName">Hiro · 히로</p>
+          <p class="persona-role" data-i18n="personaRole">LG.com 페이지를 AI의 눈으로 읽고 채점하는 검수 에이전트</p>
         </figcaption>
       </figure>
     </div>
@@ -216,10 +226,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- Input console -->
   <div class="console mb-10">
     <div class="console-head">
-      <h2 class="console-title">페이지 검사</h2>
+      <h2 class="console-title" data-i18n="consoleTitle">페이지 검사</h2>
       <div class="seg" role="tablist">
-        <button id="tabSingle" onclick="switchTab('single')" class="seg-btn active">단일 URL</button>
-        <button id="tabBulk" onclick="switchTab('bulk')" class="seg-btn">다중 URL</button>
+        <button id="tabSingle" onclick="switchTab('single')" class="seg-btn active" data-i18n="tabSingle">단일 URL</button>
+        <button id="tabBulk" onclick="switchTab('bulk')" class="seg-btn" data-i18n="tabBulk">다중 URL</button>
       </div>
     </div>
 
@@ -240,28 +250,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
           </svg>
-          분석하기
+          <span data-i18n="analyze">분석하기</span>
         </button>
       </div>
-      <p class="text-xs text-slate-400 mt-3 mb-2 ml-1">예시: www.lg.com/us/tvs, www.lg.com/uk/support/product-help/...</p>
+      <p class="text-xs text-slate-400 mt-3 mb-2 ml-1"><span data-i18n="examples">예시:</span> www.lg.com/us/tvs, www.lg.com/uk/support/product-help/...</p>
     </div>
 
     <!-- Input: Bulk -->
     <div id="inputBulk" class="hidden console-body">
       <div class="flex items-center justify-between mb-2 gap-2 flex-wrap">
-        <label class="text-sm font-semibold text-slate-700">URL 목록 <span class="text-slate-400 font-normal">(한 줄에 하나씩, 최대 50개)</span></label>
+        <label class="text-sm font-semibold text-slate-700"><span data-i18n="urlList">URL 목록</span> <span class="text-slate-400 font-normal" data-i18n="urlListHint">(한 줄에 하나씩, 최대 50개)</span></label>
         <div class="flex gap-2">
           <button onclick="downloadTemplate()" class="btn-line">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
             </svg>
-            템플릿 다운로드
+            <span data-i18n="templateDownload">템플릿 다운로드</span>
           </button>
           <button onclick="document.getElementById('csvFileInput').click()" class="btn-line">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/>
             </svg>
-            CSV 업로드
+            <span data-i18n="csvUpload">CSV 업로드</span>
           </button>
           <input type="file" id="csvFileInput" accept=".csv,.txt" class="hidden" onchange="handleCsvUpload(event)"/>
         </div>
@@ -269,12 +279,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <textarea id="urlsInput" rows="8" placeholder="https://www.lg.com/us/tvs/...&#10;https://www.lg.com/uk/refrigerators/...&#10;https://www.lg.com/de/support/..."
         class="field px-4 py-3 text-sm font-mono resize-y"></textarea>
       <div class="flex items-center justify-between mt-3 mb-2 gap-3 flex-wrap">
-        <p id="bulkUrlCount" class="text-xs text-slate-400">URL이 없으면 https:// 를 자동으로 추가합니다.</p>
+        <p id="bulkUrlCount" class="text-xs text-slate-400" data-i18n="autoHttps">URL이 없으면 https:// 를 자동으로 추가합니다.</p>
         <button id="analyzeBulkBtn" onclick="startBulkAnalysis()" class="btn-primary px-6 py-2.5">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
           </svg>
-          일괄 분석
+          <span data-i18n="analyzeBulk">일괄 분석</span>
         </button>
       </div>
     </div>
@@ -282,8 +292,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Audit Scope Selector -->
     <div class="console-scope">
       <div id="scopeSelector" class="flex flex-wrap items-center gap-2">
-        <span class="section-label mr-2">검사 항목</span>
-        <button onclick="setScope('all')" data-scope="all" class="scope-pill active">전체</button>
+        <span class="section-label mr-2" data-i18n="scopeLabel">검사 항목</span>
+        <button onclick="setScope('all')" data-scope="all" class="scope-pill active" data-i18n="scopeAll">전체</button>
         <button onclick="setScope('performance')" data-scope="performance" class="scope-pill">Performance</button>
         <button onclick="setScope('accessibility')" data-scope="accessibility" class="scope-pill">Accessibility</button>
         <button onclick="setScope('seo')" data-scope="seo" class="scope-pill">SEO</button>
@@ -291,7 +301,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <button onclick="setScope('schema')" data-scope="schema" class="scope-pill">Schema Only</button>
       </div>
       <div id="schemaSub" class="hidden flex flex-wrap items-center gap-2 mt-3">
-        <span class="text-xs text-slate-400 mr-1">스키마 종류:</span>
+        <span class="text-xs text-slate-400 mr-1" data-i18n="schemaTypes">스키마 종류:</span>
         <button onclick="toggleSchemaType(this)" data-type="Product" class="schema-chip active">Product</button>
         <button onclick="toggleSchemaType(this)" data-type="FAQPage" class="schema-chip active">FAQPage</button>
         <button onclick="toggleSchemaType(this)" data-type="BreadcrumbList" class="schema-chip active">BreadcrumbList</button>
@@ -304,12 +314,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div id="loading" class="hidden text-center py-16">
     <div class="spinner mx-auto mb-4"></div>
     <p id="loadingMsg" class="text-slate-500 font-medium">AI 최적화 상태를 분석 중입니다…</p>
-    <p class="text-slate-400 text-sm mt-1">SEO 태그 · robots.txt · JSON-LD · llms.txt · FAQ · 요약 영역 확인 중</p>
+    <p class="text-slate-400 text-sm mt-1" data-i18n="loadingSub">SEO 태그 · robots.txt · JSON-LD · llms.txt · FAQ · 요약 영역 확인 중</p>
   </div>
 
   <!-- Error -->
   <div id="errorBox" class="hidden bg-red-50 border border-red-200 rounded-2xl p-5 text-red-700 mb-6">
-    <strong class="font-semibold">오류:</strong> <span id="errorMsg"></span>
+    <strong class="font-semibold" data-i18n="errorLabel">오류:</strong> <span id="errorMsg"></span>
   </div>
 
   <!-- Bulk Results -->
@@ -318,7 +328,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="bulkAvgCard" class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6 fade-up fade-up-1 opacity-0">
       <div class="flex items-center justify-between mb-4">
         <div>
-          <p class="section-label mb-1">전체 평균 GEO 점수</p>
+          <p class="section-label mb-1" data-i18n="avgScore">전체 평균 GEO 점수</p>
           <div class="flex items-baseline gap-2">
             <span id="bulkAvgScore" class="text-5xl font-black text-slate-800">0</span>
             <span class="text-xl text-slate-400 font-medium">/ 100</span>
@@ -326,7 +336,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
         <div class="text-right">
-          <p class="section-label mb-1">분석 결과</p>
+          <p class="section-label mb-1" data-i18n="resultsLabel">분석 결과</p>
           <p id="bulkSummaryText" class="text-sm text-slate-500"></p>
         </div>
       </div>
@@ -338,19 +348,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- URL Table -->
     <div class="card bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden">
       <div class="px-6 py-4 border-b border-slate-100 flex items-center justify-between">
-        <h2 class="font-bold text-slate-800">페이지별 분석 결과</h2>
+        <h2 class="font-bold text-slate-800" data-i18n="resultsByPage">페이지별 분석 결과</h2>
         <div class="flex items-center gap-2">
           <button onclick="exportBulkCSV()" class="btn-line">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
             </svg>
-            요약 CSV
+            <span data-i18n="summaryCsv">요약 CSV</span>
           </button>
           <button onclick="exportBulkDetailCSV()" class="btn-line">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
             </svg>
-            상세 CSV (49항목)
+            <span data-i18n="detailCsv">상세 CSV (항목별)</span>
           </button>
         </div>
       </div>
@@ -384,7 +394,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="flex justify-end">
       <button onclick="downloadRawJson()" id="rawDownloadBtn"
               class="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-600 hover:bg-slate-50 shadow-sm">
-        ⬇ Raw JSON 다운로드
+        <span data-i18n="rawDownload">⬇ Raw JSON 다운로드</span>
       </button>
     </div>
 
@@ -392,7 +402,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="scoreCard" class="card bg-white rounded-2xl shadow-md border border-slate-100 p-8 fade-up fade-up-1 opacity-0">
       <!-- Page type badge (hidden if absent) -->
       <div id="pageTypeBadge" class="hidden mb-3 flex items-center gap-2 text-xs">
-        <span class="text-slate-400">페이지 타입</span>
+        <span class="text-slate-400" data-i18n="pageType">페이지 타입</span>
         <span id="pageTypeLabel" class="px-2.5 py-1 rounded-md bg-slate-900 text-white font-semibold"></span>
         <span id="pageTypeMatchedBy" class="text-slate-400 font-mono"></span>
       </div>
@@ -407,8 +417,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p id="gradeLabel" class="text-slate-500 text-sm mt-0.5"></p>
         </div>
         <div class="ml-auto text-right hidden sm:block">
-          <p class="section-label">GEO 종합 점수</p>
-          <p class="text-xs text-slate-400 mt-0.5">AI 엔진 최적화 수준</p>
+          <p class="section-label" data-i18n="overallScore">GEO 종합 점수</p>
+          <p class="text-xs text-slate-400 mt-0.5" data-i18n="overallScoreSub">AI 엔진 최적화 수준</p>
         </div>
       </div>
 
@@ -420,7 +430,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <!-- Per-category breakdown -->
-      <p class="section-label mb-3">항목별 점수</p>
+      <p class="section-label mb-3" data-i18n="scoreByCategory">항목별 점수</p>
       <div id="scoreBreakdown" class="space-y-3"></div>
     </div>
 
@@ -461,6 +471,204 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     reviews_ssr:       { label: '리뷰 SSR',       color: '#86efac' },
     csr_ratio:         { label: 'SSR/CSR 비중',   color: '#0F172A' },
   };
+
+  // ── i18n (KO / EN) ─────────────────────────────────────────────────────────
+  // 화면 문구는 STR, 판정 결과(항목명·근거)는 서버 i18n_en.py 의 변환표(/i18n/en)로
+  // 브라우저에서 바꾼다. 분석은 항상 원문(KO)으로 받아 두고 언어를 바꾸면 다시 그린다.
+  const STR = {
+    ko: {
+      urlsEntered: '{n}개 URL 입력됨', overLimit: ' — 최대 50개 초과!', autoHttps: 'URL이 없으면 https:// 를 자동으로 추가합니다.',
+      analyzing: '분석 중입니다…', analyzingN: '{n}개 URL 분석 중…', loadingDefault: 'AI 최적화 상태를 분석 중입니다…',
+      errNotJson: '서버가 JSON 응답을 반환하지 않았습니다. 서버 상태를 확인해주세요.', errFailed: '분석 실패',
+      errNoUrl: 'URL을 하나 이상 입력해주세요.', errMax50: '최대 50개 URL까지 분석할 수 있습니다.',
+      succeeded: '총 {n}개 중 {s}개 성공', thScore: '점수', thGrade: '등급', thDetail: '상세', thError: '오류',
+      errBlocked: '오류/차단됨', notFound: '미발견', nFound: '{n}개 발견', pts: '점', viewDetail: '상세 보기',
+      alertBlocked: '접속 에러 또는 봇 차단이 발생했습니다:', alertSchemas: '발견된 스키마 종류: {types}\n총 {n}개 발견', none: '없음',
+      noDetailData: '상세 데이터가 있는 결과가 없습니다.', jsonldSchemas: 'JSON-LD 스키마 ({n}개)',
+      fetchFailed: '페이지를 가져오지 못했습니다', fetchFailedWhy: '아래 항목들이 모두 "HTML 파싱 실패"로 표시되는 이유입니다.',
+      nPassed: '{p}/{n} 통과', naTitle: '이 page type 대상이 아닌 항목 수', noActive: '활성 점검 항목이 없습니다.',
+      gradeGood: '훌륭한 AI 최적화', gradeNeed: '개선이 필요합니다', gradePoor: 'AI 최적화 미흡',
+    },
+    en: {
+      urlsEntered: '{n} URL(s) entered', overLimit: ' — over the 50 limit!', autoHttps: 'https:// is added automatically if missing.',
+      analyzing: 'Analyzing…', analyzingN: 'Analyzing {n} URL(s)…', loadingDefault: 'Analyzing AI readiness…',
+      errNotJson: 'The server did not return JSON. Please check the server status.', errFailed: 'Analysis failed',
+      errNoUrl: 'Enter at least one URL.', errMax50: 'You can analyze up to 50 URLs at a time.',
+      succeeded: '{s} of {n} succeeded', thScore: 'Score', thGrade: 'Grade', thDetail: 'Details', thError: 'Error',
+      errBlocked: 'Error/blocked', notFound: 'Not found', nFound: '{n} found', pts: ' pts', viewDetail: 'View details',
+      alertBlocked: 'Connection error or bot blocking occurred:', alertSchemas: 'Schema types found: {types}\n{n} found in total', none: 'none',
+      noDetailData: 'No results with item details.', jsonldSchemas: 'JSON-LD schemas ({n})',
+      fetchFailed: 'Could not fetch the page', fetchFailedWhy: 'This is why every item below shows "HTML parsing failed".',
+      nPassed: '{p}/{n} passed', naTitle: 'Items not applicable to this page type', noActive: 'No active checks.',
+      gradeGood: 'Well optimized for AI', gradeNeed: 'Needs improvement', gradePoor: 'Poorly optimized for AI',
+      // 정적 화면 (data-i18n)
+      extDownload: 'Download extension', heroTitle: 'Can AI actually read this page?',
+      heroTitleEm: 'Hiro checks it against 39 items.',
+      heroDesc: 'Enter a URL and Hiro scores Site Performance · Web Accessibility · Basic SEO · Schema Markup · Citable Content · AI&nbsp;Crawlability, showing the evidence behind every item.',
+      heroSchedule: 'The 10 strategic countries are checked on the 5th of every month, and results are posted to the GEO Dashboard on the 10th.',
+      linkReadability: 'GEO Dashboard Readability ↗', linkCriteria: 'Audit criteria ↗',
+      unitCount: '', unitPoints: 'pts', statCategories: 'Categories', statItems: 'Scored items', statFormula: 'Passed / total items',
+      personaName: 'Hiro',
+      personaAlt: 'Hiro — a grey cat with glasses holding a ruler and a score sheet',
+      personaRole: 'An audit agent that reads LG.com pages through the eyes of AI and scores them',
+      consoleTitle: 'Page Check', tabSingle: 'Single URL', tabBulk: 'Multiple URLs', analyze: 'Analyze', examples: 'Examples:',
+      urlList: 'URL list', urlListHint: '(one per line, up to 50)', templateDownload: 'Download template', csvUpload: 'Upload CSV',
+      analyzeBulk: 'Analyze all', scopeLabel: 'Scope', scopeAll: 'All', schemaTypes: 'Schema types:',
+      loadingSub: 'Checking SEO tags · robots.txt · JSON-LD · llms.txt · FAQ · summary', errorLabel: 'Error:',
+      avgScore: 'Average GEO score', resultsLabel: 'Results', resultsByPage: 'Results by page',
+      summaryCsv: 'Summary CSV', detailCsv: 'Detail CSV (per item)', rawDownload: '⬇ Download raw JSON',
+      pageType: 'Page type', overallScore: 'Overall GEO score', overallScoreSub: 'AI engine readiness', scoreByCategory: 'Score by category',
+    },
+  };
+  const SERVER_ERR_EN = {
+    'URL을 입력해주세요.': 'Please enter a URL.',
+    '유효하지 않은 URL입니다.': 'Invalid URL.',
+    '내부 네트워크 주소는 분석할 수 없습니다.': 'Internal network addresses cannot be analyzed.',
+    '워커 호출 실패': 'Worker call failed', '워커 연결 실패': 'Could not connect to the worker',
+    '분석 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.': 'An error occurred during analysis. Please try again shortly.',
+    '분석 중 오류가 발생했습니다.': 'An error occurred during analysis.',
+    'URL을 하나 이상 입력해주세요.': 'Enter at least one URL.',
+    '한 번에 최대 50개 URL까지 분석할 수 있습니다.': 'You can analyze up to 50 URLs at a time.',
+    '유효하지 않은 URL: ': 'Invalid URL: ',
+    '내부 네트워크 주소는 분석할 수 없습니다: ': 'Internal network addresses cannot be analyzed: ',
+  };
+  const BULK_CATS = [
+    { key: 'performance', short: 'Perf' }, { key: 'accessibility', short: 'A11y' }, { key: 'seo', short: 'SEO' },
+    { key: 'schema_markup', short: 'Schema' }, { key: 'citable_content', short: 'Citable' }, { key: 'ai_crawlability', short: 'Crawl' },
+  ];
+
+  let lang = 'ko';
+  try {
+    const q = new URLSearchParams(location.search).get('lang');
+    if (q === 'en' || q === 'ko') lang = q;
+    else if (location.hash === '#en') lang = 'en';
+    else if (localStorage.getItem('hiro.lang') === 'en') lang = 'en';
+  } catch (e) {}
+
+  function t(key, vars) {
+    let s = (STR[lang] && key in STR[lang]) ? STR[lang][key] : (STR.ko[key] ?? key);
+    if (vars) for (const [k, v] of Object.entries(vars)) s = s.split(`{${k}}`).join(v);
+    return s;
+  }
+  function catLabel(key) {
+    if (lang === 'en' && I18N?.categories?.[key]) return I18N.categories[key];
+    return CATEGORY_META[key]?.label || key;
+  }
+  function trErr(msg) {
+    if (lang !== 'en' || typeof msg !== 'string') return msg;
+    if (SERVER_ERR_EN[msg]) return SERVER_ERR_EN[msg];
+    for (const [ko, en] of Object.entries(SERVER_ERR_EN)) if (ko.endsWith(': ') && msg.startsWith(ko)) return en + msg.slice(ko.length);
+    return msg;
+  }
+
+  // 정적 문구 — 원래(KO) innerHTML 을 보관해 두고 언어에 따라 교체
+  function applyStatic() {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      if (el.dataset.ko === undefined) el.dataset.ko = el.innerHTML;
+      const en = STR.en[el.dataset.i18n];
+      el.innerHTML = (lang === 'en' && en !== undefined) ? en : el.dataset.ko;
+    });
+    document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+      if (el.dataset.koAlt === undefined) el.dataset.koAlt = el.alt;
+      el.alt = lang === 'en' ? (STR.en[el.dataset.i18nAlt] || el.dataset.koAlt) : el.dataset.koAlt;
+    });
+    document.querySelectorAll('.lang-pill').forEach(p => p.classList.toggle('active', p.dataset.lang === lang));
+    document.getElementById('loadingMsg').textContent = t('loadingDefault');
+  }
+
+  // 판정 결과 변환표 (i18n_en.client_table) — 한 번만 받는다
+  let I18N = null, i18nLoading = null;
+  function loadI18n() {
+    if (I18N) return Promise.resolve(I18N);
+    if (!i18nLoading) {
+      i18nLoading = fetch('/i18n/en').then(r => r.ok ? r.json() : null).then(tb => {
+        if (!tb) return null;
+        tb.rx = tb.patterns.map(([a, b]) => [new RegExp(a, 'g'), b]);
+        I18N = tb;
+        return tb;
+      }).catch(() => null).finally(() => { if (!I18N) i18nLoading = null; });
+    }
+    return i18nLoading;
+  }
+  const HANGUL = /[가-힣]/;
+  function trText(s) {
+    if (typeof s !== 'string' || !I18N || !HANGUL.test(s)) return s;
+    s = s.replace(/ ?\(모델 제외 사유: (.*)\)\s*$/, (m, g) => {
+      const parts = g.split(', ').map(p => I18N.reasons[p.trim()]).filter(Boolean);
+      return parts.length ? ` (model exclusion: ${parts.join(', ')})` : ' (excluded by the sentence model)';
+    });
+    s = s.replace(/키워드\((.*?)\.\.\.\)를 포함한 요소를 찾을 수 없습니다\./, (m, g) =>
+      `No element contains the keywords (${g.split(', ').filter(k => !HANGUL.test(k)).join(', ')}...).`);
+    for (const [ko, en] of I18N.phrases) if (ko.length >= 12 && s.includes(ko)) s = s.split(ko).join(en);
+    for (const [rx, rep] of I18N.rx) s = s.replace(rx, rep);
+    for (const [ko, en] of I18N.phrases) if (s.includes(ko)) s = s.split(ko).join(en);
+    return s;
+  }
+  // i18n_en.translate_result 와 같은 규칙 (원본은 그대로 두고 사본을 바꾼다)
+  function translateResult(result) {
+    if (!result || typeof result !== 'object' || !I18N) return result;
+    const r = JSON.parse(JSON.stringify(result));
+    const pt = r.page_type;
+    if (pt && pt.id) pt.label = I18N.page_types[pt.id] || trText(pt.label);
+    if (r.page_error && typeof r.page_error === 'object') {
+      r.page_error.message = trText(r.page_error.message);
+      r.page_error.hint = trText(r.page_error.hint);
+    } else if (typeof r.page_error === 'string') r.page_error = trText(r.page_error);
+    for (const bot of Object.values(r.robots_txt?.bots || {})) if (bot && typeof bot === 'object') bot.name = trText(bot.name);
+    if (r.csr_ratio && typeof r.csr_ratio === 'object')
+      for (const [k, v] of Object.entries(r.csr_ratio)) if (typeof v === 'string') r.csr_ratio[k] = trText(v);
+    for (const [catKey, cat] of Object.entries(r.score?.breakdown || {})) {
+      if (!cat || typeof cat !== 'object') continue;
+      if ('label' in cat) cat.label = I18N.categories[catKey] || trText(cat.label);
+      for (const [id, it] of Object.entries(cat.items || {})) {
+        if (!it || typeof it !== 'object') continue;
+        if ('label' in it) it.label = I18N.items[id] || trText(it.label);
+        it.value = trText(it.value);
+        it.hint = trText(it.hint);
+      }
+    }
+    return r;
+  }
+  async function forLang(result) {
+    if (lang !== 'en') return result;
+    await loadI18n();
+    return translateResult(result);
+  }
+
+  let lastAnalyzeKo = null, bulkKo = null;
+  async function renderSingle() {
+    const data = await forLang(lastAnalyzeKo);
+    lastAnalyzeData = data;  // raw 다운로드용 — 화면 언어 그대로
+    if (data.scope && data.scope !== 'all') renderScopedResults(data);
+    else renderResults(data);
+  }
+  async function renderBulk() {
+    if (lang === 'en') await loadI18n();
+    const items = bulkKo.items.map(it => ({
+      ...it,
+      result: it.result ? (lang === 'en' ? translateResult(it.result) : it.result) : it.result,
+      error: trErr(it.error),
+    }));
+    bulkData = items;
+    renderBulkResults({ ...bulkKo, items });
+  }
+  async function setLang(next) {
+    if (next === lang) return;
+    lang = next;
+    try { localStorage.setItem('hiro.lang', lang); } catch (e) {}
+    if (lang === 'en') await loadI18n();
+    applyStatic();
+    updateBulkCount();
+    if (!document.getElementById('results').classList.contains('hidden') && lastAnalyzeKo) await renderSingle();
+    if (!document.getElementById('bulkResults').classList.contains('hidden') && bulkKo) await renderBulk();
+    const err = document.getElementById('errorMsg');
+    if (err && err.textContent) err.textContent = trErr(err.textContent);
+  }
+  document.getElementById('langToggle').addEventListener('click', e => {
+    const pill = e.target.closest('.lang-pill');
+    if (pill) setLang(pill.dataset.lang);
+  });
 
   // ── Init ───────────────────────────────────────────────────────────────────
   let currentTab = 'single';
@@ -542,10 +750,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     const lines = document.getElementById('urlsInput').value.split('\n').filter(l => l.trim()).length;
     const el = document.getElementById('bulkUrlCount');
     if (lines > 0) {
-      el.textContent = `${lines}개 URL 입력됨${lines > 50 ? ' — 최대 50개 초과!' : ''}`;
+      el.textContent = t('urlsEntered', { n: lines }) + (lines > 50 ? t('overLimit') : '');
       el.className = `text-xs ${lines > 50 ? 'text-red-500 font-semibold' : 'text-slate-500'}`;
     } else {
-      el.textContent = 'URL이 없으면 https:// 를 자동으로 추가합니다.';
+      el.textContent = t('autoHttps');
       el.className = 'text-xs text-slate-400';
     }
   }
@@ -597,26 +805,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   async function startAnalysis() {
     const url = document.getElementById('urlInput').value.trim();
     if (!url) { document.getElementById('urlInput').focus(); return; }
-    setLoading(true, '분석 중입니다…');
+    setLoading(true, t('analyzing'));
     clearResults();
     try {
       const res  = await fetch('/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ url, scope: currentScope }),
+        body: JSON.stringify({ url, scope: currentScope }),  // 항상 원문(KO)으로 받고 EN 은 화면에서 변환
       });
       const ct = res.headers.get('content-type') || '';
       if (!ct.includes('application/json')) {
-        throw new Error('서버가 JSON 응답을 반환하지 않았습니다. 서버 상태를 확인해주세요.');
+        throw new Error(t('errNotJson'));
       }
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.detail || '분석 실패');
-      lastAnalyzeData = data;  // raw 다운로드용
-      if (data.scope && data.scope !== 'all') {
-        renderScopedResults(data);
-      } else {
-        renderResults(data);
-      }
+      const ko = await res.json();
+      if (!res.ok) throw new Error(trErr(ko.detail) || t('errFailed'));
+      lastAnalyzeKo = ko;
+      await renderSingle();
     } catch (err) {
       showError(err.message);
     } finally {
@@ -632,10 +836,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       .filter(Boolean)
       .map(u => /^https?:\/\//i.test(u) ? u : 'https://' + u);
 
-    if (urls.length === 0) { showError('URL을 하나 이상 입력해주세요.'); return; }
-    if (urls.length > 50) { showError('최대 50개 URL까지 분석할 수 있습니다.'); return; }
+    if (urls.length === 0) { showError(t('errNoUrl')); return; }
+    if (urls.length > 50) { showError(t('errMax50')); return; }
 
-    setBulkLoading(true, `${urls.length}개 URL 분석 중…`);
+    setBulkLoading(true, t('analyzingN', { n: urls.length }));
     clearResults();
     try {
       const res = await fetch('/analyze-bulk', {
@@ -645,12 +849,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       });
       const ct = res.headers.get('content-type') || '';
       if (!ct.includes('application/json')) {
-        throw new Error('서버가 JSON 응답을 반환하지 않았습니다. 서버 상태를 확인해주세요.');
+        throw new Error(t('errNotJson'));
       }
       const data = await res.json();
-      if (!res.ok) throw new Error(data.detail || '분석 실패');
-      bulkData = data.items;
-      renderBulkResults(data);
+      if (!res.ok) throw new Error(trErr(data.detail) || t('errFailed'));
+      bulkKo = data;
+      await renderBulk();
     } catch (err) {
       showError(err.message);
     } finally {
@@ -696,7 +900,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const gradeEl = document.getElementById('bulkAvgGrade');
       gradeEl.textContent = grade;
       gradeEl.className = `text-sm font-bold px-3 py-1 rounded-lg ml-2 ${gradeColor[grade]}`;
-      document.getElementById('bulkSummaryText').textContent = `총 ${total}개 중 ${success}개 성공`;
+      document.getElementById('bulkSummaryText').textContent = t('succeeded', { s: success, n: total });
       setTimeout(() => {
         const bar = document.getElementById('bulkAvgBar');
         bar.style.background = barGrad[grade];
@@ -705,7 +909,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
     document.getElementById('bulkAvgCard').style.display = isScoped ? 'none' : '';
     if (isScoped) {
-      document.getElementById('bulkSummaryText').textContent = `총 ${total}개 중 ${success}개 성공`;
+      document.getElementById('bulkSummaryText').textContent = t('succeeded', { s: success, n: total });
     }
 
     // Scoped일 때 테이블 헤더 교체
@@ -716,29 +920,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <th class="px-4 py-3 font-semibold text-slate-600 w-8">#</th>
         <th class="px-4 py-3 font-semibold text-slate-600">URL</th>
         <th class="px-4 py-3 font-semibold text-slate-600 text-center">${scopeHeaderLabel[data.scope] || data.scope}</th>
-        <th class="px-4 py-3 font-semibold text-slate-600 w-24">상세</th>
+        <th class="px-4 py-3 font-semibold text-slate-600 w-24">${t('thDetail')}</th>
       </tr>`;
     } else {
       thead.innerHTML = `<tr class="bg-slate-50 text-left">
         <th class="px-4 py-3 font-semibold text-slate-600 w-8">#</th>
         <th class="px-4 py-3 font-semibold text-slate-600">URL</th>
-        <th data-col="score" class="px-4 py-3 font-semibold text-slate-600 text-center w-20">점수</th>
-        <th data-col="score" class="px-4 py-3 font-semibold text-slate-600 text-center w-24">등급</th>
-        <th data-col="performance" class="px-4 py-3 font-semibold text-slate-600 text-center w-24">Perf</th>
-        <th data-col="accessibility" class="px-4 py-3 font-semibold text-slate-600 text-center w-24">A11y</th>
-        <th data-col="seo" class="px-4 py-3 font-semibold text-slate-600 text-center w-24">SEO</th>
-        <th data-col="ai_readiness" class="px-4 py-3 font-semibold text-slate-600 text-center w-24">AI</th>
-        <th class="px-4 py-3 font-semibold text-slate-600 w-24">상세</th>
+        <th data-col="score" class="px-4 py-3 font-semibold text-slate-600 text-center w-20">${t('thScore')}</th>
+        <th data-col="score" class="px-4 py-3 font-semibold text-slate-600 text-center w-24">${t('thGrade')}</th>
+        ${BULK_CATS.map(c => `<th data-col="${c.key}" class="px-4 py-3 font-semibold text-slate-600 text-center w-24" title="${escHtml(catLabel(c.key))}">${c.short}</th>`).join('')}
+        <th class="px-4 py-3 font-semibold text-slate-600 w-24">${t('thDetail')}</th>
       </tr>`;
     }
 
     // Scoped 결과용 셀 생성 헬퍼 — 새 카테고리 구조 사용
     const scopedCell = (r) => {
       if (data.scope === 'schema') {
-        if (r.page_error) return `<td class="px-4 py-3 text-center"><span class="text-xs text-red-500 bg-red-50 px-2 py-1 rounded" title="${escHtml(r.page_error)}">오류/차단됨</span></td>`;
+        if (r.page_error) return `<td class="px-4 py-3 text-center"><span class="text-xs text-red-500 bg-red-50 px-2 py-1 rounded" title="${escHtml(r.page_error?.message || r.page_error)}">${t('errBlocked')}</span></td>`;
         const j = r.json_ld || {};
-        if (j.status !== 'found' || j.count === 0) return `<td class="px-4 py-3 text-center text-red-500 font-semibold">미발견</td>`;
-        return `<td class="px-4 py-3 text-center"><span class="font-semibold text-emerald-600">${j.count}개 발견</span></td>`;
+        if (j.status !== 'found' || j.count === 0) return `<td class="px-4 py-3 text-center text-red-500 font-semibold">${t('notFound')}</td>`;
+        return `<td class="px-4 py-3 text-center"><span class="font-semibold text-emerald-600">${t('nFound', { n: j.count })}</span></td>`;
       }
       const bd = r.score?.breakdown || {};
       const catKey = (data.scope in (CATEGORY_META || {})) ? data.scope
@@ -750,7 +951,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const total = c.total ?? Object.keys(c.items || {}).length;
       const pct = c.max ? (c.points / c.max) : 0;
       const color = pct >= 0.7 ? 'text-emerald-600' : pct >= 0.4 ? 'text-amber-600' : 'text-red-500';
-      return `<td class="px-4 py-3 text-center"><span class="font-semibold ${color}">${passed}</span><span class="text-slate-300">/${total}</span> <span class="text-xs text-slate-400">(${c.points}/${c.max}점)</span></td>`;
+      return `<td class="px-4 py-3 text-center"><span class="font-semibold ${color}">${passed}</span><span class="text-slate-300">/${total}</span> <span class="text-xs text-slate-400">(${c.points}/${c.max}${t('pts')})</span></td>`;
     };
 
     // Table rows
@@ -762,7 +963,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <tr class="hover:bg-slate-50">
             <td class="px-4 py-3 text-slate-400">${idx + 1}</td>
             <td class="px-4 py-3 text-slate-600 font-mono text-xs max-w-xs truncate" title="${escHtml(item.url)}">${escHtml(item.url)}</td>
-            <td class="px-4 py-3 text-center" colspan="${isScoped ? 1 : 8}">
+            <td class="px-4 py-3 text-center" colspan="${isScoped ? 2 : BULK_CATS.length + 3}">
               <span class="text-xs text-red-500 bg-red-50 px-2 py-1 rounded">${escHtml(item.error)}</span>
             </td>
           </tr>`;
@@ -780,7 +981,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             ${scopedCell(r)}
             <td class="px-4 py-3">
               <button onclick="showSingleFromBulk(${idx})"
-                class="text-xs text-[#CF0652] hover:text-[#B0044A] font-semibold">상세 보기</button>
+                class="text-xs text-[#CF0652] hover:text-[#B0044A] font-semibold">${t('viewDetail')}</button>
             </td>
           </tr>`;
         return;
@@ -805,13 +1006,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </td>
           <td data-col="score" class="px-4 py-3 text-center font-black text-lg text-slate-800">${sc}</td>
           <td data-col="score" class="px-4 py-3 text-center"><span class="text-xs font-bold px-2 py-0.5 rounded-full ${gc[g] || gc['Poor']}">${g}</span></td>
-          ${cell('performance',   bd.performance?.points ?? 0,   bd.performance?.max ?? 25)}
-          ${cell('accessibility', bd.accessibility?.points ?? 0, bd.accessibility?.max ?? 15)}
-          ${cell('seo',           bd.seo?.points ?? 0,           bd.seo?.max ?? 20)}
-          ${cell('ai_readiness',  bd.ai_readiness?.points ?? 0,  bd.ai_readiness?.max ?? 40)}
+          ${BULK_CATS.map(c => bd[c.key] ? cell(c.key, bd[c.key].points ?? 0, bd[c.key].max || 1)
+                                           : `<td data-col="${c.key}" class="px-4 py-3 text-center text-slate-300">—</td>`).join('')}
           <td class="px-4 py-3">
             <button onclick="showSingleFromBulk(${idx})"
-              class="text-xs text-[#CF0652] hover:text-[#B0044A] font-semibold">상세 보기</button>
+              class="text-xs text-[#CF0652] hover:text-[#B0044A] font-semibold">${t('viewDetail')}</button>
           </td>
         </tr>`;
     });
@@ -828,10 +1027,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     const r = item.result;
     if (r.scope === 'schema') {
       if (r.page_error) {
-        alert(`접속 에러 또는 봇 차단이 발생했습니다:\n\n${r.page_error}`);
+        alert(`${t('alertBlocked')}\n\n${r.page_error?.message || r.page_error}`);
       } else {
-        const types = r.json_ld?.all_types?.join(', ') || '없음';
-        alert(`발견된 스키마 종류: ${types}\n총 ${r.json_ld?.count || 0}개 발견`);
+        const types = r.json_ld?.all_types?.join(', ') || t('none');
+        alert(t('alertSchemas', { types, n: r.json_ld?.count || 0 }));
       }
       return;
     }
@@ -845,22 +1044,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   function exportBulkCSV() {
     if (!bulkData.length) return;
-    const header = ['#', 'URL', '점수', '등급', 'Performance', 'Accessibility', 'SEO', 'AI Readiness', '오류'];
+    const header = ['#', 'URL', t('thScore'), t('thGrade'), ...BULK_CATS.map(c => catLabel(c.key)), t('thError')];
     const rows = bulkData.map((item, i) => {
-      if (item.error) return [i + 1, item.url, '', '', '', '', '', '', item.error];
-      const bd = item.result.score.breakdown;
+      if (item.error) return [i + 1, item.url, '', '', ...BULK_CATS.map(() => ''), item.error];
+      const sc = item.result.score;
+      if (!sc) return [i + 1, item.url, '', '', ...BULK_CATS.map(() => ''), ''];
+      const bd = sc.breakdown || {};
       return [
-        i + 1, item.url,
-        item.result.score.total, item.result.score.grade,
-        bd.performance?.points ?? '', bd.accessibility?.points ?? '',
-        bd.seo?.points ?? '', bd.ai_readiness?.points ?? '', ''
+        i + 1, item.url, sc.total, sc.grade,
+        ...BULK_CATS.map(c => bd[c.key] ? `${bd[c.key].points}/${bd[c.key].max}` : ''), ''
       ];
     });
     const csv = [header, ...rows].map(r => r.map(v => `"${String(v).replace(/"/g, '""')}"`).join(',')).join('\n');
     const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = `geo-audit-bulk-${new Date().toISOString().slice(0,10)}.csv`;
+    a.download = `geo-audit-bulk-${lang}-${new Date().toISOString().slice(0,10)}.csv`;
     a.click();
   }
 
@@ -871,7 +1070,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     // \uCCAB \uC131\uACF5 \uACB0\uACFC\uC5D0\uC11C \uBAA8\uB4E0 \uD56D\uBAA9 ID/\uB77C\uBCA8 \uC218\uC9D1 (\uBAA8\uB4E0 URL\uC774 \uB3D9\uC77C \uB8F0\uC14B\uC774\uBBC0\uB85C)
     let firstOK = bulkData.find(d => !d.error && d.result?.score?.breakdown);
     if (!firstOK) {
-      alert('\uC0C1\uC138 \uB370\uC774\uD130\uAC00 \uC788\uB294 \uACB0\uACFC\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.');
+      alert(t('noDetailData'));
       return;
     }
     const breakdown = firstOK.result.score.breakdown;
@@ -887,7 +1086,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       }
     }
 
-    const header = ['#', 'URL', '\uC810\uC218', '\uB4F1\uAE09', ...cols.map(c => c.label), '\uC624\uB958'];
+    const header = ['#', 'URL', t('thScore'), t('thGrade'), ...cols.map(c => c.label), t('thError')];
     const rows = bulkData.map((item, i) => {
       if (item.error) {
         return [i + 1, item.url, '', '', ...cols.map(() => ''), item.error];
@@ -896,7 +1095,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const itemCells = cols.map(c => {
         const it = bd[c.cat]?.items?.[c.id];
         if (!it) return '';
-        return it.pass ? 'PASS' : 'FAIL';
+        return (it.na === true || it.pass === null) ? 'N/A' : it.pass ? 'PASS' : 'FAIL';
       });
       return [
         i + 1, item.url,
@@ -909,7 +1108,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = `geo-audit-detail-${new Date().toISOString().slice(0,10)}.csv`;
+    a.download = `geo-audit-detail-${lang}-${new Date().toISOString().slice(0,10)}.csv`;
     a.click();
   }
 
@@ -928,7 +1127,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     try { host = new URL(lastAnalyzeData.url).pathname.replace(/\W+/g, '-').replace(/^-|-$/g, '').slice(0, 60) || 'page'; } catch {}
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = `geo-audit-raw-${host}-${new Date().toISOString().slice(0,10)}.json`;
+    a.download = `geo-audit-raw-${host}-${lang}-${new Date().toISOString().slice(0,10)}.json`;
     a.click();
     URL.revokeObjectURL(a.href);
   }
@@ -941,10 +1140,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     if (data.score) {
       renderCategoryCards(data.score.breakdown);
     } else if (data.json_ld) {
-      const types = data.json_ld.all_types?.join(', ') || '없음';
+      const types = data.json_ld.all_types?.join(', ') || t('none');
       document.getElementById('categoryCards').innerHTML =
         `<div class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6">
-           <h3 class="font-bold text-slate-800 mb-2">JSON-LD 스키마 (${data.json_ld.count || 0}개)</h3>
+           <h3 class="font-bold text-slate-800 mb-2">${t('jsonldSchemas', { n: data.json_ld.count || 0 })}</h3>
            <p class="text-sm text-slate-600">${escHtml(types)}</p>
          </div>`;
     }
@@ -991,13 +1190,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="text-2xl">⚠️</div>
           <div class="flex-1 min-w-0">
             <div class="flex items-center gap-2 flex-wrap mb-1">
-              <h3 class="font-bold text-red-700">페이지를 가져오지 못했습니다</h3>
+              <h3 class="font-bold text-red-700">${t('fetchFailed')}</h3>
               ${httpStatus ? `<span class="text-xs font-mono px-2 py-0.5 bg-red-100 text-red-700 rounded">${escHtml(httpStatus)}</span>` : ''}
               <span class="text-xs text-red-500">kind=${escHtml(err.kind || 'error')}</span>
             </div>
             <p class="text-sm text-red-600 break-words">${escHtml(err.message || '')}</p>
             ${err.hint ? `<p class="text-xs text-red-500 mt-1">💡 ${escHtml(err.hint)}</p>` : ''}
-            <p class="text-xs text-red-400 mt-2">아래 항목들이 모두 "HTML 파싱 실패"로 표시되는 이유입니다.</p>
+            <p class="text-xs text-red-400 mt-2">${t('fetchFailedWhy')}</p>
           </div>
         </div>
       </div>`;
@@ -1017,7 +1216,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     for (const catKey of order) {
       const cat = breakdown[catKey];
       if (!cat) continue;
-      const meta = CATEGORY_META[catKey] || { label: catKey, color: '#64748b', icon: '•' };
+      const meta = { ...(CATEGORY_META[catKey] || { color: '#64748b', icon: '•' }), label: catLabel(catKey) };
       const items = cat.items || {};
       const passed = cat.passed ?? Object.values(items).filter(i => i.pass).length;
       const total = cat.total ?? Object.keys(items).length;
@@ -1071,9 +1270,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="flex-1">
               <div class="flex items-center gap-2 flex-wrap">
                 <h2 class="font-bold text-slate-800 text-lg">${meta.label}</h2>
-                <span class="text-xs px-2 py-0.5 rounded-full font-medium ${badgeColor}">${passed}/${total} 통과</span>
-                ${naCount > 0 ? `<span class="text-xs px-2 py-0.5 rounded-full font-medium bg-slate-100 text-slate-500" title="이 page type 대상이 아닌 항목 수">+${naCount} N/A</span>` : ''}
-                <span class="text-xs text-slate-400 ml-auto">${cat.points}/${cat.max}점</span>
+                <span class="text-xs px-2 py-0.5 rounded-full font-medium ${badgeColor}">${t('nPassed', { p: passed, n: total })}</span>
+                ${naCount > 0 ? `<span class="text-xs px-2 py-0.5 rounded-full font-medium bg-slate-100 text-slate-500" title="${t('naTitle')}">+${naCount} N/A</span>` : ''}
+                <span class="text-xs text-slate-400 ml-auto">${cat.points}/${cat.max}${t('pts')}</span>
               </div>
               <div class="h-1.5 bg-slate-100 rounded-full overflow-hidden mt-2">
                 <div class="h-full rounded-full transition-all duration-500" style="width:${pct}%;background:${meta.color}"></div>
@@ -1082,7 +1281,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           ${Object.keys(items).length
             ? `<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-4">${itemsHtml}</div>`
-            : `<p class="text-xs text-slate-400 mt-2">활성 점검 항목이 없습니다.</p>`}
+            : `<p class="text-xs text-slate-400 mt-2">${t('noActive')}</p>`}
         </div>`;
 
       // animate-in
@@ -1104,9 +1303,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       'Poor':             'bg-red-100 text-red-700',
     };
     const labelMap = {
-      'Good':             '훌륭한 AI 최적화',
-      'Need Improvement': '개선이 필요합니다',
-      'Poor':             'AI 최적화 미흡',
+      'Good':             t('gradeGood'),
+      'Need Improvement': t('gradeNeed'),
+      'Poor':             t('gradePoor'),
     };
     document.getElementById('gradeTag').textContent = grade;
     document.getElementById('gradeTag').className =
@@ -1130,11 +1329,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     el.innerHTML = '';
     let delay = 250;
     for (const [key, val] of Object.entries(breakdown)) {
-      const meta  = CATEGORY_META[key] || { label: key, color: '#64748B' };
+      const meta  = { ...(CATEGORY_META[key] || { color: '#64748B' }), label: catLabel(key) };
       const pct   = Math.round((val.points / val.max) * 100);
       const barId = `brkbar-${key}`;
       const passInfo = val.passed != null
-        ? `<span class="text-xs text-slate-400">(${val.passed}/${val.total} 통과)</span>`
+        ? `<span class="text-xs text-slate-400">(${t('nPassed', { p: val.passed, n: val.total })})</span>`
         : '';
 
       el.innerHTML += `
@@ -1145,7 +1344,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="flex items-center gap-1.5 shrink-0">
             ${passInfo}
-            <span class="text-sm font-bold text-slate-700 w-14 text-right">${val.points}/${val.max}점</span>
+            <span class="text-sm font-bold text-slate-700 w-14 text-right">${val.points}/${val.max}${t('pts')}</span>
           </div>
         </div>`;
 
@@ -1156,6 +1355,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       delay += 70;
     }
   }
+
+  // 첫 화면 언어 적용 (EN 이면 변환표도 미리 받아 둔다)
+  applyStatic();
+  updateBulkCount();
+  if (lang === 'en') loadI18n();
 
   function escHtml(str) {
     return String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');

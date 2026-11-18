@@ -30,6 +30,7 @@ AI 검색(GEO, Generative Engine Optimization) 관점의 **페이지 가독성 �
 5. **고인용 콘텐츠 판정** — AI가 그대로 인용하기 좋은 정의문·수치 문장이 본문에 있는지 판정해요.
 6. **AI Crawlability** — robots.txt·llms.txt·메타 robots·X-Robots-Tag로 AI 봇 접근이 막혀 있지 않은지 확인해요.
 7. **크롬 확장** — 지금 보고 있는 페이지를 브라우저에서 바로 채점해요(KO/EN 전환).
+8. **검사 화면 KO/EN 전환** — 오른쪽 위 KO·EN 버튼으로 화면과 검사 결과(항목명·판정 근거·CSV·JSON 다운로드)를 영어로 바꿔요. `?lang=en` 링크로 처음부터 영문으로 열 수도 있어요.
 
 ## 시작하기
 

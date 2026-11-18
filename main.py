@@ -338,11 +338,13 @@ class AnalyzeRequest(BaseModel):
     url: str
     scope: str = "all"
     lightweight: bool = False
+    lang: str = "ko"   # "en" 이면 응답 항목명·판정 근거를 영문으로 (i18n_en)
 
 
 class AnalyzeBulkRequest(BaseModel):
     urls: List[str]
     scope: str = "all"
+    lang: str = "ko"
 
 
 @app.api_route("/", methods=["GET", "HEAD"])
@@ -355,6 +357,7 @@ async def root():
 # URL로 접속 가능한 엔드포인트를 제공한다. 도구: list_countries/get_scorecard/
 # get_item_passrates/get_overall/get_raw (감사 집계 데이터).
 import mcp_dashboard_server as _mcp
+import i18n_en
 
 @app.get("/mcp")
 async def mcp_info():
@@ -385,6 +388,12 @@ async def mcp_endpoint(request: Request):
     return JSONResponse(resp)
 
 
+@app.get("/i18n/en")
+async def i18n_en_table():
+    """검사 화면 EN 모드용 변환표 — 판정 근거를 브라우저에서 영문으로 바꾼다."""
+    return JSONResponse(i18n_en.client_table(), headers={"Cache-Control": "public, max-age=3600"})
+
+
 @app.post("/analyze")
 @limiter.limit("30/minute")
 async def analyze(request: Request, body: AnalyzeRequest):
@@ -400,7 +409,8 @@ async def analyze(request: Request, body: AnalyzeRequest):
     # 프록시 모드: 워커(Mac Mini)에 위임
     if _WORKER_URL:
         try:
-            return await _proxy_to_worker("/analyze", {"url": url, "scope": scope, "lightweight": body.lightweight})
+            result = await _proxy_to_worker("/analyze", {"url": url, "scope": scope, "lightweight": body.lightweight})
+            return i18n_en.translate_result(result) if body.lang == "en" else result
         except httpx.HTTPStatusError as e:
             log.warning("worker /analyze HTTP %d: %s", e.response.status_code, e.response.text[:200])
             raise HTTPException(status_code=502, detail="워커 호출 실패")
@@ -414,7 +424,7 @@ async def analyze(request: Request, body: AnalyzeRequest):
     effective_lightweight = body.lightweight or not _WORKER_URL
     try:
         result = await analyze_url(url, scope=scope, lightweight=effective_lightweight)
-        return result
+        return i18n_en.translate_result(result) if body.lang == "en" else result
     except Exception as e:
         log.exception("/analyze 실패: url=%s err=%s", url, e)
         raise HTTPException(status_code=500, detail="분석 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.")
@@ -456,6 +466,11 @@ async def analyze_bulk(request: Request, body: AnalyzeBulkRequest):
         batch_results = await asyncio.gather(*[safe_analyze(u) for u in batch])
         items.extend(batch_results)
 
+    if body.lang == "en":
+        for i in items:
+            i["result"] = i18n_en.translate_result(i["result"]) if i["result"] else None
+            if i["error"]:
+                i["error"] = "An error occurred during analysis."
     success_count = sum(1 for i in items if i["result"])
 
     if scope == "all":
