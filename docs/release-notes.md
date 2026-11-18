@@ -13,7 +13,7 @@ Hiro(Dotcom Readability Checker)의 내부 변경 이력. 큰 작업 단위로 �
 - **문장 모델 v5c 배포됨**(11-10, 올라마 `hiro` = v5c, 백업 `hiro-v3d`·`hiro-v2`). 11월 #33·#36 은 v5c 로 재판정해 `data/item_overrides.json` 으로 반영(단위 1). 12월 정기 감사(12-05)가 v5c 첫 실전.
 - **US PDP 기능 소개 SSR**(LG 전달): 기능 소개가 `__NEXT_DATA__` 에만 있고 DOM 에 없음 — JS 미실행 AI 크롤러는 못 읽는다. 감사는 11-12 부터 JSON 에서 읽어 판정(단위 1). US PDP #36 47%로 UK·CA(86~90%)보다 낮은 건 수치 없는 홍보형 문장 탓(실제 상태).
 - **#37 PDP 카테고리 baseline**: 식기세척기·청소기는 표본이 적은 국가가 있음. installation_guide·US microsite·DE experience 는 기존 baseline 값 유지.
-- **크롬 웹스토어**: v2.4.3 ZIP 재업로드 필요(`docs/extension-publish-guide.md`).
+- **크롬 웹스토어**: v2.4.4 ZIP 재업로드 필요(`docs/extension-publish-guide.md`) — EN 모드 판정 근거 영문화 포함.
 
 ---
 
@@ -33,6 +33,7 @@ Hiro(Dotcom Readability Checker)의 내부 변경 이력. 큰 작업 단위로 �
 - HS-Others #33 전후 동일(0.578)은 재판정 반영 확인 — 통과↔실패 19건씩 상쇄.
 - 검사 화면(11-18): 첫 화면 설명 아래에 "매월 5일 정기 검사 · 10일 GEO 대시보드 반영" 안내와 대시보드 Readability·검수 기준 페이지 링크 추가. 채점 영향 없음. 도구 소개 `docs/hiro-소개.md`(JOY Reference 에도 게시).
 - 검사 화면 KO/EN 전환(11-18): 상단 KO·EN 버튼(`?lang=en`·`#en` 링크도 됨, 브라우저에 기억). 화면 문구는 페이지에서, 항목명·판정 근거·페이지 타입·카테고리는 `i18n_en.py` 변환표(`GET /i18n/en`)로 브라우저에서 바꿔 언어를 바꿔도 다시 검사하지 않음. 요약·상세 CSV·Raw JSON 은 화면 언어 그대로 받음(파일명에 ko/en). `/analyze`·`/analyze-bulk` 에 `lang: "en"` 도 받음(확장 등 API 용). 11월 감사 판정 문구 6,359종 중 한글이 남는 건 페이지 본문 인용뿐, 문장 모델 제외 사유는 아는 것만 옮기고 나머지는 생략. 같이 고침: 다중 URL 표·요약 CSV 가 분할 전 4개 카테고리(AI=ai_readiness)로 남아 AI 열이 비던 것 → 6개 카테고리, 상세 CSV 에 N/A 구분, "상세 CSV (49항목)" 표기. 채점 영향 없음.
+- 크롬 확장 v2.4.4(11-18): EN 모드에서 항목명·판정 근거·페이지 타입도 영어로 — 웹 검사기와 같은 `/i18n/en` 변환표, 언어 전환 시 다시 요청 안 함. `static/hiro-extension.zip` 재빌드.
 
 ---
 

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Hiro — Dotcom Readability Checker",
-  "version": "2.4.3",
+  "version": "2.4.5",
   "description": "Hiro — Dotcom Readability Checker. Scores the current page's AI readability, SSR/CSR baseline and JSON-LD schema. KO/EN UI.",
   "permissions": [
     "activeTab",

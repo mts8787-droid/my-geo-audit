@@ -144,7 +144,64 @@ function applyI18n() {
   if (lastResult) renderResult(lastResult);
 }
 
-let lastResult = null;
+let lastResult = null;   // 서버 원문(KO) 응답 — EN 은 렌더 때 변환
+
+// ── 판정 결과 EN 변환 ───────────────────────────────────────────────────────
+// 웹 검사기와 같은 변환표(서버 i18n_en.py → GET /i18n/en)로 항목명·판정 근거를 바꾼다.
+// 분석은 원문으로 받아 두고 언어를 바꾸면 다시 요청하지 않고 다시 그린다.
+let I18N = null, i18nLoading = null;
+function loadI18n() {
+  if (I18N) return Promise.resolve(I18N);
+  if (!i18nLoading) {
+    i18nLoading = fetch(`${API_BASE}/i18n/en`).then(r => r.ok ? r.json() : null).then(tb => {
+      if (!tb) return null;
+      tb.rx = tb.patterns.map(([a, b]) => [new RegExp(a, 'g'), b]);
+      I18N = tb;
+      return tb;
+    }).catch(() => null).finally(() => { if (!I18N) i18nLoading = null; });
+  }
+  return i18nLoading;
+}
+const HANGUL = /[가-힣]/;
+function trText(s) {
+  if (typeof s !== 'string' || !I18N || !HANGUL.test(s)) return s;
+  s = s.replace(/ ?\(모델 제외 사유: (.*)\)\s*$/, (m, g) => {
+    const parts = g.split(', ').map(p => I18N.reasons[p.trim()]).filter(Boolean);
+    return parts.length ? ` (model exclusion: ${parts.join(', ')})` : ' (excluded by the sentence model)';
+  });
+  s = s.replace(/키워드\((.*?)\.\.\.\)를 포함한 요소를 찾을 수 없습니다\./, (m, g) =>
+    `No element contains the keywords (${g.split(', ').filter(k => !HANGUL.test(k)).join(', ')}...).`);
+  for (const [ko, en] of I18N.phrases) if (ko.length >= 12 && s.includes(ko)) s = s.split(ko).join(en);
+  for (const [rx, rep] of I18N.rx) s = s.replace(rx, rep);
+  for (const [ko, en] of I18N.phrases) if (s.includes(ko)) s = s.split(ko).join(en);
+  return s;
+}
+function translateResult(result) {
+  if (!result || typeof result !== 'object' || !I18N) return result;
+  const r = JSON.parse(JSON.stringify(result));
+  const pt = r.page_type;
+  if (pt && pt.id) pt.label = I18N.page_types[pt.id] || trText(pt.label);
+  for (const [catKey, cat] of Object.entries(r.score?.breakdown || {})) {
+    if (!cat || typeof cat !== 'object') continue;
+    if ('label' in cat) cat.label = I18N.categories[catKey] || trText(cat.label);
+    for (const [id, it] of Object.entries(cat.items || {})) {
+      if (!it || typeof it !== 'object') continue;
+      if ('label' in it) it.label = I18N.items[id] || trText(it.label);
+      it.value = trText(it.value);
+      it.hint = trText(it.hint);
+    }
+  }
+  return r;
+}
+const SERVER_ERR_EN = {
+  'URL을 입력해주세요.': 'Please enter a URL.',
+  '유효하지 않은 URL입니다.': 'Invalid URL.',
+  '내부 네트워크 주소는 분석할 수 없습니다.': 'Internal network addresses cannot be analyzed.',
+  '워커 호출 실패': 'Worker call failed',
+  '워커 연결 실패': 'Could not connect to the worker',
+  '분석 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.': 'An error occurred during analysis. Please try again shortly.',
+};
+const trErr = (msg) => (lang === 'en' && SERVER_ERR_EN[msg]) || msg;
 
 document.addEventListener('DOMContentLoaded', () => {
   // 웹앱 링크
@@ -157,6 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
   } catch (_) {}
 
   applyI18n();
+  if (lang === 'en') loadI18n().then(() => { if (lastResult) renderResult(lastResult); });
 
   // 언어 토글 — 양쪽 pill 클릭 모두 처리
   $('langToggle').addEventListener('click', (e) => {
@@ -168,7 +226,8 @@ document.addEventListener('DOMContentLoaded', () => {
       lang = pill.getAttribute('data-lang');
     }
     localStorage.setItem('geoAudit.lang', lang);
-    applyI18n();
+    if (lang === 'en') loadI18n().then(applyI18n);
+    else applyI18n();
   });
 
   $('analyzeBtn').addEventListener('click', runAnalyze);
@@ -192,12 +251,13 @@ async function runAnalyze() {
     });
     if (!res.ok) {
       let detail = `HTTP ${res.status}`;
-      try { const d = await res.json(); if (d.detail) detail = d.detail; } catch (_) {}
+      try { const d = await res.json(); if (d.detail) detail = trErr(d.detail); } catch (_) {}
       throw new Error(detail);
     }
     const data = await res.json();
     data._url = url;
     lastResult = data;
+    if (lang === 'en') await loadI18n();
     renderResult(data);
   } catch (err) {
     showError(`${t('err_generic')}: ${err.message || String(err)}`);
@@ -222,7 +282,8 @@ function showError(msg) {
 }
 
 // ── Render ───────────────────────────────────────────────────────────────
-function renderResult(data) {
+function renderResult(ko) {
+  const data = (lang === 'en') ? translateResult(ko) : ko;
   $('loading').classList.add('hidden');
   $('error').classList.add('hidden');
   $('result').classList.remove('hidden');
