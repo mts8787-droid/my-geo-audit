@@ -176,8 +176,12 @@ fi
 
 # 갱신된 대시보드 집계를 Render로 반영(원격 /mcp 엔드포인트가 최신 데이터 서빙).
 # best-effort: 변경 없거나 push 실패해도 감사 결과엔 영향 없음.
+# 하류(my-geo-newsletter) 알림 — 확정 수치 + 직전 알림 이후 상류 변경. 하류 세션이 이 파일을 읽고 집계한다.
+"$PY" gen_downstream_notice.py >> "$LOG" 2>&1 \
+  || echo "[monthly-audit] WARN 하류 알림 생성 실패" >> "$LOG"
+osascript -e 'display notification "하류 세션에 reports/downstream_notice.md 처리를 시키세요" with title "Hiro 정기 감사 완료"' >/dev/null 2>&1 || true
 if ! git diff --quiet reports/dashboard_data.json 2>/dev/null; then
-  git add reports/dashboard_data.json >> "$LOG" 2>&1
+  git add reports/dashboard_data.json reports/downstream_notice.md >> "$LOG" 2>&1
   git commit -m "data(dashboard): 월간 감사 집계 갱신 $(date +%Y-%m)" >> "$LOG" 2>&1
   git push origin master >> "$LOG" 2>&1 && echo "[monthly-audit] dashboard_data push OK" >> "$LOG" \
     || echo "[monthly-audit] WARN dashboard push 실패" >> "$LOG"
