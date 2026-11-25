@@ -14,6 +14,7 @@ Hiro(Dotcom Readability Checker)의 내부 변경 이력. 큰 작업 단위로 �
 - **US PDP 기능 소개 SSR**(LG 전달): 기능 소개가 `__NEXT_DATA__` 에만 있고 DOM 에 없음 — JS 미실행 AI 크롤러는 못 읽는다. 감사는 11-12 부터 JSON 에서 읽어 판정(단위 1). US PDP #36 47%로 UK·CA(86~90%)보다 낮은 건 수치 없는 홍보형 문장 탓(실제 상태).
 - **#37 PDP 카테고리 baseline**: 식기세척기·청소기는 표본이 적은 국가가 있음. installation_guide·US microsite·DE experience 는 기존 baseline 값 유지.
 - **하류 알림**(11-20): 정기 감사가 끝나면 `gen_downstream_notice.py` 가 `reports/downstream_notice.md`(확정 수치 + 직전 알림 이후 집계 영향 커밋 + 하류 처리 절차)를 만들어 집계와 함께 커밋·푸시하고 맥 알림을 띄운다. 감사 뒤 재판정을 하면 수동으로 다시 실행. 11월분 하류 집계는 사용자가 수동 진행(11월 알림 파일은 생성해 둠). 12-05 가 첫 자동 발행.
+- **비 PDP 제품라인 기록**(11-25): Experience, Buying Guide, Microsite, Troubleshooting, Installation Guide 감사 결과에 `product_line`(제품라인 키, 표시명, 근거, 검수 구분)을 남긴다(`product_line.py`, `analyzer.py`). 사용자 결정: 특정 제품 없음 = 제품 무관, 복수 제품 = 대표 제품(LG 바로 뒤 제품 → 먼저 나온 제품), 스타일러, 노트북/PC, 프로젝터 별도. 12월 감사부터 기록, 대시보드 미반영. 11월 2,019건 = 제품라인 1,847 + 제품 무관 148 + 정밀 검수 필요 24(전부 TS)(`reports/261125_비PDP_제품라인_추정.md`). 카테고리 ID 대응표 미정.
 - **크롬 웹스토어**: v2.4.5 ZIP 재업로드 필요(`docs/extension-publish-guide.md`) — EN 모드 판정 근거 영문화 포함.
 
 ---

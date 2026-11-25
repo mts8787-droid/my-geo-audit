@@ -361,6 +361,14 @@ async def analyze_url(url: str, lightweight: bool = False, scope: str = "all") -
             "hint":        "봇 차단(Cloudflare/CAPTCHA), 타임아웃, 또는 비-HTML 응답일 수 있습니다. 브라우저에서 해당 URL이 정상 열리는지 확인하세요.",
         }
 
+    # 비 PDP 콘텐츠(Experience, Buying Guide, Microsite, Troubleshooting, 설치 가이드)의
+    # 제품라인 추정. PDP 는 SKU 로 매핑하므로 None (2026-11-25 사용자 요청).
+    from product_line import product_line_for
+    _soup = page_data.get("soup")
+    _title = _soup.title.get_text(" ", strip=True) if _soup is not None and _soup.title else ""
+    product_line = product_line_for(page_type.get("id"), page_data.get("final_url") or url,
+                                    _title, (page_type.get("hs") or {}).get("product") or "")
+
     # soup 참조 해제 — 메모리 즉시 회수
     page_data["soup"] = None
 
@@ -380,6 +388,7 @@ async def analyze_url(url: str, lightweight: bool = False, scope: str = "all") -
         "base_url":          base_url,
         "scope":             "all",
         "page_type":         page_type,
+        "product_line":      product_line,
         "redirect":          redirect,
         "robots_txt":        robots,
         "json_ld":           jsonld,
